@@ -1,0 +1,236 @@
+{% extends 'job_temp.html' %}
+
+{% block css %}
+    <style>
+        .record_detail {
+            margin-top: 30px;
+            margin-left: 30px;
+            font-size: 16px;
+        }
+
+        .record_detail .item-name {
+            display: inline-block;
+            width: 150px;
+            font-weight: bold;
+        }
+
+        .record_detail .item-text {
+
+        }
+
+        .item {
+            display: inline-block;
+            width: 48%;
+            height: 28px;
+        }
+
+        .item-id {
+            height: 28px;
+        }
+
+        .modal .form-group {
+            display: inline-block;
+            width: 47%;
+            margin: 1px 10px;
+        }
+
+        .modal .form-group .col-form-label {
+            height: 10px;
+        }
+
+        .error-msg {
+            color: red;
+        }
+
+        .current-page {
+            background-color: #00aa88;
+            color: white;
+        }
+    </style>
+{% endblock %}
+
+{% block detail %}
+    {% csrf_token %}
+    <div id="record_detail_page">
+        {#                上分栏#}
+        <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pb-2 mb-3 border-bottom">
+            <h2>记录详情</h2>
+            {#                右边按钮#}
+            <div class="btn-toolbar mb-2 mb-md-0">
+                <div class="btn-group mr-2">
+                    <button class="btn btn-sm btn-outline-secondary" data-toggle="modal"
+                            data-target="#addModal">添加
+                    </button>
+                    <button class="btn btn-sm btn-outline-secondary" data-toggle="modal"
+                            data-target="#editModal">编辑
+                    </button>
+                </div>
+                <button class="btn btn-sm btn-outline-secondary dropdown-toggle">
+                    <span data-feather="calendar"></span>
+                    This week
+                </button>
+            </div>
+        </div>
+        {{ page_str }}
+        {#                详情主页#}
+        <div class="record_detail">
+            <p class="item-id">
+                <span class="item-name">#ID:</span>
+                <span class="item-text">{{ field_dict.id.1 }}</span>
+            </p>
+            {% for key,item in field_dict.items %}
+                {% if key != 'id' %}
+                    <p class="item">
+                        <span class="item-name">{{ item.0 }}:</span>
+                        <span class="item-text">{{ item.1 }}</span>
+                    </p>
+                {% endif %}
+            {% endfor %}
+        </div>
+    </div>
+    {#            编辑模态框#}
+    <div class="modal fade" id="editModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+         aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Edit&nbsp;to&nbsp;#{{ field_dict.id.1 }}</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form action="/app1/detail/" method="post" id="edit-form">
+                        {% for key,item in field_dict.items %}
+                            {% if key == 'id' %}
+                                <input name="id" value="{{ item.1 }}" style="display: none;">
+                            {% else %}
+                                <div class="form-group">
+                                    <label for="{{ key }}" class="col-form-label">{{ item.0 }}:</label>
+                                    {% if key == 'status' %}
+                                        <select name="status_id" class="form-control">
+                                            {% for status in status_list %}
+                                                {% if status.status == item.1 %}
+                                                    <option value="{{ status.id }}"
+                                                            selected='selected'>{{ status.status }}</option>
+                                                {% else %}
+                                                    <option value="{{ status.id }}">{{ status.status }}</option>
+                                                {% endif %}
+                                            {% endfor %}
+                                        </select>
+                                    {% else %}
+                                        <input type="text" class="form-control" name="{{ key }}" value="{{ item.1 }}">
+                                    {% endif %}
+                                </div>
+                            {% endif %}
+                        {% endfor %}
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <span class="error-msg"></span>
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary" name="save">Save</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    {#            添加模态框#}
+    <div class="modal fade" id="addModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+         aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Add Record</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form action="/app1/detail/" method="post" id="add-form">
+                        {% for key,item in field_dict.items %}
+                            {% if key == 'id' %}
+                                <input name="id" value="new" style="display: none;">
+                            {% else %}
+                                <div class="form-group">
+                                    <label for="{{ key }}" class="col-form-label">{{ item.0 }}:</label>
+                                    {% if key == 'status' %}
+                                        <select name="status_id" class="form-control">
+                                            {% for status in status_list %}
+                                                <option value="{{ status.id }}">{{ status.status }}</option>
+                                            {% endfor %}
+                                        </select>
+                                    {% else %}
+                                        <input type="text" class="form-control" name="{{ key }}">
+                                    {% endif %}
+                                </div>
+                            {% endif %}
+                        {% endfor %}
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <span class="error-msg"></span>
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary" name="save">Save</button>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block js %}
+    <script>
+        $(function () {
+            $('#detail').addClass('active').parent().siblings().children('a').removeClass('active');
+            $('.page-item #page-{{ field_dict.id.1 }}').addClass('current-page');
+            {#csrf#}
+            var csrftoken = $.cookie('csrftoken');
+            function csrfSafeMethod(method) {
+                // these HTTP methods do not require CSRF protection
+                return (/^(GET|HEAD|OPTIONS|TRACE)$/.test(method));
+            }
+            $.ajaxSetup({
+                beforeSend: function (xhr, settings) {
+                    if (!csrfSafeMethod(settings.type) && !this.crossDomain) {
+                        xhr.setRequestHeader("X-CSRFToken", csrftoken);
+                    }
+                }
+            });
+            $("#editModal button[name='save']").click(function () {
+                $.ajax({
+                    url: '/app1/detail/',
+                    type: 'POST',
+                    data: $('#editModal #edit-form').serialize(),
+                    dataType: 'JSON',
+                    success: function (obj) {
+                        if (obj.status) {
+                            location.reload();
+                        } else {
+                            $('#editModal .error-msg').text(obj.error);
+                        }
+                    },
+                    error: function (obj) {
+                        $('#editModal .error-msg').text(obj.error);
+                    }
+                })
+            });
+            $("#addModal button[name='save']").click(function () {
+                $.ajax({
+                    url: '/app1/detail/',
+                    type: 'POST',
+                    data: $('#addModal #add-form').serialize(),
+                    dataType: 'JSON',
+                    success: function (obj) {
+                        if (obj.status) {
+                            location.reload();
+                        } else {
+                            $('#addModal .error-msg').text(obj.error);
+                        }
+                    },
+                    error: function (obj) {
+                        $('#addModal .error-msg').text(obj.error);
+                    }
+                })
+            });
+        })
+    </script>
+{% endblock %}
