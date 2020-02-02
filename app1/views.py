@@ -17,7 +17,7 @@ def sign_in(request):
         pwd = request.POST.get('pwd', None)
         if email == 'root@163.com' and pwd == '123':
             res = redirect('/app1/record/')
-            res.set_cookie('user', 'dasdasdasdasdaw', max_age=10)
+            res.set_cookie('user', 'dasdasdasdasdaw')
             print('已设置cookie')
         else:
             error_msg = '用户名或密码错误'
