@@ -17,9 +17,10 @@
 {% block main %}
 <div class="stui-pannel clearfix pt-0">
     <div class="stui-pannel__head clearfix">
-        <h3 class="title">
-            后台管理&nbsp;共收录{{ data_count }}部影片
+        <h3 class="title" style="display: inline;">
+            后台管理&nbsp;共{{ data_count }}条请求
         </h3>
+        <a href="/video/admin/view_log/" style="float: right;margin-right: 20px;">查看日志</a>
     </div>
     <div class="video_list">
         <ul>

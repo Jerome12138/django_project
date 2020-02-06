@@ -15,6 +15,7 @@ urlpatterns = [
     path('admin/',views.admin),
     path('admin/del_request/',views.del_request),
     path('admin/add_vod/',views.add_vod),
+    path('admin/view_log/',views.view_log),
     # path('admin/update_list/',views.update_list),
     path('',views.home),
 ]

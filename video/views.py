@@ -82,7 +82,12 @@ def push_request(request):  # 提交请求给管理员
         request_data['vod_continu'] = request.POST.get('vod_continu')
         request_data['list_name'] = request.POST.get('list_name')
         request_data['is_add'] = 0
-        dump_request_data(request_data)
+        flag = dump_request_data(request_data)
+        if flag:
+            ret['data'] = "已成功添加 %s !" % request_data['vod_name']
+        else:
+            ret['status'] = False
+            ret['error'] = "数据库操作出现错误"
         # print(request_data)
     except Exception as e:
         print(e)
@@ -175,12 +180,23 @@ def add_vod(request):   # 添加视频数据
         print(vod_id)
         vod_data = get_vod_data(vod_id)
         # print(vod_id,vod_data)
-        dump_vod_data(vod_data)
+        flag = dump_vod_data(vod_data)
         update_request_data(vod_id)
-        ret['data'] = "已成功添加 %s !" % vod_data['vod_name']
+        if flag:
+            ret['data'] = "已成功添加 %s !" % vod_data['vod_name']
+        else:
+            ret['status'] = False
+            ret['error'] = "数据库操作出现错误"
     except Exception as e:
         print(e)
         ret['status'] = False
         ret['error'] = e
     finally:
         return HttpResponse(json.dumps(ret))
+
+
+def view_log(request):
+    log = load_log()
+    return render(request, 'video_log.html', {
+        "log": log
+    })

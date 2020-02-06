@@ -1,14 +1,19 @@
 from video import models
 
 def dump_vod_data(vod_data):    # 将视频数据保存至数据库
-    obj = models.VideoData.objects.filter(vod_id = vod_data['vod_id']).first()
-    if obj:
-        obj.update(**vod_data)
-        obj.save()
-        print('数据已更新:%s' % vod_data['vod_name'])    
-    else:
-        models.VideoData.objects.create(**vod_data)    
-        print('数据已添加：%s' % vod_data['vod_name'])
+    try:
+        obj = models.VideoData.objects.filter(vod_id = vod_data['vod_id']).first()
+        if obj:
+            obj.__dict__.update(vod_data)
+            obj.save()
+            print('数据已更新:%s' % vod_data['vod_name'])    
+        else:
+            models.VideoData.objects.create(**vod_data)  
+            print('数据已添加：%s' % vod_data['vod_name'])
+        return True
+    except Exception as e:
+        print(e)
+        return False
 
 
 def load_vod_data(vod_id):  # 从数据库获取数据
@@ -17,11 +22,16 @@ def load_vod_data(vod_id):  # 从数据库获取数据
 
 
 def dump_request_data(request_data): # 将视频数据保存至数据库
-    res = models.RequestList.objects.get_or_create(**request_data)
-    if not res[1]:
-        print('数据已存在:%s' % request_data['vod_name'])
-    else:
-        print('数据已添加：%s' % request_data['vod_name'])
+    try:
+        res = models.RequestList.objects.get_or_create(**request_data)
+        if not res[1]:
+            print('数据已存在:%s' % request_data['vod_name'])
+        else:
+            print('数据已添加：%s' % request_data['vod_name'])
+        return True
+    except Exception as e:
+        print(e)
+        return False
 
 def update_request_data(vod_id):
     models.RequestList.objects.filter(vod_id=vod_id).update(is_add=1)
@@ -43,3 +53,8 @@ def load_type_data(vod_cid):  # 从数据库查询视频分类数据
     else:
         result = models.VideoData.objects.filter(vod_cid=vod_cid).all().values('vod_id', 'vod_pic', 'vod_name', 'vod_continu')
     return result
+
+def load_log():
+    with open('uwsgi.log','r',encoding="utf-8") as f:
+        log = f.read()
+    return log

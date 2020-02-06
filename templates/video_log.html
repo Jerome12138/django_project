@@ -1,0 +1,31 @@
+{% extends "video_layout.html" %}
+
+{% block title %} <title>后台管理</title> {% endblock %}
+
+{% block css %}
+<style>
+    .video_list li {
+        display: inline;
+        height: 30px;
+        text-align: center;
+        line-height: 30px;
+    }
+</style>
+{% endblock %}
+
+
+{% block main %}
+<div class="stui-pannel clearfix pt-0">
+    <div class="stui-pannel__head clearfix">
+        <h3 class="title">
+            后台管理&nbsp;日志文件
+        </h3>
+    </div>
+    <div class="video_list" style="white-space: pre-line; margin:0 50px">
+        {{ log }}
+    </div>
+</div>
+{% endblock %}
+
+{% block js %}
+{% endblock %}
