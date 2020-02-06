@@ -1,0 +1,39 @@
+{% extends "video_layout.html" %}
+
+{% block title %}<title>卧龙影视，您的专属在线影院</title>{% endblock %}
+
+{% block css %}{% endblock %}
+
+
+{% block main %}
+<div class="stui-pannel clearfix pt-0">
+    <div class="stui-pannel__head clearfix">
+        <h3 class="title">
+            共收录{{data_count}}部影片
+        </h3>
+    </div>
+    <ul class="stui-vodlist clearfix">
+        {% for item in video_list %}
+        <li class="stui-vodlist__item">
+            <a class="stui-vodlist__thumb lazyload" href="/video/play/{{ item.vod_id }}/"
+                title="{{item.vod_name}}" data-original="{{ item.vod_pic }}"
+                style="display: block; background-image: url('{{ item.vod_pic }}');">
+                <span class="play hidden-xs"></span>
+                <span class="pic-text text-right">{{item.vod_continu}}</span>
+            </a>
+            <h4 class="stui-vodlist__title"><a href="/video/play/{{ item.vod_id }}/"
+                    title="{{item.vod_name}}">{{item.vod_name}}</a></h4>
+        </li>
+        {% endfor%}
+    </ul>
+    <!-- 翻页 -->
+    <div style="clear: both;"></div>
+    <ul class="stui-page text-center clearfix">
+        {{ page_str }}
+    </ul>
+    <!-- end 翻页 -->
+</div>
+{% endblock %}
+
+
+{% block js %}{% endblock %}

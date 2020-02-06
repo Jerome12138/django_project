@@ -1,19 +1,153 @@
-from django.shortcuts import render
-import requests
-import json
-from lxml import etree
+from django.shortcuts import render, redirect, HttpResponse
+
+from video import models
+from .func.GetPageData import *
+from .func.db_handler import *
+from .func.pagination import Page
 
 # Create your views here.
 
 
-def home(request):
-    pass
-    return render(request, 'video_list.html')
+def home(request):  # 主页
+    page_index = int(request.GET.get('page')) if request.GET.get('page') else 1
+    data_list = models.VideoData.objects.all().values(
+        'vod_id', 'vod_pic', 'vod_name', 'vod_continu').order_by('-ctime')
+    data_count = len(data_list)
+    page = Page('/video/home/?page=', page_index, data_count//24 + 1)
+    page_str = page.page_str()
+    if page_index < data_count//24 + 1:
+        start_index = (page_index-1)*24
+        end_index = page_index*24
+    elif page_index == data_count//24 + 1:
+        start_index = (page_index-1)*24
+        end_index = data_count
+    else:
+        return HttpResponse('请求错误')
+    video_list = data_list[start_index:end_index]
+    return render(request, 'video_home.html', {
+        "video_list": video_list,
+        'page_str': page_str,
+        "data_count": data_count
+    })
 
 
-def play(request):
-    pass
-    return render(request, 'video_play.html')
+def play(request, vod_id, index=1):  # 播放页面
+    vod_data = load_vod_data(vod_id)
+    if not vod_data:
+        return render(request, 'video_nonepage.html', {'msg': "影片尚未收录,有需要请联系管理员"})
+    video_list = [item.split('$') for item in eval(vod_data.vod_url)]
+    # print(video_list)
+    return render(request, 'video_play.html', {
+        'vod_data': vod_data,
+        "video_list": video_list,
+        "index": index,
+        "video_url": video_list[index-1]
+    })
+
+
+def search(request):  # 搜索视频信息
+    if request.method == "POST":
+        wd = request.POST.get('wd')
+        page_index = 1
+    elif request.method == "GET":
+        wd = request.GET.get('wd')
+        page_index = int(request.GET.get('page'))
+    # print(wd, page_index)
+    video_list, data_count = get_data_list(wd, page_index)
+    # print(video_list)
+    for item in video_list:
+        if load_vod_data(item['vod_id']):
+            item['is_save'] = 1
+        else:
+            item['is_save'] = 0
+    page = Page('/video/search/?wd=%s&page=' %
+                wd, page_index, data_count//50 + 1)
+    page_str = page.page_str()
+    return render(request, 'video_search.html', {
+        "video_list": video_list,
+        "wd": wd,
+        "page_index": page_index,
+        "data_count": data_count,
+        'page_str': page_str
+    })
+
+
+def push_request(request):  # 提交请求给管理员
+    ret = {'status': True, 'error': None, 'data': None}
+    try:
+        request_data = {}
+        request_data['vod_id'] = request.POST.get('vod_id')
+        request_data['vod_name'] = request.POST.get('vod_name')
+        request_data['vod_addtime'] = request.POST.get('vod_addtime')
+        request_data['vod_continu'] = request.POST.get('vod_continu')
+        request_data['list_name'] = request.POST.get('list_name')
+        request_data['is_add'] = 0
+        dump_request_data(request_data)
+        # print(request_data)
+    except Exception as e:
+        print(e)
+        ret['status'] = False
+        ret['error'] = "未知错误"
+    finally:
+        return HttpResponse(json.dumps(ret))
+
+
+def del_request(request):   # 删除请求
+    ret = {'status': True, 'error': None, 'data': None}
+    try:
+        vod_id = request.POST.get('vod_id')
+        del_request_data(vod_id)
+    except Exception as e:
+        print(e)
+        ret['status'] = False
+        ret['error'] = e
+    finally:
+        return HttpResponse(json.dumps(ret))
+
+
+def admin(request):     # 管理页面
+    page_index = int(request.GET.get('page')) if request.GET.get('page') else 1
+    data_list = load_request_data()
+    data_count = len(data_list)
+    page = Page('/video/admin/?page=', page_index, data_count//24 + 1)
+    page_str = page.page_str()
+    if page_index < data_count//24 + 1:
+        start_index = (page_index-1)*24
+        end_index = page_index*24
+    elif page_index == data_count//24 + 1:
+        start_index = (page_index-1)*24
+        end_index = data_count
+    else:
+        return HttpResponse('请求错误')
+    request_list = data_list[start_index:end_index]
+    return render(request, 'video_admin.html', {
+        "request_list": request_list,
+        'page_str': page_str,
+        "data_count": data_count
+    })
+
+
+def vod_type(request, vod_cid):
+    page_index = int(request.GET.get('page')) if request.GET.get('page') else 1
+    data_list = load_type_data(vod_cid)
+    data_count = len(data_list)
+    page = Page('/video/type/%s/?page=' %
+                vod_cid, page_index, data_count//24 + 1)
+    page_str = page.page_str()
+    if page_index < data_count//24 + 1:
+        start_index = (page_index-1)*24
+        end_index = page_index*24
+    elif page_index == data_count//24 + 1:
+        start_index = (page_index-1)*24
+        end_index = data_count
+    else:
+        return HttpResponse('请求错误')
+    video_list = data_list[start_index:end_index]
+    return render(request, 'video_home.html', {
+        "video_list": video_list,
+        'page_str': page_str,
+        "data_count": data_count
+    })
 
 
 def play2(request, index=1):
@@ -31,52 +165,22 @@ def play2(request, index=1):
         "http://hong.tianzhen-zuida.com/20200116/18670_f706a37c/index.m3u8",
         "http://hong.tianzhen-zuida.com/20200116/18669_0bf2cf64/index.m3u8",
     ]
-    return render(request, 'video_play2.html', {"video_count":range(len(video_list)),"index": index,"video_url": video_list[index]})
+    return render(request, 'video_play2.html', {"video_count": range(len(video_list)), "index": index, "video_url": video_list[index]})
 
 
-class GetPageData(object):
-    def __init__(self):
-        self.url_temp = "http://www.zdziyuan.com/inc/s_feifei3zuidam3u8/"
-        self.headers = {
-            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36"
-        }
-
-    def parse_url(self, url):  # 发送请求，获取响应
-        return requests.get(url, headers=self.headers).content.decode()
-
-    def get_data(self, json_str):
-        ret_dict = json.loads(json_str)
-        if ret_dict['code'] != 200:
-            print(ret_dict)
-            print('AssertionError')
-            assert ret_dict['code'] == 200
-        return ret_dict
-
-    def run(self, category1=0):  # 实现主要逻辑
-        # 1.设置起始url
-        start_page = 1
-        start_url = self.url_temp
-        # 2.发送请求，获取响应
-        json_str = self.parse_url(start_url)
-        # 3.提取数据
-        data = self.get_data(json_str)
-        page_index = int(data['page']['pageindex'])
-        page_count = int(data['page']['pagecount'])
-        page_size = int(data['page']['pagesize'])
-        record_count = int(data['page']['recordcount'])
-        # 4.保存数据
-        current_page = start_page
-        print('current_page:%s added' % current_page)
-        item_list = data['data']['auctionInfos']
-        # 5.获取下一页数据
-        while data['hasNext']:
-            if current_page == 40:
-                break
-            current_page += 1
-            next_url = self.url_temp % (current_page, page_size, category1)
-            json_str = self.parse_url(next_url)
-            data = self.get_data(json_str)
-            item_list += data['data']['auctionInfos']
-            print('current_page:%s added' % current_page)
-        # 6.保存文件
-        return item_list
+def add_vod(request):   # 添加视频数据
+    ret = {'status': True, 'error': None, 'data': None}
+    try:
+        vod_id = request.POST.get('vod_id')
+        print(vod_id)
+        vod_data = get_vod_data(vod_id)
+        # print(vod_id,vod_data)
+        dump_vod_data(vod_data)
+        update_request_data(vod_id)
+        ret['data'] = "已成功添加 %s !" % vod_data['vod_name']
+    except Exception as e:
+        print(e)
+        ret['status'] = False
+        ret['error'] = e
+    finally:
+        return HttpResponse(json.dumps(ret))
