@@ -33,6 +33,10 @@ class Page(object):
             prev = self.current_page - 1
         prev_page = '<li><a class="page-link" href="%s%s">上一页</a></li>' % (self.base_url, prev)
         page_list.append(prev_page)
+        # 页码
+        page_num = '<li class="active visible-xs"><span class="num">%s/%s</span></li>' % (self.current_page, self.page_count)
+        
+        page_list.append(page_num)
         # 页面
         for page in range(start_index, end_index+1):
             if page == self.current_page:

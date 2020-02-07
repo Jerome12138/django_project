@@ -8,7 +8,7 @@
 
 {% block main %}
 <!-- 播放器  -->
-<div class="stui-pannel clearfix pt-0">
+<div class="stui-pannel clearfix" style="margin-left: 10px;margin-right: 10px;">
     <div class="stui-player col-pd pb-0">
         <div>
             <div id='video_player'></div>
@@ -27,7 +27,7 @@
                 <span class="text-muted hidden-xs">导演：</span>
                 <a href="javascript:void(0)">{{vod_data.vod_director}}</a>&nbsp; <span class="split-line"></span>
                 <span class="text-muted hidden-xs">主演：</span>
-                <a href="javascript:void(0)">{{vod_data.vod_actor}}</a>&nbsp;
+                <a href="javascript:void(0)" title="{{vod_data.vod_actor}}">{{vod_data.vod_actor|slice:"30"}}</a>&nbsp;
             </p>
         </div>
     </div>
@@ -35,7 +35,7 @@
 <!-- end 播放器  -->
 
 <!-- 播放地址 -->
-<div class="stui-pannel clearfix">
+<div class="stui-pannel clearfix" style="margin-left: 10px;margin-right: 10px;">
     <ul class="stui-content__playlist clearfix">
         {% for i in video_list %}
         <li>
@@ -47,7 +47,7 @@
 <!-- end 播放地址 -->
 
 <!-- 剧情  -->
-<div class="stui-pannel clearfix" id="desc">
+<div class="stui-pannel clearfix" id="desc" style="margin-left: 10px;margin-right: 10px;">
     <div class="stui-pannel__head clearfix">
         <h3 class="title">
             剧情介绍

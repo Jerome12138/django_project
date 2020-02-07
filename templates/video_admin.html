@@ -15,7 +15,7 @@
 
 
 {% block main %}
-<div class="stui-pannel clearfix pt-0">
+<div class="stui-pannel clearfix">
     <div class="stui-pannel__head clearfix">
         <h3 class="title" style="display: inline;">
             后台管理&nbsp;共{{ data_count }}条请求
@@ -23,26 +23,29 @@
         <a href="/video/admin/view_log/" style="float: right;margin-right: 20px;">查看日志</a>
     </div>
     <div class="video_list">
-        <ul>
+        <ul class="tt">
             <li>
-                <span style="float: left;width: 40%;background: #e9e9e9;">影片名称</span>
-                <span style="float: left;width: 20%;background: #e9e9e9;">影片类别</span>
-                <span style="float: right;width: 20%;background: #e9e9e9;">操作</span>
-                <span style="float: right;width: 20%;background: #e9e9e9;">更新时间</span>
+                <span class="v-list-1">影片名称</span>
+                <span class="v-list-2">影片类别</span>
+                <span class="v-list-4">操作</span>
+                <span class="hidden-xs v-list-3">更新时间</span>
             </li>
         </ul>
         {% for item in request_list %}
-        <ul>
+        <ul class="td">
             <li>
                 <span style="display: none;">{{ item.vod_id }}</span>
-                <span style="margin-left: 2%;float: left;width: 38%;text-align: left;border-bottom: 1px dashed #CCC;">
-                    <a href="http://www.zuidazy2.com/?m=vod-detail-id-{{ item.vod_id }}.html" target="_blank">
-                        <span>{{ item.vod_name}}</span>
-                        <span>{{ item.vod_continu}}</span>
+                <!-- 影片名称 -->
+                <span class="v-list-1" >
+                    <a href="http://www.zuidazy2.com/?m=vod-detail-id-{{ item.vod_id }}.html" target="_blank" title="{{ item.vod_name}}({{ item.vod_continu}})">
+                        <span style="border:none!important" >{{ item.vod_name}}</span>
+                        <span class="hidden-xs"style="border:none!important">({{ item.vod_continu}})</span>
                     </a>
                 </span>
-                <span style="float: left;width: 20%;border-bottom: 1px dashed #CCC;">{{ item.list_name}}</span>
-                <span style="float: right;width: 20%;border-bottom: 1px dashed #CCC;">
+                <!-- 影片类别 -->
+                <span class="v-list-2" >{{ item.list_name}}</span>
+                <!-- 操作 -->
+                <span class="v-list-4" >
                     {% if item.is_add == 0 %}
                     <a href="javascript:void(0)" class="add_btn"
                         style="color: red;border-bottom:red 1px solid;">添加资源</a>&nbsp;
@@ -51,9 +54,10 @@
                         style="color: grey;border-bottom:grey 1px solid;">添加资源</a>&nbsp;
                     {% endif %}
                     <a href="javascript:void(0)" class="del_btn"
-                        style="color: red;border-bottom:red 1px solid;">删除请求</a>
+                        style="color: red;border-bottom:red 1px solid;">删除</a>
                 </span>
-                <span style="float: right;width: 20%;border-bottom: 1px dashed #CCC;">{{ item.vod_addtime}}</span>
+                <!-- 更新时间 -->
+                <span class="v-list-3 hidden-xs" >{{ item.vod_addtime}}</span>
             </li>
         </ul>
         {% endfor%}
