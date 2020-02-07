@@ -84,7 +84,7 @@ def push_request(request):  # 提交请求给管理员
         request_data['is_add'] = 0
         flag = dump_request_data(request_data)
         if flag:
-            ret['data'] = "已成功添加 %s !" % request_data['vod_name']
+            ret['data'] = "已成功添加请求： %s !" % request_data['vod_name']
         else:
             ret['status'] = False
             ret['error'] = "数据库操作出现错误"
@@ -177,7 +177,7 @@ def add_vod(request):   # 添加视频数据
     ret = {'status': True, 'error': None, 'data': None}
     try:
         vod_id = request.POST.get('vod_id')
-        print(vod_id)
+        # print(vod_id)
         vod_data = get_vod_data(vod_id)
         # print(vod_id,vod_data)
         flag = dump_vod_data(vod_data)
@@ -197,6 +197,16 @@ def add_vod(request):   # 添加视频数据
 
 def view_log(request):
     log = load_log()
+    import re
+    log = re.sub(
+        r'(\*\*\*\sStarting\suWSGI.+?interpreter\smode\s\*\*\*)', '*** Starting uWSGI ***', log, flags = re.DOTALL)
+    log = re.sub(r'(nsukey\=.+)', '<wechat>', log)
+    log = re.sub(r'(\[pid.+?\])', '', log)
+    log = re.sub(r'(\(\)\s\{.+?bytes\})', '', log)
+    log = re.sub(r'(\d+?\sheaders\sin.+?\))', '', log)
+    log = re.sub(r'(generated.+?msecs)', '', log)
+    log_str = re.sub(r'(.+\(HTTP\/1\.1\s30\d\).+\n)', '', log)
+    # print(log_str)
     return render(request, 'video_log.html', {
-        "log": log
+        "log": log_str
     })

@@ -25,9 +25,9 @@ def dump_request_data(request_data): # 将视频数据保存至数据库
     try:
         res = models.RequestList.objects.get_or_create(**request_data)
         if not res[1]:
-            print('数据已存在:%s' % request_data['vod_name'])
+            print('请求已存在:%s' % request_data['vod_name'])
         else:
-            print('数据已添加：%s' % request_data['vod_name'])
+            print('请求已添加：%s' % request_data['vod_name'])
         return True
     except Exception as e:
         print(e)
@@ -35,7 +35,7 @@ def dump_request_data(request_data): # 将视频数据保存至数据库
 
 def update_request_data(vod_id):
     models.RequestList.objects.filter(vod_id=vod_id).update(is_add=1)
-    print(vod_id+'已更新!')
+    print(vod_id+'请求已更新!')
 
 def load_request_data():  # 从数据库获取数据
     result = models.RequestList.objects.all().values()
