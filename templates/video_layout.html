@@ -8,7 +8,6 @@
     <meta name="renderer" content="webkit|ie-comp|ie-stand">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
     <link rel="stylesheet" href="/static/stui_default.css" type="text/css">
-    <link rel="stylesheet" href="/static/tooltip.css" type="text/css">
     <link rel="shortcut icon" href="/static/img/favicon.ico" />
     {% block css %}{% endblock %}
     <!--[if lt IE 9]>
@@ -45,6 +44,7 @@
                     <li id="nav-dianshiju"><a href="/video/type/2/">电视剧</a></li>
                     <li id="nav-dongman"><a href="/video/type/3/">综艺</a></li>
                     <li id="nav-zongyi"><a href="/video/type/4/">动漫</a></li>
+                    <li class="hidden-xs" style="float: right;"><a href="/video/admin/">&nbsp;</a></li>
                 </ul>
             </nav>
             {% block main %}{% endblock %}
