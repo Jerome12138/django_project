@@ -71,6 +71,7 @@
             </a>
             <h4 class="stui-vodlist__title"><a href="/video/play/{{ item.vod_id }}/"
                     title="{{item.vod_name}}">{{item.vod_name}}</a></h4>
+            <p class="text text-overflow text-muted hidden-xs" title="{{item.vod_actor}}">{{item.vod_actor}}</p>
         </li>
         {% endfor%}
     </ul>
@@ -87,11 +88,14 @@
 {% block js %}
 <script src="/static/hammer.min.js"></script>
 <script src="/static/jquery.hammer.js"></script>
+
 <script>
-    $('#myCarousel').hammer().on('swipeleft', function () {
+    $('#myCarousel').hammer().on('swipeleft', function (event) {
+        console.log('1');
         $(this).carousel('next');
     });
-    $('#myCarousel').hammer().on('swiperight', function () {
+    $('#myCarousel').hammer().on('swiperight', function (event) {
+        console.log('2');
         $(this).carousel('prev');
     });
 </script>

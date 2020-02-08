@@ -10,8 +10,7 @@ from .func.pagination import Page
 
 def home(request):  # 主页
     page_index = int(request.GET.get('page')) if request.GET.get('page') else 1
-    data_list = models.VideoData.objects.all().values(
-        'vod_id', 'vod_pic', 'vod_name', 'vod_continu').order_by('-ctime')
+    data_list = load_all_vod_data()
     data_count = len(data_list)
     page = Page('/video/home/?page=', page_index, data_count//24 + 1)
     page_str = page.page_str()
@@ -162,13 +161,6 @@ def play2(request, index=1):
         "http://hong.tianzhen-zuida.com/20200102/17660_deee4d08/index.m3u8",
         "http://hong.tianzhen-zuida.com/20200102/17659_772db27f/index.m3u8",
         "http://hong.tianzhen-zuida.com/20200108/18057_a40df9d5/index.m3u8",
-        "http://hong.tianzhen-zuida.com/20200108/18056_3bf27619/index.m3u8",
-        "http://hong.tianzhen-zuida.com/20200109/18172_925562fc/index.m3u8",
-        "http://hong.tianzhen-zuida.com/20200109/18171_35ccef5b/index.m3u8",
-        "http://mei.huazuida.com/20200115/22516_26db2881/index.m3u8",
-        "http://mei.huazuida.com/20200115/22515_e7f7f0f7/index.m3u8",
-        "http://hong.tianzhen-zuida.com/20200116/18670_f706a37c/index.m3u8",
-        "http://hong.tianzhen-zuida.com/20200116/18669_0bf2cf64/index.m3u8",
     ]
     return render(request, 'video_play2.html', {"video_count": range(len(video_list)), "index": index, "video_url": video_list[index]})
 

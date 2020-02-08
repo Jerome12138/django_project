@@ -16,8 +16,13 @@ def dump_vod_data(vod_data):    # 将视频数据保存至数据库
         return False
 
 
-def load_vod_data(vod_id):  # 从数据库获取数据
+def load_vod_data(vod_id):  # 从数据库获取某影片数据
     result = models.VideoData.objects.filter(vod_id=vod_id).first()
+    return result
+
+def load_all_vod_data():    # 从数据库获取全部影片数据
+    result = models.VideoData.objects.all().values(
+        'vod_id', 'vod_pic', 'vod_name', 'vod_continu','vod_actor').order_by('-ctime')
     return result
 
 
@@ -47,11 +52,11 @@ def del_request_data(vod_id):  # 从数据库获取数据
 
 def load_type_data(vod_cid):  # 从数据库查询视频分类数据
     if vod_cid =='1':
-        result = models.VideoData.objects.filter(vod_cid__in=['1','5','6','7','8','9','10','11','22']).all().values('vod_id', 'vod_pic', 'vod_name', 'vod_continu')
+        result = models.VideoData.objects.filter(vod_cid__in=['1','5','6','7','8','9','10','11','22']).all().values('vod_id', 'vod_pic', 'vod_name', 'vod_continu','vod_actor').order_by('-ctime')
     elif vod_cid =='2':
-        result = models.VideoData.objects.filter(vod_cid__in=['2','12','13','14','15','19','20','21']).all().values('vod_id', 'vod_pic', 'vod_name', 'vod_continu')
+        result = models.VideoData.objects.filter(vod_cid__in=['2','12','13','14','15','19','20','21']).all().values('vod_id', 'vod_pic', 'vod_name', 'vod_continu','vod_actor').order_by('-ctime')
     else:
-        result = models.VideoData.objects.filter(vod_cid=vod_cid).all().values('vod_id', 'vod_pic', 'vod_name', 'vod_continu')
+        result = models.VideoData.objects.filter(vod_cid=vod_cid).all().values('vod_id', 'vod_pic', 'vod_name', 'vod_continu','vod_actor').order_by('-ctime')
     return result
 
 def load_log():

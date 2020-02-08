@@ -97,6 +97,7 @@ a:focus,a:hover,a:active{ text-decoration:none; color: #FF9900;}
 .stui-vodlist__thumb:hover .play{ display: block;}
 .stui-vodlist__thumb .pic-text{display: block; width: 100%; position: absolute; bottom: 0; left: 0; padding:5px 10px; text-align: right; font-size: 12px; overflow:hidden; text-overflow:ellipsis; -o-text-overflow:ellipsis; white-space:nowrap; background-repeat: no-repeat; background-image: linear-gradient(transparent,rgba(0,0,0,.5)); color: #FFFFFF;}
 .stui-vodlist__title{ font-size: 14px; margin-bottom: 0; width:100%; overflow:hidden; text-overflow:ellipsis; -o-text-overflow:ellipsis; white-space:nowrap;}
+.stui-vodlist__item .text{white-space: nowrap;text-overflow: ellipsis;overflow: hidden;min-height: 19px;font-size: 12px;margin-bottom: 0;margin-top: 5px;}
 
 /* search_list */
 .video_list li {display: inline;text-align: center;line-height: 30px;}
