@@ -1,5 +1,5 @@
 ##ignore this file##
-
+/__pycache__/
 .classpath
 .project
 .settings      
