@@ -22,8 +22,7 @@
         <!-- 轮播（Carousel）项目 -->
         <div class="carousel-inner">
             <div class="item active">
-                <a href="/video/play/77747/" title="囧妈"
-                    style="background: url(/static/img/jiongma.jpg) no-repeat;">
+                <a href="/video/play/77747/" title="囧妈" style="background: url(/static/img/jiongma.jpg) no-repeat;">
                     <span class="pic-text text-center">囧妈</span>
                 </a>
             </div>
@@ -40,12 +39,11 @@
                 </a>
             </div>
             <div class="item">
-                <a href="/video/play/75034/" title="半个喜剧"
-                    style="background: url(/static/img/bangexiju.jpg) no-repeat;">
+                <a href="/video/play/75034/" title="半个喜剧" style="background: url(/static/img/bangexiju.jpg) no-repeat;">
                     <span class="pic-text text-center">半个喜剧</span>
                 </a>
             </div>
-            
+
         </div>
         <!-- 轮播（Carousel）导航 -->
         <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
@@ -86,4 +84,15 @@
 {% endblock %}
 
 
-{% block js %}{% endblock %}
+{% block js %}
+<script src="/static/hammer.min.js"></script>
+<script src="/static/jquery.hammer.js"></script>
+<script>
+    $('#myCarousel').hammer().on('swipeleft', function () {
+        $(this).carousel('next');
+    });
+    $('#myCarousel').hammer().on('swiperight', function () {
+        $(this).carousel('prev');
+    });
+</script>
+{% endblock %}
