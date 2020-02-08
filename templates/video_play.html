@@ -1,0 +1,87 @@
+{% extends 'video_layout.html' %}
+
+{% block title %}
+<title>{{vod_data.vod_name}}&nbsp;{{ video_url.0 }}在线观看</title>
+{% endblock %}
+
+{% block css %}{% endblock %}
+
+{% block main %}
+<!-- 播放器  -->
+<div class="stui-pannel clearfix" style="margin-left: 10px;margin-right: 10px;">
+    <div class="stui-player col-pd pb-0">
+        <div>
+            <div id='video_player'></div>
+        </div>
+        <div class="stui-player__detail detail">
+            <h4 class="title">
+                <a href="/video/play/{{vod_data.vod_id}}/{{ index }}/">{{vod_data.vod_name}}</a>&nbsp;{{ video_url.0 }}
+            </h4>
+            <p class="data">
+                <span class="text-muted hidden-xs">类型：</span>
+                <a href="javascript:void(0)">{{vod_data.list_name}}</a><span class="split-line"></span>
+                <span class="text-muted hidden-xs">地区：</span>
+                <a href="javascript:void(0)">{{vod_data.vod_area}}</a><span class="split-line"></span>
+                <span class="text-muted hidden-xs">年份：</span>
+                <a href="javascript:void(0)">{{vod_data.vod_year}}</a><span class="split-line"></span>
+                <span class="text-muted hidden-xs">导演：</span>
+                <a href="javascript:void(0)">{{vod_data.vod_director}}</a>&nbsp; <span class="split-line"></span>
+                <span class="text-muted hidden-xs">主演：</span>
+                <a href="javascript:void(0)" title="{{vod_data.vod_actor}}">{{vod_data.vod_actor|slice:"30"}}</a>&nbsp;
+            </p>
+        </div>
+    </div>
+</div>
+<!-- end 播放器  -->
+
+<!-- 播放地址 -->
+<div class="stui-pannel clearfix" style="margin-left: 10px;margin-right: 10px;">
+    <ul class="stui-content__playlist clearfix">
+        {% for i in video_list %}
+        <li>
+            <a title="{{ i.0 }}" href="/video/play/{{vod_data.vod_id}}/{{ forloop.counter }}/">{{ i.0 }}</a>
+        </li>
+        {% endfor %}
+    </ul>
+</div>
+<!-- end 播放地址 -->
+
+<!-- 剧情  -->
+<div class="stui-pannel clearfix" id="desc" style="margin-left: 10px;margin-right: 10px;">
+    <div class="stui-pannel__head clearfix">
+        <h3 class="title">
+            剧情介绍
+        </h3>
+    </div>
+    <div class="col-pd clearfix">
+        <div class="stui-content__desc">
+            {{vod_data.vod_content}}
+        </div>
+    </div>
+</div>
+<!-- end 剧情  -->
+{% endblock %}
+
+{% block js %}
+<script src="/static/DPlayer/hls.min.js"></script>
+<script src="/static/DPlayer/DPlayer.min.js"></script>
+<script>
+    (function () {
+        var player = new DPlayer({
+            "container": document.getElementById("video_player"), // 对应 div 中的 id
+            "preload": "auto",
+            "video": {   // 视频配置
+                // m3u8模式
+                // "url":"https://moeplayer.b0.upaiyun.com/dplayer/hls/hikarunara.m3u8", // 示例视频链接
+                // "url":"https://dapian.video-yongjiu.com/20190731/5652_13d2ab94/800k/hls/index.m3u8", // 视频链接
+                "url": "{{ video_url.1 }}", // 视频链接
+                "type": "hls",
+                // 直链模式
+                // "url":"http://static.smartisanos.cn/common/video/t1-ui.mp4" // 示例视频链接
+            },
+        });
+        window.dplayers || (window.dplayers = []);
+        window.dplayers.push(player);
+    })()
+</script>
+{% endblock %}
