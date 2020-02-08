@@ -6,7 +6,6 @@
 <style>
     .video_list li {
         display: inline;
-        height: 30px;
         text-align: center;
         line-height: 30px;
     }
@@ -36,16 +35,17 @@
             <li>
                 <span style="display: none;">{{ item.vod_id }}</span>
                 <!-- 影片名称 -->
-                <span class="v-list-1" >
-                    <a href="http://www.zuidazy2.com/?m=vod-detail-id-{{ item.vod_id }}.html" target="_blank" title="{{ item.vod_name}}({{ item.vod_continu}})">
-                        <span style="border:none!important" >{{ item.vod_name}}</span>
-                        <span class="hidden-xs"style="border:none!important">{{ item.vod_continu}}</span>
+                <span class="v-list-1">
+                    <a href="http://www.zuidazy2.com/?m=vod-detail-id-{{ item.vod_id }}.html" target="_blank"
+                        title="{{ item.vod_name}}({{ item.vod_continu}})">
+                        <span style="border:none!important">{{ item.vod_name}}</span>
+                        <span class="hidden-xs" style="border:none!important">{{ item.vod_continu}}</span>
                     </a>
                 </span>
                 <!-- 影片类别 -->
-                <span class="v-list-2" >{{ item.list_name}}</span>
+                <span class="v-list-2">{{ item.list_name}}</span>
                 <!-- 操作 -->
-                <span class="v-list-4" >
+                <span class="v-list-4">
                     {% if item.is_add == 0 %}
                     <a href="javascript:void(0)" class="add_btn"
                         style="color: red;border-bottom:red 1px solid;">添加资源</a>&nbsp;
@@ -53,11 +53,10 @@
                     <a href="javascript:void(0)" class="add_btn"
                         style="color: grey;border-bottom:grey 1px solid;">添加资源</a>&nbsp;
                     {% endif %}
-                    <a href="javascript:void(0)" class="del_btn"
-                        style="color: red;border-bottom:red 1px solid;">删除</a>
+                    <a href="javascript:void(0)" class="del_btn" style="color: red;border-bottom:red 1px solid;">删除</a>
                 </span>
                 <!-- 更新时间 -->
-                <span class="v-list-3 hidden-xs" >{{ item.vod_addtime}}</span>
+                <span class="v-list-3 hidden-xs">{{ item.vod_addtime}}</span>
             </li>
         </ul>
         {% endfor%}
@@ -77,7 +76,7 @@
     $('.add_btn').click(function () {
         // var res = confirm('确认添加？');
         $(this).css('color', 'grey')
-                        $(this).css('border-bottom', 'grey 1px solid')
+        $(this).css('border-bottom', 'grey 1px solid')
         if (true) {
             $.ajax({
                 url: '/video/admin/add_vod/',
