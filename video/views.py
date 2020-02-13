@@ -34,7 +34,11 @@ def play(request, vod_id, index=1):  # 播放页面
     vod_data = load_vod_data(vod_id)
     if not vod_data:
         return render(request, 'video_nonepage.html', {'msg': "影片尚未收录,有需要请联系管理员"})
-    video_list = [item.split('$') for item in eval(vod_data.vod_url)]
+    url = vod_data.vod_url
+    if isinstance(url,str): #如果url只有一个，则转换为列表
+        video_list=[url.split('$'),]
+    else:
+        video_list = [item.split('$') for item in eval(vod_data.vod_url)]
     # print(video_list)
     return render(request, 'video_play.html', {
         'vod_data': vod_data,
@@ -202,3 +206,11 @@ def view_log(request):
     return render(request, 'video_log.html', {
         "log": log_str
     })
+
+def get_resources(request):
+    get_all_data = getAllData()
+    flag = get_all_data.run()
+    if flag:
+        return HttpResponse('更新完毕')
+    else:
+        return HttpResponse('更新出错')
