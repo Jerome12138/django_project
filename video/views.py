@@ -35,7 +35,7 @@ def play(request, vod_id, index=1):  # 播放页面
     if not vod_data:
         return render(request, 'video_nonepage.html', {'msg': "影片尚未收录,有需要请联系管理员"})
     url = vod_data.vod_url
-    if isinstance(url,str): #如果url只有一个，则转换为列表
+    if url[0:1]!='[': #如果url只有一个，则转换为列表
         video_list=[url.split('$'),]
     else:
         video_list = [item.split('$') for item in eval(vod_data.vod_url)]

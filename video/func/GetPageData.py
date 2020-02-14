@@ -100,7 +100,10 @@ def get_data_list(wd, page_index=1):    # 获取列表
                 'list_name': i.xpath('./span[@class="xing_vb5"]/text()')[0],
                 'vod_addtime': i.xpath('./span[@class="xing_vb6"]/text()')[0],
             }
-            video_list.append(temp)
+            if temp['list_name']!='伦理片' or temp['list_name']!='福利片':
+                video_list.append(temp)
+            else:
+                data_count -= 1
         except Exception as e:
             print(e)
             print(temp)

@@ -1,5 +1,4 @@
 from video import models
-import threading
 
 def dump_vod_data(vod_data):    # 将视频数据保存至数据库
     try:
@@ -74,7 +73,6 @@ def load_log():  # 日志
         log = f.read()
     return log
 
-# lock = threading.Lock()  # 申请线程锁
 
 def dump_bulk_data(data_list):    # 将视频数据保存至数据库
     try:
@@ -104,9 +102,7 @@ def dump_bulk_data(data_list):    # 将视频数据保存至数据库
                 item['vod_alias'] = ""
                 obj_list.append(models.VideoData(**item))
         if not obj_list:
-            # lock.acquire()  # 获取锁
             models.VideoData.objects.bulk_create(obj_list)
-            # lock.release()  # 释放线程锁
         return True
     except Exception as e:
         print("保存出错：%s" % e)
