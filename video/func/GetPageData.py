@@ -1,7 +1,7 @@
 import json
 import requests
 from lxml import etree
-from queue import Queue
+from queue import Queue, LifoQueue
 import threading
 from .db_handler import dump_bulk_data
 
@@ -67,16 +67,25 @@ def get_vod_data(vod_id):   # 根据vod_id爬取数据，返回数据字典
         '//div[@class="vodInfo"]/div[@class="vodh"]/span//text()')[0]
     vod_ul = html.xpath(
         '//div[@class="vodInfo"]/div[@class="vodinfobox"]/ul/.')[0]
-    data['vod_alias'] = vod_ul.xpath('./li[1]/span/text()')[0] if vod_ul.xpath('./li[1]/span/text()') != [] else ""
-    data['vod_director'] = vod_ul.xpath('./li[2]/span/text()')[0] if vod_ul.xpath('./li[2]/span/text()') != [] else ""
-    data['vod_actor'] = vod_ul.xpath('./li[3]/span/text()')[0] if vod_ul.xpath('./li[3]/span/text()') != [] else ""
+    data['vod_alias'] = vod_ul.xpath(
+        './li[1]/span/text()')[0] if vod_ul.xpath('./li[1]/span/text()') != [] else ""
+    data['vod_director'] = vod_ul.xpath(
+        './li[2]/span/text()')[0] if vod_ul.xpath('./li[2]/span/text()') != [] else ""
+    data['vod_actor'] = vod_ul.xpath(
+        './li[3]/span/text()')[0] if vod_ul.xpath('./li[3]/span/text()') != [] else ""
     data['list_name'] = vod_ul.xpath('./li[4]/span/text()')[0]
-    data['vod_area'] = vod_ul.xpath('./li[5]/span/text()')[0] if vod_ul.xpath('./li[5]/span/text()') != [] else ""
-    data['vod_language'] = vod_ul.xpath('./li[6]/span/text()')[0] if vod_ul.xpath('./li[6]/span/text()') != [] else ""
-    data['vod_year'] = vod_ul.xpath('./li[7]/span/text()')[0] if vod_ul.xpath('./li[7]/span/text()') != [] else ""
-    data['vod_length'] = vod_ul.xpath('./li[8]/span/text()')[0] if vod_ul.xpath('./li[8]/span/text()') != [] else ""
-    data['vod_addtime'] = vod_ul.xpath('./li[9]/span/text()')[0] if vod_ul.xpath('./li[9]/span/text()') != [] else ""
-    data['vod_content'] = vod_ul.xpath('./li[@class="cont"]/div/span[@class="more"]/text()')[0] if vod_ul.xpath('./li[@class="cont"]/div/span[@class="more"]/text()') != [] else ""
+    data['vod_area'] = vod_ul.xpath(
+        './li[5]/span/text()')[0] if vod_ul.xpath('./li[5]/span/text()') != [] else ""
+    data['vod_language'] = vod_ul.xpath(
+        './li[6]/span/text()')[0] if vod_ul.xpath('./li[6]/span/text()') != [] else ""
+    data['vod_year'] = vod_ul.xpath(
+        './li[7]/span/text()')[0] if vod_ul.xpath('./li[7]/span/text()') != [] else ""
+    data['vod_length'] = vod_ul.xpath(
+        './li[8]/span/text()')[0] if vod_ul.xpath('./li[8]/span/text()') != [] else ""
+    data['vod_addtime'] = vod_ul.xpath(
+        './li[9]/span/text()')[0] if vod_ul.xpath('./li[9]/span/text()') != [] else ""
+    data['vod_content'] = vod_ul.xpath('./li[@class="cont"]/div/span[@class="more"]/text()')[
+        0] if vod_ul.xpath('./li[@class="cont"]/div/span[@class="more"]/text()') != [] else ""
     data['vod_url'] = html.xpath('//div[@id="play_1"]/ul/li/text()')
     # print(data)
     return(data)
@@ -100,7 +109,7 @@ def get_data_list(wd, page_index=1):    # 获取列表
                 'list_name': i.xpath('./span[@class="xing_vb5"]/text()')[0],
                 'vod_addtime': i.xpath('./span[@class="xing_vb6"]/text()')[0],
             }
-            if temp['list_name']!='伦理片' or temp['list_name']!='福利片':
+            if str(temp['list_name']) != '伦理片' and str(temp['list_name']) != '福利片':
                 video_list.append(temp)
             else:
                 data_count -= 1
@@ -110,6 +119,7 @@ def get_data_list(wd, page_index=1):    # 获取列表
             print(i.xpath('./span[@class="xing_vb4"]//text()'))
     return video_list, data_count
 
+
 def run_forever(func):  # 无限循环运行
     def wrapper(obj):
         while True:
@@ -117,13 +127,12 @@ def run_forever(func):  # 无限循环运行
     return wrapper
 
 
-
 class getAllData(object):   # 获取所有数据
     def __init__(self):
         self.url_temp = "http://www.zdziyuan.com/inc/s_feifei3zuidam3u8/?p=%s"
         self.headers = {
             "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36"}
-        self.url_queue = Queue()
+        self.url_queue = LifoQueue()
         self.page_queue = Queue()
         self.error_pages = []
 
@@ -140,9 +149,9 @@ class getAllData(object):   # 获取所有数据
                 return res_dict
             except requests.exceptions.RequestException:
                 i += 1
-                print('page%s请求超时，重试%s' % (url.split('?p=')[1],i))
+                print('page%s请求超时，重试%s' % (url.split('?p=')[1], i))
             except json.decoder.JSONDecodeError:
-                print('page%s请求数据为空，已添加至错误列表'%url.split('?p=')[1])
+                print('page%s请求数据为空，已添加至错误列表' % url.split('?p=')[1])
                 self.error_pages.append(url)
         return False
 
@@ -166,13 +175,13 @@ class getAllData(object):   # 获取所有数据
             print('保存成功')
         return page_count
 
-    def add_url_to_queue(self, page_count): # 添加url队列
+    def add_url_to_queue(self, page_count):  # 添加url队列
         for i in range(2, page_count+1):
-            self.url_queue.put(self.url_temp % i)
+            self.url_queue.put(i)
 
     @run_forever
     def add_page_to_queue(self):    # 解析页面，添加至页面数据队列
-        url = self.url_queue.get()
+        url = self.url_temp % self.url_queue.get()
         res_dict = self.parse_url(url)
         if not res_dict:
             print('page:', url.split('?p=')[1], '请求出现错误，放入错误列表')
@@ -188,10 +197,10 @@ class getAllData(object):   # 获取所有数据
         res_dict = self.page_queue.get()
         flag = dump_bulk_data(res_dict['data'])
         if not flag:
-            print('%s保存出现错误'% res_dict['page']['pageindex'])
+            print('%s保存出现错误' % res_dict['page']['pageindex'])
             self.page_queue.put(res_dict)
         else:
-            print('page%s保存成功'% res_dict['page']['pageindex'])
+            print('page%s保存成功' % res_dict['page']['pageindex'])
         self.page_queue.task_done()
 
     def run_use_more_thread(self, func, count=1):   # 运行多线程
@@ -211,7 +220,7 @@ class getAllData(object):   # 获取所有数据
             # 获取下页数据
             self.add_url_to_queue(page_count)
             self.run_use_more_thread(self.add_page_to_queue, 30)
-            self.run_use_more_thread(self.save_data, 10)
+            self.run_use_more_thread(self.save_data, 20)
             # 等待线程结束
             self.url_queue.join()
             self.page_queue.join()

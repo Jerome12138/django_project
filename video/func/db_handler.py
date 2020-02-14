@@ -68,8 +68,8 @@ def load_type_data(vod_cid):  # 从数据库查询视频分类数据
     return result
 
 
-def load_log():  # 日志
-    with open('uwsgi.log', 'r', encoding="utf-8") as f:
+def load_log(log_path):  # 日志
+    with open(log_path, 'r', encoding="utf-8") as f:
         log = f.read()
     return log
 
@@ -77,32 +77,40 @@ def load_log():  # 日志
 def dump_bulk_data(data_list):    # 将视频数据保存至数据库
     try:
         obj_list = []
+        update_list = []
         for item in data_list:
+            item.pop('vod_title')
+            item.pop('vod_type')
+            item.pop('vod_keywords')
+            item.pop('vod_filmtime')
+            item.pop('vod_server')
+            item.pop('vod_play')
+            item.pop('vod_inputer')
+            item.pop('vod_reurl')
+            item.pop('vod_weekday')
+            item.pop('vod_copyright')
+            item.pop('vod_state')
+            item.pop('vod_version')
+            item.pop('vod_tv')
+            item.pop('vod_total')
+            item.pop('vod_status')
+            item.pop('vod_stars')
+            item.pop('vod_hits')
+            item.pop('vod_isend')
+            item.pop('vod_douban_id')
+            item.pop('vod_series')
+            item['vod_alias'] = ""
             if not models.VideoData.objects.filter(vod_id=item['vod_id']).exists():
-                item.pop('vod_title')
-                item.pop('vod_type')
-                item.pop('vod_keywords')
-                item.pop('vod_filmtime')
-                item.pop('vod_server')
-                item.pop('vod_play')
-                item.pop('vod_inputer')
-                item.pop('vod_reurl')
-                item.pop('vod_weekday')
-                item.pop('vod_copyright')
-                item.pop('vod_state')
-                item.pop('vod_version')
-                item.pop('vod_tv')
-                item.pop('vod_total')
-                item.pop('vod_status')
-                item.pop('vod_stars')
-                item.pop('vod_hits')
-                item.pop('vod_isend')
-                item.pop('vod_douban_id')
-                item.pop('vod_series')
-                item['vod_alias'] = ""
                 obj_list.append(models.VideoData(**item))
+                # models.VideoData.objects.create(**item)
+            else:
+                update_list.append(models.VideoData(**item))
+                # obj.__dict__.update(item)
+                # obj.save()
         if not obj_list:
             models.VideoData.objects.bulk_create(obj_list)
+        if not update_list:
+            models.VideoData.objects.bulk_update(update_list, fields=["vod_id"],batch_size=100)
         return True
     except Exception as e:
         print("保存出错：%s" % e)

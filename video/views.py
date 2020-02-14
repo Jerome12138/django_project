@@ -4,6 +4,7 @@ from video import models
 from .func.GetPageData import *
 from .func.db_handler import *
 from .func.pagination import Page
+import time,os
 
 # Create your views here.
 
@@ -35,8 +36,8 @@ def play(request, vod_id, index=1):  # 播放页面
     if not vod_data:
         return render(request, 'video_nonepage.html', {'msg': "影片尚未收录,有需要请联系管理员"})
     url = vod_data.vod_url
-    if url[0:1]!='[': #如果url只有一个，则转换为列表
-        video_list=[url.split('$'),]
+    if url[0:1] != '[':  # 如果url只有一个，则转换为列表
+        video_list = [url.split('$'), ]
     else:
         video_list = [item.split('$') for item in eval(vod_data.vod_url)]
     # print(video_list)
@@ -191,11 +192,18 @@ def add_vod(request):   # 添加视频数据
         return HttpResponse(json.dumps(ret))
 
 
-def view_log(request):
-    log = load_log()
+def view_log(request, log_date=0):
+    if log_date == 0:
+        log_date = time.strftime("%Y-%m-%d",time.localtime(time.time()))
+        log_path = 'uwsgi.log'
+    else:
+        log_path = 'logs/uwsgi-%s.log' % log_date
+        if not(os.path.exists(log_path) and os.path.isfile(log_path)):
+            return render(request, 'video_nonepage.html',{'msg':'当天无日志'})
+    log = load_log(log_path)
     import re
     log = re.sub(
-        r'(\*\*\*\sStarting\suWSGI.+?interpreter\smode\s\*\*\*)', '*** Starting uWSGI ***', log, flags = re.DOTALL)
+        r'(\*\*\*\sStarting\suWSGI.+?interpreter\smode\s\*\*\*)', '*** Starting uWSGI ***', log, flags=re.DOTALL)
     log = re.sub(r'(nsukey\=.+)', '<wechat>', log)
     log = re.sub(r'(\[pid.+?\])', '', log)
     log = re.sub(r'(\(\)\s\{.+?bytes\})', '', log)
@@ -204,8 +212,10 @@ def view_log(request):
     log_str = re.sub(r'(.+\(HTTP\/1\.1\s30\d\).+\n)', '', log)
     # print(log_str)
     return render(request, 'video_log.html', {
-        "log": log_str
+        "log": log_str,
+        'log_date':log_date
     })
+
 
 def get_resources(request):
     get_all_data = getAllData()
