@@ -2365,3 +2365,2682 @@ page20保存成功
 [pid: 5395|app: 0|req: 69/103] 143.255.243.187 () {32 vars in 471 bytes} [Sat Feb 15 10:55:06 2020] GET / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 1)
 [pid: 5395|app: 0|req: 70/104] 117.155.56.88 () {44 vars in 874 bytes} [Sat Feb 15 11:34:41 2020] GET /video/type/1/ => generated 32185 bytes in 57 msecs (HTTP/1.1 200) 6 headers in 320 bytes (1 switches on core 1)
 [pid: 5395|app: 0|req: 71/105] 117.155.56.88 () {46 vars in 904 bytes} [Sat Feb 15 11:34:45 2020] GET /video/ => generated 32192 bytes in 86 msecs (HTTP/1.1 200) 6 headers in 320 bytes (1 switches on core 0)
+[pid: 5395|app: 0|req: 72/106] 39.105.188.56 () {34 vars in 451 bytes} [Sat Feb 15 12:01:26 2020] GET / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 1)
+[pid: 5395|app: 0|req: 73/107] 117.155.56.88 () {40 vars in 766 bytes} [Sat Feb 15 12:22:44 2020] GET /video/admin/view_log/ => generated 58831 bytes in 6 msecs (HTTP/1.1 200) 6 headers in 320 bytes (1 switches on core 1)
+[pid: 5395|app: 0|req: 74/108] 117.155.56.88 () {42 vars in 803 bytes} [Sat Feb 15 12:22:46 2020] GET /video/admin/view_log/ => generated 58924 bytes in 7 msecs (HTTP/1.1 200) 6 headers in 320 bytes (1 switches on core 0)
+[pid: 5395|app: 0|req: 75/109] 117.155.56.88 () {42 vars in 785 bytes} [Sat Feb 15 12:22:47 2020] GET /video/admin/ => generated 9640 bytes in 3 msecs (HTTP/1.1 200) 6 headers in 319 bytes (1 switches on core 1)
+[pid: 5398|app: 0|req: 19/110] 117.155.56.88 () {42 vars in 787 bytes} [Sat Feb 15 12:22:48 2020] GET /video/type/4/ => generated 36187 bytes in 42 msecs (HTTP/1.1 200) 6 headers in 320 bytes (1 switches on core 0)
+[pid: 5398|app: 0|req: 20/111] 117.155.56.88 () {42 vars in 787 bytes} [Sat Feb 15 12:22:50 2020] GET /video/type/4/ => generated 36187 bytes in 39 msecs (HTTP/1.1 200) 6 headers in 320 bytes (1 switches on core 1)
+[pid: 5395|app: 0|req: 76/112] 117.155.56.88 () {44 vars in 823 bytes} [Sat Feb 15 12:22:58 2020] GET /video/ => generated 32192 bytes in 91 msecs (HTTP/1.1 200) 6 headers in 320 bytes (1 switches on core 0)
+[pid: 5395|app: 0|req: 77/113] 117.155.56.88 () {44 vars in 845 bytes} [Sat Feb 15 12:23:31 2020] GET /video/play/76875/ => generated 13782 bytes in 7 msecs (HTTP/1.1 200) 6 headers in 320 bytes (1 switches on core 1)
+[pid: 5395|app: 0|req: 78/114] 117.155.56.88 () {44 vars in 855 bytes} [Sat Feb 15 12:24:10 2020] GET /video/play/76875/16/ => generated 13783 bytes in 8 msecs (HTTP/1.1 200) 6 headers in 320 bytes (1 switches on core 0)
+[pid: 5395|app: 0|req: 79/115] 117.155.56.88 () {44 vars in 858 bytes} [Sat Feb 15 12:25:36 2020] GET /video/play/76875/17/ => generated 13783 bytes in 8 msecs (HTTP/1.1 200) 6 headers in 320 bytes (1 switches on core 1)
+[pid: 5395|app: 0|req: 80/116] 183.92.249.46 () {44 vars in 831 bytes} [Sat Feb 15 12:28:17 2020] GET /video/ => generated 32192 bytes in 86 msecs (HTTP/1.1 200) 6 headers in 320 bytes (1 switches on core 0)
+[pid: 5395|app: 0|req: 81/117] 183.92.249.46 () {44 vars in 839 bytes} [Sat Feb 15 12:28:18 2020] GET /video/play/60350/ => generated 13708 bytes in 8 msecs (HTTP/1.1 200) 6 headers in 320 bytes (1 switches on core 1)
+[pid: 5395|app: 0|req: 82/118] 183.92.249.46 () {44 vars in 854 bytes} [Sat Feb 15 12:28:23 2020] GET /video/play/60350/8/ => generated 13705 bytes in 8 msecs (HTTP/1.1 200) 6 headers in 320 bytes (1 switches on core 0)
+[pid: 5395|app: 0|req: 83/119] 14.18.182.223 () {36 vars in 582 bytes} [Sat Feb 15 12:32:17 2020] GET /phpmyadmin/index.php => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 1)
+[pid: 5395|app: 0|req: 84/120] 183.92.249.46 () {44 vars in 856 bytes} [Sat Feb 15 12:36:48 2020] GET /video/play/60350/9/ => generated 13705 bytes in 8 msecs (HTTP/1.1 200) 6 headers in 320 bytes (1 switches on core 1)
+[pid: 5395|app: 0|req: 85/121] 183.92.249.46 () {44 vars in 856 bytes} [Sat Feb 15 12:36:55 2020] GET /video/play/60350/9/ => generated 13705 bytes in 8 msecs (HTTP/1.1 200) 6 headers in 320 bytes (1 switches on core 0)
+[pid: 5395|app: 0|req: 86/122] 183.92.249.46 () {44 vars in 856 bytes} [Sat Feb 15 12:36:56 2020] GET /video/play/60350/9/ => generated 13705 bytes in 8 msecs (HTTP/1.1 200) 6 headers in 320 bytes (1 switches on core 1)
+[pid: 5395|app: 0|req: 87/123] 182.254.52.17 () {36 vars in 564 bytes} [Sat Feb 15 12:52:46 2020] GET /video/admin => generated 0 bytes in 1 msecs (HTTP/1.1 301) 4 headers in 151 bytes (1 switches on core 0)
+[pid: 5398|app: 0|req: 21/124] 182.254.52.17 () {38 vars in 614 bytes} [Sat Feb 15 12:52:46 2020] GET /video/admin/ => generated 9640 bytes in 4 msecs (HTTP/1.1 200) 6 headers in 319 bytes (1 switches on core 0)
+[pid: 5398|app: 0|req: 22/125] 182.254.52.17 () {36 vars in 580 bytes} [Sat Feb 15 13:58:51 2020] GET /video/play/73293/2/ => generated 14842 bytes in 9 msecs (HTTP/1.1 200) 6 headers in 320 bytes (1 switches on core 1)
+[pid: 5395|app: 0|req: 88/126] 182.254.52.17 () {36 vars in 568 bytes} [Sat Feb 15 14:42:10 2020] GET /video/type/4/ => generated 36187 bytes in 42 msecs (HTTP/1.1 200) 6 headers in 320 bytes (1 switches on core 0)
+...gracefully killing workers...
+Gracefully killing worker 1 (pid: 5395)...
+Gracefully killing worker 2 (pid: 5396)...
+Gracefully killing worker 3 (pid: 5397)...
+Gracefully killing worker 4 (pid: 5398)...
+worker 1 buried after 1 seconds
+worker 2 buried after 1 seconds
+worker 3 buried after 1 seconds
+worker 4 buried after 1 seconds
+binary reloading uWSGI...
+chdir() to /home/ubuntu/git/django_project
+closing all non-uwsgi socket fds > 2 (max_fd = 1024)...
+found fd 6 mapped to socket 0 (127.0.0.1:8001)
+running /home/ubuntu/.local/bin/uwsgi
+[uWSGI] getting INI configuration from web.ini
+*** Starting uWSGI 2.0.18 (64bit) on [Sat Feb 15 15:04:52 2020] ***
+compiled with version: 7.4.0 on 31 January 2020 10:32:09
+os: Linux-4.15.0-54-generic #58-Ubuntu SMP Mon Jun 24 10:55:24 UTC 2019
+nodename: VM-32-8-ubuntu
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 1
+current working directory: /home/ubuntu/git/django_project
+detected binary path: /home/ubuntu/.local/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+chdir() to /home/ubuntu/git/django_project
+your processes number limit is 7079
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 inherited INET address 127.0.0.1:8001 fd 6
+Python version: 3.6.8 (default, Oct  7 2019, 12:59:55)  [GCC 8.3.0]
+Python main interpreter initialized at 0x564ec9ea1320
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 416720 bytes (406 KB) for 8 cores
+*** Operational MODE: preforking+threaded ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x564ec9ea1320 pid: 5393 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+gracefully (RE)spawned uWSGI master process (pid: 5393)
+spawned uWSGI worker 1 (pid: 21264, cores: 2)
+spawned uWSGI worker 2 (pid: 21265, cores: 2)
+spawned uWSGI worker 3 (pid: 21266, cores: 2)
+spawned uWSGI worker 4 (pid: 21267, cores: 2)
+[pid: 21265|app: 0|req: 1/1] 117.155.56.88 () {46 vars in 898 bytes} [Sat Feb 15 15:05:00 2020] GET /video/ => generated 32192 bytes in 281 msecs (HTTP/1.1 200) 6 headers in 320 bytes (1 switches on core 0)
+[pid: 21265|app: 0|req: 2/2] 117.155.56.88 () {46 vars in 909 bytes} [Sat Feb 15 15:05:05 2020] GET /video/admin/ => generated 9640 bytes in 5 msecs (HTTP/1.1 200) 6 headers in 319 bytes (1 switches on core 1)
+[pid: 21264|app: 0|req: 1/3] 117.155.56.88 () {46 vars in 933 bytes} [Sat Feb 15 15:05:07 2020] GET /video/admin/view_log/ => generated 61523 bytes in 173 msecs (HTTP/1.1 200) 6 headers in 320 bytes (1 switches on core 0)
+[pid: 21264|app: 0|req: 3/4] 117.155.56.88 () {44 vars in 798 bytes} [Sat Feb 15 15:06:03 2020] GET /favicon.ico => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+page1请求超时，重试1
+[pid: 21264|app: 0|req: 4/5] 117.155.56.88 () {48 vars in 964 bytes} [Sat Feb 15 15:06:17 2020] GET /video/admin/view_log/ => generated 61727 bytes in 7 msecs (HTTP/1.1 200) 6 headers in 320 bytes (1 switches on core 0)
+一共1131页数据
+保存成功
+获取到page: 1130
+page1130保存成功
+获取到page: 1124
+page1124保存成功
+获取到page: 1131
+[pid: 21264|app: 0|req: 5/6] 117.155.56.88 () {48 vars in 964 bytes} [Sat Feb 15 15:06:20 2020] GET /video/admin/view_log/ => generated 61955 bytes in 15 msecs (HTTP/1.1 200) 6 headers in 320 bytes (1 switches on core 0)
+page1131保存成功
+获取到page: 1127
+page1127保存成功
+获取到page: 1109
+page1109保存成功
+获取到page: 1129
+page1129保存成功
+获取到page: 1103
+获取到page: 1104
+page1103保存成功
+page1104保存成功
+获取到page: 1117
+page1117保存成功
+获取到page: 1122
+page1122保存成功
+获取到page: 1126
+page1126保存成功
+获取到page: 1128
+page1128保存成功
+获取到page: 1116
+page1116保存成功
+获取到page: 1125
+获取到page: 1096
+page1125保存成功
+page1096保存成功
+获取到page: 1108
+page1108保存成功
+获取到page: 1120
+page1120保存成功
+获取到page: 1105
+page1105保存成功
+获取到page: 1118
+page1118保存成功
+获取到page: 1115
+page1115保存成功
+获取到page: 1102
+page1102保存成功
+获取到page: 1101
+page1101保存成功
+获取到page: 1094
+page1094保存成功
+获取到page: 1112
+page1112保存成功
+[pid: 21264|app: 0|req: 6/7] 117.155.56.88 () {48 vars in 964 bytes} [Sat Feb 15 15:06:24 2020] GET /video/admin/view_log/ => generated 62930 bytes in 7 msecs (HTTP/1.1 200) 6 headers in 320 bytes (1 switches on core 0)
+获取到page: 1123
+获取到page: 1091
+page1123保存成功
+page1091保存成功
+获取到page: 1087
+page1087保存成功
+获取到page: 1086
+获取到page: 1100
+page1086保存成功
+page1100保存成功
+获取到page: 1106
+page1106保存成功
+获取到page: 1119
+page1119保存成功
+获取到page: 1114
+page1114保存成功
+获取到page: 1098
+page1098保存成功
+获取到page: 1080
+page1080保存成功
+获取到page: 1111
+page1111保存成功
+获取到page: 1079
+page1079保存成功
+获取到page: 1081
+获取到page: 1073
+获取到page: 1121
+page1081保存成功
+page1121保存成功
+page1073保存成功
+[pid: 21264|app: 0|req: 7/8] 117.155.56.88 () {48 vars in 964 bytes} [Sat Feb 15 15:06:29 2020] GET /video/admin/view_log/ => generated 63617 bytes in 9 msecs (HTTP/1.1 200) 6 headers in 320 bytes (1 switches on core 0)
+获取到page: 1083
+page1083保存成功
+获取到page: 1078
+page1078保存成功
+获取到page: 1066
+page1066保存成功
+获取到page: 1107
+page1107保存成功
+获取到page: 1063
+page1063保存成功
+获取到page: 1090
+page1090保存成功
+获取到page: 1099
+page1099保存成功
+获取到page: 1092
+page1092保存成功
+获取到page: 1075
+page1075保存成功
+获取到page: 1060
+page1060保存成功
+page1110请求超时，重试1
+获取到page: 1076
+page1076保存成功
+获取到page: 1074
+page1074保存成功
+page1089请求超时，重试1
+获取到page: 1067
+page1067保存成功
+获取到page: 1055
+page1055保存成功
+获取到page: 1069
+page1069保存成功
+获取到page: 1059
+page1059保存成功
+获取到page: 1110
+page1110保存成功
+获取到page: 1070
+page1070保存成功
+page1095请求超时，重试1
+获取到page: 1051
+page1051保存成功
+获取到page: 1088
+page1088保存成功
+获取到page: 1057
+page1057保存成功
+获取到page: 1054
+page1054保存成功
+获取到page: 1065
+page1065保存成功
+获取到page: 1072
+page1072保存成功
+page1093请求超时，重试1
+page1077请求超时，重试1
+page1071请求超时，重试1
+获取到page: 1052
+page1052保存成功
+获取到page: 1039
+page1039保存成功
+获取到page: 1082
+page1084请求超时，重试1
+page1082保存成功
+获取到page: 1097
+page1097保存成功
+获取到page: 1056
+获取到page: 1045
+page1056保存成功
+page1045保存成功
+获取到page: 1048
+page1048保存成功
+获取到page: 1058
+page1058保存成功
+获取到page: 1113
+page1113保存成功
+获取到page: 1093
+page1093保存成功
+获取到page: 1033
+获取到page: 1042
+获取到page: 1036
+page1033保存成功
+page1042保存成功
+page1036保存成功
+page1061请求超时，重试1
+page1064请求超时，重试1
+获取到page: 1046
+page1046保存成功
+获取到page: 1031
+page1031保存成功
+获取到page: 1089
+page1089保存成功
+获取到page: 1061
+page1038请求超时，重试1
+page1061保存成功
+获取到page: 1068
+page1068保存成功
+获取到page: 1043
+page1043保存成功
+获取到page: 1025
+page1025保存成功
+获取到page: 1028
+page1028保存成功
+获取到page: 1030
+page1030保存成功
+获取到page: 1040
+page1040保存成功
+获取到page: 1029
+page1044请求超时，重试1
+page1029保存成功
+获取到page: 1049
+page1049保存成功
+page1027请求超时，重试1
+获取到page: 1023
+page1023保存成功
+获取到page: 1041
+page1041保存成功
+获取到page: 1050
+page1062请求超时，重试1
+page1050保存成功
+page1071请求超时，重试2
+获取到page: 1084
+page1084保存成功
+获取到page: 1026
+获取到page: 1017
+page1026保存成功
+page1017保存成功
+获取到page: 1015
+page1015保存成功
+获取到page: 1047
+page1047保存成功
+获取到page: 1013
+page1013保存成功
+获取到page: 1018
+page1018保存成功
+获取到page: 1022
+page1022保存成功
+page1035请求超时，重试1
+获取到page: 1053
+page1053保存成功
+page1095请求超时，重试2
+获取到page: 1019
+page1044请求超时，重试2
+page1034请求超时，重试1
+page1019保存成功
+获取到page: 1006
+page1006保存成功
+获取到page: 1009
+page1009保存成功
+获取到page: 1024
+page1024保存成功
+page1037请求超时，重试1
+获取到page: 1027
+page1027保存成功
+获取到page: 1007
+page1007保存成功
+获取到page: 1077
+page1077保存成功
+获取到page: 1003
+page1003保存成功
+获取到page: 1011
+page1011保存成功
+获取到page: 999
+page999保存成功
+获取到page: 1001
+page1001保存成功
+获取到page: 1010
+page1010保存成功
+获取到page: 1005
+获取到page: 1095
+page1005保存成功
+page1095保存成功
+page1064请求超时，重试2
+获取到page: 1044
+page1044保存成功
+获取到page: 1035
+获取到page: 1002
+page1035保存成功
+获取到page: 997
+page1002保存成功
+page997保存成功
+获取到page: 993
+page993保存成功
+获取到page: 1034
+获取到page: 1085
+page1034保存成功
+page1085保存成功
+page1014请求超时，重试1
+获取到page: 992
+page992保存成功
+获取到page: 1021
+page1021保存成功
+获取到page: 1004
+page1032请求超时，重试1
+page1004保存成功
+获取到page: 995
+page995保存成功
+获取到page: 989
+page989保存成功
+获取到page: 1071
+page1071保存成功
+获取到page: 1062
+page1062保存成功
+page1016请求超时，重试1
+page1038请求超时，重试2
+获取到page: 996
+page996保存成功
+获取到page: 977
+page977保存成功
+获取到page: 984
+page984保存成功
+获取到page: 1014
+page1014保存成功
+获取到page: 982
+page982保存成功
+page1020请求超时，重试1
+获取到page: 983
+page983保存成功
+获取到page: 981
+page981保存成功
+获取到page: 1038
+page1038保存成功
+获取到page: 1037
+page1037保存成功
+获取到page: 980
+page980保存成功
+获取到page: 976
+page976保存成功
+获取到page: 1012
+page1012保存成功
+获取到page: 991
+page991保存成功
+获取到page: 987
+page987保存成功
+获取到page: 975
+page975保存成功
+获取到page: 1008
+page1008保存成功
+page1000请求超时，重试1
+获取到page: 972
+page972保存成功
+获取到page: 967
+获取到page: 966
+page966保存成功
+page967保存成功
+获取到page: 968
+page968保存成功
+获取到page: 1064
+page1064保存成功
+获取到page: 973
+page973保存成功
+获取到page: 962
+page962保存成功
+获取到page: 979
+page979保存成功
+获取到page: 956
+page956保存成功
+获取到page: 974
+page974保存成功
+page985请求超时，重试1
+获取到page: 957
+page957保存成功
+获取到page: 959
+获取到page: 1020
+page1020保存成功
+page959保存成功
+page990请求超时，重试1
+获取到page: 1000
+page1000保存成功
+获取到page: 945
+page978请求超时，重试1
+page945保存成功
+获取到page: 947
+获取到page: 963
+page947保存成功
+page963保存成功
+获取到page: 958
+page958保存成功
+获取到page: 1016
+page1016保存成功
+获取到page: 960
+page960保存成功
+获取到page: 985
+page985保存成功
+获取到page: 964
+page964保存成功
+获取到page: 986
+page986保存成功
+page998请求超时，重试1
+获取到page: 969
+page969保存成功
+page988请求超时，重试1
+page971请求超时，重试1
+获取到page: 941
+page941保存成功
+获取到page: 953
+page953保存成功
+page965请求超时，重试1
+获取到page: 954
+page954保存成功
+获取到page: 950
+page950保存成功
+page1032请求超时，重试2
+page946请求超时，重试1
+获取到page: 940
+page940保存成功
+获取到page: 939
+page939保存成功
+page970请求超时，重试1
+获取到page: 978
+page978保存成功
+获取到page: 938
+page938保存成功
+获取到page: 971
+page971保存成功
+获取到page: 998
+page998保存成功
+获取到page: 961
+page961保存成功
+获取到page: 944
+page944保存成功
+获取到page: 965
+page965保存成功
+page952请求超时，重试1
+获取到page: 934
+page934保存成功
+获取到page: 943
+page943保存成功
+获取到page: 927
+page927保存成功
+获取到page: 946
+page946保存成功
+获取到page: 937
+page937保存成功
+page948请求超时，重试1
+获取到page: 931
+page931保存成功
+获取到page: 994
+page994保存成功
+获取到page: 928
+page928保存成功
+获取到page: 917
+page917保存成功
+获取到page: 930
+page930保存成功
+获取到page: 920
+page920保存成功
+page951请求超时，重试1
+page955请求超时，重试1
+获取到page: 924
+page924保存成功
+获取到page: 933
+获取到page: 915
+获取到page: 921
+page933保存成功
+page915保存成功
+获取到page: 932
+page921保存成功
+page932保存成功
+获取到page: 970
+page970保存成功
+获取到page: 942
+page942保存成功
+page990请求超时，重试2
+获取到page: 923
+page923保存成功
+获取到page: 919
+page919保存成功
+获取到page: 988
+page988保存成功
+page949请求超时，重试1
+获取到page: 925
+page925保存成功
+page936请求超时，重试1
+获取到page: 955
+page955保存成功
+获取到page: 929
+page929保存成功
+获取到page: 906
+page906保存成功
+获取到page: 907
+page907保存成功
+获取到page: 905
+page905保存成功
+获取到page: 908
+page908保存成功
+获取到page: 1032
+page1032保存成功
+获取到page: 900
+page900保存成功
+page926请求超时，重试1
+获取到page: 897
+page897保存成功
+获取到page: 951
+page951保存成功
+获取到page: 901
+获取到page: 912
+page901保存成功
+page912保存成功
+获取到page: 936
+page936保存成功
+获取到page: 914
+page914保存成功
+获取到page: 922
+page922保存成功
+获取到page: 895
+page895保存成功
+获取到page: 913
+page913保存成功
+page918请求超时，重试1
+获取到page: 926
+page926保存成功
+page948请求超时，重试2
+获取到page: 887
+page887保存成功
+获取到page: 910
+page910保存成功
+获取到page: 888
+page888保存成功
+获取到page: 891
+page891保存成功
+page916请求超时，重试1
+page911请求超时，重试1
+获取到page: 935
+page935保存成功
+page952请求超时，重试2
+获取到page: 883
+page883保存成功
+获取到page: 880
+page880保存成功
+page990请求超时，重试3
+page899请求超时，重试1
+获取到page: 889
+page889保存成功
+获取到page: 885
+page885保存成功
+获取到page: 892
+page892保存成功
+page904请求超时，重试1
+获取到page: 990
+page990保存成功
+获取到page: 948
+page948保存成功
+获取到page: 881
+page881保存成功
+获取到page: 903
+page903保存成功
+page916请求超时，重试2
+获取到page: 876
+page876保存成功
+获取到page: 902
+page902保存成功
+page898请求超时，重试1
+获取到page: 870
+page870保存成功
+获取到page: 877
+获取到page: 909
+获取到page: 872
+page877保存成功
+page909保存成功
+page872保存成功
+获取到page: 899
+page899保存成功
+获取到page: 893
+page893保存成功
+获取到page: 896
+page896保存成功
+获取到page: 874
+page874保存成功
+获取到page: 918
+page918保存成功
+page904请求超时，重试2
+page894请求超时，重试1
+获取到page: 871
+page871保存成功
+获取到page: 875
+page875保存成功
+page890请求超时，重试1
+获取到page: 879
+page879保存成功
+page911请求超时，重试2
+获取到page: 898
+page898保存成功
+获取到page: 952
+page952保存成功
+获取到page: 949
+page949保存成功
+获取到page: 863
+获取到page: 859
+page863保存成功
+page859保存成功
+获取到page: 894
+page894保存成功
+获取到page: 858
+page858保存成功
+page882请求超时，重试1
+获取到page: 869
+page869保存成功
+获取到page: 886
+page886保存成功
+获取到page: 854
+page854保存成功
+获取到page: 890
+page890保存成功
+page878请求超时，重试1
+获取到page: 860
+page860保存成功
+获取到page: 873
+page873保存成功
+获取到page: 884
+page884保存成功
+获取到page: 849
+page849保存成功
+获取到page: 847
+page847保存成功
+获取到page: 850
+page850保存成功
+page866请求超时，重试1
+获取到page: 852
+page911请求超时，重试3
+page852保存成功
+获取到page: 845
+page845保存成功
+page861请求超时，重试1
+获取到page: 856
+page856保存成功
+获取到page: 868
+获取到page: 839
+page868保存成功
+page839保存成功
+获取到page: 840
+page916请求超时，重试3
+page840保存成功
+获取到page: 844
+page844保存成功
+获取到page: 843
+page843保存成功
+获取到page: 865
+page865保存成功
+获取到page: 846
+page846保存成功
+page857请求超时，重试1
+获取到page: 835
+page835保存成功
+page864请求超时，重试1
+获取到page: 841
+获取到page: 831
+page831保存成功
+page841保存成功
+获取到page: 916
+page916保存成功
+page855请求超时，重试1
+page862请求超时，重试1
+page867请求超时，重试1
+获取到page: 842
+page842保存成功
+获取到page: 861
+获取到page: 878
+page861保存成功
+page878保存成功
+获取到page: 823
+获取到page: 826
+page823保存成功
+page826保存成功
+获取到page: 882
+page882保存成功
+page904请求超时，重试3
+获取到page: 833
+page833保存成功
+获取到page: 829
+page829保存成功
+获取到page: 828
+page828保存成功
+获取到page: 824
+page824保存成功
+获取到page: 822
+page822保存成功
+获取到page: 855
+page855保存成功
+获取到page: 851
+page851保存成功
+获取到page: 862
+page862保存成功
+page853请求超时，重试1
+page837请求超时，重试1
+获取到page: 815
+page815保存成功
+获取到page: 867
+page867保存成功
+page866请求超时，重试2
+获取到page: 810
+page810保存成功
+获取到page: 853
+page853保存成功
+page818请求超时，重试1
+获取到page: 813
+page813保存成功
+获取到page: 809
+page809保存成功
+获取到page: 837
+获取到page: 811
+page811保存成功
+page837保存成功
+获取到page: 816
+page816保存成功
+获取到page: 832
+page832保存成功
+page825请求超时，重试1
+获取到page: 830
+page830保存成功
+获取到page: 819
+page819保存成功
+获取到page: 807
+page807保存成功
+获取到page: 805
+page805保存成功
+获取到page: 818
+page827请求超时，重试1
+page818保存成功
+page808请求超时，重试1
+page834请求超时，重试1
+获取到page: 848
+page848保存成功
+获取到page: 866
+page866保存成功
+获取到page: 800
+page800保存成功
+获取到page: 838
+page838保存成功
+page857请求超时，重试2
+获取到page: 864
+page864保存成功
+page821请求超时，重试1
+获取到page: 793
+page793保存成功
+page911请求超时，重试4
+获取到page: 808
+page808保存成功
+获取到page: 796
+page796保存成功
+获取到page: 804
+page804保存成功
+获取到page: 820
+page820保存成功
+获取到page: 836
+page836保存成功
+获取到page: 821
+page821保存成功
+page814请求超时，重试1
+获取到page: 786
+page806请求超时，重试1
+page786保存成功
+获取到page: 817
+page817保存成功
+获取到page: 785
+page785保存成功
+获取到page: 790
+page790保存成功
+page803请求超时，重试1
+获取到page: 784
+page784保存成功
+获取到page: 827
+page827保存成功
+page798请求超时，重试1
+获取到page: 904
+page904保存成功
+page802请求超时，重试1
+获取到page: 782
+page782保存成功
+page799请求超时，重试1
+获取到page: 788
+获取到page: 825
+page801请求超时，重试1
+page825保存成功
+page788保存成功
+获取到page: 777
+page777保存成功
+获取到page: 834
+page834保存成功
+获取到page: 772
+获取到page: 781
+page772保存成功
+page781保存成功
+获取到page: 911
+page911保存成功
+获取到page: 857
+page857保存成功
+获取到page: 797
+page797保存成功
+page791请求超时，重试1
+获取到page: 780
+page780保存成功
+获取到page: 776
+page776保存成功
+获取到page: 787
+page787保存成功
+page792请求超时，重试1
+获取到page: 778
+获取到page: 769
+page778保存成功
+page769保存成功
+获取到page: 764
+page764保存成功
+获取到page: 779
+page779保存成功
+获取到page: 771
+page771保存成功
+获取到page: 802
+page802保存成功
+获取到page: 789
+page789保存成功
+获取到page: 768
+page768保存成功
+获取到page: 794
+page794保存成功
+获取到page: 770
+page770保存成功
+获取到page: 766
+page766保存成功
+获取到page: 798
+page798保存成功
+获取到page: 758
+page758保存成功
+获取到page: 773
+page773保存成功
+获取到page: 774
+page774保存成功
+获取到page: 765
+page765保存成功
+获取到page: 762
+page814请求超时，重试2
+page762保存成功
+获取到page: 755
+page755保存成功
+获取到page: 767
+page767保存成功
+获取到page: 754
+page754保存成功
+获取到page: 751
+获取到page: 795
+page751保存成功
+page795保存成功
+page775请求超时，重试1
+page806请求超时，重试2
+获取到page: 748
+page748保存成功
+page801请求超时，重试2
+获取到page: 752
+page752保存成功
+page799请求超时，重试2
+获取到page: 750
+获取到page: 742
+page750保存成功
+page742保存成功
+获取到page: 814
+获取到page: 741
+page814保存成功
+page741保存成功
+page791请求超时，重试2
+获取到page: 792
+page792保存成功
+获取到page: 749
+page749保存成功
+获取到page: 803
+page803保存成功
+获取到page: 763
+page763保存成功
+获取到page: 739
+获取到page: 799
+page799保存成功
+page739保存成功
+page783请求超时，重试1
+page760请求超时，重试1
+获取到page: 738
+page738保存成功
+获取到page: 806
+page806保存成功
+获取到page: 791
+page791保存成功
+获取到page: 753
+page753保存成功
+获取到page: 747
+page747保存成功
+获取到page: 732
+page732保存成功
+获取到page: 745
+page745保存成功
+获取到page: 761
+page761保存成功
+获取到page: 729
+page729保存成功
+获取到page: 731
+page731保存成功
+获取到page: 760
+page760保存成功
+获取到page: 727
+page727保存成功
+获取到page: 756
+page756保存成功
+获取到page: 737
+page737保存成功
+获取到page: 734
+page734保存成功
+获取到page: 721
+page721保存成功
+获取到page: 812
+page812保存成功
+page740请求超时，重试1
+获取到page: 723
+page723保存成功
+page757请求超时，重试1
+获取到page: 746
+获取到page: 725
+page746保存成功
+page725保存成功
+获取到page: 718
+page718保存成功
+page735请求超时，重试1
+page801请求超时，重试3
+获取到page: 759
+page759保存成功
+获取到page: 722
+page722保存成功
+获取到page: 711
+page711保存成功
+获取到page: 708
+page708保存成功
+获取到page: 775
+page736请求超时，重试1
+page775保存成功
+page743请求超时，重试1
+获取到page: 801
+page801保存成功
+获取到page: 713
+page713保存成功
+page733请求超时，重试1
+page715请求超时，重试1
+获取到page: 740
+page740保存成功
+获取到page: 717
+page717保存成功
+获取到page: 744
+page744保存成功
+获取到page: 726
+page726保存成功
+page783请求超时，重试2
+获取到page: 707
+page707保存成功
+获取到page: 716
+page716保存成功
+获取到page: 697
+page697保存成功
+获取到page: 703
+page703保存成功
+page720请求超时，重试1
+获取到page: 701
+获取到page: 709
+page701保存成功
+page724请求超时，重试1
+page709保存成功
+获取到page: 695
+page695保存成功
+获取到page: 714
+获取到page: 702
+page702保存成功
+page714保存成功
+获取到page: 694
+获取到page: 696
+page694保存成功
+page696保存成功
+获取到page: 735
+page735保存成功
+获取到page: 706
+page706保存成功
+获取到page: 698
+page698保存成功
+获取到page: 690
+page690保存成功
+获取到page: 743
+page743保存成功
+获取到page: 715
+获取到page: 736
+page715保存成功
+page736保存成功
+获取到page: 682
+page682保存成功
+获取到page: 693
+page693保存成功
+获取到page: 757
+page757保存成功
+获取到page: 712
+page712保存成功
+获取到page: 679
+page679保存成功
+获取到page: 705
+page705保存成功
+获取到page: 686
+page686保存成功
+获取到page: 684
+page684保存成功
+获取到page: 680
+page680保存成功
+获取到page: 730
+page730保存成功
+获取到page: 710
+page710保存成功
+page691请求超时，重试1
+获取到page: 678
+page678保存成功
+page719请求超时，重试1
+获取到page: 681
+page681保存成功
+获取到page: 675
+page675保存成功
+获取到page: 728
+page728保存成功
+获取到page: 676
+page676保存成功
+获取到page: 783
+获取到page: 700
+page783保存成功
+page700保存成功
+获取到page: 683
+page683保存成功
+获取到page: 669
+page669保存成功
+page704请求超时，重试1
+获取到page: 699
+page699保存成功
+获取到page: 719
+page719保存成功
+page733请求超时，重试2
+获取到page: 671
+page671保存成功
+获取到page: 670
+page670保存成功
+获取到page: 733
+page733保存成功
+获取到page: 668
+page668保存成功
+page688请求超时，重试1
+获取到page: 687
+page687保存成功
+获取到page: 720
+page720保存成功
+获取到page: 665
+page665保存成功
+获取到page: 704
+page704保存成功
+page685请求超时，重试1
+获取到page: 658
+page658保存成功
+获取到page: 655
+page655保存成功
+page689请求超时，重试1
+获取到page: 654
+page654保存成功
+获取到page: 656
+page656保存成功
+获取到page: 689
+page689保存成功
+获取到page: 648
+page648保存成功
+获取到page: 673
+page673保存成功
+获取到page: 664
+page664保存成功
+获取到page: 666
+page666保存成功
+获取到page: 688
+page688保存成功
+page660请求超时，重试1
+获取到page: 647
+page647保存成功
+获取到page: 645
+page645保存成功
+page659请求超时，重试1
+page661请求超时，重试1
+获取到page: 677
+page677保存成功
+page662请求超时，重试1
+获取到page: 639
+page639保存成功
+获取到page: 649
+page649保存成功
+page674请求超时，重试1
+获取到page: 724
+page724保存成功
+获取到page: 642
+page642保存成功
+获取到page: 643
+page643保存成功
+获取到page: 652
+page652保存成功
+page651请求超时，重试1
+获取到page: 667
+page667保存成功
+page646请求超时，重试1
+获取到page: 631
+page631保存成功
+page650请求超时，重试1
+page685请求超时，重试2
+获取到page: 634
+page634保存成功
+获取到page: 672
+page672保存成功
+获取到page: 662
+page662保存成功
+获取到page: 651
+page651保存成功
+获取到page: 627
+page627保存成功
+获取到page: 691
+page691保存成功
+获取到page: 641
+page641保存成功
+page632请求超时，重试1
+page644请求超时，重试1
+获取到page: 638
+page638保存成功
+获取到page: 637
+page637保存成功
+获取到page: 692
+page692保存成功
+获取到page: 640
+page640保存成功
+获取到page: 626
+page626保存成功
+page636请求超时，重试1
+page660请求超时，重试2
+page663请求超时，重试1
+获取到page: 661
+page661保存成功
+获取到page: 616
+page616保存成功
+获取到page: 674
+page674保存成功
+page653请求超时，重试1
+获取到page: 620
+page620保存成功
+获取到page: 636
+page636保存成功
+获取到page: 625
+page625保存成功
+获取到page: 621
+page621保存成功
+获取到page: 630
+page630保存成功
+page619请求超时，重试1
+获取到page: 622
+获取到page: 615
+page632请求超时，重试2
+page622保存成功
+获取到page: 685
+page615保存成功
+page685保存成功
+获取到page: 633
+page633保存成功
+获取到page: 635
+page635保存成功
+page629请求超时，重试1
+获取到page: 657
+page657保存成功
+获取到page: 613
+page613保存成功
+page628请求超时，重试1
+获取到page: 607
+page607保存成功
+page659请求超时，重试2
+获取到page: 660
+page660保存成功
+page644请求超时，重试2
+page646请求超时，重试2
+获取到page: 614
+page614保存成功
+获取到page: 653
+page653保存成功
+获取到page: 603
+page603保存成功
+获取到page: 600
+page600保存成功
+获取到page: 646
+page646保存成功
+获取到page: 599
+page599保存成功
+获取到page: 624
+page624保存成功
+获取到page: 650
+获取到page: 605
+page650保存成功
+获取到page: 628
+page605保存成功
+page628保存成功
+获取到page: 594
+page594保存成功
+获取到page: 644
+page644保存成功
+page617请求超时，重试1
+获取到page: 596
+page596保存成功
+获取到page: 602
+page602保存成功
+获取到page: 619
+page619保存成功
+获取到page: 591
+page591保存成功
+获取到page: 617
+page617保存成功
+获取到page: 585
+page585保存成功
+获取到page: 663
+page663保存成功
+获取到page: 584
+page584保存成功
+page609请求超时，重试1
+page604请求超时，重试1
+获取到page: 598
+获取到page: 595
+page595保存成功
+page598保存成功
+获取到page: 659
+page659保存成功
+page610请求超时，重试1
+获取到page: 608
+page608保存成功
+获取到page: 601
+page601保存成功
+获取到page: 573
+page573保存成功
+page618请求超时，重试1
+获取到page: 588
+page588保存成功
+获取到page: 586
+获取到page: 611
+page586保存成功
+page611保存成功
+page597请求超时，重试1
+获取到page: 575
+page575保存成功
+获取到page: 578
+page578保存成功
+获取到page: 579
+page579保存成功
+获取到page: 580
+获取到page: 609
+page580保存成功
+page612请求超时，重试1
+page609保存成功
+获取到page: 587
+page587保存成功
+获取到page: 571
+page571保存成功
+获取到page: 581
+page581保存成功
+获取到page: 606
+page606保存成功
+获取到page: 623
+获取到page: 567
+page623保存成功
+page567保存成功
+page592请求超时，重试1
+获取到page: 632
+page632保存成功
+获取到page: 597
+page597保存成功
+获取到page: 572
+page572保存成功
+page589请求超时，重试1
+获取到page: 560
+page610请求超时，重试2
+page560保存成功
+获取到page: 629
+page629保存成功
+获取到page: 612
+page612保存成功
+page604请求超时，重试2
+获取到page: 618
+page590请求超时，重试1
+page618保存成功
+获取到page: 555
+page555保存成功
+获取到page: 554
+page554保存成功
+page593请求超时，重试1
+获取到page: 568
+page568保存成功
+获取到page: 570
+page570保存成功
+获取到page: 550
+page550保存成功
+获取到page: 582
+page582保存成功
+获取到page: 583
+page583保存成功
+获取到page: 562
+page562保存成功
+page566请求超时，重试1
+获取到page: 551
+page551保存成功
+获取到page: 552
+page552保存成功
+获取到page: 593
+page593保存成功
+获取到page: 553
+page553保存成功
+page557请求超时，重试1
+获取到page: 542
+page542保存成功
+获取到page: 539
+page539保存成功
+page592请求超时，重试2
+page561请求超时，重试1
+获取到page: 558
+page558保存成功
+获取到page: 569
+获取到page: 546
+page569保存成功
+page546保存成功
+page576请求超时，重试1
+获取到page: 564
+page564保存成功
+获取到page: 536
+page536保存成功
+获取到page: 534
+page534保存成功
+page549请求超时，重试1
+获取到page: 574
+page574保存成功
+page604请求超时，重试3
+获取到page: 544
+page544保存成功
+page563请求超时，重试1
+获取到page: 610
+page577请求超时，重试1
+page610保存成功
+获取到page: 547
+page547保存成功
+page565请求超时，重试1
+获取到page: 545
+page545保存成功
+获取到page: 541
+page541保存成功
+获取到page: 537
+page537保存成功
+获取到page: 559
+page559保存成功
+获取到page: 533
+page533保存成功
+获取到page: 589
+page589保存成功
+获取到page: 528
+page528保存成功
+获取到page: 548
+page548保存成功
+page556请求超时，重试1
+获取到page: 532
+page532保存成功
+page543请求超时，重试1
+获取到page: 604
+page604保存成功
+获取到page: 577
+page577保存成功
+获取到page: 566
+page566保存成功
+获取到page: 549
+page549保存成功
+获取到page: 520
+page520保存成功
+page557请求超时，重试2
+获取到page: 563
+page563保存成功
+获取到page: 592
+page592保存成功
+获取到page: 590
+page590保存成功
+page530请求超时，重试1
+获取到page: 524
+page524保存成功
+获取到page: 535
+page535保存成功
+page561请求超时，重试2
+获取到page: 521
+page521保存成功
+获取到page: 527
+page527保存成功
+获取到page: 518
+page518保存成功
+获取到page: 529
+page529保存成功
+获取到page: 543
+获取到page: 516
+page543保存成功
+page513请求超时，重试1
+page516保存成功
+获取到page: 509
+page509保存成功
+获取到page: 522
+page522保存成功
+page519请求超时，重试1
+获取到page: 504
+page504保存成功
+获取到page: 523
+page523保存成功
+获取到page: 576
+page576保存成功
+获取到page: 506
+page506保存成功
+获取到page: 540
+page540保存成功
+page517请求超时，重试1
+获取到page: 508
+page508保存成功
+page557请求超时，重试3
+获取到page: 501
+page501保存成功
+获取到page: 565
+page565保存成功
+获取到page: 556
+page556保存成功
+获取到page: 525
+page525保存成功
+获取到page: 531
+page531保存成功
+获取到page: 519
+page519保存成功
+获取到page: 507
+page507保存成功
+获取到page: 503
+page503保存成功
+获取到page: 492
+获取到page: 499
+page492保存成功
+page499保存成功
+获取到page: 538
+page538保存成功
+获取到page: 557
+page557保存成功
+获取到page: 500
+page500保存成功
+获取到page: 512
+page512保存成功
+获取到page: 487
+page487保存成功
+获取到page: 489
+page489保存成功
+获取到page: 505
+page505保存成功
+获取到page: 511
+page511保存成功
+page502请求超时，重试1
+page561请求超时，重试3
+获取到page: 497
+page497保存成功
+获取到page: 530
+page530保存成功
+page513请求超时，重试2
+获取到page: 494
+page494保存成功
+page496请求超时，重试1
+获取到page: 526
+page526保存成功
+page498请求超时，重试1
+获取到page: 486
+page486保存成功
+获取到page: 490
+page490保存成功
+获取到page: 491
+page491保存成功
+获取到page: 485
+page485保存成功
+获取到page: 515
+page515保存成功
+page517请求超时，重试2
+获取到page: 502
+page502保存成功
+获取到page: 495
+page495保存成功
+获取到page: 481
+page481保存成功
+获取到page: 477
+page477保存成功
+page493请求超时，重试1
+获取到page: 513
+page513保存成功
+获取到page: 472
+page472保存成功
+获取到page: 474
+page474保存成功
+获取到page: 480
+page480保存成功
+获取到page: 479
+page479保存成功
+获取到page: 482
+page482保存成功
+获取到page: 475
+page475保存成功
+获取到page: 470
+page470保存成功
+获取到page: 561
+page561保存成功
+page488请求超时，重试1
+获取到page: 467
+page467保存成功
+获取到page: 517
+page517保存成功
+获取到page: 498
+获取到page: 478
+page478保存成功
+page498保存成功
+获取到page: 476
+page476保存成功
+获取到page: 510
+page510保存成功
+获取到page: 463
+page463保存成功
+获取到page: 458
+page458保存成功
+获取到page: 459
+page459保存成功
+获取到page: 514
+page514保存成功
+获取到page: 460
+page460保存成功
+获取到page: 464
+page464保存成功
+获取到page: 484
+page484保存成功
+获取到page: 471
+page471保存成功
+page473请求超时，重试1
+page469请求超时，重试1
+获取到page: 448
+page448保存成功
+获取到page: 496
+page496保存成功
+page466请求超时，重试1
+page468请求超时，重试1
+获取到page: 439
+page439保存成功
+page457请求超时，重试1
+获取到page: 493
+page493保存成功
+获取到page: 449
+page449保存成功
+获取到page: 468
+page468保存成功
+page450请求超时，重试1
+获取到page: 466
+page466保存成功
+page488请求超时，重试2
+获取到page: 437
+page437保存成功
+获取到page: 434
+page434保存成功
+获取到page: 447
+page447保存成功
+page483请求超时，重试1
+page445请求超时，重试1
+获取到page: 451
+page451保存成功
+获取到page: 446
+page446保存成功
+获取到page: 457
+page457保存成功
+获取到page: 438
+page438保存成功
+page444请求超时，重试1
+获取到page: 454
+page454保存成功
+获取到page: 469
+page469保存成功
+page465请求超时，重试1
+page455请求超时，重试1
+获取到page: 441
+page441保存成功
+获取到page: 443
+获取到page: 461
+page443保存成功
+page461保存成功
+page440请求超时，重试1
+获取到page: 462
+page462保存成功
+获取到page: 442
+获取到page: 421
+page442保存成功
+page421保存成功
+获取到page: 427
+page427保存成功
+获取到page: 455
+page455保存成功
+获取到page: 419
+page419保存成功
+获取到page: 425
+page425保存成功
+获取到page: 420
+page420保存成功
+获取到page: 428
+page428保存成功
+获取到page: 414
+page414保存成功
+page453请求超时，重试1
+获取到page: 415
+获取到page: 473
+page415保存成功
+page473保存成功
+获取到page: 444
+page444保存成功
+获取到page: 456
+获取到page: 418
+page456保存成功
+page418保存成功
+page433请求超时，重试1
+获取到page: 405
+page405保存成功
+获取到page: 413
+page413保存成功
+page431请求超时，重试1
+获取到page: 411
+page411保存成功
+获取到page: 440
+获取到page: 416
+page488请求超时，重试3
+page440保存成功
+page416保存成功
+获取到page: 423
+page423保存成功
+获取到page: 403
+page403保存成功
+获取到page: 422
+page422保存成功
+获取到page: 417
+page417保存成功
+获取到page: 410
+page410保存成功
+获取到page: 483
+page483保存成功
+获取到page: 408
+page426请求超时，重试1
+page408保存成功
+获取到page: 450
+page450保存成功
+获取到page: 424
+page424保存成功
+获取到page: 402
+page402保存成功
+获取到page: 406
+page406保存成功
+获取到page: 404
+page404保存成功
+page436请求超时，重试1
+获取到page: 395
+page395保存成功
+获取到page: 392
+page392保存成功
+page430请求超时，重试1
+page445请求超时，重试2
+获取到page: 397
+page397保存成功
+获取到page: 394
+page394保存成功
+获取到page: 409
+page409保存成功
+获取到page: 431
+page431保存成功
+获取到page: 407
+page407保存成功
+获取到page: 488
+page488保存成功
+获取到page: 384
+获取到page: 393
+page384保存成功
+page393保存成功
+page412请求超时，重试1
+获取到page: 383
+page383保存成功
+获取到page: 435
+page435保存成功
+获取到page: 387
+page387保存成功
+获取到page: 377
+获取到page: 385
+page385保存成功
+page377保存成功
+获取到page: 398
+page398保存成功
+获取到page: 378
+page378保存成功
+获取到page: 433
+获取到page: 375
+page433保存成功
+获取到page: 382
+page375保存成功
+page382保存成功
+page453请求超时，重试2
+获取到page: 381
+page381保存成功
+获取到page: 369
+page369保存成功
+获取到page: 372
+page372保存成功
+获取到page: 430
+page430保存成功
+获取到page: 367
+page367保存成功
+获取到page: 436
+page436保存成功
+page465请求超时，重试2
+获取到page: 388
+获取到page: 452
+page388保存成功
+page452保存成功
+获取到page: 376
+page376保存成功
+获取到page: 391
+page391保存成功
+获取到page: 368
+获取到page: 429
+page368保存成功
+page429保存成功
+获取到page: 389
+获取到page: 379
+page389保存成功
+page379保存成功
+获取到page: 412
+page412保存成功
+获取到page: 445
+page400请求超时，重试1
+page445保存成功
+获取到page: 354
+page354保存成功
+获取到page: 360
+page360保存成功
+获取到page: 363
+page401请求超时，重试1
+page363保存成功
+获取到page: 357
+page357保存成功
+page380请求超时，重试1
+获取到page: 349
+获取到page: 373
+page349保存成功
+page373保存成功
+获取到page: 366
+page366保存成功
+获取到page: 365
+page365保存成功
+page396请求超时，重试1
+获取到page: 351
+获取到page: 374
+page351保存成功
+page374保存成功
+获取到page: 401
+page401保存成功
+获取到page: 358
+page358保存成功
+获取到page: 348
+page348保存成功
+获取到page: 359
+page359保存成功
+获取到page: 380
+page380保存成功
+获取到page: 355
+获取到page: 465
+page355保存成功
+page465保存成功
+page399请求超时，重试1
+获取到page: 345
+page345保存成功
+获取到page: 371
+page371保存成功
+获取到page: 347
+page347保存成功
+获取到page: 370
+page370保存成功
+page386请求超时，重试1
+获取到page: 343
+page343保存成功
+获取到page: 396
+page396保存成功
+获取到page: 362
+page362保存成功
+获取到page: 361
+page361保存成功
+获取到page: 332
+获取到page: 350
+page332保存成功
+获取到page: 399
+page350保存成功
+page399保存成功
+获取到page: 336
+page336保存成功
+获取到page: 329
+page329保存成功
+获取到page: 453
+page453保存成功
+获取到page: 390
+获取到page: 335
+page335保存成功
+page390保存成功
+获取到page: 432
+page432保存成功
+获取到page: 333
+page333保存成功
+page364请求超时，重试1
+获取到page: 326
+page352请求超时，重试1
+page326保存成功
+获取到page: 325
+获取到page: 331
+page325保存成功
+page400请求超时，重试2
+page331保存成功
+获取到page: 322
+page322保存成功
+page353请求超时，重试1
+获取到page: 353
+page353保存成功
+获取到page: 323
+page323保存成功
+page346请求超时，重试1
+获取到page: 324
+page324保存成功
+获取到page: 328
+page328保存成功
+获取到page: 339
+page339保存成功
+page356请求超时，重试1
+获取到page: 342
+page342保存成功
+获取到page: 356
+page356保存成功
+获取到page: 317
+page317保存成功
+获取到page: 352
+page352保存成功
+page386请求超时，重试2
+获取到page: 320
+page334请求超时，重试1
+page320保存成功
+获取到page: 327
+获取到page: 316
+page338请求超时，重试1
+获取到page: 364
+page327保存成功
+page316保存成功
+page364保存成功
+获取到page: 308
+获取到page: 315
+page308保存成功
+page315保存成功
+获取到page: 400
+page400保存成功
+获取到page: 303
+page303保存成功
+获取到page: 298
+page298保存成功
+获取到page: 304
+page304保存成功
+获取到page: 314
+page314保存成功
+获取到page: 386
+page386保存成功
+获取到page: 310
+page310保存成功
+获取到page: 300
+page300保存成功
+page344请求超时，重试1
+page340请求超时，重试1
+page330请求超时，重试1
+获取到page: 346
+page346保存成功
+获取到page: 296
+page296保存成功
+获取到page: 299
+page299保存成功
+获取到page: 311
+page311保存成功
+获取到page: 312
+page312保存成功
+获取到page: 302
+page302保存成功
+page321请求超时，重试1
+获取到page: 306
+获取到page: 313
+page306保存成功
+page313保存成功
+获取到page: 307
+page307保存成功
+获取到page: 292
+page292保存成功
+获取到page: 301
+page301保存成功
+获取到page: 338
+page338保存成功
+获取到page: 293
+page293保存成功
+获取到page: 426
+page426保存成功
+获取到page: 297
+page297保存成功
+获取到page: 334
+获取到page: 337
+page337保存成功
+page334保存成功
+page309请求超时，重试1
+page319请求超时，重试1
+获取到page: 321
+page321保存成功
+获取到page: 295
+获取到page: 341
+page295保存成功
+page341保存成功
+获取到page: 281
+page281保存成功
+获取到page: 330
+page330保存成功
+获取到page: 290
+page290保存成功
+获取到page: 279
+page279保存成功
+获取到page: 294
+page294保存成功
+page289请求超时，重试1
+获取到page: 285
+page285保存成功
+获取到page: 276
+page276保存成功
+获取到page: 318
+page318保存成功
+获取到page: 284
+page284保存成功
+获取到page: 305
+page305保存成功
+获取到page: 273
+page273保存成功
+获取到page: 291
+page291保存成功
+获取到page: 270
+获取到page: 269
+page270保存成功
+page269保存成功
+获取到page: 268
+page268保存成功
+page282请求超时，重试1
+page309请求超时，重试2
+page344请求超时，重试2
+page287请求超时，重试1
+page280请求超时，重试1
+page275请求超时，重试1
+获取到page: 289
+page289保存成功
+获取到page: 274
+page274保存成功
+获取到page: 283
+page283保存成功
+page272请求超时，重试1
+获取到page: 259
+page259保存成功
+获取到page: 265
+page265保存成功
+page340请求超时，重试2
+获取到page: 277
+page277保存成功
+获取到page: 286
+page286保存成功
+获取到page: 267
+page267保存成功
+获取到page: 287
+page287保存成功
+page271请求超时，重试1
+page264请求超时，重试1
+获取到page: 261
+page261保存成功
+获取到page: 266
+page266保存成功
+获取到page: 288
+page288保存成功
+获取到page: 253
+page253保存成功
+page256请求超时，重试1
+获取到page: 257
+page257保存成功
+获取到page: 275
+page262请求超时，重试1
+page275保存成功
+获取到page: 258
+page258保存成功
+获取到page: 246
+获取到page: 278
+page246保存成功
+page278保存成功
+获取到page: 319
+获取到page: 250
+page319保存成功
+page250保存成功
+page344请求超时，重试3
+获取到page: 260
+page260保存成功
+获取到page: 280
+page280保存成功
+获取到page: 243
+page243保存成功
+page254请求超时，重试1
+获取到page: 241
+page241保存成功
+获取到page: 245
+page245保存成功
+获取到page: 242
+page242保存成功
+获取到page: 247
+page247保存成功
+获取到page: 271
+page271保存成功
+page272请求超时，重试2
+page309请求超时，重试3
+page248请求超时，重试1
+page249请求超时，重试1
+page340请求超时，重试3
+获取到page: 309
+获取到page: 263
+page309保存成功
+page263保存成功
+获取到page: 236
+page236保存成功
+获取到page: 244
+获取到page: 251
+获取到page: 234
+page244保存成功
+page251保存成功
+page234保存成功
+获取到page: 264
+page264保存成功
+获取到page: 239
+page239保存成功
+获取到page: 231
+page231保存成功
+获取到page: 238
+page238保存成功
+获取到page: 233
+page233保存成功
+获取到page: 256
+page256保存成功
+获取到page: 221
+page221保存成功
+获取到page: 224
+page224保存成功
+获取到page: 252
+page252保存成功
+获取到page: 235
+page235保存成功
+获取到page: 229
+page255请求超时，重试1
+page229保存成功
+获取到page: 225
+page225保存成功
+获取到page: 220
+page220保存成功
+page226请求超时，重试1
+page254请求超时，重试2
+page282请求超时，重试2
+获取到page: 237
+page237保存成功
+page232请求超时，重试1
+获取到page: 208
+page208保存成功
+获取到page: 213
+获取到page: 223
+page213保存成功
+page240请求超时，重试1
+page223保存成功
+获取到page: 282
+page282保存成功
+获取到page: 215
+获取到page: 255
+page215保存成功
+page255保存成功
+获取到page: 207
+page207保存成功
+获取到page: 218
+获取到page: 226
+page218保存成功
+page226保存成功
+获取到page: 210
+page210保存成功
+page272请求超时，重试3
+获取到page: 240
+page240保存成功
+获取到page: 212
+page212保存成功
+获取到page: 201
+page201保存成功
+page214请求超时，重试1
+获取到page: 222
+page222保存成功
+page211请求超时，重试1
+page262请求超时，重试2
+获取到page: 232
+page232保存成功
+获取到page: 230
+page230保存成功
+page219请求超时，重试1
+page248请求超时，重试2
+获取到page: 228
+获取到page: 194
+page228保存成功
+page194保存成功
+获取到page: 249
+page249保存成功
+获取到page: 197
+page197保存成功
+获取到page: 214
+page205请求超时，重试1
+page214保存成功
+获取到page: 272
+page272保存成功
+获取到page: 204
+page204保存成功
+page217请求超时，重试1
+获取到page: 195
+page195保存成功
+获取到page: 344
+获取到page: 199
+page344保存成功
+page199保存成功
+获取到page: 209
+page209保存成功
+获取到page: 203
+获取到page: 216
+page203保存成功
+page216保存成功
+获取到page: 227
+page227保存成功
+获取到page: 189
+page189保存成功
+获取到page: 205
+获取到page: 198
+page198保存成功
+page205保存成功
+获取到page: 182
+page182保存成功
+获取到page: 248
+page248保存成功
+获取到page: 190
+page190保存成功
+获取到page: 177
+page177保存成功
+获取到page: 184
+page184保存成功
+page340请求超时，重试4
+获取到page: 187
+page187保存成功
+page200请求超时，重试1
+page254请求超时，重试3
+获取到page: 202
+page202保存成功
+获取到page: 175
+page175保存成功
+获取到page: 171
+page171保存成功
+获取到page: 180
+page180保存成功
+获取到page: 206
+page206保存成功
+page193请求超时，重试1
+获取到page: 254
+page254保存成功
+[pid: 21264|app: 0|req: 8/9] 117.155.56.88 () {46 vars in 927 bytes} [Sat Feb 15 15:12:21 2020] GET /video/admin/view_log/ => generated 106913 bytes in 11 msecs (HTTP/1.1 200) 6 headers in 321 bytes (1 switches on core 0)
+获取到page: 181
+page181保存成功
+page191请求超时，重试1
+获取到page: 179
+page179保存成功
+获取到page: 186
+page186保存成功
+获取到page: 162
+获取到page: 185
+page162保存成功
+page185保存成功
+获取到page: 174
+page174保存成功
+page217请求超时，重试2
+获取到page: 211
+page183请求超时，重试1
+page211保存成功
+获取到page: 163
+page196请求超时，重试1
+page163保存成功
+获取到page: 192
+page192保存成功
+page172请求超时，重试1
+page170请求超时，重试1
+获取到page: 164
+page164保存成功
+获取到page: 165
+page165保存成功
+获取到page: 155
+page155保存成功
+获取到page: 176
+page176保存成功
+获取到page: 169
+page169保存成功
+获取到page: 183
+page183保存成功
+获取到page: 178
+page178保存成功
+获取到page: 219
+page219保存成功
+page188请求超时，重试1
+获取到page: 191
+page191保存成功
+获取到page: 159
+page159保存成功
+page168请求超时，重试1
+page193请求超时，重试2
+获取到page: 146
+page146保存成功
+获取到page: 167
+page167保存成功
+page173请求超时，重试1
+获取到page: 166
+page166保存成功
+获取到page: 149
+page149保存成功
+获取到page: 170
+page170保存成功
+page161请求超时，重试1
+page340请求超时，重试5
+page: 340 请求出现错误，放入错误列表
+page154请求超时，重试1
+获取到page: 158
+page158保存成功
+获取到page: 173
+page173保存成功
+获取到page: 200
+page200保存成功
+获取到page: 153
+page153保存成功
+获取到page: 142
+page142保存成功
+获取到page: 172
+page172保存成功
+获取到page: 154
+page154保存成功
+获取到page: 262
+page262保存成功
+获取到page: 148
+获取到page: 141
+page148保存成功
+page141保存成功
+获取到page: 193
+page193保存成功
+获取到page: 152
+page152保存成功
+[pid: 21264|app: 0|req: 9/10] 117.155.56.88 () {48 vars in 964 bytes} [Sat Feb 15 15:12:38 2020] GET /video/admin/view_log/ => generated 108850 bytes in 10 msecs (HTTP/1.1 200) 6 headers in 321 bytes (1 switches on core 0)
+获取到page: 161
+page161保存成功
+获取到page: 143
+page143保存成功
+page157请求超时，重试1
+page217请求超时，重试3
+page196请求超时，重试2
+page160请求超时，重试1
+page144请求超时，重试1
+获取到page: 127
+获取到page: 140
+page127保存成功
+page140保存成功
+page151请求超时，重试1
+获取到page: 131
+page131保存成功
+获取到page: 168
+page168保存成功
+获取到page: 136
+page136保存成功
+page145请求超时，重试1
+获取到page: 123
+page123保存成功
+获取到page: 157
+page157保存成功
+获取到page: 135
+获取到page: 128
+page135保存成功
+page128保存成功
+获取到page: 132
+page132保存成功
+获取到page: 188
+page188保存成功
+获取到page: 138
+page138保存成功
+获取到page: 118
+page118保存成功
+获取到page: 150
+page150保存成功
+获取到page: 133
+page133保存成功
+获取到page: 121
+page121保存成功
+获取到page: 111
+page111保存成功
+page137请求超时，重试1
+获取到page: 130
+page130保存成功
+获取到page: 139
+page139保存成功
+获取到page: 116
+page116保存成功
+获取到page: 117
+page117保存成功
+获取到page: 119
+page119保存成功
+获取到page: 114
+page114保存成功
+page217请求超时，重试4
+获取到page: 122
+page122保存成功
+获取到page: 144
+page144保存成功
+获取到page: 113
+page113保存成功
+获取到page: 147
+获取到page: 151
+page147保存成功
+page151保存成功
+获取到page: 101
+page101保存成功
+获取到page: 109
+page109保存成功
+获取到page: 100
+page100保存成功
+获取到page: 102
+page102保存成功
+获取到page: 125
+page125保存成功
+获取到page: 129
+获取到page: 156
+page129保存成功
+page156保存成功
+获取到page: 137
+page137保存成功
+获取到page: 145
+page145保存成功
+获取到page: 96
+page96保存成功
+获取到page: 97
+page97保存成功
+获取到page: 120
+page112请求超时，重试1
+page120保存成功
+获取到page: 217
+page217保存成功
+获取到page: 124
+page124保存成功
+获取到page: 104
+page104保存成功
+获取到page: 107
+page107保存成功
+获取到page: 160
+page160保存成功
+获取到page: 126
+page126保存成功
+获取到page: 106
+page106保存成功
+获取到page: 115
+page115保存成功
+page110请求超时，重试1
+获取到page: 91
+page91保存成功
+获取到page: 93
+获取到page: 86
+page93保存成功
+page86保存成功
+page134请求超时，重试1
+获取到page: 94
+page94保存成功
+page98请求超时，重试1
+获取到page: 79
+page79保存成功
+获取到page: 103
+page103保存成功
+获取到page: 73
+page73保存成功
+获取到page: 112
+page112保存成功
+page95请求超时，重试1
+获取到page: 90
+page90保存成功
+获取到page: 76
+获取到page: 84
+page84保存成功
+page76保存成功
+获取到page: 108
+page108保存成功
+获取到page: 68
+page68保存成功
+page99请求超时，重试1
+获取到page: 110
+page110保存成功
+获取到page: 70
+page70保存成功
+获取到page: 87
+page87保存成功
+page82请求超时，重试1
+获取到page: 78
+page83请求超时，重试1
+page78保存成功
+page89请求超时，重试1
+获取到page: 196
+page196保存成功
+获取到page: 88
+获取到page: 80
+page88保存成功
+page80保存成功
+获取到page: 69
+page69保存成功
+获取到page: 85
+page85保存成功
+获取到page: 98
+page98保存成功
+获取到page: 99
+page99保存成功
+page75请求超时，重试1
+获取到page: 55
+page55保存成功
+获取到page: 64
+page64保存成功
+获取到page: 62
+page62保存成功
+获取到page: 67
+page67保存成功
+page134请求超时，重试2
+page77请求超时，重试1
+获取到page: 82
+page82保存成功
+获取到page: 81
+获取到page: 53
+page81保存成功
+page53保存成功
+获取到page: 59
+page59保存成功
+获取到page: 92
+page92保存成功
+获取到page: 105
+page105保存成功
+获取到page: 60
+page60保存成功
+page72请求超时，重试1
+获取到page: 71
+page71保存成功
+page74请求超时，重试1
+获取到page: 47
+获取到page: 50
+获取到page: 95
+page47保存成功
+page50保存成功
+page95保存成功
+page65请求超时，重试1
+获取到page: 56
+page56保存成功
+获取到page: 52
+page52保存成功
+获取到page: 83
+page83保存成功
+获取到page: 51
+获取到page: 41
+page51保存成功
+page41保存成功
+获取到page: 44
+page44保存成功
+page61请求超时，重试1
+获取到page: 38
+page38保存成功
+获取到page: 74
+page74保存成功
+获取到page: 63
+page63保存成功
+获取到page: 57
+page57保存成功
+获取到page: 39
+page39保存成功
+获取到page: 75
+page75保存成功
+获取到page: 45
+获取到page: 89
+page45保存成功
+page89保存成功
+获取到page: 66
+获取到page: 72
+page66保存成功
+page72保存成功
+page49请求超时，重试1
+[pid: 21264|app: 0|req: 10/11] 117.155.56.88 () {48 vars in 964 bytes} [Sat Feb 15 15:13:25 2020] GET /video/admin/view_log/ => generated 113703 bytes in 11 msecs (HTTP/1.1 200) 6 headers in 321 bytes (1 switches on core 0)
+获取到page: 26
+page26保存成功
+page77请求超时，重试2
+获取到page: 32
+page32保存成功
+page134请求超时，重试3
+page54请求超时，重试1
+获取到page: 25
+page25保存成功
+获取到page: 48
+page48保存成功
+page58请求超时，重试1
+page36请求超时，重试1
+page33请求超时，重试1
+获取到page: 27
+page27保存成功
+page30请求超时，重试1
+获取到page: 43
+page43保存成功
+page37请求超时，重试1
+获取到page: 29
+获取到page: 77
+page42请求超时，重试1
+page29保存成功
+page77保存成功
+获取到page: 24
+page24保存成功
+获取到page: 31
+page31保存成功
+page35请求超时，重试1
+获取到page: 21
+获取到page: 58
+page21保存成功
+page58保存成功
+获取到page: 40
+page40保存成功
+获取到page: 35
+page35保存成功
+获取到page: 65
+page65保存成功
+page46请求超时，重试1
+page28请求超时，重试1
+获取到page: 19
+获取到page: 33
+page19保存成功
+page33保存成功
+获取到page: 61
+page61保存成功
+获取到page: 16
+page16保存成功
+page22请求超时，重试1
+获取到page: 54
+page23请求超时，重试1
+page54保存成功
+获取到page: 34
+page34保存成功
+获取到page: 7
+page7保存成功
+获取到page: 20
+page20保存成功
+获取到page: 49
+page49保存成功
+page17请求超时，重试1
+获取到page: 18
+page18保存成功
+获取到page: 36
+page36保存成功
+获取到page: 42
+page42保存成功
+page30请求超时，重试2
+获取到page: 10
+page10保存成功
+获取到page: 28
+page28保存成功
+获取到page: 12
+page12保存成功
+获取到page: 5
+获取到page: 14
+page5保存成功
+page14保存成功
+page134请求超时，重试4
+获取到page: 2
+page2保存成功
+获取到page: 8
+page8保存成功
+page9请求超时，重试1
+获取到page: 46
+page46保存成功
+获取到page: 3
+page3保存成功
+获取到page: 23
+page23保存成功
+获取到page: 11
+page11保存成功
+获取到page: 4
+page4保存成功
+获取到page: 17
+page17保存成功
+获取到page: 30
+page30保存成功
+获取到page: 37
+获取到page: 13
+page13保存成功
+page37保存成功
+page22请求超时，重试2
+page6请求超时，重试1
+获取到page: 134
+page134保存成功
+获取到page: 15
+page15保存成功
+[pid: 21264|app: 0|req: 11/12] 117.155.56.88 () {48 vars in 964 bytes} [Sat Feb 15 15:14:11 2020] GET /video/admin/view_log/ => generated 116031 bytes in 11 msecs (HTTP/1.1 200) 6 headers in 321 bytes (1 switches on core 0)
+获取到page: 22
+page22保存成功
+获取到page: 6
+page6保存成功
+获取到page: 9
+page9保存成功
+数据更新完成
+['340']
+[pid: 21264|app: 0|req: 11/13] 117.155.56.88 () {44 vars in 876 bytes} [Sat Feb 15 15:06:01 2020] GET /video/admin/test/ => generated 12 bytes in 495022 msecs (HTTP/1.1 200) 4 headers in 135 bytes (1 switches on core 1)
+[pid: 21264|app: 0|req: 12/14] 117.155.56.88 () {48 vars in 964 bytes} [Sat Feb 15 15:14:47 2020] GET /video/admin/view_log/ => generated 116357 bytes in 13 msecs (HTTP/1.1 200) 6 headers in 321 bytes (1 switches on core 0)
+[pid: 21264|app: 0|req: 13/15] 183.192.179.16 () {36 vars in 561 bytes} [Sat Feb 15 15:18:59 2020] GET /index.php => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 1)
+[pid: 21264|app: 0|req: 14/16] 117.155.56.88 () {46 vars in 927 bytes} [Sat Feb 15 15:25:57 2020] GET /video/admin/view_log/ => generated 116532 bytes in 11 msecs (HTTP/1.1 200) 6 headers in 321 bytes (1 switches on core 1)
+[pid: 21264|app: 0|req: 15/17] 117.155.56.88 () {46 vars in 912 bytes} [Sat Feb 15 15:26:07 2020] GET /video/ => generated 32737 bytes in 234 msecs (HTTP/1.1 200) 6 headers in 320 bytes (1 switches on core 0)
+[pid: 21264|app: 0|req: 16/18] 117.155.56.88 () {46 vars in 911 bytes} [Sat Feb 15 15:26:12 2020] GET /video/type/1/ => generated 33938 bytes in 162 msecs (HTTP/1.1 200) 6 headers in 320 bytes (1 switches on core 1)
+[pid: 21264|app: 0|req: 17/19] 117.155.56.88 () {46 vars in 945 bytes} [Sat Feb 15 15:26:16 2020] GET /video/search/?wd=asd&page=1 => generated 10906 bytes in 1942 msecs (HTTP/1.1 200) 6 headers in 320 bytes (1 switches on core 0)
+[pid: 21266|app: 0|req: 1/20] 117.155.56.88 () {46 vars in 945 bytes} [Sat Feb 15 15:26:16 2020] GET /video/search/?wd=asd&page=1 => generated 10906 bytes in 2058 msecs (HTTP/1.1 200) 6 headers in 320 bytes (1 switches on core 0)
+[pid: 21265|app: 0|req: 3/21] 117.155.56.88 () {46 vars in 945 bytes} [Sat Feb 15 15:26:21 2020] GET /video/search/?wd=ada&page=1 => generated 43335 bytes in 593 msecs (HTTP/1.1 200) 6 headers in 320 bytes (1 switches on core 0)
+Sat Feb 15 15:26:22 2020 - uwsgi_response_write_body_do(): Broken pipe [core/writer.c line 341] during GET /video/search/?wd=ada&page=1 (117.155.56.88)
+OSError: write error
+[pid: 21264|app: 0|req: 18/22] 117.155.56.88 () {46 vars in 945 bytes} [Sat Feb 15 15:26:21 2020] GET /video/search/?wd=ada&page=1 => generated 21568 bytes in 1120 msecs (HTTP/1.1 200) 6 headers in 320 bytes (0 switches on core 1)
+Sat Feb 15 15:26:29 2020 - uwsgi_response_write_body_do(): Broken pipe [core/writer.c line 341] during GET /video/search/?wd=ada&page=2 (117.155.56.88)
+OSError: write error
+[pid: 21266|app: 0|req: 2/23] 117.155.56.88 () {46 vars in 959 bytes} [Sat Feb 15 15:26:27 2020] GET /video/search/?wd=ada&page=2 => generated 21568 bytes in 2044 msecs (HTTP/1.1 200) 6 headers in 320 bytes (0 switches on core 1)
+[pid: 21265|app: 0|req: 4/24] 117.155.56.88 () {46 vars in 926 bytes} [Sat Feb 15 15:26:32 2020] GET /video/search/?wd=ada&page=2 => generated 47220 bytes in 1566 msecs (HTTP/1.1 200) 6 headers in 320 bytes (1 switches on core 1)
