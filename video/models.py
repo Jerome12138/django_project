@@ -3,7 +3,8 @@ from django.db import models
 
 # Create your models here.
 class VideoData(models.Model):
-    vod_id = models.CharField(max_length=8, unique=True)  # 视频id
+    vod_id = models.CharField(
+        max_length=8, unique=True, primary_key=True)  # 视频id
     vod_cid = models.CharField(max_length=4)  # 视频分类id
     vod_name = models.CharField(max_length=16)    # "警察日记"
     vod_alias = models.CharField(max_length=16)    # 别名

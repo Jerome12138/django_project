@@ -1,5 +1,6 @@
 from video import models
 
+
 def dump_vod_data(vod_data):    # 将视频数据保存至数据库
     try:
         obj = models.VideoData.objects.filter(
@@ -102,15 +103,13 @@ def dump_bulk_data(data_list):    # 将视频数据保存至数据库
             item['vod_alias'] = ""
             if not models.VideoData.objects.filter(vod_id=item['vod_id']).exists():
                 obj_list.append(models.VideoData(**item))
-                # models.VideoData.objects.create(**item)
             else:
                 update_list.append(models.VideoData(**item))
-                # obj.__dict__.update(item)
-                # obj.save()
-        if not obj_list:
+        if obj_list != []:
             models.VideoData.objects.bulk_create(obj_list)
-        if not update_list:
-            models.VideoData.objects.bulk_update(update_list, fields=["vod_id"],batch_size=100)
+        if update_list != []:
+            models.VideoData.objects.bulk_update(
+                update_list, fields=["vod_addtime",'vod_url','vod_continu'], batch_size=100)
         return True
     except Exception as e:
         print("保存出错：%s" % e)
