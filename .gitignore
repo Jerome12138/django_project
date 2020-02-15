@@ -4,6 +4,7 @@ __pycache__/
 .project
 .settings      
 ##filter databfile、sln file##
+db.sqlite3
 *.mdb  
 *.ldb  
 *.sln    
