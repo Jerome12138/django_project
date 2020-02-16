@@ -55,6 +55,10 @@ def del_request_data(vod_id):  # 从数据库获取数据
     result = models.RequestList.objects.filter(vod_id=vod_id).delete()
     return result
 
+def search_data(wd):  # 从数据库按关键字搜索
+    result = models.VideoData.objects.filter(vod_name__icontains=wd).exclude(vod_cid__in=[16, 17]).all().values(
+            'vod_id', 'vod_pic', 'vod_name', 'vod_continu', 'vod_actor').order_by('-ctime')
+    return result
 
 def load_type_data(vod_cid):  # 从数据库查询视频分类数据
     if vod_cid == '1':
@@ -114,3 +118,4 @@ def dump_bulk_data(data_list):    # 将视频数据保存至数据库
     except Exception as e:
         print("保存出错：%s" % e)
         return False
+

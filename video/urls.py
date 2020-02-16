@@ -10,6 +10,7 @@ urlpatterns = [
     path('play/<str:vod_id>/<int:index>/', views.play),
     path('play2/', views.play2),
     path('search/',views.search),
+    path('search2/',views.search2),
     path('type/<str:vod_cid>/',views.vod_type),
     path('push_request/',views.push_request),
     path('admin/',views.admin),

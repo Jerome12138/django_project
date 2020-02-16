@@ -1,0 +1,103 @@
+{% extends "video_layout.html" %}
+
+{% block title %}<title>卧龙影视，您的专属在线影院</title>{% endblock %}
+
+{% block css %}
+<style>
+
+</style>
+{% endblock %}
+
+
+{% block main %}
+<div class="stui-pannel clearfix">
+    <div class="stui-pannel__head clearfix">
+        <h3 class="title">
+            与“{{ wd }}”相关的影片 共{{data_count}}部
+        </h3>
+    </div>
+    <div class="video_list">
+        <ul class="tt">
+            <li>
+                <span class="v-list-1">影片名称</span>
+                <span class="v-list-2">影片类别</span>
+                <span class="v-list-4">提交请求</span>
+                <span class="hidden-xs v-list-3">更新时间</span>
+            </li>
+        </ul>
+        {% for item in video_list %}
+        <ul class="td">
+            <li>
+                <span style="display: none;">{{ item.vod_id }}</span>
+                <!-- 影片名称 -->
+                <span class="v-list-1">
+                    <a href="/video/play/{{ item.vod_id }}/" target="_blank"
+                        title="{{ item.vod_name}}({{ item.vod_continu}})">
+                        <span style="border:none!important">{{ item.vod_name}}</span>
+                        <span class="hidden-xs" style="border:none!important">({{ item.vod_continu}})</span>
+                    </a>
+                </span>
+                <!-- 影片类别 -->
+                <span class="v-list-2">{{ item.list_name}}</span>
+                <!-- 操作 -->
+                <span class="v-list-4">
+                    {% if item.is_save == 0 %}
+                    <a href="javascript:void(0)" class="req_btn" style="color: red;border-bottom:red 1px solid;">暂无资源,
+                        催更</a>
+                    {% else %}
+                    <a href="/video/play/{{ item.vod_id }}/" target="_blank"
+                        style="color: blue;border-bottom:blue 1px solid;">立即观看</a>&nbsp;
+                    <a href="javascript:void(0)" class="req_btn" style="color: red;border-bottom:red 1px solid;">催更</a>
+                    {% endif %}
+                </span>
+                <!-- 更新时间 -->
+                <span class="v-list-3 hidden-xs">{{ item.vod_addtime}}</span>
+            </li>
+        </ul>
+        {% endfor%}
+        <!-- 翻页 -->
+        <div style="clear: both;"></div>
+        <ul class="stui-page text-center clearfix">
+            {{ page_str }}
+        </ul>
+        <!-- end 翻页 -->
+    </div>
+</div>
+
+{% endblock %}
+
+{% block js %}
+<script src='/static/jquery.cookie.js'></script>
+<script>
+    $('.req_btn').click(function () {
+        var res = confirm('确认提交？');
+        if (res == true) {
+            $.ajax({
+                url: '/video/push_request/',
+                type: "POST",
+                headers: { "X-CSRFToken": $.cookie('csrftoken') },
+                data: {
+                    'vod_addtime': $(this).parent().next().text(),
+                    'list_name': $(this).parent().prev().text(),
+                    'vod_name': $(this).parent().prev().prev().children().children(":first").text(),
+                    'vod_continu': $(this).parent().prev().prev().children().children(":last").text(),
+                    'vod_id': $(this).parent().prev().prev().prev().text(),
+                }, // 要提交的数据
+                dataType: 'JSON',                 // 自动将接收到的data反序列化成obj返回
+                success: function (obj) {
+                    if (obj.status) {
+                        alert('提交成功，管理员稍后为您添加！')
+                    } else {
+                        console.log(obj.error),
+                            alert('请求出错，请稍后重试')
+                    }
+                },
+                error: function () {
+                    console.log("请求未知错误")
+                    //后台未接收到请求或未返回数据等未知错误
+                }
+            })
+        };
+    })
+</script>
+{% endblock %}

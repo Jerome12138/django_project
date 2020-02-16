@@ -58,6 +58,34 @@ def play2(request):
 
 
 def search(request):  # 搜索视频信息
+    if request.method == "POST":    # 搜索方式
+        wd = request.POST.get('wd')
+        page_index = 1
+    elif request.method == "GET":   # 翻页方式
+        wd = request.GET.get('wd')
+        page_index = int(request.GET.get('page'))
+    data_list = search_data(wd)
+    data_count = len(data_list)
+    page = Page('/video/search/?wd=%s&page=' %
+                wd, page_index, data_count//24 + 1)
+    page_str = page.page_str()
+    if page_index < data_count//24 + 1:
+        start_index = (page_index-1)*24
+        end_index = page_index*24
+    elif page_index == data_count//24 + 1:
+        start_index = (page_index-1)*24
+        end_index = data_count
+    else:
+        return HttpResponse('请求错误')
+    video_list = data_list[start_index:end_index]
+    return render(request, 'video_search.html', {
+        "video_list": video_list,
+        'page_str': page_str,
+        "data_count": data_count,
+        'wd':wd
+    })
+
+def search2(request):  # 搜索视频信息
     if request.method == "POST":
         wd = request.POST.get('wd')
         page_index = 1
@@ -72,17 +100,16 @@ def search(request):  # 搜索视频信息
             item['is_save'] = 1
         else:
             item['is_save'] = 0
-    page = Page('/video/search/?wd=%s&page=' %
+    page = Page('/video/search2/?wd=%s&page=' %
                 wd, page_index, data_count//50 + 1)
     page_str = page.page_str()
-    return render(request, 'video_search.html', {
+    return render(request, 'video_search2.html', {
         "video_list": video_list,
         "wd": wd,
         "page_index": page_index,
         "data_count": data_count,
         'page_str': page_str
     })
-
 
 def push_request(request):  # 提交请求给管理员
     ret = {'status': True, 'error': None, 'data': None}
@@ -94,13 +121,13 @@ def push_request(request):  # 提交请求给管理员
         request_data['vod_continu'] = request.POST.get('vod_continu')
         request_data['list_name'] = request.POST.get('list_name')
         request_data['is_add'] = 0
+        # print(request_data)
         flag = dump_request_data(request_data)
         if flag:
             ret['data'] = "已成功添加请求： %s !" % request_data['vod_name']
         else:
             ret['status'] = False
             ret['error'] = "数据库操作出现错误"
-        # print(request_data)
     except Exception as e:
         print(e)
         ret['status'] = False
