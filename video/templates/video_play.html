@@ -75,37 +75,37 @@
 <script src="/static/DPlayer/DPlayer.min.js"></script>
 <script src='/static/jquery.cookie.js'></script>
 <script>
-    (function () {
-        $('#push_req').click(function () {
-            var res = confirm('确认提交？');
-            if (res == true) {
-                $.ajax({
-                    url: '/video/push_request/',
-                    type: "POST",
-                    headers: { "X-CSRFToken": $.cookie('csrftoken') },
-                    data: {
-                        'vod_addtime': $(this).parents('.title').next('.data').children('span:eq(1)').text(),
-                        'list_name': $(this).parents('.title').next('.data').children('a:eq(0)').text(),
-                        'vod_name': $(this).parent().prev('a').text(),
-                        'vod_continu': $(this).parents('.title').next('.data').children('span:eq(2)').text(),
-                        'vod_id': $(this).parents('.title').next('.data').children('span:eq(0)').text(),
-                    }, // 要提交的数据
-                    dataType: 'JSON',                 // 自动将接收到的data反序列化成obj返回
-                    success: function (obj) {
-                        if (obj.status) {
-                            alert('提交成功，管理员稍后为您添加！')
-                        } else {
-                            console.log(obj.error),
+    $('#push_req').click(function () {
+        var res = confirm('确认提交？');
+        if (res == true) {
+            $.ajax({
+                url: '/video/push_request/',
+                type: "POST",
+                headers: { "X-CSRFToken": $.cookie('csrftoken') },
+                data: {
+                    'vod_addtime': $(this).parents('.title').next('.data').children('span:eq(1)').text(),
+                    'list_name': $(this).parents('.title').next('.data').children('a:eq(0)').text(),
+                    'vod_name': $(this).parent().prev('a').text(),
+                    'vod_continu': $(this).parents('.title').next('.data').children('span:eq(2)').text(),
+                    'vod_id': $(this).parents('.title').next('.data').children('span:eq(0)').text(),
+                }, // 要提交的数据
+                dataType: 'JSON',                 // 自动将接收到的data反序列化成obj返回
+                success: function (obj) {
+                    if (obj.status) {
+                        alert('提交成功，管理员稍后为您添加！')
+                    } else {
+                        console.log(obj.error),
                             alert('请求出错，请稍后重试')
-                        }
-                    },
-                    error: function () {
-                        console.log("请求未知错误")
-                        //后台未接收到请求或未返回数据等未知错误
                     }
-                })
-            };
-        })
+                },
+                error: function () {
+                    console.log("请求未知错误")
+                    //后台未接收到请求或未返回数据等未知错误
+                }
+            })
+        };
+    });
+    (function () {
         var player = new DPlayer({
             "container": document.getElementById("video_player"), // 对应 div 中的 id
             "preload": "auto",
