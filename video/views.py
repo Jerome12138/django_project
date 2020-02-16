@@ -4,7 +4,8 @@ from video import models
 from .func.GetPageData import *
 from .func.db_handler import *
 from .func.pagination import Page
-import time,os
+import time
+import os
 
 # Create your views here.
 
@@ -37,7 +38,7 @@ def play(request, vod_id, index=1):  # 播放页面
         return render(request, 'video_nonepage.html', {'msg': "影片尚未收录,有需要请联系管理员"})
     url = vod_data.vod_url
     print(url)
-    if url[0:1] != '[':  # 如果url只有一个，则转换为列表
+    if (url[0:1] != '[') and ('/r/n'in url):  # 如果url只有一个，则转换为列表
         video_list = [url.split('$'), ]
     else:
         video_list = [item.split('$') for item in eval(url)]
@@ -83,8 +84,9 @@ def search(request):  # 搜索视频信息
         "video_list": video_list,
         'page_str': page_str,
         "data_count": data_count,
-        'wd':wd
+        'wd': wd
     })
+
 
 def search2(request):  # 搜索视频信息
     if request.method == "POST":
@@ -111,6 +113,7 @@ def search2(request):  # 搜索视频信息
         "data_count": data_count,
         'page_str': page_str
     })
+
 
 def push_request(request):  # 提交请求给管理员
     ret = {'status': True, 'error': None, 'data': None}
@@ -195,7 +198,6 @@ def vod_type(request, vod_cid):
     })
 
 
-
 def add_vod(request):   # 添加视频数据
     ret = {'status': True, 'error': None, 'data': None}
     try:
@@ -220,14 +222,14 @@ def add_vod(request):   # 添加视频数据
 
 def view_log(request, log_date=0):
     if log_date == 0:
-        log_date = time.strftime("%Y-%m-%d",time.localtime(time.time()))
+        log_date = time.strftime("%Y-%m-%d", time.localtime(time.time()))
         is_today = True
         log_path = 'uwsgi.log'
     else:
         is_today = False
         log_path = 'logs/uwsgi-%s.log' % log_date
         if not(os.path.exists(log_path) and os.path.isfile(log_path)):
-            return render(request, 'video_nonepage.html',{'msg':'当天无日志'})
+            return render(request, 'video_nonepage.html', {'msg': '当天无日志'})
     log = load_log(log_path)
     import re
     log = re.sub(
@@ -241,8 +243,8 @@ def view_log(request, log_date=0):
     # print(log_str)
     return render(request, 'video_log.html', {
         "log": log_str,
-        'log_date':log_date,
-        'is_today':is_today
+        'log_date': log_date,
+        'is_today': is_today
     })
 
 
