@@ -76,22 +76,6 @@
 <script src='/static/jquery.cookie.js'></script>
 <script>
     (function () {
-        var player = new DPlayer({
-            "container": document.getElementById("video_player"), // 对应 div 中的 id
-            "preload": "auto",
-            "screenshot": true,
-            "video": {   // 视频配置
-                // m3u8模式
-                // "url":"https://moeplayer.b0.upaiyun.com/dplayer/hls/hikarunara.m3u8", // 示例视频链接
-                // "url":"https://dapian.video-yongjiu.com/20190731/5652_13d2ab94/800k/hls/index.m3u8", // 视频链接
-                "url": "{{ video_url.1 }}", // 视频链接
-                "type": "hls",
-                // 直链模式
-                // "url":"http://static.smartisanos.cn/common/video/t1-ui.mp4" // 示例视频链接
-            },
-        });
-        window.dplayers || (window.dplayers = []);
-        window.dplayers.push(player);
         $('#push_req').click(function () {
             var res = confirm('确认提交？');
             if (res == true) {
@@ -122,6 +106,22 @@
                 })
             };
         })
+        var player = new DPlayer({
+            "container": document.getElementById("video_player"), // 对应 div 中的 id
+            "preload": "auto",
+            "screenshot": true,
+            "video": {   // 视频配置
+                // m3u8模式
+                // "url":"https://moeplayer.b0.upaiyun.com/dplayer/hls/hikarunara.m3u8", // 示例视频链接
+                // "url":"https://dapian.video-yongjiu.com/20190731/5652_13d2ab94/800k/hls/index.m3u8", // 视频链接
+                "url": "{{ video_url.1 }}", // 视频链接
+                "type": "hls",
+                // 直链模式
+                // "url":"http://static.smartisanos.cn/common/video/t1-ui.mp4" // 示例视频链接
+            },
+        });
+        window.dplayers || (window.dplayers = []);
+        window.dplayers.push(player);
     })()
 </script>
 {% endblock %}
