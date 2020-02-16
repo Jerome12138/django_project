@@ -130,6 +130,7 @@ def run_forever(func):  # 无限循环运行
 class getAllData(object):   # 获取所有数据
     def __init__(self):
         self.url_temp = "http://www.zdziyuan.com/inc/s_feifei3zuidam3u8/?p=%s"
+        self.url2_temp = "https://cj.okzy.tv/inc/feifei3ckm3u8s/?p=%s"
         self.headers = {
             "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36"}
         self.url_queue = LifoQueue()
@@ -188,7 +189,8 @@ class getAllData(object):   # 获取所有数据
             # self.url_queue.put(url)
             self.error_pages.append(url.split('?p=')[1])
         else:
-            print('获取到page:', url.split('?p=')[1])
+            if int(url.split('?p=')[1])%100==0:
+                print('获取到page:', url.split('?p=')[1])
             self.page_queue.put(res_dict)
         self.url_queue.task_done()
 
@@ -200,7 +202,8 @@ class getAllData(object):   # 获取所有数据
             print('%s保存出现错误' % res_dict['page']['pageindex'])
             self.page_queue.put(res_dict)
         else:
-            print('page%s保存成功' % res_dict['page']['pageindex'])
+            if int(res_dict['page']['pageindex'])%100==0:
+                print('page%s保存成功' % res_dict['page']['pageindex'])
         self.page_queue.task_done()
 
     def run_use_more_thread(self, func, count=1):   # 运行多线程

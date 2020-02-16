@@ -193,8 +193,10 @@ def add_vod(request):   # 添加视频数据
 def view_log(request, log_date=0):
     if log_date == 0:
         log_date = time.strftime("%Y-%m-%d",time.localtime(time.time()))
+        is_today = True
         log_path = 'uwsgi.log'
     else:
+        is_today = False
         log_path = 'logs/uwsgi-%s.log' % log_date
         if not(os.path.exists(log_path) and os.path.isfile(log_path)):
             return render(request, 'video_nonepage.html',{'msg':'当天无日志'})
@@ -211,11 +213,12 @@ def view_log(request, log_date=0):
     # print(log_str)
     return render(request, 'video_log.html', {
         "log": log_str,
-        'log_date':log_date
+        'log_date':log_date,
+        'is_today':is_today
     })
 
 
-def get_resources(request):
+def update(request):
     get_all_data = getAllData()
     flag = get_all_data.run()
     if flag:

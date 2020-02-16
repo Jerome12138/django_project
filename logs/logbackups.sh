@@ -1,13 +1,15 @@
 #!/bin/bash
-
-LOGDIR="/home/ubuntu/git/django_project"
+# 自动备份日志
+BASEDIR="/home/ubuntu/git/django_project"
 
 DATE=`date -d "yesterday" +"%Y-%m-%d"`
 
 NEWDIR="/home/ubuntu/git/django_project/logs"
 
-mv ${LOGDIR}/uwsgi.log  ${NEWDIR}/uwsgi-${DATE}.log
+mv ${BASEDIR}/uwsgi.log  ${NEWDIR}/uwsgi-${DATE}.log
 
-touch /home/ubuntu/git/django_project/logs/.touchforlogrotat
+touch ${BASEDIR}/logs/.touchforlogrotat
 
-touch ${LOGDIR}/uwsgi.log
+touch ${BASEDIR}/uwsgi.log
+# 自动更新
+curl http://127.0.0.1:8000/video/admin/update/

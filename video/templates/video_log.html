@@ -1,4 +1,5 @@
 {% extends "video_layout.html" %}
+{% load change_date %}
 
 {% block title %} <title>后台管理</title> {% endblock %}
 
@@ -13,6 +14,10 @@
             后台管理&nbsp;&nbsp;
         </h3>
         <span>{{ log_date }}日志文件</span>
+        {% if not is_today %}
+        <a href="/video/admin/view_log/{% inc_one_day log_date %}" style="float: right;color: cadetblue;padding: 0 5px;">后一天</a>
+        {% endif %}
+        <a href="/video/admin/view_log/{% dec_one_day log_date %}" style="float: right;color: cadetblue;padding: 0 5px;">前一天</a>
     </div>
     <div class="video_list" style="white-space: pre-line; margin:0 30px">
         {{ log }}
