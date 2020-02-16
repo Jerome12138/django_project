@@ -8,7 +8,7 @@ urlpatterns = [
     path('home/', views.home),
     path('play/<str:vod_id>/', views.play),
     path('play/<str:vod_id>/<int:index>/', views.play),
-    path('play2/<int:index>/', views.play2),
+    path('play2/', views.play2),
     path('search/',views.search),
     path('type/<str:vod_cid>/',views.vod_type),
     path('push_request/',views.push_request),

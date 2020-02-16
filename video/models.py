@@ -21,6 +21,7 @@ class VideoData(models.Model):
     vod_addtime = models.CharField(max_length=32)  # "2020-02-04 10:17:47"
     # "HD1280高清国语中字版$https://meng.wuyou-zuida.com/20200203/25682_6a2d6704/index.m3u8"
     vod_url = models.TextField()
+    vod_url2 = models.TextField(null=True)
     vod_length = models.IntegerField()
     # # "http://www.zuidazy1.net/?m=vod-detail-id-78482.html"
     # vod_reurl = models.CharField(max_length=128)

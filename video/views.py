@@ -49,6 +49,14 @@ def play(request, vod_id, index=1):  # 播放页面
     })
 
 
+def play2(request):
+    if request.method == "GET":
+        url = request.GET.get('url')
+    elif request.method == "POST":
+        url = request.POST.get('url')
+    return render(request, 'video_play2.html', {"video_url": url})
+
+
 def search(request):  # 搜索视频信息
     if request.method == "POST":
         wd = request.POST.get('wd')
@@ -158,16 +166,6 @@ def vod_type(request, vod_cid):
         "data_count": data_count
     })
 
-
-def play2(request, index=1):
-    video_list = [
-        "http://hong.tianzhen-zuida.com/20200101/17589_a77ac9a0/index.m3u8",
-        "http://hong.tianzhen-zuida.com/20200101/17588_3b2a1b68/index.m3u8",
-        "http://hong.tianzhen-zuida.com/20200102/17660_deee4d08/index.m3u8",
-        "http://hong.tianzhen-zuida.com/20200102/17659_772db27f/index.m3u8",
-        "http://hong.tianzhen-zuida.com/20200108/18057_a40df9d5/index.m3u8",
-    ]
-    return render(request, 'video_play2.html', {"video_count": range(len(video_list)), "index": index, "video_url": video_list[index]})
 
 
 def add_vod(request):   # 添加视频数据
