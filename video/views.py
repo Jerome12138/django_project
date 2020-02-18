@@ -38,13 +38,16 @@ def play(request, vod_id, index=1):  # 播放页面
         return render(request, 'video_nonepage.html', {'msg': "影片尚未收录,有需要请联系管理员"})
     url = vod_data.vod_url
     if len(url.split('$')) <= 2:  # 如果url只有一个，则转换为列表
-        video_list = [url.split('$'), ]
+        if url[0:1] != '[':
+            url_list = [url,]
+        else:
+            url_list = eval(url)
     else:
         if '\r\n' in url:
             url_list = url.split('\r\n')
         else:
             url_list = eval(url)
-        video_list = [item.split('$') for item in url_list]
+    video_list = [item.split('$') for item in url_list]
     return render(request, 'video_play.html', {
         'vod_data': vod_data,
         "video_list": video_list,
