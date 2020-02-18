@@ -9,6 +9,38 @@ import os
 
 # Create your views here.
 
+user_list = {}
+
+def sign_in(request):   # 登录页面
+    if request.method == 'GET':
+        res = render(request, 'sign_in.html',{'error_msg':''})
+    elif request.method == 'POST':
+        email = request.POST.get('email', None)
+        pwd = request.POST.get('pwd', None)
+        if email == 'root@163.com' and pwd == '123':
+            res = redirect('/app1/record/')
+            res.set_cookie('user', 'dasdasdasdasdaw')
+            print('已设置cookie')
+        else:
+            error_msg = '用户名或密码错误'
+            res = render(request, 'sign_in.html', {'error_msg': error_msg})
+    else:
+        error_msg = '其他方式暂不支持'
+        res = render(request, 'sign_in.html', {'error_msg': error_msg})
+    return res
+
+
+def auth(func):  # 验证登录状态
+    def inner(request, *args, **kwargs):
+        # request.COOKIES.clear()
+        cookie = request.COOKIES.get('user')
+        if cookie == 'null' or not cookie:
+            print('没有cookie')
+            return redirect('/app1/sign-in/')
+        print(cookie)
+        return func(request, *args, **kwargs)
+    return inner
+
 
 def home(request):  # 主页
     page_index = int(request.GET.get('page')) if request.GET.get('page') else 1
