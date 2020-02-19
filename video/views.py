@@ -271,12 +271,14 @@ def view_log(request, log_date=0):
     import re
     log = re.sub(
         r'(\*\*\*\sStarting\suWSGI.+?interpreter\smode\s\*\*\*)', '*** Starting uWSGI ***', log, flags=re.DOTALL)
-    log = re.sub(r'(nsukey\=.+)', '<wechat>', log)
+    log = re.sub(r'(nsukey\=.+)', '<<wechat>>', log)
+    log = re.sub(r'(\[pid:.+?\.php.+?\(HTTP\/\d\.\d\s404\).+\n)', '', log)
+    log = re.sub(r'(\[pid:.+?GET\s\/\s\=\>\sgenerated.+?\(HTTP\/\d\.\d\s404\).+\n)', '', log)
     log = re.sub(r'(\[pid.+?\])', '', log)
     log = re.sub(r'(\(\)\s\{.+?bytes\})', '', log)
     log = re.sub(r'(\d+?\sheaders\sin.+?\))', '', log)
     log = re.sub(r'(generated.+?msecs)', '', log)
-    log_str = re.sub(r'(.+\(HTTP\/1\.1\s30\d\).+\n)', '', log)
+    log_str = re.sub(r'(.+?\(HTTP\/1\.1\s30\d\).+\n)', '', log)
     # print(log_str)
     return render(request, 'video_log.html', {
         "log": log_str,
