@@ -21,10 +21,10 @@ def sign_in(request):
             print('已设置cookie')
         else:
             error_msg = '用户名或密码错误'
-            res = render(request, 'sign_in.html', {'error_msg': error_msg})
+            res = render(request, 'sign-in.html', {'error_msg': error_msg})
     else:
         error_msg = '其他方式暂不支持'
-        res = render(request, 'sign_in.html', {'error_msg': error_msg})
+        res = render(request, 'sign-in.html', {'error_msg': error_msg})
     return res
 
 

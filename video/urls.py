@@ -1,25 +1,27 @@
-__author__ = "Jerome Chang"
+__author__ = "Jerome"
 from django.contrib import admin
-from django.urls import path
+from django.urls import path, include
 from video import views
+adminpatterns = [
+    path('del_request/', views.del_request),
+    path('add_vod/', views.add_vod),
+    path('view_log/<str:log_date>/', views.view_log),
+    path('view_log/', views.view_log),
+    path('update/', views.update),
+    # path('update_list/',views.update_list),
+    path('', views.admin),
+]
 
 urlpatterns = [
-    # path('admin/', admin.site.urls),
     path('home/', views.home),
     path('sign-in/', views.sign_in),
     path('play/<str:vod_id>/', views.play),
     path('play/<str:vod_id>/<int:index>/', views.play),
     path('play2/', views.play2),
-    path('search/',views.search),
-    path('search2/',views.search2),
-    path('type/<str:vod_cid>/',views.vod_type),
-    path('push_request/',views.push_request),
-    path('admin/',views.admin),
-    path('admin/del_request/',views.del_request),
-    path('admin/add_vod/',views.add_vod),
-    path('admin/view_log/<str:log_date>/',views.view_log),
-    path('admin/view_log/',views.view_log),
-    path('admin/update/',views.update),
-    # path('admin/update_list/',views.update_list),
-    path('',views.home),
+    path('search/', views.search),
+    path('search2/', views.search2),
+    path('type/<str:vod_cid>/', views.vod_type),
+    path('push_request/', views.push_request),
+    path('admin/', include(adminpatterns)),
+    path('', views.home),
 ]

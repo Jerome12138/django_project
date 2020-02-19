@@ -1,0 +1,92 @@
+{% extends 'home_layout.html' %}
+
+{% block title %}
+    {{ user_obj.nickname }}的个人主页
+{% endblock %}
+
+{% block css %}
+    <style>
+        .article_block {
+            min-height: 10px;
+            background: #fff;
+            border-radius: 7px;
+            box-shadow: 1px 1px 2px #A7A8AD;
+            color: #666666;
+            margin: 0 5px 20px 0;
+            padding: 5px 20px 10px;
+        }
+
+        .day_time {
+            width: 100%;
+            color: #666;
+            line-height: 2.2em;
+            font-size: 22px;
+            border-bottom: 1px solid #ccc;
+            text-align: center;
+        }
+
+        .article_title {
+            border-bottom: 1px dashed #ccc;
+            line-height: 2.5em;
+            width: 100%;
+        }
+
+        .article_title a {
+            font-weight: bold;
+            float: left;
+            font-size: 18px;
+            padding-left: 5px;
+        }
+
+        .article_title .article_category {
+            color: gray;
+            font-size: 12px;
+            line-height: 1.5em;
+            margin-top: 1.5em;
+        }
+
+        .article_abstract {
+            line-height: 1.5;
+            width: 100%;
+            padding: 10px 0 0 5px;
+        }
+
+        .post_block {
+            float: right;
+            width: 100%;
+            clear: both;
+            text-align: right;
+            padding-right: 5px;
+            color: #A8B1BA;
+            line-height: 2.5em;
+        }
+    </style>
+{% endblock %}
+
+{% block main %}
+    <div>
+        {% for article_obj in article_objs %}
+            <div class="article_block">
+{#                <div class="day_time">#}
+{#                    <a href="">2018年11月11日</a>#}
+{#                </div>#}
+                <div class="article_title">
+                    <a href="/blog/{{ user_obj.username }}/articles/{{ article_obj.id }}.html">{{ article_obj.title }}</a>
+                    <div class="right article_category">{{ article_obj.category }}</div>
+                    <div class="clear"></div>
+                </div>
+                <div class="article_abstract">{{ article_obj.content|slice:"30" }}</div>
+                <div class="post_block">
+                    posted&nbsp;@{{ article_obj.create_time }}&nbsp;{{ user_obj.nickname }}
+                    阅读({{ article_obj.read_count }})评论({{ article_obj.comment_count }})
+                    <a href="/blog/backend/edit_article/{{ article_obj.id }}/">编辑</a>
+                </div>
+                <div class="clear"></div>
+            </div>
+        {% endfor %}
+    </div>
+{% endblock %}
+
+{% block js %}
+
+{% endblock %}

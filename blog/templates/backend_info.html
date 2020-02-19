@@ -1,0 +1,193 @@
+{% extends 'backend_layout.html' %}
+
+{% block css %}
+    <style type="text/css">
+        .info_block {
+            width: 580px;
+            margin: 25px 0;
+            font-size: 12px;
+        }
+
+        .info_title_block {
+            margin-top: 8px;
+            margin-bottom: 5px;
+            border-bottom: 1px solid #BFD1EB;
+            padding-bottom: 5px;
+            padding-left: 10px;
+            padding-right: 5px;
+        }
+
+        .info_display_block {
+            padding-bottom: 5px;
+            padding-left: 10px;
+            padding-right: 5px;
+        }
+    </style>
+{% endblock %}
+
+{% block main %}
+    <form action="" id="info_form">
+        {% csrf_token %}
+        <div class="info_block">
+            <div class="info_title_block">
+                <span class="bold left">登录用户名</span>
+                <span class="right">
+                    <a href="javascript:void(0);" onclick="infoEdit(this)">修改</a>
+                </span>
+                <div class="clear"></div>
+            </div>
+            <div class="info_display_block">
+                <span class="left">您的登录用户名</span>
+                <span class="right">{{ user_obj.username }}</span>
+                <div class="clear"></div>
+            </div>
+            <div class="info_edit_block" style="display: none;">
+                <div class="edit_block left">
+                    <span>新登录用户名:</span>
+                    <input type="text" name="new_username">
+
+                </div>
+                <span class="right">{{ user_obj.username }}</span>
+                <div class="clear"></div>
+                <div>
+                    <input type="button" value="保存">
+                    <input type="button" value="取消">
+                </div>
+            </div>
+        </div>
+
+    </form>
+    <form action="" id="info_form">
+        {% csrf_token %}
+        <div class="info_block">
+            <div class="info_title_block">
+                <span class="bold left">登录用户名</span>
+                <span class="right">
+                    <a href="###" onclick="infoEdit(this);return false;">修改</a>
+                </span>
+                <div class="clear"></div>
+            </div>
+            <div class="info_display_block">
+                <span class="left">您的登录用户名</span>
+                <span class="right">{{ user_obj.username }}</span>
+                <div class="clear"></div>
+            </div>
+            <div class="info_edit_block" style="display: none;">
+                <div class="edit_block left">
+                    <span>新登录用户名:</span>
+                    <input type="text">
+
+                </div>
+                <span class="right">{{ user_obj.username }}</span>
+                <div class="clear"></div>
+                <div>
+                    <input type="button" value="保存">
+                    <input type="button" value="取消">
+                </div>
+            </div>
+        </div>
+
+    </form>
+    <form action="" id="info_form">
+        <div class="info_block">
+            <div class="info_title_block">
+                <span class="bold left">登录用户名</span>
+                <span class="right">
+                    <a href="###" onclick="infoEdit(this);return false;">修改</a>
+                </span>
+                <div class="clear"></div>
+            </div>
+            <div class="info_display_block">
+                <span class="left">您的登录用户名</span>
+                <span class="right">{{ user_obj.username }}</span>
+                <div class="clear"></div>
+            </div>
+            <div class="info_edit_block" style="display: none;">
+                <div class="edit_block left">
+                    <span>新登录用户名:</span>
+                    <input type="text">
+
+                </div>
+                <span class="right">{{ user_obj.username }}</span>
+                <div class="clear"></div>
+                <div>
+                    <input type="button" value="保存">
+                    <input type="button" value="取消">
+                </div>
+            </div>
+        </div>
+
+    </form>
+    <form action="" id="info_form">
+        <div class="info_block">
+            <div class="info_title_block">
+                <span class="bold left">登录用户名</span>
+                <span class="right">
+                    <a href="###" onclick="infoEdit(this);return false;">修改</a>
+                </span>
+                <div class="clear"></div>
+            </div>
+            <div class="info_display_block">
+                <span class="left">您的登录用户名</span>
+                <span class="right">{{ user_obj.username }}</span>
+                <div class="clear"></div>
+            </div>
+            <div class="info_edit_block" style="display: none;">
+                <div class="edit_block left">
+                    <span>新登录用户名:</span>
+                    <input type="text">
+
+                </div>
+                <span class="right">{{ user_obj.username }}</span>
+                <div class="clear"></div>
+                <div>
+                    <input type="button" value="保存">
+                    <input type="button" value="取消">
+                </div>
+            </div>
+        </div>
+
+    </form>
+    <form action="" id="info_form">
+        <div class="info_block">
+            <div class="info_title_block">
+                <span class="bold left">登录用户名</span>
+                <span class="right">
+                    <a href="###" onclick="infoEdit(this);return false;">修改</a>
+                </span>
+                <div class="clear"></div>
+            </div>
+            <div class="info_display_block">
+                <span class="left">您的登录用户名</span>
+                <span class="right">{{ user_obj.username }}</span>
+                <div class="clear"></div>
+            </div>
+            <div class="info_edit_block" style="display: none;">
+                <div class="edit_block left">
+                    <span>新登录用户名:</span>
+                    <input type="text">
+
+                </div>
+                <span class="right">{{ user_obj.username }}</span>
+                <div class="clear"></div>
+                <div>
+                    <input type="button" value="保存">
+                    <input type="button" value="取消">
+                </div>
+            </div>
+        </div>
+
+    </form>
+{% endblock %}
+
+{% block js %}
+    <script>
+        function infoEdit(ths) {
+            $(ths).parent().parent().siblings('.info_display_block').toggle().siblings('.info_edit_block').toggle();
+        }
+
+        $(function () {
+            $('#account_nav').addClass('current_nav');
+        })
+    </script>
+{% endblock %}

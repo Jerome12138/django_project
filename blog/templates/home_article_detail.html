@@ -1,0 +1,439 @@
+{% extends 'home_layout.html' %}
+
+{% block title %}
+    {{ article_obj.title }}
+{% endblock %}
+
+{% block css %}
+    <style>
+        .article_block {
+            padding: 25px;
+            min-height: 200px;
+            margin-bottom: 15px;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            word-break: break-all;
+            background: #fff;
+            border-radius: 7px;
+            box-shadow: 1px 1px 2px #A7A8AD;
+        }
+
+        #article_title {
+            font-size: 130%;
+            font-weight: bold;
+            border-bottom: 1px solid #999;
+            float: left;
+            line-height: 2em;
+            width: 100%;
+            padding-left: 5px;
+        }
+
+        #article_content {
+            margin-bottom: 20px;
+        }
+
+        #article_info_block {
+            margin-top: 20px;
+        }
+
+        #article_category {
+            margin-bottom: 10px;
+        }
+
+        #article_tag {
+            color: #666;
+            font-size: 9pt;
+        }
+
+        #article_tag a {
+            padding-right: 10px;
+            display: inline-block;
+        }
+
+        #green_channel {
+            padding: 10px 0;
+            margin-bottom: 10px;
+            margin-top: 10px;
+            border: silver 1px dashed;
+            font-size: 12px;
+            width: 350px;
+            text-align: center;
+        }
+
+        #green_channel a {
+            display: inline-block;
+            padding: 3px 8px;
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            cursor: pointer;
+            margin-right: 10px;
+            text-shadow: 0 -1px 1px rgba(0, 0, 0, .25);
+            vertical-align: middle;
+        }
+
+        #green_channel_digg {
+            background-color: #2daebf;
+        }
+
+        #green_channel_follow {
+            background-color: #e33100;
+        }
+
+        #green_channel_favorite {
+            background-color: #ffb515;
+        }
+
+        #author_profile {
+            float: left;
+            width: 280px;
+            margin-top: 0;
+            margin-bottom: 10px;
+            color: #000;
+            margin-left: 0;
+            font-size: 12px;
+        }
+
+        .author_profile_info {
+            float: left;
+            line-height: 18px;
+        }
+
+        #div_digg {
+            position: fixed;
+            bottom: 10px;
+            right: 15px;
+            border: 2px solid #ECD7B1;
+            font-size: 12px;
+            text-align: center;
+            padding: 10px;
+            width: 140px;
+            background-color: #FFF;
+            border-radius: 5px 5px 5px 5px !important;
+        }
+
+        .img {
+            width: 50px;
+            height: 50px;
+            background-color: #96ff63;
+            vertical-align: top;
+            float: left;
+            margin-right: 5px;
+            padding-top: 5px;
+            padding-left: 2px;
+            border: 0;
+        }
+
+        .diggit {
+            float: left;
+            width: 46px;
+            height: 52px;
+            text-align: center;
+            cursor: pointer;
+            margin-top: 2px;
+            padding-top: 5px;
+        }
+
+        .buryit {
+            float: right;
+            margin-left: 20px;
+            width: 46px;
+            height: 52px;
+            text-align: center;
+            cursor: pointer;
+            margin-top: 2px;
+            padding-top: 5px;
+        }
+
+        .post_block {
+            float: right;
+            width: 100%;
+            text-align: right;
+            padding-right: 5px;
+            color: #666;
+            margin-top: 5px;
+        }
+
+        #comment_nav {
+            text-align: right;
+        }
+
+        #comment_nav a {
+            padding-left: 10px;
+        }
+
+        #comment_block {
+            margin-bottom: 30px;
+        }
+
+        .feedback_item {
+            border: gray dashed 1px;
+            margin-top: 10px;
+            margin-left: 10px;
+        }
+
+        .feedback_body {
+            margin: 5px 5px 5px 20px;
+        }
+
+        .comment_actions {
+            float: right;
+            font-size: 14px;
+        }
+
+        .comment_actions a {
+            padding: 0 5px;
+        }
+
+        .comment_reply_block {
+            display: inline-block;
+            border-bottom: #666666 solid 1px;
+            color: #030b1e;
+            margin-right: 5px;
+        }
+
+        #comment_container {
+            margin-top: 20px;
+        }
+
+    </style>
+{% endblock %}
+
+{% block main %}
+    <div class="article_block">
+        <div id="article_title">
+            <a href="/blog/{{ article_obj.user.username }}/articles/{{ article_obj.id }}.html">{{ article_obj.title }}</a>
+        </div>
+        <div class="clear"></div>
+        <div id="article_body">
+            <div id="article_content">{{ article_obj.content }}</div>
+            <div id="article_info_block">
+                <div id="article_category">分类：
+                    <a href="/blog/{{ article_obj.user.username }}/articles/category/{{ article_obj.category }}.html">{{ article_obj.category }}</a>
+                </div>
+                <div id="article_tag">标签：
+                    {% for article2tag_obj in article_obj.article2tag_set.all %}
+                        <a href="/blog/{{ article_obj.user.username }}/articles/tag/{{ article2tag_obj.tag }}.html">{{ article2tag_obj.tag }}</a>
+                    {% endfor %}
+                </div>
+                <div id="blog_post_info">
+                    <div id="green_channel">
+                        <a href="" id="green_channel_digg">好文要顶</a>
+                        <a href="" id="green_channel_follow">关注我</a>
+                        <a href="" id="green_channel_favorite">收藏此文</a>
+                    </div>
+                    <div id="author_profile">
+                        <a href="" class="img author_profile_info">img</a>
+                        <div id="author_profile_detail" class="author_profile_info">
+                            <a href="">{{ article_obj.user.nickname }}</a>
+                            <br>
+                            <a href="">关注 - 999</a>
+                            <br>
+                            <a href="">粉丝 - 999</a>
+                        </div>
+                    </div>
+                    <div id="div_digg">
+                        <div class="diggit">
+                            <div>0</div>
+                            <div>推荐</div>
+                        </div>
+                        <div class="buryit">
+                            <div>0</div>
+                            <div>反对</div>
+                        </div>
+                        <div class="clear"></div>
+                        <div>
+                            <a href="">关注</a>
+                            &nbsp;|&nbsp;
+                            <a href="">顶部</a>
+                            &nbsp;|&nbsp;
+                            <a href="">评论</a>
+                        </div>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+                <div id="post_next_prev">
+                    <a href="">« </a>
+                    上一篇:
+                    <a href="">......</a>
+                </div>
+            </div>
+            <div class="post_block">
+                posted&nbsp;@{{ article_obj.create_time }}&nbsp;
+                <a href="">{{ article_obj.user.nickname }}</a>
+                阅读({{ article_obj.read_count }})评论({{ article_obj.comment_count }})
+                <a href="/blog/backend/edit_article/{{ article_obj.id }}/">编辑</a>
+                <a href="">收藏</a>
+            </div>
+            <div class="clear"></div>
+        </div>
+    </div>
+    <div id="comment_block">
+        <div id="blog_comments">
+            <div>评论列表</div>
+            {% for comment in article_obj.comment_set.all %}
+                <div class="feedback_item">
+                    <div class="feedback_subtitle">
+                        <a href="" class="layer_id">#<span>{{ comment.layer_id }}</span>楼</a>
+                        <span class="comment_id invisible">{{ comment.id }}</span>
+                        <span>{{ comment.create_time }}</span>
+                        <a href="/blog/{{ comment.user.username }}/" class="comment_nickname">{{ comment.user.nickname }}</a>
+                        <span class="comment_username invisible">{{ comment.user.username }}</span>
+                        <span class="comment_actions"></span>
+                        <div class="clear"></div>
+                    </div>
+                    <div class="feedback_body">
+                        <div>
+                            {% if comment.reply.layer_id %}
+                                <span class="comment_reply_block">
+                                    回复#{{ comment.reply.layer_id }}楼:
+                                </span>
+                            {% endif %}
+                            {{ comment.content }}
+                        </div>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+        <div id="comment_nav">
+            <a href="">刷新评论</a>
+            <a href="#" onclick="return ">刷新页面</a>
+            <a href="#">返回顶部</a>
+        </div>
+        <div id="comment_container">
+            <form action="/blog/backend/add_comment/{{ article_obj.id }}/" method="post">
+                {% csrf_token %}
+                <div>发表评论</div>
+                <div>
+                    昵称：
+                    <input type="text" name="reply_user" id="id_reply_user" disabled>
+                </div>
+                <div id="comment_box">
+                    <div id="comment_title">
+                        <div>评论内容：
+                            <span id="comment_reply"></span>
+                        </div>
+                    </div>
+                    {{ comment_form.content }}
+                </div>
+                <div id="comment_post_block">
+                    <div class="invisible">
+                        <input type="text" name="comment_id" id="id_comment_id">
+                        <input type="text" name="reply_id" id="id_reply_id">
+                    </div>
+                    <input type="submit" value="提交评论">
+                    <a href="/blog/log_out/">退出登录</a>
+                </div>
+            </form>
+        </div>
+        <div style="margin-bottom:100px"></div>
+    </div>
+{% endblock %}
+
+{% block js %}
+    <script src="/static/jquery-1.12.4.js"></script>
+    <script src="/static/jquery.cookie.js"></script>
+    <script>
+        function isLogined() {
+            if ('{{ request.session.username }}' != null) {
+                return '{{ request.session.username }}'
+            }
+        }
+
+        function getCommentBody(ths) {
+            var comment_id = $(ths).parent().siblings('.comment_id').text();
+            return $.ajax({
+                url: '/blog/backend/add_comment/{{ article_obj.id }}/',
+                type: 'GET',
+                data: {'comment_id': comment_id},
+                dataType: 'JSON',
+                success: function (obj) {
+                    if (obj.status) {
+                        $('#id_comment_content').text(obj.data['content']).focus();
+                        $('#id_comment_id').val(obj.data['id']);
+                        $('#id_reply_id').val('');
+                        $('#comment_reply').text('');
+                    }
+                }
+            })
+        }
+
+        function deleteComment(ths) {
+            var comment_id = $(ths).parent().siblings('.comment_id').text();
+            var res = confirm('确定删除评论？');
+            if (res) {
+                $.ajax({
+                    url: '/blog/backend/del_comment/',
+                    type: 'POST',
+                    headers: {"X-CSRFToken": $.cookie('csrftoken')},
+                    data: {'comment_id': comment_id},
+                    dataType: 'JSON',
+                    success: function (obj) {
+                        if (obj.status) {
+                            alert(obj.data);
+                            location.reload();
+                        } else {
+                            alert(obj.error)
+                        }
+                    },
+                    error: function () {
+                        alert('未知错误')
+                    }
+                });
+            }
+        }
+
+        $(function () {
+            $('#id_user').children('option:contains("{{ article_obj.user }}")').prop('selected', true);
+            $('#id_article').children('option:contains("{{ article_obj }}")').prop('selected', true);
+            var username = isLogined();
+            if (username === '') {
+                console.log('1');
+                var comment_unlogin_tag = document.createElement('div');
+                var div_html = '登录后才能发表评论，请<a href="/blog/sign_in/">登录</a>或<a href="/blog/sign_up/">注册</a>后再评论';
+                comment_unlogin_tag.style.backgroundColor = '#b0b7a4';
+                comment_unlogin_tag.style.padding = '10px';
+                comment_unlogin_tag.innerHTML = div_html;
+                $('#comment_container').empty('0').append(comment_unlogin_tag);
+            } else {
+                $('#id_reply_user').val(username);
+                // 显示编辑按钮
+                $('#blog_comments .comment_actions').each(function () {
+                    var comment_username = $(this).siblings('.comment_username').text();
+                    if (username === comment_username) {   // 评论者登录，显示编辑框
+                        var edit_tag = document.createElement('a');
+                        var del_tag = document.createElement('a');
+                        edit_tag.innerText = '编辑';
+                        edit_tag.className = 'comment_edit';
+                        edit_tag.href = 'javascript:void(0);';
+                        del_tag.innerText = '删除';
+                        del_tag.className = 'comment_del';
+                        del_tag.href = 'javascript:void(0);';
+                        $(this).append(edit_tag).append(del_tag);
+                        $(this).children('.comment_edit').on('click', function () {
+                            getCommentBody(this)
+                        });
+                        $(this).children('.comment_del').on('click', function () {
+                            deleteComment(this)
+                        })
+                    } else {    // 非评论者登录，显示回复框
+                        var reply_tag = document.createElement('a');
+                        reply_tag.innerText = '回复';
+                        reply_tag.className = 'comment_reply';
+                        reply_tag.href = 'javascript:void(0);';
+                        $(this).append(reply_tag);
+                        $(this).children('.comment_reply').on('click', function () {
+                            var reply_id = $(this).parent().siblings('.comment_id').text();
+                            var layer_id = $(this).parent().siblings('.layer_id').text();
+                            $('#id_reply_id').val(reply_id);
+                            $('#id_comment_id').val('');
+                            $('#comment_reply').text('回复' + layer_id);  //回复楼层提示
+                            $('#id_comment_content').text('').focus();
+
+                        })
+                    }
+                });
+            }
+        });
+    </script>
+{% endblock %}

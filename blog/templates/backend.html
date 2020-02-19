@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title> {{ user_obj.nickname }}- 博客后台</title>
+    <link rel="stylesheet" href="/static/backend.css">
+    <link rel="stylesheet" href="/static/commons.css">
+    {% block css %}{% endblock %}
+</head>
+<body>
+<div id="backend">
+    <div id="header">
+        <div id="header_logo" class="right">
+            <a href="/blog/" title="返回博客园首页">
+                <img src="/static/logo.png" alt="logo">
+            </a>
+        </div>
+        <div class="clear"></div>
+        <div id="header_user">
+            <div class="header_user_left">欢迎你，{{ user_obj.nickname }}</div>
+            <div class="header_user_right">
+                <a href="/blog/{{ user_obj.username }}/">{{ user_obj.nickname }}</a>&nbsp;·
+                <a href="/blog/{{ user_obj.username }}/">我的博客</a>&nbsp;·
+                <a href="/blog/backend/">设置</a>&nbsp;·
+                <a href="/blog/log_out/">退出</a>
+            </div>
+            <div class="clear"></div>
+        </div>
+        <div id="nav_block_wrapper">
+            <div style="margin-left: 5px">
+                <a href="/blog/backend/info/" id="account_nav">账户</a>
+                <a href="/blog/backend/articles/" id="articles_nav">文章</a>
+                <a href="/blog/backend/category/" id="category_nav">分类</a>
+                <a href="/blog/backend/tag/" id="tag_nav">标签</a>
+                <a href="">设置</a>
+            </div>
+        </div>
+    </div>
+    <div id="container">
+        <div id="main">{% block main %}{% endblock %}</div>
+    </div>
+    <div id="footer">
+    </div>
+</div>
+<script src="/static/jquery-1.12.4.js"></script>
+{% block js %}{% endblock %}
+</body>
+</html>
