@@ -8,9 +8,9 @@ NEWDIR="/home/ubuntu/git/django_project/logs"
 
 mv ${BASEDIR}/uwsgi.log  ${NEWDIR}/uwsgi-${DATE}.log
 
-touch ${BASEDIR}/uwsgi.log
+# touch ${BASEDIR}/uwsgi.log
 
 touch ${BASEDIR}/logs/.touchforlogrotat
 
 # 自动更新
-curl http://127.0.0.1:8000/video/admin/update/
+curl http://49.234.78.157/video/admin/update/

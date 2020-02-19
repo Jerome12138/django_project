@@ -1,68 +1,39 @@
-*** Starting uWSGI 2.0.18 (64bit) on [Tue Feb 18 21:26:38 2020] ***
-compiled with version: 7.4.0 on 31 January 2020 10:32:09
-os: Linux-4.15.0-54-generic #58-Ubuntu SMP Mon Jun 24 10:55:24 UTC 2019
-nodename: VM-32-8-ubuntu
-machine: x86_64
-clock source: unix
-detected number of CPU cores: 1
-current working directory: /home/ubuntu/git/django_project
-writing pidfile to /home/ubuntu/git/django_project/uwsgi.pid
-detected binary path: /home/ubuntu/.local/bin/uwsgi
-!!! no internal routing support, rebuild with pcre support !!!
-chdir() to /home/ubuntu/git/django_project
-your processes number limit is 7079
-your memory page size is 4096 bytes
-detected max file descriptor number: 1024
-lock engine: pthread robust mutexes
-thunder lock: disabled (you can enable it with --thunder-lock)
-uwsgi socket 0 bound to TCP address 127.0.0.1:8001 fd 6
-Python version: 3.6.8 (default, Oct  7 2019, 12:59:55)  [GCC 8.3.0]
-Python main interpreter initialized at 0x5636ad773530
-python threads support enabled
-your server socket listen backlog is limited to 100 connections
-your mercy for graceful operations on workers is 60 seconds
-mapped 416720 bytes (406 KB) for 8 cores
-*** Operational MODE: preforking+threaded ***
-WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x5636ad773530 pid: 2482 (default app)
-*** uWSGI is running in multiple interpreter mode ***
-spawned uWSGI master process (pid: 2482)
-spawned uWSGI worker 1 (pid: 2489, cores: 2)
-spawned uWSGI worker 2 (pid: 2490, cores: 2)
-spawned uWSGI worker 3 (pid: 2491, cores: 2)
-spawned uWSGI worker 4 (pid: 2492, cores: 2)
-[pid: 2491|app: 0|req: 1/1] 117.155.56.88 () {48 vars in 984 bytes} [Tue Feb 18 21:26:44 2020] GET /video/admin/view_log/ => generated 6517 bytes in 173 msecs (HTTP/1.1 200) 6 headers in 319 bytes (1 switches on core 0)
-[pid: 2491|app: 0|req: 2/2] 117.155.56.88 () {48 vars in 984 bytes} [Tue Feb 18 21:26:48 2020] GET /video/admin/view_log/ => generated 6610 bytes in 2 msecs (HTTP/1.1 200) 6 headers in 319 bytes (1 switches on core 1)
-*** Starting uWSGI 2.0.18 (64bit) on [Tue Feb 18 21:27:29 2020] ***
-compiled with version: 7.4.0 on 31 January 2020 10:32:09
-os: Linux-4.15.0-54-generic #58-Ubuntu SMP Mon Jun 24 10:55:24 UTC 2019
-nodename: VM-32-8-ubuntu
-machine: x86_64
-clock source: unix
-detected number of CPU cores: 1
-current working directory: /home/ubuntu/git/django_project
-writing pidfile to /home/ubuntu/git/django_project/uwsgi.pid
-detected binary path: /home/ubuntu/.local/bin/uwsgi
-!!! no internal routing support, rebuild with pcre support !!!
-chdir() to /home/ubuntu/git/django_project
-your processes number limit is 7079
-your memory page size is 4096 bytes
-detected max file descriptor number: 1024
-lock engine: pthread robust mutexes
-thunder lock: disabled (you can enable it with --thunder-lock)
-uwsgi socket 0 bound to TCP address 127.0.0.1:8001 fd 6
-Python version: 3.6.8 (default, Oct  7 2019, 12:59:55)  [GCC 8.3.0]
-Python main interpreter initialized at 0x5618bade2530
-python threads support enabled
-your server socket listen backlog is limited to 100 connections
-your mercy for graceful operations on workers is 60 seconds
-mapped 416720 bytes (406 KB) for 8 cores
-*** Operational MODE: preforking+threaded ***
-WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x5618bade2530 pid: 2625 (default app)
-*** uWSGI is running in multiple interpreter mode ***
-spawned uWSGI master process (pid: 2625)
-spawned uWSGI worker 1 (pid: 2627, cores: 2)
-spawned uWSGI worker 2 (pid: 2628, cores: 2)
-spawned uWSGI worker 3 (pid: 2629, cores: 2)
-spawned uWSGI worker 4 (pid: 2630, cores: 2)
-[pid: 2629|app: 0|req: 1/1] 117.155.56.88 () {48 vars in 984 bytes} [Tue Feb 18 21:27:37 2020] GET /video/admin/view_log/ => generated 6947 bytes in 168 msecs (HTTP/1.1 200) 6 headers in 319 bytes (1 switches on core 0)
-[pid: 2629|app: 0|req: 2/2] 117.155.56.88 () {46 vars in 912 bytes} [Tue Feb 18 21:29:16 2020] GET /video/ => generated 36521 bytes in 248 msecs (HTTP/1.1 200) 6 headers in 320 bytes (1 switches on core 1)
+[1582128001] ./uwsgi.log reopened.
+一共1140页数据
+保存成功
+获取到page: 1100
+page1100保存成功
+获取到page: 900
+page900保存成功
+获取到page: 1000
+page1000保存成功
+获取到page: 800
+page800保存成功
+获取到page: 700
+page700保存成功
+获取到page: 600
+page600保存成功
+获取到page: 500
+page500保存成功
+page515请求超时，重试1
+获取到page: 400
+page400保存成功
+获取到page: 300
+page300保存成功
+获取到page: 200
+page200保存成功
+获取到page: 100
+page100保存成功
+数据更新完成
+[]
+[pid: 3933|app: 0|req: 227/394] 49.234.78.157 () {32 vars in 393 bytes} [Thu Feb 20 00:00:01 2020] GET /video/admin/update/ => generated 12 bytes in 88583 msecs (HTTP/1.1 200) 4 headers in 135 bytes (1 switches on core 0)
+[pid: 3933|app: 0|req: 228/395] 182.254.52.17 () {36 vars in 562 bytes} [Thu Feb 20 00:05:47 2020] GET /ftmabc.php => generated 179 bytes in 2 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 1)
+[pid: 3933|app: 0|req: 229/396] 101.89.19.140 () {36 vars in 580 bytes} [Thu Feb 20 00:07:58 2020] GET /phpMydmin/index.php => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 1)
+[pid: 3933|app: 0|req: 230/397] 5.57.37.82 () {32 vars in 461 bytes} [Thu Feb 20 00:19:58 2020] GET / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 1)
+[pid: 3933|app: 0|req: 231/398] 58.247.212.239 () {36 vars in 559 bytes} [Thu Feb 20 00:33:49 2020] GET /hue2.php => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 1)
+[pid: 3933|app: 0|req: 232/399] 182.254.52.17 () {36 vars in 580 bytes} [Thu Feb 20 00:47:07 2020] GET /TP/public/index.php => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 1)
+[pid: 3933|app: 0|req: 233/400] 117.155.56.88 () {46 vars in 947 bytes} [Thu Feb 20 01:11:13 2020] GET /video/admin/view_log/ => generated 7331 bytes in 2 msecs (HTTP/1.1 200) 6 headers in 319 bytes (1 switches on core 1)
+[pid: 3936|app: 0|req: 94/401] 117.155.56.88 () {48 vars in 984 bytes} [Thu Feb 20 01:11:28 2020] GET /video/admin/view_log/ => generated 7424 bytes in 3 msecs (HTTP/1.1 200) 6 headers in 319 bytes (1 switches on core 0)
+[pid: 3936|app: 0|req: 95/402] 117.155.56.88 () {46 vars in 962 bytes} [Thu Feb 20 01:11:42 2020] GET /video/admin/view_log/2020-02-19 => generated 0 bytes in 0 msecs (HTTP/1.1 301) 4 headers in 171 bytes (1 switches on core 1)
+[pid: 3934|app: 0|req: 42/403] 117.155.56.88 () {46 vars in 964 bytes} [Thu Feb 20 01:11:42 2020] GET /video/admin/view_log/2020-02-19/ => generated 47979 bytes in 10 msecs (HTTP/1.1 200) 6 headers in 320 bytes (1 switches on core 0)
+[pid: 3933|app: 0|req: 234/404] 177.200.90.218 () {32 vars in 464 bytes} [Thu Feb 20 01:20:04 2020] GET / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 1)
