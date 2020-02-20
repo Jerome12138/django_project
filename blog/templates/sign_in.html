@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="/static/img/favicon.ico">
+
+    <title>登录</title>
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <!-- Custom styles for this template -->
+    <link href="/static/css/sign_in.css" rel="stylesheet">
+</head>
+
+<body class="text-center">
+    <form class="form-signin" action="/blog/sign_in/" method="post">
+        <img class="mb-4" src="/static/img/logo.png" alt="" width="72" height="72" style="border-radius: 10px;">
+        {% csrf_token %}
+        <h1 class="h3 mb-3 font-weight-normal">欢迎登录</h1>
+        <!-- 用户名 -->
+        <div class="form-group">
+            <label for="inputUsername" class="sr-only">用户名</label>
+            <input type="text" id="inputUsername" name="username" class="form-control" placeholder="用户名" required
+                autofocus>
+        </div>
+        <span style="color: red;" class="error_msg"></span>
+        <!-- 密码 -->
+        <div class="form-group">
+            <label for="inputPassword" class="sr-only">密码</label>
+            <input type="password" id="inputPassword" name="password" class="form-control" placeholder="密码" required>
+        </div>
+        <div class="checkbox mb-2">
+            <label>
+                <input type="checkbox" value="remember-me">下次自动登录
+            </label>
+        </div>
+        <button class="btn btn-lg btn-primary btn-block" type="button" id="sign_in">登录</button>
+        <div style="margin: 10px 0;">
+            <span>没有账号？</span>
+            <a href="/blog/sign_up/" id="sign_up">立即注册</a>
+        </div>
+    </form>
+</body>
+<script src="/static/js/jquery-1.12.4.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
+<script>
+    $(function () {
+        $('#sign_in').click(function () {
+            $.ajax({
+                url: '/blog/sign_in/',
+                type: 'POST',
+                data: $('form').serialize(),
+                dataType: 'JSON',
+                success: function (obj) {
+                    if (obj.status) {
+                        location.href = '/blog/' + obj.data.username;
+                    } else {
+                        $('.error_msg').text(obj.error)
+                    }
+                },
+                error: function (obj) {
+                    $('.error_msg').text(obj.error)
+                }
+            })
+        })
+    })
+</script>
+
+</html>

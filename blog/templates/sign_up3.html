@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>注册</title>
+    <link rel="stylesheet" href="/static/sign_up.css">
+    <link rel="stylesheet" href="/static/commons.css">
+</head>
+<body>
+<div class="main">
+    <div style="margin-left: 30px;">
+        <form action="/blog/sign_up/" method="post">
+            {% csrf_token %}
+            <div id="heading">注册新用户</div>
+            {% for field in user_modelform %}
+                <div class="block">
+                    <label class="label_inline" for="email">{{ field.label }}：</label>
+                    {{ field }}
+                    <div class="error_msg">{{ field.errors }}</div>
+                </div>
+            {% endfor %}
+            <div class="block">
+                <button type="submit" id="sign_up">注册</button>
+            </div>
+        </form>
+        <div class="block">
+            <a href="/blog/sign_in/" id="sign_in">»&nbsp;已有账号，立即登录</a>
+        </div>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}{% endblock %}</title>
+    <link rel="stylesheet" href="/static/home.css">
+    <link rel="stylesheet" href="/static/commons.css">
+    {% block css %}{% endblock %}
+</head>
+<body>
+<div id="home">
+    <div id="header">
+        <div id="blog_title">
+            <h2>
+                <a id="header_title" href="/blog/{{ user_obj.username }}/">{{ user_obj.nickname }}的个人主页</a>
+            </h2>
+        </div>
+        <div id="navigator">
+            <div id="menu">
+                <a id="blog_nav_sitehome" href="/blog/">博客园</a>
+                <a id="blog_nav_myhome" href="/blog/{{ user_obj.username }}">首页</a>
+                <a id="blog_nav_new" href="/blog/backend/add_article/">新随笔</a>
+                <a id="blog_nav_contact">联系</a>
+                <a id="blog_nav_rss">订阅</a>
+                <a id="blog_nav_admin" href="/blog/backend/">管理</a>
+            </div>
+            <div id="blog_status">
+                <a id="stats_article_count">文章 - {{ user_obj.article_set.count }}</a>
+                <a id="stats_comment_count">评论 -
+
+                </a>
+            </div>
+            <div style="clear:both;"></div>
+        </div>
+    </div>
+    <div id="container">
+        <div id="main">
+            {% block main %}{% endblock %}
+        </div>
+        <div id="side_bar">
+            <div class="news_item">
+                <div id="blog_news">
+
+                </div>
+            </div>
+            <div id="blog_calender"></div>
+            <div id="left_content_container">
+                <div id="sidebar_categories" class="sidebar_block">
+                    <div class="catlist_title">文章分类</div>
+                    <ul class="catlist_content">
+                        {% for category in user_obj.category_set.all %}
+                            <li>
+                                <a href="/blog/{{ user_obj.username }}/articles/category/{{ category.name }}.html">{{ category.name }}({{ category.article_set.count }})</a>
+                            </li>
+                        {% endfor %}
+                    </ul>
+                </div>
+                <div id="sidebar_toptags" class="sidebar_block">
+                    <div class="catlist_title">文章标签</div>
+                    <ul class="catlist_content">
+                        {% for tag in user_obj.tag_set.all %}
+                            <li>
+                                <a href="/blog/{{ user_obj.username }}/articles/tag/{{ tag.name }}.html">{{ tag.name }}({{ tag.article_set.count }})</a>
+                            </li>
+                        {% endfor %}
+                    </ul>
+                </div>
+                <div id="sidebar_dates" class="sidebar_block">
+                    <div class="catlist_title">创建月份</div>
+                    <ul class="catlist_content">
+                        {% for date in date_list %}
+                            <li>
+                                <a href="/blog/{{ user_obj.username }}/articles/date/{{ date.ctime }}.html">{{ date.ctime }}({{ date.num }})</a>
+                            </li>
+                        {% endfor %}
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="clear"></div>
+    </div>
+    <div id="footer">
+    </div>
+</div>
+{% block js %}{% endblock %}
+</body>
+</html>

@@ -1,0 +1,130 @@
+{% extends 'backend.html' %}
+
+{% block css %}
+    <style>
+        #editor_container {
+            background-color: #F5F5F5;
+        }
+
+        #editor_title {
+            padding-top: 5px;
+            padding-bottom: 5px;
+        }
+
+        #editor_title input {
+            width: 99%;
+            cursor: auto;
+        }
+
+        #editor_body {
+            margin-bottom: 5px;
+        }
+
+        #option_category {
+            margin-bottom: 8px;
+            padding: 4px 12px;
+        }
+
+        .CollapsibleTitle {
+            background: #E5EEF7;
+            border-top: 1px solid #AAAAAA;
+            border-bottom: 1px dashed #AAAAAA;
+            font-weight: bold;
+            color: #333333;
+            padding: 2px 12px;
+            margin: 12px 0 5px;
+        }
+
+        .subCollapsibleTitle {
+            background: #E5EEF7;
+            border-top: 1px solid #BBB;
+            border-bottom: 1px dashed #BBB;
+            font-weight: bold;
+            color: #333333;
+            width: auto;
+            padding: 3px 12px;
+            margin: 12px 0 5px 0;
+        }
+
+        .post_block {
+            margin: 15px 10px 25px 15px;
+        }
+
+        .post_block input {
+            background: #6B86B3;
+            border: 1px solid #333333;
+            padding: 2px;
+            margin-right: 15px;
+            height: 26px;
+            width: 70px;
+            text-align: center;
+            color: white;
+            font-size: 12px;
+            font-weight: bold;
+            line-height: 22px;
+        }
+
+
+    </style>
+{% endblock %}
+
+{% block main %}
+    <div id="editor">
+        <div id="editor_header" class="CollapsibleTitle">
+            <span>编辑文章</span>
+        </div>
+        <div id="editor_container">
+            <form action="/blog/backend/edit_article/{{ article_id }}/" method="post">
+                {% csrf_token %}
+                <div id="editor_title">
+                    <b>{{ article_modelform.title.label_tag }}</b>
+                    <br>
+                    {{ article_modelform.title }}
+                </div>
+                <div id="editor_body">
+                    <b>{{ article_modelform.content.label_tag }}</b>
+                    <br>
+                    {{ article_modelform.content }}
+                </div>
+                <div id="editor_options">
+                    <div class="CollapsibleTitle">选项</div>
+                    <div id="option_category">
+                        <div class="subCollapsibleTitle">个人分类</div>
+                        <table style="width: 95%">
+                            <tr>
+                                {{ article_modelform.category }}
+                                <span>{{ article_modelform.category.errors.0 }}</span>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <div class="post_block">
+                    {{ article_modelform.user }}
+                    <input type="submit" value="发布">
+                    <a href="/blog/backend/articles/">
+                        <input type="button" value="取消">
+                    </a>
+                </div>
+            </form>
+        </div>
+    </div>
+{% endblock %}
+
+{% block js %}
+    <script src="/static/plugins/kindeditor/kindeditor-all-min.js"></script>
+    <script>
+        $(function () {
+            $('#articles_nav').addClass('current_nav');
+            initKindEditor();
+        });
+
+        function initKindEditor() {
+            var kind = KindEditor.create('#id_content', {
+                width: '100%',
+                height: '300px',
+                minWidth: 200,
+                minHeight: 400
+            })
+        }
+    </script>
+{% endblock %}

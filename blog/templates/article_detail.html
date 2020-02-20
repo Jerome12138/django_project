@@ -1,0 +1,288 @@
+{% extends 'home_layout.html' %}
+
+{% block title %}
+    {{ article_obj.title }}
+{% endblock %}
+
+{% block css %}
+    <style>
+        .article_block {
+            padding: 25px;
+            min-height: 200px;
+            margin-bottom: 15px;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            word-break: break-all;
+            background: #fff;
+            border-radius: 7px;
+            box-shadow: 1px 1px 2px #A7A8AD;
+        }
+
+        #article_title {
+            font-size: 130%;
+            font-weight: bold;
+            border-bottom: 1px solid #999;
+            float: left;
+            line-height: 2em;
+            width: 100%;
+            padding-left: 5px;
+        }
+
+        #article_content {
+            margin-bottom: 20px;
+        }
+
+        #article_info_block {
+            margin-top: 20px;
+        }
+
+        #article_category {
+            margin-bottom: 10px;
+        }
+
+        #article_tag {
+            color: #666;
+            font-size: 9pt;
+        }
+
+        #green_channel {
+            padding: 10px 0;
+            margin-bottom: 10px;
+            margin-top: 10px;
+            border: silver 1px dashed;
+            font-size: 12px;
+            width: 350px;
+            text-align: center;
+        }
+
+        #green_channel a {
+            display: inline-block;
+            padding: 3px 8px;
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            cursor: pointer;
+            margin-right: 10px;
+            text-shadow: 0 -1px 1px rgba(0, 0, 0, .25);
+            vertical-align: middle;
+        }
+
+        #green_channel_digg {
+            background-color: #2daebf;
+        }
+
+        #green_channel_follow {
+            background-color: #e33100;
+        }
+
+        #green_channel_favorite {
+            background-color: #ffb515;
+        }
+
+        #author_profile {
+            float: left;
+            width: 280px;
+            margin-top: 0;
+            margin-bottom: 10px;
+            color: #000;
+            margin-left: 0;
+            font-size: 12px;
+        }
+
+        .author_profile_info {
+            float: left;
+            line-height: 18px;
+        }
+
+        #div_digg {
+            position: fixed;
+            bottom: 10px;
+            right: 15px;
+            border: 2px solid #ECD7B1;
+            font-size: 12px;
+            text-align: center;
+            padding: 10px;
+            width: 140px;
+            background-color: #FFF;
+            border-radius: 5px 5px 5px 5px !important;
+        }
+
+        .img {
+            width: 50px;
+            height: 50px;
+            background-color: #96ff63;
+            vertical-align: top;
+            float: left;
+            margin-right: 5px;
+            padding-top: 5px;
+            padding-left: 2px;
+            border: 0;
+        }
+
+        .diggit {
+            float: left;
+            width: 46px;
+            height: 52px;
+            text-align: center;
+            cursor: pointer;
+            margin-top: 2px;
+            padding-top: 5px;
+        }
+
+        .buryit {
+            float: right;
+            margin-left: 20px;
+            width: 46px;
+            height: 52px;
+            text-align: center;
+            cursor: pointer;
+            margin-top: 2px;
+            padding-top: 5px;
+        }
+
+        .post_block {
+            float: right;
+            width: 100%;
+            text-align: right;
+            padding-right: 5px;
+            color: #666;
+            margin-top: 5px;
+        }
+
+        #comment_nav {
+            text-align: right;
+        }
+
+        #comment_nav a {
+            padding-left: 10px;
+        }
+
+        #comment_block {
+            margin-bottom: 30px;
+        }
+    </style>
+{% endblock %}
+
+{% block main %}
+    <div class="article_block">
+        <div id="article_title">
+            <a href="/blog/{{ user_obj.username }}/articles/{{ article_obj.id }}.html">{{ article_obj.title }}</a>
+        </div>
+        <div class="clear"></div>
+        <div id="article_body">
+            <div id="article_content">{{ article_obj.content }}</div>
+            <div id="article_info_block">
+                <div id="article_category">分类：
+                    <a href="">{{ article_obj.category }}</a>
+                </div>
+                <div id="article_tag">标签：
+                    <a href="">{{ article_obj.tag }}</a>
+                </div>
+                <div id="blog_post_info">
+                    <div id="green_channel">
+                        <a href="" id="green_channel_digg">好文要顶</a>
+                        <a href="" id="green_channel_follow">关注我</a>
+                        <a href="" id="green_channel_favorite">收藏此文</a>
+                    </div>
+                    <div id="author_profile">
+                        <a href="" class="img author_profile_info">img</a>
+                        <div id="author_profile_detail" class="author_profile_info">
+                            <a href="">{{ article_obj.user.nickname }}</a>
+                            <br>
+                            <a href="">关注 - 999</a>
+                            <br>
+                            <a href="">粉丝 - 999</a>
+                        </div>
+                    </div>
+                    <div id="div_digg">
+                        <div class="diggit">
+                            <div>0</div>
+                            <div>推荐</div>
+                        </div>
+                        <div class="buryit">
+                            <div>0</div>
+                            <div>反对</div>
+                        </div>
+                        <div class="clear"></div>
+                        <div>
+                            <a href="">关注</a>
+                            &nbsp;|&nbsp;
+                            <a href="">顶部</a>
+                            &nbsp;|&nbsp;
+                            <a href="">评论</a>
+                        </div>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+                <div id="post_next_prev">
+                    <a href="">« </a>
+                    上一篇:
+                    <a href="">......</a>
+                </div>
+            </div>
+            <div class="post_block">
+                posted&nbsp;@{{ article_obj.create_time }}&nbsp;
+                <a href="">{{ user_obj.nickname }}</a>
+                阅读({{ article_obj.read_count }})评论({{ article_obj.comment_count }})
+                <a href="/blog/backend/edit_article/{{ article_obj.id }}/">编辑</a>
+                <a href="">收藏</a>
+            </div>
+            <div class="clear"></div>
+        </div>
+    </div>
+    <div id="comment_block">
+        <div id="blog_comments">
+            <div>评论列表</div>
+            {{ article_obj.comment_set.0.user }}
+            {% for comment in article_obj.comment %}
+                <div class="feedback_item">
+                    <div class="feedback_subtitle">
+                        <a href="">#1楼</a>
+                        <span>{{ comment.creat_time }}</span>
+                        <a href="">{{ comment.user }}</a>
+                    </div>
+                    <div class="feedback_body">
+                        <div>{{ comment.content }}</div>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+        <div id="comment_nav">
+            <a href="">刷新评论</a>
+            <a href="#" onclick="return ">刷新页面</a>
+            <a href="#">返回顶部</a>
+        </div>
+        <form id="comment_container" action="/blog/backend/add_comment/" method="post">
+            {% csrf_token %}
+            <div>发表评论</div>
+            <div>
+                昵称：
+                {{ comment_modelform.user }}
+            </div>
+            <div id="comment_box">
+                <div id="comment_title">
+                    <div>评论内容：</div>
+                </div>
+                {{ comment_modelform.content }}
+            </div>
+            <div id="comment_post_block">
+                <div class="invisible">
+                    {{ comment_modelform.article }}
+                </div>
+                <input type="submit" value="提交评论">
+                <a href="">退出</a>
+            </div>
+        </form>
+    </div>
+{% endblock %}
+
+{% block js %}
+    <script src="/static/jquery-1.12.4.js"></script>
+    <script>
+        $(function () {
+            $('#id_user').children('option:contains("{{ user_obj }}")').prop('selected', true);
+            $('#id_article').children('option:contains("{{ article_obj }}")').prop('selected', true)
+        });
+
+    </script>
+{% endblock %}

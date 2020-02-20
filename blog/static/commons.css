@@ -1,0 +1,33 @@
+body {
+    margin: 0;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.left {
+    display: inline-block;
+    float: left;
+}
+
+.right {
+    display: inline-block;
+    float: right;
+}
+
+.clear {
+    clear: both;
+}
+
+a {
+    text-decoration: none;
+}
+
+.invisible {
+    display: none;
+}
+
+li {
+    list-style: none;
+}

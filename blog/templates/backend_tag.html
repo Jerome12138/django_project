@@ -1,0 +1,100 @@
+{% extends 'backend_layout.html' %}
+
+{% block css %}
+    <style>
+        .CollapsibleTitle {
+            background: #E5EEF7;
+            border-top: 1px solid #AAAAAA;
+            border-bottom: 1px dashed #AAAAAA;
+            font-weight: bold;
+            color: #333333;
+            padding: 2px 12px;
+            margin: 12px 0 5px;
+        }
+
+        #tag_body {
+            background-color: #F5F5F5;
+        }
+
+        #add_tag form {
+            background-color: #F5F5F5;
+        }
+
+        .post_block {
+            margin: 15px 10px 25px 15px;
+        }
+
+        .post_block input {
+            background: #6B86B3;
+            border: 1px solid #333333;
+            padding: 2px;
+            margin-right: 15px;
+            height: 26px;
+            width: 70px;
+            text-align: center;
+            color: white;
+            font-size: 12px;
+            font-weight: bold;
+            line-height: 22px;
+        }
+
+        .error_msg {
+            color: red;
+        }
+    </style>
+{% endblock %}
+
+{% block main %}
+    <div id="tag">
+        <div id="tag_header" class="CollapsibleTitle">
+            <span>编辑标签</span>
+        </div>
+        <div id="tag_body">
+            <table>
+                <thead>
+                <tr>
+                    <td>标签</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                </tr>
+                </thead>
+                <tbody>
+                {% for tag in user_obj.tag_set.all %}
+                    <tr>
+                        <td>
+                            <a href="/blog/{{ user_obj.username }}/articles/tag/{{ tag.name }}.html">{{ tag.name }}</a>
+                        </td>
+                        <td>
+                            <a href="">编辑</a>
+                        </td>
+                        <td>
+                            <a href="">删除</a>
+                        </td>
+                    </tr>
+                {% endfor %}
+                </tbody>
+            </table>
+        </div>
+        <div id="add_tag">
+            <div class="CollapsibleTitle">添加新标签</div>
+            <form action="/blog/backend/tag/" method="post">
+                {% csrf_token %}
+                {{ tag_modelform.name.label_tag }}
+                {{ tag_modelform.name }}
+                <div class="invisible">{{ tag_modelform.user }}</div>
+                <div class="post_block">
+                    <input type="submit" value="添加">
+                    <span class="error_msg">{{ tag_modelform.name.errors.0 }}</span>
+                </div>
+            </form>
+        </div>
+    </div>
+{% endblock %}
+
+{% block js %}
+    <script>
+        $(function () {
+            $('#tag_nav').addClass('current_nav');
+        });
+    </script>
+{% endblock %}

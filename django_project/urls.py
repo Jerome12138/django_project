@@ -24,4 +24,5 @@ urlpatterns = [
     path('app1/', include('app1.urls')),
     path('video/', include('video.urls')),
     path('love/', views.love),
-] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
+    path('blog/', include('blog.urls')),
+]+ static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
