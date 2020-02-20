@@ -272,8 +272,8 @@ def view_log(request, log_date=0):
     log = re.sub(
         r'(\*\*\*\sStarting\suWSGI.+?interpreter\smode\s\*\*\*)', '*** Starting uWSGI ***', log, flags=re.DOTALL)
     log = re.sub(r'(nsukey\=.+)', '<<wechat>>', log)
-    log = re.sub(r'(\[pid:.+?\.php.+?\(HTTP\/\d\.\d\s404\).+\n)', '', log)
-    log = re.sub(r'(\[pid:.+?GET\s\/\s\=\>\sgenerated.+?\(HTTP\/\d\.\d\s404\).+\n)', '', log)
+    log = re.sub(r'(\[pid:.+?\.php.+?\(HTTP\/1\.1\s404\).+\n)', '', log)
+    log = re.sub(r'(\[pid:.+?GET\s\/\s\=\>\sgenerated.+?\(HTTP\/1\.1\s404\).+\n)', '', log)
     log = re.sub(r'(\[pid.+?\])', '', log)
     log = re.sub(r'(\(\)\s\{.+?bytes\})', '', log)
     log = re.sub(r'(\d+?\sheaders\sin.+?\))', '', log)
