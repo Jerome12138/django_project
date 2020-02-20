@@ -77,7 +77,7 @@
         </div>
         <div id="add_category">
             <div class="CollapsibleTitle">添加新分类</div>
-            <form action="/backend/category/" method="post">
+            <form action="/blog/backend/category/" method="post">
                 {% csrf_token %}
                 {{ category_modelform.name.label_tag }}
                 {{ category_modelform.name }}

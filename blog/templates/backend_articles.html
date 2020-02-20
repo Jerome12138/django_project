@@ -36,7 +36,7 @@
 
 {% block main %}
     <div>
-        <a href="/backend/add_article/">添加新文章</a>
+        <a href="/blog/backend/add_article/">添加新文章</a>
         <table id="article_table" cellpadding="0" cellspacing="0" border="0">
             <tbody>
             <tr>
@@ -53,14 +53,14 @@
                 <tr>
                     <td class="invisible article_id">{{ article_obj.id }}</td>
                     <td class="article_title">
-                        <a href="/{{ user_obj.username }}/articles/{{ article_obj.id }}.html">{{ article_obj.title }}</a>
+                        <a href="/blog/{{ user_obj.username }}/articles/{{ article_obj.id }}.html">{{ article_obj.title }}</a>
                     </td>
                     <td>{{ article_obj.category }}</td>
                     <td>{{ article_obj.create_time }}</td>
                     <td>{{ article_obj.comment_count }}</td>
                     <td>{{ article_obj.read_count }}</td>
                     <td><a class="article_edit"
-                           href="/backend/edit_article/{{ article_obj.id }}/">编辑</a></td>
+                           href="/blog/backend/edit_article/{{ article_obj.id }}/">编辑</a></td>
                     <td><a class="article_delete" href="javascript:void(0)" onclick="deleteArticle(this)">删除</a></td>
                 </tr>
             {% endfor %}
@@ -82,7 +82,7 @@
             var res = confirm('确定删除文章？');
             if (res) {
                 $.ajax({
-                    url: '/backend/articles/',
+                    url: '/blog/backend/articles/',
                     type: 'POST',
                     headers: {"X-CSRFToken": $.cookie('csrftoken')},
                     data: {'article_id': article_id},
