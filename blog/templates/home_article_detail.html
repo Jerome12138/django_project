@@ -331,8 +331,8 @@
 {% endblock %}
 
 {% block js %}
-    <script src="/static/jquery-1.12.4.js"></script>
-    <script src="/static/jquery.cookie.js"></script>
+    <script src="/static/jquery/jquery-1.12.4.js"></script>
+    <script src="/static/jquery/jquery.cookie.js"></script>
     <script>
         function isLogined() {
             if ('{{ request.session.username }}' != null) {
