@@ -17,7 +17,6 @@ def auth(func):
     def inner(request, *args, **kwargs):
         username = request.session.get('username', None)
         if not username:
-            print('未登录')
             return redirect('/blog/sign_in/')
         user_obj = models.UserInfo.objects.filter(username=username).first()
         return func(request, user_obj, *args, **kwargs)

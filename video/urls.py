@@ -14,7 +14,6 @@ adminpatterns = [
 
 urlpatterns = [
     path('home/', views.home),
-    path('sign-in/', views.sign_in),
     path('play/<str:vod_id>/', views.play),
     path('play/<str:vod_id>/<int:index>/', views.play),
     path('play2/', views.play2),

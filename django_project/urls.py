@@ -25,4 +25,5 @@ urlpatterns = [
     path('video/', include('video.urls')),
     path('love/', views.love),
     path('blog/', include('blog.urls')),
+    path('novel/', include('novel.urls')),
 ]+ static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
