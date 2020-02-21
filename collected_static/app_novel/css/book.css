@@ -1,0 +1,215 @@
+body,html {
+    font-family: sans-serif;
+    line-height: 1.5;
+    -webkit-user-select: none;
+    color: #33373d;
+    fill: currentColor;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-text-size-adjust: none;
+    -webkit-touch-callout: none;
+    width: 100%;
+    height: 100%;
+}
+.skin-default .page-read-cover {
+    background: #c4b395 url(/static/wapimg/bg2.jpg) no-repeat center;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 100%;
+}
+.skin-default{
+    background: #c4b395 url(/static/wapimg/skin-default.e5975.jpg)  center;
+    background-size: 100% 100%;
+    width: 100%;
+    height: 100%;
+}
+.body{
+    width:120px;
+    padding: 5px;
+    background: #fff;
+    text-align: center;
+    left: 0;
+    right: 0;
+    margin: auto;
+    box-shadow: #c59a50 5px 5px 3px 1px;
+}
+.body img{
+
+    margin: auto;
+}
+.body2{
+    margin-top: 15px;
+    text-align: center;
+
+}
+.body2 h1{
+
+    font-weight: 600;
+}
+.page-read-cover{
+    position: fixed;
+    top:0;
+    z-index: 999;
+    padding-top: 45%;
+}
+.body3{
+    text-align: center;
+    margin-top: 60px;
+}
+.body3 h2{
+    font-weight: 600;
+    height: 30px;
+}
+    .swiper-container {
+      width: 100%;
+      height: auto;
+    }
+    .main {
+      line-height: 40px;
+      padding: 15px;
+      height: auto;
+      padding-top:30px;
+      min-height: 100%;
+     overflow:scroll;
+    }
+    .bheader{
+        position: fixed;
+        top:0px;
+        height: 30px;
+        line-height: 30px;
+        width: 100%;
+        z-index: 99;
+        background: #c2b196;
+    }
+    .bheader h1{
+        color: #666666;
+        font-size: 12px;
+        padding-left: 10px;
+    }
+    .main h3{
+        height: 30px;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 30px;
+        display: block;
+        overflow: hidden;
+    }
+    .bookheader {
+        background: rgba(0,0,0,0.9) !important;
+    }
+    .join{
+        background: rgba(0,0,0,0.9) !important;
+        width: 120px;
+        height: 40px;
+        position: fixed;
+        top:60px;
+        right: -30px;
+        color: white;
+        line-height: 40px;
+        padding-left: 20px;
+        border-radius: 20px;
+        font-size: 15px
+    }
+        .b1{
+        background: rgba(0,0,0,0.9) !important;
+        width: 120px;
+        height: 40px;
+        position: fixed;
+        bottom:160px;
+        right: -30px;
+        color: white;
+        line-height: 40px;
+        padding-left: 20px;
+        border-radius: 20px;
+        font-size: 15px
+    }
+        .b2{
+        background: rgba(0,0,0,0.9) !important;
+        width: 120px;
+        height: 40px;
+        position: fixed;
+        bottom:160px;
+        left: -30px;
+        color: white;
+        line-height: 40px;
+        border-radius: 20px;
+        font-size: 15px;
+        padding-right: 15px;
+        text-align:right;
+    }    
+    .footer{
+        z-index: 9999;
+        background: rgba(0,0,0,0.9) !important;
+        width: 100%;
+        height: 80px;
+        position: fixed;
+        bottom: 0px;
+        color: #fff;
+        padding-top: 10px !important;
+        line-height: 30px;
+           text-align: center;
+           bottom: 0px !important ;
+    }
+     .footer .aui-col-xs-4{
+
+            font-size: 16px;
+     }
+    .footer img{
+        width: 25px;
+        margin:auto;
+    }
+    .actionDiv {
+        color: #fff;
+        position: fixed;
+        bottom: 79px;
+        z-index: 9999;
+        background: rgba(0,0,0,0.9);    
+         width: 100%;
+         text-align: center;
+         font-size: 18px;
+         padding-top: 20px;
+        height: 140px;            
+    }
+    .clears{
+        clear: both;
+    }
+    .borders{
+        height: 1px;
+        background: #666666;
+        width: 100%;
+        margin-bottom: 15px;
+        margin-top: 18px;
+    }
+   .actionDiv .aui-col-xs-3 div{
+        margin:auto;
+        border-radius: 5px;
+        width: 80%;
+        height: 30px;
+   }
+   .bg1{
+            background: #c4b395;
+   }
+   .bg2{
+    background: #cad9e8;
+   }
+      .bg3{
+    background: #d1edd1;
+   }
+
+      .bg4{
+    background: #e6e6e6;
+   }
+   .models1{
+        position: fixed;
+        top:0px;
+        width: 100%;
+        height: 100%;
+        background: rgba(0,0,0,0.6);
+        z-index: 999;
+        color: white;
+        padding-top: 20%;
+        text-align: center;;
+   }
+
+    .models1 i{
+    font-size:30px;
+}
