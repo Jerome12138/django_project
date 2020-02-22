@@ -1,7 +1,7 @@
 import json
 import requests
 from lxml import etree
-from queue import Queue, LifoQueue
+from queue import Queue,LifoQueue
 import threading
 from .db_handler import dump_bulk_data
 
@@ -91,7 +91,7 @@ def get_vod_data(vod_id):   # 根据vod_id爬取数据，返回数据字典
     return(data)
 
 
-def get_data_list(wd, page_index=1):    # 获取列表
+def get_data_list(wd, page_index=1):    # 获取搜索列表
     get_page_data = GetPageData(
         "http://zuidazy2.com/index.php?m=vod-search-pg-%s-wd-%s.html" % (page_index, wd))
     html = get_page_data.get()
@@ -118,6 +118,23 @@ def get_data_list(wd, page_index=1):    # 获取列表
             print(temp)
             print(i.xpath('./span[@class="xing_vb4"]//text()'))
     return video_list, data_count
+
+
+def get_update_count():   # 获取今日更新数量
+    try:
+        # 1.获取数据
+        url = "http://www.zuidazy2.com/"
+        get_page_data = GetPageData(url)
+        html = get_page_data.get()
+        # 2.转化数据
+        x_update = html.xpath("//li[contains(text(),'今日更新：')]/strong/text()")
+        update_count = int(x_update[0]) if x_update != [] else 480
+        print("今日更新：",update_count)
+    except Exception as e:
+        print("获取更新数量出错：%s" % e)
+        update_count = 480
+    finally:
+        return update_count
 
 
 def run_forever(func):  # 无限循环运行
@@ -150,7 +167,7 @@ class getAllData(object):   # 获取所有数据
                 return res_dict
             except requests.exceptions.RequestException:
                 i += 1
-                print('page%s请求超时，重试%s' % (url.split('?p=')[1], i))
+                print('page%s请求超时，重试%s次' % (url.split('?p=')[1], i))
             except json.decoder.JSONDecodeError:
                 print('page%s请求数据为空，已添加至错误列表' % url.split('?p=')[1])
                 self.error_pages.append(url)
@@ -163,7 +180,7 @@ class getAllData(object):   # 获取所有数据
         # 2.发送请求，获取响应
         res_dict = self.parse_url(start_url)
         if not res_dict:
-            print('请求错误')
+            print('请求出现错误')
             return False
         # 4.保存数据
         page_count = int(res_dict['page']['pagecount'])
@@ -172,12 +189,10 @@ class getAllData(object):   # 获取所有数据
         if not flag:
             print('保存出现错误,已放入错误列表')
             self.error_pages.append(start_page)
-        else:
-            print('保存成功')
         return page_count
 
     def add_url_to_queue(self, page_count):  # 添加url队列
-        for i in range(2, page_count+1):
+        for i in range(1, page_count+1):
             self.url_queue.put(i)
 
     @run_forever
@@ -189,8 +204,8 @@ class getAllData(object):   # 获取所有数据
             # self.url_queue.put(url)
             self.error_pages.append(url.split('?p=')[1])
         else:
-            if int(url.split('?p=')[1])%100==0:
-                print('获取到page:', url.split('?p=')[1])
+            # if int(url.split('?p=')[1]) % 100 == 0:
+                # print('获取到page:', url.split('?p=')[1])   
             self.page_queue.put(res_dict)
         self.url_queue.task_done()
 
@@ -201,9 +216,9 @@ class getAllData(object):   # 获取所有数据
         if not flag:
             print('%s保存出现错误' % res_dict['page']['pageindex'])
             self.page_queue.put(res_dict)
-        else:
-            if int(res_dict['page']['pageindex'])%100==0:
-                print('page%s保存成功' % res_dict['page']['pageindex'])
+        # else:
+            # if int(res_dict['page']['pageindex']) % 100 == 0:
+            #     print('page%s保存成功' % res_dict['page']['pageindex'])
         self.page_queue.task_done()
 
     def run_use_more_thread(self, func, count=1):   # 运行多线程
@@ -213,20 +228,24 @@ class getAllData(object):   # 获取所有数据
             t.start()
 
     def run(self):  # 实现主要逻辑
+        print('--------开始更新--------')
+        # 获取更新数量
+        update_count = get_update_count()
+        update_page = (update_count-1)//40 + 1
         # 获取首页数据
-        page_count = self.get_first_page()
-        if not page_count:
-            return False
-        elif page_count == 1:
-            print('数据更新完成')
-        else:
+        # page_count = self.get_first_page()
+        # if not page_count:
+        #     return False
+        if update_page:
             # 获取下页数据
-            self.add_url_to_queue(page_count)
-            self.run_use_more_thread(self.add_page_to_queue, 30)
-            self.run_use_more_thread(self.save_data, 20)
+            self.add_url_to_queue(update_page)
+            self.run_use_more_thread(self.add_page_to_queue, 5)
+            self.run_use_more_thread(self.save_data, 3)
             # 等待线程结束
             self.url_queue.join()
             self.page_queue.join()
-            print('数据更新完成')
-            print(self.error_pages)
+        print('已更新%s条数据' % (update_page*40))
+        if self.error_pages != []:
+            print('出现错误页面：', self.error_pages)
+        print('--------更新完成--------')
         return True

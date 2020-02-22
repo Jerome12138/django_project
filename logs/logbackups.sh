@@ -12,5 +12,3 @@ mv ${BASEDIR}/uwsgi.log  ${NEWDIR}/uwsgi-${DATE}.log
 
 touch ${BASEDIR}/logs/.touchforlogrotat
 
-# 自动更新
-curl http://49.234.78.157/video/admin/update/
