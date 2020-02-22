@@ -8,7 +8,7 @@ NEWDIR="/home/ubuntu/git/django_project/logs"
 
 mv ${BASEDIR}/uwsgi.log  ${NEWDIR}/uwsgi-${DATE}.log
 
-# touch ${BASEDIR}/uwsgi.log
+touch ${BASEDIR}/uwsgi.log
 
 touch ${BASEDIR}/logs/.touchforlogrotat
 

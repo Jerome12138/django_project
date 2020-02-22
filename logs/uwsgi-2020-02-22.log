@@ -1,0 +1,284 @@
+[1582300802] ./uwsgi.log reopened.
+一共1144页数据
+保存成功
+获取到page: 1100
+page1100保存成功
+获取到page: 1000
+page1000保存成功
+page1028请求超时，重试1
+获取到page: 900
+page900保存成功
+获取到page: 800
+page800保存成功
+获取到page: 700
+page700保存成功
+获取到page: 600
+page600保存成功
+page702请求超时，重试1
+获取到page: 500
+page500保存成功
+获取到page: 400
+page400保存成功
+page566请求超时，重试1
+获取到page: 300
+page300保存成功
+获取到page: 200
+page200保存成功
+获取到page: 100
+page100保存成功
+page112请求超时，重试1
+数据更新完成
+[]
+[pid: 26286|app: 0|req: 148/204] 49.234.78.157 () {32 vars in 393 bytes} [Sat Feb 22 00:00:01 2020] GET /video/admin/update/ => generated 12 bytes in 89987 msecs (HTTP/1.1 200) 4 headers in 135 bytes (1 switches on core 1)
+[pid: 26286|app: 0|req: 149/205] 117.155.57.150 () {44 vars in 1029 bytes} [Sat Feb 22 00:11:32 2020] GET /video/admin/view_log/ => generated 7043 bytes in 2 msecs (HTTP/1.1 200) 6 headers in 319 bytes (1 switches on core 0)
+[pid: 26283|app: 0|req: 37/206] 117.155.57.150 () {46 vars in 1066 bytes} [Sat Feb 22 00:11:38 2020] GET /video/admin/view_log/ => generated 7137 bytes in 2 msecs (HTTP/1.1 200) 6 headers in 319 bytes (1 switches on core 0)
+[pid: 26283|app: 0|req: 38/207] 182.254.52.17 () {36 vars in 566 bytes} [Sat Feb 22 00:21:13 2020] GET /TP/index.php => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 1)
+[pid: 26283|app: 0|req: 39/208] 117.155.57.150 () {46 vars in 1075 bytes} [Sat Feb 22 01:36:33 2020] GET /video/admin/ => generated 10949 bytes in 7 msecs (HTTP/1.1 200) 6 headers in 320 bytes (1 switches on core 1)
+[pid: 26286|app: 0|req: 150/209] 117.155.57.150 () {44 vars in 1047 bytes} [Sat Feb 22 01:37:12 2020] GET /video/admin/view_log/ => generated 7316 bytes in 2 msecs (HTTP/1.1 200) 6 headers in 319 bytes (1 switches on core 0)
+[pid: 26286|app: 0|req: 151/210] 61.241.50.63 () {36 vars in 541 bytes} [Sat Feb 22 02:34:40 2020] GET / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+[pid: 26286|app: 0|req: 152/211] 182.254.52.17 () {36 vars in 568 bytes} [Sat Feb 22 02:58:39 2020] GET /video/type/3/ => generated 32103 bytes in 90 msecs (HTTP/1.1 200) 6 headers in 320 bytes (1 switches on core 0)
+[pid: 26286|app: 0|req: 153/212] 182.254.52.17 () {36 vars in 576 bytes} [Sat Feb 22 03:54:18 2020] GET /video/play/75684/ => generated 11928 bytes in 5 msecs (HTTP/1.1 200) 6 headers in 320 bytes (1 switches on core 1)
+[pid: 26286|app: 0|req: 154/213] 103.219.143.39 () {32 vars in 465 bytes} [Sat Feb 22 04:00:48 2020] GET / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+[pid: 26286|app: 0|req: 155/214] 182.254.52.17 () {36 vars in 554 bytes} [Sat Feb 22 04:52:56 2020] GET /up.php => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+[pid: 26283|app: 0|req: 40/215] 221.13.74.246 () {42 vars in 805 bytes} [Sat Feb 22 04:52:58 2020] GET / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+[pid: 26285|app: 0|req: 6/216] 221.13.74.246 () {42 vars in 833 bytes} [Sat Feb 22 04:52:59 2020] GET /index.php => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+[pid: 26285|app: 0|req: 7/217] 61.241.50.63 () {36 vars in 593 bytes} [Sat Feb 22 05:03:11 2020] GET /typo3/phpmyadmin/index.php => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 1)
+[pid: 26285|app: 0|req: 8/218] 182.254.52.17 () {36 vars in 584 bytes} [Sat Feb 22 05:22:26 2020] GET /phpmyadmin2/index.php => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 1)
+[pid: 26286|app: 0|req: 156/219] 182.254.52.17 () {36 vars in 596 bytes} [Sat Feb 22 05:46:57 2020] GET /blog/Jerome/articles/1.html => generated 18958 bytes in 21 msecs (HTTP/1.1 200) 6 headers in 320 bytes (1 switches on core 0)
+[pid: 26286|app: 0|req: 157/220] 200.117.160.29 () {32 vars in 464 bytes} [Sat Feb 22 05:47:54 2020] GET / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 1)
+[pid: 26286|app: 0|req: 158/221] 58.247.212.239 () {36 vars in 555 bytes} [Sat Feb 22 05:49:43 2020] GET /admin/ => generated 0 bytes in 1 msecs (HTTP/1.1 302) 8 headers in 301 bytes (1 switches on core 1)
+[pid: 26283|app: 0|req: 41/222] 58.247.212.239 () {38 vars in 635 bytes} [Sat Feb 22 05:49:43 2020] GET /admin/login/?next=/admin/ => generated 1917 bytes in 5 msecs (HTTP/1.1 200) 8 headers in 431 bytes (1 switches on core 0)
+[pid: 26286|app: 0|req: 159/223] 182.254.52.17 () {36 vars in 568 bytes} [Sat Feb 22 05:58:47 2020] GET /video/type/3/ => generated 32103 bytes in 88 msecs (HTTP/1.1 200) 6 headers in 320 bytes (1 switches on core 1)
+[pid: 26283|app: 0|req: 42/224] 182.254.52.17 () {36 vars in 572 bytes} [Sat Feb 22 06:10:33 2020] GET /phpma/index.php => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 1)
+[pid: 26283|app: 0|req: 43/225] 65.154.226.220 () {40 vars in 671 bytes} [Sat Feb 22 07:04:28 2020] GET / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 1)
+[pid: 26283|app: 0|req: 44/226] 182.254.52.17 () {36 vars in 576 bytes} [Sat Feb 22 07:07:48 2020] GET /video/play/77163/ => generated 11070 bytes in 5 msecs (HTTP/1.1 200) 6 headers in 320 bytes (1 switches on core 1)
+[pid: 26286|app: 0|req: 160/227] 182.254.52.17 () {36 vars in 576 bytes} [Sat Feb 22 07:08:11 2020] GET /video/play/79688/ => generated 11862 bytes in 5 msecs (HTTP/1.1 200) 6 headers in 320 bytes (1 switches on core 0)
+[pid: 26286|app: 0|req: 161/228] 61.241.50.63 () {36 vars in 567 bytes} [Sat Feb 22 07:27:34 2020] GET /video/type/4/ => generated 37166 bytes in 430 msecs (HTTP/1.1 200) 6 headers in 320 bytes (1 switches on core 1)
+未登录
+[pid: 26286|app: 0|req: 162/229] 61.241.50.63 () {36 vars in 597 bytes} [Sat Feb 22 07:32:19 2020] GET /blog/backend/edit_article/1/ => generated 0 bytes in 1 msecs (HTTP/1.1 302) 6 headers in 177 bytes (1 switches on core 0)
+[pid: 26283|app: 0|req: 45/230] 61.241.50.63 () {38 vars in 632 bytes} [Sat Feb 22 07:32:19 2020] GET /blog/sign_in/ => generated 3115 bytes in 1 msecs (HTTP/1.1 200) 6 headers in 319 bytes (1 switches on core 0)
+[pid: 26286|app: 0|req: 163/231] 14.18.182.223 () {36 vars in 566 bytes} [Sat Feb 22 07:50:00 2020] GET /video/admin/ => generated 10949 bytes in 4 msecs (HTTP/1.1 200) 6 headers in 320 bytes (1 switches on core 0)
+[pid: 26286|app: 0|req: 164/232] 59.36.132.240 () {36 vars in 542 bytes} [Sat Feb 22 08:11:29 2020] GET / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 1)
+[pid: 26286|app: 0|req: 165/233] 185.235.43.42 () {32 vars in 464 bytes} [Sat Feb 22 08:25:48 2020] GET / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+[pid: 26286|app: 0|req: 166/234] 128.14.134.170 () {34 vars in 488 bytes} [Sat Feb 22 08:46:09 2020] GET / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 1)
+[pid: 26286|app: 0|req: 167/235] 182.254.52.17 () {36 vars in 587 bytes} [Sat Feb 22 08:59:02 2020] GET /video/type/17/?page%3D6 => generated 30781 bytes in 125 msecs (HTTP/1.1 200) 6 headers in 320 bytes (1 switches on core 1)
+[pid: 26286|app: 0|req: 168/236] 182.254.52.17 () {36 vars in 576 bytes} [Sat Feb 22 09:33:45 2020] GET /video/play/79594/ => generated 10998 bytes in 5 msecs (HTTP/1.1 200) 6 headers in 320 bytes (1 switches on core 0)
+[pid: 26286|app: 0|req: 169/237] 59.36.132.240 () {36 vars in 576 bytes} [Sat Feb 22 10:09:02 2020] GET /video/play/65294/ => generated 10894 bytes in 5 msecs (HTTP/1.1 200) 6 headers in 320 bytes (1 switches on core 1)
+[pid: 26286|app: 0|req: 170/238] 61.241.50.63 () {36 vars in 541 bytes} [Sat Feb 22 10:12:37 2020] GET / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+[pid: 26286|app: 0|req: 171/239] 14.18.182.223 () {36 vars in 566 bytes} [Sat Feb 22 10:37:28 2020] GET /ReportServer => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+[pid: 26286|app: 0|req: 172/240] 45.76.144.219 () {36 vars in 432 bytes} [Sat Feb 22 11:20:49 2020] GET / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+[pid: 26286|app: 0|req: 173/241] 182.254.52.17 () {36 vars in 562 bytes} [Sat Feb 22 11:28:06 2020] GET /Drupal.php => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+[pid: 26286|app: 0|req: 174/242] 182.254.52.17 () {36 vars in 568 bytes} [Sat Feb 22 11:39:55 2020] GET /blog/sign_in/ => generated 3115 bytes in 2 msecs (HTTP/1.1 200) 6 headers in 319 bytes (1 switches on core 0)
+[pid: 26286|app: 0|req: 175/243] 183.192.179.16 () {36 vars in 577 bytes} [Sat Feb 22 11:47:40 2020] GET /video/play/42776/ => generated 10895 bytes in 5 msecs (HTTP/1.1 200) 6 headers in 320 bytes (1 switches on core 1)
+[pid: 26286|app: 0|req: 176/244] 182.254.52.17 () {36 vars in 568 bytes} [Sat Feb 22 11:51:29 2020] GET /webconfig.ini => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+[pid: 26286|app: 0|req: 177/245] 61.241.50.63 () {36 vars in 565 bytes} [Sat Feb 22 12:21:01 2020] GET /blog/log_in/ => generated 3939 bytes in 5 msecs (HTTP/1.1 200) 4 headers in 137 bytes (1 switches on core 0)
+[pid: 26286|app: 0|req: 178/246] 117.155.57.150 () {40 vars in 859 bytes} [Sat Feb 22 12:31:20 2020] GET /video/type/3/ => generated 32103 bytes in 95 msecs (HTTP/1.1 200) 6 headers in 320 bytes (1 switches on core 1)
+[pid: 26286|app: 0|req: 179/247] 117.155.57.150 () {42 vars in 882 bytes} [Sat Feb 22 12:31:24 2020] GET /video/ => generated 35491 bytes in 243 msecs (HTTP/1.1 200) 6 headers in 320 bytes (1 switches on core 0)
+[pid: 26286|app: 0|req: 180/248] 117.155.57.150 () {42 vars in 880 bytes} [Sat Feb 22 12:31:37 2020] GET /novel => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 1)
+[pid: 26285|app: 0|req: 9/249] 117.155.57.150 () {44 vars in 939 bytes} [Sat Feb 22 12:31:42 2020] GET /video/type/3/ => generated 32103 bytes in 90 msecs (HTTP/1.1 200) 6 headers in 320 bytes (1 switches on core 0)
+[pid: 26286|app: 0|req: 181/250] 113.57.246.211 () {44 vars in 1021 bytes} [Sat Feb 22 12:32:04 2020] GET /video/search/?wd=%E5%A3%B0%E4%B8%B4%E5%85%B6&page=1 => generated 14370 bytes in 54 msecs (HTTP/1.1 200) 6 headers in 320 bytes (1 switches on core 1)
+[pid: 26285|app: 0|req: 10/251] 113.57.246.211 () {44 vars in 992 bytes} [Sat Feb 22 12:32:06 2020] GET /video/play/75684/ => generated 11928 bytes in 7 msecs (HTTP/1.1 200) 6 headers in 320 bytes (1 switches on core 1)
+[pid: 26286|app: 0|req: 182/252] 113.57.246.211 () {44 vars in 962 bytes} [Sat Feb 22 12:32:07 2020] GET /video/play/75684/7/ => generated 11928 bytes in 5 msecs (HTTP/1.1 200) 6 headers in 320 bytes (1 switches on core 0)
+[pid: 26286|app: 0|req: 183/253] 182.254.52.17 () {36 vars in 564 bytes} [Sat Feb 22 12:46:25 2020] GET /blog/Jerome => generated 0 bytes in 1 msecs (HTTP/1.1 301) 4 headers in 151 bytes (1 switches on core 1)
+[pid: 26283|app: 0|req: 46/254] 182.254.52.17 () {38 vars in 614 bytes} [Sat Feb 22 12:46:25 2020] GET /blog/Jerome/ => generated 5395 bytes in 13 msecs (HTTP/1.1 200) 4 headers in 137 bytes (1 switches on core 0)
+[pid: 26286|app: 0|req: 184/255] 106.54.62.65 () {34 vars in 499 bytes} [Sat Feb 22 13:08:41 2020] GET /TP/public/index.php => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 1)
+[pid: 26283|app: 0|req: 47/256] 106.54.62.65 () {34 vars in 485 bytes} [Sat Feb 22 13:08:41 2020] GET /TP/index.php => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 1)
+[pid: 26285|app: 0|req: 11/257] 106.54.62.65 () {34 vars in 521 bytes} [Sat Feb 22 13:08:41 2020] GET /thinkphp/html/public/index.php => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+[pid: 26285|app: 0|req: 12/258] 106.54.62.65 () {34 vars in 503 bytes} [Sat Feb 22 13:08:41 2020] GET /html/public/index.php => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 1)
+[pid: 26284|app: 0|req: 16/259] 106.54.62.65 () {34 vars in 493 bytes} [Sat Feb 22 13:08:41 2020] GET /public/index.php => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+[pid: 26284|app: 0|req: 17/260] 106.54.62.65 () {34 vars in 509 bytes} [Sat Feb 22 13:08:41 2020] GET /TP/html/public/index.php => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 1)
+[pid: 26285|app: 0|req: 13/261] 106.54.62.65 () {34 vars in 481 bytes} [Sat Feb 22 13:08:41 2020] GET /elrekt.php => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 1)
+[pid: 26284|app: 0|req: 18/262] 106.54.62.65 () {34 vars in 479 bytes} [Sat Feb 22 13:08:41 2020] GET /index.php => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 1)
+[pid: 26285|app: 0|req: 14/263] 106.54.62.65 () {34 vars in 464 bytes} [Sat Feb 22 13:08:41 2020] GET / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+[pid: 26286|app: 0|req: 185/264] 124.14.18.98 () {34 vars in 499 bytes} [Sat Feb 22 13:16:00 2020] GET /TP/public/index.php => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 1)
+[pid: 26283|app: 0|req: 48/265] 124.14.18.98 () {34 vars in 485 bytes} [Sat Feb 22 13:16:00 2020] GET /TP/index.php => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 1)
+[pid: 26283|app: 0|req: 49/266] 124.14.18.98 () {34 vars in 521 bytes} [Sat Feb 22 13:16:00 2020] GET /thinkphp/html/public/index.php => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+[pid: 26285|app: 0|req: 15/267] 124.14.18.98 () {34 vars in 503 bytes} [Sat Feb 22 13:16:00 2020] GET /html/public/index.php => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+[pid: 26284|app: 0|req: 19/268] 124.14.18.98 () {34 vars in 493 bytes} [Sat Feb 22 13:16:00 2020] GET /public/index.php => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+[pid: 26286|app: 0|req: 186/269] 124.14.18.98 () {34 vars in 509 bytes} [Sat Feb 22 13:16:00 2020] GET /TP/html/public/index.php => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 1)
+[pid: 26286|app: 0|req: 187/270] 124.14.18.98 () {34 vars in 481 bytes} [Sat Feb 22 13:16:00 2020] GET /elrekt.php => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+[pid: 26285|app: 0|req: 16/271] 124.14.18.98 () {34 vars in 479 bytes} [Sat Feb 22 13:16:00 2020] GET /index.php => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+[pid: 26285|app: 0|req: 17/272] 124.14.18.98 () {34 vars in 464 bytes} [Sat Feb 22 13:16:00 2020] GET / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 1)
+[pid: 26285|app: 0|req: 18/273] 183.134.65.204 () {34 vars in 501 bytes} [Sat Feb 22 14:13:09 2020] GET /TP/public/index.php => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 1)
+[pid: 26286|app: 0|req: 188/274] 183.134.65.204 () {34 vars in 487 bytes} [Sat Feb 22 14:13:09 2020] GET /TP/index.php => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+[pid: 26283|app: 0|req: 50/275] 183.134.65.204 () {34 vars in 523 bytes} [Sat Feb 22 14:13:09 2020] GET /thinkphp/html/public/index.php => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+[pid: 26283|app: 0|req: 51/276] 183.134.65.204 () {34 vars in 505 bytes} [Sat Feb 22 14:13:09 2020] GET /html/public/index.php => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 1)
+[pid: 26285|app: 0|req: 19/277] 183.134.65.204 () {34 vars in 495 bytes} [Sat Feb 22 14:13:09 2020] GET /public/index.php => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+[pid: 26284|app: 0|req: 20/278] 183.134.65.204 () {34 vars in 511 bytes} [Sat Feb 22 14:13:09 2020] GET /TP/html/public/index.php => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+[pid: 26284|app: 0|req: 21/279] 183.134.65.204 () {34 vars in 483 bytes} [Sat Feb 22 14:13:09 2020] GET /elrekt.php => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 1)
+[pid: 26284|app: 0|req: 22/280] 183.134.65.204 () {34 vars in 481 bytes} [Sat Feb 22 14:13:09 2020] GET /index.php => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 1)
+[pid: 26283|app: 0|req: 52/281] 183.134.65.204 () {34 vars in 466 bytes} [Sat Feb 22 14:13:09 2020] GET / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 1)
+[pid: 26285|app: 0|req: 20/282] 151.235.251.127 () {32 vars in 466 bytes} [Sat Feb 22 16:33:56 2020] GET / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 1)
+...gracefully killing workers...
+Gracefully killing worker 1 (pid: 26283)...
+Gracefully killing worker 2 (pid: 26284)...
+Gracefully killing worker 3 (pid: 26285)...
+Gracefully killing worker 4 (pid: 26286)...
+worker 1 buried after 1 seconds
+worker 2 buried after 1 seconds
+worker 3 buried after 1 seconds
+worker 4 buried after 1 seconds
+binary reloading uWSGI...
+chdir() to /home/ubuntu/git/django_project
+closing all non-uwsgi socket fds > 2 (max_fd = 1024)...
+found fd 6 mapped to socket 0 (127.0.0.1:8001)
+running /home/ubuntu/.local/bin/uwsgi
+[uWSGI] getting INI configuration from web.ini
+*** Starting uWSGI 2.0.18 (64bit) on [Sat Feb 22 16:34:26 2020] ***
+compiled with version: 7.4.0 on 31 January 2020 10:32:09
+os: Linux-4.15.0-54-generic #58-Ubuntu SMP Mon Jun 24 10:55:24 UTC 2019
+nodename: VM-32-8-ubuntu
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 1
+current working directory: /home/ubuntu/git/django_project
+detected binary path: /home/ubuntu/.local/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+chdir() to /home/ubuntu/git/django_project
+your processes number limit is 7079
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 inherited INET address 127.0.0.1:8001 fd 6
+Python version: 3.6.8 (default, Oct  7 2019, 12:59:55)  [GCC 8.3.0]
+Python main interpreter initialized at 0x563a7ec9c320
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 416720 bytes (406 KB) for 8 cores
+*** Operational MODE: preforking+threaded ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x563a7ec9c320 pid: 26281 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+gracefully (RE)spawned uWSGI master process (pid: 26281)
+spawned uWSGI worker 1 (pid: 1745, cores: 2)
+spawned uWSGI worker 2 (pid: 1746, cores: 2)
+spawned uWSGI worker 3 (pid: 1747, cores: 2)
+spawned uWSGI worker 4 (pid: 1748, cores: 2)
+[pid: 1747|app: 0|req: 1/1] 117.155.57.150 () {48 vars in 1115 bytes} [Sat Feb 22 16:34:49 2020] GET /video/admin/view_log/ => generated 10586 bytes in 454 msecs (HTTP/1.1 200) 6 headers in 320 bytes (1 switches on core 0)
+[pid: 1747|app: 0|req: 2/2] 117.155.57.150 () {46 vars in 1063 bytes} [Sat Feb 22 16:34:56 2020] GET /video/ => generated 35511 bytes in 256 msecs (HTTP/1.1 200) 6 headers in 320 bytes (1 switches on core 1)
+[pid: 1745|app: 0|req: 1/3] 117.155.57.150 () {46 vars in 1060 bytes} [Sat Feb 22 16:35:00 2020] GET /video/admin/ => generated 11046 bytes in 158 msecs (HTTP/1.1 200) 6 headers in 320 bytes (1 switches on core 0)
+--------开始更新--------
+今日更新： 141
+[pid: 1745|app: 0|req: 3/4] 117.155.57.150 () {44 vars in 951 bytes} [Sat Feb 22 16:35:05 2020] GET /favicon.ico => generated 179 bytes in 2 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+已更新160条数据
+--------更新完成--------
+[pid: 1745|app: 0|req: 3/5] 117.155.57.150 () {46 vars in 1080 bytes} [Sat Feb 22 16:35:03 2020] GET /video/admin/update/ => generated 12 bytes in 8967 msecs (HTTP/1.1 200) 4 headers in 135 bytes (1 switches on core 1)
+[pid: 1745|app: 0|req: 4/6] 117.155.57.150 () {46 vars in 1054 bytes} [Sat Feb 22 16:35:23 2020] GET /video/ => generated 35218 bytes in 287 msecs (HTTP/1.1 200) 6 headers in 320 bytes (1 switches on core 0)
+[pid: 1745|app: 0|req: 5/7] 117.155.57.150 () {48 vars in 1085 bytes} [Sat Feb 22 16:38:57 2020] GET /video/ => generated 35218 bytes in 244 msecs (HTTP/1.1 200) 6 headers in 320 bytes (1 switches on core 1)
+[pid: 1745|app: 0|req: 6/8] 117.155.57.150 () {46 vars in 1060 bytes} [Sat Feb 22 16:39:01 2020] GET /video/admin/ => generated 11046 bytes in 3 msecs (HTTP/1.1 200) 6 headers in 320 bytes (1 switches on core 0)
+[pid: 1748|app: 0|req: 1/9] 117.155.57.150 () {46 vars in 1084 bytes} [Sat Feb 22 16:39:03 2020] GET /video/admin/view_log/ => generated 11363 bytes in 153 msecs (HTTP/1.1 200) 6 headers in 320 bytes (1 switches on core 0)
+[pid: 1745|app: 0|req: 7/10] 117.155.57.150 () {38 vars in 1176 bytes} [Sat Feb 22 16:42:24 2020] GET /video/play/73293/?nsukey=Kptbj4d9flkNPfbruarbe33mL6u0iRN%2B8XDs8ut1%2B7H5Cci0aRLw6j1HNs6RDorYv8QnqORi69JlIsovXGdx7RNfGbuaIb456lrBuFXGZeRBHt9tG5PZHFhOBHZDBGKJ3NmBM82n2UXYyrB8dE%2Fpq5PcWHlBPf%2F0SmaAvPOvimNGpFv4Z0x04aQtC26KmU8AYGNAhn3BE6KAEpa7B8fArg%3D%3D => generated 16993 bytes in 10 msecs (HTTP/1.1 200) 6 headers in 320 bytes (1 switches on core 1)
+[pid: 1748|app: 0|req: 2/11] 117.155.57.150 () {42 vars in 1302 bytes} [Sat Feb 22 16:42:32 2020] GET /video/play/73293/?nsukey=Kptbj4d9flkNPfbruarbe33mL6u0iRN%2B8XDs8ut1%2B7H5Cci0aRLw6j1HNs6RDorYv8QnqORi69JlIsovXGdx7RNfGbuaIb456lrBuFXGZeRBHt9tG5PZHFhOBHZDBGKJ3NmBM82n2UXYyrB8dE%2Fpq5PcWHlBPf%2F0SmaAvPOvimNGpFv4Z0x04aQtC26KmU8AYGNAhn3BE6KAEpa7B8fArg%3D%3D => generated 16993 bytes in 14 msecs (HTTP/1.1 200) 6 headers in 320 bytes (1 switches on core 1)
+[pid: 1745|app: 0|req: 8/12] 117.155.57.150 () {42 vars in 797 bytes} [Sat Feb 22 16:43:08 2020] GET /video/play/73293/ => generated 16993 bytes in 8 msecs (HTTP/1.1 200) 6 headers in 320 bytes (1 switches on core 0)
+[pid: 1745|app: 0|req: 9/13] 117.155.57.150 () {42 vars in 797 bytes} [Sat Feb 22 16:43:20 2020] GET /video/play/73293/ => generated 16993 bytes in 8 msecs (HTTP/1.1 200) 6 headers in 320 bytes (1 switches on core 1)
+[pid: 1745|app: 0|req: 10/14] 117.155.57.150 () {42 vars in 763 bytes} [Sat Feb 22 16:43:24 2020] GET / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+[pid: 1746|app: 0|req: 1/15] 117.155.57.150 () {42 vars in 727 bytes} [Sat Feb 22 16:43:24 2020] GET /favicon.ico => generated 179 bytes in 145 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+[pid: 1746|app: 0|req: 2/16] 170.82.36.10 () {32 vars in 469 bytes} [Sat Feb 22 16:43:34 2020] GET / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 1)
+[pid: 1748|app: 0|req: 3/17] 117.155.57.150 () {42 vars in 789 bytes} [Sat Feb 22 16:44:02 2020] GET /novel/chapter => generated 0 bytes in 1 msecs (HTTP/1.1 301) 4 headers in 153 bytes (1 switches on core 0)
+[pid: 1747|app: 0|req: 3/18] 117.155.57.150 () {42 vars in 791 bytes} [Sat Feb 22 16:44:02 2020] GET /novel/chapter/ => generated 15470 bytes in 2 msecs (HTTP/1.1 200) 4 headers in 138 bytes (1 switches on core 0)
+[pid: 1745|app: 0|req: 11/19] 117.155.57.150 () {50 vars in 968 bytes} [Sat Feb 22 16:44:04 2020] POST /art/getBookText => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+[pid: 1745|app: 0|req: 12/20] 117.155.57.150 () {42 vars in 741 bytes} [Sat Feb 22 16:44:04 2020] GET /favicon.ico => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 1)
+[pid: 1748|app: 0|req: 4/21] 117.155.57.150 () {50 vars in 970 bytes} [Sat Feb 22 16:44:14 2020] POST /art/ajaxBookText => generated 179 bytes in 2 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+[pid: 1748|app: 0|req: 5/22] 117.155.57.150 () {42 vars in 791 bytes} [Sat Feb 22 16:44:26 2020] GET /novel/chapter/ => generated 15470 bytes in 1 msecs (HTTP/1.1 200) 4 headers in 138 bytes (1 switches on core 1)
+[pid: 1745|app: 0|req: 13/23] 117.155.57.150 () {50 vars in 968 bytes} [Sat Feb 22 16:44:27 2020] POST /art/getBookText => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 1)
+[pid: 1746|app: 0|req: 3/24] 117.155.57.150 () {42 vars in 741 bytes} [Sat Feb 22 16:44:27 2020] GET /favicon.ico => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 1)
+[pid: 1747|app: 0|req: 4/25] 117.155.57.150 () {50 vars in 970 bytes} [Sat Feb 22 16:44:41 2020] POST /art/ajaxBookText => generated 179 bytes in 2 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+[pid: 1747|app: 0|req: 5/26] 117.155.57.150 () {42 vars in 791 bytes} [Sat Feb 22 16:44:49 2020] GET /novel/chapter/ => generated 15470 bytes in 1 msecs (HTTP/1.1 200) 4 headers in 138 bytes (1 switches on core 1)
+[pid: 1748|app: 0|req: 6/27] 117.155.57.150 () {50 vars in 968 bytes} [Sat Feb 22 16:44:50 2020] POST /art/getBookText => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 1)
+[pid: 1747|app: 0|req: 6/28] 117.155.57.150 () {50 vars in 970 bytes} [Sat Feb 22 16:45:52 2020] POST /art/ajaxBookText => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 1)
+[pid: 1745|app: 0|req: 14/29] 117.155.57.150 () {42 vars in 791 bytes} [Sat Feb 22 16:46:07 2020] GET /novel/chapter/ => generated 15470 bytes in 1 msecs (HTTP/1.1 200) 4 headers in 138 bytes (1 switches on core 1)
+[pid: 1745|app: 0|req: 15/30] 117.155.57.150 () {50 vars in 968 bytes} [Sat Feb 22 16:46:07 2020] POST /art/getBookText => generated 179 bytes in 2 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+[pid: 1747|app: 0|req: 7/31] 117.155.57.150 () {44 vars in 1026 bytes} [Sat Feb 22 16:51:31 2020] GET /video/ => generated 35218 bytes in 281 msecs (HTTP/1.1 200) 6 headers in 320 bytes (1 switches on core 1)
+[pid: 1748|app: 0|req: 7/32] 182.254.52.17 () {36 vars in 566 bytes} [Sat Feb 22 16:52:33 2020] GET /manager/html => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 1)
+[pid: 1748|app: 0|req: 8/33] 177.11.136.89 () {32 vars in 463 bytes} [Sat Feb 22 17:05:25 2020] GET / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 1)
+[pid: 1748|app: 0|req: 9/34] 182.254.52.17 () {36 vars in 605 bytes} [Sat Feb 22 17:14:51 2020] GET /solr/admin/info/system?wt%3Djson => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 1)
+[pid: 1748|app: 0|req: 10/35] 14.18.182.223 () {36 vars in 542 bytes} [Sat Feb 22 17:23:15 2020] GET / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 1)
+[pid: 1748|app: 0|req: 11/36] 61.241.50.63 () {36 vars in 541 bytes} [Sat Feb 22 17:28:32 2020] GET / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 1)
+[pid: 1748|app: 0|req: 12/37] 182.254.52.17 () {36 vars in 586 bytes} [Sat Feb 22 18:37:13 2020] GET /images/stories/cmd.php => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 1)
+[pid: 1748|app: 0|req: 13/38] 182.254.52.17 () {36 vars in 554 bytes} [Sat Feb 22 18:38:18 2020] GET /HNAP1/ => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 1)
+[pid: 1748|app: 0|req: 14/39] 187.204.32.120 () {32 vars in 465 bytes} [Sat Feb 22 19:00:30 2020] GET / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 1)
+[pid: 1748|app: 0|req: 15/40] 182.254.52.17 () {36 vars in 590 bytes} [Sat Feb 22 19:07:30 2020] GET /phpmyadmin3333/index.php => generated 179 bytes in 2 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 1)
+[pid: 1745|app: 0|req: 16/41] 182.254.52.17 () {36 vars in 606 bytes} [Sat Feb 22 20:36:01 2020] GET /a2billing/admin/Public/index.php => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+[pid: 1745|app: 0|req: 17/42] 59.36.132.240 () {36 vars in 606 bytes} [Sat Feb 22 21:28:41 2020] GET /video/admin/view_log/2020-02-19/ => generated 24757 bytes in 22 msecs (HTTP/1.1 200) 6 headers in 320 bytes (1 switches on core 1)
+[pid: 1745|app: 0|req: 18/43] 61.241.50.63 () {36 vars in 549 bytes} [Sat Feb 22 21:45:12 2020] GET /love => generated 0 bytes in 0 msecs (HTTP/1.1 301) 4 headers in 144 bytes (1 switches on core 0)
+[pid: 1748|app: 0|req: 16/44] 61.241.50.63 () {38 vars in 592 bytes} [Sat Feb 22 21:45:12 2020] GET /love/ => generated 8925 bytes in 2 msecs (HTTP/1.1 200) 4 headers in 137 bytes (1 switches on core 0)
+[pid: 1748|app: 0|req: 17/45] 182.254.52.17 () {36 vars in 596 bytes} [Sat Feb 22 21:47:20 2020] GET /vtigercrm/vtigerservice.php => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 1)
+[pid: 1745|app: 0|req: 19/46] 182.254.52.17 () {36 vars in 564 bytes} [Sat Feb 22 21:47:25 2020] GET /v/index.php => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+[pid: 1746|app: 0|req: 4/47] 193.57.40.38 () {38 vars in 710 bytes} [Sat Feb 22 21:47:53 2020] POST /vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+[pid: 1746|app: 0|req: 5/48] 106.12.178.238 () {42 vars in 803 bytes} [Sat Feb 22 21:50:34 2020] GET / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 1)
+[pid: 1748|app: 0|req: 18/49] 106.12.178.238 () {42 vars in 831 bytes} [Sat Feb 22 21:50:34 2020] GET /index.php => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 1)
+[pid: 1746|app: 0|req: 6/50] 223.73.88.104 () {40 vars in 1393 bytes} [Sat Feb 22 22:27:32 2020] GET /video/?nsukey=3fNvmL9oc5AClAg3j%2Fc0dDQUWxj4psEkQ8u1nm%2BTFk%2Fv9wLwVgpWUdEguBvJ7biDW1I1bDoQFH5JwBfQZ7eX01PGyclE61wqpVimL9U9lHrLGiInkxQKpKzjiFLI9D1kGxKkaR6aXb%2BT6s2iCT6H7w063ZU%2Fhkkzm0Gx7CvY4Mj%2BgBM3biP4zdghQI1v6hHzdgNs5Nc0AyKYWWaiJKIMlw%3D%3D => generated 35218 bytes in 260 msecs (HTTP/1.1 200) 6 headers in 320 bytes (1 switches on core 1)
+[pid: 1748|app: 0|req: 19/51] 223.73.88.104 () {44 vars in 1300 bytes} [Sat Feb 22 22:27:39 2020] GET /video/type/2/ => generated 32533 bytes in 129 msecs (HTTP/1.1 200) 6 headers in 320 bytes (1 switches on core 1)
+[pid: 1745|app: 0|req: 20/52] 223.73.88.104 () {42 vars in 1492 bytes} [Sat Feb 22 22:27:41 2020] GET /video/type/2/?nsukey=Jj5xmDYDrBpT2QVkKnWdkpLA5BRaMjygC9yqG4HZ3J%2BUfHooaKZDmTz2hUfRlhq8%2FwCNbBDtBDNoaqCeR3EF%2BUTFgW9bOL2i52CKau6vElUhDUhlb0KABLVJmZ%2FQd4eqiZRL8uL7GCx6AWM163pTSEcFB6dZc4xHzIRJfljlcBChijLuAZfkZionl81gV6HO4q5P2GboM%2BfpfLXjX7vExA%3D%3D => generated 32533 bytes in 126 msecs (HTTP/1.1 200) 6 headers in 320 bytes (1 switches on core 0)
+[pid: 1745|app: 0|req: 21/53] 223.73.88.104 () {44 vars in 1452 bytes} [Sat Feb 22 22:28:10 2020] GET /video/search/?wd=%E4%B8%89%E7%94%9F%E4%B8%89%E4%B8%96%E6%9E%95%E4%B8%8A%E4%B9%A6&page=1 => generated 12790 bytes in 49 msecs (HTTP/1.1 200) 6 headers in 320 bytes (1 switches on core 1)
+[pid: 1745|app: 0|req: 22/54] 223.73.88.104 () {44 vars in 1149 bytes} [Sat Feb 22 22:28:20 2020] GET /video/play/77626/ => generated 16715 bytes in 8 msecs (HTTP/1.1 200) 6 headers in 320 bytes (1 switches on core 0)
+[pid: 1745|app: 0|req: 23/55] 223.73.88.104 () {44 vars in 1085 bytes} [Sat Feb 22 22:28:30 2020] GET /video/play/77626/28/ => generated 16716 bytes in 8 msecs (HTTP/1.1 200) 6 headers in 320 bytes (1 switches on core 1)
+[pid: 1745|app: 0|req: 24/56] 223.73.88.104 () {44 vars in 1088 bytes} [Sat Feb 22 22:28:54 2020] GET /video/play/77626/28/ => generated 16716 bytes in 13 msecs (HTTP/1.1 200) 6 headers in 320 bytes (1 switches on core 0)
+[pid: 1745|app: 0|req: 25/57] 193.57.40.38 () {34 vars in 554 bytes} [Sat Feb 22 23:13:59 2020] GET /solr/admin/info/system?wt=json => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 1)
+[pid: 1745|app: 0|req: 26/58] 61.241.50.63 () {36 vars in 565 bytes} [Sat Feb 22 23:29:42 2020] GET /ReportServer => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 1)
+[pid: 1745|app: 0|req: 27/59] 91.83.84.117 () {32 vars in 486 bytes} [Sat Feb 22 23:59:35 2020] GET /phpmyadmin/ => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 1)
+[pid: 1745|app: 0|req: 28/60] 58.247.212.239 () {36 vars in 607 bytes} [Sun Feb 23 00:06:16 2020] GET /video/admin/view_log/2020-02-14/ => generated 20708 bytes in 13 msecs (HTTP/1.1 200) 6 headers in 320 bytes (1 switches on core 0)
+[pid: 1745|app: 0|req: 29/61] 61.241.50.63 () {36 vars in 555 bytes} [Sun Feb 23 00:06:46 2020] GET /webdav/ => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 1)
+[pid: 1748|app: 0|req: 20/62] 193.57.40.38 () {34 vars in 714 bytes} [Sun Feb 23 00:06:51 2020] GET /index.php?s=/Index/\think\app/invokefunction&function=call_user_func_array&vars[0]=md5&vars[1][]=HelloThinkPHP => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+[pid: 1745|app: 0|req: 30/63] 182.254.52.17 () {36 vars in 576 bytes} [Sun Feb 23 00:23:01 2020] GET /MyAdmin/index.php => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 1)
+[pid: 1745|app: 0|req: 31/64] 117.155.57.150 () {46 vars in 1060 bytes} [Sun Feb 23 00:26:55 2020] GET /video/admin/ => generated 11046 bytes in 4 msecs (HTTP/1.1 200) 6 headers in 320 bytes (1 switches on core 1)
+[pid: 1745|app: 0|req: 32/65] 117.155.57.150 () {46 vars in 1084 bytes} [Sun Feb 23 00:26:58 2020] GET /video/admin/view_log/ => generated 145 bytes in 44 msecs (HTTP/1.1 500) 5 headers in 154 bytes (1 switches on core 0)
+[pid: 1745|app: 0|req: 33/66] 117.155.57.150 () {44 vars in 953 bytes} [Sun Feb 23 00:26:59 2020] GET /favicon.ico => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 1)
+[pid: 1747|app: 0|req: 8/67] 117.155.57.150 () {48 vars in 1091 bytes} [Sun Feb 23 00:27:03 2020] GET /video/admin/ => generated 11046 bytes in 5 msecs (HTTP/1.1 200) 6 headers in 320 bytes (1 switches on core 0)
+[pid: 1745|app: 0|req: 34/68] 117.155.57.150 () {46 vars in 1084 bytes} [Sun Feb 23 00:27:05 2020] GET /video/admin/view_log/ => generated 145 bytes in 13 msecs (HTTP/1.1 500) 5 headers in 154 bytes (1 switches on core 1)
+[pid: 1747|app: 0|req: 9/69] 117.155.57.150 () {46 vars in 1054 bytes} [Sun Feb 23 00:30:12 2020] GET /video/admin/ => generated 11046 bytes in 3 msecs (HTTP/1.1 200) 6 headers in 320 bytes (1 switches on core 1)
+[pid: 1745|app: 0|req: 35/70] 117.155.57.150 () {46 vars in 1084 bytes} [Sun Feb 23 00:30:15 2020] GET /video/admin/view_log/ => generated 6308 bytes in 1 msecs (HTTP/1.1 200) 6 headers in 319 bytes (1 switches on core 0)
+[pid: 1747|app: 0|req: 10/71] 117.155.57.150 () {48 vars in 1115 bytes} [Sun Feb 23 00:30:17 2020] GET /video/admin/view_log/ => generated 6308 bytes in 1 msecs (HTTP/1.1 200) 6 headers in 319 bytes (1 switches on core 0)
+[pid: 1745|app: 0|req: 36/72] 117.155.57.150 () {48 vars in 1115 bytes} [Sun Feb 23 00:30:37 2020] GET /video/admin/view_log/ => generated 6308 bytes in 2 msecs (HTTP/1.1 200) 6 headers in 319 bytes (1 switches on core 1)
+[pid: 1747|app: 0|req: 11/73] 117.155.57.150 () {48 vars in 1115 bytes} [Sun Feb 23 00:30:39 2020] GET /video/admin/view_log/ => generated 6308 bytes in 1 msecs (HTTP/1.1 200) 6 headers in 319 bytes (1 switches on core 0)
+[pid: 1745|app: 0|req: 37/74] 117.155.57.150 () {46 vars in 1084 bytes} [Sun Feb 23 00:30:42 2020] GET /video/admin/view_log/ => generated 6308 bytes in 2 msecs (HTTP/1.1 200) 6 headers in 319 bytes (1 switches on core 0)
+...gracefully killing workers...
+Gracefully killing worker 1 (pid: 1745)...
+Gracefully killing worker 2 (pid: 1746)...
+Gracefully killing worker 3 (pid: 1747)...
+Gracefully killing worker 4 (pid: 1748)...
+worker 1 buried after 1 seconds
+worker 2 buried after 1 seconds
+worker 3 buried after 1 seconds
+worker 4 buried after 1 seconds
+binary reloading uWSGI...
+chdir() to /home/ubuntu/git/django_project
+closing all non-uwsgi socket fds > 2 (max_fd = 1024)...
+found fd 6 mapped to socket 0 (127.0.0.1:8001)
+running /home/ubuntu/.local/bin/uwsgi
+[uWSGI] getting INI configuration from web.ini
+*** Starting uWSGI 2.0.18 (64bit) on [Sun Feb 23 00:31:51 2020] ***
+compiled with version: 7.4.0 on 31 January 2020 10:32:09
+os: Linux-4.15.0-54-generic #58-Ubuntu SMP Mon Jun 24 10:55:24 UTC 2019
+nodename: VM-32-8-ubuntu
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 1
+current working directory: /home/ubuntu/git/django_project
+detected binary path: /home/ubuntu/.local/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+chdir() to /home/ubuntu/git/django_project
+your processes number limit is 7079
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 inherited INET address 127.0.0.1:8001 fd 6
+Python version: 3.6.8 (default, Oct  7 2019, 12:59:55)  [GCC 8.3.0]
+Python main interpreter initialized at 0x564c6c401320
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 416720 bytes (406 KB) for 8 cores
+*** Operational MODE: preforking+threaded ***
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x564c6c401320 pid: 26281 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+gracefully (RE)spawned uWSGI master process (pid: 26281)
+spawned uWSGI worker 1 (pid: 1304, cores: 2)
+spawned uWSGI worker 2 (pid: 1305, cores: 2)
+spawned uWSGI worker 3 (pid: 1306, cores: 2)
+spawned uWSGI worker 4 (pid: 1307, cores: 2)
+[pid: 1306|app: 0|req: 1/1] 117.155.57.150 () {48 vars in 1115 bytes} [Sun Feb 23 00:31:54 2020] GET /video/admin/view_log/ => generated 6308 bytes in 156 msecs (HTTP/1.1 200) 6 headers in 319 bytes (1 switches on core 0)
+[pid: 1306|app: 0|req: 2/2] 117.155.57.150 () {48 vars in 1115 bytes} [Sun Feb 23 00:31:56 2020] GET /video/admin/view_log/ => generated 6308 bytes in 2 msecs (HTTP/1.1 200) 6 headers in 319 bytes (1 switches on core 1)
+[pid: 1305|app: 0|req: 1/3] 117.155.57.150 () {48 vars in 1115 bytes} [Sun Feb 23 00:31:58 2020] GET /video/admin/view_log/ => generated 6308 bytes in 160 msecs (HTTP/1.1 200) 6 headers in 319 bytes (1 switches on core 0)
