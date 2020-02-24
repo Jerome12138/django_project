@@ -296,10 +296,10 @@ html,body,header,section,footer,div,ul,ol,li,img,a,span,em,del,legend,center,str
 ul, li {
 	list-style: none;
 }
-p {
+/* p {
 	font-size: 0.7rem;
 	color: #757575;
-}
+} */
 a {
 	color: #0062cc;
 	text-decoration: none;
@@ -1032,7 +1032,7 @@ input[type="search"]::-webkit-search-cancel-button {
 /*列表*/
 .aui-list {
     position: relative;
-    font-size: 0.8rem;
+    font-size: 1rem;
     background-color: #ffffff;
     border-top: 1px solid #dddddd;
 }

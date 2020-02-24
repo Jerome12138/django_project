@@ -41,7 +41,7 @@ def play(request, vod_id, index=1):  # 播放页面
     url = vod_data.vod_url
     if len(url.split('$')) <= 2:  # 如果url只有一个，则转换为列表
         if url[0:1] != '[':
-            url_list = [url,]
+            url_list = [url, ]
         else:
             url_list = eval(url)
     else:
@@ -243,7 +243,8 @@ def view_log(request, log_date=0):
         r'(\*\*\*\sStarting\suWSGI.+?interpreter\smode\s\*\*\*)', '*** Starting uWSGI ***', log, flags=re.DOTALL)
     log = re.sub(r'(nsukey\=.+)', '<<wechat>>', log)
     log = re.sub(r'(\[pid:.+?\.php.+?\(HTTP\/1\.1\s404\).+\n)', '', log)
-    log = re.sub(r'(\[pid:.+?GET\s\/\s\=\>\sgenerated.+?\(HTTP\/1\.1\s404\).+\n)', '', log)
+    log = re.sub(
+        r'(\[pid:.+?GET\s\/\s\=\>\sgenerated.+?\(HTTP\/1\.1\s404\).+\n)', '', log)
     log = re.sub(r'(\[pid.+?\])', '', log)
     log = re.sub(r'(\(\)\s\{.+?bytes\})', '', log)
     log = re.sub(r'(\d+?\sheaders\sin.+?\))', '', log)
@@ -258,9 +259,14 @@ def view_log(request, log_date=0):
 
 
 def update(request):
-    get_all_data = getAllData()
-    flag = get_all_data.run()
-    if flag:
-        return HttpResponse('更新完毕')
-    else:
-        return HttpResponse('更新出错')
+    ret = {'status': True, 'error': None, 'data': None}
+    try:
+        get_all_data = getAllData()
+        updata_count = get_all_data.run()
+        ret['data'] = '已更新%s条数据' % updata_count
+    except Exception as e:
+        print(e)
+        ret['status'] = False
+        ret['error'] = "未知错误"
+    finally:
+        return HttpResponse(json.dumps(ret))

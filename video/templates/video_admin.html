@@ -20,7 +20,7 @@
             后台管理&nbsp;共{{ data_count }}条请求
         </h3>
         <a href="/video/admin/view_log/" style="float: right;margin-right: 20px;">查看日志</a>
-        <a href="/video/admin/update/" style="float: right;margin-right: 20px;">更新数据</a>
+        <a href="javascript:;" id='update' style="float: right;margin-right: 20px;">更新数据</a>
     </div>
     <div class="video_list">
         <ul class="tt">
@@ -97,8 +97,8 @@
                     }
                 },
                 error: function () {
-                    alert("请求出现未知错误")
-                    console.log("请求出现未知错误")
+                    alert("添加请求出现未知错误")
+                    console.log("添加请求出现未知错误")
                     //后台未接收到请求或未返回数据等未知错误
                 }
             })
@@ -124,7 +124,32 @@
                     }
                 },
                 error: function () {
-                    console.log("请求未知错误")
+                    console.log("删除请求未知错误")
+                    //后台未接收到请求或未返回数据等未知错误
+                }
+            })
+        };
+    })
+    $('#update').click(function () {
+        $(this).css('color', 'grey')
+        $(this).css('border-bottom', 'grey 1px solid')
+        if (true) {
+            $.ajax({
+                url: '/video/admin/update/',
+                type: "POST",
+                headers: { "X-CSRFToken": $.cookie('csrftoken') },
+                data: {}, // 要提交的数据
+                dataType: 'JSON',                 // 自动将接收到的data反序列化成obj返回
+                success: function (obj) {
+                    if (obj.status) {
+                        alert(obj.data)
+                    } else {
+                        alert(obj.error)
+                    }
+                },
+                error: function () {
+                    alert("update请求出现未知错误")
+                    console.log("update请求出现未知错误")
                     //后台未接收到请求或未返回数据等未知错误
                 }
             })

@@ -7,28 +7,33 @@ function comment(art_id){
 	  		}
 	  });
 }
-function getTxt(c_id,a_id,ac){
-	$.post("/art/getBookText",{c_id:c_id,a_id:a_id,ac:ac},function(result){
-			 $(".models1").fadeOut();
-			 $(".content").html(result);
-	  });
-}
-function ajaxBookText(c_id,a_id,ac){
-	$.post("/art/ajaxBookText",{c_id:c_id,a_id:a_id,ac:ac},function(result){
-			 $(".models1").fadeOut();
-			 $(".loading").hide();
-			 jz=0;
-			 if(result.code==-1){
-			 	layer.msg("无更多章节内容了！");
-			 	return;	
-			 }
-			 $("#chapterTitle").text(result.c_name);
-			 $(".main").find("h3").text(result.c_name);
-			  $(".content").html(' ');
-			 $(".content").html(result.content);
-			 nowCid=result.c_id;
- 			 $('html ,body').animate({scrollTop: 1}, 0);
-	  });
+function ajaxBookText(c_id,a_id){
+	$.ajax({
+		url: '/novel/art/getBookText/',
+		type: "POST",
+		headers: { "X-CSRFToken": $.cookie('csrftoken') },
+		data: {'c_id':c_id,'a_id':a_id}, // 要提交的数据
+		dataType: 'JSON',                 // 自动将接收到的data反序列化成obj返回
+		success: function (obj) {
+			if (obj.status) {
+				$(".models1").fadeOut();
+				$(".loading").hide();
+				$('title').text(obj.data.cname+'_'+obj.data.name+"_卧龙阅读");
+				$("#chapterTitle").text(obj.data.cname);
+				$(".main").find("h3").text(obj.data.cname);
+				$(".content").html(obj.data.content);
+				Cid=obj.data.cid;
+				Pid=obj.data.pid;
+				Nid=obj.data.nid;
+				$('html ,body').animate({scrollTop: 1}, 0);
+			} else {
+				alert(obj.error)
+			}
+		},
+		error: function () {
+			console.log("请求出现未知错误")
+		}
+	})
 }
 function noChapter(){
 		layer.msg("没有更多的章节了！");

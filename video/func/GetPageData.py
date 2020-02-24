@@ -248,4 +248,4 @@ class getAllData(object):   # 获取所有数据
         if self.error_pages != []:
             print('出现错误页面：', self.error_pages)
         print('--------更新完成--------')
-        return True
+        return update_page*40

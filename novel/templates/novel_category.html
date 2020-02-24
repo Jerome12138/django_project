@@ -1,0 +1,94 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+    <meta http-equiv="Cache-Control" content="no-transform" />
+    <meta name="viewport"
+        content="maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width,initial-scale=1.0" />
+    <meta name="format-detection" content="telephone=no,email=no,date=no,address=no">
+    <title>{{ book_name }}最新目录_卧龙阅读</title>
+    <link rel="stylesheet" type="text/css" href="/static/app_novel/css/book.css">
+    <link rel="stylesheet" type="text/css" href="/static/plugins/swiper/swiper.min.css">
+    <script type="text/javascript" src="/static/plugins/swiper/swiper.min.js"></script>
+    <link href="/static/app_novel/css/aui.css" rel="stylesheet" type="text/css">
+    <link href="/static/app_novel/css/my.css" rel="stylesheet" type="text/css">
+    <script src="/static/jquery/jquery-1.12.4.js"></script>
+    <script src='/static/jquery/jquery.cookie.js'></script>
+    <script type="text/javascript" src="/static/plugins/layer/layer.js"></script>
+    <script type="text/javascript" src="/static/plugins/layer/layer.css"></script>
+    <script type="text/javascript" src="/static/app_novel/js/my.js"></script>
+</head>
+
+<body>
+    <div class="header">
+        <a class="icon-back" href="javascript:history.go(-1)"></a>
+        <h1>{{ book_name }}的目录</h1>
+        <span class="icon-grouop">
+            <a class="icon-search" href="javascript:"></a>
+            <a class="icon-menu" href="javascript:"></a>
+        </span>
+    </div>
+    <!-- 搜索 -->
+    <div class="search">
+        <div class="search-mask"></div>
+        <div class="search-panel">
+            <div class="search-form">
+                <form action="/novel/search/" method="get" name="searchform" id="searchform">
+                    <input type="text" placeholder="请输入书名/作者" name="wd" class="search-key">
+                    <button type="submit" class="search-btn"
+                        onclick="if($('.search-key').val()==''){alert('请输入书名/作者');$('.search-key').focus();return false;}">Go</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript">
+        $(".icon-search").click(function () {
+            $(".search").addClass("show");
+        })
+        $(".search-mask").click(function () {
+            $(".search").removeClass("show");
+        })
+    </script>
+    <div class="h50"></div>
+    <div class="list">
+        <div class="aui-content aui-margin-b-15">
+            <ul class="aui-list aui-list-in nobgs">
+                {% for chapters in cate_list %}
+                <li class="aui-list-item" style="padding-right: 0.75rem;">
+                    <div class="aui-list-item-inner">
+                        <div class="zxtitle" style="text-align: center;width: 100%;color: gray;">{{ chapters.name }}</div>
+                    </div>
+                </li>
+                {% for item in chapters.list %}
+                <a href="/novel/chapter/{{ a_id }}/{{ item.id }}.html" title="{{ item.name }}">
+                    <li class="aui-list-item">
+                        <div class="aui-list-item-inner">
+                            <div class="zxtitle">{{ item.name }}</div>
+                        </div>
+                    </li>
+                </a>
+                {% endfor %}
+                {% endfor %}
+            </ul>
+        </div>
+    </div>
+</body>
+<script type="text/javascript">
+    $(".icon-search").click(function () {
+        $(".search").addClass("show");
+    })
+    $(".search-mask").click(function () {
+        $(".search").removeClass("show");
+    })
+    $(".icon-menu").click(function () {
+        $(".menu").addClass("show");
+    })
+    $(".menu-mask").click(function () {
+        $(".menu").removeClass("show");
+    })        
+</script>
+
+</html>

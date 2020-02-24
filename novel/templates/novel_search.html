@@ -1,0 +1,99 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport"
+        content="maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,width=device-width,initial-scale=1.0" />
+    <meta name="format-detection" content="telephone=no,email=no,date=no,address=no">
+    <title>{{ wd }}搜索结果 - 卧龙阅读</title>
+    <link href="/static/app_novel/css/aui.css" rel="stylesheet" type="text/css">
+    <link href="/static/app_novel/css/my.css" rel="stylesheet" type="text/css">
+    <script src="/static/jquery/jquery-1.12.4.js"></script>
+    <script src='/static/jquery/jquery.cookie.js'></script>
+    <script type="text/javascript" src="/static/plugins/layer/layer.js"></script>
+    <script type="text/javascript" src="/static/plugins/layer/layer.css"></script>
+    <script type="text/javascript" src="/static/app_novel/js/my.js"></script>
+</head>
+
+<body>
+    <!-- header -->
+    <div class="header">
+        <a class="icon-back" href="javascript:history.go(-1)"></a>
+        <h1>搜索结果</h1>
+        <span class="icon-grouop">
+            <a class="icon-search" href="javascript:"></a>
+            <a class="icon-menu" href="javascript:"></a>
+        </span>
+    </div>
+    <!-- end -->
+    <!-- 搜索 -->
+    <div class="search">
+        <div class="search-mask"></div>
+        <div class="search-panel">
+            <div class="search-form">
+                <form action="/novel/search/" method="get" name="searchform" id="searchform">
+                    <input type="text" placeholder="请输入书名/作者" name="wd" class="search-key">
+                    <button type="submit" class="search-btn"
+                        onclick="if($('.search-key').val()==''){alert('请输入书名/作者');$('.search-key').focus();return false;}">Go</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript">
+        $(".icon-search").click(function () {
+            $(".search").addClass("show");
+        })
+        $(".search-mask").click(function () {
+            $(".search").removeClass("show");
+        })
+    </script>
+    <div class="search-html-box clearfix">
+        <div class="search-main fl">
+            <div class="search-tips">搜索与“<span id="queryword" class="RED">{{ wd }}</span>”相关结果</div>
+            <div class="list">
+                {% for item in book_list %}
+                <a href="/novel/chapter/{{ item.Id }}.html" title="{{ item.Name }}">
+                    <div class="listbody clears">
+                        <div class="aui-col-xs-4">
+                            <img src="{{ item.Img }}" alt='{{ item.Name }}'>
+                            {% if item.BookStatus == "完结" %}
+                            <i class="finish">{{ item.BookStatus }}</i>
+                            {% else %}
+                            <i >{{ item.BookStatus }}</i>
+                            {% endif %}
+                        </div>
+                        <div class="aui-col-xs-8">
+                            <p>
+                                <h3>{{ item.Name }}</h3>
+                            </p>
+                            <p class="overs"><span class="divs">{{ item.Desc }}</span></p>
+                            <p>
+                                <span class="dright score">{{ item.Author }}</span>
+                                <span class="dright">{{ item.CName }}</span>
+                            </p>
+                        </div>
+                    </div>
+                </a>
+                {% endfor %}
+                <div class="h10"></div>
+            </div>
+
+        </div>
+    </div>
+    <script type="text/javascript">
+        var layer;
+        layui.use('layer', function () {
+            layer = layui.layer;
+        });
+    </script>
+    <!-- 页脚 -->
+    <div class="footer">
+        <div class="copyright">
+            <p>免责声明：若本站收录的资源侵犯了您的权益，请发邮件至：1030155707@qq.com，我们会及时删除侵权内容，谢谢合作！</p>
+            <p>Copyright &#169; 2019-2020 All Rights Reserved.</p>
+        </div>
+    </div>
+</body>
+
+</html>

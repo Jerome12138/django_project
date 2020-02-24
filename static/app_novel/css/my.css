@@ -54,21 +54,44 @@
 .headerNav .ac{
 	font-size:18px;
 	font-weight: 600;
-
-
 }
 .list .aui-col-xs-4 {
-
+    position: relative;
+    overflow: hidden;
 }
 .list .aui-col-xs-4 img{
-        /*float: left;*/
-        width: 100%;
-        height: 130px;
-        overflow: hidden;
-    }
-    .list h3{
-        font-weight: 600;
-    }
+    /*float: left;*/
+    width: 100%;
+    height: 130px;
+    overflow: hidden;
+    line-height:130px;
+    font-size: 18px;
+}
+.list .aui-col-xs-4 i.finish {
+    background: #c9142a !important;
+}
+.list .aui-col-xs-4 i {
+    color: #fff;
+    background: #6bc1fa;
+    position: absolute;
+    left: -1.5rem;
+    top: -1.5rem;
+    display: block;
+    margin: 2.125rem 0;
+    width: 5.5rem;
+    height: 1.25rem;
+    line-height: 1.25rem;
+    font-size: 0.75rem;
+    text-align: center;
+    overflow: hidden;
+    transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+}
+.list h3{
+    font-weight: 600;
+}
 .search{
 	height: 55px;
 	width: 100%;
@@ -232,7 +255,7 @@
 .listbody{
 	height: 160px;
 	border-bottom: 1px solid #f2f2f2;
-	padding-top: 10px;
+    padding-top: 10px;
 }
 .aui-list-item-title{
 	width: 70%;
@@ -430,7 +453,7 @@ a {
     left: 0;
     z-index: 3;
     overflow: hidden;
-    height: 17rem;
+    height: 5rem;
     background-color: #fff;
     -webkit-transform: translateY(-100%);
     transform: translateY(-100%);
@@ -854,7 +877,7 @@ border: 1px solid #eeeeee !important;
 
 }
 .aui-content ul li{
-	padding-top: 15px !important;
+	padding-top: 10px !important;
 
 }
 .child-mod {

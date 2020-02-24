@@ -5,6 +5,9 @@ from novel import views
 
 urlpatterns = [
     path('home/', views.home),
-    path('chapter/', views.chapter),
+    path('chapter/<int:a_id>.html', views.chapter),
+    path('category/<int:a_id>.html', views.category),
+    path('search/', views.search),
+    path('art/getBookText/', views.get_book_text),
     path('', views.home),
 ]
