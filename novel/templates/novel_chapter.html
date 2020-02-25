@@ -36,7 +36,7 @@
         <h1>{{ art_data.name }}</h1>
         <span class="icon-grouop">
             <a class="icon-search" href="javascript:"></a>
-            <a class="icon-menu" href="javascript:"></a>
+            <a class="icon-menu" href="/novel/category/{{ art_data.id }}.html#cate_{{ art_data.cid}}" title="{{ art_data.name }}的目录"></a>
         </span>
     </div>
     <!-- end -->
@@ -117,7 +117,7 @@
     <!-- 设置 -->
     <div class="footer models">
         <div class="aui-col-xs-4">
-            <a href="/novel/category/{{ art_data.id }}.html" title="{{ art_data.name }}的目录">
+            <a href="/novel/category/{{ art_data.id }}.html#cate_{{ art_data.cid}}" title="{{ art_data.name }}的目录">
                 <img src="/static/app_novel/img/menu.png">目录
             </a>
         </div>

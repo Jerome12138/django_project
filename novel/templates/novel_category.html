@@ -28,7 +28,7 @@
         <h1>{{ book_name }}的目录</h1>
         <span class="icon-grouop">
             <a class="icon-search" href="javascript:"></a>
-            <a class="icon-menu" href="javascript:"></a>
+            <a class="icon-menu" href="/novel/category/{{ a_id }}.html" title="{{ book_name }}的目录"></a>
         </span>
     </div>
     <!-- 搜索 -->
@@ -63,7 +63,7 @@
                     </div>
                 </li>
                 {% for item in chapters.list %}
-                <a href="/novel/chapter/{{ a_id }}/{{ item.id }}.html" title="{{ item.name }}">
+                <a href="/novel/chapter/{{ a_id }}/{{ item.id }}.html" id="cate_{{ item.id }}" title="{{ item.name }}">
                     <li class="aui-list-item">
                         <div class="aui-list-item-inner">
                             <div class="zxtitle">{{ item.name }}</div>
@@ -88,7 +88,13 @@
     })
     $(".menu-mask").click(function () {
         $(".menu").removeClass("show");
-    })        
+    })
+    (function () {
+        var url = window.location.href;
+        if (url.indexOf("#") != -1){
+            // $('#cate_{{  }}')
+        }
+    })()
 </script>
 
 </html>
