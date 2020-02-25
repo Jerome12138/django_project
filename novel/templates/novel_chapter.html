@@ -83,8 +83,8 @@
         <div class="content">
             {{ art_data.content }}
         </div>
+        <div id='end'></div>
     </div>
-    <div id='end'></div>
     <!-- 控制面板 -->
     <div class="actionDiv" style="display: none">
         <div class="aui-col-xs-6">A-</div>
@@ -131,11 +131,11 @@
     <!-- end -->
     <script>
         var show = 0;
+        var jz = 0;
         var Aid;
         var Cid;
-        var Nid;
         var Pid;
-        var jz = 0;
+        var Nid;
         $(window).ready(function () {
             //查询本地缓存设置
             if (localStorage.bg) {
@@ -212,10 +212,11 @@
             Cid = '{{ art_data.cid }}';
             Pid = '{{ art_data.pid }}';
             Nid = '{{ art_data.nid }}';
-            ajaxBookText(Cid, Aid);
             //上下滑动加载下一页
             $(window).scroll(function () {
                 var scrollTop = $(this).scrollTop();
+                var scrollHeight = $(document).height();
+                var windowHeight = $(this).height();
                 if (scrollTop == 0) {
                     $(".models1").show();
                     if (jz == 0) {
@@ -229,12 +230,8 @@
                         ajaxBookText(Pid, Aid);
                         jz = 0;
                         location.hash="#end"; 
-                    }
-                }
-                var scrollHeight = $(document).height();
-                var windowHeight = $(this).height();
-                console.log(scrollTop + windowHeight);
-                console.log(scrollHeight);
+                    };
+                };
                 if (scrollTop + windowHeight == scrollHeight) {
                     $(".models1").show();
                     if (jz == 0) {

@@ -2,6 +2,7 @@ from django.shortcuts import render, HttpResponse
 from .func.db_handler import *
 from .func.GetPage import *
 from django.utils.safestring import mark_safe
+import re
 
 # Create your views here.
 
@@ -31,7 +32,6 @@ def category(request, a_id):
     data = get_json_data(url)
     book_name = data['name']
     cate_list = data['list']
-    
     return render(request, 'novel_category.html', {'cate_list': cate_list, 'book_name': book_name, 'a_id': a_id})
 
 
@@ -42,6 +42,9 @@ def chapter(request, a_id, c_id=-1):
         c_id = cate_data['list'][0]['list'][0]['id']
     url = 'https://iosapp.canrike.com/book/%s/%s.html' % (a_id, c_id)
     data = get_json_data(url)
+    content = data['content'].replace('\r\n', '</br>')
+    content = re.sub(r'</br>\s*</br>','</br>', content)
+    data['content'] = mark_safe(content)
     return render(request, 'novel_chapter.html', {'art_data': data})
 
 
@@ -52,7 +55,9 @@ def get_book_text(request):
         c_id = request.POST.get('c_id')
         url = 'https://iosapp.canrike.com/book/%s/%s.html' % (a_id, c_id)
         data = get_json_data(url)
-        data['content'] = mark_safe(data['content'].replace('\r\n', '</br>'))
+        content = data['content'].replace('\r\n', '</br>')
+        content = re.sub(r'</br>\s*</br>','</br>', content)
+        data['content'] = mark_safe(content)
         ret['data'] = data
     except Exception as e:
         print(e)
