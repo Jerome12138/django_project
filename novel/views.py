@@ -31,6 +31,7 @@ def category(request, a_id):
     data = get_json_data(url)
     book_name = data['name']
     cate_list = data['list']
+    
     return render(request, 'novel_category.html', {'cate_list': cate_list, 'book_name': book_name, 'a_id': a_id})
 
 
