@@ -79,20 +79,21 @@
 <script type="text/javascript">
     $(".icon-search").click(function () {
         $(".search").addClass("show");
-    })
+    });
     $(".search-mask").click(function () {
         $(".search").removeClass("show");
-    })
+    });
     $(".icon-menu").click(function () {
         $(".menu").addClass("show");
-    })
+    });
     $(".menu-mask").click(function () {
         $(".menu").removeClass("show");
-    })
+    });
     (function () {
         var url = window.location.href;
         if (url.indexOf("#") != -1){
-            // $('#cate_{{  }}')
+            var c_id = url.substring(url.indexOf("#"));
+            $(c_id).children('li').css('color','#0ebfc7');
         }
     })()
 </script>
