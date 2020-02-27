@@ -228,8 +228,12 @@ def add_vod(request):   # 添加视频数据
 
 
 def view_log(request, log_date=0):
+    # 加载log文件
     if log_date == 0:
         log_date = time.strftime("%Y-%m-%d", time.localtime(time.time()))
+        is_today = True
+        log_path = 'uwsgi.log'
+    elif log_date == time.strftime("%Y-%m-%d", time.localtime(time.time())):
         is_today = True
         log_path = 'uwsgi.log'
     else:
@@ -237,8 +241,15 @@ def view_log(request, log_date=0):
         month = "-".join(log_date.split('-')[0:2])
         log_path = 'logs/%s/uwsgi-%s.log' % (month,log_date)
         if not(os.path.exists(log_path) and os.path.isfile(log_path)):
-            return render(request, 'video_nonepage.html', {'msg': '当天无日志'})
+            log_str = '当天无日志'
+            return render(request, 'video_log.html', {
+                "log": log_str,
+                'log_date': log_date,
+                'is_today': is_today,
+                'page_str': '',
+            })
     log = load_log(log_path)
+    # 剔除部分字段
     import re
     log = re.sub(
         r'(\*\*\*\sStarting\suWSGI.+?interpreter\smode\s\*\*\*)', '*** Starting uWSGI ***', log, flags=re.DOTALL)
@@ -252,10 +263,29 @@ def view_log(request, log_date=0):
     log = re.sub(r'(generated.+?msecs)', '', log)
     log_str = re.sub(r'(.+?\(HTTP\/1\.1\s30\d\).+\n)', '', log)
     # print(log_str)
+    # 分页处理
+    page_index = int(request.GET.get('page')) if request.GET.get('page') else 1
+    data_list = log_str.split('\n')
+    data_count = len(data_list)
+    page = Page('/video/admin/view_log/%s/?page='%log_date, page_index, data_count//50 + 1)
+    page_str = page.page_str()
+    if page_index < data_count//50 + 1:
+        start_index = (page_index-1)*50
+        end_index = page_index*50
+    elif page_index == data_count//50 + 1:
+        start_index = (page_index-1)*50
+        end_index = data_count
+    else:
+        return HttpResponse('请求错误')
+    request_list = data_list[start_index:end_index]
+    log_str = '\n'.join(request_list)
+    if log_date == 0:
+        log_date = time.strftime("%Y-%m-%d", time.localtime(time.time()))
     return render(request, 'video_log.html', {
         "log": log_str,
         'log_date': log_date,
-        'is_today': is_today
+        'is_today': is_today,
+        'page_str': page_str,
     })
 
 
