@@ -185,10 +185,6 @@ class getAllData(object):   # 获取所有数据
         # 4.保存数据
         page_count = int(res_dict['page']['pagecount'])
         print('一共%s页数据' % page_count)
-        flag = dump_bulk_data(res_dict['data'])
-        if not flag:
-            print('保存出现错误,已放入错误列表')
-            self.error_pages.append(start_page)
         return page_count
 
     def add_url_to_queue(self, page_count):  # 添加url队列
@@ -227,20 +223,26 @@ class getAllData(object):   # 获取所有数据
             t.setDaemon(True)
             t.start()
 
-    def run(self):  # 实现主要逻辑
+    def run(self,flag=0):  # 实现主要逻辑
         print('--------开始更新--------')
         # 获取更新数量
-        update_count = get_update_count()
-        update_page = (update_count-1)//40 + 1
+        if  not flag:
+            page_thread = 5
+            save_thread = 3
+            update_count = get_update_count()
+            update_page = (update_count-1)//40 + 1
+        else:   # 更新所有数据
         # 获取首页数据
-        # page_count = self.get_first_page()
-        # if not page_count:
-        #     return False
+            update_page = self.get_first_page()
+            page_thread = 30
+            save_thread = 10
+            if not update_page:
+                return False
         if update_page:
             # 获取下页数据
             self.add_url_to_queue(update_page)
-            self.run_use_more_thread(self.add_page_to_queue, 5)
-            self.run_use_more_thread(self.save_data, 3)
+            self.run_use_more_thread(self.add_page_to_queue, page_thread)
+            self.run_use_more_thread(self.save_data, save_thread)
             # 等待线程结束
             self.url_queue.join()
             self.page_queue.join()

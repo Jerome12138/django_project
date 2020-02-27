@@ -20,121 +20,124 @@
 </head>
 
 <body>
-    <!-- 搜索 -->
-    <div class="swiper-container swiper-container-horizontal swiper-container-ios" style="position: relative;">
-        <div class="swiper-wrapper" style="transform: translate3d(-375px, 0px, 0px); transition-duration: 0ms;">
-            <div class="swiper-slide swiper-slide-prev" style="width: 375px;">
-                <img src="/static/app_novel/img/bannertest2.jpg" alt="免费小说">
+    <div class="container">
+        <!-- 搜索 -->
+        <div class="swiper-container swiper-container-horizontal swiper-container-ios" style="position: relative;">
+            <div class="swiper-wrapper" style="transform: translate3d(-375px, 0px, 0px); transition-duration: 0ms;">
+                <div class="swiper-slide swiper-slide-prev" style="width: 375px;">
+                    <img src="/static/app_novel/img/bannertest2.jpg" alt="免费小说">
+                </div>
+            </div>
+        </div>
+        <div class="h10z"></div>
+        <div class="searchs">
+            <form action="/novel/search/" method="get" name="searchform" id="searchform">
+                <img src="/static/app_novel/img/searchs.png">
+                <input type="text" name="wd" placeholder="在这里搜索哦！">
+                <button type="submit" class="search-btn"
+                    onclick="if($('.search-key').val()==''){alert('请输入书名/作者');$('.search-key').focus();return false;}">搜索</button>
+            </form>
+        </div>
+        <div class="h10z"></div>
+        <div class="list">
+            <div class="aui-info aui-margin-t-10 aui-padded-l-10 aui-padded-r-10">
+                <div class="aui-info-item">
+                    <div class="lable"></div>
+                    <h2>推荐的免费小说</h2>
+                </div>
+            </div>
+            <div class="aui-col-xs-4">
+                <a href="/novel/chapter/3143.html" title="斗破苍穹">
+                    <img src="https://imgapi.jiaston.com/BookFiles/BookImages/doupocangqiong.jpg">
+                </a>
+                <p></p>
+                <h3>斗破苍穹</h3>
+                <p></p>
+                <p><span>天蚕土豆</span></p>
+            </div>
+            <div class="aui-col-xs-4">
+                <a href="/novel/chapter/5397.html" title="吞噬星空">
+                    <img src="https://imgapi.jiaston.com/BookFiles/BookImages/tunshixingkong.jpg">
+                </a>
+                <p></p>
+                <h3>吞噬星空</h3>
+                <p></p>
+                <p><span>我吃西红柿</span></p>
+            </div>
+            <div class="aui-col-xs-4">
+                <a href="/novel/chapter/83829.html" title="魔道祖师">
+                    <img src="https://imgapi.jiaston.com/BookFiles/BookImages/modaozushi.jpg">
+                </a>
+                <p></p>
+                <h3>魔道祖师</h3>
+                <p></p>
+                <p><span>墨香铜臭</span></p>
+            </div>
+            <div class="aui-col-xs-4">
+                <a href="/novel/chapter/6776.html" title="庆余年">
+                    <img src="https://imgapi.jiaston.com/BookFiles/BookImages/qingyunian.jpg">
+                </a>
+                <p></p>
+                <h3>庆余年</h3>
+                <p></p>
+                <p><span>猫腻</span></p>
+            </div>
+            <div class="aui-col-xs-4">
+                <a href="/novel/chapter/1559.html" title="斗罗大陆">
+                    <img src="https://imgapi.jiaston.com/BookFiles/BookImages/douluodalu.jpg">
+                </a>
+                <p></p>
+                <h3>斗罗大陆</h3>
+                <p></p>
+                <p><span>唐家三少</span></p>
+            </div>
+            <div class="aui-col-xs-4">
+                <a href="/novel/chapter/11489.html" title="盗墓笔记">
+                    <img src="https://imgapi.jiaston.com/BookFiles/BookImages/daomubiji.jpg">
+                </a>
+                <p></p>
+                <h3>盗墓笔记</h3>
+                <p></p>
+                <p><span>南派三叔</span></p>
+            </div>
+            <div class="aui-col-xs-4">
+                <a href="/novel/chapter/391895.html" title="流浪地球">
+                    <img src="https://imgapi.jiaston.com/BookFiles/BookImages/liulangdiqiu.jpg">
+                </a>
+                <p></p>
+                <h3>流浪地球</h3>
+                <p></p>
+                <p><span>刘慈欣</span></p>
+            </div>
+            <div class="aui-col-xs-4">
+                <a href="/novel/chapter/208385.html" title="三体">
+                    <img src="https://imgapi.jiaston.com/BookFiles/BookImages/santi.jpg">
+                </a>
+                <p></p>
+                <h3>三体</h3>
+                <p></p>
+                <p><span>刘慈欣</span></p>
+            </div>
+            <div class="aui-col-xs-4">
+                <a href="/novel/chapter/26491.html" title="诛仙">
+                    <img src="https://imgapi.jiaston.com/BookFiles/BookImages/zhuxian.jpg">
+                </a>
+                <p></p>
+                <h3>诛仙</h3>
+                <p></p>
+                <p><span>萧鼎</span></p>
             </div>
         </div>
     </div>
-    <div class="h10z"></div>
-    <div class="searchs">
-        <form action="/novel/search/" method="get" name="searchform" id="searchform">
-            <img src="/static/app_novel/img/searchs.png">
-            <input type="text" name="wd" placeholder="在这里搜索哦！">
-            <button type="submit" class="search-btn"
-                onclick="if($('.search-key').val()==''){alert('请输入书名/作者');$('.search-key').focus();return false;}">搜索</button>
-        </form>
-    </div>
-    <div class="h10z"></div>
-    <div class="list">
-        <div class="aui-info aui-margin-t-10 aui-padded-l-10 aui-padded-r-10">
-            <div class="aui-info-item">
-                <div class="lable"></div>
-                <h2>推荐的免费小说</h2>
-            </div>
-        </div>
-        <div class="aui-col-xs-4">
-            <a href="/novel/chapter/3143.html" title="斗破苍穹">
-                <img src="https://imgapi.jiaston.com/BookFiles/BookImages/doupocangqiong.jpg">
-            </a>
-            <p></p>
-            <h3>斗破苍穹</h3>
-            <p></p>
-            <p><span>天蚕土豆</span></p>
-        </div>
-        <div class="aui-col-xs-4">
-            <a href="/novel/chapter/5397.html" title="吞噬星空">
-                <img src="https://imgapi.jiaston.com/BookFiles/BookImages/tunshixingkong.jpg">
-            </a>
-            <p></p>
-            <h3>吞噬星空</h3>
-            <p></p>
-            <p><span>我吃西红柿</span></p>
-        </div>
-        <div class="aui-col-xs-4">
-            <a href="/novel/chapter/83829.html" title="魔道祖师">
-                <img src="https://imgapi.jiaston.com/BookFiles/BookImages/modaozushi.jpg">
-            </a>
-            <p></p>
-            <h3>魔道祖师</h3>
-            <p></p>
-            <p><span>墨香铜臭</span></p>
-        </div>
-        <div class="aui-col-xs-4">
-            <a href="/novel/chapter/6776.html" title="庆余年">
-                <img src="https://imgapi.jiaston.com/BookFiles/BookImages/qingyunian.jpg">
-            </a>
-            <p></p>
-            <h3>庆余年</h3>
-            <p></p>
-            <p><span>猫腻</span></p>
-        </div>
-        <div class="aui-col-xs-4">
-            <a href="/novel/chapter/1559.html" title="斗罗大陆">
-                <img src="https://imgapi.jiaston.com/BookFiles/BookImages/douluodalu.jpg">
-            </a>
-            <p></p>
-            <h3>斗罗大陆</h3>
-            <p></p>
-            <p><span>唐家三少</span></p>
-        </div>
-        <div class="aui-col-xs-4">
-            <a href="/novel/chapter/11489.html" title="盗墓笔记">
-                <img src="https://imgapi.jiaston.com/BookFiles/BookImages/daomubiji.jpg">
-            </a>
-            <p></p>
-            <h3>盗墓笔记</h3>
-            <p></p>
-            <p><span>南派三叔</span></p>
-        </div>
-        <div class="aui-col-xs-4">
-            <a href="/novel/chapter/391895.html" title="流浪地球">
-                <img src="https://imgapi.jiaston.com/BookFiles/BookImages/liulangdiqiu.jpg">
-            </a>
-            <p></p>
-            <h3>流浪地球</h3>
-            <p></p>
-            <p><span>刘慈欣</span></p>
-        </div>
-        <div class="aui-col-xs-4">
-            <a href="/novel/chapter/208385.html" title="三体">
-                <img src="https://imgapi.jiaston.com/BookFiles/BookImages/santi.jpg">
-            </a>
-            <p></p>
-            <h3>三体</h3>
-            <p></p>
-            <p><span>刘慈欣</span></p>
-        </div>
-        <div class="aui-col-xs-4">
-            <a href="/novel/chapter/26491.html" title="诛仙">
-                <img src="https://imgapi.jiaston.com/BookFiles/BookImages/zhuxian.jpg">
-            </a>
-            <p></p>
-            <h3>诛仙</h3>
-            <p></p>
-            <p><span>萧鼎</span></p>
-        </div>
-    </div>
-    <script type="text/javascript">
-        var swiper = new Swiper('.swiper-container', {
-            autoplay: true,
-            pagination: {
-                el: '.swiper-pagination',
-            },
-        });
-    </script>
+
 </body>
+<script type="text/javascript">
+    var swiper = new Swiper('.swiper-container', {
+        autoplay: true,
+        pagination: {
+            el: '.swiper-pagination',
+        },
+    });
+</script>
 
 </html>

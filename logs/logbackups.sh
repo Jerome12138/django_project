@@ -4,9 +4,11 @@ BASEDIR="/home/ubuntu/git/django_project"
 
 DATE=`date -d "yesterday" +"%Y-%m-%d"`
 
+MONTH=`date +%Y-%m`
+
 NEWDIR="/home/ubuntu/git/django_project/logs"
 
-mv ${BASEDIR}/uwsgi.log  ${NEWDIR}/uwsgi-${DATE}.log
+mv ${BASEDIR}/uwsgi.log  ${NEWDIR}/${MONTH}/uwsgi-${DATE}.log
 
 touch ${BASEDIR}/uwsgi.log
 

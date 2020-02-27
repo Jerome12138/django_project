@@ -234,7 +234,8 @@ def view_log(request, log_date=0):
         log_path = 'uwsgi.log'
     else:
         is_today = False
-        log_path = 'logs/uwsgi-%s.log' % log_date
+        month = "-".join(log_date.split('-')[0:2])
+        log_path = 'logs/%s/uwsgi-%s.log' % (month,log_date)
         if not(os.path.exists(log_path) and os.path.isfile(log_path)):
             return render(request, 'video_nonepage.html', {'msg': '当天无日志'})
     log = load_log(log_path)
@@ -262,7 +263,10 @@ def update(request):
     ret = {'status': True, 'error': None, 'data': None}
     try:
         get_all_data = getAllData()
-        updata_count = get_all_data.run()
+        if request.GET.get('flag'):
+            updata_count = get_all_data.run(flag=1)
+        else:
+            updata_count = get_all_data.run()
         ret['data'] = '已更新%s条数据' % updata_count
     except Exception as e:
         print(e)
