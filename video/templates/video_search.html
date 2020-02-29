@@ -12,13 +12,13 @@
     <div class="stui-pannel__head clearfix" style="margin-top: 10px;">
         <h3 class="title">
             与“{{ wd }}”相关的影片 共{{data_count}}部
-            <form class="ff-play hidden-xs" name="search" action="javascript:void(0);" method="post"
-                data-sid="0" data-limit="10" style="float: right;font-size: 14px;">
+            <form class="ff-play hidden-xs" name="search" action="javascript:void(0);" method="post" data-sid="0"
+                data-limit="10" style="float: right;font-size: 14px;">
                 {% csrf_token %}
                 <span style="color: red;">没有找到想看的资源？点击→</span>
                 <a class="show_req" href="javascript:void(0);"
                     style="text-decoration:underline;color: cadetblue;">提需求</a>
-                    <input class="hide ff-req form-control" type="text" name="vod_name" value="" placeholder="请输入影片名称..."
+                <input class="hide ff-req form-control" type="text" name="vod_name" value="" placeholder="请输入影片名称..."
                     style='display: inline-block; width: auto;vertical-align:middle;'>
                 <button class="submit hide push_req btn btn-default" type="submit" name="submit">提交</button>
             </form>
@@ -40,14 +40,14 @@
     </ul>
     <div style="font-size: 14px;margin: 10px;text-align: center;">
         <form class="ff-play visible-xs" name="search" action="javascript:void(0);" method="post" data-sid="0"
-        data-limit="10" style="width: 100%;">
-        {% csrf_token %}
-        <span style="color: red;">没有找到想看的资源？点击→</span>
-        <a class="show_req" href="javascript:void(0);" style="text-decoration:underline;color: cadetblue;">提需求</a>
-        <input class="hide ff-req form-control" type="text" name="vod_name" value="" placeholder="请输入影片名称..."
-            style='display: inline-block; width: auto;vertical-align:middle;width: 70%;'>
-        <button class="submit hide push_req btn btn-default" type="submit" name="submit">提交</button>
-    </form>
+            data-limit="10" style="width: 100%;">
+            {% csrf_token %}
+            <span style="color: red;">没有找到想看的资源？点击→</span>
+            <a class="show_req" href="javascript:void(0);" style="text-decoration:underline;color: cadetblue;">提需求</a>
+            <input class="hide ff-req form-control" type="text" name="vod_name" value="" placeholder="请输入影片名称..."
+                style='display: inline-block; width: auto;vertical-align:middle;width: 70%;'>
+            <button class="submit hide push_req btn btn-default" type="submit" name="submit">提交</button>
+        </form>
     </div>
     <!-- 翻页 -->
     <div style="clear: both;"></div>

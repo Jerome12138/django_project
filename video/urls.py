@@ -8,6 +8,8 @@ adminpatterns = [
     path('view_log/<str:log_date>/', views.view_log),
     path('view_log/', views.view_log),
     path('update/', views.update),
+    path('tv_json/', views.tv_json),
+    path('tv/', views.tv),
     # path('update_list/',views.update_list),
     path('', views.admin),
 ]
@@ -21,6 +23,7 @@ urlpatterns = [
     path('search2/', views.search2),
     path('type/<str:vod_cid>/', views.vod_type),
     path('push_request/', views.push_request),
+    path('tv_api/tv.json', views.tv_api),
     path('admin/', include(adminpatterns)),
     path('', views.home),
 ]

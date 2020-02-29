@@ -1,10 +1,12 @@
 from django.shortcuts import render, redirect, HttpResponse
+from django.http.response import JsonResponse
 
 from video import models
 from .func.GetPageData import *
 from .func.db_handler import *
 from .func.pagination import Page
 import time
+import json
 import os
 
 # Create your views here.
@@ -239,7 +241,7 @@ def view_log(request, log_date=0):
     else:
         is_today = False
         month = "-".join(log_date.split('-')[0:2])
-        log_path = 'logs/%s/uwsgi-%s.log' % (month,log_date)
+        log_path = 'logs/%s/uwsgi-%s.log' % (month, log_date)
         if not(os.path.exists(log_path) and os.path.isfile(log_path)):
             log_str = '当天无日志'
             return render(request, 'video_log.html', {
@@ -267,7 +269,8 @@ def view_log(request, log_date=0):
     page_index = int(request.GET.get('page')) if request.GET.get('page') else 1
     data_list = log_str.split('\n')
     data_count = len(data_list)
-    page = Page('/video/admin/view_log/%s/?page='%log_date, page_index, data_count//50 + 1)
+    page = Page('/video/admin/view_log/%s/?page=' %
+                log_date, page_index, data_count//50 + 1)
     page_str = page.page_str()
     if page_index < data_count//50 + 1:
         start_index = (page_index-1)*50
@@ -298,6 +301,52 @@ def update(request):
         else:
             updata_count = get_all_data.run()
         ret['data'] = '已更新%s条数据' % updata_count
+    except Exception as e:
+        print(e)
+        ret['status'] = False
+        ret['error'] = "未知错误"
+    finally:
+        return HttpResponse(json.dumps(ret))
+
+
+def tv(request):     # 管理页面
+    page_index = int(request.GET.get('page')) if request.GET.get('page') else 1
+    data_list = load_tv_json('video/repository/tv.json')['type']
+    data_count = len(data_list)
+    page = Page('/video/admin/tv/?page=', page_index, data_count//24 + 1)
+    page_str = page.page_str()
+    if page_index < data_count//24 + 1:
+        start_index = (page_index-1)*24
+        end_index = page_index*24
+    elif page_index == data_count//24 + 1:
+        start_index = (page_index-1)*24
+        end_index = data_count
+    else:
+        return HttpResponse('请求错误')
+    request_list = data_list[start_index:end_index]
+    return render(request, 'video_tv.html', {
+        "request_list": request_list,
+        'page_str': page_str,
+        "data_count": data_count
+    })
+
+def tv_api(request):
+    tv_json = load_tv_json('video/repository/tv.json')
+    return JsonResponse(tv_json)
+
+
+def tv_json(request):
+    ret = {'status': True, 'error': None, 'data': None}
+    try:
+        add_vid = request.POST.get('add_vid')
+        del_vid = request.POST.get('del_vid')
+        if add_vid:
+            flag = add_vod_to_tv('video/repository/tv.json',add_vid)
+            if not flag:
+                ret['status'] = False
+                ret['error'] = "视频不存在"
+        elif del_vid:
+            del_vod_to_tv('video/repository/tv.json',del_vid)
     except Exception as e:
         print(e)
         ret['status'] = False
