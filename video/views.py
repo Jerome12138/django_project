@@ -269,12 +269,7 @@ def view_log(request, log_date=0):
     page_index = int(request.GET.get('page')) if request.GET.get('page') else 1
     data_list = log_str.split('\n')
     data_count = len(data_list)
-<<<<<<< Updated upstream
-    page = Page('/video/admin/view_log/%s/?page=' %
-                log_date, page_index, data_count//50 + 1)
-=======
     page = Page('/video/admin/view_log/%s/?page='%log_date, page_index, data_count//100 + 1)
->>>>>>> Stashed changes
     page_str = page.page_str()
     if page_index < data_count//100 + 1:
         start_index = (page_index-1)*100
