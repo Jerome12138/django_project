@@ -265,8 +265,8 @@ class getAllData(object):   # 获取所有数据
             update_page = (update_count-1)//40 + 1
         else:   # 更新所有数据
         # 获取首页数据
-            # update_page = self.get_first_page()
-            update_page = 5
+            update_page = self.get_first_page()
+            # update_page = 5
             page_thread = 30
             save_thread = 10
             if not update_page:

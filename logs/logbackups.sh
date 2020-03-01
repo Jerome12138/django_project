@@ -4,7 +4,7 @@ BASEDIR="/home/ubuntu/git/django_project"
 
 DATE=`date -d "yesterday" +"%Y-%m-%d"`
 
-MONTH=`date +%Y-%m`
+MONTH=${DATE%*-}
 
 NEWDIR="/home/ubuntu/git/django_project/logs"
 
