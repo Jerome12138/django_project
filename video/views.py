@@ -57,7 +57,7 @@ def play(request, vod_id, url_index=1,index=1):  # 播放页面
     video_list = [item.split('$') for item in url_list]
     # url2
     url2 = vod_data.vod_url2
-    print(url2,type(url2))
+    # print(url2,type(url2))
     if url2 and len(url2.split('$')) <= 2:  # 如果url只有一个，则转换为列表
         if url2[0:1] != '[':    # 不是列表形式，转换为列表
             url2_list = [url2, ]

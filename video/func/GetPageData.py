@@ -200,8 +200,8 @@ class getAllData(object):   # 获取所有数据
             # self.url_queue.put(url)
             self.error_pages.append(url.split('?p=')[1])
         else:
-            # if int(url.split('?p=')[1]) % 100 == 0:
-                # print('获取到page:', url.split('?p=')[1])   
+            if int(url.split('?p=')[1]) % 100 == 0:
+                print('获取到page:', url.split('?p=')[1])   
             self.page_queue.put(res_dict)
         self.url_queue.task_done()
 
@@ -215,9 +215,9 @@ class getAllData(object):   # 获取所有数据
         if not is_saved:
             print('%s保存出现错误' % res_dict['page']['pageindex'])
             self.page_queue.put(res_dict)
-        # else:
-            # if int(res_dict['page']['pageindex']) % 100 == 0:
-            #     print('page%s保存成功' % res_dict['page']['pageindex'])
+        else:
+            if int(res_dict['page']['pageindex']) % 100 == 0:
+                print('page%s保存成功' % res_dict['page']['pageindex'])
         self.page_queue.task_done()
 
     def run_use_more_thread(self, func, count=1):   # 运行多线程
@@ -265,8 +265,8 @@ class getAllData(object):   # 获取所有数据
             update_page = (update_count-1)//40 + 1
         else:   # 更新所有数据
         # 获取首页数据
-            update_page = self.get_first_page()
-            # update_page = 5
+            # update_page = self.get_first_page()
+            update_page = 5
             page_thread = 30
             save_thread = 10
             if not update_page:

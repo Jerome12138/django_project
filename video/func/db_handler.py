@@ -125,6 +125,7 @@ def dump_bulk_data_url2(data_list):    # 将视频数据保存至数据库url2
                 new_item['vod_id']= vod_obj.vod_id
                 new_obj = models.VideoData(**new_item)
                 update_url2_list.append(new_obj)
+                print(new_obj.vodname)
             # elif not models.VideoData.objects.filter(vod_id=new_item['vod_id']).exists():# url1不存在，添加
             #     # if new_item['vod_cid'] = 
             #     pass
