@@ -45,31 +45,43 @@
 <!-- 播放地址 -->
 <div class="stui-pannel clearfix" style="margin-left: 10px;margin-right: 10px;">
     <div class="stui-pannel__head clearfix">
-        <span class="more text-muted pull-right">画质更好，无广告</span>
+        <span class="more text-muted pull-right">&lt;电脑端推荐&gt;画质更好，无广告</span>	
         <h3 class="title">
-            资源一		
-        </h3>						
+            线路一
+        </h3>	
     </div>
     <ul class="stui-content__playlist clearfix">
-        {% for i in video_list %}
-        <li>
-            <a title="{{ i.0 }}" href="/video/play/{{vod_data.vod_id}}/1/{{ forloop.counter }}/">{{ i.0 }}</a>
+        {% for item in video_list %}
+        {% if url_index == 1 and index == forloop.counter %}
+        <li class="active">
+            <a title="{{ item.0 }}" href="/video/play/{{vod_data.vod_id}}/1-{{ forloop.counter }}.html">{{ item.0 }}</a>
         </li>
+        {% else %}
+        <li>
+            <a title="{{ item.0 }}" href="/video/play/{{vod_data.vod_id}}/1-{{ forloop.counter }}.html">{{ item.0 }}</a>
+        </li>
+        {% endif %}
         {% endfor %}
     </ul>
 </div>
 <div class="stui-pannel clearfix" style="margin-left: 10px;margin-right: 10px;">
     <div class="stui-pannel__head clearfix">
-        <span class="more text-muted pull-right">缓冲快，但有广告</span>
+        <span class="more text-muted pull-right">&lt;移动端推荐&gt;缓冲快，但有广告</span>
         <h3 class="title">
-            资源二	
-        </h3>						
+            线路二
+        </h3>
     </div>
     <ul class="stui-content__playlist clearfix">
-        {% for i in video2_list %}
-        <li>
-            <a title="{{ i.0 }}" href="/video/play/{{vod_data.vod_id}}/2/{{ forloop.counter }}/">{{ i.0 }}</a>
+        {% for item in video2_list %}
+        {% if url_index == 2 and index == forloop.counter %}
+        <li class="active">
+            <a title="{{ item.0 }}" href="/video/play/{{vod_data.vod_id}}/2-{{ forloop.counter }}.html">{{ item.0 }}</a>
         </li>
+        {% else %}
+        <li>
+            <a title="{{ item.0 }}" href="/video/play/{{vod_data.vod_id}}/2-{{ forloop.counter }}.html">{{ item.0 }}</a>
+        </li>
+        {% endif %}
         {% endfor %}
     </ul>
 </div>
@@ -132,13 +144,8 @@
             "preload": "auto",
             "screenshot": true,
             "video": {   // 视频配置
-                // m3u8模式
-                // "url":"https://moeplayer.b0.upaiyun.com/dplayer/hls/hikarunara.m3u8", // 示例视频链接
-                // "url":"https://dapian.video-yongjiu.com/20190731/5652_13d2ab94/800k/hls/index.m3u8", // 视频链接
                 "url": "{{ video_url.1 }}", // 视频链接
                 "type": "hls",
-                // 直链模式
-                // "url":"http://static.smartisanos.cn/common/video/t1-ui.mp4" // 示例视频链接
             },
         });
         window.dplayers || (window.dplayers = []);

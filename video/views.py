@@ -11,30 +11,73 @@ import os
 
 # Create your views here.
 
-user_list = {}
-
-
 def home(request):  # 主页
     page_index = int(request.GET.get('page')) if request.GET.get('page') else 1
     data_list = load_all_vod_data()
     data_count = len(data_list)
     page = Page('/video/home/?page=', page_index, data_count//24 + 1)
     page_str = page.page_str()
-    if page_index < data_count//24 + 1:
-        start_index = (page_index-1)*24
-        end_index = page_index*24
-    elif page_index == data_count//24 + 1:
-        start_index = (page_index-1)*24
-        end_index = data_count
-    else:
+    video_list =page.video_page(data_list,24)
+    if video_list == -1:
         return HttpResponse('请求错误')
-    video_list = data_list[start_index:end_index]
     return render(request, 'video_home.html', {
         "video_list": video_list,
         'page_str': page_str,
-        "data_count": data_count
+        "data_count": data_count,
+        'all_type_id':'0'
     })
 
+def vod_type(request, vod_cid): # 视频分类页
+    # 筛选项处理
+    area = request.GET.get('area')
+    year = request.GET.get('year')
+    filter_param = {'vod_cid':vod_cid}
+    filter_flag = False
+    if area:
+        filter_param['vod_area']=area
+    if year:
+        filter_param['vod_year']=year
+    filter_dict = {
+        'type':[],'area':[],
+        'year':['2020','2019','2018','2017','2016','2015','2014','2013','2012','2011','2010','更早']}
+    if vod_cid in ['1', '5', '6', '7', '8', '9', '10', '11', '22']:
+        all_type_id = '1'
+        filter_flag = True
+        filter_dict['type'] = [
+            {'cid':'5','cname':'动作片'},{'cid':'6','cname':'喜剧片'},{'cid':'8','cname':'科幻片'},
+            {'cid':'7','cname':'爱情片'},{'cid':'9','cname':'恐怖片'},{'cid':'11','cname':'战争片'},
+            {'cid':'10','cname':'剧情片'},{'cid':'22','cname':'记录片'}]
+        filter_dict['area'] = ['大陆','香港','美国','台湾','英国','韩国','日本','西班牙','法国','印度','加拿大','泰国','其它']
+    elif vod_cid in ['2', '12', '13', '14', '15', '19', '20', '21']:
+        all_type_id = '2'
+        filter_dict['type'] = [
+            {'cid':'12','cname':'国产剧'},{'cid':'13','cname':'香港剧'},{'cid':'15','cname':'欧美剧'},
+            {'cid':'14','cname':'韩国剧'},{'cid':'19','cname':'台湾剧'},{'cid':'20','cname':'日本剧'},
+            {'cid':'21','cname':'海外剧'}]
+        filter_dict['area'] = ['大陆','香港','美国','台湾','英国','韩国','日本','加拿大','泰国','其它']
+    else:
+        filter_dict['area'] = ['大陆','香港','美国','台湾','英国','韩国','日本','其它']
+        all_type_id = vod_cid
+    # 查询数据
+    data_list = load_type_data(**filter_param)
+    data_count = len(data_list)
+    # 分页处理
+    page_index = int(request.GET.get('page')) if request.GET.get('page') else 1
+    page = Page('/video/type/%s/?page=' %
+                vod_cid, page_index, data_count//24 + 1)
+    page_str = page.page_str()
+    video_list =page.video_page(data_list,24)
+    if video_list == -1:
+        return HttpResponse('请求错误')
+    return render(request, 'video_type.html', {
+        "video_list": video_list,
+        'page_str': page_str,
+        "data_count": data_count,
+        'all_type_id':all_type_id,
+        'filter_param':filter_param,
+        'filter_flag':filter_flag,
+        'filter_dict':filter_dict,
+    })
 
 def play(request, vod_id, url_index=1,index=1):  # 播放页面
     vod_data = load_vod_data(vod_id)
@@ -79,12 +122,13 @@ def play(request, vod_id, url_index=1,index=1):  # 播放页面
         'vod_data': vod_data,
         "video_list": video_list,
         "video2_list": video2_list,
+        "url_index": url_index,
         "index": index,
         "video_url": video_url
     })
 
 
-def play2(request):
+def play2(request): # 自定义播放页
     if request.method == "GET":
         url = request.GET.get('url')
     elif request.method == "POST":
@@ -92,7 +136,7 @@ def play2(request):
     return render(request, 'video_play2.html', {"video_url": url})
 
 
-def search(request):  # 搜索视频信息
+def search(request):  # 搜索ORM获取视频信息
     if request.method == "POST":    # 搜索方式
         wd = request.POST.get('wd')
         page_index = 1
@@ -104,15 +148,9 @@ def search(request):  # 搜索视频信息
     page = Page('/video/search/?wd=%s&page=' %
                 wd, page_index, data_count//24 + 1)
     page_str = page.page_str()
-    if page_index < data_count//24 + 1:
-        start_index = (page_index-1)*24
-        end_index = page_index*24
-    elif page_index == data_count//24 + 1:
-        start_index = (page_index-1)*24
-        end_index = data_count
-    else:
+    video_list =page.video_page(data_list,24)
+    if video_list == -1:
         return HttpResponse('请求错误')
-    video_list = data_list[start_index:end_index]
     return render(request, 'video_search.html', {
         "video_list": video_list,
         'page_str': page_str,
@@ -121,7 +159,7 @@ def search(request):  # 搜索视频信息
     })
 
 
-def search2(request):  # 搜索视频信息
+def search2(request):  # 搜索外源视频信息
     if request.method == "POST":
         wd = request.POST.get('wd')
         page_index = 1
@@ -165,226 +203,6 @@ def push_request(request):  # 提交请求给管理员
         else:
             ret['status'] = False
             ret['error'] = "数据库操作出现错误"
-    except Exception as e:
-        print(e)
-        ret['status'] = False
-        ret['error'] = "未知错误"
-    finally:
-        return HttpResponse(json.dumps(ret))
-
-
-def del_request(request):   # 删除请求
-    ret = {'status': True, 'error': None, 'data': None}
-    try:
-        vod_id = request.POST.get('vod_id')
-        del_request_data(vod_id)
-    except Exception as e:
-        print(e)
-        ret['status'] = False
-        ret['error'] = e
-    finally:
-        return HttpResponse(json.dumps(ret))
-
-
-def admin(request):     # 管理页面
-    page_index = int(request.GET.get('page')) if request.GET.get('page') else 1
-    data_list = load_request_data()
-    data_count = len(data_list)
-    page = Page('/video/admin/?page=', page_index, data_count//24 + 1)
-    page_str = page.page_str()
-    if page_index < data_count//24 + 1:
-        start_index = (page_index-1)*24
-        end_index = page_index*24
-    elif page_index == data_count//24 + 1:
-        start_index = (page_index-1)*24
-        end_index = data_count
-    else:
-        return HttpResponse('请求错误')
-    request_list = data_list[start_index:end_index]
-    return render(request, 'video_admin.html', {
-        "request_list": request_list,
-        'page_str': page_str,
-        "data_count": data_count
-    })
-
-
-def vod_type(request, vod_cid):
-    page_index = int(request.GET.get('page')) if request.GET.get('page') else 1
-    data_list = load_type_data(vod_cid)
-    data_count = len(data_list)
-    page = Page('/video/type/%s/?page=' %
-                vod_cid, page_index, data_count//24 + 1)
-    page_str = page.page_str()
-    if page_index < data_count//24 + 1:
-        start_index = (page_index-1)*24
-        end_index = page_index*24
-    elif page_index == data_count//24 + 1:
-        start_index = (page_index-1)*24
-        end_index = data_count
-    else:
-        return HttpResponse('请求错误')
-    video_list = data_list[start_index:end_index]
-    return render(request, 'video_home.html', {
-        "video_list": video_list,
-        'page_str': page_str,
-        "data_count": data_count
-    })
-
-
-def add_vod(request):   # 添加视频数据
-    ret = {'status': True, 'error': None, 'data': None}
-    try:
-        vod_id = request.POST.get('vod_id')
-        # print(vod_id)
-        vod_data = get_vod_data(vod_id)
-        # print(vod_id,vod_data)
-        flag = dump_vod_data(vod_data)
-        update_request_data(vod_id)
-        if flag:
-            ret['data'] = "已成功添加 %s !" % vod_data['vod_name']
-        else:
-            ret['status'] = False
-            ret['error'] = "数据库操作出现错误"
-    except Exception as e:
-        print(e)
-        ret['status'] = False
-        ret['error'] = e
-    finally:
-        return HttpResponse(json.dumps(ret))
-
-
-def view_log(request, log_date=0):
-    # 加载log文件
-    if log_date == 0:
-        log_date = time.strftime("%Y-%m-%d", time.localtime(time.time()))
-        is_today = True
-        log_path = 'uwsgi.log'
-    elif log_date == time.strftime("%Y-%m-%d", time.localtime(time.time())):
-        is_today = True
-        log_path = 'uwsgi.log'
-    else:
-        is_today = False
-        month = "-".join(log_date.split('-')[0:2])
-        log_path = 'logs/%s/uwsgi-%s.log' % (month, log_date)
-        if not(os.path.exists(log_path) and os.path.isfile(log_path)):
-            log_str = '当天无日志'
-            return render(request, 'video_log.html', {
-                "log": log_str,
-                'log_date': log_date,
-                'is_today': is_today,
-                'page_str': '',
-            })
-    log = load_log(log_path)
-    # 剔除部分字段
-    import re
-    log = re.sub(
-        r'(\*\*\*\sStarting\suWSGI.+?interpreter\smode\s\*\*\*)', '*** Starting uWSGI ***', log, flags=re.DOTALL)
-    log = re.sub(r'(nsukey\=.+)', '<<wechat>>', log)
-    log = re.sub(r'(\[pid:.+?\.php.+?\(HTTP\/1\.1\s404\).+\n)', '', log)
-    log = re.sub(
-        r'(\[pid:.+?GET\s\/\s\=\>\sgenerated.+?\(HTTP\/1\.1\s404\).+\n)', '', log)
-    log = re.sub(r'(\[pid.+?\])', '', log)
-    log = re.sub(r'(\(\)\s\{.+?bytes\})', '', log)
-    log = re.sub(r'(\d+?\sheaders\sin.+?\))', '', log)
-    log = re.sub(r'(generated.+?msecs)', '', log)
-    log_str = re.sub(r'(.+?\(HTTP\/1\.1\s30\d\).+\n)', '', log)
-    # print(log_str)
-    # 分页处理
-    page_index = int(request.GET.get('page')) if request.GET.get('page') else 1
-    data_list = log_str.split('\n')
-    data_count = len(data_list)
-    page = Page('/video/admin/view_log/%s/?page='%log_date, page_index, data_count//100 + 1)
-    page_str = page.page_str()
-    if page_index < data_count//100 + 1:
-        start_index = (page_index-1)*100
-        end_index = page_index*100
-    elif page_index == data_count//100 + 1:
-        start_index = (page_index-1)*100
-        end_index = data_count
-    else:
-        return HttpResponse('请求错误')
-    request_list = data_list[start_index:end_index]
-    log_str = '\n'.join(request_list)
-    if log_date == 0:
-        log_date = time.strftime("%Y-%m-%d", time.localtime(time.time()))
-    return render(request, 'video_log.html', {
-        "log": log_str,
-        'log_date': log_date,
-        'is_today': is_today,
-        'page_str': page_str,
-    })
-
-
-def update(request):    # 更新视频数据
-    ret = {'status': True, 'error': None, 'data': None}
-    try:
-        get_all_data = getAllData("http://www.zdziyuan.com/inc/s_feifei3zuidam3u8/?p=%s")
-        if request.GET.get('flag'):
-            updata_count = get_all_data.run(flag=1)
-        else:
-            updata_count = get_all_data.run()
-        ret['data'] = '已更新%s条数据' % updata_count
-    except Exception as e:
-        print(e)
-        ret['status'] = False
-        ret['error'] = "未知错误"
-    finally:
-        return HttpResponse(json.dumps(ret))
-
-def update2(request):   # 更新第二url(八戒资源网)
-    ret = {'status': True, 'error': None, 'data': None}
-    try:
-        get_all_data = getAllData("http://cj.bajiecaiji.com/inc/feifei3bjm3u8/index.php?p=%s",2)
-        if request.GET.get('flag'): # 更新全部
-            updata_count = get_all_data.run2(flag=1)
-        else:   # 更新当日
-            updata_count = get_all_data.run2(flag=1)
-        ret['data'] = '已更新%s条数据' % updata_count
-    except Exception as e:
-        print(e)
-        ret['status'] = False
-        ret['error'] = "未知错误"
-    finally:
-        return HttpResponse(json.dumps(ret))
-
-def tv(request):     # 管理页面
-    page_index = int(request.GET.get('page')) if request.GET.get('page') else 1
-    data_list = load_tv_json('video/repository/tv.json')['type']
-    data_count = len(data_list)
-    page = Page('/video/admin/tv/?page=', page_index, data_count//24 + 1)
-    page_str = page.page_str()
-    if page_index < data_count//24 + 1:
-        start_index = (page_index-1)*24
-        end_index = page_index*24
-    elif page_index == data_count//24 + 1:
-        start_index = (page_index-1)*24
-        end_index = data_count
-    else:
-        return HttpResponse('请求错误')
-    request_list = data_list[start_index:end_index]
-    return render(request, 'video_tv.html', {
-        "request_list": request_list,
-        'page_str': page_str,
-        "data_count": data_count
-    })
-
-def tv_api(request):
-    tv_json = load_tv_json('video/repository/tv.json')
-    return JsonResponse(tv_json)
-
-
-def tv_json(request):
-    ret = {'status': True, 'error': None, 'data': None}
-    try:
-        add_vid = request.POST.get('add_vid')
-        del_vid = request.POST.get('del_vid')
-        if add_vid:
-            flag = add_vod_to_tv('video/repository/tv.json',add_vid)
-            if not flag:
-                ret['status'] = False
-                ret['error'] = "视频不存在"
-        elif del_vid:
-            del_vod_to_tv('video/repository/tv.json',del_vid)
     except Exception as e:
         print(e)
         ret['status'] = False

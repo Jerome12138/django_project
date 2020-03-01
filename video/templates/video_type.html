@@ -1,0 +1,88 @@
+{% extends "video_layout.html" %}
+
+{% block title %}<title>卧龙影视，您的专属在线影院</title>{% endblock %}
+
+{% block css %}
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css"
+    integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+{% endblock %}
+
+
+{% block main %}
+<div class="stui-pannel clearfix">
+    {% if filter_flag %}
+    <ul class="stui-screen__list clearfix">
+        <li><a class="text-muted" href="/video/type/{{ all_type_id }}/?area={{ filter_param.vod_area }}&year={{ filter_param.vod_year }}">按剧情</a></li>
+        {% for item in filter_dict.type %}
+        {% if filter_param.vod_cid == item.cid %}
+        <li class="active"><a href="/video/type/{{ item.cid }}/?area={{ filter_param.vod_area }}&year={{ filter_param.vod_year }}">{{ item.cname|slice:"2" }}</a></li>
+        {% else %}
+        <li><a href="/video/type/{{ item.cid }}/?area={{ filter_param.vod_area }}&year={{ filter_param.vod_year }}">{{ item.cname|slice:"2" }}</a></li>
+        {% endif %}
+        {% endfor %}
+    </ul>
+    {% endif %}
+    <ul class="stui-screen__list clearfix">
+        <li><a class="text-muted" href="/video/type/{{ filter_param.vod_cid }}/?year={{ filter_param.vod_year }}">按地区</a></li>
+        {% for area in filter_dict.area %}
+        {% if filter_param.vod_area == area %}
+        <li class="active"><a href="/video/type/{{ filter_param.vod_cid }}/?area={{ area }}&year={{ filter_param.vod_year }}">{{ area }}</a></li>
+        {% else %}
+        <li><a href="/video/type/{{ filter_param.vod_cid }}/?area={{ area }}&year={{ filter_param.vod_year }}">{{ area }}</a></li>
+        {% endif %}
+        {% endfor %}
+    </ul>
+    <ul class="stui-screen__list clearfix">
+        <li><a class="text-muted" href="/video/type/{{ filter_param.vod_cid }}/?area={{ filter_param.vod_area }}">按年份</a></li>
+        {% for year in filter_dict.year %}
+        {% if filter_param.vod_year == year %}
+        <li class="active"><a href="/video/type/{{ filter_param.vod_cid }}/?year={{ year }}&area={{ filter_param.vod_area }}">{{ year }}</a></li>
+        {% else %}
+        <li><a href="/video/type/{{ filter_param.vod_cid }}/?year={{ year }}&area={{ filter_param.vod_area }}">{{ year }}</a></li>
+        {% endif %}
+        {% endfor %}
+    </ul>
+    <div class="stui-pannel__head clearfix" style="margin-top: 10px;">
+        <h3 class="title">
+            共收录{{data_count}}部影片
+        </h3>
+    </div>
+    <ul class="stui-vodlist clearfix">
+        {% for item in video_list %}
+        <li class="stui-vodlist__item">
+            <a class="stui-vodlist__thumb lazyload" href="/video/play/{{ item.vod_id }}/" title="{{item.vod_name}}"
+                data-original="{{ item.vod_pic }}" style="display: block; background-image: url('{{ item.vod_pic }}');">
+                <span class="play hidden-xs"></span>
+                <span class="pic-text text-right">{{item.vod_continu}}</span>
+            </a>
+            <h4 class="stui-vodlist__title"><a href="/video/play/{{ item.vod_id }}/"
+                    title="{{item.vod_name}}">{{item.vod_name}}</a></h4>
+            <p class="text text-overflow text-muted hidden-xs" title="{{item.vod_actor}}">{{item.vod_actor}}</p>
+        </li>
+        {% endfor%}
+    </ul>
+    <!-- 翻页 -->
+    <div style="clear: both;"></div>
+    <ul class="stui-page text-center clearfix">
+        {{ page_str }}
+    </ul>
+    <!-- end 翻页 -->
+</div>
+{% endblock %}
+
+
+{% block js %}
+<script src="/static/plugins/hammer/hammer.min.js"></script>
+<script src="/static/plugins/hammer/jquery.hammer.js"></script>
+
+<script>
+    $('#myCarousel').hammer().on('swipeleft', function (event) {
+        console.log('1');
+        $(this).carousel('next');
+    });
+    $('#myCarousel').hammer().on('swiperight', function (event) {
+        console.log('2');
+        $(this).carousel('prev');
+    });
+</script>
+{% endblock %}

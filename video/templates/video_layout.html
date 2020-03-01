@@ -40,17 +40,6 @@
                     </form>
                 </div>
             </div>
-            <nav class="stui-header__menu clearfix" data-dir="#nav-index">
-                <span class="more hidden-xs"></span>
-                <ul class="clearfix">
-                    <li id="nav-"><a href="/video/">首页</a></li>
-                    <li id="nav-dianying"><a href="/video/type/1/">电影</a></li>
-                    <li id="nav-dianshiju"><a href="/video/type/2/">电视剧</a></li>
-                    <li id="nav-dongman"><a href="/video/type/3/">综艺</a></li>
-                    <li id="nav-zongyi"><a href="/video/type/4/">动漫</a></li>
-                    <li class="hidden-xs" style="float: right;"><a href="/video/admin/">&nbsp;</a></li>
-                </ul>
-            </nav>
             <script>
                 $(".ff-search input").keyup(function (event) {
                     if (event.keyCode == 13) {
@@ -83,6 +72,37 @@
                     }
                 });
             </script>
+            <nav class="stui-header__menu clearfix" data-dir="#nav-index">
+                <span class="more hidden-xs"></span>
+                <ul class="clearfix">
+                    {% if all_type_id == '0' %}
+                    <li id="nav-dianying" class="active"><a href="/video/">首页</a></li>
+                    {% else %}
+                    <li id="nav-dianying"><a href="/video/">首页</a></li>
+                    {% endif%}
+                    {% if all_type_id == '1' %}
+                    <li id="nav-dianying" class="active"><a href="/video/type/1/">电影</a></li>
+                    {% else %}
+                    <li id="nav-dianying"><a href="/video/type/1/">电影</a></li>
+                    {% endif%}
+                    {% if all_type_id == '2' %}
+                    <li id="nav-dianying" class="active"><a href="/video/type/2/">电视剧</a></li>
+                    {% else %}
+                    <li id="nav-dianying"><a href="/video/type/2/">电视剧</a></li>
+                    {% endif%}
+                    {% if all_type_id == '3' %}
+                    <li id="nav-dianying" class="active"><a href="/video/type/3/">综艺</a></li>
+                    {% else %}
+                    <li id="nav-dianying"><a href="/video/type/3/">综艺</a></li>
+                    {% endif%}
+                    {% if all_type_id == '4' %}
+                    <li id="nav-dianying" class="active"><a href="/video/type/4/">动漫</a></li>
+                    {% else %}
+                    <li id="nav-dianying"><a href="/video/type/4/">动漫</a></li>
+                    {% endif%}
+                    <li class="hidden-xs" style="float: right;"><a href="/video/admin/">&nbsp;</a></li>
+                </ul>
+            </nav>
             {% block main %}{% endblock %}
         </div>
     </div>

@@ -90,3 +90,14 @@ class Page(object):
         page_list.append(page_js)
         page_str = mark_safe(''.join(page_list))
         return page_str
+
+    def video_page(self,data_list,per_page):
+        start_index = (self.current_page-1)*per_page
+        if self.current_page < self.page_count: # 非最后一页
+            end_index = self.current_page*per_page
+        elif self.current_page == self.page_count:  # 最后一页
+            end_index = len(data_list)
+        else:  # 页码错误
+            return -1
+        video_list = data_list[start_index:end_index]
+        return video_list

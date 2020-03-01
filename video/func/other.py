@@ -56,3 +56,50 @@ def del_vod_to_tv(json_path,vod_id):
                 tv_json['live'].remove(item)
     with open(json_path, 'w', encoding='utf-8') as f:
         json.dump(tv_json,f)
+
+
+def tv(request):     # 管理页面
+    page_index = int(request.GET.get('page')) if request.GET.get('page') else 1
+    data_list = load_tv_json('video/repository/tv.json')['type']
+    data_count = len(data_list)
+    page = Page('/video/admin/tv/?page=', page_index, data_count//24 + 1)
+    page_str = page.page_str()
+    if page_index < data_count//24 + 1:
+        start_index = (page_index-1)*24
+        end_index = page_index*24
+    elif page_index == data_count//24 + 1:
+        start_index = (page_index-1)*24
+        end_index = data_count
+    else:
+        return HttpResponse('请求错误')
+    request_list = data_list[start_index:end_index]
+    return render(request, 'video_tv.html', {
+        "request_list": request_list,
+        'page_str': page_str,
+        "data_count": data_count
+    })
+
+
+def tv_json(request):
+    ret = {'status': True, 'error': None, 'data': None}
+    try:
+        add_vid = request.POST.get('add_vid')
+        del_vid = request.POST.get('del_vid')
+        if add_vid:
+            flag = add_vod_to_tv('video/repository/tv.json',add_vid)
+            if not flag:
+                ret['status'] = False
+                ret['error'] = "视频不存在"
+        elif del_vid:
+            del_vod_to_tv('video/repository/tv.json',del_vid)
+    except Exception as e:
+        print(e)
+        ret['status'] = False
+        ret['error'] = "未知错误"
+    finally:
+        return HttpResponse(json.dumps(ret))
+
+
+def tv_api(request):
+    tv_json = load_tv_json('video/repository/tv.json')
+    return JsonResponse(tv_json)
