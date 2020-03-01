@@ -3,7 +3,7 @@ import requests
 from lxml import etree
 from queue import Queue,LifoQueue
 import threading
-from .db_handler import dump_bulk_data
+from .db_handler import dump_bulk_data,dump_bulk_data_url2
 
 
 class GetPageData(object):  # 爬取网页数据，返回html数据
@@ -145,9 +145,9 @@ def run_forever(func):  # 无限循环运行
 
 
 class getAllData(object):   # 获取所有数据
-    def __init__(self):
-        self.url_temp = "http://www.zdziyuan.com/inc/s_feifei3zuidam3u8/?p=%s"
-        self.url2_temp = "https://cj.okzy.tv/inc/feifei3ckm3u8s/?p=%s"
+    def __init__(self, url,url_index=1):
+        self.url_temp = url
+        self.url_index = url_index
         self.headers = {
             "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36"}
         self.url_queue = LifoQueue()
@@ -159,7 +159,7 @@ class getAllData(object):   # 获取所有数据
         while i < 5:
             try:
                 response = requests.get(
-                    url, headers=self.headers, timeout=(3, 10))
+                    url, headers=self.headers, timeout=(3, 15))
                 if response.status_code != 200:
                     print(response.status_code)
                     break
@@ -208,8 +208,11 @@ class getAllData(object):   # 获取所有数据
     @run_forever
     def save_data(self):    # 保存数据至数据库
         res_dict = self.page_queue.get()
-        flag = dump_bulk_data(res_dict['data'])
-        if not flag:
+        if self.url_index ==1:
+            is_saved = dump_bulk_data(res_dict['data'])
+        elif self.url_index==2:
+            is_saved = dump_bulk_data_url2(res_dict['data'])
+        if not is_saved:
             print('%s保存出现错误' % res_dict['page']['pageindex'])
             self.page_queue.put(res_dict)
         # else:
@@ -226,7 +229,7 @@ class getAllData(object):   # 获取所有数据
     def run(self,flag=0):  # 实现主要逻辑
         print('--------开始更新--------')
         # 获取更新数量
-        if  not flag:
+        if not flag:
             page_thread = 5
             save_thread = 3
             update_count = get_update_count()
@@ -250,4 +253,34 @@ class getAllData(object):   # 获取所有数据
         if self.error_pages != []:
             print('出现错误页面：', self.error_pages)
         print('--------更新完成--------')
+        return update_page*40
+
+    def run2(self,flag=0):  # 实现主要逻辑
+        print('--------开始更新url2--------')
+        # 获取更新数量
+        if  not flag:
+            page_thread = 5
+            save_thread = 3
+            update_count = get_update_count()
+            update_page = (update_count-1)//40 + 1
+        else:   # 更新所有数据
+        # 获取首页数据
+            update_page = self.get_first_page()
+            # update_page = 5
+            page_thread = 30
+            save_thread = 10
+            if not update_page:
+                return False
+        if update_page:
+            # 获取下页数据
+            self.add_url_to_queue(update_page)
+            self.run_use_more_thread(self.add_page_to_queue, page_thread)
+            self.run_use_more_thread(self.save_data, save_thread)
+            # 等待线程结束
+            self.url_queue.join()
+            self.page_queue.join()
+        print('已更新%s条数据' % (update_page*40))
+        if self.error_pages != []:
+            print('出现错误页面：', self.error_pages)
+        print('--------url2更新完成--------')
         return update_page*40

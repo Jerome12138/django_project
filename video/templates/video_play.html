@@ -15,7 +15,7 @@
         </div>
         <div class="stui-player__detail detail">
             <h4 class="title">
-                <a href="/video/play/{{vod_data.vod_id}}/{{ index }}/">{{vod_data.vod_name}}</a>&nbsp;{{ video_url.0 }}
+                <a href="/video/play/{{vod_data.vod_id}}/1/{{ index }}/">{{vod_data.vod_name}}</a>&nbsp;{{ video_url.0 }}
                 <span style="float: right;font-size: 14px;color: red;">
                     <span class="hidden-xs">已有最新资源？点击→</span>
                     <a id="push_req" href="javascript:void(0);"
@@ -44,10 +44,31 @@
 
 <!-- 播放地址 -->
 <div class="stui-pannel clearfix" style="margin-left: 10px;margin-right: 10px;">
+    <div class="stui-pannel__head clearfix">
+        <span class="more text-muted pull-right">画质更好，无广告</span>
+        <h3 class="title">
+            资源一		
+        </h3>						
+    </div>
     <ul class="stui-content__playlist clearfix">
         {% for i in video_list %}
         <li>
-            <a title="{{ i.0 }}" href="/video/play/{{vod_data.vod_id}}/{{ forloop.counter }}/">{{ i.0 }}</a>
+            <a title="{{ i.0 }}" href="/video/play/{{vod_data.vod_id}}/1/{{ forloop.counter }}/">{{ i.0 }}</a>
+        </li>
+        {% endfor %}
+    </ul>
+</div>
+<div class="stui-pannel clearfix" style="margin-left: 10px;margin-right: 10px;">
+    <div class="stui-pannel__head clearfix">
+        <span class="more text-muted pull-right">缓冲快，但有广告</span>
+        <h3 class="title">
+            资源二	
+        </h3>						
+    </div>
+    <ul class="stui-content__playlist clearfix">
+        {% for i in video2_list %}
+        <li>
+            <a title="{{ i.0 }}" href="/video/play/{{vod_data.vod_id}}/2/{{ forloop.counter }}/">{{ i.0 }}</a>
         </li>
         {% endfor %}
     </ul>

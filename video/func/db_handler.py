@@ -1,6 +1,7 @@
 from video import models
 import json
 
+
 def dump_vod_data(vod_data):    # 将视频数据保存至数据库
     try:
         obj = models.VideoData.objects.filter(
@@ -55,10 +56,12 @@ def del_request_data(vod_id):  # 从数据库获取数据
     result = models.RequestList.objects.filter(vod_id=vod_id).delete()
     return result
 
+
 def search_data(wd):  # 从数据库按关键字搜索
     result = models.VideoData.objects.filter(vod_name__icontains=wd).exclude(vod_cid__in=[16, 17]).all().values(
-            'vod_id', 'vod_pic', 'vod_name', 'vod_continu', 'vod_actor').order_by('-ctime')
+        'vod_id', 'vod_pic', 'vod_name', 'vod_continu', 'vod_actor').order_by('-ctime')
     return result
+
 
 def load_type_data(vod_cid):  # 从数据库查询视频分类数据
     if vod_cid == '1':
@@ -84,93 +87,59 @@ def dump_bulk_data(data_list):    # 将视频数据保存至数据库
         obj_list = []
         update_list = []
         for item in data_list:
-            item.pop('vod_title')
-            item.pop('vod_type')
-            item.pop('vod_keywords')
-            item.pop('vod_filmtime')
-            item.pop('vod_server')
-            item.pop('vod_play')
-            item.pop('vod_inputer')
-            item.pop('vod_reurl')
-            item.pop('vod_weekday')
-            item.pop('vod_copyright')
-            item.pop('vod_state')
-            item.pop('vod_version')
-            item.pop('vod_tv')
-            item.pop('vod_total')
-            item.pop('vod_status')
-            item.pop('vod_stars')
-            item.pop('vod_hits')
-            item.pop('vod_isend')
-            item.pop('vod_douban_id')
-            item.pop('vod_series')
-            item['vod_alias'] = ""
-            if not models.VideoData.objects.filter(vod_id=item['vod_id']).exists():
-                obj_list.append(models.VideoData(**item))
+            add_list = ['vod_id', 'vod_cid', 'vod_name', 'vod_actor', 'vod_director', 'vod_content', 'vod_pic',
+                        'vod_area', 'vod_language', 'vod_year', 'vod_addtime', 'vod_url', 'vod_length', 'vod_continu', 'list_name']
+            new_item={}
+            for i in add_list:
+                new_item[i] = item[i]
+            if not models.VideoData.objects.filter(vod_id=new_item['vod_id']).exists():
+                obj_list.append(models.VideoData(**new_item))
             else:
-                update_list.append(models.VideoData(**item))
+                update_list.append(models.VideoData(**new_item))
         if obj_list != []:
             models.VideoData.objects.bulk_create(obj_list)
         if update_list != []:
             models.VideoData.objects.bulk_update(
-                update_list, fields=["vod_addtime",'vod_url','vod_continu'], batch_size=100)
+                update_list, fields=["vod_addtime", 'vod_url', 'vod_continu'], batch_size=100)
         return True
     except Exception as e:
         print("保存出错：%s" % e)
         return False
 
-def load_tv_json(json_path):
-    with open(json_path, 'r', encoding='utf-8') as f:
-        return json.load(f)
-
-def add_vod_to_tv(json_path,vod_id):
-    with open(json_path, 'r', encoding='utf-8') as f:
-        tv_json = json.load(f)
-        # tv_json = {"live":[],"type":[]}
-        vod_data = load_vod_data(vod_id)
-        if not vod_data:
-            return False
-        # 处理url列表
-        url = vod_data.vod_url
-        if len(url.split('$')) <= 2:  # 如果url只有一个，则转换为列表
-            if url[0:1] != '[':
-                url_list = [url, ]
-            else:
-                url_list = eval(url)
-        else:
-            if '\r\n' in url:
-                url_list = url.split('\r\n')
-            else:
-                url_list = eval(url)
-        video_list = [item.split('$') for item in url_list]
-        # 如果之前已存在，先删除
-        for item in tv_json['type']:
-            if item['id'] == vod_id:
-                tv_json['type'].remove(item)
-        for item in tv_json['live']:
-            if item['itemid'] == vod_id:
-                tv_json['live'].remove(item)
-        # 添加进json
-        tv_json['type'].append(
-            {"id": vod_id, "name": vod_data.vod_name})
-        i = 0
-        for item in video_list:
-            tv_json['live'].append({"num": '%s_%s' % (
-                vod_id, i), "itemid": vod_id, "name": item[0], "urllist": item[1]})
-            i += 1
-        # print(tv_json)
-    with open(json_path, 'w', encoding='utf-8') as f:
-        json.dump(tv_json,f)
-    return True
-
-def del_vod_to_tv(json_path,vod_id):
-    with open(json_path, 'r', encoding='utf-8') as f:
-        tv_json = json.load(f)
-        for item in tv_json['type']:
-            if item['id'] == vod_id:
-                tv_json['type'].remove(item)
-        for item in tv_json['live']:
-            if item['itemid'] == vod_id:
-                tv_json['live'].remove(item)
-    with open(json_path, 'w', encoding='utf-8') as f:
-        json.dump(tv_json,f)
+def dump_bulk_data_url2(data_list):    # 将视频数据保存至数据库url2
+    try:
+        obj_list = []
+        update_list = []
+        update_url2_list = []
+        for item in data_list:
+            add_list = ['vod_id', 'vod_cid', 'vod_name', 'vod_actor', 'vod_director', 'vod_content', 'vod_pic',
+                        'vod_area', 'vod_language', 'vod_year', 'vod_addtime', 'vod_url', 'vod_length', 'vod_continu', 'list_name']
+            new_item={}
+            for i in add_list:
+                new_item[i] = item[i]
+            new_item['vod_url2'] = new_item.pop('vod_url')
+            vod_obj = models.VideoData.objects.filter(
+                vod_name=item['vod_name'],vod_year=item['vod_year'],vod_director=item['vod_director']).exclude(vod_url=None).first()
+            # 添加进对应列表
+            if vod_obj: # url1存在，更新url2
+                new_item['vod_id']= vod_obj.vod_id
+                new_obj = models.VideoData(**new_item)
+                update_url2_list.append(new_obj)
+            # elif not models.VideoData.objects.filter(vod_id=new_item['vod_id']).exists():# url1不存在，添加
+            #     # if new_item['vod_cid'] = 
+            #     pass
+            #     obj_list.append(models.VideoData(**new_item))
+            # else:   # url1不存在，更新url2及相关信息
+            #     update_list.append(models.VideoData(**new_item))
+        # if obj_list != []:
+        #     models.VideoData.objects.bulk_create(obj_list)
+        # if update_list != []:
+        #     models.VideoData.objects.bulk_update(
+        #         update_list, fields=["vod_addtime", 'vod_url2', 'vod_continu'], batch_size=100)
+        if update_url2_list != []:
+            models.VideoData.objects.bulk_update(
+                update_url2_list, fields=['vod_url2'], batch_size=100)
+        return True
+    except Exception as e:
+        print("保存出错：%s" % e)
+        return False

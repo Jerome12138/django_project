@@ -36,27 +36,51 @@ def home(request):  # 主页
     })
 
 
-def play(request, vod_id, index=1):  # 播放页面
+def play(request, vod_id, url_index=1,index=1):  # 播放页面
     vod_data = load_vod_data(vod_id)
     if not vod_data:
         return render(request, 'video_nonepage.html', {'msg': "影片尚未收录,有需要请联系管理员"})
+    # url1
     url = vod_data.vod_url
-    if len(url.split('$')) <= 2:  # 如果url只有一个，则转换为列表
+    if url and len(url.split('$')) <= 2:  # 如果url只有一个，则转换为列表
         if url[0:1] != '[':
             url_list = [url, ]
         else:
             url_list = eval(url)
-    else:
+    elif url:
         if '\r\n' in url:
             url_list = url.split('\r\n')
         else:
             url_list = eval(url)
+    else:
+        url_list = []
     video_list = [item.split('$') for item in url_list]
+    # url2
+    url2 = vod_data.vod_url2
+    print(url2,type(url2))
+    if url2 and len(url2.split('$')) <= 2:  # 如果url只有一个，则转换为列表
+        if url2[0:1] != '[':    # 不是列表形式，转换为列表
+            url2_list = [url2, ]
+        else:   # 列表形式
+            url2_list = eval(url2)
+    elif url2:
+        if '\r\n' in url2:
+            url2_list = url2.split('\r\n')
+        else:
+            url2_list = eval(url2)
+    else:
+        url2_list = []
+    video2_list = [item.split('$') for item in url2_list]
+    if url_index ==1:
+        video_url = video_list[index-1]
+    elif url_index==2:
+        video_url = video2_list[index-1]
     return render(request, 'video_play.html', {
         'vod_data': vod_data,
         "video_list": video_list,
+        "video2_list": video2_list,
         "index": index,
-        "video_url": video_list[index-1]
+        "video_url": video_url
     })
 
 
@@ -291,10 +315,10 @@ def view_log(request, log_date=0):
     })
 
 
-def update(request):
+def update(request):    # 更新视频数据
     ret = {'status': True, 'error': None, 'data': None}
     try:
-        get_all_data = getAllData()
+        get_all_data = getAllData("http://www.zdziyuan.com/inc/s_feifei3zuidam3u8/?p=%s")
         if request.GET.get('flag'):
             updata_count = get_all_data.run(flag=1)
         else:
@@ -307,6 +331,21 @@ def update(request):
     finally:
         return HttpResponse(json.dumps(ret))
 
+def update2(request):   # 更新第二url(八戒资源网)
+    ret = {'status': True, 'error': None, 'data': None}
+    try:
+        get_all_data = getAllData("http://cj.bajiecaiji.com/inc/feifei3bjm3u8/index.php?p=%s",2)
+        if request.GET.get('flag'): # 更新全部
+            updata_count = get_all_data.run2(flag=1)
+        else:   # 更新当日
+            updata_count = get_all_data.run2(flag=1)
+        ret['data'] = '已更新%s条数据' % updata_count
+    except Exception as e:
+        print(e)
+        ret['status'] = False
+        ret['error'] = "未知错误"
+    finally:
+        return HttpResponse(json.dumps(ret))
 
 def tv(request):     # 管理页面
     page_index = int(request.GET.get('page')) if request.GET.get('page') else 1
