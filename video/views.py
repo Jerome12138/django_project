@@ -15,7 +15,7 @@ def home(request):  # 主页
     page_index = int(request.GET.get('page')) if request.GET.get('page') else 1
     data_list = load_all_vod_data()
     data_count = len(data_list)
-    page = Page('/video/home/?page=', page_index, data_count//24 + 1)
+    page = Page(request.path_info+'?page=', page_index, data_count//24 + 1)
     page_str = page.page_str()
     video_list =page.video_page(data_list,24)
     if video_list == -1:
@@ -63,8 +63,12 @@ def vod_type(request, vod_cid): # 视频分类页
     data_count = len(data_list)
     # 分页处理
     page_index = int(request.GET.get('page')) if request.GET.get('page') else 1
-    page = Page('/video/type/%s/?page=' %
-                vod_cid, page_index, data_count//24 + 1)
+    url_str = request.path_info+'?'
+    if area :
+        url_str+='&area=%s'%area
+    if year :
+        url_str+='&year=%s'%year
+    page = Page(url_str+'&page=', page_index, data_count//24 + 1)
     page_str = page.page_str()
     video_list =page.video_page(data_list,24)
     if video_list == -1:
@@ -145,7 +149,7 @@ def search(request):  # 搜索ORM获取视频信息
         page_index = int(request.GET.get('page'))
     data_list = search_data(wd)
     data_count = len(data_list)
-    page = Page('/video/search/?wd=%s&page=' %
+    page = Page(request.path_info+'?wd=%s&page=' %
                 wd, page_index, data_count//24 + 1)
     page_str = page.page_str()
     video_list =page.video_page(data_list,24)
