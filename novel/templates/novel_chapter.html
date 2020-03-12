@@ -26,6 +26,11 @@
         .content p {
             text-indent: 2em;
         }
+
+        .sliding {
+            font-size: 19px;
+            text-align: center;
+        }
     </style>
 </head>
 
@@ -78,12 +83,16 @@
     <div class="bheader">
         <h1 id="chapterTitle" class="read-book-name">{{ art_data.cname }}</h1>
     </div>
-    <div class="main" style="font-size: 18px; line-height: 40px;">
-        <h3>{{ art_data.cname }}</h3>
-        <div class="content">
-            {{ art_data.content }}
+    <div style="padding-top: 30px;">
+        <div class="sliding pull-prev-page" style="display: none">下拉加载上一页</div>
+        <div class="main" style="font-size: 18px; line-height: 40px;padding-top: 0;">
+            <h3>{{ art_data.cname }}</h3>
+            <div class="content">
+                {{ art_data.content }}
+            </div>
+            <div id='end'></div>
         </div>
-        <div id='end'></div>
+        <div class="sliding pull-next-page" style="display: none">下拉加载下一页</div>
     </div>
     <!-- 控制面板 -->
     <div class="actionDiv" style="display: none">
@@ -212,41 +221,98 @@
             Cid = '{{ art_data.cid }}';
             Pid = '{{ art_data.pid }}';
             Nid = '{{ art_data.nid }}';
-            //上下滑动加载下一页
+            // 上下滑动加载下一页
+            var start_y = null;
+            var end_y = null;
+            $(document).on('touchstart', function (evt) {
+                var touch = evt.originalEvent.targetTouches[0]; //获取第一个触点
+                start_y = Number(touch.pageY);
+            });
+            $(document).on('touchmove', function (evt) {
+                var touch = evt.originalEvent.targetTouches[0]; //获取第一个触点
+                end_y = Number(touch.pageY) - start_y;
+                if (end_y > 10) {
+                    $('.pull-prev-page').css('display', 'block');
+                    if (end_y <= 100) {
+                        $('.pull-prev-page').css('height', end_y + 'px');
+                        $('.pull-prev-page').css('lineHeight', end_y + 'px');
+                    } else {
+                        $('.pull-prev-page').css('height', '100px');
+                        $('.pull-prev-page').css('lineHeight', '100px');
+                    }
+                } else if (end_y < -10) {
+                    $('.pull-next-page').css('display', 'block');
+                    if (end_y >= -100) {
+                        $('.pull-next-page').css('height', (-end_y) + 'px');
+                        $('.pull-next-page').css('lineHeight', (-end_y) + 'px');
+                    } else {
+                        $('.pull-next-page').css('height', '100px');
+                        $('.pull-next-page').css('lineHeight', '100px');
+                    }
+                }
+            });
+            $(document).on('touchend', function (evt) {
+                if (prev_page_flag == -1) {
+                    if (end_y >= 80) {
+                        $('.pull-prev-page').css('display', 'none');
+                        $(".models1").show();
+                        if (jz == 0) {
+                            jz = 1;
+                            if (Pid == '-1') {
+                                $(".models1").fadeOut();
+                                layer.msg("无更多章节内容了！");
+                                jz = 0;
+                                return;
+                            }
+                            ajaxBookText(Pid, Aid);
+                            jz = 0;
+                            // location.hash = "#end";
+                        };
+                    } 
+                }
+                if (next_page_flag == 1) {
+                    if (end_y <= -80) {
+                        console.log(next_page_flag)
+                        $('.pull-next-page').css('display', 'none');
+                        $(".models1").show();
+                        if (jz == 0) {
+                            jz = 1;
+                            if (Nid == '-1') {
+                                $(".models1").fadeOut();
+                                layer.msg("无更多章节内容了！");
+                                jz = 0;
+                                return;
+                            }
+                            ajaxBookText(Nid, Aid);
+                            jz = 0;
+                        }
+                    }
+                }
+                $('.pull-prev-page').css('display', 'none');
+                $('.pull-next-page').css('display', 'none');
+                $('.pull-prev-page').css('height', '0');
+                $('.pull-prev-page').css('lineHeight', '0');
+                $('.pull-next-page').css('height', '0');
+                $('.pull-next-page').css('lineHeight', '0');
+                prev_page_flag = 0;
+                next_page_flag = 0;
+                start_y = null;
+                end_y = null;
+            });
+            prev_page_flag = 0
+            next_page_flag = 0
             $(window).scroll(function () {
                 var scrollTop = $(this).scrollTop();
                 var scrollHeight = $(document).height();
                 var windowHeight = $(this).height();
                 if (scrollTop == 0) {
-                    $(".models1").show();
-                    if (jz == 0) {
-                        jz = 1;
-                        if (Pid == '-1') {
-                            $(".models1").fadeOut();
-                            layer.msg("无更多章节内容了！");
-                            jz = 0;
-                            return;
-                        }
-                        ajaxBookText(Pid, Aid);
-                        jz = 0;
-                        location.hash="#end"; 
-                    };
-                };
+                    prev_page_flag = -1
+                }
                 if (scrollTop + windowHeight == scrollHeight) {
-                    $(".models1").show();
-                    if (jz == 0) {
-                        jz = 1;
-                        if (Nid == '-1') {
-                            $(".models1").fadeOut();
-                            layer.msg("无更多章节内容了！");
-                            jz = 0;
-                            return;
-                        }
-                        ajaxBookText(Nid, Aid);
-                        jz = 0;
-                    }
+                    next_page_flag = 1
                 }
             });
+
         })
         function prevc() {
             $(".models1").show();
