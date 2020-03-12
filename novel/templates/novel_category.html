@@ -20,6 +20,12 @@
     <script type="text/javascript" src="/static/plugins/layer/layer.js"></script>
     <script type="text/javascript" src="/static/plugins/layer/layer.css"></script>
     <script type="text/javascript" src="/static/app_novel/js/my.js"></script>
+    <style>
+        .sliding {
+            font-size: 19px;
+            text-align: center;
+        }
+    </style>
 </head>
 
 <body>
@@ -31,6 +37,11 @@
                 <a class="icon-search" href="javascript:"></a>
                 <a class="icon-menu" href="/novel/" title="主页"></a>
             </span>
+        </div>
+        <div class="models1" style="display: none">
+            <img src="/static/app_novel/img/lazyload.gif">
+            <p></p>
+            正在加载
         </div>
         <!-- 搜索 -->
         <div class="search">
@@ -54,17 +65,19 @@
             })
         </script>
         <div class="h50"></div>
+        <div class="sliding pull-prev-page" style="display: none">下拉加载上一页</div>
         <div class="list">
             <div class="aui-content aui-margin-b-15">
                 <ul class="aui-list aui-list-in nobgs">
-                    {% for chapters in cate_list %}
+                    {% for item in cate_list %}
+                    {% if item.id == -1 %}
                     <li class="aui-list-item chapter-title" style="padding-right: 0.75rem;">
                         <div class="aui-list-item-inner">
-                            <div class="zxtitle" style="text-align: center;width: 100%;color: gray;">{{ chapters.name }}
+                            <div class="zxtitle" style="text-align: center;width: 100%;color: gray;">{{ item.name }}
                             </div>
                         </div>
                     </li>
-                    {% for item in chapters.list %}
+                    {% else %}
                     <a href="/novel/chapter/{{ a_id }}/{{ item.id }}.html" id="cate_{{ item.id }}"
                         title="{{ item.name }}">
                         <li class="aui-list-item">
@@ -73,11 +86,12 @@
                             </div>
                         </li>
                     </a>
-                    {% endfor %}
+                    {% endif %}
                     {% endfor %}
                 </ul>
             </div>
         </div>
+        <div class="sliding pull-next-page" style="display: none">上拉加载下一页</div>
     </div>
 </body>
 <script type="text/javascript">
@@ -99,7 +113,105 @@
             var c_id = url.substring(url.indexOf("#"));
             $(c_id).children('li').css('color', '#0ebfc7');
         }
-    })()
+    })();
+    // 上下滑动加载下一页
+    var start_y = null;
+    var end_y = null;
+    $(document).on('touchstart', function (evt) {
+        var touch = evt.originalEvent.targetTouches[0]; //获取第一个触点
+        start_y = Number(touch.pageY);
+    });
+    $(document).on('touchmove', function (evt) {
+        var touch = evt.originalEvent.targetTouches[0]; //获取第一个触点
+        end_y = Number(touch.pageY) - start_y;
+        if (end_y > 10) {
+            $('.pull-prev-page').css('display', 'block');
+            if (end_y <= 200) {
+                $('.pull-prev-page').css('height', end_y / 2 + 'px');
+                $('.pull-prev-page').css('lineHeight', end_y / 2 + 'px');
+                $('.pull-prev-page').text('下拉加载上一页')
+                if (end_y > 160) {
+                    $('.pull-prev-page').text('松开加载')
+                }
+            } else {
+                $('.pull-prev-page').css('height', '100px');
+                $('.pull-prev-page').css('lineHeight', '100px');
+            }
+        } else if (end_y < -10) {
+            $('.pull-next-page').css('display', 'block');
+            if (end_y >= -200) {
+                $('.pull-next-page').css('height', (-end_y / 2) + 'px');
+                $('.pull-next-page').css('lineHeight', (-end_y / 2) + 'px');
+                $('.pull-next-page').text('下拉加载下一页')
+                if (end_y < -160) {
+                    $('.pull-next-page').text('松开加载')
+                }
+            } else {
+                $('.pull-next-page').css('height', '100px');
+                $('.pull-next-page').css('lineHeight', '100px');
+            }
+        }
+    });
+    var jz = 0;
+    $(document).on('touchend', function (evt) {
+        if (prev_page_flag == -1) {
+            if (end_y >= 160) {
+                $('.pull-prev-page').css('display', 'none');
+                $(".models1").show();
+                if (jz == 0) {
+                    jz = 1;
+                    if ('{{ start_index }}' == '0') {
+                        $(".models1").fadeOut();
+                        layer.msg("无更多章节内容了！");
+                        jz = 0;
+                        return;
+                    }
+                    location.href = '/novel/category/{{ a_id }}.html?c_index={{ start_index }}'
+                    jz = 0;
+                };
+            }
+        }
+        if (next_page_flag == 1) {
+            if (end_y <= -160) {
+                $('.pull-next-page').css('display', 'none');
+                $(".models1").show();
+                if (jz == 0) {
+                    jz = 1;
+                    if ('{{ end_index }}' == '{{ cate_count }}') {
+                        $(".models1").fadeOut();
+                        layer.msg("无更多章节内容了！");
+                        jz = 0;
+                        return;
+                    }
+                    location.href = '/novel/category/{{ a_id }}.html?c_index={{ end_index }}'
+                    jz = 0;
+                }
+            }
+        }
+        $('.pull-prev-page').css('display', 'none');
+        $('.pull-next-page').css('display', 'none');
+        prev_page_flag = 0;
+        next_page_flag = 0;
+        start_y = null;
+        end_y = null;
+    });
+    prev_page_flag = 0
+    next_page_flag = 0
+    $(window).scroll(function () {
+        var scrollTop = $(this).scrollTop();
+        var scrollHeight = $(document).height();
+        var windowHeight = $(this).height();
+        if (scrollTop == 0) {
+            prev_page_flag = -1
+        } else if (scrollTop > 50) {
+            prev_page_flag = 0
+        }
+        if (scrollTop + windowHeight >= scrollHeight) {
+            next_page_flag = 1
+        } else if (scrollTop + windowHeight < scrollHeight - 50) {
+            next_page_flag = 0
+        }
+    });
 </script>
 
 </html>

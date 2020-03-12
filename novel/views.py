@@ -31,8 +31,41 @@ def category(request, a_id):
     url = 'https://iosapp.canrike.com/book/%s/' % a_id
     data = get_json_data(url)
     book_name = data['name']
-    cate_list = data['list']
-    return render(request, 'novel_category.html', {'cate_list': cate_list, 'book_name': book_name, 'a_id': a_id})
+    cate_list = []
+    for item in data['list']:
+        cate_list.append({'id':-1,'name':item['name']})
+        cate_list.extend(item['list'])
+    cate_count = len(cate_list)
+    if cate_count>100:
+        c_index = request.GET.get('c_index')
+        if not c_index:
+            c_id = request.GET.get('c_id')
+            if not c_id:
+                c_index = 0
+            else:
+                id_list = [item['id'] for item in cate_list]
+                c_index = id_list.index(int(c_id))
+        else:
+            c_index = int(c_index)
+        if c_index<50:
+            start_index = 0
+        else:
+            start_index = c_index-50
+        if cate_count-c_index<50:
+            end_index = cate_count
+        else:
+            end_index = c_index+50
+    else:
+        start_index = 0
+        end_index = cate_count
+    return render(request, 'novel_category.html', {
+        'cate_list': cate_list[start_index:end_index], 
+        'book_name': book_name,
+        'a_id': a_id,
+        'start_index':start_index,
+        'end_index':end_index,
+        'cate_count':cate_count,
+         })
 
 
 def chapter(request, a_id, c_id=-1):
