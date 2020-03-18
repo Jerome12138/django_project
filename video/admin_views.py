@@ -96,6 +96,9 @@ def view_log(request, log_date=0):
     log = re.sub(r'(\(\)\s\{.+?bytes\})', '', log)
     log = re.sub(r'(\d+?\sheaders\sin.+?\))', '', log)
     log = re.sub(r'(generated.+?msecs)', '', log)
+    log = re.sub(r'(\=\>\s+?\(HTTP\/1\.1\s200\))', '', log)
+    log = re.sub(r'(\s\[\w{3}\s\w{3}\s\d{1,2}\s)', '[', log)
+    log = re.sub(r'(\s\d{4}\]\s)', ']', log)
     log_str = re.sub(r'(.+?\(HTTP\/1\.1\s30\d\).+\n)', '', log)
     # print(log_str)
     # 分页处理
@@ -118,7 +121,7 @@ def view_log(request, log_date=0):
     })
 
 
-def update(request):    # 更新视频数据
+def update(request):    # 更新视频数据 最大资源网
     ret = {'status': True, 'error': None, 'data': None}
     try:
         get_all_data = getAllData("http://www.zdziyuan.com/inc/s_feifei3zuidam3u8/?p=%s")

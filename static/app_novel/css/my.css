@@ -319,28 +319,21 @@ a {
     text-decoration: none;
     outline: 0;
 }
-.header .icon-grouop {
+.header .icon-group {
     float: right;
     padding: 0px;
     height: 45px;
     font-size: 0;
     letter-spacing: 0;
 }
-.header .icon-search {
-    display: inline-block;
+.header .icon-group a {
     width: 45px;
     height: 45px;
-    background: url('/static/app_novel/img/searchicon.png') no-repeat 50% 50%;
-    background-size: 1.125rem;
-    position: relative;
-}
-.header .icon-menu {
+    line-height: 45px;
+    text-align: center;
     display: inline-block;
-    width: 45px;
-    height: 45px;
-    background: url('/static/app_novel/img/menu.png') no-repeat 50% 50%;
-    background-size: 1.125rem;
-    position: relative;
+    color: white;
+    font-size: 25px;
 }
 .rank__nav ul li a {
     display: block;
@@ -645,7 +638,7 @@ img {
 .zxtitle{
 	overflow: hidden;
 	height: 18px;
-	width: 70%;
+	width: 100%;
 	line-height: 20px;
 }
 .mod__info {

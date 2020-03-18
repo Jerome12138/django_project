@@ -12,6 +12,7 @@
     <script type="text/javascript" src="/static/plugins/swiper/swiper.min.js"></script>
     <link href="/static/app_novel/css/aui.css" rel="stylesheet" type="text/css">
     <link href="/static/app_novel/css/my.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="/static/plugins/font-awesome-4.7.0/css/font-awesome.min.css" type="text/css">
     <script src="/static/jquery/jquery-1.12.4.js"></script>
     <script src='/static/jquery/jquery.cookie.js'></script>
     <script type="text/javascript" src="/static/plugins/layer/layer.js"></script>
@@ -39,9 +40,13 @@
     <div class="header bookheader models">
         <a class="icon-back" href="javascript:history.go(-1)"></a>
         <h1>{{ art_data.name }}</h1>
-        <span class="icon-grouop">
-            <a class="icon-search" href="javascript:"></a>
-            <a class="icon-menu" href="/novel/" title="主页"></a>
+        <span class="icon-group">
+            <a class="icon-search" class="-webkit-text-stroke:2px rgba(0,0,0,0.9)" href="javascript:" title="搜索">
+                <i class="fa fa-search" aria-hidden="true" ></i>
+            </a>
+            <a class='icon-home' class="-webkit-text-stroke:1px rgba(0,0,0,0.9)" href="/novel/" title="主页">
+                <i class="fa fa-home" aria-hidden="true"></i>
+            </a>
         </span>
     </div>
     <!-- end -->
@@ -126,7 +131,8 @@
     <!-- 设置 -->
     <div class="footer models">
         <div class="aui-col-xs-4">
-            <a href="/novel/category/{{ art_data.id }}.html?c_id={{ art_data.cid}}#cate_{{ art_data.cid}}" title="{{ art_data.name }}的目录">
+            <a href="/novel/category/{{ art_data.id }}.html?c_id={{ art_data.cid}}#cate_{{ art_data.cid}}"
+                title="{{ art_data.name }}的目录">
                 <img src="/static/app_novel/img/menu.png">目录
             </a>
         </div>
@@ -234,10 +240,10 @@
                 if (end_y > 10) {
                     $('.pull-prev-page').css('display', 'block');
                     if (end_y <= 200) {
-                        $('.pull-prev-page').css('height', end_y/2 + 'px');
-                        $('.pull-prev-page').css('lineHeight', end_y/2 + 'px');
+                        $('.pull-prev-page').css('height', end_y / 2 + 'px');
+                        $('.pull-prev-page').css('lineHeight', end_y / 2 + 'px');
                         $('.pull-prev-page').text('下拉加载上一页')
-                        if (end_y>160){
+                        if (end_y > 160) {
                             $('.pull-prev-page').text('松开加载')
                         }
                     } else {
@@ -247,10 +253,10 @@
                 } else if (end_y < -10) {
                     $('.pull-next-page').css('display', 'block');
                     if (end_y >= -200) {
-                        $('.pull-next-page').css('height', (-end_y/2) + 'px');
-                        $('.pull-next-page').css('lineHeight', (-end_y/2) + 'px');
+                        $('.pull-next-page').css('height', (-end_y / 2) + 'px');
+                        $('.pull-next-page').css('lineHeight', (-end_y / 2) + 'px');
                         $('.pull-next-page').text('下拉加载下一页')
-                        if (end_y<-160){
+                        if (end_y < -160) {
                             $('.pull-next-page').text('松开加载')
                         }
                     } else {
@@ -310,12 +316,12 @@
                 var windowHeight = $(this).height();
                 if (scrollTop == 0) {
                     prev_page_flag = -1
-                }else if(scrollTop>50){
+                } else if (scrollTop > 50) {
                     prev_page_flag = 0
                 }
                 if (scrollTop + windowHeight >= scrollHeight) {
                     next_page_flag = 1
-                }else if(scrollTop + windowHeight < scrollHeight-50) {
+                } else if (scrollTop + windowHeight < scrollHeight - 50) {
                     next_page_flag = 0
                 }
             });
