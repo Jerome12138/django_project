@@ -10,8 +10,18 @@ import json
 import os
 
 # Create your views here.
+# 登录验证
+def auth(func):
+    def inner(request, *args, **kwargs):
+        username = request.session.get('username', None)
+        if not username:
+            return redirect('/admin/login.html')
+        # user_obj = models.UserInfo.objects.filter(username=username).first()
+        return func(request, *args, **kwargs) #user_obj,
+    return inner
 
-def admin(request):     # 管理页面
+@auth
+def get_request(request):# 用户请求
     page_index = int(request.GET.get('page')) if request.GET.get('page') else 1
     data_list = load_request_data()
     data_count = len(data_list)
@@ -20,13 +30,13 @@ def admin(request):     # 管理页面
     request_list =page.video_page(data_list,24)
     if request_list == -1:
         return HttpResponse('请求错误')
-    return render(request, 'video_admin.html', {
+    return render(request, 'admin_requests.html', {
         "request_list": request_list,
         'page_str': page_str,
         "data_count": data_count
     })
 
-
+@auth
 def del_request(request):   # 删除请求
     ret = {'status': True, 'error': None, 'data': None}
     try:
@@ -39,7 +49,7 @@ def del_request(request):   # 删除请求
     finally:
         return HttpResponse(json.dumps(ret))
 
-
+@auth
 def add_vod(request):   # 添加视频数据
     ret = {'status': True, 'error': None, 'data': None}
     try:
@@ -61,7 +71,7 @@ def add_vod(request):   # 添加视频数据
     finally:
         return HttpResponse(json.dumps(ret))
 
-
+@auth
 def view_log(request, log_date=0):
     # 加载log文件
     if log_date == 0:
@@ -77,7 +87,7 @@ def view_log(request, log_date=0):
         log_path = 'logs/%s/uwsgi-%s.log' % (month, log_date)
         if not(os.path.exists(log_path) and os.path.isfile(log_path)):
             log_str = '当天无日志'
-            return render(request, 'video_log.html', {
+            return render(request, 'admin_log.html', {
                 "log": log_str,
                 'log_date': log_date,
                 'is_today': is_today,
@@ -113,14 +123,19 @@ def view_log(request, log_date=0):
     log_str = '\n'.join(log_list)
     if log_date == 0:
         log_date = time.strftime("%Y-%m-%d", time.localtime(time.time()))
-    return render(request, 'video_log.html', {
+    return render(request, 'admin_log.html', {
         "log": log_str,
         'log_date': log_date,
         'is_today': is_today,
         'page_str': page_str,
     })
 
+@auth
+def update_video(request):
+    pass
+    return render(request,'admin_update.html')
 
+@auth
 def update(request):    # 更新视频数据 最大资源网
     ret = {'status': True, 'error': None, 'data': None}
     try:
@@ -137,6 +152,7 @@ def update(request):    # 更新视频数据 最大资源网
     finally:
         return HttpResponse(json.dumps(ret))
 
+@auth
 def update2(request):   # 更新第二url(八戒资源网)
     ret = {'status': True, 'error': None, 'data': None}
     try:
@@ -153,15 +169,17 @@ def update2(request):   # 更新第二url(八戒资源网)
     finally:
         return HttpResponse(json.dumps(ret))
 
-
+@auth
 def url2_clear(request):
     clear_url2()
     return HttpResponse('已清空值为1的url2')
 
+@auth
 def url_clear(request):
     clear_url()
     return HttpResponse('已清空值为1的url')
 
+@auth
 def test(request):
     db_test()
     return HttpResponse('test完成')

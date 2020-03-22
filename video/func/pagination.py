@@ -24,15 +24,15 @@ class Page(object):
                 start_index = 1
                 end_index = 7
         # 首页
-        first_page = '<li><a class="page-link" href="%s1">首页</a></li>' % self.base_url
+        first_page = '<li><a href="%s1">首页</a></li>' % self.base_url
         page_list.append(first_page)
         # 上一页
         if self.current_page == 1:
             prev = 1
         else:
             prev = self.current_page - 1
-        prev_page = '<li class="hidden-xs"><a class="page-link" href="%s%s">上一页</a></li>' % (self.base_url, prev)
-        prev_page2 = '<li class="visible-xs" style="width:13%%"><a class="page-link" href="%s%s"><</a></li>' % (self.base_url, prev)
+        prev_page = '<li class="hidden-xs"><a href="%s%s">上一页</a></li>' % (self.base_url, prev)
+        prev_page2 = '<li class="visible-xs" style="width:13%%"><a href="%s%s"><</a></li>' % (self.base_url, prev)
         page_list.append(prev_page)
         page_list.append(prev_page2)
         # 页码
@@ -41,28 +41,28 @@ class Page(object):
             <li class="page-input hidden" style="width:22%%"><input name="page-id" id="page-id" value=%s
             style="width:100%%;display: inline-block;padding: 5px 15px;border-radius: 4px;background-color: #fff;border: 1px solid #eee;"/></li>
             '''%self.current_page
-        page_go = '<li class="page-go-li hidden active" style="width:12%"><a class="page-link page-go" href="javascript:">GO</a></li>'
+        page_go = '<li class="page-go-li hidden active" style="width:12%"><a class="page-go" href="javascript:">GO</a></li>'
         page_list.append(page_num)
         page_list.append(page_input)
         page_list.append(page_go)
         # 页面
         for page in range(start_index, end_index+1):
             if page == self.current_page:
-                temp = '<li class="hidden-xs active"><a class="page-link" href="%s%s">%s</a></li>' % (self.base_url, page,page)
+                temp = '<li class="hidden-xs active"><a  href="%s%s">%s</a></li>' % (self.base_url, page,page)
             else:
-                temp = '<li class="hidden-xs"><a class="page-link" href="%s%s">%s</a></li>' % (self.base_url, page,page)
+                temp = '<li class="hidden-xs"><a  href="%s%s">%s</a></li>' % (self.base_url, page,page)
             page_list.append(temp)
         # 下一页
         if self.current_page == self.page_count:
             nex = self.page_count
         else:
             nex = self.current_page + 1
-        next_page2 = '<li class="visible-xs" style="width:13%%"><a class="page-link" href="%s%s">></a></li>' % (self.base_url, nex)
-        next_page = '<li class="hidden-xs"><a class="page-link" href="%s%s">下一页</a></li>' % (self.base_url, nex)
+        next_page2 = '<li class="visible-xs" style="width:13%%"><a href="%s%s">></a></li>' % (self.base_url, nex)
+        next_page = '<li class="hidden-xs"><a href="%s%s">下一页</a></li>' % (self.base_url, nex)
         page_list.append(next_page2)
         page_list.append(next_page)
         # 尾页
-        last_page = '<li><a class="page-link" href="%s%s">尾页</a></li>' % (self.base_url,self.page_count)
+        last_page = '<li><a href="%s%s">尾页</a></li>' % (self.base_url,self.page_count)
         page_list.append(last_page)
         # JS
         page_js = '''

@@ -1,0 +1,102 @@
+{% extends "admin_layout.html" %}
+
+{% block title %}<title>后台管理 | 更新视频</title>{% endblock %}
+
+{% block css %}{% endblock %}
+
+
+{% block main %}
+<div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+    <div class="content-header">
+        <div class="container-fluid">
+            <div class="row mb-2">
+                <div class="col-12">
+                    <h3 class="m-0 text-dark" style="display: inline-block;">
+                        <a href="/video/admin/update_video/">
+                            <i class="nav-icon iconfont" aria-hidden="true">&#xe787;</i>更新视频&nbsp;&nbsp;
+                        </a>
+                    </h3>
+                </div><!-- /.col -->
+            </div><!-- /.row -->
+        </div><!-- /.container-fluid -->
+    </div>
+    <!-- /.content-header -->
+
+    <!-- Main content -->
+    <div class="content">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12">
+                    <!-- Main content -->
+                    <div class="invoice p-3 mb-3">
+                        <!-- title row -->
+                        <h4>
+                            <a href="javascript:;" id='update' style="margin-right: 30px;border-bottom:blue 1px solid;color: blue;">更新数据</a>
+                            <a href="javascript:;" id='update_url2' style="margin-right: 30px;border-bottom:blue 1px solid;color: blue;">更新url2</a>
+                        </h4>
+                    </div>
+                    <!-- /.invoice -->
+                </div>
+            </div>
+            <!-- /.row -->
+        </div><!-- /.container-fluid -->
+    </div>
+    <!-- /.content -->
+</div>
+{% endblock %}
+
+{% block js %}
+<script>
+    $('#update').click(function () {
+        $(this).css('color', 'grey')
+        $(this).css('border-bottom', 'grey 1px solid')
+        if (true) {
+            $.ajax({
+                url: '/video/admin/update/',
+                type: "POST",
+                headers: { "X-CSRFToken": $.cookie('csrftoken') },
+                data: {}, // 要提交的数据
+                dataType: 'JSON',                 // 自动将接收到的data反序列化成obj返回
+                success: function (obj) {
+                    if (obj.status) {
+                        alert(obj.data)
+                    } else {
+                        alert(obj.error)
+                    }
+                },
+                error: function () {
+                    alert("update请求出现未知错误")
+                    console.log("update请求出现未知错误")
+                    //后台未接收到请求或未返回数据等未知错误
+                }
+            })
+        };
+    });
+    $('#update_url2').click(function () {
+        $(this).css('color', 'grey')
+        $(this).css('border-bottom', 'grey 1px solid')
+        if (true) {
+            $.ajax({
+                url: '/video/admin/update2/',
+                type: "POST",
+                headers: { "X-CSRFToken": $.cookie('csrftoken') },
+                data: {}, // 要提交的数据
+                dataType: 'JSON',                 // 自动将接收到的data反序列化成obj返回
+                success: function (obj) {
+                    if (obj.status) {
+                        alert(obj.data)
+                    } else {
+                        alert(obj.error)
+                    }
+                },
+                error: function () {
+                    alert("update请求出现未知错误")
+                    console.log("update请求出现未知错误")
+                    //后台未接收到请求或未返回数据等未知错误
+                }
+            })
+        };
+    })
+</script>
+{% endblock %}

@@ -20,7 +20,7 @@ from django.conf.urls.static import static  # 新增2
 from love import views
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
+    path('admin/', include('my_admin.urls')),
     path('app1/', include('app1.urls')),
     path('video/', include('video.urls')),
     path('love/', views.love),

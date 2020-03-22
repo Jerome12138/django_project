@@ -20,7 +20,6 @@ def auth(func):
             return redirect('/blog/sign_in/')
         user_obj = models.UserInfo.objects.filter(username=username).first()
         return func(request, user_obj, *args, **kwargs)
-
     return inner
 
 

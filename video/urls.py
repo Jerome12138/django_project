@@ -9,12 +9,14 @@ adminpatterns = [
     path('add_vod/', admin_views.add_vod),
     path('view_log/<str:log_date>/', admin_views.view_log),
     path('view_log/', admin_views.view_log),
+    path('update_video/', admin_views.update_video),
     path('update/', admin_views.update),
     path('update2/', admin_views.update2),
+    path('get_request/', admin_views.get_request),
     path('url2_clear/', admin_views.url2_clear),
     path('url_clear/', admin_views.url_clear),
     path('test/', admin_views.test),
-    path('', admin_views.admin),
+    path('', admin_views.view_log),
 ]
 
 urlpatterns = [

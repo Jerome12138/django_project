@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     'love',
     'novel',
     'blog',
+    'my_admin'
 ]
 
 MIDDLEWARE = [
