@@ -112,7 +112,7 @@
 .searchs .search-btn{
     position: absolute;
     right: 20px;
-    background: linear-gradient(130deg,#64b0f9 40%,#32ccff 60%);
+    background-color: #4d5456;
     border: 0px;
     width: 60px;
     color: #fff;
@@ -275,7 +275,7 @@
     width: 100%;
     height: 45px;
     line-height: 45px;
-  	background: linear-gradient(130deg,#64b0f9 40%,#32ccff 60%);
+  	background-color: #323535;
   }
 body {
     font: 0.28rem/1 "microsoft yahei",Helvetica,sans-serif;
@@ -293,11 +293,12 @@ body {
 }
 .header .icon-back {
     float: left;
-    width: 2.75rem;
+    width: 45px;
     height: 45px;
     line-height: 45px;
-    background: url('/static/app_novel/img/back.png') no-repeat 50% 50%;
-    background-size: 1.125rem;
+    text-align: center;
+    color: white;
+    font-size: 25px;
 }
 .header h1, .header h2, .header h3 {
     position: absolute;
