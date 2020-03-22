@@ -208,7 +208,11 @@
                 index = $(this).index();
                 if (index == 0) {
                 } else if (index == 1) {
-                    $(".actionDiv").fadeIn();
+                    if ($(".actionDiv").css('display') == 'none'){
+                        $(".actionDiv").fadeIn();
+                    }else{
+                        $(".actionDiv").fadeOut();
+                    }
                 } else {
                     if ($(".skin-default").css("background-color") == 'rgb(51, 51, 51)') {
                         $(".skin-default").css("background", "#c4b395");
