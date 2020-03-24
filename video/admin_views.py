@@ -140,7 +140,7 @@ def update(request):    # 更新视频数据 最大资源网
     ret = {'status': True, 'error': None, 'data': None}
     try:
         get_all_data = getAllData("http://www.zdziyuan.com/inc/s_feifei3zuidam3u8/?p=%s")
-        if request.GET.get('flag'):
+        if request.POST.get('flag'):
             updata_count = get_all_data.run(flag=1)
         else:
             updata_count = get_all_data.run()
@@ -157,7 +157,7 @@ def update2(request):   # 更新第二url(八戒资源网)
     ret = {'status': True, 'error': None, 'data': None}
     try:
         get_all_data = getAllData("http://cj.bajiecaiji.com/inc/feifei3bjm3u8/index.php?p=%s",2)
-        if request.GET.get('flag'): # 更新全部
+        if request.POST.get('flag'): # 更新全部
             updata_count = get_all_data.run2(flag=1)
         else:   # 更新当日
             updata_count = get_all_data.run2(flag=1)

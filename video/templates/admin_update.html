@@ -32,7 +32,11 @@
                     <div class="invoice p-3 mb-3">
                         <!-- title row -->
                         <h4>
-                            <a href="javascript:;" id='update' style="margin-right: 30px;border-bottom:blue 1px solid;color: blue;">更新数据</a>
+                            <a href="javascript:;" id='update' style="margin-right: 30px;border-bottom:blue 1px solid;color: blue;">更新今日</a>
+                            <a href="javascript:;" id='update-all' style="margin-right: 30px;border-bottom:blue 1px solid;color: blue;">更新所有</a>
+                            
+                        </h4>
+                        <h4>
                             <a href="javascript:;" id='update_url2' style="margin-right: 30px;border-bottom:blue 1px solid;color: blue;">更新url2</a>
                         </h4>
                     </div>
@@ -47,6 +51,7 @@
 {% endblock %}
 
 {% block js %}
+<script src="/static/jquery/jquery.cookie.js"></script>
 <script>
     $('#update').click(function () {
         $(this).css('color', 'grey')
@@ -57,6 +62,31 @@
                 type: "POST",
                 headers: { "X-CSRFToken": $.cookie('csrftoken') },
                 data: {}, // 要提交的数据
+                dataType: 'JSON',                 // 自动将接收到的data反序列化成obj返回
+                success: function (obj) {
+                    if (obj.status) {
+                        alert(obj.data)
+                    } else {
+                        alert(obj.error)
+                    }
+                },
+                error: function () {
+                    alert("update请求出现未知错误")
+                    console.log("update请求出现未知错误")
+                    //后台未接收到请求或未返回数据等未知错误
+                }
+            })
+        };
+    });
+    $('#update-all').click(function () {
+        $(this).css('color', 'grey')
+        $(this).css('border-bottom', 'grey 1px solid')
+        if (true) {
+            $.ajax({
+                url: '/video/admin/update/',
+                type: "POST",
+                headers: { "X-CSRFToken": $.cookie('csrftoken') },
+                data: {'flag':1}, // 要提交的数据
                 dataType: 'JSON',                 // 自动将接收到的data反序列化成obj返回
                 success: function (obj) {
                     if (obj.status) {
