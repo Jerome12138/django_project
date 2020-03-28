@@ -149,7 +149,7 @@ class getAllData(object):   # 获取所有数据
         self.url_temp = url
         self.url_index = url_index
         self.headers = {
-            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36"}
+            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.149 Safari/537.36"}
         self.url_queue = LifoQueue()
         self.page_queue = Queue()
         self.error_pages = []
@@ -161,7 +161,7 @@ class getAllData(object):   # 获取所有数据
                 response = requests.get(
                     url, headers=self.headers, timeout=(3, 15))
                 if response.status_code != 200:
-                    print(response.status_code)
+                    print('Status Code：',response.status_code)
                     break
                 res_dict = json.loads(response.content.decode())
                 return res_dict
@@ -169,8 +169,9 @@ class getAllData(object):   # 获取所有数据
                 i += 1
                 print('page%s请求超时，重试%s次' % (url.split('?p=')[1], i))
             except json.decoder.JSONDecodeError:
-                print('page%s请求数据为空，已添加至错误列表' % url.split('?p=')[1])
-                self.error_pages.append(url)
+                # print(response.content.decode())
+                print('page%s jSON解析错误，已添加至错误列表' % url.split('?p=')[1])
+                # self.error_pages.append(url)
         return False
 
     def get_first_page(self):   # 获取首页数据
@@ -180,7 +181,7 @@ class getAllData(object):   # 获取所有数据
         # 2.发送请求，获取响应
         res_dict = self.parse_url(start_url)
         if not res_dict:
-            print('请求出现错误')
+            print('首页请求无数据')
             return False
         # 4.保存数据
         page_count = int(res_dict['page']['pagecount'])
@@ -196,7 +197,7 @@ class getAllData(object):   # 获取所有数据
         url = self.url_temp % self.url_queue.get()
         res_dict = self.parse_url(url)
         if not res_dict:
-            print('page:', url.split('?p=')[1], '请求出现错误，放入错误列表')
+            print('page:', url.split('?p=')[1], '请求无数据，放入错误列表')
             # self.url_queue.put(url)
             self.error_pages.append(url.split('?p=')[1])
         else:

@@ -140,7 +140,7 @@ def update(request):    # 更新视频数据 最大资源网
     ret = {'status': True, 'error': None, 'data': None}
     try:
         get_all_data = getAllData("http://www.zdziyuan.com/inc/s_feifei3zuidam3u8/?p=%s")
-        if request.POST.get('flag'):
+        if request.GET.get('flag'):
             updata_count = get_all_data.run(flag=1)
         else:
             updata_count = get_all_data.run()
@@ -183,3 +183,9 @@ def url_clear(request):
 def test(request):
     db_test()
     return HttpResponse('test完成')
+
+def _auto_update():
+    get_all_data = getAllData("http://www.zdziyuan.com/inc/s_feifei3zuidam3u8/?p=%s")
+    updata_count = get_all_data.run()
+    current_time = time.strftime("%Y-%m-%d %H:%M:%S", time.localtime())
+    print('%s 更新%s条数据' % (current_time,updata_count))

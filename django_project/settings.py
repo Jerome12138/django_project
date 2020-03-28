@@ -42,7 +42,8 @@ INSTALLED_APPS = [
     'love',
     'novel',
     'blog',
-    'my_admin'
+    'my_admin',
+    'django_crontab',
 ]
 
 MIDDLEWARE = [
@@ -128,4 +129,10 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'collected_static')
 STATIC_URL = '/static/'
 STATICFILES_DIRS = (
     os.path.join(BASE_DIR, 'static'),
+)
+
+# 自动任务
+CRONTAB_COMMAND_PREFIX = 'LANG_ALL=zh_cn.UTF-8'
+CRONJOBS = (
+    ('58 11,15,21,23 * * *', 'video.admin_views._auto_update', '>>/logs/update.log'),   # >>表示追加写入，>表示覆盖写入。
 )

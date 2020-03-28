@@ -67,8 +67,8 @@ class SignIn(View):
                         ret['data'] = {'username': username}
                         request.session['username'] = username
                         request.session['is_login'] = True
-                        if not remember_me:
-                            request.session.set_expiry(0)
+                        if remember_me:
+                            request.session.set_expiry(43200)
                     else:
                         ret['error'] = '用户名或密码错误'
         except Exception as e:
