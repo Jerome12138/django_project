@@ -1,0 +1,54 @@
+{% extends "admin_layout.html" %}
+{% load change_date %}
+
+{% block title %}<title>后台管理 | 更新日志</title>{% endblock %}
+
+{% block css %}{% endblock %}
+
+
+{% block main %}
+<div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+    <div class="content-header">
+        <div class="container-fluid">
+            <div class="row mb-2">
+                <div class="col-12">
+                    <h3 class="m-0 text-dark" style="display: inline-block;">
+                        <a href="/video/admin/update_log/">
+                            <i class="nav-icon iconfont" aria-hidden="true">&#xe787;</i>更新日志&nbsp;&nbsp;
+                        </a>
+                    </h3>
+                </div><!-- /.col -->
+            </div><!-- /.row -->
+        </div><!-- /.container-fluid -->
+    </div>
+    <!-- /.content-header -->
+
+    <!-- Main content -->
+    <div class="content">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12">
+                    <!-- Main content -->
+                    <div class="invoice p-3 mb-3">
+                        <!-- title row -->
+                        <h4>更新日志</h4>
+                        <div style="white-space: pre-line;overflow-x: hidden;">{{ log }}</div>
+                        <!-- 翻页 -->
+                        <div style="clear: both;"></div>
+                        <ul class="stui-page text-center clearfix">
+                            {{ page_str }}
+                        </ul>
+                        <!-- end 翻页 -->
+                    </div>
+                    <!-- /.invoice -->
+                </div>
+            </div>
+            <!-- /.row -->
+        </div><!-- /.container-fluid -->
+    </div>
+    <!-- /.content -->
+</div>
+{% endblock %}
+
+{% block js %}{% endblock %}

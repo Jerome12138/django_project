@@ -131,9 +131,8 @@ STATICFILES_DIRS = (
     os.path.join(BASE_DIR, 'static'),
 )
 
-# 自动任务
+# 自动任务  >>表示追加写入，>表示覆盖写入。
 CRONTAB_COMMAND_PREFIX = 'LANG_ALL=zh_cn.UTF-8'
 CRONJOBS = (
     ('58 11,15,21,23 * * *', 'video.admin_views._auto_update', '>>/home/ubuntu/git/django_project/logs/update.log'),
-    ('*/5 12 * * *', 'video.admin_views._auto_update', '>>/home/ubuntu/git/django_project/logs/update.log'),# >>表示追加写入，>表示覆盖写入。
 )

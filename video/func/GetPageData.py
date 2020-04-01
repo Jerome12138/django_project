@@ -1,4 +1,4 @@
-import json
+import json,time
 import requests
 from lxml import etree
 from queue import Queue,LifoQueue
@@ -228,7 +228,7 @@ class getAllData(object):   # 获取所有数据
             t.start()
 
     def run(self,flag=0):  # 实现主要逻辑
-        print('--------开始更新--------')
+        print('--------%s 开始更新--------'%time.strftime("%Y-%m-%d %H:%M:%S", time.localtime()))
         # 获取更新数量
         if not flag:
             page_thread = 5
@@ -253,11 +253,11 @@ class getAllData(object):   # 获取所有数据
         print('已更新%s条数据' % (update_page*40))
         if self.error_pages != []:
             print('出现错误页面：', self.error_pages)
-        print('--------更新完成--------')
+        print('--------%s 更新完成--------'%time.strftime("%Y-%m-%d %H:%M:%S", time.localtime()))
         return update_page*40
 
     def run2(self,flag=0):  # 实现主要逻辑
-        print('--------开始更新url2--------')
+        print('--------%s 开始更新url2--------'%time.strftime("%Y-%m-%d %H:%M:%S", time.localtime()))
         # 获取更新数量
         if  not flag:
             page_thread = 5
@@ -283,5 +283,5 @@ class getAllData(object):   # 获取所有数据
         print('已更新%s条数据' % (update_page*40))
         if self.error_pages != []:
             print('出现错误页面：', self.error_pages)
-        print('--------url2更新完成--------')
+        print('--------%s url2更新完成--------'%time.strftime("%Y-%m-%d %H:%M:%S", time.localtime()))
         return update_page*40

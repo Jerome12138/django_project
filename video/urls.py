@@ -9,6 +9,7 @@ adminpatterns = [
     path('add_vod/', admin_views.add_vod),
     path('view_log/<str:log_date>/', admin_views.view_log),
     path('view_log/', admin_views.view_log),
+    path('update_log/', admin_views.update_log),
     path('update_video/', admin_views.update_video),
     path('update/', admin_views.update),
     path('update2/', admin_views.update2),

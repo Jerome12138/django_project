@@ -72,6 +72,27 @@ def add_vod(request):   # 添加视频数据
         return HttpResponse(json.dumps(ret))
 
 @auth
+def update_log(request):
+    log_path = 'logs/update.log'
+    log_str = load_log(log_path)
+    # 分页处理
+    page_index = int(request.GET.get('page')) if request.GET.get('page') else 1
+    data_list = log_str.split('\n')
+    data_count = len(data_list)
+    page = Page('/video/admin/update_log/?page=', page_index, data_count//100 + 1)
+    page_str = page.page_str()
+    log_list =page.video_page(data_list,100)
+    if log_list == -1:
+        return HttpResponse('请求错误')
+    log_str = '\n'.join(log_list)
+    return render(request, 'admin_update_log.html', {
+        "log": log_str,
+        'page_str': page_str,
+    })
+
+
+
+@auth
 def view_log(request, log_date=0):
     # 加载log文件
     if log_date == 0:
@@ -186,6 +207,4 @@ def test(request):
 
 def _auto_update():
     get_all_data = getAllData("http://www.zdziyuan.com/inc/s_feifei3zuidam3u8/?p=%s")
-    updata_count = get_all_data.run()
-    current_time = time.strftime("%Y-%m-%d %H:%M:%S", time.localtime())
-    print('%s 更新%s条数据' % (current_time,updata_count))
+    get_all_data.run()
