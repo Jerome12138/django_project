@@ -285,3 +285,16 @@ class getAllData(object):   # 获取所有数据
             print('出现错误页面：', self.error_pages)
         print('--------%s url2更新完成--------'%time.strftime("%Y-%m-%d %H:%M:%S", time.localtime()))
         return update_page*40
+
+class Iqiyi(object):
+    def __init__(self): # 初始化
+        pass
+
+    def i_search(self): # 搜索视频
+        pass
+
+    def i_album(self):  # 获取剧集列表
+        pass
+    
+    def i_video(self):  # 解析视频地址
+        pass

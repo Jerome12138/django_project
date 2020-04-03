@@ -110,7 +110,7 @@
                         data-accordion="false">
                         <!-- Add icons to the links using the .nav-icon class
                             with font-awesome or any other icon font library -->
-                        <li class="nav-item">
+                        <li class="nav-item has-treeview menu-open">
                             <a href="/video/admin/view_log/" class="nav-link">
                                 <i class="nav-icon iconfont" aria-hidden="true">&#xe787;</i>
                                 <p>
@@ -120,7 +120,7 @@
                             </a>
                             <ul class="nav nav-treeview">
                                 <li class="nav-item">
-                                    <a href="/video/admin/view_log/" class="nav-link active">
+                                    <a href="/video/admin/view_log/" class="nav-link">
                                         <i class="nav-icon iconfont" aria-hidden="true">&#xe789;</i>
                                         <p>访问日志</p>
                                     </a>
@@ -133,7 +133,7 @@
                                 </li>
                             </ul>
                         </li>
-                        <li class="nav-item has-treeview">
+                        <li class="nav-item has-treeview menu-open">
                             <a href="#" class="nav-link">
                                 <i class="nav-icon iconfont" aria-hidden="true">&#xe880;</i>
                                 <p>
@@ -143,7 +143,7 @@
                             </a>
                             <ul class="nav nav-treeview">
                                 <li class="nav-item">
-                                    <a href="/video/admin/update_video/" class="nav-link active">
+                                    <a href="/video/admin/update_video/" class="nav-link">
                                         <i class="nav-icon iconfont" aria-hidden="true">&#xe789;</i>
                                         <p>更新数据</p>
                                     </a>
@@ -183,6 +183,12 @@
                                         <p>小说</p>
                                     </a>
                                 </li>
+                                <li class="nav-item">
+                                    <a href="/video/play2/" class="nav-link">
+                                        <i class="nav-icon iconfont" aria-hidden="true">&#xe7b9;</i>
+                                        <p>自定义视频</p>
+                                    </a>
+                                </li>
                             </ul>
                         </li>
                     </ul>
@@ -216,6 +222,9 @@
     <script src="/static/plugins/bootstrap-4.4.1/bootstrap.bundle.min.js"></script>
     <!-- AdminLTE App -->
     <script src="/static/plugins/AdminLTE/adminlte.min.js"></script>
+    <script>
+        
+    </script>
     {% block js %}{% endblock %}
 </body>
 

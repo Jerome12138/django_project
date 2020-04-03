@@ -1,0 +1,156 @@
+{% extends "admin_layout.html" %}
+
+
+{% block title %}<title>后台管理 | 搜索</title>{% endblock %}
+
+{% block css %}{% endblock %}
+
+
+{% block main %}
+<div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+    <div class="content-header">
+        <div class="container-fluid">
+            <div class="row mb-2">
+                <div class="col-12">
+                    <h3 class="m-0 text-dark" style="display: inline-block;">
+                        <a href="/video/admin/get_request/">
+                            <i class="nav-icon iconfont" aria-hidden="true">&#xe787;</i>用户请求&nbsp;&nbsp;
+                        </a>
+                    </h3>
+                </div><!-- /.col -->
+            </div><!-- /.row -->
+        </div><!-- /.container-fluid -->
+    </div>
+    <!-- /.content-header -->
+
+    <!-- Main content -->
+    <div class="content">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12">
+                    <!-- Main content -->
+                    <div class="invoice p-2 mb-3">
+                        <!-- title row -->
+                        <h4>共{{ data_count }}条请求</h4>
+                        <div class="video_list">
+                            <ul class="tt">
+                                <li>
+                                    <span class="v-list-1">影片名称</span>
+                                    <span class="v-list-2">影片类别</span>
+                                    <span class="v-list-4">操作</span>
+                                    <span class="hidden-xs v-list-3">更新时间</span>
+                                </li>
+                            </ul>
+                            {% for item in request_list %}
+                            <ul class="td">
+                                <li>
+                                    <span style="display: none;">{{ item.vod_id }}</span>
+                                    <!-- 影片名称 -->
+                                    <span class="v-list-1">
+                                        <a href="http://www.zuidazy2.com/?m=vod-detail-id-{{ item.vod_id }}.html"
+                                            target="_blank" title="{{ item.vod_name}}({{ item.vod_continu}})">
+                                            <span style="border:none!important">{{ item.vod_name}}</span>
+                                            <span class="hidden-xs"
+                                                style="border:none!important">{{ item.vod_continu}}</span>
+                                        </a>
+                                    </span>
+                                    <!-- 影片类别 -->
+                                    <span class="v-list-2">{{ item.list_name}}</span>
+                                    <!-- 操作 -->
+                                    <span class="v-list-4">
+                                        {% if item.is_add == 0 %}
+                                        <a href="javascript:void(0)" class="add_btn"
+                                            style="color: red;border-bottom:red 1px solid;">添加资源</a>&nbsp;
+                                        {% else %}
+                                        <a href="javascript:void(0)" class="add_btn"
+                                            style="color: grey;border-bottom:grey 1px solid;">添加资源</a>&nbsp;
+                                        {% endif %}
+                                        <a href="javascript:void(0)" class="del_btn"
+                                            style="color: red;border-bottom:red 1px solid;">删除</a>
+                                    </span>
+                                    <!-- 更新时间 -->
+                                    <span class="v-list-3 hidden-xs">{{ item.vod_addtime}}</span>
+                                </li>
+                            </ul>
+                            {% endfor%}
+                            <!-- 翻页 -->
+                            <div style="clear: both;"></div>
+                            <ul class="stui-page text-center clearfix">
+                                {{ page_str }}
+                            </ul>
+                            <!-- end 翻页 -->
+                        </div>
+                    </div>
+                    <!-- /.invoice -->
+                </div>
+            </div>
+            <!-- /.row -->
+        </div><!-- /.container-fluid -->
+    </div>
+    <!-- /.content -->
+</div>
+{% endblock %}
+
+{% block js %}
+
+<script src='/static/jquery/jquery.cookie.js'></script>
+<script>
+    $('.add_btn').click(function () {
+        // var res = confirm('确认添加？');
+        $(this).css('color', 'grey')
+        $(this).css('border-bottom', 'grey 1px solid')
+        if (true) {
+            $.ajax({
+                url: '/video/admin/add_vod/',
+                type: "POST",
+                headers: { "X-CSRFToken": $.cookie('csrftoken') },
+                data: {
+                    'vod_id': $(this).parent().prev().prev().prev().text(),
+                }, // 要提交的数据
+                dataType: 'JSON',                 // 自动将接收到的data反序列化成obj返回
+                success: function (obj) {
+                    if (obj.status) {
+                        // alert(obj.data)
+                        location.reload();
+                    } else {
+                        alert(obj.error)
+                        $('#error_msg').text(obj.error)         // 将收到的错误信息传给error_msg标签
+                    }
+                },
+                error: function () {
+                    alert("添加请求出现未知错误")
+                    console.log("添加请求出现未知错误")
+                    //后台未接收到请求或未返回数据等未知错误
+                }
+            })
+        };
+    })
+    $('.del_btn').click(function () {
+        // var res = confirm('确认删除？');
+        if (true) {
+            $.ajax({
+                url: '/video/admin/del_request/',
+                type: "POST",
+                headers: { "X-CSRFToken": $.cookie('csrftoken') },
+                data: {
+                    'vod_id': $(this).parent().prev().prev().prev().text(),
+                }, // 要提交的数据
+                dataType: 'JSON',                 // 自动将接收到的data反序列化成obj返回
+                success: function (obj) {
+                    if (obj.status) {
+                        // alert('删除成功！')
+                        location.reload();
+                    } else {
+                        $('#error_msg').text(obj.error)         // 将收到的错误信息传给error_msg标签
+                    }
+                },
+                error: function () {
+                    console.log("删除请求未知错误")
+                    //后台未接收到请求或未返回数据等未知错误
+                }
+            })
+        };
+    })
+</script>
+{% endblock %}

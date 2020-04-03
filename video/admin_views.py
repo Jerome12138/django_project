@@ -205,6 +205,7 @@ def test(request):
     db_test()
     return HttpResponse('test完成')
 
+@auth
 def _auto_update():
     get_all_data = getAllData("http://www.zdziyuan.com/inc/s_feifei3zuidam3u8/?p=%s")
     get_all_data.run()

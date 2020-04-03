@@ -2,7 +2,13 @@
 
 {% block title %}<title>后台管理 | 更新视频</title>{% endblock %}
 
-{% block css %}{% endblock %}
+{% block css %}
+<style>
+    .row .invoice a{
+        margin-right: 30px;border-bottom:blue 1px solid;color: blue;
+    }
+</style>
+{% endblock %}
 
 
 {% block main %}
@@ -32,14 +38,30 @@
                     <div class="invoice p-3 mb-3">
                         <!-- title row -->
                         <h4>
-                            <a href="javascript:;" id='update' style="margin-right: 30px;border-bottom:blue 1px solid;color: blue;">更新今日</a>
-                            <a href="javascript:;" id='update-all' style="margin-right: 30px;border-bottom:blue 1px solid;color: blue;">更新所有</a>
-                            
+                            <a href="http://www.zuidazy5.com/">最大资源网</a>
+                            >>>>>>>
+                            <a href="javascript:;" id='update' >更新今日</a>
+                            <a href="javascript:;" id='update-all'>更新所有</a>
                         </h4>
                         <h4>
-                            <a href="javascript:;" id='update_url2' style="margin-right: 30px;border-bottom:blue 1px solid;color: blue;">更新url2</a>
+                            <a href="http://bajieziyuan.com/">八戒资源网</a>
+                            >>>>>>>
+                            <a href="javascript:;" id='update_url2'>更新url2</a>
                         </h4>
                         <span class="error-msg"></span>
+                    </div>
+                    <!-- /.invoice -->
+                    <div class="invoice p-3 mb-3">
+                        <form class="ml-3" action="https://www.administratorw.com/admin.php?url=">
+                            <div class="input-group input-group-sm">
+                                <input type="text" class="form-control form-control-navbar" name="url" id="url"  placeholder="【播放支持搜索★乐视视频网址★奇艺视频网址★腾讯视频网址★芒果视频网址★优酷视频网址】">
+                                <div class="input-group-append">
+                                    <button class="btn btn-outline-secondary" type="submit">
+                                        <i class="iconfont" aria-hidden="true">&#xe8ef;</i>
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
                     </div>
                     <!-- /.invoice -->
                 </div>
