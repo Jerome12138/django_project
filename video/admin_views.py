@@ -2,7 +2,7 @@ from django.shortcuts import render, redirect, HttpResponse
 from django.http.response import JsonResponse
 
 from video import models
-from .func.GetPageData import *
+from .func.GetPageData import get_vod_data,getAllData
 from .func.db_handler import *
 from .func.pagination import Page
 import time

@@ -2,7 +2,7 @@ from django.shortcuts import render, redirect, HttpResponse
 from django.http.response import JsonResponse
 
 from video import models
-from .func.GetPageData import *
+from .func.GetPageData import get_data_list,IQiyi
 from .func.db_handler import *
 from .func.pagination import Page
 import time
@@ -213,3 +213,50 @@ def push_request(request):  # 提交请求给管理员
         ret['error'] = "未知错误"
     finally:
         return HttpResponse(json.dumps(ret))
+
+def i_search(request):
+    iqiyi = IQiyi()
+    if request.method == "POST":    # 搜索方式
+        wd = request.POST.get('wd')
+        page_index = 1
+    elif request.method == "GET":   # 翻页方式
+        wd = request.GET.get('wd')
+        page_index = int(request.GET.get('page'))
+    data_list = iqiyi.i_search(wd)
+    # 分页
+    data_count = len(data_list)
+    page = Page(request.path_info+'?wd=%s&page=' %
+                wd, page_index, data_count//24 + 1)
+    page_str = page.page_str()
+    video_list =page.video_page(data_list,24)
+    if video_list == -1:
+        return HttpResponse('请求错误')
+    #end 分页
+    return render(request, 'video_i_search.html', {
+        "video_list": video_list,
+        'page_str': page_str,
+        "data_count": data_count,
+        'wd': wd
+    })
+
+def i_play(request):
+    iqiyi = IQiyi()
+    url = request.GET.get('url')
+    page_index = int(request.GET.get('page')) if request.GET.get('page') else 1
+    if url.endswith('?src=search'):
+        data_list = iqiyi.i_album(url)
+        # 分页
+        data_count = len(data_list)
+        page = Page(request.path_info+'?page=', page_index, data_count//24 + 1)
+        page_str = page.page_str()
+        video_list =page.video_page(data_list,24)
+        if video_list == -1:
+            return HttpResponse('请求错误')
+        #end 分页
+        return render(request, 'video_i_album.html', {
+            "video_list": video_list,
+            'page_str': page_str,
+            "data_count": data_count,
+        })
+    else:
+        return redirect(iqiyi.i_video(url))

@@ -5,56 +5,45 @@ from queue import Queue,LifoQueue
 import threading
 from .db_handler import dump_bulk_data,dump_bulk_data_url2
 
-
-class GetPageData(object):  # 爬取网页数据，返回html数据
-    def __init__(self, url):
-        self.url = url
+class GetWebData(object):  # 爬取网页数据，返回html数据
+    def __init__(self):
         self.headers = {
-            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/71.0.3578.98 Safari/537.36"
+            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.149 Safari/537.36"
         }
 
-    def get(self, *args, **kwargs):  # 实现主要逻辑
-        # 2.发送请求，获取响应
-        res = requests.get(self.url, headers=self.headers)
-        assert res.status_code == 200
-        html_str = res.content.decode()
-        # 3.提取数据
-        html = etree.HTML(html_str)
-        # 4.保存数据
-        return html
-
-    def post(self, *args, **kwargs):  # 实现主要逻辑
-        # 1.设置起始url
-        # 2.发送请求，获取响应
-        res = requests.post(self.url, headers=self.headers,
-                            data=kwargs)
+    def get_html(self,url, *args, **kwargs):  # 实现主要逻辑
+        res = requests.get(url, headers=self.headers)
         assert res.status_code == 200
         html_str = res.content.decode()
         # with open('abc.html','w',encoding="utf-8") as f:
         #     f.write(html_str)
-        # 3.提取数据
         html = etree.HTML(html_str)
-        # 4.保存数据
         return html
 
-    def get_json_data(self):
-        # 2.发送请求，获取响应
-        json_str = requests.get(
-            self.url, headers=self.headers).content.decode()
-        # 3.提取数据
-        ret_dict = json.loads(json_str)
-        if ret_dict['status'] != 200:
-            print(ret_dict)
-            print('AssertionError')
-            assert ret_dict['status'] == 200
-        return ret_dict
+    def get_json(self,url):
+        i = 0
+        while i < 3:
+            try:
+                response = requests.get(
+                    url, headers=self.headers, timeout=(3, 15))
+                if response.status_code != 200:
+                    print('Status Code：',response.status_code)
+                    return False
+                res_json = json.loads(response.content.decode())
+                return res_json
+            except requests.exceptions.RequestException:
+                i += 1
+                print('page%s请求超时，重试%s次' % (url.split('?p=')[1], i))
+            except json.decoder.JSONDecodeError:
+                print('page%s jSON解析错误，已添加至错误列表' % url.split('?p=')[1])
+        return False
+
 
 
 def get_vod_data(vod_id):   # 根据vod_id爬取数据，返回数据字典
     # 1.获取数据
-    url = "http://www.zuidazy2.com/?m=vod-detail-id-%s.html" % vod_id
-    get_page_data = GetPageData(url)
-    html = get_page_data.get()
+    get_web_data = GetWebData()
+    html = get_web_data.get_html("http://www.zuidazy2.com/?m=vod-detail-id-%s.html" % vod_id)
     # 2.转化数据
     data = {}
     data['vod_id'] = vod_id
@@ -92,9 +81,8 @@ def get_vod_data(vod_id):   # 根据vod_id爬取数据，返回数据字典
 
 
 def get_data_list(wd, page_index=1):    # 获取搜索列表
-    get_page_data = GetPageData(
-        "http://zuidazy2.com/index.php?m=vod-search-pg-%s-wd-%s.html" % (page_index, wd))
-    html = get_page_data.get()
+    get_web_data = GetWebData()
+    html = get_web_data.get_html("http://zuidazy2.com/index.php?m=vod-search-pg-%s-wd-%s.html" % (page_index, wd))
     data_list = html.xpath('//div[@class="xing_vb"]/ul//span[@class="tt"]/..')
     data_count = int(html.xpath(
         '//div[@class="nvc"]//dd/span[2]/text()')[0].strip())
@@ -123,9 +111,8 @@ def get_data_list(wd, page_index=1):    # 获取搜索列表
 def get_update_count():   # 获取今日更新数量
     try:
         # 1.获取数据
-        url = "http://www.zuidazy2.com/"
-        get_page_data = GetPageData(url)
-        html = get_page_data.get()
+        get_web_data = GetWebData()
+        html = get_web_data.get_html("http://www.zuidazy2.com/")
         # 2.转化数据
         x_update = html.xpath("//li[contains(text(),'今日更新：')]/strong/text()")
         update_count = int(x_update[0]) if x_update != [] else 480
@@ -148,31 +135,13 @@ class getAllData(object):   # 获取所有数据
     def __init__(self, url,url_index=1):
         self.url_temp = url
         self.url_index = url_index
-        self.headers = {
-            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.149 Safari/537.36"}
+        self.get_web_data = GetWebData()
         self.url_queue = LifoQueue()
         self.page_queue = Queue()
         self.error_pages = []
 
     def parse_url(self, url):  # 发送请求，获取响应
-        i = 0
-        while i < 5:
-            try:
-                response = requests.get(
-                    url, headers=self.headers, timeout=(3, 15))
-                if response.status_code != 200:
-                    print('Status Code：',response.status_code)
-                    break
-                res_dict = json.loads(response.content.decode())
-                return res_dict
-            except requests.exceptions.RequestException:
-                i += 1
-                print('page%s请求超时，重试%s次' % (url.split('?p=')[1], i))
-            except json.decoder.JSONDecodeError:
-                # print(response.content.decode())
-                print('page%s jSON解析错误，已添加至错误列表' % url.split('?p=')[1])
-                # self.error_pages.append(url)
-        return False
+        return self.get_web_data.get_json(url)
 
     def get_first_page(self):   # 获取首页数据
         # 1.设置起始url
@@ -286,15 +255,36 @@ class getAllData(object):   # 获取所有数据
         print('--------%s url2更新完成--------'%time.strftime("%Y-%m-%d %H:%M:%S", time.localtime()))
         return update_page*40
 
-class Iqiyi(object):
+class IQiyi(object):
     def __init__(self): # 初始化
-        pass
+        self.get_web_data = GetWebData()
 
-    def i_search(self): # 搜索视频
-        pass
+    def i_search(self,wd): # 搜索视频
+        html = self.get_web_data.get_html('https://so.iqiyi.com/so/q_'+wd)
+        x_vod_list = html.xpath('//div[@class="qy-search-result-con"]/div[@class="layout-main"]/div[@desc="搜索列表"]/div[@desc="card"]')
+        vod_list = []
+        print(len(x_vod_list))
+        for x_vod in x_vod_list:
+            vod_dict = {}
+            x_vod_type = x_vod.xpath('.//h3[contains(@class,"qy-search-result-tit")]/span[@class="item-type"]/text()')
+            vod_dict['vod_type'] = x_vod_type[0] if x_vod_type != [] else ""
+            if vod_dict['vod_type'] !="电影" and vod_dict['vod_type'] !="电视剧":
+                continue
+            vod_detail = x_vod.xpath('.//div[@class="result-figure"]//a[@class="qy-mod-link"]')[0]
+            vod_dict['vod_href'] = "https:"+vod_detail.xpath('./@href')[0]
+            vod_dict['vod_pic'] = "https:"+vod_detail.xpath('./img/@src')[0]
+            vod_dict['vod_name'] = vod_detail.xpath('./@title')[0]
+            vod_dict['vod_continu'] = vod_detail.xpath('.//span[@class="qy-mod-label"]/text()')[0]
+            vod_list.append(vod_dict)
+        return vod_list
 
-    def i_album(self):  # 获取剧集列表
-        pass
+    def i_album(self,vod_detail_url):  # 获取剧集列表
+        html = self.get_web_data.get_html(vod_detail_url)
+        album_id = html.xpath('//div[contains(@class,"album-head-info")]//div[contains(@class,"intro-effect")]/@data-score-tvid')[0]
+        res_json = self.get_web_data.get_json('https://pcw-api.iqiyi.com/albums/album/avlistinfo?aid=%s&page=1&size=1000'%album_id)
+        vod_list = res_json['data']['epsodelist']
+        return vod_list
     
-    def i_video(self):  # 解析视频地址
-        pass
+    def i_video(self,vod_url):  # 解析视频地址
+        base_url = "https://www.administrator5.com/admin.php?url="
+        return base_url+vod_url
