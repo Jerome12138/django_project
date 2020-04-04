@@ -3,7 +3,7 @@ from django.http.response import JsonResponse
 
 from video import models
 from .func.GetPageData import get_vod_data,getAllData
-from .func.db_handler import *
+from .func.db_handler import dump_vod_data,update_request_data,load_request_data,del_request_data,load_log,clear_url2,clear_url,db_test
 from .func.pagination import Page
 import time
 import json
@@ -161,9 +161,9 @@ def update(request):    # 更新视频数据 最大资源网
     ret = {'status': True, 'error': None, 'data': None}
     try:
         get_all_data = getAllData("http://www.zdziyuan.com/inc/s_feifei3zuidam3u8/?p=%s")
-        if request.GET.get('flag'):
+        if request.GET.get('flag'):    # 更新全部
             updata_count = get_all_data.run(flag=1)
-        else:
+        else:   # 更新当日
             updata_count = get_all_data.run()
         ret['data'] = '已更新%s条数据' % updata_count
     except Exception as e:
@@ -179,9 +179,9 @@ def update2(request):   # 更新第二url(八戒资源网)
     try:
         get_all_data = getAllData("http://cj.bajiecaiji.com/inc/feifei3bjm3u8/index.php?p=%s",2)
         if request.POST.get('flag'): # 更新全部
-            updata_count = get_all_data.run2(flag=1)
+            updata_count = get_all_data.run(flag=1)
         else:   # 更新当日
-            updata_count = get_all_data.run2(flag=1)
+            updata_count = get_all_data.run()
         ret['data'] = '已更新%s条数据' % updata_count
     except Exception as e:
         print(e)
@@ -209,3 +209,5 @@ def test(request):
 def _auto_update():
     get_all_data = getAllData("http://www.zdziyuan.com/inc/s_feifei3zuidam3u8/?p=%s")
     get_all_data.run()
+    get_all_data2 = getAllData("http://cj.bajiecaiji.com/inc/feifei3bjm3u8/index.php?p=%s",2)
+    get_all_data2.run()

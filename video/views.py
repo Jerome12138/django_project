@@ -3,7 +3,7 @@ from django.http.response import JsonResponse
 
 from video import models
 from .func.GetPageData import get_data_list,IQiyi
-from .func.db_handler import *
+from .func.db_handler import load_vod_data,load_all_vod_data,dump_request_data,search_data,load_type_data
 from .func.pagination import Page
 import time
 import json
@@ -214,7 +214,7 @@ def push_request(request):  # 提交请求给管理员
     finally:
         return HttpResponse(json.dumps(ret))
 
-def i_search(request):
+def i_search(request):  # 爱奇艺搜索
     iqiyi = IQiyi()
     if request.method == "POST":    # 搜索方式
         wd = request.POST.get('wd')
@@ -239,7 +239,7 @@ def i_search(request):
         'wd': wd
     })
 
-def i_play(request):
+def i_play(request):    # 爱奇艺播放
     iqiyi = IQiyi()
     url = request.GET.get('url')
     page_index = int(request.GET.get('page')) if request.GET.get('page') else 1
@@ -259,4 +259,6 @@ def i_play(request):
             "data_count": data_count,
         })
     else:
+        # iqiyi.i_jeixi(url)
+        # return HttpResponse('test')
         return redirect(iqiyi.i_video(url))

@@ -5,7 +5,7 @@
 {% block css %}
 <style>
     .row .invoice a{
-        margin-right: 30px;border-bottom:blue 1px solid;color: blue;
+        margin: 0 10px;border-bottom:blue 1px solid;color: blue;
     }
 </style>
 {% endblock %}
@@ -39,14 +39,15 @@
                         <!-- title row -->
                         <h4>
                             <a href="http://www.zuidazy5.com/">最大资源网</a>
-                            >>>>>>>
+                            >>>>>>
                             <a href="javascript:;" id='update' >更新今日</a>
                             <a href="javascript:;" id='update-all'>更新所有</a>
                         </h4>
                         <h4>
                             <a href="http://bajieziyuan.com/">八戒资源网</a>
-                            >>>>>>>
-                            <a href="javascript:;" id='update_url2'>更新url2</a>
+                            >>>>>>
+                            <a href="javascript:;" id='update_url2'>更新今日</a>
+                            <a href="javascript:;" id='update-all_url2'>更新所有</a>
                         </h4>
                         <span class="error-msg"></span>
                     </div>
@@ -164,5 +165,29 @@
             })
         };
     })
+    $('#update-all_url2').click(function () {
+        $(this).css('color', 'grey')
+        $(this).css('border-bottom', 'grey 1px solid')
+        if (true) {
+            $.ajax({
+                url: '/video/admin/update2/',
+                type: "POST",
+                headers: { "X-CSRFToken": $.cookie('csrftoken') },
+                data: {'flag':1}, // 要提交的数据
+                dataType: 'JSON',                 // 自动将接收到的data反序列化成obj返回
+                success: function (obj) {
+                    if (obj.status) {
+                        alert(obj.data)
+                    } else {
+                        alert(obj.error)
+                    }
+                },
+                error: function () {
+                    $('.error-msg').text("update请求出现未知错误")
+                    //后台未接收到请求或未返回数据等未知错误
+                }
+            })
+        };
+    });
 </script>
 {% endblock %}

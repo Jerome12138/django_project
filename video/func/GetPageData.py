@@ -1,9 +1,11 @@
-import json,time
+import json,re
+import time
 import requests
 from lxml import etree
-from queue import Queue,LifoQueue
+from queue import Queue, LifoQueue
 import threading
-from .db_handler import dump_bulk_data,dump_bulk_data_url2
+from .db_handler import dump_bulk_data, dump_bulk_data_url2
+
 
 class GetWebData(object):  # 爬取网页数据，返回html数据
     def __init__(self):
@@ -11,23 +13,25 @@ class GetWebData(object):  # 爬取网页数据，返回html数据
             "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.149 Safari/537.36"
         }
 
-    def get_html(self,url, *args, **kwargs):  # 实现主要逻辑
+    def get_html(self, url, *args, **kwargs):  # 实现主要逻辑
+        if kwargs.get('referer'):
+            self.headers['Referer'] = kwargs['referer']
         res = requests.get(url, headers=self.headers)
         assert res.status_code == 200
         html_str = res.content.decode()
-        # with open('abc.html','w',encoding="utf-8") as f:
-        #     f.write(html_str)
+        with open('abc.html','w',encoding="utf-8") as f:
+            f.write(html_str)
         html = etree.HTML(html_str)
         return html
 
-    def get_json(self,url):
+    def get_json(self, url):
         i = 0
         while i < 3:
             try:
                 response = requests.get(
                     url, headers=self.headers, timeout=(3, 15))
                 if response.status_code != 200:
-                    print('Status Code：',response.status_code)
+                    print('Status Code：', response.status_code)
                     return False
                 res_json = json.loads(response.content.decode())
                 return res_json
@@ -39,11 +43,11 @@ class GetWebData(object):  # 爬取网页数据，返回html数据
         return False
 
 
-
 def get_vod_data(vod_id):   # 根据vod_id爬取数据，返回数据字典
     # 1.获取数据
     get_web_data = GetWebData()
-    html = get_web_data.get_html("http://www.zuidazy2.com/?m=vod-detail-id-%s.html" % vod_id)
+    html = get_web_data.get_html(
+        "http://www.zuidazy2.com/?m=vod-detail-id-%s.html" % vod_id)
     # 2.转化数据
     data = {}
     data['vod_id'] = vod_id
@@ -82,7 +86,8 @@ def get_vod_data(vod_id):   # 根据vod_id爬取数据，返回数据字典
 
 def get_data_list(wd, page_index=1):    # 获取搜索列表
     get_web_data = GetWebData()
-    html = get_web_data.get_html("http://zuidazy2.com/index.php?m=vod-search-pg-%s-wd-%s.html" % (page_index, wd))
+    html = get_web_data.get_html(
+        "http://zuidazy2.com/index.php?m=vod-search-pg-%s-wd-%s.html" % (page_index, wd))
     data_list = html.xpath('//div[@class="xing_vb"]/ul//span[@class="tt"]/..')
     data_count = int(html.xpath(
         '//div[@class="nvc"]//dd/span[2]/text()')[0].strip())
@@ -108,22 +113,6 @@ def get_data_list(wd, page_index=1):    # 获取搜索列表
     return video_list, data_count
 
 
-def get_update_count():   # 获取今日更新数量
-    try:
-        # 1.获取数据
-        get_web_data = GetWebData()
-        html = get_web_data.get_html("http://www.zuidazy2.com/")
-        # 2.转化数据
-        x_update = html.xpath("//li[contains(text(),'今日更新：')]/strong/text()")
-        update_count = int(x_update[0]) if x_update != [] else 480
-        print("今日更新：",update_count)
-    except Exception as e:
-        print("获取更新数量出错：%s" % e)
-        update_count = 480
-    finally:
-        return update_count
-
-
 def run_forever(func):  # 无限循环运行
     def wrapper(obj):
         while True:
@@ -132,7 +121,7 @@ def run_forever(func):  # 无限循环运行
 
 
 class getAllData(object):   # 获取所有数据
-    def __init__(self, url,url_index=1):
+    def __init__(self, url, url_index=1):
         self.url_temp = url
         self.url_index = url_index
         self.get_web_data = GetWebData()
@@ -142,6 +131,28 @@ class getAllData(object):   # 获取所有数据
 
     def parse_url(self, url):  # 发送请求，获取响应
         return self.get_web_data.get_json(url)
+
+    def get_update_count(self,url_index):   # 获取今日更新数量
+        try:
+            # 1.匹配来源
+            if url_index == 1:
+                url = "http://www.zuidazy2.com/"
+                x_match = "//li[contains(text(),'今日更新：')]/strong/text()"
+            else:
+                url = "http://bajieziyuan.com/"
+                x_match = "//a[contains(string(),'今日更新：')]/font[2]/text()"
+            # 2.获取数据
+            get_web_data = GetWebData()
+            html = get_web_data.get_html(url)
+            # 3.转化数据
+            x_update = html.xpath(x_match)
+            update_count = int(x_update[0]) if x_update != [] else 480
+            print("站点%s今日更新：" % url_index, update_count)
+        except Exception as e:
+            print("获取更新数量出错：%s" % e)
+            update_count = 480
+        finally:
+            return update_count
 
     def get_first_page(self):   # 获取首页数据
         # 1.设置起始url
@@ -171,16 +182,17 @@ class getAllData(object):   # 获取所有数据
             self.error_pages.append(url.split('?p=')[1])
         else:
             if int(url.split('?p=')[1]) % 100 == 0:
-                print('获取到page:', url.split('?p=')[1])   
+                print('获取到page:', url.split('?p=')[1])
             self.page_queue.put(res_dict)
         self.url_queue.task_done()
 
     @run_forever
     def save_data(self):    # 保存数据至数据库
         res_dict = self.page_queue.get()
-        if self.url_index ==1:
+        # 匹配站点
+        if self.url_index == 1:
             is_saved = dump_bulk_data(res_dict['data'])
-        elif self.url_index==2:
+        elif self.url_index == 2:
             is_saved = dump_bulk_data_url2(res_dict['data'])
         if not is_saved:
             print('%s保存出现错误' % res_dict['page']['pageindex'])
@@ -196,16 +208,17 @@ class getAllData(object):   # 获取所有数据
             t.setDaemon(True)
             t.start()
 
-    def run(self,flag=0):  # 实现主要逻辑
-        print('--------%s 开始更新--------'%time.strftime("%Y-%m-%d %H:%M:%S", time.localtime()))
+    def run(self, flag=0):  # 实现主要逻辑
+        print('--------%s 站点%s开始更新--------' %
+              (time.strftime("%Y-%m-%d %H:%M:%S", time.localtime()), self.url_index))
         # 获取更新数量
         if not flag:
             page_thread = 5
             save_thread = 3
-            update_count = get_update_count()
+            update_count = self.get_update_count(self.url_index)
             update_page = (update_count-1)//40 + 1
         else:   # 更新所有数据
-        # 获取首页数据
+            # 获取首页数据
             update_page = self.get_first_page()
             page_thread = 30
             save_thread = 10
@@ -222,69 +235,62 @@ class getAllData(object):   # 获取所有数据
         print('已更新%s条数据' % (update_page*40))
         if self.error_pages != []:
             print('出现错误页面：', self.error_pages)
-        print('--------%s 更新完成--------'%time.strftime("%Y-%m-%d %H:%M:%S", time.localtime()))
+        print('--------%s 站点%s更新完成--------' %
+              (time.strftime("%Y-%m-%d %H:%M:%S", time.localtime()), self.url_index))
         return update_page*40
 
-    def run2(self,flag=0):  # 实现主要逻辑
-        print('--------%s 开始更新url2--------'%time.strftime("%Y-%m-%d %H:%M:%S", time.localtime()))
-        # 获取更新数量
-        if  not flag:
-            page_thread = 5
-            save_thread = 3
-            update_count = get_update_count()
-            update_page = (update_count-1)//40 + 1
-        else:   # 更新所有数据
-        # 获取首页数据
-            update_page = self.get_first_page()
-            # update_page = 5
-            page_thread = 30
-            save_thread = 10
-            if not update_page:
-                return False
-        if update_page:
-            # 获取下页数据
-            self.add_url_to_queue(update_page)
-            self.run_use_more_thread(self.add_page_to_queue, page_thread)
-            self.run_use_more_thread(self.save_data, save_thread)
-            # 等待线程结束
-            self.url_queue.join()
-            self.page_queue.join()
-        print('已更新%s条数据' % (update_page*40))
-        if self.error_pages != []:
-            print('出现错误页面：', self.error_pages)
-        print('--------%s url2更新完成--------'%time.strftime("%Y-%m-%d %H:%M:%S", time.localtime()))
-        return update_page*40
 
-class IQiyi(object):
-    def __init__(self): # 初始化
+class IQiyi(object):  # 爱奇艺视频搜索及解析
+    def __init__(self):  # 初始化
         self.get_web_data = GetWebData()
 
-    def i_search(self,wd): # 搜索视频
+    def i_search(self, wd):  # 搜索视频
         html = self.get_web_data.get_html('https://so.iqiyi.com/so/q_'+wd)
-        x_vod_list = html.xpath('//div[@class="qy-search-result-con"]/div[@class="layout-main"]/div[@desc="搜索列表"]/div[@desc="card"]')
+        x_vod_list = html.xpath(
+            '//div[@class="qy-search-result-con"]/div[@class="layout-main"]/div[@desc="搜索列表"]/div[@desc="card"]')
         vod_list = []
         print(len(x_vod_list))
         for x_vod in x_vod_list:
             vod_dict = {}
-            x_vod_type = x_vod.xpath('.//h3[contains(@class,"qy-search-result-tit")]/span[@class="item-type"]/text()')
+            x_vod_type = x_vod.xpath(
+                './/h3[contains(@class,"qy-search-result-tit")]/span[@class="item-type"]/text()')
             vod_dict['vod_type'] = x_vod_type[0] if x_vod_type != [] else ""
-            if vod_dict['vod_type'] !="电影" and vod_dict['vod_type'] !="电视剧":
+            if vod_dict['vod_type'] != "电影" and vod_dict['vod_type'] != "电视剧":
                 continue
-            vod_detail = x_vod.xpath('.//div[@class="result-figure"]//a[@class="qy-mod-link"]')[0]
+            vod_detail = x_vod.xpath(
+                './/div[@class="result-figure"]//a[@class="qy-mod-link"]')[0]
             vod_dict['vod_href'] = "https:"+vod_detail.xpath('./@href')[0]
             vod_dict['vod_pic'] = "https:"+vod_detail.xpath('./img/@src')[0]
             vod_dict['vod_name'] = vod_detail.xpath('./@title')[0]
-            vod_dict['vod_continu'] = vod_detail.xpath('.//span[@class="qy-mod-label"]/text()')[0]
+            vod_dict['vod_continu'] = vod_detail.xpath(
+                './/span[@class="qy-mod-label"]/text()')[0]
             vod_list.append(vod_dict)
         return vod_list
 
-    def i_album(self,vod_detail_url):  # 获取剧集列表
+    def i_album(self, vod_detail_url):  # 获取剧集列表
         html = self.get_web_data.get_html(vod_detail_url)
-        album_id = html.xpath('//div[contains(@class,"album-head-info")]//div[contains(@class,"intro-effect")]/@data-score-tvid')[0]
-        res_json = self.get_web_data.get_json('https://pcw-api.iqiyi.com/albums/album/avlistinfo?aid=%s&page=1&size=1000'%album_id)
+        album_id = html.xpath(
+            '//div[contains(@class,"album-head-info")]//div[contains(@class,"intro-effect")]/@data-score-tvid')[0]
+        res_json = self.get_web_data.get_json(
+            'https://pcw-api.iqiyi.com/albums/album/avlistinfo?aid=%s&page=1&size=1000' % album_id)
         vod_list = res_json['data']['epsodelist']
         return vod_list
-    
-    def i_video(self,vod_url):  # 解析视频地址
+
+    def i_video(self, vod_url):  # 解析视频地址
         base_url = "https://www.administrator5.com/admin.php?url="
+        # https://www.administrator5.com/admin.php
+        # https://www.xn--eqr49pmpixzv.com/index.php
         return base_url+vod_url
+    
+    def i_jeixi(self,vod_url):
+        base_url = "https://www.administratorm.com/WANG.WANG/index.php?url="+vod_url
+        referer = "https://www.administratorm.com/index.php?url="+vod_url
+        html = self.get_web_data.get_html(base_url,referer=referer)
+        x_script = html.xpath('//script[contains(text(),"var vkey =")]/text()')
+        if x_script:
+            script_str = x_script[0]
+            vkey = re.search(r"(var\svkey\s\=\s\'\S*?\')", script_str).group().split("'")[1]
+            
+            print(vkey)
+        else:
+            print('无数据')

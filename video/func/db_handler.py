@@ -1,6 +1,5 @@
 from video import models
 import json
-from django.db.models import Q
 
 
 def dump_vod_data(vod_data):    # 将视频数据保存至数据库
