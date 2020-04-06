@@ -1,0 +1,412 @@
+[2020-04-06 11:28:18,753] [INFO]- D:\Code\Git\django_project\django_project\settings.py changed, reloading.
+[2020-04-06 11:28:19,780] [INFO]- Watching for file changes with StatReloader
+[2020-04-06 11:28:54,678] [INFO]- D:\Code\Git\django_project\django_project\settings.py changed, reloading.
+[2020-04-06 11:28:55,801] [INFO]- Watching for file changes with StatReloader
+[2020-04-06 11:29:34,276] [INFO]- "GET /video/admin/update_log/ HTTP/1.1" 200 14234
+[2020-04-06 11:29:37,157] [INFO]- "GET /video/admin/update_video/ HTTP/1.1" 200 20050
+[2020-04-06 11:30:14,848] [WARNING]- Not Found: /admin/upload/
+[2020-04-06 11:30:14,849] [WARNING]- "POST /admin/upload/ HTTP/1.1" 404 3345
+[2020-04-06 11:30:15,294] [WARNING]- Not Found: /favicon.ico
+[2020-04-06 11:30:15,295] [WARNING]- "GET /favicon.ico HTTP/1.1" 404 2634
+[2020-04-06 11:30:50,518] [INFO]- "GET /video/admin/update_video/ HTTP/1.1" 200 20054
+[2020-04-06 11:31:01,507] [ERROR]- Internal Server Error: /admin/upload.html
+Traceback (most recent call last):
+  File "D:\Program Files\Anaconda3\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\Program Files\Anaconda3\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\Program Files\Anaconda3\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Code\Git\django_project\my_admin\views.py", line 96, in inner
+    return func(request, *args, **kwargs)
+  File "D:\Code\Git\django_project\my_admin\views.py", line 109, in upload
+    print('文件大小：',file_obj.size)
+AttributeError: 'NoneType' object has no attribute 'size'
+[2020-04-06 11:31:01,528] [ERROR]- "POST /admin/upload.html HTTP/1.1" 500 79432
+[2020-04-06 11:32:26,498] [INFO]- D:\Code\Git\django_project\my_admin\views.py changed, reloading.
+[2020-04-06 11:32:27,434] [INFO]- Watching for file changes with StatReloader
+[2020-04-06 11:36:19,865] [WARNING]- "GET /static/plugins/bootstrap-4.4.1/bootstrap.bundle.min.js.map HTTP/1.1" 404 1880
+[2020-04-06 11:36:19,867] [WARNING]- "GET /static/plugins/AdminLTE/adminlte.min.js.map HTTP/1.1" 404 1835
+[2020-04-06 11:36:19,896] [WARNING]- "GET /static/plugins/AdminLTE/adminlte.min.css.map HTTP/1.1" 404 1838
+[2020-04-06 11:36:19,898] [WARNING]- "GET /static/plugins/bootstrap-4.4.1/bootstrap.min.css.map HTTP/1.1" 404 1862
+[2020-04-06 11:43:24,452] [INFO]- "POST /admin/upload.html HTTP/1.1" 302 0
+[2020-04-06 11:43:24,485] [INFO]- "GET /video/admin/view_log/ HTTP/1.1" 200 17453
+[2020-04-06 11:43:25,140] [WARNING]- "GET /static/plugins/bootstrap-4.4.1/bootstrap.min.css.map HTTP/1.1" 404 1862
+[2020-04-06 11:43:25,145] [WARNING]- "GET /static/plugins/AdminLTE/adminlte.min.css.map HTTP/1.1" 404 1838
+[2020-04-06 11:43:25,215] [WARNING]- "GET /static/plugins/AdminLTE/adminlte.min.js.map HTTP/1.1" 404 1835
+[2020-04-06 11:43:25,239] [WARNING]- "GET /static/plugins/bootstrap-4.4.1/bootstrap.bundle.min.js.map HTTP/1.1" 404 1880
+[2020-04-06 11:43:50,399] [INFO]- D:\Code\Git\django_project\my_admin\views.py changed, reloading.
+[2020-04-06 11:43:51,711] [INFO]- Watching for file changes with StatReloader
+[2020-04-06 11:44:35,387] [INFO]- "GET /video/admin/update_video/ HTTP/1.1" 200 19968
+[2020-04-06 11:44:36,181] [WARNING]- "GET /static/plugins/bootstrap-4.4.1/bootstrap.min.css.map HTTP/1.1" 404 1862
+[2020-04-06 11:44:36,183] [WARNING]- "GET /static/plugins/AdminLTE/adminlte.min.css.map HTTP/1.1" 404 1838
+[2020-04-06 11:44:36,470] [WARNING]- "GET /static/plugins/bootstrap-4.4.1/bootstrap.bundle.min.js.map HTTP/1.1" 404 1880
+[2020-04-06 11:44:36,470] [WARNING]- "GET /static/plugins/AdminLTE/adminlte.min.js.map HTTP/1.1" 404 1835
+[2020-04-06 11:44:49,067] [ERROR]- Internal Server Error: /admin/upload.html
+Traceback (most recent call last):
+  File "D:\Program Files\Anaconda3\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\Program Files\Anaconda3\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    "returned None instead." % (callback.__module__, view_name)
+ValueError: The view my_admin.views.inner didn't return an HttpResponse object. It returned None instead.
+[2020-04-06 11:44:49,070] [ERROR]- "POST /admin/upload.html HTTP/1.1" 500 66464
+[2020-04-06 11:45:19,645] [INFO]- D:\Code\Git\django_project\my_admin\views.py changed, reloading.
+[2020-04-06 11:45:21,085] [INFO]- Watching for file changes with StatReloader
+[2020-04-06 11:45:21,795] [WARNING]- "GET /static/plugins/bootstrap-4.4.1/bootstrap.min.css.map HTTP/1.1" 404 1862
+[2020-04-06 11:45:21,916] [WARNING]- "GET /static/plugins/AdminLTE/adminlte.min.css.map HTTP/1.1" 404 1838
+[2020-04-06 11:45:21,917] [WARNING]- "GET /static/plugins/bootstrap-4.4.1/bootstrap.bundle.min.js.map HTTP/1.1" 404 1880
+[2020-04-06 11:45:22,017] [WARNING]- "GET /static/plugins/AdminLTE/adminlte.min.js.map HTTP/1.1" 404 1835
+[2020-04-06 11:45:29,184] [INFO]- D:\Code\Git\django_project\my_admin\views.py changed, reloading.
+[2020-04-06 11:45:30,213] [INFO]- Watching for file changes with StatReloader
+[2020-04-06 11:46:38,756] [INFO]- D:\Code\Git\django_project\my_admin\views.py changed, reloading.
+[2020-04-06 11:46:40,107] [INFO]- Watching for file changes with StatReloader
+[2020-04-06 11:48:08,582] [INFO]- D:\Code\Git\django_project\my_admin\views.py changed, reloading.
+[2020-04-06 11:48:09,587] [INFO]- Watching for file changes with StatReloader
+[2020-04-06 12:00:17,357] [INFO]- "GET /video/admin/update_video/ HTTP/1.1" 200 20099
+[2020-04-06 12:00:18,244] [WARNING]- "GET /static/plugins/bootstrap-4.4.1/bootstrap.min.css.map HTTP/1.1" 404 1862
+[2020-04-06 12:00:18,247] [WARNING]- "GET /static/plugins/AdminLTE/adminlte.min.css.map HTTP/1.1" 404 1838
+[2020-04-06 12:00:18,540] [WARNING]- "GET /static/plugins/bootstrap-4.4.1/bootstrap.bundle.min.js.map HTTP/1.1" 404 1880
+[2020-04-06 12:00:18,541] [WARNING]- "GET /static/plugins/AdminLTE/adminlte.min.js.map HTTP/1.1" 404 1835
+[2020-04-06 12:00:56,140] [INFO]- "GET /video/admin/update_video/ HTTP/1.1" 200 20098
+[2020-04-06 12:00:56,930] [WARNING]- "GET /static/plugins/bootstrap-4.4.1/bootstrap.min.css.map HTTP/1.1" 404 1862
+[2020-04-06 12:00:56,935] [WARNING]- "GET /static/plugins/AdminLTE/adminlte.min.css.map HTTP/1.1" 404 1838
+[2020-04-06 12:00:57,243] [WARNING]- "GET /static/plugins/bootstrap-4.4.1/bootstrap.bundle.min.js.map HTTP/1.1" 404 1880
+[2020-04-06 12:00:57,243] [WARNING]- "GET /static/plugins/AdminLTE/adminlte.min.js.map HTTP/1.1" 404 1835
+[2020-04-06 12:01:33,362] [INFO]- D:\Code\Git\django_project\my_admin\views.py changed, reloading.
+[2020-04-06 12:01:34,352] [INFO]- Watching for file changes with StatReloader
+[2020-04-06 12:01:51,183] [INFO]- "POST /admin/upload.html HTTP/1.1" 302 0
+[2020-04-06 12:01:51,214] [INFO]- "GET /video/admin/update_video/ HTTP/1.1" 200 20098
+[2020-04-06 12:01:52,061] [WARNING]- "GET /static/plugins/bootstrap-4.4.1/bootstrap.min.css.map HTTP/1.1" 404 1862
+[2020-04-06 12:01:52,065] [WARNING]- "GET /static/plugins/AdminLTE/adminlte.min.css.map HTTP/1.1" 404 1838
+[2020-04-06 12:01:52,338] [WARNING]- "GET /static/plugins/bootstrap-4.4.1/bootstrap.bundle.min.js.map HTTP/1.1" 404 1880
+[2020-04-06 12:01:52,339] [WARNING]- "GET /static/plugins/AdminLTE/adminlte.min.js.map HTTP/1.1" 404 1835
+[2020-04-06 12:04:26,856] [INFO]- D:\Code\Git\django_project\my_admin\views.py changed, reloading.
+[2020-04-06 12:04:28,193] [INFO]- Watching for file changes with StatReloader
+[2020-04-06 12:06:22,265] [INFO]- "GET /video/admin/update_video/ HTTP/1.1" 200 21018
+[2020-04-06 12:06:23,043] [WARNING]- "GET /static/plugins/bootstrap-4.4.1/bootstrap.min.css.map HTTP/1.1" 404 1862
+[2020-04-06 12:06:23,046] [WARNING]- "GET /static/plugins/AdminLTE/adminlte.min.css.map HTTP/1.1" 404 1838
+[2020-04-06 12:06:23,381] [WARNING]- "GET /static/plugins/AdminLTE/adminlte.min.js.map HTTP/1.1" 404 1835
+[2020-04-06 12:06:23,382] [WARNING]- "GET /static/plugins/bootstrap-4.4.1/bootstrap.bundle.min.js.map HTTP/1.1" 404 1880
+[2020-04-06 12:17:13,207] [INFO]- Watching for file changes with StatReloader
+[2020-04-06 12:17:16,803] [INFO]- "GET /video/admin/update_video/ HTTP/1.1" 200 21263
+[2020-04-06 12:17:17,487] [WARNING]- "GET /static/plugins/bootstrap-4.4.1/bootstrap.min.css.map HTTP/1.1" 404 1862
+[2020-04-06 12:17:17,814] [WARNING]- "GET /static/plugins/AdminLTE/adminlte.min.css.map HTTP/1.1" 404 1838
+[2020-04-06 12:17:17,916] [WARNING]- "GET /static/plugins/AdminLTE/adminlte.min.js.map HTTP/1.1" 404 1835
+[2020-04-06 12:17:17,923] [WARNING]- "GET /static/plugins/bootstrap-4.4.1/bootstrap.bundle.min.js.map HTTP/1.1" 404 1880
+[2020-04-06 12:17:26,446] [WARNING]- Not Found: /admin/upload/
+[2020-04-06 12:17:26,447] [WARNING]- "POST /admin/upload/ HTTP/1.1" 404 3340
+[2020-04-06 12:17:37,454] [WARNING]- Not Found: /admin/upload/
+[2020-04-06 12:17:37,456] [WARNING]- "POST /admin/upload/ HTTP/1.1" 404 3340
+[2020-04-06 12:18:41,598] [INFO]- D:\Code\Git\django_project\my_admin\urls.py changed, reloading.
+[2020-04-06 12:18:43,009] [INFO]- Watching for file changes with StatReloader
+[2020-04-06 12:18:48,095] [INFO]- "POST /admin/upload/ HTTP/1.1" 200 74
+[2020-04-06 12:22:34,114] [INFO]- "GET /video/admin/update_video/ HTTP/1.1" 200 21102
+[2020-04-06 12:22:35,001] [WARNING]- "GET /static/plugins/bootstrap-4.4.1/bootstrap.min.css.map HTTP/1.1" 404 1862
+[2020-04-06 12:22:35,009] [WARNING]- "GET /static/plugins/AdminLTE/adminlte.min.css.map HTTP/1.1" 404 1838
+[2020-04-06 12:22:35,317] [WARNING]- "GET /static/plugins/bootstrap-4.4.1/bootstrap.bundle.min.js.map HTTP/1.1" 404 1880
+[2020-04-06 12:22:35,318] [WARNING]- "GET /static/plugins/AdminLTE/adminlte.min.js.map HTTP/1.1" 404 1835
+[2020-04-06 12:22:36,577] [INFO]- "POST /admin/upload/ HTTP/1.1" 200 74
+[2020-04-06 12:22:39,156] [INFO]- "POST /admin/upload/ HTTP/1.1" 200 74
+[2020-04-06 12:22:53,071] [INFO]- "POST /admin/upload/ HTTP/1.1" 200 74
+[2020-04-06 12:24:14,658] [INFO]- D:\Code\Git\django_project\my_admin\views.py changed, reloading.
+[2020-04-06 12:24:15,798] [INFO]- Watching for file changes with StatReloader
+[2020-04-06 12:24:21,214] [INFO]- "GET /video/admin/update_video/ HTTP/1.1" 200 21102
+[2020-04-06 12:24:22,166] [WARNING]- "GET /static/plugins/bootstrap-4.4.1/bootstrap.min.css.map HTTP/1.1" 404 1862
+[2020-04-06 12:24:22,206] [WARNING]- "GET /static/plugins/AdminLTE/adminlte.min.css.map HTTP/1.1" 404 1838
+[2020-04-06 12:24:22,494] [WARNING]- "GET /static/plugins/bootstrap-4.4.1/bootstrap.bundle.min.js.map HTTP/1.1" 404 1880
+[2020-04-06 12:24:22,495] [WARNING]- "GET /static/plugins/AdminLTE/adminlte.min.js.map HTTP/1.1" 404 1835
+[2020-04-06 12:24:29,083] [INFO]- "POST /admin/upload/ HTTP/1.1" 200 74
+[2020-04-06 12:25:10,597] [INFO]- D:\Code\Git\django_project\my_admin\views.py changed, reloading.
+[2020-04-06 12:25:11,828] [INFO]- Watching for file changes with StatReloader
+[2020-04-06 12:27:54,081] [INFO]- D:\Code\Git\django_project\my_admin\views.py changed, reloading.
+[2020-04-06 12:27:56,270] [INFO]- Watching for file changes with StatReloader
+[2020-04-06 12:31:21,499] [INFO]- "GET /video/admin/update_video/ HTTP/1.1" 200 21149
+[2020-04-06 12:31:22,293] [WARNING]- "GET /static/plugins/bootstrap-4.4.1/bootstrap.min.css.map HTTP/1.1" 404 1862
+[2020-04-06 12:31:22,299] [WARNING]- "GET /static/plugins/AdminLTE/adminlte.min.css.map HTTP/1.1" 404 1838
+[2020-04-06 12:31:22,631] [WARNING]- "GET /static/plugins/bootstrap-4.4.1/bootstrap.bundle.min.js.map HTTP/1.1" 404 1880
+[2020-04-06 12:31:22,632] [WARNING]- "GET /static/plugins/AdminLTE/adminlte.min.js.map HTTP/1.1" 404 1835
+[2020-04-06 12:31:28,967] [INFO]- "POST /admin/upload/ HTTP/1.1" 200 74
+[2020-04-06 12:31:32,627] [INFO]- "POST /admin/upload/ HTTP/1.1" 200 74
+[2020-04-06 12:31:39,865] [INFO]- "POST /admin/upload/ HTTP/1.1" 200 74
+[2020-04-06 12:33:16,290] [WARNING]- Forbidden (CSRF cookie not set.): /video/admin/update_video/
+[2020-04-06 12:33:16,292] [WARNING]- "POST /video/admin/update_video/ HTTP/1.1" 403 2864
+[2020-04-06 12:33:36,999] [WARNING]- Forbidden (CSRF cookie not set.): /video/admin/update_video/
+[2020-04-06 12:33:37,001] [WARNING]- "POST /video/admin/update_video/ HTTP/1.1" 403 2864
+[2020-04-06 12:34:39,314] [WARNING]- Forbidden (CSRF cookie not set.): /video/admin/update_video/
+[2020-04-06 12:34:39,316] [WARNING]- "POST /video/admin/update_video/ HTTP/1.1" 403 2864
+[2020-04-06 12:36:09,741] [WARNING]- Forbidden (CSRF cookie not set.): /video/admin/update_video/
+[2020-04-06 12:36:09,743] [WARNING]- "POST /video/admin/update_video/ HTTP/1.1" 403 2864
+[2020-04-06 12:36:39,512] [INFO]- "POST /admin/upload/ HTTP/1.1" 200 74
+[2020-04-06 12:39:13,907] [INFO]- D:\Code\Git\django_project\my_admin\views.py changed, reloading.
+[2020-04-06 12:39:15,394] [INFO]- Watching for file changes with StatReloader
+[2020-04-06 12:39:16,636] [INFO]- "POST /admin/upload/ HTTP/1.1" 200 74
+[2020-04-06 12:40:24,169] [INFO]- D:\Code\Git\django_project\my_admin\views.py changed, reloading.
+[2020-04-06 12:40:25,489] [INFO]- Watching for file changes with StatReloader
+[2020-04-06 12:40:37,424] [INFO]- "POST /admin/upload/ HTTP/1.1" 200 74
+[2020-04-06 12:41:54,972] [INFO]- D:\Code\Git\django_project\my_admin\views.py changed, reloading.
+[2020-04-06 12:41:56,664] [INFO]- Watching for file changes with StatReloader
+[2020-04-06 12:41:58,350] [INFO]- "POST /admin/upload/ HTTP/1.1" 200 74
+[2020-04-06 12:42:26,940] [INFO]- "GET /video/admin/update_video/ HTTP/1.1" 200 21150
+[2020-04-06 12:42:27,753] [WARNING]- "GET /static/plugins/bootstrap-4.4.1/bootstrap.min.css.map HTTP/1.1" 404 1862
+[2020-04-06 12:42:27,772] [WARNING]- "GET /static/plugins/AdminLTE/adminlte.min.css.map HTTP/1.1" 404 1838
+[2020-04-06 12:42:28,026] [WARNING]- "GET /static/plugins/bootstrap-4.4.1/bootstrap.bundle.min.js.map HTTP/1.1" 404 1880
+[2020-04-06 12:42:28,026] [WARNING]- "GET /static/plugins/AdminLTE/adminlte.min.js.map HTTP/1.1" 404 1835
+[2020-04-06 12:42:37,958] [INFO]- "POST /admin/upload/ HTTP/1.1" 200 74
+[2020-04-06 12:46:54,069] [INFO]- "GET /video/admin/update_video/ HTTP/1.1" 200 21221
+[2020-04-06 12:46:54,869] [WARNING]- "GET /static/plugins/bootstrap-4.4.1/bootstrap.min.css.map HTTP/1.1" 404 1862
+[2020-04-06 12:46:54,900] [WARNING]- "GET /static/plugins/AdminLTE/adminlte.min.css.map HTTP/1.1" 404 1838
+[2020-04-06 12:46:55,223] [WARNING]- "GET /static/plugins/bootstrap-4.4.1/bootstrap.bundle.min.js.map HTTP/1.1" 404 1880
+[2020-04-06 12:46:55,231] [WARNING]- "GET /static/plugins/AdminLTE/adminlte.min.js.map HTTP/1.1" 404 1835
+[2020-04-06 12:47:10,761] [INFO]- "GET /video/admin/update_video/ HTTP/1.1" 200 21258
+[2020-04-06 12:47:11,623] [WARNING]- "GET /static/plugins/bootstrap-4.4.1/bootstrap.min.css.map HTTP/1.1" 404 1862
+[2020-04-06 12:47:11,625] [WARNING]- "GET /static/plugins/AdminLTE/adminlte.min.css.map HTTP/1.1" 404 1838
+[2020-04-06 12:47:11,911] [WARNING]- "GET /static/plugins/bootstrap-4.4.1/bootstrap.bundle.min.js.map HTTP/1.1" 404 1880
+[2020-04-06 12:47:11,911] [WARNING]- "GET /static/plugins/AdminLTE/adminlte.min.js.map HTTP/1.1" 404 1835
+[2020-04-06 12:47:21,090] [INFO]- "POST /admin/upload/ HTTP/1.1" 200 74
+[2020-04-06 12:47:42,310] [INFO]- "GET /video/admin/update_video/ HTTP/1.1" 200 21295
+[2020-04-06 12:47:43,113] [WARNING]- "GET /static/plugins/bootstrap-4.4.1/bootstrap.min.css.map HTTP/1.1" 404 1862
+[2020-04-06 12:47:43,278] [WARNING]- "GET /static/plugins/AdminLTE/adminlte.min.css.map HTTP/1.1" 404 1838
+[2020-04-06 12:47:43,362] [WARNING]- "GET /static/plugins/bootstrap-4.4.1/bootstrap.bundle.min.js.map HTTP/1.1" 404 1880
+[2020-04-06 12:47:43,412] [WARNING]- "GET /static/plugins/AdminLTE/adminlte.min.js.map HTTP/1.1" 404 1835
+[2020-04-06 12:47:54,189] [INFO]- "POST /admin/upload/ HTTP/1.1" 200 74
+[2020-04-06 12:48:25,856] [INFO]- D:\Code\Git\django_project\my_admin\views.py changed, reloading.
+[2020-04-06 12:48:27,025] [INFO]- Watching for file changes with StatReloader
+[2020-04-06 12:48:29,582] [INFO]- "GET /video/admin/update_video/ HTTP/1.1" 200 21295
+[2020-04-06 12:48:30,319] [WARNING]- "GET /static/plugins/bootstrap-4.4.1/bootstrap.min.css.map HTTP/1.1" 404 1862
+[2020-04-06 12:48:30,328] [WARNING]- "GET /static/plugins/AdminLTE/adminlte.min.css.map HTTP/1.1" 404 1838
+[2020-04-06 12:48:30,661] [WARNING]- "GET /static/plugins/bootstrap-4.4.1/bootstrap.bundle.min.js.map HTTP/1.1" 404 1880
+[2020-04-06 12:48:30,662] [WARNING]- "GET /static/plugins/AdminLTE/adminlte.min.js.map HTTP/1.1" 404 1835
+[2020-04-06 12:49:02,722] [INFO]- "POST /admin/upload/ HTTP/1.1" 200 74
+[2020-04-06 12:49:38,474] [INFO]- "GET /video/admin/update_video/ HTTP/1.1" 200 21432
+[2020-04-06 12:49:39,196] [WARNING]- "GET /static/plugins/bootstrap-4.4.1/bootstrap.min.css.map HTTP/1.1" 404 1862
+[2020-04-06 12:49:39,216] [WARNING]- "GET /static/plugins/AdminLTE/adminlte.min.css.map HTTP/1.1" 404 1838
+[2020-04-06 12:49:39,545] [WARNING]- "GET /static/plugins/bootstrap-4.4.1/bootstrap.bundle.min.js.map HTTP/1.1" 404 1880
+[2020-04-06 12:49:39,546] [WARNING]- "GET /static/plugins/AdminLTE/adminlte.min.js.map HTTP/1.1" 404 1835
+[2020-04-06 12:49:52,729] [INFO]- "POST /admin/upload/ HTTP/1.1" 200 74
+[2020-04-06 12:50:17,175] [INFO]- "GET /video/admin/update_video/ HTTP/1.1" 200 21403
+[2020-04-06 12:50:17,929] [WARNING]- "GET /static/plugins/bootstrap-4.4.1/bootstrap.min.css.map HTTP/1.1" 404 1862
+[2020-04-06 12:50:17,935] [WARNING]- "GET /static/plugins/AdminLTE/adminlte.min.css.map HTTP/1.1" 404 1838
+[2020-04-06 12:50:18,236] [WARNING]- "GET /static/plugins/bootstrap-4.4.1/bootstrap.bundle.min.js.map HTTP/1.1" 404 1880
+[2020-04-06 12:50:18,237] [WARNING]- "GET /static/plugins/AdminLTE/adminlte.min.js.map HTTP/1.1" 404 1835
+[2020-04-06 12:50:29,667] [INFO]- "POST /admin/upload/ HTTP/1.1" 200 74
+[2020-04-06 12:55:10,343] [INFO]- "GET /video/admin/update_video/ HTTP/1.1" 200 21551
+[2020-04-06 12:55:11,201] [WARNING]- "GET /static/plugins/bootstrap-4.4.1/bootstrap.min.css.map HTTP/1.1" 404 1862
+[2020-04-06 12:55:11,221] [WARNING]- "GET /static/plugins/AdminLTE/adminlte.min.css.map HTTP/1.1" 404 1838
+[2020-04-06 12:55:11,497] [WARNING]- "GET /static/plugins/bootstrap-4.4.1/bootstrap.bundle.min.js.map HTTP/1.1" 404 1880
+[2020-04-06 12:55:11,497] [WARNING]- "GET /static/plugins/AdminLTE/adminlte.min.js.map HTTP/1.1" 404 1835
+[2020-04-06 12:55:45,626] [INFO]- D:\Code\Git\django_project\my_admin\views.py changed, reloading.
+[2020-04-06 12:55:46,763] [INFO]- Watching for file changes with StatReloader
+[2020-04-06 12:56:13,185] [INFO]- "GET /video/admin/update_video/ HTTP/1.1" 200 21550
+[2020-04-06 12:56:14,035] [WARNING]- "GET /static/plugins/bootstrap-4.4.1/bootstrap.min.css.map HTTP/1.1" 404 1862
+[2020-04-06 12:56:14,040] [WARNING]- "GET /static/plugins/AdminLTE/adminlte.min.css.map HTTP/1.1" 404 1838
+[2020-04-06 12:56:14,388] [WARNING]- "GET /static/plugins/bootstrap-4.4.1/bootstrap.bundle.min.js.map HTTP/1.1" 404 1880
+[2020-04-06 12:56:14,389] [WARNING]- "GET /static/plugins/AdminLTE/adminlte.min.js.map HTTP/1.1" 404 1835
+[2020-04-06 12:57:36,338] [INFO]- "GET /video/admin/update_video/ HTTP/1.1" 200 21669
+[2020-04-06 12:57:37,133] [WARNING]- "GET /static/plugins/bootstrap-4.4.1/bootstrap.min.css.map HTTP/1.1" 404 1862
+[2020-04-06 12:57:37,142] [WARNING]- "GET /static/plugins/AdminLTE/adminlte.min.css.map HTTP/1.1" 404 1838
+[2020-04-06 12:57:37,416] [WARNING]- "GET /static/plugins/bootstrap-4.4.1/bootstrap.bundle.min.js.map HTTP/1.1" 404 1880
+[2020-04-06 12:57:37,422] [WARNING]- "GET /static/plugins/AdminLTE/adminlte.min.js.map HTTP/1.1" 404 1835
+[2020-04-06 13:35:47,954] [INFO]- "GET /video/admin/update_video/ HTTP/1.1" 200 21970
+[2020-04-06 13:35:48,908] [WARNING]- "GET /static/plugins/bootstrap-4.4.1/bootstrap.min.css.map HTTP/1.1" 404 1862
+[2020-04-06 13:35:48,923] [WARNING]- "GET /static/plugins/AdminLTE/adminlte.min.css.map HTTP/1.1" 404 1838
+[2020-04-06 13:35:49,259] [WARNING]- "GET /static/plugins/bootstrap-4.4.1/bootstrap.bundle.min.js.map HTTP/1.1" 404 1880
+[2020-04-06 13:35:49,260] [WARNING]- "GET /static/plugins/AdminLTE/adminlte.min.js.map HTTP/1.1" 404 1835
+[2020-04-06 13:36:02,517] [INFO]- "POST /video/admin/update_video/ HTTP/1.1" 200 21970
+[2020-04-06 13:36:03,395] [WARNING]- "GET /static/plugins/bootstrap-4.4.1/bootstrap.min.css.map HTTP/1.1" 404 1862
+[2020-04-06 13:36:03,411] [WARNING]- "GET /static/plugins/AdminLTE/adminlte.min.css.map HTTP/1.1" 404 1838
+[2020-04-06 13:36:03,764] [WARNING]- "GET /static/plugins/bootstrap-4.4.1/bootstrap.bundle.min.js.map HTTP/1.1" 404 1880
+[2020-04-06 13:36:03,765] [WARNING]- "GET /static/plugins/AdminLTE/adminlte.min.js.map HTTP/1.1" 404 1835
+[2020-04-06 13:37:50,407] [INFO]- D:\Code\Git\django_project\my_admin\views.py changed, reloading.
+[2020-04-06 13:37:52,386] [INFO]- Watching for file changes with StatReloader
+[2020-04-06 13:37:54,269] [INFO]- "POST /video/admin/update_video/ HTTP/1.1" 200 21970
+[2020-04-06 13:37:55,192] [WARNING]- "GET /static/plugins/bootstrap-4.4.1/bootstrap.min.css.map HTTP/1.1" 404 1862
+[2020-04-06 13:37:55,193] [WARNING]- "GET /static/plugins/AdminLTE/adminlte.min.css.map HTTP/1.1" 404 1838
+[2020-04-06 13:37:55,525] [WARNING]- "GET /static/plugins/bootstrap-4.4.1/bootstrap.bundle.min.js.map HTTP/1.1" 404 1880
+[2020-04-06 13:37:55,528] [WARNING]- "GET /static/plugins/AdminLTE/adminlte.min.js.map HTTP/1.1" 404 1835
+[2020-04-06 13:38:05,270] [INFO]- "POST /video/admin/update_video/ HTTP/1.1" 200 21970
+[2020-04-06 13:38:06,206] [WARNING]- "GET /static/plugins/bootstrap-4.4.1/bootstrap.min.css.map HTTP/1.1" 404 1862
+[2020-04-06 13:38:06,242] [WARNING]- "GET /static/plugins/AdminLTE/adminlte.min.css.map HTTP/1.1" 404 1838
+[2020-04-06 13:38:06,557] [WARNING]- "GET /static/plugins/bootstrap-4.4.1/bootstrap.bundle.min.js.map HTTP/1.1" 404 1880
+[2020-04-06 13:38:06,560] [WARNING]- "GET /static/plugins/AdminLTE/adminlte.min.js.map HTTP/1.1" 404 1835
+[2020-04-06 13:42:48,541] [INFO]- "POST /video/admin/update_video/ HTTP/1.1" 200 21994
+[2020-04-06 13:42:49,206] [WARNING]- "GET /static/plugins/bootstrap-4.4.1/bootstrap.min.css.map HTTP/1.1" 404 1862
+[2020-04-06 13:42:49,248] [WARNING]- "GET /static/plugins/AdminLTE/adminlte.min.js.map HTTP/1.1" 404 1835
+[2020-04-06 13:42:49,249] [WARNING]- "GET /static/plugins/bootstrap-4.4.1/bootstrap.bundle.min.js.map HTTP/1.1" 404 1880
+[2020-04-06 13:42:49,255] [WARNING]- "GET /static/plugins/AdminLTE/adminlte.min.css.map HTTP/1.1" 404 1838
+[2020-04-06 13:43:01,119] [INFO]- "POST /admin/upload/ HTTP/1.1" 200 68
+[2020-04-06 13:44:03,159] [INFO]- D:\Code\Git\django_project\my_admin\views.py changed, reloading.
+[2020-04-06 13:44:04,426] [INFO]- Watching for file changes with StatReloader
+[2020-04-06 13:44:52,152] [INFO]- D:\Code\Git\django_project\my_admin\views.py changed, reloading.
+[2020-04-06 13:44:53,801] [INFO]- Watching for file changes with StatReloader
+[2020-04-06 13:44:55,931] [WARNING]- "GET /static/plugins/bootstrap-4.4.1/bootstrap.min.css.map HTTP/1.1" 404 1862
+[2020-04-06 13:44:55,935] [WARNING]- "GET /static/plugins/AdminLTE/adminlte.min.css.map HTTP/1.1" 404 1838
+[2020-04-06 13:44:56,323] [WARNING]- "GET /static/plugins/bootstrap-4.4.1/bootstrap.bundle.min.js.map HTTP/1.1" 404 1880
+[2020-04-06 13:44:56,324] [WARNING]- "GET /static/plugins/AdminLTE/adminlte.min.js.map HTTP/1.1" 404 1835
+[2020-04-06 13:44:58,997] [INFO]- "POST /admin/upload/ HTTP/1.1" 200 68
+[2020-04-06 13:45:19,417] [INFO]- D:\Code\Git\django_project\my_admin\views.py changed, reloading.
+[2020-04-06 13:45:20,871] [INFO]- Watching for file changes with StatReloader
+[2020-04-06 13:45:26,621] [WARNING]- "GET /static/plugins/bootstrap-4.4.1/bootstrap.min.css.map HTTP/1.1" 404 1862
+[2020-04-06 13:45:26,773] [WARNING]- "GET /static/plugins/AdminLTE/adminlte.min.css.map HTTP/1.1" 404 1838
+[2020-04-06 13:45:27,011] [WARNING]- "GET /static/plugins/AdminLTE/adminlte.min.js.map HTTP/1.1" 404 1835
+[2020-04-06 13:45:27,013] [WARNING]- "GET /static/plugins/bootstrap-4.4.1/bootstrap.bundle.min.js.map HTTP/1.1" 404 1880
+[2020-04-06 13:45:28,139] [INFO]- "POST /admin/upload/ HTTP/1.1" 200 68
+[2020-04-06 13:45:58,636] [INFO]- D:\Code\Git\django_project\my_admin\views.py changed, reloading.
+[2020-04-06 13:45:59,871] [INFO]- Watching for file changes with StatReloader
+[2020-04-06 13:46:07,750] [WARNING]- "GET /static/plugins/bootstrap-4.4.1/bootstrap.min.css.map HTTP/1.1" 404 1862
+[2020-04-06 13:46:07,798] [WARNING]- "GET /static/plugins/AdminLTE/adminlte.min.css.map HTTP/1.1" 404 1838
+[2020-04-06 13:46:08,185] [WARNING]- "GET /static/plugins/bootstrap-4.4.1/bootstrap.bundle.min.js.map HTTP/1.1" 404 1880
+[2020-04-06 13:46:08,186] [WARNING]- "GET /static/plugins/AdminLTE/adminlte.min.js.map HTTP/1.1" 404 1835
+[2020-04-06 13:46:16,233] [INFO]- "POST /admin/upload/ HTTP/1.1" 200 74
+[2020-04-06 13:52:36,458] [INFO]- "POST /video/admin/update_video/ HTTP/1.1" 200 21874
+[2020-04-06 13:52:37,336] [WARNING]- "GET /static/plugins/bootstrap-4.4.1/bootstrap.min.css.map HTTP/1.1" 404 1862
+[2020-04-06 13:52:37,351] [WARNING]- "GET /static/plugins/AdminLTE/adminlte.min.css.map HTTP/1.1" 404 1838
+[2020-04-06 13:52:37,677] [WARNING]- "GET /static/plugins/bootstrap-4.4.1/bootstrap.bundle.min.js.map HTTP/1.1" 404 1880
+[2020-04-06 13:52:37,682] [WARNING]- "GET /static/plugins/AdminLTE/adminlte.min.js.map HTTP/1.1" 404 1835
+[2020-04-06 13:52:44,614] [INFO]- "POST /admin/upload/ HTTP/1.1" 200 74
+[2020-04-06 13:53:23,518] [INFO]- "POST /video/admin/update_video/ HTTP/1.1" 200 21956
+[2020-04-06 13:53:24,357] [WARNING]- "GET /static/plugins/bootstrap-4.4.1/bootstrap.min.css.map HTTP/1.1" 404 1862
+[2020-04-06 13:53:24,378] [WARNING]- "GET /static/plugins/AdminLTE/adminlte.min.css.map HTTP/1.1" 404 1838
+[2020-04-06 13:53:24,711] [WARNING]- "GET /static/plugins/AdminLTE/adminlte.min.js.map HTTP/1.1" 404 1835
+[2020-04-06 13:53:24,711] [WARNING]- "GET /static/plugins/bootstrap-4.4.1/bootstrap.bundle.min.js.map HTTP/1.1" 404 1880
+[2020-04-06 13:53:33,790] [WARNING]- Forbidden (CSRF token missing or incorrect.): /admin/upload/
+[2020-04-06 13:53:33,792] [WARNING]- "POST /admin/upload/ HTTP/1.1" 403 2513
+[2020-04-06 13:53:37,139] [WARNING]- "GET /static/plugins/bootstrap-4.4.1/bootstrap.min.css.map HTTP/1.1" 404 1862
+[2020-04-06 13:53:37,152] [WARNING]- "GET /static/plugins/AdminLTE/adminlte.min.css.map HTTP/1.1" 404 1838
+[2020-04-06 13:53:37,697] [WARNING]- "GET /static/plugins/bootstrap-4.4.1/bootstrap.bundle.min.js.map HTTP/1.1" 404 1880
+[2020-04-06 13:53:37,698] [WARNING]- "GET /static/plugins/AdminLTE/adminlte.min.js.map HTTP/1.1" 404 1835
+[2020-04-06 13:53:53,310] [INFO]- "POST /video/admin/update_video/ HTTP/1.1" 200 22114
+[2020-04-06 13:53:54,197] [WARNING]- "GET /static/plugins/bootstrap-4.4.1/bootstrap.min.css.map HTTP/1.1" 404 1862
+[2020-04-06 13:53:54,207] [WARNING]- "GET /static/plugins/AdminLTE/adminlte.min.css.map HTTP/1.1" 404 1838
+[2020-04-06 13:53:54,521] [WARNING]- "GET /static/plugins/bootstrap-4.4.1/bootstrap.bundle.min.js.map HTTP/1.1" 404 1880
+[2020-04-06 13:53:54,525] [WARNING]- "GET /static/plugins/AdminLTE/adminlte.min.js.map HTTP/1.1" 404 1835
+[2020-04-06 13:54:01,321] [INFO]- "POST /admin/upload/ HTTP/1.1" 200 45
+[2020-04-06 13:56:22,254] [WARNING]- "GET /static/plugins/bootstrap-4.4.1/bootstrap.min.css.map HTTP/1.1" 404 1862
+[2020-04-06 13:56:22,445] [WARNING]- "GET /static/plugins/AdminLTE/adminlte.min.css.map HTTP/1.1" 404 1838
+[2020-04-06 13:56:22,587] [WARNING]- "GET /static/plugins/AdminLTE/adminlte.min.js.map HTTP/1.1" 404 1835
+[2020-04-06 13:56:22,616] [WARNING]- "GET /static/plugins/bootstrap-4.4.1/bootstrap.bundle.min.js.map HTTP/1.1" 404 1880
+[2020-04-06 13:56:23,931] [INFO]- "POST /video/admin/update_video/ HTTP/1.1" 200 22164
+[2020-04-06 13:56:24,794] [WARNING]- "GET /static/plugins/bootstrap-4.4.1/bootstrap.min.css.map HTTP/1.1" 404 1862
+[2020-04-06 13:56:24,809] [WARNING]- "GET /static/plugins/AdminLTE/adminlte.min.css.map HTTP/1.1" 404 1838
+[2020-04-06 13:56:25,108] [WARNING]- "GET /static/plugins/bootstrap-4.4.1/bootstrap.bundle.min.js.map HTTP/1.1" 404 1880
+[2020-04-06 13:56:25,109] [WARNING]- "GET /static/plugins/AdminLTE/adminlte.min.js.map HTTP/1.1" 404 1835
+[2020-04-06 13:56:32,281] [INFO]- "POST /admin/upload/ HTTP/1.1" 200 45
+[2020-04-06 14:09:45,667] [WARNING]- "GET /static/plugins/bootstrap-4.4.1/bootstrap.min.css.map HTTP/1.1" 404 1862
+[2020-04-06 14:09:45,671] [WARNING]- "GET /static/plugins/AdminLTE/adminlte.min.css.map HTTP/1.1" 404 1838
+[2020-04-06 14:09:46,035] [WARNING]- "GET /static/plugins/bootstrap-4.4.1/bootstrap.bundle.min.js.map HTTP/1.1" 404 1880
+[2020-04-06 14:09:46,038] [WARNING]- "GET /static/plugins/AdminLTE/adminlte.min.js.map HTTP/1.1" 404 1835
+[2020-04-06 14:09:47,137] [INFO]- "POST /video/admin/update_video/ HTTP/1.1" 200 21799
+[2020-04-06 14:09:47,958] [WARNING]- "GET /static/plugins/bootstrap-4.4.1/bootstrap.min.css.map HTTP/1.1" 404 1862
+[2020-04-06 14:09:47,971] [WARNING]- "GET /static/plugins/AdminLTE/adminlte.min.css.map HTTP/1.1" 404 1838
+[2020-04-06 14:09:48,297] [WARNING]- "GET /static/plugins/bootstrap-4.4.1/bootstrap.bundle.min.js.map HTTP/1.1" 404 1880
+[2020-04-06 14:09:48,297] [WARNING]- "GET /static/plugins/AdminLTE/adminlte.min.js.map HTTP/1.1" 404 1835
+[2020-04-06 14:11:51,363] [INFO]- "POST /video/admin/update_video/ HTTP/1.1" 200 22023
+[2020-04-06 14:11:52,231] [WARNING]- "GET /static/plugins/bootstrap-4.4.1/bootstrap.min.css.map HTTP/1.1" 404 1862
+[2020-04-06 14:11:52,243] [WARNING]- "GET /static/plugins/AdminLTE/adminlte.min.css.map HTTP/1.1" 404 1838
+[2020-04-06 14:11:52,526] [WARNING]- "GET /static/plugins/bootstrap-4.4.1/bootstrap.bundle.min.js.map HTTP/1.1" 404 1880
+[2020-04-06 14:11:52,527] [WARNING]- "GET /static/plugins/AdminLTE/adminlte.min.js.map HTTP/1.1" 404 1835
+[2020-04-06 14:12:43,716] [INFO]- "POST /video/admin/update_video/ HTTP/1.1" 200 22023
+[2020-04-06 14:12:44,574] [WARNING]- "GET /static/plugins/bootstrap-4.4.1/bootstrap.min.css.map HTTP/1.1" 404 1862
+[2020-04-06 14:12:44,578] [WARNING]- "GET /static/plugins/AdminLTE/adminlte.min.css.map HTTP/1.1" 404 1838
+[2020-04-06 14:12:44,877] [WARNING]- "GET /static/plugins/bootstrap-4.4.1/bootstrap.bundle.min.js.map HTTP/1.1" 404 1880
+[2020-04-06 14:12:44,878] [WARNING]- "GET /static/plugins/AdminLTE/adminlte.min.js.map HTTP/1.1" 404 1835
+[2020-04-06 14:13:47,013] [INFO]- "POST /video/admin/update_video/ HTTP/1.1" 200 22019
+[2020-04-06 14:13:47,770] [WARNING]- "GET /static/plugins/bootstrap-4.4.1/bootstrap.min.css.map HTTP/1.1" 404 1862
+[2020-04-06 14:13:47,784] [WARNING]- "GET /static/plugins/AdminLTE/adminlte.min.css.map HTTP/1.1" 404 1838
+[2020-04-06 14:13:48,134] [WARNING]- "GET /static/plugins/bootstrap-4.4.1/bootstrap.bundle.min.js.map HTTP/1.1" 404 1880
+[2020-04-06 14:13:48,135] [WARNING]- "GET /static/plugins/AdminLTE/adminlte.min.js.map HTTP/1.1" 404 1835
+[2020-04-06 14:14:35,266] [INFO]- "POST /video/admin/update_video/ HTTP/1.1" 200 22022
+[2020-04-06 14:14:36,059] [WARNING]- "GET /static/plugins/bootstrap-4.4.1/bootstrap.min.css.map HTTP/1.1" 404 1862
+[2020-04-06 14:14:36,074] [WARNING]- "GET /static/plugins/AdminLTE/adminlte.min.css.map HTTP/1.1" 404 1838
+[2020-04-06 14:14:36,370] [WARNING]- "GET /static/plugins/bootstrap-4.4.1/bootstrap.bundle.min.js.map HTTP/1.1" 404 1880
+[2020-04-06 14:14:36,371] [WARNING]- "GET /static/plugins/AdminLTE/adminlte.min.js.map HTTP/1.1" 404 1835
+[2020-04-06 14:14:41,042] [INFO]- "POST /admin/upload/ HTTP/1.1" 200 45
+[2020-04-06 14:16:03,872] [INFO]- D:\Code\Git\django_project\my_admin\views.py changed, reloading.
+[2020-04-06 14:16:05,755] [INFO]- Watching for file changes with StatReloader
+[2020-04-06 14:16:16,336] [INFO]- "POST /video/admin/update_video/ HTTP/1.1" 200 21931
+[2020-04-06 14:16:16,965] [WARNING]- "GET /static/plugins/bootstrap-4.4.1/bootstrap.min.css.map HTTP/1.1" 404 1862
+[2020-04-06 14:16:17,200] [WARNING]- "GET /static/plugins/AdminLTE/adminlte.min.css.map HTTP/1.1" 404 1838
+[2020-04-06 14:16:17,340] [WARNING]- "GET /static/plugins/bootstrap-4.4.1/bootstrap.bundle.min.js.map HTTP/1.1" 404 1880
+[2020-04-06 14:16:17,402] [WARNING]- "GET /static/plugins/AdminLTE/adminlte.min.js.map HTTP/1.1" 404 1835
+[2020-04-06 14:16:22,609] [INFO]- "POST /admin/upload/ HTTP/1.1" 200 45
+[2020-04-06 14:16:36,049] [INFO]- "POST /video/admin/update_video/ HTTP/1.1" 200 21931
+[2020-04-06 14:16:36,903] [WARNING]- "GET /static/plugins/bootstrap-4.4.1/bootstrap.min.css.map HTTP/1.1" 404 1862
+[2020-04-06 14:16:36,912] [WARNING]- "GET /static/plugins/AdminLTE/adminlte.min.css.map HTTP/1.1" 404 1838
+[2020-04-06 14:16:37,226] [WARNING]- "GET /static/plugins/AdminLTE/adminlte.min.js.map HTTP/1.1" 404 1835
+[2020-04-06 14:16:37,227] [WARNING]- "GET /static/plugins/bootstrap-4.4.1/bootstrap.bundle.min.js.map HTTP/1.1" 404 1880
+[2020-04-06 14:18:01,283] [INFO]- "POST /video/admin/update_video/ HTTP/1.1" 200 21983
+[2020-04-06 14:18:02,035] [WARNING]- "GET /static/plugins/bootstrap-4.4.1/bootstrap.min.css.map HTTP/1.1" 404 1862
+[2020-04-06 14:18:02,077] [WARNING]- "GET /static/plugins/AdminLTE/adminlte.min.css.map HTTP/1.1" 404 1838
+[2020-04-06 14:18:02,362] [WARNING]- "GET /static/plugins/AdminLTE/adminlte.min.js.map HTTP/1.1" 404 1835
+[2020-04-06 14:18:02,362] [WARNING]- "GET /static/plugins/bootstrap-4.4.1/bootstrap.bundle.min.js.map HTTP/1.1" 404 1880
+[2020-04-06 14:18:09,991] [INFO]- "POST /admin/upload/ HTTP/1.1" 200 45
+[2020-04-06 14:18:12,733] [INFO]- "POST /admin/upload/ HTTP/1.1" 200 45
+[2020-04-06 14:18:20,963] [INFO]- "POST /admin/upload/ HTTP/1.1" 200 45
+[2020-04-06 14:18:31,937] [INFO]- "POST /video/admin/update_video/ HTTP/1.1" 200 21983
+[2020-04-06 14:18:32,773] [WARNING]- "GET /static/plugins/bootstrap-4.4.1/bootstrap.min.css.map HTTP/1.1" 404 1862
+[2020-04-06 14:18:32,776] [WARNING]- "GET /static/plugins/AdminLTE/adminlte.min.css.map HTTP/1.1" 404 1838
+[2020-04-06 14:18:33,084] [WARNING]- "GET /static/plugins/bootstrap-4.4.1/bootstrap.bundle.min.js.map HTTP/1.1" 404 1880
+[2020-04-06 14:18:33,088] [WARNING]- "GET /static/plugins/AdminLTE/adminlte.min.js.map HTTP/1.1" 404 1835
+[2020-04-06 14:18:42,353] [INFO]- "POST /admin/upload/ HTTP/1.1" 200 45
+[2020-04-06 14:18:44,248] [INFO]- "POST /admin/upload/ HTTP/1.1" 200 45
+[2020-04-06 14:20:45,684] [INFO]- D:\Code\Git\django_project\my_admin\views.py changed, reloading.
+[2020-04-06 14:20:46,784] [INFO]- Watching for file changes with StatReloader
+[2020-04-06 14:20:58,234] [INFO]- D:\Code\Git\django_project\my_admin\views.py changed, reloading.
+[2020-04-06 14:20:59,490] [INFO]- Watching for file changes with StatReloader
+[2020-04-06 14:21:36,523] [INFO]- D:\Code\Git\django_project\my_admin\views.py changed, reloading.
+[2020-04-06 14:21:38,162] [INFO]- Watching for file changes with StatReloader
+[2020-04-06 14:21:40,000] [INFO]- "POST /admin/upload/ HTTP/1.1" 200 68
+[2020-04-06 14:22:07,787] [INFO]- D:\Code\Git\django_project\my_admin\views.py changed, reloading.
+[2020-04-06 14:22:09,255] [INFO]- Watching for file changes with StatReloader
+[2020-04-06 14:22:10,861] [INFO]- "POST /admin/upload/ HTTP/1.1" 200 68
+[2020-04-06 14:22:17,199] [INFO]- "POST /video/admin/update_video/ HTTP/1.1" 200 21983
+[2020-04-06 14:22:18,139] [WARNING]- "GET /static/plugins/bootstrap-4.4.1/bootstrap.min.css.map HTTP/1.1" 404 1862
+[2020-04-06 14:22:18,202] [WARNING]- "GET /static/plugins/AdminLTE/adminlte.min.css.map HTTP/1.1" 404 1838
+[2020-04-06 14:22:18,549] [WARNING]- "GET /static/plugins/bootstrap-4.4.1/bootstrap.bundle.min.js.map HTTP/1.1" 404 1880
+[2020-04-06 14:22:18,550] [WARNING]- "GET /static/plugins/AdminLTE/adminlte.min.js.map HTTP/1.1" 404 1835
+[2020-04-06 14:22:39,193] [INFO]- "POST /admin/upload/ HTTP/1.1" 200 68
+[2020-04-06 14:23:06,045] [INFO]- D:\Code\Git\django_project\my_admin\views.py changed, reloading.
+[2020-04-06 14:23:07,211] [INFO]- Watching for file changes with StatReloader
+[2020-04-06 14:23:13,994] [INFO]- D:\Code\Git\django_project\my_admin\views.py changed, reloading.
+[2020-04-06 14:23:15,424] [INFO]- Watching for file changes with StatReloader
+[2020-04-06 14:23:16,494] [INFO]- "POST /admin/upload/ HTTP/1.1" 200 45
+[2020-04-06 14:23:30,062] [INFO]- "POST /admin/upload/ HTTP/1.1" 200 45
+[2020-04-06 14:23:58,714] [INFO]- D:\Code\Git\django_project\my_admin\views.py changed, reloading.
+[2020-04-06 14:23:59,909] [INFO]- Watching for file changes with StatReloader
+[2020-04-06 14:24:11,507] [INFO]- D:\Code\Git\django_project\my_admin\views.py changed, reloading.
+[2020-04-06 14:24:13,315] [INFO]- Watching for file changes with StatReloader
+[2020-04-06 14:24:13,904] [INFO]- "POST /admin/upload/ HTTP/1.1" 200 45
+[2020-04-06 14:26:12,058] [INFO]- D:\Code\Git\django_project\my_admin\views.py changed, reloading.
+[2020-04-06 14:26:14,541] [INFO]- Watching for file changes with StatReloader
+[2020-04-06 14:26:16,230] [INFO]- "POST /admin/upload/ HTTP/1.1" 200 45
+[2020-04-06 14:27:22,231] [INFO]- D:\Code\Git\django_project\my_admin\views.py changed, reloading.
+[2020-04-06 14:27:23,822] [INFO]- Watching for file changes with StatReloader
+[2020-04-06 14:27:51,012] [INFO]- D:\Code\Git\django_project\my_admin\views.py changed, reloading.
+[2020-04-06 14:27:52,673] [INFO]- Watching for file changes with StatReloader
+[2020-04-06 14:28:32,522] [INFO]- D:\Code\Git\django_project\my_admin\views.py changed, reloading.
+[2020-04-06 14:28:33,689] [INFO]- Watching for file changes with StatReloader
+[2020-04-06 14:29:03,296] [INFO]- D:\Code\Git\django_project\my_admin\views.py changed, reloading.
+[2020-04-06 14:29:04,531] [INFO]- Watching for file changes with StatReloader
+[2020-04-06 14:29:11,580] [INFO]- "POST /video/admin/update_video/ HTTP/1.1" 200 21983
+[2020-04-06 14:29:12,523] [WARNING]- "GET /static/plugins/bootstrap-4.4.1/bootstrap.min.css.map HTTP/1.1" 404 1862
+[2020-04-06 14:29:12,588] [WARNING]- "GET /static/plugins/AdminLTE/adminlte.min.css.map HTTP/1.1" 404 1838
+[2020-04-06 14:29:12,933] [WARNING]- "GET /static/plugins/bootstrap-4.4.1/bootstrap.bundle.min.js.map HTTP/1.1" 404 1880
+[2020-04-06 14:29:12,980] [WARNING]- "GET /static/plugins/AdminLTE/adminlte.min.js.map HTTP/1.1" 404 1835
+[2020-04-06 14:29:19,843] [INFO]- "POST /admin/upload/ HTTP/1.1" 200 45
+[2020-04-06 14:29:45,895] [INFO]- D:\Code\Git\django_project\my_admin\views.py changed, reloading.
+[2020-04-06 14:29:47,443] [INFO]- Watching for file changes with StatReloader
+[2020-04-06 14:29:49,804] [INFO]- "POST /admin/upload/ HTTP/1.1" 200 45
+[2020-04-06 14:29:59,570] [INFO]- D:\Code\Git\django_project\my_admin\views.py changed, reloading.
+[2020-04-06 14:30:01,267] [INFO]- Watching for file changes with StatReloader
+[2020-04-06 14:30:01,878] [INFO]- "POST /admin/upload/ HTTP/1.1" 200 45
+[2020-04-06 14:30:29,884] [INFO]- D:\Code\Git\django_project\my_admin\views.py changed, reloading.
+[2020-04-06 14:30:31,445] [INFO]- Watching for file changes with StatReloader
+[2020-04-06 14:32:59,644] [INFO]- D:\Code\Git\django_project\my_admin\views.py changed, reloading.
+[2020-04-06 14:33:01,159] [INFO]- Watching for file changes with StatReloader
+[2020-04-06 Monday 14:38:15] [INFO]- Watching for file changes with StatReloader
+[2020-04-06 Monday 14:38:21] [INFO]- "GET /video/admin/update_video/ HTTP/1.1" 200 21983
+[2020-04-06 Monday 14:38:22] [WARNING]- "GET /static/plugins/bootstrap-4.4.1/bootstrap.min.css.map HTTP/1.1" 404 1862
+[2020-04-06 Monday 14:38:22] [WARNING]- "GET /static/plugins/AdminLTE/adminlte.min.css.map HTTP/1.1" 404 1838
+[2020-04-06 Monday 14:38:22] [WARNING]- "GET /static/plugins/bootstrap-4.4.1/bootstrap.bundle.min.js.map HTTP/1.1" 404 1880
+[2020-04-06 Monday 14:38:22] [WARNING]- "GET /static/plugins/AdminLTE/adminlte.min.js.map HTTP/1.1" 404 1835
+[2020-04-06 Monday 14:38:30] [INFO]- D:\Code\Git\django_project\django_project\settings.py changed, reloading.
+[2020-04-06 14:38:32] [INFO]- Watching for file changes with StatReloader

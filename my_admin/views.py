@@ -103,14 +103,26 @@ def admin(request):     # 管理页面
 
 
 @auth
-def upload(request):     # 管理页面
-    if request.method == "POST":
-        file_obj = request.POST.get('uploadFile')
-        print('文件大小：',file_obj.size)
-        with open('file_storage/%s' % (obj.name), 'wb') as f:
-            if file_obj.multiple_chunks:
-                for i in file_obj.chunks():
-                    f.write(i)
+def upload(request):     # 上传页面
+    ret = {'status': False, 'error': None, 'data': None}
+    try:
+        if request.method == "POST":
+            file_obj = request.FILES.get('uploadFile')
+            if file_obj:
+                with open('file_storage/%s' % (file_obj.name), 'wb') as f:
+                    if file_obj.multiple_chunks:
+                        for i in file_obj.chunks():
+                            f.write(i)
+                    else:
+                        f.write(file_obj.read())
+                    print('文件"%s"上传成功(%sKB)'%(file_obj.name,round(file_obj.size/1024,2)))
+                ret['status'] = True
             else:
-                f.write(file_obj.read())
-    return redirect('/video/admin/view_log/')
+                ret['status'] = False
+                ret['error'] = '后台未收到文件'
+    except Exception as e:
+        print('Exception:',e)
+        ret['status'] = False
+        ret['error'] = '遇到未知错误'
+    finally:
+        return HttpResponse(json.dumps(ret))

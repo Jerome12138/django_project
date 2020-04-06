@@ -10,7 +10,8 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/2.1/ref/settings/
 """
 
-import os,time
+import os
+import time
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -147,11 +148,14 @@ LOGGING = {
     'version': 1,
     'disable_existing_loggers': False,
     'formatters': {  # 格式器
-        'standard': {
-            'format': '[%(asctime)s] [%(module)s:%(funcName)s] [%(levelname)s]- %(message)s'},
+        'standard': {   # 标准格式
+            'format': '[%(asctime)s] [%(levelname)s]- %(message)s',
+            'datefmt': '%Y-%m-%d %H:%M:%S'},
         'simple': {  # 简单格式
-            'format': '[%(asctime)s] [%(levelname)s]- %(message)s'
-        },
+            'format': '[%(levelname)s]- %(message)s'},
+        'error':{   # 错误时触发
+            'format': '[%(asctime)s] [%(module)s:%(funcName)s] [%(levelname)s]- %(message)s',
+            'datefmt': '%Y-%m-%d %H:%M:%S'},
     },
     'filters': {  # 过滤器
     },
@@ -167,6 +171,12 @@ LOGGING = {
             'formatter': 'standard',  # 输出格式
             'encoding': 'utf-8',  # 设置默认编码
         },
+        # 控制台输出
+        'console': {
+            'level': 'DEBUG',
+            'class': 'logging.StreamHandler',
+            'formatter': 'standard'
+        },
         # 输出错误日志
         'error': {
             'level': 'ERROR',
@@ -174,27 +184,20 @@ LOGGING = {
             'filename': os.path.join(LOGGING_DIR, 'error-{}.log'.format(time.strftime('%Y-%m-%d'))),
             'maxBytes': 1024 * 1024 * 5,  # 文件大小
             'backupCount': 5,  # 备份数
-            'formatter': 'standard',  # 输出格式
+            'formatter': 'error',  # 输出格式
             'encoding': 'utf-8',  # 设置默认编码
         },
-        # 控制台输出
-        'console': {
-            'level': 'DEBUG',
-            'class': 'logging.StreamHandler',
-            'formatter': 'standard'
-        },
-        # 输出info日志
-        'info': {
-            'level': 'INFO',
+        # 输出警告日志
+        'warning': {
+            'level': 'WARNING',
             'class': 'logging.handlers.RotatingFileHandler',
-            'filename': os.path.join(LOGGING_DIR, 'info-{}.log'.format(time.strftime('%Y-%m-%d'))),
-            'maxBytes': 1024 * 1024 * 5,
-            'backupCount': 5,
-            'formatter': 'standard',
+            'filename': os.path.join(LOGGING_DIR, 'error-{}.log'.format(time.strftime('%Y-%m-%d'))),
+            'maxBytes': 1024 * 1024 * 5,  # 文件大小
+            'backupCount': 5,  # 备份数
+            'formatter': 'error',  # 输出格式
             'encoding': 'utf-8',  # 设置默认编码
         },
-        'update':{
-            'info': {
+        'update': {
             'level': 'INFO',
             'class': 'logging.handlers.RotatingFileHandler',
             'filename': os.path.join(LOGGING_DIR, 'update.log'),
@@ -202,7 +205,6 @@ LOGGING = {
             'backupCount': 5,
             'formatter': 'simple',
             'encoding': 'utf-8',  # 设置默认编码
-        },
         }
     },
     # 配置用哪几种 handlers 来处理日志
@@ -215,12 +217,12 @@ LOGGING = {
         },
         # log 调用时需要当作参数传入
         'log': {
-            'handlers': ['error', 'info', 'console', 'default','update'],
+            'handlers': ['default', 'console', 'error','warning', 'update'],
             'level': 'INFO',
-            'propagate': False   
+            'propagate': False
         },
         'update': {
-            'handlers': ['error','update'],
+            'handlers': ['error', 'update'],
             'level': 'INFO',
             'propagate': False
         },

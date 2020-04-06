@@ -87,18 +87,17 @@
                     <!-- /.invoice -->
                     <div class="invoice p-3 mb-3">
                         <h4>上传文件至系统后台</h4>
-                        <form class="ml-3" action="/admin/upload/" method="POST" enctype="multipart/form-data">
-                            {% csrf_token %}
+                        <form class="ml-3" enctype="multipart/form-data" action="/admin/upload/" method="POST" id='upload_form'>
                             <div class="input-group input-group-sm">
                                 <div class="input-group mb-3">
                                     <div class="custom-file">
                                         <input type="file" class="custom-file-input" id="uploadFile"
-                                            aria-describedby="uploadFileAddon">
-                                        <label class="custom-file-label" for="uploadFile">选择文件</label>
+                                        name="uploadFile" onchange="loadName(this.files[0])">
+                                        <label class="custom-file-label" id="uploadLabel" for="uploadFile">选择文件</label>
                                     </div>
                                     <div class="input-group-append">
-                                        <button class="btn btn-outline-secondary" type="submit"
-                                            id="uploadFileAddon">上传</button>
+                                        <button class="btn btn-outline-secondary" type="button">上传</button>
+                                        <!-- <input type="submit" value="提交"> -->
                                     </div>
                                 </div>
                             </div>
@@ -211,6 +210,43 @@
                     //后台未接收到请求或未返回数据等未知错误
                 }
             })
+        };
+    });
+    function loadName(file){
+        $("#uploadLabel").html(file.name);
+    };
+    $('#upload_form button').click(function () {
+        // ajax上传文件必须通过FormData对象传输数据
+        var formdata = new FormData();
+        var file_obj = $('#uploadFile')[0].files[0];
+        formdata.append('uploadFile', file_obj);
+        if (file_obj) {
+            $.ajax({
+                url: '/admin/upload/',
+                type: "POST",
+                headers: { "X-CSRFToken": $.cookie('csrftoken') },
+                data: formdata, // 要提交的数据
+                processData: false,   // 不处理数据（文件上传必须）
+                contentType: false,   // 不设置内容类型，按原格式传输（文件上传必须）
+                dataType: 'JSON',     // 自动将接收到的data反序列化成obj返回
+                success: function (obj) {
+                    if (obj.status) {
+                        $('#upload input').focus();
+                        $('#upload_form input').attr('data-toggle', 'tooltip').attr('data-placement', 'bottom').attr('title', '上传成功').tooltip('show');
+                    } else {
+                        $('#upload_form input').focus();
+                        $('#upload_form input').attr('data-toggle', 'tooltip').attr('data-placement', 'bottom').attr('title', obj.error).tooltip('show');
+                    }
+                },
+                error: function () {
+                    $('#upload input').focus();
+                    $('#upload input').attr('data-toggle', 'tooltip').attr('data-placement', 'bottom').attr('title', '请求出现未知错误').tooltip('show');
+                    //后台未接收到请求或未返回数据等未知错误
+                }
+            })
+        }else{
+            $('#upload_form input').focus();
+            $('#upload_form input').attr('data-toggle', 'tooltip').attr('data-placement', 'bottom').attr('title', '请先选择文件').tooltip('show');
         };
     });
 </script>
