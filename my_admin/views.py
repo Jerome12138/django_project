@@ -123,6 +123,6 @@ def upload(request):     # 上传页面
     except Exception as e:
         print('Exception:',e)
         ret['status'] = False
-        ret['error'] = '遇到未知错误'
+        ret['error'] = '遇到未知错误'+e
     finally:
         return HttpResponse(json.dumps(ret))

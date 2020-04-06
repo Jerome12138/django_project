@@ -149,12 +149,12 @@ LOGGING = {
     'disable_existing_loggers': False,
     'formatters': {  # 格式器
         'standard': {   # 标准格式
-            'format': '[%(asctime)s] [%(levelname)s]- %(message)s',
+            'format': '[%(asctime)s] [%(levelname)s] %(message)s',
             'datefmt': '%Y-%m-%d %H:%M:%S'},
         'simple': {  # 简单格式
-            'format': '[%(levelname)s]- %(message)s'},
+            'format': '[%(levelname)s] %(message)s'},
         'error':{   # 错误时触发
-            'format': '[%(asctime)s] [%(module)s:%(funcName)s] [%(levelname)s]- %(message)s',
+            'format': '[%(asctime)s] [%(module)s:%(funcName)s] [%(levelname)s] %(message)s',
             'datefmt': '%Y-%m-%d %H:%M:%S'},
     },
     'filters': {  # 过滤器
