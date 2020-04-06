@@ -1,4 +1,4 @@
-from django.shortcuts import render,HttpResponse,redirect
+from django.shortcuts import render, HttpResponse, redirect
 import json
 from django.views import View
 from django import forms
@@ -8,20 +8,22 @@ from django.forms import widgets as Fwidgets
 from . import models
 # Create your views here.
 
+
 class UserInfoModelForm(ModelForm):
     confirm_pwd = Ffields.CharField(
         label='确认密码',
-        widget=Fwidgets.PasswordInput(attrs={'placeholder': '请确认密码','class':"form-control form-control-sm"})
+        widget=Fwidgets.PasswordInput(
+            attrs={'placeholder': '请确认密码', 'class': "form-control form-control-sm"})
     )
 
     class Meta:
         model = models.UserInfo
-        fields = ['email','username','nickname','password']
+        fields = ['email', 'username', 'nickname', 'password']
         widgets = {
-            'email': forms.EmailInput(attrs={'placeholder': "需要通过邮件激活账户",'class':"form-control form-control-sm"}),
-            'username': forms.TextInput(attrs={'placeholder': '登录用户名','class':"form-control form-control-sm"}),
-            'nickname': forms.TextInput(attrs={'placeholder': '昵称','class':"form-control form-control-sm"}),
-            'password': forms.PasswordInput(attrs={'placeholder': '至少7位，必须包含数字、字母','class':"form-control form-control-sm"}),
+            'email': forms.EmailInput(attrs={'placeholder': "需要通过邮件激活账户", 'class': "form-control form-control-sm"}),
+            'username': forms.TextInput(attrs={'placeholder': '登录用户名', 'class': "form-control form-control-sm"}),
+            'nickname': forms.TextInput(attrs={'placeholder': '昵称', 'class': "form-control form-control-sm"}),
+            'password': forms.PasswordInput(attrs={'placeholder': '至少7位，必须包含数字、字母', 'class': "form-control form-control-sm"}),
         }
 
 
@@ -35,7 +37,7 @@ class SignUp(View):
     def post(self, request):
         user_modelform = UserInfoModelForm(request.POST)
         if user_modelform.is_valid():
-            user_modelform.save()
+            # user_modelform.save()
             print('添加用户：%s' % user_modelform.cleaned_data['username'])
             return redirect('/admin/login.html')
         else:
@@ -58,7 +60,8 @@ class SignIn(View):
             if not username or not password:
                 ret['error'] = '请输入用户名和密码'
             else:
-                user_obj = models.UserInfo.objects.filter(username=username).first()
+                user_obj = models.UserInfo.objects.filter(
+                    username=username).first()
                 if not user_obj:
                     ret['error'] = '用户名或密码错误'
                 else:
@@ -79,21 +82,35 @@ class SignIn(View):
             return HttpResponse(json.dumps(ret))
 
 
-# 注销
-def log_out(request):
+def log_out(request):   # 注销
     request.session.clear()
     return redirect('/admin/login.html')
 
-# 登录验证
-def auth(func):
+
+def auth(func):   # 登录验证
     def inner(request, *args, **kwargs):
         username = request.session.get('username', None)
         if not username:
             return redirect('/admin/login.html')
-        # user_obj = models.UserInfo.objects.filter(username=username).first()
-        return func(request, *args, **kwargs) #user_obj,
+        user_obj = models.UserInfo.objects.filter(username=username).first()
+        return func(request, *args, **kwargs)  
     return inner
+
 
 @auth
 def admin(request):     # 管理页面
+    return redirect('/video/admin/view_log/')
+
+
+@auth
+def upload(request):     # 管理页面
+    if request.method == "POST":
+        file_obj = request.POST.get('uploadFile')
+        print('文件大小：',file_obj.size)
+        with open('file_storage/%s' % (obj.name), 'wb') as f:
+            if file_obj.multiple_chunks:
+                for i in file_obj.chunks():
+                    f.write(i)
+            else:
+                f.write(file_obj.read())
     return redirect('/video/admin/view_log/')

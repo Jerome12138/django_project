@@ -4,8 +4,10 @@
 
 {% block css %}
 <style>
-    .row .invoice a{
-        margin: 0 10px;border-bottom:blue 1px solid;color: blue;
+    .row .invoice a {
+        margin: 0 10px;
+        border-bottom: blue 1px solid;
+        color: blue;
     }
 </style>
 {% endblock %}
@@ -40,7 +42,7 @@
                         <h4>
                             <a href="http://www.zuidazy5.com/">最大资源网</a>
                             >>>>>>
-                            <a href="javascript:;" id='update' >更新今日</a>
+                            <a href="javascript:;" id='update'>更新今日</a>
                             <a href="javascript:;" id='update-all'>更新所有</a>
                         </h4>
                         <h4>
@@ -56,7 +58,8 @@
                         <h4>解析视频地址</h4>
                         <form class="ml-3" action="https://www.administratorw.com/admin.php?url=">
                             <div class="input-group input-group-sm">
-                                <input type="text" class="form-control form-control-navbar" name="url" id="url" placeholder="【播放支持搜索★乐视视频网址★奇艺视频网址★腾讯视频网址★芒果视频网址★优酷视频网址】">
+                                <input type="text" class="form-control form-control-navbar" name="url" id="url"
+                                    placeholder="【播放支持搜索★乐视视频网址★奇艺视频网址★腾讯视频网址★芒果视频网址★优酷视频网址】">
                                 <div class="input-group-append">
                                     <button class="btn btn-outline-secondary" type="submit">
                                         <i class="iconfont" aria-hidden="true">&#xe8ef;</i>
@@ -71,11 +74,32 @@
                         <form class="ml-3" action="/video/i-search/" method="POST">
                             {% csrf_token %}
                             <div class="input-group input-group-sm">
-                                <input type="text" class="form-control form-control-navbar" name="wd" id="wd" placeholder="请输入关键字搜索...">
+                                <input type="text" class="form-control form-control-navbar" name="wd" id="wd"
+                                    placeholder="请输入关键字搜索...">
                                 <div class="input-group-append">
                                     <button class="btn btn-outline-secondary" type="submit">
                                         <i class="iconfont" aria-hidden="true">&#xe8ef;</i>
                                     </button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <!-- /.invoice -->
+                    <div class="invoice p-3 mb-3">
+                        <h4>上传文件至系统后台</h4>
+                        <form class="ml-3" action="/admin/upload/" method="POST" enctype="multipart/form-data">
+                            {% csrf_token %}
+                            <div class="input-group input-group-sm">
+                                <div class="input-group mb-3">
+                                    <div class="custom-file">
+                                        <input type="file" class="custom-file-input" id="uploadFile"
+                                            aria-describedby="uploadFileAddon">
+                                        <label class="custom-file-label" for="uploadFile">选择文件</label>
+                                    </div>
+                                    <div class="input-group-append">
+                                        <button class="btn btn-outline-secondary" type="submit"
+                                            id="uploadFileAddon">上传</button>
+                                    </div>
                                 </div>
                             </div>
                         </form>
@@ -125,7 +149,7 @@
                 url: '/video/admin/update/',
                 type: "POST",
                 headers: { "X-CSRFToken": $.cookie('csrftoken') },
-                data: {'flag':1}, // 要提交的数据
+                data: { 'flag': 1 }, // 要提交的数据
                 dataType: 'JSON',                 // 自动将接收到的data反序列化成obj返回
                 success: function (obj) {
                     if (obj.status) {
@@ -173,7 +197,7 @@
                 url: '/video/admin/update2/',
                 type: "POST",
                 headers: { "X-CSRFToken": $.cookie('csrftoken') },
-                data: {'flag':1}, // 要提交的数据
+                data: { 'flag': 1 }, // 要提交的数据
                 dataType: 'JSON',                 // 自动将接收到的data反序列化成obj返回
                 success: function (obj) {
                     if (obj.status) {

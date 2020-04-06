@@ -89,7 +89,7 @@ def load_log(log_path):  # 日志
     return log
 
 
-def dump_bulk_data(data_list):    # 将视频数据保存至数据库
+def dump_bulk_data(data_list):    # 将视频数据保存至数据库url1
     try:
         obj_list = []
         update_list = []
@@ -126,6 +126,7 @@ def dump_bulk_data_url2(data_list):    # 将视频数据保存至数据库url2
             for i in add_list:
                 new_item[i] = item[i]
             new_item['vod_url2'] = new_item.pop('vod_url')
+            # 如果视频名称、年份、导演一致则判断为重复视频
             vod_obj = models.VideoData.objects.filter(
                 vod_name=item['vod_name'], vod_year=item['vod_year'], vod_director=item['vod_director']).exclude(vod_url=None).first()
             # 添加进对应列表

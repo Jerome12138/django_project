@@ -1,11 +1,12 @@
-import json,re
-import time
+import json,re,time
+import logging
 import requests
 from lxml import etree
 from queue import Queue, LifoQueue
 import threading
 from .db_handler import dump_bulk_data, dump_bulk_data_url2
 
+logger = logging.getLogger('log')
 
 class GetWebData(object):  # 爬取网页数据，返回html数据
     def __init__(self):
@@ -13,14 +14,15 @@ class GetWebData(object):  # 爬取网页数据，返回html数据
             "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.149 Safari/537.36"
         }
 
-    def get_html(self, url, *args, **kwargs):  # 实现主要逻辑
+    def get_html(self, url, is_debug=0,*args, **kwargs):  # 实现主要逻辑
         if kwargs.get('referer'):
             self.headers['Referer'] = kwargs['referer']
         res = requests.get(url, headers=self.headers)
         assert res.status_code == 200
         html_str = res.content.decode()
-        with open('abc.html','w',encoding="utf-8") as f:
-            f.write(html_str)
+        if is_debug:
+            with open('abc.html','w',encoding="utf-8") as f:
+                f.write(html_str)
         html = etree.HTML(html_str)
         return html
 
@@ -147,9 +149,9 @@ class getAllData(object):   # 获取所有数据
             # 3.转化数据
             x_update = html.xpath(x_match)
             update_count = int(x_update[0]) if x_update != [] else 480
-            print("站点%s今日更新：" % url_index, update_count)
+            logger.console("站点%s今日更新：" % url_index, update_count)
         except Exception as e:
-            print("获取更新数量出错：%s" % e)
+            Logger.exception("获取更新数量出错：%s" % e)
             update_count = 480
         finally:
             return update_count
@@ -161,7 +163,7 @@ class getAllData(object):   # 获取所有数据
         # 2.发送请求，获取响应
         res_dict = self.parse_url(start_url)
         if not res_dict:
-            print('首页请求无数据')
+            logger.error('首页请求无数据')
             return False
         # 4.保存数据
         page_count = int(res_dict['page']['pagecount'])
@@ -177,12 +179,12 @@ class getAllData(object):   # 获取所有数据
         url = self.url_temp % self.url_queue.get()
         res_dict = self.parse_url(url)
         if not res_dict:
-            print('page:', url.split('?p=')[1], '请求无数据，放入错误列表')
+            logger.error('page:', url.split('?p=')[1], '请求无数据，放入错误列表')
             # self.url_queue.put(url)
             self.error_pages.append(url.split('?p=')[1])
         else:
             if int(url.split('?p=')[1]) % 100 == 0:
-                print('获取到page:', url.split('?p=')[1])
+                logger.console('获取到page:', url.split('?p=')[1])
             self.page_queue.put(res_dict)
         self.url_queue.task_done()
 
@@ -195,11 +197,11 @@ class getAllData(object):   # 获取所有数据
         elif self.url_index == 2:
             is_saved = dump_bulk_data_url2(res_dict['data'])
         if not is_saved:
-            print('%s保存出现错误' % res_dict['page']['pageindex'])
+            logger.error('%s保存出现错误' % res_dict['page']['pageindex'])
             self.page_queue.put(res_dict)
         else:
             if int(res_dict['page']['pageindex']) % 100 == 0:
-                print('page%s保存成功' % res_dict['page']['pageindex'])
+                logger.console('page%s保存成功' % res_dict['page']['pageindex'])
         self.page_queue.task_done()
 
     def run_use_more_thread(self, func, count=1):   # 运行多线程
@@ -234,7 +236,7 @@ class getAllData(object):   # 获取所有数据
             self.page_queue.join()
         print('已更新%s条数据' % (update_page*40))
         if self.error_pages != []:
-            print('出现错误页面：', self.error_pages)
+            logger.error('出现错误页面：', self.error_pages)
         print('--------%s 站点%s更新完成--------' %
               (time.strftime("%Y-%m-%d %H:%M:%S", time.localtime()), self.url_index))
         return update_page*40
@@ -247,15 +249,20 @@ class IQiyi(object):  # 爱奇艺视频搜索及解析
     def i_search(self, wd):  # 搜索视频
         html = self.get_web_data.get_html('https://so.iqiyi.com/so/q_'+wd)
         x_vod_list = html.xpath(
-            '//div[@class="qy-search-result-con"]/div[@class="layout-main"]/div[@desc="搜索列表"]/div[@desc="card"]')
+            '//div[contains(@class,"qy-search-result-con")]/div[@class="layout-main"]/div[@desc="搜索列表"]/div[@desc="card"]')
         vod_list = []
         print(len(x_vod_list))
         for x_vod in x_vod_list:
             vod_dict = {}
             x_vod_type = x_vod.xpath(
-                './/h3[contains(@class,"qy-search-result-tit")]/span[@class="item-type"]/text()')
+                './/h3[contains(@class,"qy-search-result-tit")]//span[@class="item-type"]/text()')
             vod_dict['vod_type'] = x_vod_type[0] if x_vod_type != [] else ""
+            x_vod_player = x_vod.xpath(
+                './/div[contains(@class,"qy-search-player-source")]//em[@class="player-name"]/text()')
+            vod_dict['vod_player'] = x_vod_player[0] if x_vod_player != [] else ""
             if vod_dict['vod_type'] != "电影" and vod_dict['vod_type'] != "电视剧":
+                continue
+            if vod_dict['vod_player'] !="爱奇艺":
                 continue
             vod_detail = x_vod.xpath(
                 './/div[@class="result-figure"]//a[@class="qy-mod-link"]')[0]
@@ -277,10 +284,13 @@ class IQiyi(object):  # 爱奇艺视频搜索及解析
         return vod_list
 
     def i_video(self, vod_url):  # 解析视频地址
-        base_url = "https://www.administrator5.com/admin.php?url="
-        # https://www.administrator5.com/admin.php
-        # https://www.xn--eqr49pmpixzv.com/index.php
-        return base_url+vod_url
+        jiexi_url = "https://www.xn--eqr49pmpixzv.com/index.php?url="+vod_url
+        # https://www.administrator5.com/admin.php?url=
+        # https://www.xn--eqr49pmpixzv.com/index.php?url=
+        # http://okxj.cc/?url=
+        # https://okjx.cc/jiexi/?url=
+        # self.get_web_data.get_html(jiexi_url)
+        return jiexi_url
     
     def i_jeixi(self,vod_url):
         base_url = "https://www.administratorm.com/WANG.WANG/index.php?url="+vod_url
@@ -290,7 +300,6 @@ class IQiyi(object):  # 爱奇艺视频搜索及解析
         if x_script:
             script_str = x_script[0]
             vkey = re.search(r"(var\svkey\s\=\s\'\S*?\')", script_str).group().split("'")[1]
-            
             print(vkey)
         else:
             print('无数据')

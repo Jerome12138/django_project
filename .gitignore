@@ -2,7 +2,8 @@
 __pycache__/
 .classpath
 .project
-.settings      
+.settings
+file_storage/    
 ##filter databfile、sln file##
 db.sqlite3
 *.mdb  
