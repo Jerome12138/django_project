@@ -1,0 +1,108 @@
+{% extends 'video_layout.html' %}
+
+{% block title %}
+<title>卧龙影视，在线观看</title>
+{% endblock %}
+
+{% block css %}{% endblock %}
+
+{% block main %}
+<!-- 播放器  -->
+<div class="stui-pannel clearfix" style="margin-left: 10px;margin-right: 10px;">
+    <div class="stui-player col-pd pb-0">
+        <div>
+            <div id='video_player'>
+                <iframe src="https://okjx.cc/jiexi/?url={{ video_url }}" frameborder="" width="100%"  style="height:50vw" ></iframe>
+            </div>
+        </div>
+    </div>
+    <!-- end 播放器  -->
+    <!-- 播放地址 -->
+    <div style="margin-top:20px;padding: 0 10px;">解析播放：(请输入各大网站视频地址)</div>
+    <div class="play-url">
+        <form class="ff-play" id="search" name="search" action="https://okjx.cc/jiexi/?url=FFURL" method="get" data-sid="0"
+            data-limit="10" data-action="https://okjx.cc/jiexi/?url=FFURL">
+            {% csrf_token %}
+            <input class="ff-url form-control" type="text" id="url" name="url" value="" placeholder="请输入视频地址..."
+                autocomplete="off">
+            <button class="submit" type="submit" name="submit"><i class="icon iconfont icon-search"></i></button>
+        </form>
+    </div>
+    <!-- <div class="play-url">
+        <form class="ff-play-name" id="search-name" name="search" action="https://www.administrator5.com/admin.php?wd=FFWD" method="get" data-sid="0"
+            data-limit="10" data-action="https://www.administrator5.com/admin.php?wd=FFWD">
+            {% csrf_token %}
+            <input class="ff-url form-control" type="text" id="wd" name="wd" value="" placeholder="请输入视频名称..."
+                autocomplete="off">
+            <button class="submit" type="submit" name="submit"><i class="icon iconfont icon-search"></i></button>
+        </form>
+    </div> -->
+    <!-- end 播放地址 -->
+</div>
+
+{% endblock %}
+
+{% block js %}
+<script src="/static/plugins/DPlayer/hls.min.js"></script>
+<script src="/static/plugins/DPlayer/DPlayer.min.js"></script>
+<script>
+    $(".ff-play input").keyup(function (event) {
+        if (event.keyCode == 13) {
+            $form = $(this).parent('.ff-play');
+            $url = $form.find('.ff-url').val();
+            $action = $form.attr('data-action');
+            if (!$url) {
+                $form.find('.ff-url').focus();
+                $form.find('.ff-url').attr('data-toggle', 'tooltip').attr('data-placement', 'bottom').attr('title', '请输入视频地址').tooltip('show');
+                return false;
+            }
+            if ($action) {
+                $('#video_player iframe').attr('src',$action.replace('FFURL', encodeURIComponent($url)));
+                return false;
+            }
+        }
+    });
+    $(".ff-play").on("submit", function () {
+        $url = $(this).find('.ff-url').val();
+        $action = $(this).attr('data-action');
+        if ($url == "") {
+            $(this).find('.ff-url').focus();
+            $(this).find('.ff-url').attr('data-toggle', 'tooltip').attr('data-placement', 'bottom').attr('title', '请输入视频地址').tooltip('show');
+            return false;
+        }
+        if ($action) {
+            $('#video_player iframe').attr('src',$action.replace('FFURL', encodeURIComponent($url)));
+            return false;
+        }
+    });
+    $(".ff-play-name input").keyup(function (event) {
+        if (event.keyCode == 13) {
+            $form = $(this).parent('.ff-play');
+            $wd = $form.find('.ff-url').val();
+            $action = $form.attr('data-action');
+            if (!$wd) {
+                $form.find('.ff-url').focus();
+                $form.find('.ff-url').attr('data-toggle', 'tooltip').attr('data-placement', 'bottom').attr('title', '请输入视频地址').tooltip('show');
+                return false;
+            }
+            if ($action) {
+                $('#video_player iframe').attr('src',$action.replace('FFWD', encodeURIComponent($wd)));
+                return false;
+            }
+        }
+    });
+    $(".ff-play-name").on("submit", function () {
+        $wd = $(this).find('.ff-url').val();
+        $action = $(this).attr('data-action');
+        if ($wd == "") {
+            $(this).find('.ff-url').focus();
+            $(this).find('.ff-url').attr('data-toggle', 'tooltip').attr('data-placement', 'bottom').attr('title', '请输入视频地址').tooltip('show');
+            return false;
+        }
+        if ($action) {
+            $('#video_player iframe').attr('src',$action.replace('FFWD', encodeURIComponent($wd)));
+            return false;
+        }
+    });
+</script>
+{% endblock %}

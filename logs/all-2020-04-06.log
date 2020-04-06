@@ -613,3 +613,89 @@ ValueError: The view my_admin.views.inner didn't return an HttpResponse object. 
 [2020-04-06 17:16:32] [INFO] Watching for file changes with StatReloader
 [2020-04-06 17:20:27] [INFO] D:\Code\Git\django_project\my_admin\views.py changed, reloading.
 [2020-04-06 17:20:28] [INFO] Watching for file changes with StatReloader
+[2020-04-06 23:42:47] [INFO] Watching for file changes with StatReloader
+[2020-04-06 23:42:50] [INFO] "GET /video/admin/update_video/ HTTP/1.1" 200 28567
+[2020-04-06 23:42:51] [WARNING] Not Found: /static/fonts/myfont.css
+[2020-04-06 23:42:51] [WARNING] "GET /static/fonts/myfont.css HTTP/1.1" 404 179
+[2020-04-06 23:42:52] [WARNING] Not Found: /static/plugins/bootstrap-4.4.1/bootstrap.min.css.map
+[2020-04-06 23:42:52] [WARNING] Not Found: /static/plugins/AdminLTE/adminlte.min.css.map
+[2020-04-06 23:42:52] [WARNING] "GET /static/plugins/bootstrap-4.4.1/bootstrap.min.css.map HTTP/1.1" 404 179
+[2020-04-06 23:42:52] [WARNING] "GET /static/plugins/AdminLTE/adminlte.min.css.map HTTP/1.1" 404 179
+[2020-04-06 23:42:52] [WARNING] Not Found: /static/plugins/bootstrap-4.4.1/bootstrap.bundle.min.js.map
+[2020-04-06 23:42:52] [WARNING] Not Found: /static/plugins/AdminLTE/adminlte.min.js.map
+[2020-04-06 23:42:52] [WARNING] "GET /static/plugins/bootstrap-4.4.1/bootstrap.bundle.min.js.map HTTP/1.1" 404 179
+[2020-04-06 23:42:52] [WARNING] "GET /static/plugins/AdminLTE/adminlte.min.js.map HTTP/1.1" 404 179
+[2020-04-06 23:42:59] [WARNING] Not Found: /static/img/favicon.ico
+[2020-04-06 23:42:59] [WARNING] "GET /static/img/favicon.ico HTTP/1.1" 404 179
+[2020-04-06 23:43:32] [INFO] "GET /video/admin/update_video/ HTTP/1.1" 200 28567
+[2020-04-06 23:43:32] [WARNING] Not Found: /static/fonts/myfont.css
+[2020-04-06 23:43:32] [WARNING] "GET /static/fonts/myfont.css HTTP/1.1" 404 179
+[2020-04-06 23:43:37] [WARNING] Not Found: /static/img/favicon.ico
+[2020-04-06 23:43:37] [WARNING] "GET /static/img/favicon.ico HTTP/1.1" 404 179
+[2020-04-06 23:43:47] [INFO] "GET /video/admin/update_video/ HTTP/1.1" 200 28567
+[2020-04-06 23:43:47] [WARNING] Not Found: /static/fonts/myfont.css
+[2020-04-06 23:43:47] [WARNING] "GET /static/fonts/myfont.css HTTP/1.1" 404 179
+[2020-04-06 23:43:53] [WARNING] Not Found: /static/img/favicon.ico
+[2020-04-06 23:43:53] [WARNING] "GET /static/img/favicon.ico HTTP/1.1" 404 179
+[2020-04-06 23:44:01] [WARNING] Not Found: /static/fonts/myfont.css
+[2020-04-06 23:44:01] [WARNING] "GET /static/fonts/myfont.css HTTP/1.1" 404 179
+[2020-04-06 23:44:01] [WARNING] Not Found: /static/plugins/bootstrap-4.4.1/bootstrap.bundle.min.js.map
+[2020-04-06 23:44:01] [WARNING] "GET /static/plugins/bootstrap-4.4.1/bootstrap.bundle.min.js.map HTTP/1.1" 404 179
+[2020-04-06 23:44:01] [WARNING] Not Found: /static/plugins/AdminLTE/adminlte.min.js.map
+[2020-04-06 23:44:01] [WARNING] "GET /static/plugins/AdminLTE/adminlte.min.js.map HTTP/1.1" 404 179
+[2020-04-06 23:44:01] [WARNING] Not Found: /static/plugins/bootstrap-4.4.1/bootstrap.min.css.map
+[2020-04-06 23:44:01] [WARNING] Not Found: /static/plugins/AdminLTE/adminlte.min.css.map
+[2020-04-06 23:44:01] [WARNING] "GET /static/plugins/bootstrap-4.4.1/bootstrap.min.css.map HTTP/1.1" 404 179
+[2020-04-06 23:44:01] [WARNING] "GET /static/plugins/AdminLTE/adminlte.min.css.map HTTP/1.1" 404 179
+[2020-04-06 23:44:27] [INFO] "GET /video/admin/update_video/ HTTP/1.1" 200 28567
+[2020-04-06 23:44:27] [WARNING] Not Found: /static/plugins/bootstrap-4.4.1/bootstrap.min.css
+[2020-04-06 23:44:27] [WARNING] Not Found: /static/fonts/myfont.css
+[2020-04-06 23:44:27] [WARNING] "GET /static/plugins/bootstrap-4.4.1/bootstrap.min.css HTTP/1.1" 404 179
+[2020-04-06 23:44:27] [WARNING] Not Found: /static/plugins/AdminLTE/user2-160x160.jpg
+[2020-04-06 23:44:27] [WARNING] "GET /static/fonts/myfont.css HTTP/1.1" 404 179
+[2020-04-06 23:44:27] [WARNING] Not Found: /static/plugins/AdminLTE/adminlte.min.css
+[2020-04-06 23:44:27] [WARNING] "GET /static/plugins/AdminLTE/user2-160x160.jpg HTTP/1.1" 404 179
+[2020-04-06 23:44:27] [WARNING] Not Found: /static/app_video/css/stui_default.css
+[2020-04-06 23:44:27] [WARNING] Not Found: /static/jquery/jquery-1.12.4.js
+[2020-04-06 23:44:27] [WARNING] "GET /static/plugins/AdminLTE/adminlte.min.css HTTP/1.1" 404 179
+[2020-04-06 23:44:27] [WARNING] "GET /static/jquery/jquery-1.12.4.js HTTP/1.1" 404 179
+[2020-04-06 23:44:27] [WARNING] "GET /static/app_video/css/stui_default.css HTTP/1.1" 404 179
+[2020-04-06 23:44:27] [WARNING] Not Found: /static/plugins/AdminLTE/AdminLTELogo.png
+[2020-04-06 23:44:27] [WARNING] "GET /static/plugins/AdminLTE/AdminLTELogo.png HTTP/1.1" 404 179
+[2020-04-06 23:44:28] [WARNING] Not Found: /static/plugins/bootstrap-4.4.1/bootstrap.bundle.min.js
+[2020-04-06 23:44:28] [WARNING] Not Found: /static/plugins/AdminLTE/adminlte.min.js
+[2020-04-06 23:44:28] [WARNING] "GET /static/plugins/bootstrap-4.4.1/bootstrap.bundle.min.js HTTP/1.1" 404 179
+[2020-04-06 23:44:28] [WARNING] "GET /static/plugins/AdminLTE/adminlte.min.js HTTP/1.1" 404 179
+[2020-04-06 23:44:28] [WARNING] Not Found: /static/jquery/jquery.cookie.js
+[2020-04-06 23:44:28] [WARNING] "GET /static/jquery/jquery.cookie.js HTTP/1.1" 404 179
+[2020-04-06 23:44:28] [WARNING] Not Found: /static/plugins/bootstrap-4.4.1/bootstrap.bundle.min.js
+[2020-04-06 23:44:28] [WARNING] "GET /static/plugins/bootstrap-4.4.1/bootstrap.bundle.min.js HTTP/1.1" 404 179
+[2020-04-06 23:44:28] [WARNING] Not Found: /static/plugins/AdminLTE/adminlte.min.js
+[2020-04-06 23:44:28] [WARNING] "GET /static/plugins/AdminLTE/adminlte.min.js HTTP/1.1" 404 179
+[2020-04-06 23:44:28] [WARNING] Not Found: /static/jquery/jquery.cookie.js
+[2020-04-06 23:44:28] [WARNING] "GET /static/jquery/jquery.cookie.js HTTP/1.1" 404 179
+[2020-04-06 23:45:12] [WARNING] Not Found: /static/img/favicon.ico
+[2020-04-06 23:45:12] [WARNING] "GET /static/img/favicon.ico HTTP/1.1" 404 179
+[2020-04-06 23:45:13] [WARNING] Not Found: /static/img/favicon.ico
+[2020-04-06 23:45:13] [WARNING] "GET /static/img/favicon.ico HTTP/1.1" 404 179
+[2020-04-06 23:45:22] [INFO] D:\Code\Git\django_project\django_project\settings.py changed, reloading.
+[2020-04-06 23:45:24] [INFO] Watching for file changes with StatReloader
+[2020-04-06 23:45:28] [INFO] "GET /video/admin/update_video/ HTTP/1.1" 200 28572
+[2020-04-06 23:45:28] [INFO] "GET /static/plugins/bootstrap-4.4.1/bootstrap.min.css HTTP/1.1" 200 159515
+[2020-04-06 23:45:28] [INFO] "GET /static/plugins/AdminLTE/user2-160x160.jpg HTTP/1.1" 200 7070
+[2020-04-06 23:45:28] [INFO] "GET /static/fonts/myfont.css HTTP/1.1" 200 728
+[2020-04-06 23:45:28] [INFO] "GET /static/app_video/css/stui_default.css HTTP/1.1" 200 19526
+[2020-04-06 23:45:28] [INFO] "GET /static/plugins/AdminLTE/AdminLTELogo.png HTTP/1.1" 200 10380
+[2020-04-06 23:45:28] [INFO] "GET /static/jquery/jquery-1.12.4.js HTTP/1.1" 200 304438
+[2020-04-06 23:45:28] [INFO] "GET /static/plugins/AdminLTE/adminlte.min.css HTTP/1.1" 200 657371
+[2020-04-06 23:45:28] [INFO] "GET /static/plugins/AdminLTE/adminlte.min.js HTTP/1.1" 200 24406
+[2020-04-06 23:45:28] [INFO] "GET /static/plugins/bootstrap-4.4.1/bootstrap.bundle.min.js HTTP/1.1" 200 80698
+[2020-04-06 23:45:28] [INFO] "GET /static/jquery/jquery.cookie.js HTTP/1.1" 200 3238
+[2020-04-06 23:46:01] [INFO] "GET /video/admin/update_video/ HTTP/1.1" 200 28615
+[2020-04-06 23:46:32] [INFO] "GET /video/admin/update_video/ HTTP/1.1" 200 28615
+[2020-04-06 23:47:00] [INFO] "GET /video/admin/update_video/ HTTP/1.1" 200 28615
+[2020-04-06 23:47:32] [INFO] "GET /video/admin/update_video/ HTTP/1.1" 200 28618
+[2020-04-06 23:48:38] [INFO] "GET /video/admin/update_video/ HTTP/1.1" 200 28637
+[2020-04-06 23:49:20] [INFO] "GET /video/admin/update_video/ HTTP/1.1" 200 28614
+[2020-04-06 23:49:33] [INFO] "GET /static/img/favicon.ico HTTP/1.1" 200 16958
+[2020-04-07 00:01:07] [INFO] D:\Code\Git\django_project\video\func\GetPageData.py changed, reloading.

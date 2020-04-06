@@ -1,0 +1,35 @@
+[2020-04-07 00:01:08] [INFO] Watching for file changes with StatReloader
+[2020-04-07 00:02:41] [INFO] D:\Code\Git\django_project\video\views.py changed, reloading.
+[2020-04-07 00:02:43] [INFO] Watching for file changes with StatReloader
+[2020-04-07 00:03:18] [INFO] "POST /video/i-search/ HTTP/1.1" 200 16287
+[2020-04-07 00:03:18] [INFO] "GET /static/plugins/hammer/hammer.min.js HTTP/1.1" 304 0
+[2020-04-07 00:03:18] [INFO] "GET /static/plugins/hammer/jquery.hammer.js HTTP/1.1" 304 0
+[2020-04-07 00:03:18] [INFO] "GET /static/app_video/img/dragon.png HTTP/1.1" 304 0
+[2020-04-07 00:03:18] [INFO] "GET /static/app_video/img/icon_search.png HTTP/1.1" 304 0
+[2020-04-07 00:03:18] [INFO] "GET /static/app_video/img/play.png HTTP/1.1" 304 0
+[2020-04-07 00:03:23] [INFO] "GET /video/i-play/?url=https://www.iqiyi.com/lib/m_206895314.html?src=search HTTP/1.1" 200 27639
+[2020-04-07 00:03:25] [INFO] "GET /video/i-play/?url=http://www.iqiyi.com/v_19rw6qb4po.html HTTP/1.1" 200 9058
+[2020-04-07 00:03:25] [INFO] "GET /static/plugins/DPlayer/DPlayer.min.js HTTP/1.1" 200 158260
+[2020-04-07 00:03:25] [INFO] "GET /static/plugins/DPlayer/hls.min.js HTTP/1.1" 200 231428
+[2020-04-07 00:06:18] [WARNING] "GET /static/plugins/DPlayer/DPlayer.min.js.map HTTP/1.1" 404 1829
+[2020-04-07 00:06:18] [WARNING] "GET /static/plugins/DPlayer/hls.min.js.map HTTP/1.1" 404 1817
+[2020-04-07 00:08:18] [INFO] "GET /video/i-play/?url=http://www.iqiyi.com/v_19rw6qb4po.html HTTP/1.1" 200 9073
+[2020-04-07 00:08:40] [INFO] "GET /video/i-play/?url=http://www.iqiyi.com/v_19rw6qb4po.html HTTP/1.1" 200 9074
+[2020-04-07 00:08:49] [WARNING] "GET /static/plugins/DPlayer/hls.min.js.map HTTP/1.1" 404 1817
+[2020-04-07 00:08:49] [WARNING] "GET /static/plugins/DPlayer/DPlayer.min.js.map HTTP/1.1" 404 1829
+[2020-04-07 00:09:40] [WARNING] "GET /static/plugins/DPlayer/DPlayer.min.js.map HTTP/1.1" 404 1829
+[2020-04-07 00:09:40] [WARNING] "GET /static/plugins/DPlayer/hls.min.js.map HTTP/1.1" 404 1817
+[2020-04-07 00:11:38] [INFO] "GET /video/i-play/?url=http://www.iqiyi.com/v_19rw6qb4po.html HTTP/1.1" 200 9073
+[2020-04-07 00:11:39] [WARNING] "GET /static/plugins/DPlayer/hls.min.js.map HTTP/1.1" 404 1817
+[2020-04-07 00:11:39] [WARNING] "GET /static/plugins/DPlayer/DPlayer.min.js.map HTTP/1.1" 404 1829
+[2020-04-07 00:11:46] [INFO] "GET /video/i-play/?url=http://www.iqiyi.com/v_19rw6qb4po.html HTTP/1.1" 200 9073
+[2020-04-07 00:12:13] [INFO] "GET /video/i-play/?url=http://www.iqiyi.com/v_19rw6qb4po.html HTTP/1.1" 200 9071
+[2020-04-07 00:12:29] [WARNING] "GET /static/plugins/DPlayer/hls.min.js.map HTTP/1.1" 404 1817
+[2020-04-07 00:12:29] [WARNING] "GET /static/plugins/DPlayer/DPlayer.min.js.map HTTP/1.1" 404 1829
+[2020-04-07 00:14:19] [INFO] "GET /video/i-play/?url=http://www.iqiyi.com/v_19rw6qb4po.html HTTP/1.1" 200 9058
+[2020-04-07 00:14:20] [WARNING] "GET /static/plugins/DPlayer/hls.min.js.map HTTP/1.1" 404 1817
+[2020-04-07 00:14:20] [WARNING] "GET /static/plugins/DPlayer/DPlayer.min.js.map HTTP/1.1" 404 1829
+[2020-04-07 00:18:22] [INFO] "GET /video/i-play/?url=http://www.iqiyi.com/v_19rw6qb4po.html HTTP/1.1" 200 11007
+[2020-04-07 00:20:13] [INFO] "GET /video/i-play/?url=http://www.iqiyi.com/v_19rw6qb4po.html HTTP/1.1" 200 11043
+[2020-04-07 00:21:31] [INFO] D:\Code\Git\django_project\django_project\settings.py changed, reloading.
+[2020-04-07 00:21:33] [INFO] Watching for file changes with StatReloader

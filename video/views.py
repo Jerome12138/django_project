@@ -261,4 +261,5 @@ def i_play(request):    # 爱奇艺播放
     else:
         # iqiyi.i_jeixi(url)
         # return HttpResponse('test')
-        return redirect(iqiyi.i_video(url))
+        # return redirect(iqiyi.i_video(url))
+        return render(request, 'video_i_play.html', {"video_url": url})

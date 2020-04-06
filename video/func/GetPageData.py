@@ -284,7 +284,7 @@ class IQiyi(object):  # 爱奇艺视频搜索及解析
         return vod_list
 
     def i_video(self, vod_url):  # 解析视频地址
-        jiexi_url = "https://www.xn--eqr49pmpixzv.com/index.php?url="+vod_url
+        jiexi_url = "https://okjx.cc/jiexi/?url="+vod_url
         # https://www.administrator5.com/admin.php?url=
         # https://www.xn--eqr49pmpixzv.com/index.php?url=
         # http://okxj.cc/?url=
