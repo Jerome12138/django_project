@@ -1,0 +1,2 @@
+2020/04/12 18:10:04 [emerg] 6897#6897: open() "/home/ubuntu/git/django_project/web.conf" failed (2: No such file or directory) in /etc/nginx/nginx.conf:65
+2020/04/12 18:10:14 [emerg] 6939#6939: open() "/home/ubuntu/git/django_project/web.conf" failed (2: No such file or directory) in /etc/nginx/nginx.conf:65
