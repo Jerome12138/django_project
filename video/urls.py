@@ -17,7 +17,6 @@ adminpatterns = [
     path('url2_clear/', admin_views.url2_clear),
     path('url_clear/', admin_views.url_clear),
     path('test/', admin_views.test),
-    path('', admin_views.view_log),
 ]
 
 urlpatterns = [

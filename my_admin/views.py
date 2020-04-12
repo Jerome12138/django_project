@@ -99,7 +99,7 @@ def auth(func):   # 登录验证
 
 @auth
 def admin(request):     # 管理页面
-    return redirect('/video/admin/view_log/')
+    return render(request,'admin_home.html')
 
 
 @auth

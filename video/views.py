@@ -2,8 +2,8 @@ from django.shortcuts import render, redirect, HttpResponse
 from django.http.response import JsonResponse
 
 from video import models
-from .func.GetPageData import get_data_list,IQiyi
-from .func.db_handler import load_vod_data,load_all_vod_data,dump_request_data,search_data,load_type_data
+from .func.GetPageData import get_data_list, IQiyi
+from .func.db_handler import load_vod_data, load_all_vod_data, dump_request_data, search_data, load_type_data
 from .func.pagination import Page
 import time
 import json
@@ -11,52 +11,60 @@ import os
 
 # Create your views here.
 
+
 def home(request):  # 主页
     page_index = int(request.GET.get('page')) if request.GET.get('page') else 1
     data_list = load_all_vod_data()
     data_count = len(data_list)
     page = Page(request.path_info+'?page=', page_index, data_count//24 + 1)
     page_str = page.page_str()
-    video_list =page.video_page(data_list,24)
+    video_list = page.video_page(data_list, 24)
     if video_list == -1:
         return HttpResponse('请求错误')
     return render(request, 'video_home.html', {
         "video_list": video_list,
         'page_str': page_str,
         "data_count": data_count,
-        'all_type_id':'0'
+        'all_type_id': '0'
     })
 
-def vod_type(request, vod_cid): # 视频分类页
+
+def vod_type(request, vod_cid):  # 视频分类页
     # 筛选项处理
     area = request.GET.get('area')
     year = request.GET.get('year')
-    filter_param = {'vod_cid':vod_cid}
+    filter_param = {'vod_cid': vod_cid}
     filter_flag = False
     if area:
-        filter_param['vod_area']=area
+        filter_param['vod_area'] = area
     if year:
-        filter_param['vod_year']=year
+        filter_param['vod_year'] = year
     filter_dict = {
-        'type':[],'area':[],
-        'year':['2020','2019','2018','2017','2016','2015','2014','2013','2012','2011','2010','更早']}
+        'type': [], 'area': [],
+        'year': ['2020', '2019', '2018', '2017', '2016', '2015', '2014', '2013', '2012', '2011', '2010', '更早']}
     if vod_cid in ['1', '5', '6', '7', '8', '9', '10', '11', '22']:
         all_type_id = '1'
         filter_flag = True
         filter_dict['type'] = [
-            {'cid':'5','cname':'动作片'},{'cid':'6','cname':'喜剧片'},{'cid':'8','cname':'科幻片'},
-            {'cid':'7','cname':'爱情片'},{'cid':'9','cname':'恐怖片'},{'cid':'11','cname':'战争片'},
-            {'cid':'10','cname':'剧情片'},{'cid':'22','cname':'记录片'}]
-        filter_dict['area'] = ['大陆','香港','美国','台湾','英国','韩国','日本','西班牙','法国','印度','加拿大','泰国','其它']
+            {'cid': '5', 'cname': '动作片'}, {'cid': '6',
+                                           'cname': '喜剧片'}, {'cid': '8', 'cname': '科幻片'},
+            {'cid': '7', 'cname': '爱情片'}, {'cid': '9', 'cname': '恐怖片'}, {
+                'cid': '11', 'cname': '战争片'},
+            {'cid': '10', 'cname': '剧情片'}, {'cid': '22', 'cname': '记录片'}]
+        filter_dict['area'] = ['大陆', '香港', '美国', '台湾', '英国',
+                               '韩国', '日本', '西班牙', '法国', '印度', '加拿大', '泰国', '其它']
     elif vod_cid in ['2', '12', '13', '14', '15', '19', '20', '21']:
         all_type_id = '2'
         filter_dict['type'] = [
-            {'cid':'12','cname':'国产剧'},{'cid':'13','cname':'香港剧'},{'cid':'15','cname':'欧美剧'},
-            {'cid':'14','cname':'韩国剧'},{'cid':'19','cname':'台湾剧'},{'cid':'20','cname':'日本剧'},
-            {'cid':'21','cname':'海外剧'}]
-        filter_dict['area'] = ['大陆','香港','美国','台湾','英国','韩国','日本','加拿大','泰国','其它']
+            {'cid': '12', 'cname': '国产剧'}, {'cid': '13',
+                                            'cname': '香港剧'}, {'cid': '15', 'cname': '欧美剧'},
+            {'cid': '14', 'cname': '韩国剧'}, {'cid': '19',
+                                            'cname': '台湾剧'}, {'cid': '20', 'cname': '日本剧'},
+            {'cid': '21', 'cname': '海外剧'}]
+        filter_dict['area'] = ['大陆', '香港', '美国',
+                               '台湾', '英国', '韩国', '日本', '加拿大', '泰国', '其它']
     else:
-        filter_dict['area'] = ['大陆','香港','美国','台湾','英国','韩国','日本','其它']
+        filter_dict['area'] = ['大陆', '香港', '美国', '台湾', '英国', '韩国', '日本', '其它']
         all_type_id = vod_cid
     # 查询数据
     data_list = load_type_data(**filter_param)
@@ -64,26 +72,27 @@ def vod_type(request, vod_cid): # 视频分类页
     # 分页处理
     page_index = int(request.GET.get('page')) if request.GET.get('page') else 1
     url_str = request.path_info+'?'
-    if area :
-        url_str+='&area=%s'%area
-    if year :
-        url_str+='&year=%s'%year
+    if area:
+        url_str += '&area=%s' % area
+    if year:
+        url_str += '&year=%s' % year
     page = Page(url_str+'&page=', page_index, data_count//24 + 1)
     page_str = page.page_str()
-    video_list =page.video_page(data_list,24)
+    video_list = page.video_page(data_list, 24)
     if video_list == -1:
         return HttpResponse('请求错误')
     return render(request, 'video_type.html', {
         "video_list": video_list,
         'page_str': page_str,
         "data_count": data_count,
-        'all_type_id':all_type_id,
-        'filter_param':filter_param,
-        'filter_flag':filter_flag,
-        'filter_dict':filter_dict,
+        'all_type_id': all_type_id,
+        'filter_param': filter_param,
+        'filter_flag': filter_flag,
+        'filter_dict': filter_dict,
     })
 
-def play(request, vod_id, url_index=1,index=1):  # 播放页面
+
+def play(request, vod_id, url_index=1, index=1):  # 播放页面
     vod_data = load_vod_data(vod_id)
     if not vod_data:
         return render(request, 'video_nonepage.html', {'msg': "影片尚未收录,有需要请联系管理员"})
@@ -118,9 +127,9 @@ def play(request, vod_id, url_index=1,index=1):  # 播放页面
     else:
         url2_list = []
     video2_list = [item.split('$') for item in url2_list]
-    if url_index ==1:
+    if url_index == 1:
         video_url = video_list[index-1]
-    elif url_index==2:
+    elif url_index == 2:
         video_url = video2_list[index-1]
     return render(request, 'video_play.html', {
         'vod_data': vod_data,
@@ -132,7 +141,7 @@ def play(request, vod_id, url_index=1,index=1):  # 播放页面
     })
 
 
-def play2(request): # 自定义播放页
+def play2(request):  # 自定义播放页
     if request.method == "GET":
         url = request.GET.get('url')
     elif request.method == "POST":
@@ -152,7 +161,7 @@ def search(request):  # 搜索ORM获取视频信息
     page = Page(request.path_info+'?wd=%s&page=' %
                 wd, page_index, data_count//24 + 1)
     page_str = page.page_str()
-    video_list =page.video_page(data_list,24)
+    video_list = page.video_page(data_list, 24)
     if video_list == -1:
         return HttpResponse('请求错误')
     return render(request, 'video_search.html', {
@@ -214,6 +223,7 @@ def push_request(request):  # 提交请求给管理员
     finally:
         return HttpResponse(json.dumps(ret))
 
+
 def i_search(request):  # 爱奇艺搜索
     iqiyi = IQiyi()
     if request.method == "POST":    # 搜索方式
@@ -228,10 +238,10 @@ def i_search(request):  # 爱奇艺搜索
     page = Page(request.path_info+'?wd=%s&page=' %
                 wd, page_index, data_count//24 + 1)
     page_str = page.page_str()
-    video_list =page.video_page(data_list,24)
+    video_list = page.video_page(data_list, 24)
     if video_list == -1:
         return HttpResponse('请求错误')
-    #end 分页
+    # end 分页
     return render(request, 'video_i_search.html', {
         "video_list": video_list,
         'page_str': page_str,
@@ -239,20 +249,21 @@ def i_search(request):  # 爱奇艺搜索
         'wd': wd
     })
 
+
 def i_play(request):    # 爱奇艺播放
     iqiyi = IQiyi()
     url = request.GET.get('url')
     page_index = int(request.GET.get('page')) if request.GET.get('page') else 1
-    if url.endswith('?src=search'):
+    if url and url.endswith('?src=search'):
         data_list = iqiyi.i_album(url)
         # 分页
         data_count = len(data_list)
         page = Page(request.path_info+'?page=', page_index, data_count//24 + 1)
         page_str = page.page_str()
-        video_list =page.video_page(data_list,24)
+        video_list = page.video_page(data_list, 24)
         if video_list == -1:
             return HttpResponse('请求错误')
-        #end 分页
+        # end 分页
         return render(request, 'video_i_album.html', {
             "video_list": video_list,
             'page_str': page_str,
@@ -262,4 +273,8 @@ def i_play(request):    # 爱奇艺播放
         # iqiyi.i_jeixi(url)
         # return HttpResponse('test')
         # return redirect(iqiyi.i_video(url))
-        return render(request, 'video_i_play.html', {"video_url": url})
+        if url.startswith('http'):
+            video_url = "https://okjx.cc/jiexi/?url=%s" % url
+        else:
+            video_url = "https://www.administrator5.com/admin.php?url=%s" % url
+        return render(request, 'video_i_play.html', {"video_url": video_url})

@@ -146,7 +146,7 @@ if not os.path.exists(LOGGING_DIR):
 
 LOGGING = {
     'version': 1,
-    'disable_existing_loggers': False,
+    'disable_existing_loggers': True,
     'formatters': {  # 格式器
         'standard': {   # 标准格式
             'format': '[%(asctime)s] [%(levelname)s] %(message)s',
@@ -165,7 +165,7 @@ LOGGING = {
         'default': {
             'level': 'INFO',
             'class': 'logging.handlers.RotatingFileHandler',
-            'filename': os.path.join(LOGGING_DIR, 'all-{}.log'.format(time.strftime('%Y-%m-%d'))),
+            'filename': os.path.join(LOGGING_DIR, 'django-all.log'),
             'maxBytes': 1024 * 1024 * 5,  # 文件大小
             'backupCount': 5,  # 备份数
             'formatter': 'standard',  # 输出格式
@@ -181,17 +181,7 @@ LOGGING = {
         'error': {
             'level': 'ERROR',
             'class': 'logging.handlers.RotatingFileHandler',
-            'filename': os.path.join(LOGGING_DIR, 'error-{}.log'.format(time.strftime('%Y-%m-%d'))),
-            'maxBytes': 1024 * 1024 * 5,  # 文件大小
-            'backupCount': 5,  # 备份数
-            'formatter': 'error',  # 输出格式
-            'encoding': 'utf-8',  # 设置默认编码
-        },
-        # 输出警告日志
-        'warning': {
-            'level': 'WARNING',
-            'class': 'logging.handlers.RotatingFileHandler',
-            'filename': os.path.join(LOGGING_DIR, 'error-{}.log'.format(time.strftime('%Y-%m-%d'))),
+            'filename': os.path.join(LOGGING_DIR, 'django-error.log'),
             'maxBytes': 1024 * 1024 * 5,  # 文件大小
             'backupCount': 5,  # 备份数
             'formatter': 'error',  # 输出格式
@@ -217,7 +207,7 @@ LOGGING = {
         },
         # log 调用时需要当作参数传入
         'log': {
-            'handlers': ['default', 'console', 'error','warning', 'update'],
+            'handlers': ['default', 'console', 'error', 'update'],
             'level': 'INFO',
             'propagate': False
         },

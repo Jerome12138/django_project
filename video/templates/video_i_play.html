@@ -12,7 +12,7 @@
     <div class="stui-player col-pd pb-0">
         <div>
             <div id='video_player'>
-                <iframe src="https://okjx.cc/jiexi/?url={{ video_url }}" frameborder="" width="100%"  style="height:50vw" ></iframe>
+                <iframe src="{{ video_url }}" frameborder="" width="100%"  style="height:50vw" ></iframe>
             </div>
         </div>
     </div>
@@ -28,15 +28,15 @@
             <button class="submit" type="submit" name="submit"><i class="icon iconfont icon-search"></i></button>
         </form>
     </div>
-    <!-- <div class="play-url">
-        <form class="ff-play-name" id="search-name" name="search" action="https://www.administrator5.com/admin.php?wd=FFWD" method="get" data-sid="0"
-            data-limit="10" data-action="https://www.administrator5.com/admin.php?wd=FFWD">
+    <div class="play-url">
+        <form class="ff-play-name" id="search-name" name="search" action="https://www.administrator5.com/admin.php?url=FFWD" method="get" data-sid="0"
+            data-limit="10" data-action="https://www.administrator5.com/admin.php?url=FFWD">
             {% csrf_token %}
             <input class="ff-url form-control" type="text" id="wd" name="wd" value="" placeholder="请输入视频名称..."
                 autocomplete="off">
             <button class="submit" type="submit" name="submit"><i class="icon iconfont icon-search"></i></button>
         </form>
-    </div> -->
+    </div>
     <!-- end 播放地址 -->
 </div>
 

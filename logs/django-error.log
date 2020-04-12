@@ -1,0 +1,57 @@
+[2020-04-08 02:01:43] [ERROR] Internal Server Error: /video/i-play/
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/ubuntu/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/ubuntu/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "./video/views.py", line 246, in i_play
+    if url.endswith('?src=search'):
+AttributeError: 'NoneType' object has no attribute 'endswith'
+[2020-04-08 02:01:55] [ERROR] Internal Server Error: /video/i-play/
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/ubuntu/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/ubuntu/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "./video/views.py", line 246, in i_play
+    if url.endswith('?src=search'):
+AttributeError: 'NoneType' object has no attribute 'endswith'
+[2020-04-08 02:17:02] [ERROR] Internal Server Error: /video/i-play/
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/ubuntu/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/ubuntu/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "./video/views.py", line 246, in i_play
+    if url.endswith('?src=search'):
+AttributeError: 'NoneType' object has no attribute 'endswith'
+[2020-04-08 02:20:33] [WARNING] Not Found: /
+[2020-04-08 02:22:18] [WARNING] Not Found: /
+[2020-04-08 03:34:27] [ERROR] Internal Server Error: /video/i-play/
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/ubuntu/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/ubuntu/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "./video/views.py", line 246, in i_play
+    if url.endswith('?src=search'):
+AttributeError: 'NoneType' object has no attribute 'endswith'
+[2020-04-12 14:51:34] [ERROR] Internal Server Error: /video/i-play/
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/ubuntu/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/ubuntu/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "./video/views.py", line 246, in i_play
+    if url.endswith('?src=search'):
+AttributeError: 'NoneType' object has no attribute 'endswith'
