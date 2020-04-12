@@ -18,6 +18,10 @@
                             <i class="nav-icon iconfont" aria-hidden="true">&#xe787;</i>更新日志&nbsp;&nbsp;
                         </a>
                     </h3>
+                    <div class="mt-3 ml-3">
+                        <a href="/video/admin/access_log/">访问日志</a>
+                        <a href="/video/admin/error_log/">错误日志</a>
+                    </div>
                 </div><!-- /.col -->
             </div><!-- /.row -->
         </div><!-- /.container-fluid -->
@@ -31,9 +35,7 @@
                 <div class="col-12">
                     <!-- Main content -->
                     <div class="invoice p-3 mb-3">
-                        <!-- title row -->
-                        <h4>更新日志</h4>
-                        <div style="white-space: pre-line;overflow-x: hidden;">{{ log }}</div>
+                        <div class="p-2" style="white-space: pre-line;overflow-x: hidden;">{{ log }}</div>
                         <!-- 翻页 -->
                         <div style="clear: both;"></div>
                         <ul class="stui-page text-center clearfix">

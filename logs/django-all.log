@@ -3,3 +3,684 @@
 [2020-04-12 16:48:48] [INFO] Watching for file changes with StatReloader
 [2020-04-12 16:48:57] [INFO] D:\Code\Git\django_project\video\views.py changed, reloading.
 [2020-04-12 16:48:59] [INFO] Watching for file changes with StatReloader
+[2020-04-12 21:59:40] [INFO] Watching for file changes with StatReloader
+[2020-04-12 21:59:43] [INFO] "GET /video/ HTTP/1.1" 200 35202
+[2020-04-12 21:59:43] [INFO] "GET /video/ HTTP/1.1" 200 35202
+[2020-04-12 21:59:43] [ERROR] "GET /video/ HTTP/1.1" 500 59
+[2020-04-12 21:59:43] [INFO] "GET /static/plugins/hammer/hammer.min.js HTTP/1.1" 304 0
+[2020-04-12 21:59:43] [INFO] "GET /static/plugins/hammer/jquery.hammer.js HTTP/1.1" 304 0
+[2020-04-12 21:59:44] [INFO] "GET /static/app_video/img/jiongma.jpg HTTP/1.1" 200 218527
+[2020-04-12 21:59:44] [INFO] "GET /static/app_video/img/play.png HTTP/1.1" 304 0
+[2020-04-12 22:01:27] [INFO] "GET /video/ HTTP/1.1" 200 35330
+[2020-04-12 22:01:30] [INFO] "GET /static/img/favicon.ico HTTP/1.1" 200 16958
+[2020-04-12 22:01:50] [INFO] "GET /video/ HTTP/1.1" 200 35318
+[2020-04-12 22:01:54] [INFO] "GET /video/ HTTP/1.1" 200 35318
+[2020-04-12 22:01:57] [WARNING] "GET /static/plugins/hammer/hammer.min.js.map HTTP/1.1" 404 1823
+[2020-04-12 22:01:59] [INFO] "GET /static/img/favicon.ico HTTP/1.1" 200 16958
+[2020-04-12 22:02:01] [INFO] "GET /video/ HTTP/1.1" 200 35318
+[2020-04-12 22:02:02] [WARNING] "GET /static/plugins/hammer/hammer.min.js.map HTTP/1.1" 404 1823
+[2020-04-12 22:02:04] [INFO] "GET /static/img/favicon.ico HTTP/1.1" 200 16958
+[2020-04-12 22:03:14] [INFO] "GET /video/ HTTP/1.1" 200 35318
+[2020-04-12 22:03:15] [WARNING] "GET /static/plugins/hammer/hammer.min.js.map HTTP/1.1" 404 1823
+[2020-04-12 22:03:26] [INFO] "GET /static/img/favicon.ico HTTP/1.1" 200 16958
+[2020-04-12 22:05:06] [INFO] "GET /video/ HTTP/1.1" 200 35371
+[2020-04-12 22:05:07] [WARNING] "GET /static/plugins/hammer/hammer.min.js.map HTTP/1.1" 404 1823
+[2020-04-12 22:05:08] [ERROR] Internal Server Error: /video/jx-play/
+Traceback (most recent call last):
+  File "D:\Program Files\Anaconda3\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\Program Files\Anaconda3\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\Program Files\Anaconda3\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Code\Git\django_project\video\views.py", line 284, in jx_play
+    video_url = url_temp + url
+TypeError: unsupported operand type(s) for +: 'NoneType' and 'NoneType'
+[2020-04-12 22:05:08] [ERROR] "GET /video/jx-play/ HTTP/1.1" 500 73428
+[2020-04-12 22:05:09] [WARNING] "GET /favicon.ico HTTP/1.1" 404 2634
+[2020-04-12 22:05:19] [WARNING] "GET /static/plugins/hammer/hammer.min.js.map HTTP/1.1" 404 1823
+[2020-04-12 22:05:55] [INFO] D:\Code\Git\django_project\video\views.py changed, reloading.
+[2020-04-12 22:05:57] [INFO] Watching for file changes with StatReloader
+[2020-04-12 22:06:04] [INFO] "GET /video/ HTTP/1.1" 200 35371
+[2020-04-12 22:06:05] [WARNING] "GET /static/plugins/hammer/hammer.min.js.map HTTP/1.1" 404 1823
+[2020-04-12 22:06:06] [ERROR] Internal Server Error: /video/jx-play/
+Traceback (most recent call last):
+  File "D:\Program Files\Anaconda3\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\Program Files\Anaconda3\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\Program Files\Anaconda3\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Code\Git\django_project\video\views.py", line 284, in jx_play
+    video_url = url_temp + url
+TypeError: unsupported operand type(s) for +: 'NoneType' and 'NoneType'
+[2020-04-12 22:06:07] [ERROR] "GET /video/jx-play/ HTTP/1.1" 500 73438
+[2020-04-12 22:07:40] [INFO] D:\Code\Git\django_project\video\views.py changed, reloading.
+[2020-04-12 22:07:42] [INFO] Watching for file changes with StatReloader
+[2020-04-12 22:07:42] [INFO] "GET /video/jx-play/ HTTP/1.1" 200 9804
+[2020-04-12 22:07:43] [WARNING] "GET /video/jx-play/NoneNone HTTP/1.1" 404 4736
+[2020-04-12 22:07:43] [WARNING] "GET /static/plugins/DPlayer/hls.min.js.map HTTP/1.1" 404 1817
+[2020-04-12 22:07:43] [WARNING] "GET /static/plugins/DPlayer/DPlayer.min.js.map HTTP/1.1" 404 1829
+[2020-04-12 22:07:43] [INFO] "GET /static/img/favicon.ico HTTP/1.1" 200 16958
+[2020-04-12 22:08:46] [INFO] D:\Code\Git\django_project\video\views.py changed, reloading.
+[2020-04-12 22:08:47] [INFO] Watching for file changes with StatReloader
+[2020-04-12 22:08:48] [ERROR] Internal Server Error: /video/jx-play/
+Traceback (most recent call last):
+  File "D:\Program Files\Anaconda3\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\Program Files\Anaconda3\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\Program Files\Anaconda3\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Code\Git\django_project\video\views.py", line 284, in jx_play
+    video_url = url_temp + url
+TypeError: can only concatenate str (not "NoneType") to str
+[2020-04-12 22:08:48] [ERROR] "GET /video/jx-play/ HTTP/1.1" 500 73597
+[2020-04-12 22:08:52] [WARNING] "GET /static/plugins/hammer/hammer.min.js.map HTTP/1.1" 404 1823
+[2020-04-12 22:08:55] [ERROR] Internal Server Error: /video/jx-play/
+Traceback (most recent call last):
+  File "D:\Program Files\Anaconda3\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\Program Files\Anaconda3\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\Program Files\Anaconda3\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Code\Git\django_project\video\views.py", line 284, in jx_play
+    video_url = url_temp + url
+TypeError: can only concatenate str (not "NoneType") to str
+[2020-04-12 22:08:55] [ERROR] "GET /video/jx-play/ HTTP/1.1" 500 73460
+[2020-04-12 22:09:31] [INFO] D:\Code\Git\django_project\video\views.py changed, reloading.
+[2020-04-12 22:09:32] [INFO] Watching for file changes with StatReloader
+[2020-04-12 22:09:39] [INFO] D:\Code\Git\django_project\video\views.py changed, reloading.
+[2020-04-12 22:09:41] [INFO] Watching for file changes with StatReloader
+[2020-04-12 22:09:42] [INFO] "GET /video/jx-play/ HTTP/1.1" 200 9824
+[2020-04-12 22:09:42] [WARNING] "GET /static/plugins/DPlayer/hls.min.js.map HTTP/1.1" 404 1817
+[2020-04-12 22:09:42] [WARNING] "GET /static/plugins/DPlayer/DPlayer.min.js.map HTTP/1.1" 404 1829
+[2020-04-12 22:10:16] [INFO] D:\Code\Git\django_project\video\views.py changed, reloading.
+[2020-04-12 22:10:17] [INFO] Watching for file changes with StatReloader
+[2020-04-12 22:10:35] [INFO] "GET /video/ HTTP/1.1" 200 35371
+[2020-04-12 22:10:37] [INFO] "GET /video/jx-play/ HTTP/1.1" 200 9845
+[2020-04-12 22:11:05] [INFO] D:\Code\Git\django_project\video\views.py changed, reloading.
+[2020-04-12 22:11:06] [INFO] Watching for file changes with StatReloader
+[2020-04-12 22:11:07] [INFO] "GET /video/jx-play/ HTTP/1.1" 200 9840
+[2020-04-12 22:11:08] [INFO] "GET /static/img/favicon.ico HTTP/1.1" 200 16958
+[2020-04-12 22:11:19] [INFO] D:\Code\Git\django_project\video\views.py changed, reloading.
+[2020-04-12 22:11:21] [INFO] Watching for file changes with StatReloader
+[2020-04-12 22:11:36] [INFO] D:\Code\Git\django_project\video\views.py changed, reloading.
+[2020-04-12 22:11:38] [INFO] Watching for file changes with StatReloader
+[2020-04-12 22:11:42] [INFO] "GET /video/jx-play/ HTTP/1.1" 200 9840
+[2020-04-12 22:11:47] [INFO] "GET /video/ HTTP/1.1" 200 35371
+[2020-04-12 22:11:49] [INFO] "GET /video/jx-play/ HTTP/1.1" 200 9840
+[2020-04-12 22:11:56] [INFO] D:\Code\Git\django_project\video\views.py changed, reloading.
+[2020-04-12 22:11:58] [INFO] Watching for file changes with StatReloader
+[2020-04-12 22:12:06] [INFO] "GET /video/ HTTP/1.1" 200 35371
+[2020-04-12 22:12:08] [INFO] "GET /video/jx-play/ HTTP/1.1" 200 9840
+[2020-04-12 22:12:44] [INFO] D:\Code\Git\django_project\video\views.py changed, reloading.
+[2020-04-12 22:12:45] [INFO] Watching for file changes with StatReloader
+[2020-04-12 22:12:58] [INFO] "GET /video/jx-play/ HTTP/1.1" 200 9840
+[2020-04-12 22:13:39] [INFO] D:\Code\Git\django_project\video\views.py changed, reloading.
+[2020-04-12 22:13:41] [INFO] Watching for file changes with StatReloader
+[2020-04-12 22:13:41] [INFO] "GET /video/jx-play/ HTTP/1.1" 200 9836
+[2020-04-12 22:13:44] [INFO] "GET /static/img/favicon.ico HTTP/1.1" 200 16958
+[2020-04-12 22:13:54] [INFO] "GET /video/ HTTP/1.1" 200 35371
+[2020-04-12 22:14:12] [INFO] "GET /video/ HTTP/1.1" 200 35370
+[2020-04-12 22:14:21] [INFO] "GET /video/ HTTP/1.1" 200 35372
+[2020-04-12 22:15:44] [INFO] "GET /video/ HTTP/1.1" 200 35436
+[2020-04-12 22:15:47] [INFO] "GET /video/ HTTP/1.1" 200 35436
+[2020-04-12 22:15:51] [WARNING] "GET /static/plugins/hammer/hammer.min.js.map HTTP/1.1" 404 1823
+[2020-04-12 22:16:04] [INFO] "GET /video/ HTTP/1.1" 200 35436
+[2020-04-12 22:16:05] [WARNING] "GET /static/plugins/hammer/hammer.min.js.map HTTP/1.1" 404 1823
+[2020-04-12 22:16:36] [INFO] "GET /video/ HTTP/1.1" 200 35456
+[2020-04-12 22:16:37] [WARNING] "GET /static/plugins/hammer/hammer.min.js.map HTTP/1.1" 404 1823
+[2020-04-12 22:16:54] [INFO] "GET /static/img/favicon.ico HTTP/1.1" 200 16958
+[2020-04-12 22:20:11] [INFO] D:\Code\Git\django_project\video\models.py changed, reloading.
+[2020-04-12 22:20:12] [INFO] Watching for file changes with StatReloader
+[2020-04-12 22:24:29] [INFO] D:\Code\Git\django_project\video\admin_views.py changed, reloading.
+[2020-04-12 22:24:30] [INFO] Watching for file changes with StatReloader
+[2020-04-12 22:27:36] [INFO] D:\Code\Git\django_project\video\urls.py changed, reloading.
+[2020-04-12 22:27:37] [INFO] Watching for file changes with StatReloader
+[2020-04-12 22:27:39] [INFO] D:\Code\Git\django_project\video\admin_views.py changed, reloading.
+[2020-04-12 22:27:40] [INFO] Watching for file changes with StatReloader
+[2020-04-12 22:32:14] [INFO] D:\Code\Git\django_project\video\func\db_handler.py changed, reloading.
+[2020-04-12 22:32:15] [INFO] Watching for file changes with StatReloader
+[2020-04-12 22:33:45] [INFO] D:\Code\Git\django_project\video\models.py changed, reloading.
+[2020-04-12 22:33:46] [INFO] Watching for file changes with StatReloader
+[2020-04-12 22:35:05] [INFO] D:\Code\Git\django_project\video\admin_views.py changed, reloading.
+[2020-04-12 22:35:06] [INFO] Watching for file changes with StatReloader
+[2020-04-12 22:35:40] [INFO] D:\Code\Git\django_project\video\admin_views.py changed, reloading.
+[2020-04-12 22:35:41] [INFO] Watching for file changes with StatReloader
+[2020-04-12 22:37:49] [INFO] D:\Code\Git\django_project\video\urls.py changed, reloading.
+[2020-04-12 22:37:51] [INFO] Watching for file changes with StatReloader
+[2020-04-12 22:38:49] [INFO] D:\Code\Git\django_project\video\admin_views.py changed, reloading.
+[2020-04-12 22:38:50] [INFO] Watching for file changes with StatReloader
+[2020-04-12 22:39:06] [INFO] D:\Code\Git\django_project\video\admin_views.py changed, reloading.
+[2020-04-12 22:39:07] [INFO] Watching for file changes with StatReloader
+[2020-04-12 22:39:10] [INFO] D:\Code\Git\django_project\video\admin_views.py changed, reloading.
+[2020-04-12 22:39:11] [INFO] Watching for file changes with StatReloader
+[2020-04-12 22:45:03] [INFO] "GET /admin/ HTTP/1.1" 200 29972
+[2020-04-12 22:45:03] [INFO] "GET /static/plugins/AdminLTE/user2-160x160.jpg HTTP/1.1" 304 0
+[2020-04-12 22:45:04] [WARNING] "GET /static/plugins/bootstrap-4.4.1/bootstrap.min.css.map HTTP/1.1" 404 1862
+[2020-04-12 22:45:04] [WARNING] "GET /static/plugins/AdminLTE/adminlte.min.css.map HTTP/1.1" 404 1838
+[2020-04-12 22:45:04] [WARNING] "GET /static/plugins/bootstrap-4.4.1/bootstrap.bundle.min.js.map HTTP/1.1" 404 1880
+[2020-04-12 22:45:04] [WARNING] "GET /static/plugins/AdminLTE/adminlte.min.js.map HTTP/1.1" 404 1835
+[2020-04-12 22:45:09] [ERROR] Internal Server Error: /video/admin/get_carousel/
+Traceback (most recent call last):
+  File "D:\Program Files\Anaconda3\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\Program Files\Anaconda3\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\Program Files\Anaconda3\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Code\Git\django_project\video\admin_views.py", line 20, in inner
+    return func(request, *args, **kwargs) #user_obj,
+  File "D:\Code\Git\django_project\video\admin_views.py", line 258, in get_carousel
+    data_list = load_carousel_data()
+NameError: name 'load_carousel_data' is not defined
+[2020-04-12 22:45:09] [ERROR] "GET /video/admin/get_carousel/ HTTP/1.1" 500 78435
+[2020-04-12 22:45:09] [WARNING] "GET /favicon.ico HTTP/1.1" 404 2634
+[2020-04-12 22:46:26] [INFO] D:\Code\Git\django_project\video\admin_views.py changed, reloading.
+[2020-04-12 22:46:27] [INFO] Watching for file changes with StatReloader
+[2020-04-12 22:46:33] [INFO] D:\Code\Git\django_project\video\admin_views.py changed, reloading.
+[2020-04-12 22:46:34] [INFO] Watching for file changes with StatReloader
+[2020-04-12 22:46:55] [INFO] D:\Code\Git\django_project\video\admin_views.py changed, reloading.
+[2020-04-12 22:46:56] [INFO] Watching for file changes with StatReloader
+[2020-04-12 22:47:07] [INFO] D:\Code\Git\django_project\video\admin_views.py changed, reloading.
+[2020-04-12 22:47:08] [INFO] Watching for file changes with StatReloader
+[2020-04-12 22:47:23] [ERROR] Internal Server Error: /video/admin/get_carousel/
+Traceback (most recent call last):
+  File "D:\Program Files\Anaconda3\lib\site-packages\django\db\backends\utils.py", line 86, in _execute
+    return self.cursor.execute(sql, params)
+  File "D:\Program Files\Anaconda3\lib\site-packages\django\db\backends\sqlite3\base.py", line 396, in execute
+    return Database.Cursor.execute(self, query, params)
+sqlite3.OperationalError: no such table: video_carousellist
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\Program Files\Anaconda3\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\Program Files\Anaconda3\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\Program Files\Anaconda3\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Code\Git\django_project\video\admin_views.py", line 22, in inner
+    return func(request, *args, **kwargs) #user_obj,
+  File "D:\Code\Git\django_project\video\admin_views.py", line 261, in get_carousel
+    data_count = len(data_list)
+  File "D:\Program Files\Anaconda3\lib\site-packages\django\db\models\query.py", line 258, in __len__
+    self._fetch_all()
+  File "D:\Program Files\Anaconda3\lib\site-packages\django\db\models\query.py", line 1261, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "D:\Program Files\Anaconda3\lib\site-packages\django\db\models\query.py", line 115, in __iter__
+    for row in compiler.results_iter(chunked_fetch=self.chunked_fetch, chunk_size=self.chunk_size):
+  File "D:\Program Files\Anaconda3\lib\site-packages\django\db\models\sql\compiler.py", line 1103, in results_iter
+    results = self.execute_sql(MULTI, chunked_fetch=chunked_fetch, chunk_size=chunk_size)
+  File "D:\Program Files\Anaconda3\lib\site-packages\django\db\models\sql\compiler.py", line 1151, in execute_sql
+    cursor.execute(sql, params)
+  File "D:\Program Files\Anaconda3\lib\site-packages\django\db\backends\utils.py", line 100, in execute
+    return super().execute(sql, params)
+  File "D:\Program Files\Anaconda3\lib\site-packages\django\db\backends\utils.py", line 68, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "D:\Program Files\Anaconda3\lib\site-packages\django\db\backends\utils.py", line 77, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "D:\Program Files\Anaconda3\lib\site-packages\django\db\backends\utils.py", line 86, in _execute
+    return self.cursor.execute(sql, params)
+  File "D:\Program Files\Anaconda3\lib\site-packages\django\db\utils.py", line 90, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "D:\Program Files\Anaconda3\lib\site-packages\django\db\backends\utils.py", line 86, in _execute
+    return self.cursor.execute(sql, params)
+  File "D:\Program Files\Anaconda3\lib\site-packages\django\db\backends\sqlite3\base.py", line 396, in execute
+    return Database.Cursor.execute(self, query, params)
+django.db.utils.OperationalError: no such table: video_carousellist
+[2020-04-12 22:47:23] [ERROR] "GET /video/admin/get_carousel/ HTTP/1.1" 500 143143
+[2020-04-12 22:47:54] [INFO] Watching for file changes with StatReloader
+[2020-04-12 22:47:56] [INFO] "GET /video/admin/get_carousel/ HTTP/1.1" 200 17576
+[2020-04-12 22:47:57] [WARNING] "GET /static/plugins/bootstrap-4.4.1/bootstrap.min.css.map HTTP/1.1" 404 1862
+[2020-04-12 22:47:57] [WARNING] "GET /static/plugins/AdminLTE/adminlte.min.css.map HTTP/1.1" 404 1838
+[2020-04-12 22:47:57] [WARNING] "GET /static/plugins/bootstrap-4.4.1/bootstrap.bundle.min.js.map HTTP/1.1" 404 1880
+[2020-04-12 22:47:57] [WARNING] "GET /static/plugins/AdminLTE/adminlte.min.js.map HTTP/1.1" 404 1835
+[2020-04-12 22:48:00] [INFO] "GET /video/admin/get_carousel/ HTTP/1.1" 200 17576
+[2020-04-12 22:48:01] [WARNING] "GET /static/plugins/bootstrap-4.4.1/bootstrap.min.css.map HTTP/1.1" 404 1862
+[2020-04-12 22:48:01] [WARNING] "GET /static/plugins/AdminLTE/adminlte.min.css.map HTTP/1.1" 404 1838
+[2020-04-12 22:48:01] [WARNING] "GET /static/plugins/bootstrap-4.4.1/bootstrap.bundle.min.js.map HTTP/1.1" 404 1880
+[2020-04-12 22:48:01] [WARNING] "GET /static/plugins/AdminLTE/adminlte.min.js.map HTTP/1.1" 404 1835
+[2020-04-12 22:48:37] [WARNING] "GET /static/plugins/bootstrap-4.4.1/bootstrap.bundle.min.js.map HTTP/1.1" 404 1880
+[2020-04-12 22:48:37] [WARNING] "GET /static/plugins/AdminLTE/adminlte.min.js.map HTTP/1.1" 404 1835
+[2020-04-12 22:48:37] [WARNING] "GET /static/plugins/bootstrap-4.4.1/bootstrap.min.css.map HTTP/1.1" 404 1862
+[2020-04-12 22:48:37] [WARNING] "GET /static/plugins/AdminLTE/adminlte.min.css.map HTTP/1.1" 404 1838
+[2020-04-12 22:50:25] [INFO] "GET /video/admin/get_carousel/ HTTP/1.1" 200 17561
+[2020-04-12 22:50:25] [WARNING] "GET /static/plugins/bootstrap-4.4.1/bootstrap.min.css.map HTTP/1.1" 404 1862
+[2020-04-12 22:50:25] [WARNING] "GET /static/plugins/AdminLTE/adminlte.min.css.map HTTP/1.1" 404 1838
+[2020-04-12 22:50:25] [WARNING] "GET /static/plugins/AdminLTE/adminlte.min.js.map HTTP/1.1" 404 1835
+[2020-04-12 22:50:25] [WARNING] "GET /static/plugins/bootstrap-4.4.1/bootstrap.bundle.min.js.map HTTP/1.1" 404 1880
+[2020-04-12 22:50:25] [INFO] "GET /static/img/favicon.ico HTTP/1.1" 200 16958
+[2020-04-12 22:51:00] [INFO] "GET /video/admin/get_carousel/ HTTP/1.1" 200 17561
+[2020-04-12 22:51:01] [WARNING] "GET /static/plugins/bootstrap-4.4.1/bootstrap.min.css.map HTTP/1.1" 404 1862
+[2020-04-12 22:51:01] [WARNING] "GET /static/plugins/AdminLTE/adminlte.min.css.map HTTP/1.1" 404 1838
+[2020-04-12 22:51:01] [INFO] "GET /static/img/favicon.ico HTTP/1.1" 200 16958
+[2020-04-12 22:51:01] [WARNING] "GET /static/plugins/bootstrap-4.4.1/bootstrap.bundle.min.js.map HTTP/1.1" 404 1880
+[2020-04-12 22:51:01] [WARNING] "GET /static/plugins/AdminLTE/adminlte.min.js.map HTTP/1.1" 404 1835
+[2020-04-12 22:51:31] [INFO] "GET /video/admin/get_carousel/ HTTP/1.1" 200 17582
+[2020-04-12 22:51:32] [WARNING] "GET /static/plugins/bootstrap-4.4.1/bootstrap.min.css.map HTTP/1.1" 404 1862
+[2020-04-12 22:51:32] [WARNING] "GET /static/plugins/AdminLTE/adminlte.min.css.map HTTP/1.1" 404 1838
+[2020-04-12 22:51:32] [INFO] "GET /static/img/favicon.ico HTTP/1.1" 200 16958
+[2020-04-12 22:51:32] [WARNING] "GET /static/plugins/bootstrap-4.4.1/bootstrap.bundle.min.js.map HTTP/1.1" 404 1880
+[2020-04-12 22:51:32] [WARNING] "GET /static/plugins/AdminLTE/adminlte.min.js.map HTTP/1.1" 404 1835
+[2020-04-12 22:55:22] [INFO] D:\Code\Git\django_project\video\urls.py changed, reloading.
+[2020-04-12 22:55:24] [INFO] Watching for file changes with StatReloader
+[2020-04-12 23:03:36] [INFO] "GET /video/admin/get_carousel/ HTTP/1.1" 200 20016
+[2020-04-12 23:03:36] [INFO] "GET /static/plugins/AdminLTE/user2-160x160.jpg HTTP/1.1" 304 0
+[2020-04-12 23:03:37] [WARNING] "GET /static/plugins/bootstrap-4.4.1/bootstrap.min.css.map HTTP/1.1" 404 1862
+[2020-04-12 23:03:37] [WARNING] "GET /static/plugins/AdminLTE/adminlte.min.css.map HTTP/1.1" 404 1838
+[2020-04-12 23:03:37] [INFO] "GET /static/img/favicon.ico HTTP/1.1" 200 16958
+[2020-04-12 23:03:37] [WARNING] "GET /static/plugins/bootstrap-4.4.1/bootstrap.bundle.min.js.map HTTP/1.1" 404 1880
+[2020-04-12 23:03:37] [WARNING] "GET /static/plugins/AdminLTE/adminlte.min.js.map HTTP/1.1" 404 1835
+[2020-04-12 23:03:50] [INFO] "GET /video/ HTTP/1.1" 200 35456
+[2020-04-12 23:03:51] [WARNING] "GET /static/plugins/hammer/hammer.min.js.map HTTP/1.1" 404 1823
+[2020-04-12 23:03:55] [INFO] "GET /video/search/?wd=%E7%88%B1%E6%83%85&page=1 HTTP/1.1" 200 35840
+[2020-04-12 23:03:55] [ERROR] "GET /video/search/?wd=%E7%88%B1%E6%83%85&page=1 HTTP/1.1" 500 59
+[2020-04-12 23:03:55] [INFO] "GET /video/search/?wd=%E7%88%B1%E6%83%85&page=1 HTTP/1.1" 200 35840
+[2020-04-12 23:03:56] [WARNING] "GET /static/plugins/hammer/hammer.min.js.map HTTP/1.1" 404 1823
+[2020-04-12 23:04:02] [INFO] "POST /video/push_request/ HTTP/1.1" 200 118
+[2020-04-12 23:04:08] [WARNING] "GET /static/plugins/hammer/hammer.min.js.map HTTP/1.1" 404 1823
+[2020-04-12 23:04:08] [WARNING] "GET /static/plugins/bootstrap-4.4.1/bootstrap.min.css.map HTTP/1.1" 404 1862
+[2020-04-12 23:04:08] [WARNING] "GET /static/plugins/AdminLTE/adminlte.min.css.map HTTP/1.1" 404 1838
+[2020-04-12 23:04:09] [WARNING] "GET /static/plugins/bootstrap-4.4.1/bootstrap.bundle.min.js.map HTTP/1.1" 404 1880
+[2020-04-12 23:04:09] [WARNING] "GET /static/plugins/AdminLTE/adminlte.min.js.map HTTP/1.1" 404 1835
+[2020-04-12 23:04:10] [INFO] "GET /video/admin/get_request/ HTTP/1.1" 200 19337
+[2020-04-12 23:04:11] [WARNING] "GET /static/plugins/bootstrap-4.4.1/bootstrap.min.css.map HTTP/1.1" 404 1862
+[2020-04-12 23:04:11] [WARNING] "GET /static/plugins/AdminLTE/adminlte.min.css.map HTTP/1.1" 404 1838
+[2020-04-12 23:04:11] [WARNING] "GET /static/plugins/bootstrap-4.4.1/bootstrap.bundle.min.js.map HTTP/1.1" 404 1880
+[2020-04-12 23:04:11] [WARNING] "GET /static/plugins/AdminLTE/adminlte.min.js.map HTTP/1.1" 404 1835
+[2020-04-12 23:06:05] [INFO] "GET /video/admin/get_request/ HTTP/1.1" 200 19345
+[2020-04-12 23:06:06] [WARNING] "GET /static/plugins/bootstrap-4.4.1/bootstrap.min.css.map HTTP/1.1" 404 1862
+[2020-04-12 23:06:06] [WARNING] "GET /static/plugins/AdminLTE/adminlte.min.css.map HTTP/1.1" 404 1838
+[2020-04-12 23:06:06] [INFO] "GET /static/img/favicon.ico HTTP/1.1" 200 16958
+[2020-04-12 23:06:06] [WARNING] "GET /static/plugins/bootstrap-4.4.1/bootstrap.bundle.min.js.map HTTP/1.1" 404 1880
+[2020-04-12 23:06:06] [WARNING] "GET /static/plugins/AdminLTE/adminlte.min.js.map HTTP/1.1" 404 1835
+[2020-04-12 23:06:10] [INFO] "GET /video/admin/get_carousel/ HTTP/1.1" 200 19966
+[2020-04-12 23:06:10] [WARNING] "GET /static/plugins/bootstrap-4.4.1/bootstrap.min.css.map HTTP/1.1" 404 1862
+[2020-04-12 23:06:10] [WARNING] "GET /static/plugins/AdminLTE/adminlte.min.css.map HTTP/1.1" 404 1838
+[2020-04-12 23:06:10] [WARNING] "GET /static/plugins/bootstrap-4.4.1/bootstrap.bundle.min.js.map HTTP/1.1" 404 1880
+[2020-04-12 23:06:10] [WARNING] "GET /static/plugins/AdminLTE/adminlte.min.js.map HTTP/1.1" 404 1835
+[2020-04-12 23:06:12] [INFO] "GET /video/admin/get_carousel/ HTTP/1.1" 200 19966
+[2020-04-12 23:06:13] [WARNING] "GET /static/plugins/bootstrap-4.4.1/bootstrap.min.css.map HTTP/1.1" 404 1862
+[2020-04-12 23:06:13] [WARNING] "GET /static/plugins/AdminLTE/adminlte.min.css.map HTTP/1.1" 404 1838
+[2020-04-12 23:06:13] [INFO] "GET /static/img/favicon.ico HTTP/1.1" 200 16958
+[2020-04-12 23:06:13] [WARNING] "GET /static/plugins/bootstrap-4.4.1/bootstrap.bundle.min.js.map HTTP/1.1" 404 1880
+[2020-04-12 23:06:13] [WARNING] "GET /static/plugins/AdminLTE/adminlte.min.js.map HTTP/1.1" 404 1835
+[2020-04-12 23:06:34] [INFO] "GET /video/admin/get_carousel/ HTTP/1.1" 200 19955
+[2020-04-12 23:06:35] [WARNING] "GET /static/plugins/bootstrap-4.4.1/bootstrap.min.css.map HTTP/1.1" 404 1862
+[2020-04-12 23:06:35] [WARNING] "GET /static/plugins/AdminLTE/adminlte.min.css.map HTTP/1.1" 404 1838
+[2020-04-12 23:06:35] [INFO] "GET /static/img/favicon.ico HTTP/1.1" 200 16958
+[2020-04-12 23:06:35] [WARNING] "GET /static/plugins/bootstrap-4.4.1/bootstrap.bundle.min.js.map HTTP/1.1" 404 1880
+[2020-04-12 23:06:35] [WARNING] "GET /static/plugins/AdminLTE/adminlte.min.js.map HTTP/1.1" 404 1835
+[2020-04-12 23:08:35] [INFO] "GET /video/admin/get_carousel/ HTTP/1.1" 200 19862
+[2020-04-12 23:08:36] [WARNING] "GET /static/plugins/bootstrap-4.4.1/bootstrap.min.css.map HTTP/1.1" 404 1862
+[2020-04-12 23:08:36] [WARNING] "GET /static/plugins/AdminLTE/adminlte.min.css.map HTTP/1.1" 404 1838
+[2020-04-12 23:08:36] [INFO] "GET /static/img/favicon.ico HTTP/1.1" 200 16958
+[2020-04-12 23:08:37] [WARNING] "GET /static/plugins/bootstrap-4.4.1/bootstrap.bundle.min.js.map HTTP/1.1" 404 1880
+[2020-04-12 23:08:37] [WARNING] "GET /static/plugins/AdminLTE/adminlte.min.js.map HTTP/1.1" 404 1835
+[2020-04-12 23:37:06] [INFO] "GET /video/admin/get_carousel/ HTTP/1.1" 200 19173
+[2020-04-12 23:37:06] [INFO] "GET /static/plugins/AdminLTE/user2-160x160.jpg HTTP/1.1" 304 0
+[2020-04-12 23:37:06] [WARNING] "GET /static/plugins/bootstrap-4.4.1/bootstrap.min.css.map HTTP/1.1" 404 1862
+[2020-04-12 23:37:06] [WARNING] "GET /static/plugins/AdminLTE/adminlte.min.css.map HTTP/1.1" 404 1838
+[2020-04-12 23:37:07] [INFO] "GET /static/img/favicon.ico HTTP/1.1" 200 16958
+[2020-04-12 23:37:07] [WARNING] "GET /static/plugins/bootstrap-4.4.1/bootstrap.bundle.min.js.map HTTP/1.1" 404 1880
+[2020-04-12 23:37:07] [WARNING] "GET /static/plugins/AdminLTE/adminlte.min.js.map HTTP/1.1" 404 1835
+[2020-04-12 23:38:39] [INFO] "GET /video/admin/get_carousel/ HTTP/1.1" 200 19182
+[2020-04-12 23:38:40] [WARNING] "GET /static/plugins/bootstrap-4.4.1/bootstrap.min.css.map HTTP/1.1" 404 1862
+[2020-04-12 23:38:40] [WARNING] "GET /static/plugins/AdminLTE/adminlte.min.css.map HTTP/1.1" 404 1838
+[2020-04-12 23:38:40] [WARNING] "GET /static/plugins/bootstrap-4.4.1/bootstrap.bundle.min.js.map HTTP/1.1" 404 1880
+[2020-04-12 23:38:40] [WARNING] "GET /static/plugins/AdminLTE/adminlte.min.js.map HTTP/1.1" 404 1835
+[2020-04-12 23:38:40] [INFO] "GET /static/img/favicon.ico HTTP/1.1" 200 16958
+[2020-04-12 23:39:38] [INFO] "GET /video/admin/get_carousel/ HTTP/1.1" 200 19186
+[2020-04-12 23:39:39] [WARNING] "GET /static/plugins/bootstrap-4.4.1/bootstrap.min.css.map HTTP/1.1" 404 1862
+[2020-04-12 23:39:39] [WARNING] "GET /static/plugins/AdminLTE/adminlte.min.css.map HTTP/1.1" 404 1838
+[2020-04-12 23:39:39] [WARNING] "GET /static/plugins/bootstrap-4.4.1/bootstrap.bundle.min.js.map HTTP/1.1" 404 1880
+[2020-04-12 23:39:39] [WARNING] "GET /static/plugins/AdminLTE/adminlte.min.js.map HTTP/1.1" 404 1835
+[2020-04-12 23:39:39] [INFO] "GET /static/img/favicon.ico HTTP/1.1" 200 16958
+[2020-04-12 23:39:44] [INFO] "GET /video/admin/get_carousel/ HTTP/1.1" 200 19186
+[2020-04-12 23:39:44] [WARNING] "GET /static/plugins/bootstrap-4.4.1/bootstrap.min.css.map HTTP/1.1" 404 1862
+[2020-04-12 23:39:44] [WARNING] "GET /static/plugins/AdminLTE/adminlte.min.css.map HTTP/1.1" 404 1838
+[2020-04-12 23:39:45] [WARNING] "GET /static/plugins/bootstrap-4.4.1/bootstrap.bundle.min.js.map HTTP/1.1" 404 1880
+[2020-04-12 23:39:45] [WARNING] "GET /static/plugins/AdminLTE/adminlte.min.js.map HTTP/1.1" 404 1835
+[2020-04-12 23:39:45] [INFO] "GET /static/img/favicon.ico HTTP/1.1" 200 16958
+[2020-04-12 23:40:05] [INFO] "GET /video/admin/get_carousel/ HTTP/1.1" 200 19221
+[2020-04-12 23:40:05] [WARNING] "GET /static/plugins/bootstrap-4.4.1/bootstrap.min.css.map HTTP/1.1" 404 1862
+[2020-04-12 23:40:05] [WARNING] "GET /static/plugins/AdminLTE/adminlte.min.css.map HTTP/1.1" 404 1838
+[2020-04-12 23:40:05] [WARNING] "GET /static/plugins/AdminLTE/adminlte.min.js.map HTTP/1.1" 404 1835
+[2020-04-12 23:40:05] [WARNING] "GET /static/plugins/bootstrap-4.4.1/bootstrap.bundle.min.js.map HTTP/1.1" 404 1880
+[2020-04-12 23:40:05] [INFO] "GET /static/img/favicon.ico HTTP/1.1" 200 16958
+[2020-04-12 23:40:23] [INFO] "GET /video/admin/get_carousel/ HTTP/1.1" 200 19224
+[2020-04-12 23:40:23] [WARNING] "GET /static/plugins/bootstrap-4.4.1/bootstrap.min.css.map HTTP/1.1" 404 1862
+[2020-04-12 23:40:23] [WARNING] "GET /static/plugins/AdminLTE/adminlte.min.css.map HTTP/1.1" 404 1838
+[2020-04-12 23:40:23] [WARNING] "GET /static/plugins/bootstrap-4.4.1/bootstrap.bundle.min.js.map HTTP/1.1" 404 1880
+[2020-04-12 23:40:23] [WARNING] "GET /static/plugins/AdminLTE/adminlte.min.js.map HTTP/1.1" 404 1835
+[2020-04-12 23:40:23] [INFO] "GET /static/img/favicon.ico HTTP/1.1" 200 16958
+[2020-04-12 23:41:50] [INFO] "GET /video/admin/get_carousel/ HTTP/1.1" 200 19191
+[2020-04-12 23:41:50] [WARNING] "GET /static/plugins/bootstrap-4.4.1/bootstrap.min.css.map HTTP/1.1" 404 1862
+[2020-04-12 23:41:50] [WARNING] "GET /static/plugins/AdminLTE/adminlte.min.css.map HTTP/1.1" 404 1838
+[2020-04-12 23:41:50] [WARNING] "GET /static/plugins/bootstrap-4.4.1/bootstrap.bundle.min.js.map HTTP/1.1" 404 1880
+[2020-04-12 23:41:50] [WARNING] "GET /static/plugins/AdminLTE/adminlte.min.js.map HTTP/1.1" 404 1835
+[2020-04-12 23:41:50] [INFO] "GET /static/img/favicon.ico HTTP/1.1" 200 16958
+[2020-04-12 23:42:08] [INFO] "GET /video/admin/get_carousel/ HTTP/1.1" 200 19219
+[2020-04-12 23:42:09] [WARNING] "GET /static/plugins/bootstrap-4.4.1/bootstrap.min.css.map HTTP/1.1" 404 1862
+[2020-04-12 23:42:09] [WARNING] "GET /static/plugins/AdminLTE/adminlte.min.css.map HTTP/1.1" 404 1838
+[2020-04-12 23:42:09] [WARNING] "GET /static/plugins/bootstrap-4.4.1/bootstrap.bundle.min.js.map HTTP/1.1" 404 1880
+[2020-04-12 23:42:09] [WARNING] "GET /static/plugins/AdminLTE/adminlte.min.js.map HTTP/1.1" 404 1835
+[2020-04-12 23:42:09] [INFO] "GET /static/img/favicon.ico HTTP/1.1" 200 16958
+[2020-04-12 23:43:18] [INFO] "GET /video/admin/get_carousel/ HTTP/1.1" 200 19223
+[2020-04-12 23:43:18] [WARNING] "GET /static/plugins/bootstrap-4.4.1/bootstrap.min.css.map HTTP/1.1" 404 1862
+[2020-04-12 23:43:18] [WARNING] "GET /static/plugins/AdminLTE/adminlte.min.css.map HTTP/1.1" 404 1838
+[2020-04-12 23:43:18] [WARNING] "GET /static/plugins/bootstrap-4.4.1/bootstrap.bundle.min.js.map HTTP/1.1" 404 1880
+[2020-04-12 23:43:18] [WARNING] "GET /static/plugins/AdminLTE/adminlte.min.js.map HTTP/1.1" 404 1835
+[2020-04-12 23:43:18] [INFO] "GET /static/img/favicon.ico HTTP/1.1" 200 16958
+[2020-04-12 23:43:47] [INFO] "GET /video/admin/get_carousel/ HTTP/1.1" 200 19236
+[2020-04-12 23:43:48] [WARNING] "GET /static/plugins/bootstrap-4.4.1/bootstrap.min.css.map HTTP/1.1" 404 1862
+[2020-04-12 23:43:48] [WARNING] "GET /static/plugins/AdminLTE/adminlte.min.css.map HTTP/1.1" 404 1838
+[2020-04-12 23:43:48] [WARNING] "GET /static/plugins/bootstrap-4.4.1/bootstrap.bundle.min.js.map HTTP/1.1" 404 1880
+[2020-04-12 23:43:48] [WARNING] "GET /static/plugins/AdminLTE/adminlte.min.js.map HTTP/1.1" 404 1835
+[2020-04-12 23:43:48] [INFO] "GET /static/img/favicon.ico HTTP/1.1" 200 16958
+[2020-04-12 23:43:53] [INFO] "GET /video/admin/get_carousel/ HTTP/1.1" 200 19236
+[2020-04-12 23:43:53] [WARNING] "GET /static/plugins/bootstrap-4.4.1/bootstrap.min.css.map HTTP/1.1" 404 1862
+[2020-04-12 23:43:53] [WARNING] "GET /static/plugins/AdminLTE/adminlte.min.css.map HTTP/1.1" 404 1838
+[2020-04-12 23:43:53] [WARNING] "GET /static/plugins/bootstrap-4.4.1/bootstrap.bundle.min.js.map HTTP/1.1" 404 1880
+[2020-04-12 23:43:53] [WARNING] "GET /static/plugins/AdminLTE/adminlte.min.js.map HTTP/1.1" 404 1835
+[2020-04-12 23:43:53] [INFO] "GET /static/img/favicon.ico HTTP/1.1" 200 16958
+[2020-04-12 23:44:08] [INFO] "GET /video/admin/get_carousel/ HTTP/1.1" 200 19232
+[2020-04-12 23:44:09] [WARNING] "GET /static/plugins/bootstrap-4.4.1/bootstrap.min.css.map HTTP/1.1" 404 1862
+[2020-04-12 23:44:09] [WARNING] "GET /static/plugins/AdminLTE/adminlte.min.css.map HTTP/1.1" 404 1838
+[2020-04-12 23:44:09] [WARNING] "GET /static/plugins/bootstrap-4.4.1/bootstrap.bundle.min.js.map HTTP/1.1" 404 1880
+[2020-04-12 23:44:09] [WARNING] "GET /static/plugins/AdminLTE/adminlte.min.js.map HTTP/1.1" 404 1835
+[2020-04-12 23:44:09] [INFO] "GET /static/img/favicon.ico HTTP/1.1" 200 16958
+[2020-04-12 23:45:23] [INFO] "GET /video/admin/get_carousel/ HTTP/1.1" 200 19253
+[2020-04-12 23:45:23] [WARNING] "GET /static/plugins/bootstrap-4.4.1/bootstrap.min.css.map HTTP/1.1" 404 1862
+[2020-04-12 23:45:23] [WARNING] "GET /static/plugins/AdminLTE/adminlte.min.css.map HTTP/1.1" 404 1838
+[2020-04-12 23:45:23] [WARNING] "GET /static/plugins/AdminLTE/adminlte.min.js.map HTTP/1.1" 404 1835
+[2020-04-12 23:45:23] [WARNING] "GET /static/plugins/bootstrap-4.4.1/bootstrap.bundle.min.js.map HTTP/1.1" 404 1880
+[2020-04-12 23:45:23] [INFO] "GET /static/img/favicon.ico HTTP/1.1" 200 16958
+[2020-04-12 23:47:46] [INFO] "GET /video/admin/get_carousel/ HTTP/1.1" 200 19221
+[2020-04-12 23:47:46] [WARNING] "GET /static/plugins/bootstrap-4.4.1/bootstrap.min.css.map HTTP/1.1" 404 1862
+[2020-04-12 23:47:46] [WARNING] "GET /static/plugins/AdminLTE/adminlte.min.css.map HTTP/1.1" 404 1838
+[2020-04-12 23:47:46] [WARNING] "GET /static/plugins/bootstrap-4.4.1/bootstrap.bundle.min.js.map HTTP/1.1" 404 1880
+[2020-04-12 23:47:46] [WARNING] "GET /static/plugins/AdminLTE/adminlte.min.js.map HTTP/1.1" 404 1835
+[2020-04-12 23:47:46] [INFO] "GET /static/img/favicon.ico HTTP/1.1" 200 16958
+[2020-04-12 23:48:11] [INFO] "GET /video/admin/get_carousel/ HTTP/1.1" 200 19220
+[2020-04-12 23:48:12] [WARNING] "GET /static/plugins/bootstrap-4.4.1/bootstrap.min.css.map HTTP/1.1" 404 1862
+[2020-04-12 23:48:12] [WARNING] "GET /static/plugins/AdminLTE/adminlte.min.css.map HTTP/1.1" 404 1838
+[2020-04-12 23:48:12] [WARNING] "GET /static/plugins/AdminLTE/adminlte.min.js.map HTTP/1.1" 404 1835
+[2020-04-12 23:48:12] [WARNING] "GET /static/plugins/bootstrap-4.4.1/bootstrap.bundle.min.js.map HTTP/1.1" 404 1880
+[2020-04-12 23:48:12] [INFO] "GET /static/img/favicon.ico HTTP/1.1" 200 16958
+[2020-04-12 23:49:03] [INFO] "GET /video/admin/get_carousel/ HTTP/1.1" 200 19250
+[2020-04-12 23:49:04] [WARNING] "GET /static/plugins/bootstrap-4.4.1/bootstrap.min.css.map HTTP/1.1" 404 1862
+[2020-04-12 23:49:04] [WARNING] "GET /static/plugins/AdminLTE/adminlte.min.css.map HTTP/1.1" 404 1838
+[2020-04-12 23:49:04] [WARNING] "GET /static/plugins/bootstrap-4.4.1/bootstrap.bundle.min.js.map HTTP/1.1" 404 1880
+[2020-04-12 23:49:04] [WARNING] "GET /static/plugins/AdminLTE/adminlte.min.js.map HTTP/1.1" 404 1835
+[2020-04-12 23:49:04] [INFO] "GET /static/img/favicon.ico HTTP/1.1" 200 16958
+[2020-04-12 23:50:07] [INFO] "GET /video/admin/get_carousel/ HTTP/1.1" 200 19253
+[2020-04-12 23:50:07] [INFO] "GET /static/plugins/AdminLTE/user2-160x160.jpg HTTP/1.1" 304 0
+[2020-04-12 23:50:08] [WARNING] "GET /static/plugins/AdminLTE/adminlte.min.css.map HTTP/1.1" 404 1838
+[2020-04-12 23:50:08] [WARNING] "GET /static/plugins/bootstrap-4.4.1/bootstrap.min.css.map HTTP/1.1" 404 1862
+[2020-04-12 23:50:08] [WARNING] "GET /static/plugins/bootstrap-4.4.1/bootstrap.bundle.min.js.map HTTP/1.1" 404 1880
+[2020-04-12 23:50:08] [WARNING] "GET /static/plugins/AdminLTE/adminlte.min.js.map HTTP/1.1" 404 1835
+[2020-04-12 23:50:08] [INFO] "GET /static/img/favicon.ico HTTP/1.1" 200 16958
+[2020-04-12 23:50:52] [INFO] "GET /video/admin/get_carousel/ HTTP/1.1" 200 19244
+[2020-04-12 23:50:52] [WARNING] "GET /static/plugins/bootstrap-4.4.1/bootstrap.min.css.map HTTP/1.1" 404 1862
+[2020-04-12 23:50:52] [WARNING] "GET /static/plugins/AdminLTE/adminlte.min.css.map HTTP/1.1" 404 1838
+[2020-04-12 23:50:53] [WARNING] "GET /static/plugins/AdminLTE/adminlte.min.js.map HTTP/1.1" 404 1835
+[2020-04-12 23:50:53] [WARNING] "GET /static/plugins/bootstrap-4.4.1/bootstrap.bundle.min.js.map HTTP/1.1" 404 1880
+[2020-04-12 23:50:53] [INFO] "GET /static/img/favicon.ico HTTP/1.1" 200 16958
+[2020-04-12 23:51:03] [INFO] "GET /video/admin/get_carousel/ HTTP/1.1" 200 19240
+[2020-04-12 23:51:03] [WARNING] "GET /static/plugins/bootstrap-4.4.1/bootstrap.min.css.map HTTP/1.1" 404 1862
+[2020-04-12 23:51:03] [WARNING] "GET /static/plugins/AdminLTE/adminlte.min.css.map HTTP/1.1" 404 1838
+[2020-04-12 23:51:04] [WARNING] "GET /static/plugins/bootstrap-4.4.1/bootstrap.bundle.min.js.map HTTP/1.1" 404 1880
+[2020-04-12 23:51:04] [WARNING] "GET /static/plugins/AdminLTE/adminlte.min.js.map HTTP/1.1" 404 1835
+[2020-04-12 23:51:04] [INFO] "GET /static/img/favicon.ico HTTP/1.1" 200 16958
+[2020-04-12 23:51:47] [INFO] "GET /video/admin/get_carousel/ HTTP/1.1" 200 19262
+[2020-04-12 23:51:47] [WARNING] "GET /static/plugins/bootstrap-4.4.1/bootstrap.min.css.map HTTP/1.1" 404 1862
+[2020-04-12 23:51:47] [WARNING] "GET /static/plugins/AdminLTE/adminlte.min.css.map HTTP/1.1" 404 1838
+[2020-04-12 23:51:47] [WARNING] "GET /static/plugins/bootstrap-4.4.1/bootstrap.bundle.min.js.map HTTP/1.1" 404 1880
+[2020-04-12 23:51:47] [WARNING] "GET /static/plugins/AdminLTE/adminlte.min.js.map HTTP/1.1" 404 1835
+[2020-04-12 23:51:47] [INFO] "GET /static/img/favicon.ico HTTP/1.1" 200 16958
+[2020-04-12 23:52:21] [WARNING] "POST /video/add_carousel/ HTTP/1.1" 404 4728
+[2020-04-12 23:53:05] [INFO] "GET /video/admin/get_carousel/ HTTP/1.1" 200 19268
+[2020-04-12 23:53:06] [WARNING] "GET /static/plugins/bootstrap-4.4.1/bootstrap.min.css.map HTTP/1.1" 404 1862
+[2020-04-12 23:53:06] [WARNING] "GET /static/plugins/AdminLTE/adminlte.min.css.map HTTP/1.1" 404 1838
+[2020-04-12 23:53:06] [WARNING] "GET /static/plugins/AdminLTE/adminlte.min.js.map HTTP/1.1" 404 1835
+[2020-04-12 23:53:06] [WARNING] "GET /static/plugins/bootstrap-4.4.1/bootstrap.bundle.min.js.map HTTP/1.1" 404 1880
+[2020-04-12 23:53:06] [INFO] "GET /static/img/favicon.ico HTTP/1.1" 200 16958
+[2020-04-12 23:53:26] [INFO] "POST /video/admin/add_carousel/ HTTP/1.1" 200 112
+[2020-04-12 23:54:12] [INFO] "GET /video/admin/get_carousel/ HTTP/1.1" 200 20464
+[2020-04-12 23:54:13] [WARNING] "GET /static/plugins/bootstrap-4.4.1/bootstrap.min.css.map HTTP/1.1" 404 1862
+[2020-04-12 23:54:13] [WARNING] "GET /static/plugins/AdminLTE/adminlte.min.css.map HTTP/1.1" 404 1838
+[2020-04-12 23:54:13] [WARNING] "GET /static/plugins/bootstrap-4.4.1/bootstrap.bundle.min.js.map HTTP/1.1" 404 1880
+[2020-04-12 23:54:13] [WARNING] "GET /static/plugins/AdminLTE/adminlte.min.js.map HTTP/1.1" 404 1835
+[2020-04-12 23:54:13] [INFO] "GET /static/img/favicon.ico HTTP/1.1" 200 16958
+[2020-04-12 23:54:37] [INFO] "GET /video/admin/get_carousel/ HTTP/1.1" 200 20464
+[2020-04-12 23:54:38] [WARNING] "GET /static/plugins/bootstrap-4.4.1/bootstrap.min.css.map HTTP/1.1" 404 1862
+[2020-04-12 23:54:38] [WARNING] "GET /static/plugins/AdminLTE/adminlte.min.css.map HTTP/1.1" 404 1838
+[2020-04-12 23:54:38] [WARNING] "GET /static/plugins/bootstrap-4.4.1/bootstrap.bundle.min.js.map HTTP/1.1" 404 1880
+[2020-04-12 23:54:38] [WARNING] "GET /static/plugins/AdminLTE/adminlte.min.js.map HTTP/1.1" 404 1835
+[2020-04-12 23:54:38] [INFO] "GET /static/img/favicon.ico HTTP/1.1" 200 16958
+[2020-04-12 23:54:43] [WARNING] "GET /static/plugins/bootstrap-4.4.1/bootstrap.bundle.min.js.map HTTP/1.1" 404 1880
+[2020-04-12 23:54:43] [WARNING] "GET /static/plugins/AdminLTE/adminlte.min.js.map HTTP/1.1" 404 1835
+[2020-04-12 23:54:44] [WARNING] "GET /static/plugins/bootstrap-4.4.1/bootstrap.min.css.map HTTP/1.1" 404 1862
+[2020-04-12 23:54:44] [WARNING] "GET /static/plugins/AdminLTE/adminlte.min.css.map HTTP/1.1" 404 1838
+[2020-04-12 23:55:26] [INFO] "GET /video/admin/get_carousel/ HTTP/1.1" 200 20483
+[2020-04-12 23:55:27] [WARNING] "GET /static/plugins/bootstrap-4.4.1/bootstrap.min.css.map HTTP/1.1" 404 1862
+[2020-04-12 23:55:27] [WARNING] "GET /static/plugins/AdminLTE/adminlte.min.css.map HTTP/1.1" 404 1838
+[2020-04-12 23:55:27] [INFO] "GET /static/img/favicon.ico HTTP/1.1" 200 16958
+[2020-04-12 23:55:27] [WARNING] "GET /static/plugins/bootstrap-4.4.1/bootstrap.bundle.min.js.map HTTP/1.1" 404 1880
+[2020-04-12 23:55:27] [WARNING] "GET /static/plugins/AdminLTE/adminlte.min.js.map HTTP/1.1" 404 1835
+[2020-04-12 23:55:39] [INFO] "GET /video/admin/get_carousel/ HTTP/1.1" 200 20483
+[2020-04-12 23:56:00] [INFO] "GET /video/admin/get_carousel/ HTTP/1.1" 200 20501
+[2020-04-12 23:56:01] [WARNING] "GET /static/plugins/bootstrap-4.4.1/bootstrap.min.css.map HTTP/1.1" 404 1862
+[2020-04-12 23:56:01] [WARNING] "GET /static/plugins/AdminLTE/adminlte.min.css.map HTTP/1.1" 404 1838
+[2020-04-12 23:56:01] [INFO] "GET /static/img/favicon.ico HTTP/1.1" 200 16958
+[2020-04-12 23:56:01] [WARNING] "GET /static/plugins/bootstrap-4.4.1/bootstrap.bundle.min.js.map HTTP/1.1" 404 1880
+[2020-04-12 23:56:01] [WARNING] "GET /static/plugins/AdminLTE/adminlte.min.js.map HTTP/1.1" 404 1835
+[2020-04-12 23:56:03] [INFO] "GET /video/play/77747/ HTTP/1.1" 200 12297
+[2020-04-12 23:57:02] [INFO] "POST /video/admin/add_carousel/ HTTP/1.1" 200 125
+[2020-04-12 23:57:02] [INFO] "GET /video/admin/get_carousel/ HTTP/1.1" 200 21804
+[2020-04-12 23:57:03] [WARNING] "GET /static/plugins/bootstrap-4.4.1/bootstrap.min.css.map HTTP/1.1" 404 1862
+[2020-04-12 23:57:03] [WARNING] "GET /static/plugins/AdminLTE/adminlte.min.css.map HTTP/1.1" 404 1838
+[2020-04-12 23:57:04] [WARNING] "GET /static/plugins/bootstrap-4.4.1/bootstrap.bundle.min.js.map HTTP/1.1" 404 1880
+[2020-04-12 23:57:04] [WARNING] "GET /static/plugins/AdminLTE/adminlte.min.js.map HTTP/1.1" 404 1835
+[2020-04-12 23:57:34] [INFO] "GET /video/admin/get_carousel/ HTTP/1.1" 200 21852
+[2020-04-12 23:57:34] [WARNING] "GET /static/plugins/bootstrap-4.4.1/bootstrap.min.css.map HTTP/1.1" 404 1862
+[2020-04-12 23:57:34] [WARNING] "GET /static/plugins/AdminLTE/adminlte.min.css.map HTTP/1.1" 404 1838
+[2020-04-12 23:57:35] [INFO] "GET /static/img/favicon.ico HTTP/1.1" 200 16958
+[2020-04-12 23:57:35] [WARNING] "GET /static/plugins/bootstrap-4.4.1/bootstrap.bundle.min.js.map HTTP/1.1" 404 1880
+[2020-04-12 23:57:35] [WARNING] "GET /static/plugins/AdminLTE/adminlte.min.js.map HTTP/1.1" 404 1835
+[2020-04-12 23:57:48] [INFO] "GET /video/admin/get_carousel/ HTTP/1.1" 200 21886
+[2020-04-12 23:57:49] [WARNING] "GET /static/plugins/bootstrap-4.4.1/bootstrap.min.css.map HTTP/1.1" 404 1862
+[2020-04-12 23:57:49] [WARNING] "GET /static/plugins/AdminLTE/adminlte.min.css.map HTTP/1.1" 404 1838
+[2020-04-12 23:57:49] [INFO] "GET /static/img/favicon.ico HTTP/1.1" 200 16958
+[2020-04-12 23:57:49] [WARNING] "GET /static/plugins/bootstrap-4.4.1/bootstrap.bundle.min.js.map HTTP/1.1" 404 1880
+[2020-04-12 23:57:49] [WARNING] "GET /static/plugins/AdminLTE/adminlte.min.js.map HTTP/1.1" 404 1835
+[2020-04-12 23:58:57] [INFO] "POST /video/admin/add_carousel/ HTTP/1.1" 200 142
+[2020-04-12 23:58:57] [INFO] "GET /video/admin/get_carousel/ HTTP/1.1" 200 23246
+[2020-04-12 23:58:57] [WARNING] "GET /static/plugins/bootstrap-4.4.1/bootstrap.min.css.map HTTP/1.1" 404 1862
+[2020-04-12 23:58:57] [WARNING] "GET /static/plugins/AdminLTE/adminlte.min.css.map HTTP/1.1" 404 1838
+[2020-04-12 23:58:57] [WARNING] "GET /static/plugins/AdminLTE/adminlte.min.js.map HTTP/1.1" 404 1835
+[2020-04-12 23:58:57] [WARNING] "GET /static/plugins/bootstrap-4.4.1/bootstrap.bundle.min.js.map HTTP/1.1" 404 1880
+[2020-04-12 23:59:03] [INFO] "POST /video/admin/add_carousel/ HTTP/1.1" 200 103
+[2020-04-12 23:59:03] [INFO] "GET /video/admin/get_carousel/ HTTP/1.1" 200 24496
+[2020-04-12 23:59:03] [WARNING] "GET /static/plugins/bootstrap-4.4.1/bootstrap.min.css.map HTTP/1.1" 404 1862
+[2020-04-12 23:59:03] [WARNING] "GET /static/plugins/AdminLTE/adminlte.min.css.map HTTP/1.1" 404 1838
+[2020-04-12 23:59:04] [WARNING] "GET /static/plugins/bootstrap-4.4.1/bootstrap.bundle.min.js.map HTTP/1.1" 404 1880
+[2020-04-12 23:59:04] [WARNING] "GET /static/plugins/AdminLTE/adminlte.min.js.map HTTP/1.1" 404 1835
+[2020-04-12 23:59:05] [ERROR] Internal Server Error: /video/admin/del_carousel/
+Traceback (most recent call last):
+  File "D:\Program Files\Anaconda3\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\Program Files\Anaconda3\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\Program Files\Anaconda3\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Code\Git\django_project\video\admin_views.py", line 307, in carousel_del
+    return HttpResponse(json.dumps(ret))
+  File "D:\Program Files\Anaconda3\lib\json\__init__.py", line 231, in dumps
+    return _default_encoder.encode(obj)
+  File "D:\Program Files\Anaconda3\lib\json\encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "D:\Program Files\Anaconda3\lib\json\encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "D:\Program Files\Anaconda3\lib\json\encoder.py", line 179, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type NameError is not JSON serializable
+[2020-04-12 23:59:05] [ERROR] "POST /video/admin/del_carousel/ HTTP/1.1" 500 18681
+[2020-04-12 23:59:09] [ERROR] Internal Server Error: /video/admin/del_carousel/
+Traceback (most recent call last):
+  File "D:\Program Files\Anaconda3\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\Program Files\Anaconda3\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "D:\Program Files\Anaconda3\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Code\Git\django_project\video\admin_views.py", line 307, in carousel_del
+    return HttpResponse(json.dumps(ret))
+  File "D:\Program Files\Anaconda3\lib\json\__init__.py", line 231, in dumps
+    return _default_encoder.encode(obj)
+  File "D:\Program Files\Anaconda3\lib\json\encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "D:\Program Files\Anaconda3\lib\json\encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "D:\Program Files\Anaconda3\lib\json\encoder.py", line 179, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type NameError is not JSON serializable
+[2020-04-12 23:59:09] [ERROR] "POST /video/admin/del_carousel/ HTTP/1.1" 500 18681
+[2020-04-13 00:00:00] [INFO] D:\Code\Git\django_project\video\admin_views.py changed, reloading.
+[2020-04-13 00:00:02] [INFO] Watching for file changes with StatReloader
+[2020-04-13 00:00:03] [INFO] "GET /video/admin/get_carousel/ HTTP/1.1" 200 24496
+[2020-04-13 00:00:04] [WARNING] "GET /static/plugins/bootstrap-4.4.1/bootstrap.min.css.map HTTP/1.1" 404 1862
+[2020-04-13 00:00:04] [WARNING] "GET /static/plugins/AdminLTE/adminlte.min.css.map HTTP/1.1" 404 1838
+[2020-04-13 00:00:04] [INFO] "GET /static/img/favicon.ico HTTP/1.1" 200 16958
+[2020-04-13 00:00:04] [WARNING] "GET /static/plugins/bootstrap-4.4.1/bootstrap.bundle.min.js.map HTTP/1.1" 404 1880
+[2020-04-13 00:00:04] [WARNING] "GET /static/plugins/AdminLTE/adminlte.min.js.map HTTP/1.1" 404 1835
+[2020-04-13 00:00:05] [INFO] "POST /video/admin/del_carousel/ HTTP/1.1" 200 45
+[2020-04-13 00:00:05] [INFO] "GET /video/admin/get_carousel/ HTTP/1.1" 200 23246
+[2020-04-13 00:00:06] [WARNING] "GET /static/plugins/bootstrap-4.4.1/bootstrap.min.css.map HTTP/1.1" 404 1862
+[2020-04-13 00:00:06] [WARNING] "GET /static/plugins/AdminLTE/adminlte.min.css.map HTTP/1.1" 404 1838
+[2020-04-13 00:00:06] [WARNING] "GET /static/plugins/bootstrap-4.4.1/bootstrap.bundle.min.js.map HTTP/1.1" 404 1880
+[2020-04-13 00:00:06] [WARNING] "GET /static/plugins/AdminLTE/adminlte.min.js.map HTTP/1.1" 404 1835
+[2020-04-13 00:00:35] [INFO] "POST /video/admin/add_carousel/ HTTP/1.1" 200 124
+[2020-04-13 00:00:35] [INFO] "GET /video/admin/get_carousel/ HTTP/1.1" 200 24574
+[2020-04-13 00:00:35] [WARNING] "GET /static/plugins/bootstrap-4.4.1/bootstrap.min.css.map HTTP/1.1" 404 1862
+[2020-04-13 00:00:35] [WARNING] "GET /static/plugins/AdminLTE/adminlte.min.css.map HTTP/1.1" 404 1838
+[2020-04-13 00:00:36] [WARNING] "GET /static/plugins/bootstrap-4.4.1/bootstrap.bundle.min.js.map HTTP/1.1" 404 1880
+[2020-04-13 00:00:36] [WARNING] "GET /static/plugins/AdminLTE/adminlte.min.js.map HTTP/1.1" 404 1835
+[2020-04-13 00:02:30] [INFO] D:\Code\Git\django_project\video\func\db_handler.py changed, reloading.
+[2020-04-13 00:02:31] [INFO] Watching for file changes with StatReloader
+[2020-04-13 00:02:44] [INFO] D:\Code\Git\django_project\video\views.py changed, reloading.
+[2020-04-13 00:02:45] [INFO] Watching for file changes with StatReloader
+[2020-04-13 00:03:00] [INFO] D:\Code\Git\django_project\video\views.py changed, reloading.
+[2020-04-13 00:03:02] [INFO] Watching for file changes with StatReloader
+[2020-04-13 00:06:33] [INFO] "GET /video/ HTTP/1.1" 200 35521
+[2020-04-13 00:06:34] [WARNING] "GET /static/plugins/hammer/hammer.min.js.map HTTP/1.1" 404 1823
+[2020-04-13 00:06:38] [INFO] "GET /video/ HTTP/1.1" 200 35521
+[2020-04-13 00:06:39] [INFO] "GET /static/img/favicon.ico HTTP/1.1" 200 16958
+[2020-04-13 00:06:39] [WARNING] "GET /static/plugins/hammer/hammer.min.js.map HTTP/1.1" 404 1823
+[2020-04-13 00:07:21] [INFO] "GET /video/ HTTP/1.1" 200 35513
+[2020-04-13 00:07:22] [INFO] "GET /static/img/favicon.ico HTTP/1.1" 200 16958
+[2020-04-13 00:07:22] [WARNING] "GET /static/plugins/hammer/hammer.min.js.map HTTP/1.1" 404 1823
+[2020-04-13 00:07:27] [INFO] "GET /video/ HTTP/1.1" 200 35513
+[2020-04-13 00:07:27] [INFO] "GET /static/app_video/css/stui_default.css HTTP/1.1" 200 19526
+[2020-04-13 00:07:27] [INFO] "GET /static/fonts/myfont.css HTTP/1.1" 200 728
+[2020-04-13 00:07:27] [INFO] "GET /static/plugins/hammer/hammer.min.js HTTP/1.1" 200 20771
+[2020-04-13 00:07:27] [INFO] "GET /static/plugins/hammer/jquery.hammer.js HTTP/1.1" 200 1021
+[2020-04-13 00:07:27] [INFO] "GET /static/jquery/jquery-1.12.4.js HTTP/1.1" 200 304438
+[2020-04-13 00:07:28] [INFO] "GET /static/app_video/img/bg_icon.jpg HTTP/1.1" 200 3867
+[2020-04-13 00:07:28] [INFO] "GET /static/app_video/img/dragon.png HTTP/1.1" 200 31972
+[2020-04-13 00:07:28] [INFO] "GET /static/app_video/img/icon_search.png HTTP/1.1" 200 348
+[2020-04-13 00:07:28] [INFO] "GET /static/app_video/img/play.png HTTP/1.1" 200 2457
+[2020-04-13 00:07:28] [WARNING] "GET /static/plugins/hammer/hammer.min.js.map HTTP/1.1" 404 1823
+[2020-04-13 00:07:28] [INFO] "GET /static/app_video/img/jiongma.jpg HTTP/1.1" 200 218527
+[2020-04-13 00:07:39] [INFO] "GET /static/img/favicon.ico HTTP/1.1" 200 16958
+[2020-04-13 00:10:26] [INFO] "GET /video/ HTTP/1.1" 200 35513
+[2020-04-13 00:10:27] [WARNING] "GET /static/plugins/hammer/hammer.min.js.map HTTP/1.1" 404 1823
+[2020-04-13 00:10:31] [INFO] "GET /static/img/favicon.ico HTTP/1.1" 200 16958
+[2020-04-13 00:11:48] [INFO] "GET /video/ HTTP/1.1" 200 35513
+[2020-04-13 00:11:49] [WARNING] "GET /static/plugins/hammer/hammer.min.js.map HTTP/1.1" 404 1823
+[2020-04-13 00:11:49] [INFO] "GET /static/img/favicon.ico HTTP/1.1" 200 16958
+[2020-04-13 00:12:24] [INFO] "GET /static/app_video/img/bangexiju.jpg HTTP/1.1" 200 82905
+[2020-04-13 00:17:34] [INFO] "GET /video/ HTTP/1.1" 200 35617
+[2020-04-13 00:17:34] [WARNING] "GET /static/plugins/hammer/hammer.min.js.map HTTP/1.1" 404 1823
+[2020-04-13 00:17:34] [INFO] "GET /static/img/favicon.ico HTTP/1.1" 200 16958
+[2020-04-13 00:17:38] [INFO] "GET /video/ HTTP/1.1" 200 35617
+[2020-04-13 00:17:39] [WARNING] "GET /static/plugins/hammer/hammer.min.js.map HTTP/1.1" 404 1823
+[2020-04-13 00:17:53] [INFO] "GET /video/ HTTP/1.1" 200 35624
+[2020-04-13 00:17:53] [INFO] "GET /static/img/favicon.ico HTTP/1.1" 200 16958
+[2020-04-13 00:17:54] [WARNING] "GET /static/plugins/hammer/hammer.min.js.map HTTP/1.1" 404 1823
+[2020-04-13 00:18:00] [INFO] "GET /video/ HTTP/1.1" 200 35624
+[2020-04-13 00:18:01] [INFO] "GET /static/img/favicon.ico HTTP/1.1" 200 16958
+[2020-04-13 00:18:01] [WARNING] "GET /static/plugins/hammer/hammer.min.js.map HTTP/1.1" 404 1823
+[2020-04-13 00:19:33] [INFO] "GET /admin/ HTTP/1.1" 200 29972
+[2020-04-13 00:19:33] [INFO] "GET /static/plugins/AdminLTE/user2-160x160.jpg HTTP/1.1" 304 0
+[2020-04-13 00:19:34] [WARNING] "GET /static/plugins/bootstrap-4.4.1/bootstrap.min.css.map HTTP/1.1" 404 1862
+[2020-04-13 00:19:34] [WARNING] "GET /static/plugins/AdminLTE/adminlte.min.css.map HTTP/1.1" 404 1838
+[2020-04-13 00:19:34] [WARNING] "GET /static/plugins/bootstrap-4.4.1/bootstrap.bundle.min.js.map HTTP/1.1" 404 1880
+[2020-04-13 00:19:34] [WARNING] "GET /static/plugins/AdminLTE/adminlte.min.js.map HTTP/1.1" 404 1835
+[2020-04-13 00:22:04] [INFO] "GET /video/ HTTP/1.1" 200 35793
+[2020-04-13 00:22:05] [WARNING] "GET /static/plugins/hammer/hammer.min.js.map HTTP/1.1" 404 1823
+[2020-04-13 00:22:06] [INFO] "GET /video/ HTTP/1.1" 200 35793
+[2020-04-13 00:22:06] [WARNING] "GET /static/plugins/hammer/hammer.min.js.map HTTP/1.1" 404 1823
+[2020-04-13 00:22:06] [INFO] "GET /static/img/favicon.ico HTTP/1.1" 200 16958
+[2020-04-13 00:22:13] [INFO] "GET /video/ HTTP/1.1" 200 35793
+[2020-04-13 00:22:13] [WARNING] "GET /static/plugins/hammer/hammer.min.js.map HTTP/1.1" 404 1823
+[2020-04-13 00:22:13] [INFO] "GET /static/img/favicon.ico HTTP/1.1" 200 16958
+[2020-04-13 00:22:35] [INFO] "GET /admin/ HTTP/1.1" 200 29972
+[2020-04-13 00:22:35] [WARNING] "GET /static/plugins/bootstrap-4.4.1/bootstrap.min.css.map HTTP/1.1" 404 1862
+[2020-04-13 00:22:35] [WARNING] "GET /static/plugins/AdminLTE/adminlte.min.css.map HTTP/1.1" 404 1838
+[2020-04-13 00:22:36] [WARNING] "GET /static/plugins/AdminLTE/adminlte.min.js.map HTTP/1.1" 404 1835
+[2020-04-13 00:22:36] [WARNING] "GET /static/plugins/bootstrap-4.4.1/bootstrap.bundle.min.js.map HTTP/1.1" 404 1880
+[2020-04-13 00:22:39] [INFO] "GET /video/admin/get_carousel/ HTTP/1.1" 200 24574
+[2020-04-13 00:22:40] [WARNING] "GET /static/plugins/bootstrap-4.4.1/bootstrap.min.css.map HTTP/1.1" 404 1862
+[2020-04-13 00:22:40] [WARNING] "GET /static/plugins/AdminLTE/adminlte.min.css.map HTTP/1.1" 404 1838
+[2020-04-13 00:22:40] [WARNING] "GET /static/plugins/bootstrap-4.4.1/bootstrap.bundle.min.js.map HTTP/1.1" 404 1880
+[2020-04-13 00:22:40] [WARNING] "GET /static/plugins/AdminLTE/adminlte.min.js.map HTTP/1.1" 404 1835
+[2020-04-13 00:26:16] [INFO] "POST /video/admin/add_carousel/ HTTP/1.1" 200 124
+[2020-04-13 00:26:16] [INFO] "GET /video/admin/get_carousel/ HTTP/1.1" 200 25929
+[2020-04-13 00:26:19] [INFO] "GET /video/ HTTP/1.1" 200 36269
+[2020-04-13 00:26:23] [INFO] "GET /video/ HTTP/1.1" 200 36269
+[2020-04-13 00:26:23] [INFO] "GET /static/app_video/css/stui_default.css HTTP/1.1" 200 19526
+[2020-04-13 00:26:23] [INFO] "GET /static/fonts/myfont.css HTTP/1.1" 200 728
+[2020-04-13 00:26:23] [INFO] "GET /static/plugins/hammer/hammer.min.js HTTP/1.1" 200 20771
+[2020-04-13 00:26:23] [INFO] "GET /static/plugins/hammer/jquery.hammer.js HTTP/1.1" 200 1021
+[2020-04-13 00:26:23] [INFO] "GET /static/jquery/jquery-1.12.4.js HTTP/1.1" 200 304438
+[2020-04-13 00:26:23] [INFO] "GET /static/app_video/img/bg_icon.jpg HTTP/1.1" 200 3867
+[2020-04-13 00:26:23] [INFO] "GET /static/app_video/img/dragon.png HTTP/1.1" 200 31972
+[2020-04-13 00:26:23] [INFO] "GET /static/app_video/img/icon_search.png HTTP/1.1" 200 348
+[2020-04-13 00:26:23] [INFO] "GET /static/app_video/img/play.png HTTP/1.1" 200 2457
+[2020-04-13 00:26:27] [INFO] "GET /static/img/favicon.ico HTTP/1.1" 200 16958
+[2020-04-13 00:26:41] [INFO] "GET /video/ HTTP/1.1" 200 36269
+[2020-04-13 00:26:43] [INFO] "GET /static/img/favicon.ico HTTP/1.1" 200 16958
+[2020-04-13 00:26:48] [INFO] "GET /video/ HTTP/1.1" 200 36269
+[2020-04-13 00:26:50] [INFO] "GET /static/img/favicon.ico HTTP/1.1" 200 16958
+[2020-04-13 00:26:56] [INFO] "GET /video/ HTTP/1.1" 200 36269
+[2020-04-13 00:27:04] [INFO] "GET /static/img/favicon.ico HTTP/1.1" 200 16958
+[2020-04-13 00:27:07] [WARNING] "GET /static/plugins/hammer/hammer.min.js.map HTTP/1.1" 404 1823
+[2020-04-13 00:27:10] [INFO] "GET /video/ HTTP/1.1" 200 36269
+[2020-04-13 00:27:11] [WARNING] "GET /static/plugins/hammer/hammer.min.js.map HTTP/1.1" 404 1823
+[2020-04-13 00:27:14] [INFO] "GET /static/img/favicon.ico HTTP/1.1" 200 16958
+[2020-04-13 00:27:41] [INFO] "GET /video/ HTTP/1.1" 200 36269
+[2020-04-13 00:27:41] [INFO] "GET /static/app_video/css/stui_default.css HTTP/1.1" 200 19526
+[2020-04-13 00:27:41] [INFO] "GET /static/fonts/myfont.css HTTP/1.1" 200 728
+[2020-04-13 00:27:41] [INFO] "GET /static/jquery/jquery-1.12.4.js HTTP/1.1" 200 304438
+[2020-04-13 00:27:41] [INFO] "GET /static/plugins/hammer/hammer.min.js HTTP/1.1" 200 20771
+[2020-04-13 00:27:41] [INFO] "GET /static/plugins/hammer/jquery.hammer.js HTTP/1.1" 200 1021
+[2020-04-13 00:27:42] [INFO] "GET /static/app_video/img/bg_icon.jpg HTTP/1.1" 200 3867
+[2020-04-13 00:27:42] [INFO] "GET /static/app_video/img/icon_search.png HTTP/1.1" 200 348
+[2020-04-13 00:27:42] [INFO] "GET /static/app_video/img/dragon.png HTTP/1.1" 200 31972
+[2020-04-13 00:27:42] [INFO] "GET /static/app_video/img/play.png HTTP/1.1" 200 2457
+[2020-04-13 00:27:42] [WARNING] "GET /static/plugins/hammer/hammer.min.js.map HTTP/1.1" 404 1823
+[2020-04-13 00:27:45] [INFO] "GET /static/img/favicon.ico HTTP/1.1" 200 16958
+[2020-04-13 00:36:23] [INFO] "GET /video/ HTTP/1.1" 200 36269
+[2020-04-13 00:36:24] [WARNING] "GET /static/plugins/hammer/hammer.min.js.map HTTP/1.1" 404 1823
+[2020-04-13 00:36:29] [INFO] "GET /static/img/favicon.ico HTTP/1.1" 200 16958
+[2020-04-13 00:38:44] [INFO] "GET /video/ HTTP/1.1" 200 36308
+[2020-04-13 00:38:45] [WARNING] "GET /static/plugins/hammer/hammer.min.js.map HTTP/1.1" 404 1823
+[2020-04-13 00:38:48] [INFO] "GET /video/ HTTP/1.1" 200 36308
+[2020-04-13 00:38:48] [WARNING] "GET /static/plugins/hammer/hammer.min.js.map HTTP/1.1" 404 1823
+[2020-04-13 00:38:53] [INFO] "GET /static/img/favicon.ico HTTP/1.1" 200 16958

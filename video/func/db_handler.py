@@ -30,7 +30,7 @@ def load_all_vod_data():    # 从数据库获取全部影片数据
     return result
 
 
-def dump_request_data(request_data):  # 将视频数据保存至数据库
+def dump_request_data(request_data):  # 将视频数据保存至请求数据库
     try:
         res = models.RequestList.objects.get_or_create(**request_data)
         if not res[1]:
@@ -165,3 +165,26 @@ def clear_url():
 def db_test():
     obj_list = models.VideoData.objects.filter(vod_cid='3').values_list('vod_area').distinct()
     print(obj_list)
+
+
+def dump_carousel_data(carousel_data):  # 将视频数据保存至请求数据库
+    try:
+        res = models.CarouselList.objects.get_or_create(**carousel_data)
+        if not res[1]:
+            print('请求已存在:%s' % carousel_data['vod_name'])
+        else:
+            print('请求已添加：%s' % carousel_data['vod_name'])
+        return True
+    except Exception as e:
+        print(e)
+        return False
+
+
+def load_carousel_data():  # 从数据库获取数据
+    result = models.CarouselList.objects.all().values().order_by('vod_index')
+    return result
+
+
+def del_carousel_data(vod_name):  # 从数据库删除数据
+    result = models.CarouselList.objects.filter(vod_name=vod_name).delete()
+    return result

@@ -20,20 +20,20 @@
     <!-- 播放地址 -->
     <div style="margin-top:20px;padding: 0 10px;">解析播放：(请输入各大网站视频地址)</div>
     <div class="play-url">
-        <form class="ff-play" id="search" name="search" action="https://okjx.cc/jiexi/?url=FFURL" method="get" data-sid="0"
-            data-limit="10" data-action="https://okjx.cc/jiexi/?url=FFURL">
-            {% csrf_token %}
-            <input class="ff-url form-control" type="text" id="url" name="url" value="" placeholder="请输入视频地址..."
-                autocomplete="off">
-            <button class="submit" type="submit" name="submit"><i class="icon iconfont icon-search"></i></button>
-        </form>
-    </div>
-    <div class="play-url">
-        <form class="ff-play-name" id="search-name" name="search" action="https://www.administrator5.com/admin.php?url=FFWD" method="get" data-sid="0"
-            data-limit="10" data-action="https://www.administrator5.com/admin.php?url=FFWD">
-            {% csrf_token %}
-            <input class="ff-url form-control" type="text" id="wd" name="wd" value="" placeholder="请输入视频名称..."
-                autocomplete="off">
+        <form class="ff-play" id="search" name="search">
+            <select class="form-control" name="url_temp" id="url_temp" style="width:25%;display: inline-block;padding: 6px 5px 6px 10px;">
+                <option value="https://z1.m1907.cn/?jx=">搜片名</option>
+                <option value="https://www.administrator5.com/admin.php?url=">无名小站</option>
+                <option value="https://okjx.cc/jiexi/?url=">OK解析</option>
+                <option value="//www.bavei.com/vip/?url=">①电视剧解析（推荐）</option>
+                <option value="//www.bavei.com/vip1/?url=">②电影解析（推荐）</option>
+                <option value="//www.bavei.com/vip/?url=">全网解析（双端高速）</option>
+                <option value="//www.bavei.com/vip2/?url=">③视频解析（稳定）</option> 
+                <option style="color: red;" value="//www.bavei.com/vip4/?url=">④vip解析（高清）</option>
+                <option style="color: red;" value="//www.bavei.com/vip3/?url=">智能解析（蓝光）</option>
+            </select>
+            <input class="ff-url form-control" type="text" name="url" id="url" value="" placeholder="请输入视频名称或视频地址..."
+                autocomplete="off" style="width:73%;display: inline-block;padding: 6px 30px 6px 10px;">
             <button class="submit" type="submit" name="submit"><i class="icon iconfont icon-search"></i></button>
         </form>
     </div>
@@ -50,57 +50,28 @@
         if (event.keyCode == 13) {
             $form = $(this).parent('.ff-play');
             $url = $form.find('.ff-url').val();
-            $action = $form.attr('data-action');
+            $action = $form.find('#url_temp').val();
             if (!$url) {
                 $form.find('.ff-url').focus();
-                $form.find('.ff-url').attr('data-toggle', 'tooltip').attr('data-placement', 'bottom').attr('title', '请输入视频地址').tooltip('show');
+                $form.find('.ff-url').attr('data-toggle', 'tooltip').attr('data-placement', 'bottom').attr('title', '请输入视频名称或视频地址').tooltip('show');
                 return false;
             }
             if ($action) {
-                $('#video_player iframe').attr('src',$action.replace('FFURL', encodeURIComponent($url)));
+                $('#video_player iframe').attr('src',$action+$url);
                 return false;
             }
         }
     });
     $(".ff-play").on("submit", function () {
         $url = $(this).find('.ff-url').val();
-        $action = $(this).attr('data-action');
-        if ($url == "") {
+        $action = $(this).find('#url_temp').val();
+        if (!$url) {
             $(this).find('.ff-url').focus();
-            $(this).find('.ff-url').attr('data-toggle', 'tooltip').attr('data-placement', 'bottom').attr('title', '请输入视频地址').tooltip('show');
+            $(this).find('.ff-url').attr('data-toggle', 'tooltip').attr('data-placement', 'bottom').attr('title', '请输入视频名称或视频地址').tooltip('show');
             return false;
         }
         if ($action) {
-            $('#video_player iframe').attr('src',$action.replace('FFURL', encodeURIComponent($url)));
-            return false;
-        }
-    });
-    $(".ff-play-name input").keyup(function (event) {
-        if (event.keyCode == 13) {
-            $form = $(this).parent('.ff-play');
-            $wd = $form.find('.ff-url').val();
-            $action = $form.attr('data-action');
-            if (!$wd) {
-                $form.find('.ff-url').focus();
-                $form.find('.ff-url').attr('data-toggle', 'tooltip').attr('data-placement', 'bottom').attr('title', '请输入视频地址').tooltip('show');
-                return false;
-            }
-            if ($action) {
-                $('#video_player iframe').attr('src',$action.replace('FFWD', encodeURIComponent($wd)));
-                return false;
-            }
-        }
-    });
-    $(".ff-play-name").on("submit", function () {
-        $wd = $(this).find('.ff-url').val();
-        $action = $(this).attr('data-action');
-        if ($wd == "") {
-            $(this).find('.ff-url').focus();
-            $(this).find('.ff-url').attr('data-toggle', 'tooltip').attr('data-placement', 'bottom').attr('title', '请输入视频地址').tooltip('show');
-            return false;
-        }
-        if ($action) {
-            $('#video_player iframe').attr('src',$action.replace('FFWD', encodeURIComponent($wd)));
+            $('#video_player iframe').attr('src',$action+$url);
             return false;
         }
     });

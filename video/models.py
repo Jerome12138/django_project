@@ -46,6 +46,12 @@ class RequestList(models.Model):
     is_add = models.IntegerField()
 
 
+class CarouselList(models.Model):
+    vod_name = models.CharField(max_length=16) 
+    vod_pic = models.CharField(max_length=32) 
+    vod_url = models.CharField(max_length=32)
+    vod_index = models.IntegerField()
+
 '''
 {list_id: 1, list_name: "电影片"}
 {list_id: 5, list_name: "动作片"}

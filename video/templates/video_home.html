@@ -3,6 +3,7 @@
 {% block title %}<title>卧龙影视，您的专属在线影院</title>{% endblock %}
 
 {% block css %}
+<meta name="referrer" content="never">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css"
     integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 {% endblock %}
@@ -10,42 +11,37 @@
 
 {% block main %}
 <div class="stui-pannel clearfix">
+    <div class="text-center clearfix pt-0 pb-5">
+        本站上线新功能：智能解析全网影视>>
+        <a href="/video/jx-play/" style="color: red;">点击体验</a>
+    </div>
+    <div class="hidden-xs" style="padding-bottom: 15px;"></div>
     <!-- 图片轮播 -->
     <div id="myCarousel" class="carousel slide">
         <!-- 轮播（Carousel）指标 -->
         <ol class="carousel-indicators">
+            {% for item in carousel_list %}
+            {% if forloop.counter0 == 0 %}
             <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-            <li data-target="#myCarousel" data-slide-to="1"></li>
-            <li data-target="#myCarousel" data-slide-to="2"></li>
-            <li data-target="#myCarousel" data-slide-to="3"></li>
+            {% else %}
+            <li data-target="#myCarousel" data-slide-to='{{ forloop.counter0 }}'></li>
+            {% endif %}
+            {% endfor %}
         </ol>
         <!-- 轮播（Carousel）项目 -->
         <div class="carousel-inner">
+            {% for item in carousel_list %}
+            {% if forloop.counter == 1 %}
             <div class="item active">
-                <a href="/video/play/77747/" title="囧妈"
-                    style="background: url(/static/app_video/img/jiongma.jpg) no-repeat;">
-                    <span class="pic-text text-center">囧妈</span>
-                </a>
-            </div>
+            {% else %}
             <div class="item">
-                <a href="/video/play/76875/" title="爱情公寓5"
-                    style="background: url(https://p2.pstatp.com/origin/ff42000070480de2dbc9) no-repeat;">
-                    <span class="pic-text text-center">爱情公寓5</span>
+            {% endif %}
+                <a href="{{ item.vod_url }}" title="{{ item.vod_name }}"
+                    style="background: url({{item.vod_pic}}) no-repeat;">
+                    <span class="pic-text text-center">{{ item.vod_name }}</span>
                 </a>
             </div>
-            <div class="item">
-                <a href="/video/play/77626/" title="三生三世枕上书"
-                    style="background: url(https://p3.pstatp.com/origin/ff90000154e633498e36) no-repeat;">
-                    <span class="pic-text text-center">三生三世枕上书</span>
-                </a>
-            </div>
-            <div class="item">
-                <a href="/video/play/75034/" title="半个喜剧"
-                    style="background: url(/static/app_video/img/bangexiju.jpg) no-repeat;">
-                    <span class="pic-text text-center">半个喜剧</span>
-                </a>
-            </div>
-
+            {% endfor %}
         </div>
         <!-- 轮播（Carousel）导航 -->
         <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">

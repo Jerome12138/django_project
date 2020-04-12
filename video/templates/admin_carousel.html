@@ -1,7 +1,7 @@
 {% extends "admin_layout.html" %}
 
 
-{% block title %}<title>后台管理 | 用户请求</title>{% endblock %}
+{% block title %}<title>后台管理 | 首页轮播图</title>{% endblock %}
 
 {% block css %}{% endblock %}
 
@@ -14,8 +14,8 @@
             <div class="row mb-2">
                 <div class="col-12">
                     <h3 class="m-0 text-dark" style="display: inline-block;">
-                        <a href="/video/admin/get_request/">
-                            <i class="nav-icon iconfont" aria-hidden="true">&#xe787;</i>用户请求&nbsp;&nbsp;
+                        <a href="/video/admin/get_carousel/">
+                            <i class="nav-icon iconfont" aria-hidden="true">&#xe787;</i>首页轮播图&nbsp;&nbsp;
                         </a>
                     </h3>
                 </div><!-- /.col -->
@@ -33,46 +33,52 @@
                     <div class="invoice p-2 mb-3">
                         <!-- title row -->
                         <h4>共{{ data_count }}条请求</h4>
-                        <div class="video_list">
+                        <div class="video_list" style="width: 100%;">
                             <ul class="tt">
                                 <li>
-                                    <span class="v-list-1">影片名称</span>
-                                    <span class="v-list-2">影片类别</span>
-                                    <span class="v-list-4">操作</span>
-                                    <span class="hidden-xs v-list-3">更新时间</span>
+                                    <span class="col-4">影片序号</span>
+                                    <span class="col-4">影片名称</span>
+                                    <span class="col-4">影片链接</span>
+                                    <span class="col-4">影片图片</span>
+                                    <span class="col-4">操作</span>
                                 </li>
                             </ul>
                             <ul class="td">
-                                {% for item in request_list %}
-                                <li>
-                                    <span style="display: none;">{{ item.vod_id }}</span>
+                                {% for item in carousel_list %}
+                                <li style="display: block;text-align: left;">
                                     <!-- 影片名称 -->
-                                    <span class="v-list-1">
-                                        <a href="http://www.zuidazy2.com/?m=vod-detail-id-{{ item.vod_id }}.html"
-                                            target="_blank" title="{{ item.vod_name}}({{ item.vod_continu}})">
-                                            <span style="border:none!important">{{ item.vod_name}}</span>
-                                            <span class="hidden-xs"
-                                                style="border:none!important">{{ item.vod_continu}}</span>
+                                    <span class="col-4">{{ item.vod_index}}</span>
+                                    <span class="col-4">
+                                        <a href="{{ item.vod_url}}" target="_blank" title="{{ item.vod_name}}">
+                                            <span style="border:none!important"
+                                                class="vod_name">{{ item.vod_name}}</span>
                                         </a>
                                     </span>
                                     <!-- 影片类别 -->
-                                    <span class="v-list-2">{{ item.list_name}}</span>
+                                    <span class="col-4">{{ item.vod_url}}</span>
+                                    <!-- 更新时间 -->
+                                    <span class="col-4">{{ item.vod_pic}}</span>
                                     <!-- 操作 -->
-                                    <span class="v-list-4">
-                                        {% if item.is_add == 0 %}
-                                        <a href="javascript:void(0)" class="add_btn"
-                                            style="color: red;border-bottom:red 1px solid;">添加资源</a>&nbsp;
-                                        {% else %}
-                                        <a href="javascript:void(0)" class="add_btn"
-                                            style="color: grey;border-bottom:grey 1px solid;">添加资源</a>&nbsp;
-                                        {% endif %}
+                                    <span class="col-4">
                                         <a href="javascript:void(0)" class="del_btn"
                                             style="color: red;border-bottom:red 1px solid;">删除</a>
                                     </span>
-                                    <!-- 更新时间 -->
-                                    <span class="v-list-3 hidden-xs">{{ item.vod_addtime}}</span>
                                 </li>
                                 {% endfor%}
+                                <li>
+                                    <form class="form-inline carousel-form" method="post" style="width: 100%;">
+                                        <input class="form-control " type="text" name="vod_index" id="vod_index"
+                                            value="" placeholder="影片序号">
+                                        <input class="form-control" type="text" name="vod_name" id="vod_name" value=""
+                                            placeholder="影片名称">
+                                        <input class="form-control" type="text" name="vod_url" id="vod_url" value=""
+                                            placeholder="影片链接">
+                                        <input class="form-control" type="text" name="vod_pic" id="vod_pic" value=""
+                                            placeholder="影片图片">
+                                        <a href="javascript:void(0)" class="add_btn"
+                                            style="color: red;border-bottom:red 1px solid;">添加</a>
+                                    </form>
+                                </li>
                             </ul>
                             <!-- 翻页 -->
                             <div style="clear: both;"></div>
@@ -96,45 +102,57 @@
 
 <script src='/static/jquery/jquery.cookie.js'></script>
 <script>
-    $('.add_btn').click(function () {
-        // var res = confirm('确认添加？');
-        $(this).css('color', 'grey')
-        $(this).css('border-bottom', 'grey 1px solid')
-        if (true) {
+    function add_carousel() {
+        var res = confirm('确认提交？');
+        // console.log(ths);
+        if (res == true) {
             $.ajax({
-                url: '/video/admin/add_vod/',
+                url: '/video/admin/add_carousel/',
                 type: "POST",
                 headers: { "X-CSRFToken": $.cookie('csrftoken') },
                 data: {
-                    'vod_id': $(this).parent().prev().prev().prev().text(),
+                    'vod_index': $('#vod_index').val(),
+                    'vod_name': $('#vod_name').val(),
+                    'vod_url': $('#vod_url').val(),
+                    'vod_pic': $('#vod_pic').val(),
                 }, // 要提交的数据
                 dataType: 'JSON',                 // 自动将接收到的data反序列化成obj返回
                 success: function (obj) {
                     if (obj.status) {
-                        // alert(obj.data)
                         location.reload();
                     } else {
-                        alert(obj.error)
-                        $('#error_msg').text(obj.error)         // 将收到的错误信息传给error_msg标签
+                        console.log(obj.error),
+                        alert('请求出错，请稍后重试')
                     }
                 },
                 error: function () {
-                    alert("添加请求出现未知错误")
-                    console.log("添加请求出现未知错误")
+                    console.log("请求未知错误")
                     //后台未接收到请求或未返回数据等未知错误
                 }
             })
         };
-    })
+    }
+    $(".add_btn").on("click", function () {
+        // $('carousel-form input').each(function(){
+        //     $(this).val();
+        //     if (ths.val()=="") {
+        //         console.log(ths);
+        //         ths.attr('data-toggle', 'tooltip').attr('data-placement', 'bottom').attr('title', '请输入参数').tooltip('show');
+        //         // return false;
+        //     };
+        // })
+        add_carousel();
+        // console.log('1')
+    });
     $('.del_btn').click(function () {
         // var res = confirm('确认删除？');
         if (true) {
             $.ajax({
-                url: '/video/admin/del_request/',
+                url: '/video/admin/del_carousel/',
                 type: "POST",
                 headers: { "X-CSRFToken": $.cookie('csrftoken') },
                 data: {
-                    'vod_id': $(this).parent().prev().prev().prev().text(),
+                    'vod_name': $(this).parent().parent().find('.vod_name').text(),
                 }, // 要提交的数据
                 dataType: 'JSON',                 // 自动将接收到的data反序列化成obj返回
                 success: function (obj) {

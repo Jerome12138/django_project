@@ -3,7 +3,9 @@ from django.http.response import JsonResponse
 
 from video import models
 from .func.GetPageData import get_vod_data,getAllData
-from .func.db_handler import dump_vod_data,update_request_data,load_request_data,del_request_data,load_log,clear_url2,clear_url,db_test
+from .func.db_handler import update_request_data,load_request_data,del_request_data
+from .func.db_handler import dump_vod_data,load_log,clear_url2,clear_url,db_test
+from .func.db_handler import dump_carousel_data,load_carousel_data,del_carousel_data
 from .func.pagination import Page
 import time
 import json
@@ -22,10 +24,11 @@ def auth(func):
 
 @auth
 def get_request(request):# 用户请求
+    # 分页处理
     page_index = int(request.GET.get('page')) if request.GET.get('page') else 1
     data_list = load_request_data()
     data_count = len(data_list)
-    page = Page('/video/admin/?page=', page_index, data_count//24 + 1)
+    page = Page(request.path_info+'?page=', page_index, data_count//24 + 1)
     page_str = page.page_str()
     request_list =page.video_page(data_list,24)
     if request_list == -1:
@@ -79,7 +82,7 @@ def update_log(request):
     page_index = int(request.GET.get('page')) if request.GET.get('page') else 1
     data_list = log_str.split('\n')
     data_count = len(data_list)
-    page = Page('/video/admin/update_log/?page=', page_index, data_count//100 + 1)
+    page = Page(request.path_info+'?page=', page_index, data_count//100 + 1)
     page_str = page.page_str()
     log_list =page.video_page(data_list,100)
     if log_list == -1:
@@ -90,6 +93,44 @@ def update_log(request):
         'page_str': page_str,
     })
 
+
+@auth
+def access_log(request):
+    log_path = 'logs/nginx/web_access.log'
+    log_str = load_log(log_path)
+    # 分页处理
+    page_index = int(request.GET.get('page')) if request.GET.get('page') else 1
+    data_list = log_str.split('\n')
+    data_count = len(data_list)
+    page = Page(request.path_info+'?page=', page_index, data_count//100 + 1)
+    page_str = page.page_str()
+    log_list =page.video_page(data_list,100)
+    if log_list == -1:
+        return HttpResponse('请求错误')
+    log_str = '\n'.join(log_list)
+    return render(request, 'admin_update_log.html', {
+        "log": log_str,
+        'page_str': page_str,
+    })
+
+@auth
+def error_log(request):
+    log_path = 'logs/nginx/web_error.log'
+    log_str = load_log(log_path)
+    # 分页处理
+    page_index = int(request.GET.get('page')) if request.GET.get('page') else 1
+    data_list = log_str.split('\n')
+    data_count = len(data_list)
+    page = Page(request.path_info+'?page=', page_index, data_count//100 + 1)
+    page_str = page.page_str()
+    log_list =page.video_page(data_list,100)
+    if log_list == -1:
+        return HttpResponse('请求错误')
+    log_str = '\n'.join(log_list)
+    return render(request, 'admin_update_log.html', {
+        "log": log_str,
+        'page_str': page_str,
+    })
 
 
 @auth
@@ -136,7 +177,7 @@ def view_log(request, log_date=0):
     page_index = int(request.GET.get('page')) if request.GET.get('page') else 1
     data_list = log_str.split('\n')
     data_count = len(data_list)
-    page = Page('/video/admin/view_log/%s/?page='%log_date, page_index, data_count//100 + 1)
+    page = Page(request.path_info+'?page=', page_index, data_count//100 + 1)
     page_str = page.page_str()
     log_list =page.video_page(data_list,100)
     if log_list == -1:
@@ -211,3 +252,56 @@ def _auto_update():
     get_all_data.run()
     get_all_data2 = getAllData("http://cj.bajiecaiji.com/inc/feifei3bjm3u8/index.php?p=%s",2)
     get_all_data2.run()
+
+@auth
+def get_carousel(request):# 用户请求
+    # 分页处理
+    page_index = int(request.GET.get('page')) if request.GET.get('page') else 1
+    data_list = load_carousel_data()
+    data_count = len(data_list)
+    page = Page(request.path_info+'?page=', page_index, data_count//24 + 1)
+    page_str = page.page_str()
+    carousel_list =page.video_page(data_list,24)
+    if carousel_list == -1:
+        return HttpResponse('请求错误')
+    return render(request, 'admin_carousel.html', {
+        "carousel_list": carousel_list,
+        'page_str': page_str,
+        "data_count": data_count
+    })
+
+@auth
+def carousel_add(request):
+    ret = {'status': True, 'error': None, 'data': None}
+    try:
+        carousel_data = {}
+        carousel_data['vod_name'] = request.POST.get('vod_name')
+        carousel_data['vod_pic'] = request.POST.get('vod_pic')
+        carousel_data['vod_url'] = request.POST.get('vod_url')
+        carousel_data['vod_index'] = request.POST.get('vod_index')
+        # print(carousel_data)
+        flag = dump_carousel_data(carousel_data)
+        if flag:
+            ret['data'] = "已成功添加轮播图： %s !" % carousel_data['vod_name']
+        else:
+            ret['status'] = False
+            ret['error'] = "数据库操作出现错误"
+    except Exception as e:
+        print(e)
+        ret['status'] = False
+        ret['error'] = "未知错误"
+    finally:
+        return HttpResponse(json.dumps(ret))
+
+def carousel_del(request):
+    ret = {'status': True, 'error': None, 'data': None}
+    try:
+        vod_name = request.POST.get('vod_name')
+        del_carousel_data(vod_name)
+        print("已成功添加轮播图： %s !" % vod_name)
+    except Exception as e:
+        print(e)
+        ret['status'] = False
+        ret['error'] = e
+    finally:
+        return HttpResponse(json.dumps(ret))

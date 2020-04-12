@@ -3,7 +3,7 @@ from django.http.response import JsonResponse
 
 from video import models
 from .func.GetPageData import get_data_list, IQiyi
-from .func.db_handler import load_vod_data, load_all_vod_data, dump_request_data, search_data, load_type_data
+from .func.db_handler import load_vod_data, load_all_vod_data, dump_request_data, search_data, load_type_data, load_carousel_data
 from .func.pagination import Page
 import time
 import json
@@ -13,6 +13,7 @@ import os
 
 
 def home(request):  # 主页
+    # 分页处理
     page_index = int(request.GET.get('page')) if request.GET.get('page') else 1
     data_list = load_all_vod_data()
     data_count = len(data_list)
@@ -21,7 +22,9 @@ def home(request):  # 主页
     video_list = page.video_page(data_list, 24)
     if video_list == -1:
         return HttpResponse('请求错误')
+    carousel_list = load_carousel_data()
     return render(request, 'video_home.html', {
+        "carousel_list":carousel_list,
         "video_list": video_list,
         'page_str': page_str,
         "data_count": data_count,
@@ -273,8 +276,13 @@ def i_play(request):    # 爱奇艺播放
         # iqiyi.i_jeixi(url)
         # return HttpResponse('test')
         # return redirect(iqiyi.i_video(url))
-        if url.startswith('http'):
-            video_url = "https://okjx.cc/jiexi/?url=%s" % url
-        else:
-            video_url = "https://www.administrator5.com/admin.php?url=%s" % url
+        video_url = "https://okjx.cc/jiexi/?url=%s" % url
         return render(request, 'video_i_play.html', {"video_url": video_url})
+
+
+def jx_play(request):    # 解析播放
+    url_temp = request.GET.get('url_temp') if request.GET.get(
+        'url_temp') else "https://www.administrator5.com/admin.php"
+    url = request.GET.get('url') if request.GET.get('url') else ""
+    video_url = "%s%s" % (url_temp, url)
+    return render(request, 'video_i_play.html', {"video_url": video_url})

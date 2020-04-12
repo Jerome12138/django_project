@@ -135,10 +135,23 @@
                             </div>
                         </div>
                         <div class="card-body">
-                            <form class="ml-3" action="/video/i-play/?url=">
+                            <form class="ml-3" action="/video/jx-play/">
                                 <div class="input-group input-group-sm">
+                                    <select class="custom-select" name="url_temp" id="url_temp">
+                                        <option value="https://z1.m1907.cn/?jx=">搜片名</option>
+                                        <option value="https://www.administrator5.com/admin.php?url=">无名小站</option>
+                                        <option value="https://okjx.cc/jiexi/?url=">OK解析</option>
+                                        <option value="//www.bavei.com/vip/?url=">①电视剧解析（推荐）</option>
+                                        <option value="//www.bavei.com/vip1/?url=">②电影解析（推荐）</option>
+                                        <option value="//www.bavei.com/vip/?url=">全网解析（双端高速）</option>
+                                        <option value="//www.bavei.com/vip2/?url=">③视频解析（稳定）</option>
+                                        <option style="color: red;" value="//www.bavei.com/vip4/?url=">④vip解析（高清）
+                                        </option>
+                                        <option style="color: red;" value="//www.bavei.com/vip3/?url=">智能解析（蓝光）
+                                        </option>
+                                    </select>
                                     <input type="text" class="form-control form-control-navbar" name="url" id="url"
-                                        placeholder="【播放支持搜索★乐视视频网址★奇艺视频网址★腾讯视频网址★芒果视频网址★优酷视频网址】">
+                                        placeholder="请输入片名或视频地址">
                                     <div class="input-group-append">
                                         <button class="btn btn-outline-secondary" type="submit">
                                             <i class="iconfont" aria-hidden="true">&#xe8ef;</i>
@@ -326,8 +339,8 @@
                 dataType: 'JSON',     // 自动将接收到的data反序列化成obj返回
                 xhr: xhrOnProgress(function (e) {
                     var percent = e.loaded / e.total;
-                    $("#progress-bar").css("width", parseInt(percent*10)+'0%');
-                    $("#progress-bar span").text(parseInt(percent*10)+'0%');
+                    $("#progress-bar").css("width", parseInt(percent * 10) + '0%');
+                    $("#progress-bar span").text(parseInt(percent * 10) + '0%');
                 }),
                 success: function (obj) {
                     if (obj.status) {

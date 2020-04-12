@@ -28,7 +28,6 @@ DEBUG = False
 
 ALLOWED_HOSTS = ['*']
 
-
 # Application definition
 
 INSTALLED_APPS = [
@@ -204,6 +203,11 @@ LOGGING = {
             'handlers': ['default', 'console'],
             'level': 'INFO',
             'propagate': False  # 是否继续向上级处理器传递信息
+        },
+        'django.request': {
+            'handlers': ['default'],
+            'level': 'ERROR',
+            'propagate': False,
         },
         # log 调用时需要当作参数传入
         'log': {
