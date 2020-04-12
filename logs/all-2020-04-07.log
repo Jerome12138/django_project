@@ -33,3 +33,343 @@
 [2020-04-07 00:20:13] [INFO] "GET /video/i-play/?url=http://www.iqiyi.com/v_19rw6qb4po.html HTTP/1.1" 200 11043
 [2020-04-07 00:21:31] [INFO] D:\Code\Git\django_project\django_project\settings.py changed, reloading.
 [2020-04-07 00:21:33] [INFO] Watching for file changes with StatReloader
+[2020-04-07 01:50:01] [WARNING] Not Found: /
+[2020-04-07 02:57:41] [WARNING] Not Found: /shell
+[2020-04-07 03:06:57] [WARNING] Not Found: /
+[2020-04-07 04:18:30] [WARNING] Not Found: /hudson
+[2020-04-07 04:20:34] [WARNING] Not Found: /
+[2020-04-07 05:13:23] [WARNING] Not Found: /
+[2020-04-07 07:38:08] [WARNING] Not Found: /crd
+[2020-04-07 07:39:07] [WARNING] Not Found: /
+[2020-04-07 08:21:58] [WARNING] Not Found: /
+[2020-04-07 08:42:47] [WARNING] Not Found: /phpmyadmin2222/index.php
+[2020-04-07 08:51:54] [WARNING] Not Found: /
+[2020-04-07 09:12:36] [WARNING] Not Found: /typo3/phpmyadmin/index.php
+[2020-04-07 09:40:27] [WARNING] Not Found: /phpmyadm1n/index.php
+[2020-04-07 09:44:41] [WARNING] Not Found: /sane.php
+[2020-04-07 10:36:22] [WARNING] Not Found: /1/index.php
+[2020-04-07 10:49:52] [WARNING] Not Found: /ftmabc.php
+[2020-04-07 11:00:56] [WARNING] Not Found: /php/
+[2020-04-07 11:06:03] [WARNING] Not Found: /index.php
+[2020-04-07 11:17:21] [WARNING] Not Found: /pma-old/index.php
+[2020-04-07 11:21:29] [WARNING] Not Found: /1ts.php
+[2020-04-07 12:58:59] [WARNING] Not Found: /java.php
+[2020-04-07 13:05:57] [WARNING] Not Found: /
+[2020-04-07 13:21:04] [WARNING] Not Found: /elrekt.php
+[2020-04-07 13:37:58] [WARNING] Not Found: /html/public/index.php
+[2020-04-07 13:40:52] [WARNING] Not Found: /
+[2020-04-07 14:18:11] [WARNING] Not Found: /x.php
+[2020-04-07 14:18:31] [WARNING] Not Found: /program/index.php
+[2020-04-07 14:41:44] [WARNING] Not Found: /thinkphp/html/public/index.php
+[2020-04-07 15:36:24] [WARNING] Not Found: /is-sending<|>C:/AAAA
+[2020-04-07 15:39:59] [WARNING] Not Found: /
+[2020-04-07 15:43:09] [WARNING] Not Found: /
+[2020-04-07 16:12:37] [WARNING] Not Found: /admin/config.php
+[2020-04-07 16:29:05] [WARNING] Not Found: /
+[2020-04-07 16:44:56] [WARNING] Not Found: /
+[2020-04-07 16:49:09] [WARNING] Not Found: /kk.php
+[2020-04-07 17:22:07] [WARNING] Not Found: /user/register
+[2020-04-07 17:43:42] [WARNING] Not Found: /portal/redlion
+[2020-04-07 18:17:41] [WARNING] Not Found: /login_sid.lua
+[2020-04-07 18:19:23] [WARNING] Not Found: /xaa
+[2020-04-07 18:45:46] [WARNING] Not Found: /
+[2020-04-07 19:09:37] [WARNING] Not Found: /
+[2020-04-07 19:52:14] [WARNING] Not Found: /
+[2020-04-07 19:53:50] [WARNING] Not Found: /
+[2020-04-07 20:39:00] [WARNING] Not Found: /
+[2020-04-07 21:00:03] [WARNING] Not Found: /phpmyadmin/scripts/setup.php
+[2020-04-07 21:16:20] [WARNING] Not Found: /
+[2020-04-07 21:41:31] [WARNING] Not Found: /
+[2020-04-07 22:32:30] [WARNING] Not Found: /
+[2020-04-07 22:51:06] [WARNING] Not Found: /
+[2020-04-07 23:12:38] [WARNING] Not Found: /MySQLAdmin/index.php
+[2020-04-08 01:53:57] [WARNING] Not Found: /
+[2020-04-08 02:01:43] [ERROR] Internal Server Error: /video/i-play/
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/ubuntu/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/ubuntu/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "./video/views.py", line 246, in i_play
+    if url.endswith('?src=search'):
+AttributeError: 'NoneType' object has no attribute 'endswith'
+[2020-04-08 02:01:55] [ERROR] Internal Server Error: /video/i-play/
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/ubuntu/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/ubuntu/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "./video/views.py", line 246, in i_play
+    if url.endswith('?src=search'):
+AttributeError: 'NoneType' object has no attribute 'endswith'
+[2020-04-08 02:17:02] [ERROR] Internal Server Error: /video/i-play/
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/ubuntu/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/ubuntu/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "./video/views.py", line 246, in i_play
+    if url.endswith('?src=search'):
+AttributeError: 'NoneType' object has no attribute 'endswith'
+[2020-04-08 02:20:33] [WARNING] Not Found: /
+[2020-04-08 02:22:18] [WARNING] Not Found: /
+[2020-04-08 03:34:27] [ERROR] Internal Server Error: /video/i-play/
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/ubuntu/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/ubuntu/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "./video/views.py", line 246, in i_play
+    if url.endswith('?src=search'):
+AttributeError: 'NoneType' object has no attribute 'endswith'
+[2020-04-08 04:03:16] [WARNING] Not Found: /solr/admin/info/system
+[2020-04-08 04:06:07] [WARNING] Not Found: /
+[2020-04-08 04:06:07] [WARNING] Not Found: /
+[2020-04-08 04:07:14] [WARNING] Not Found: /index.php
+[2020-04-08 04:07:59] [WARNING] Not Found: /php
+[2020-04-08 04:53:37] [WARNING] Not Found: /
+[2020-04-08 05:03:13] [WARNING] Not Found: /db
+[2020-04-08 05:55:55] [WARNING] Not Found: /vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+[2020-04-08 06:12:19] [WARNING] Not Found: /vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+[2020-04-08 06:20:21] [WARNING] Not Found: /ftmabc.php
+[2020-04-08 07:37:13] [WARNING] Not Found: /
+[2020-04-08 08:24:47] [WARNING] Not Found: /
+[2020-04-08 08:51:42] [WARNING] Not Found: /Telerik.Web.UI.WebResource.axd
+[2020-04-08 09:29:06] [WARNING] Not Found: /
+[2020-04-08 09:39:51] [WARNING] Not Found: /TP/html/public/index.php
+[2020-04-08 09:53:35] [WARNING] Not Found: /
+[2020-04-08 10:58:05] [WARNING] Not Found: /hudson
+[2020-04-08 12:12:12] [WARNING] Not Found: /
+[2020-04-08 12:16:25] [WARNING] Not Found: /hudson
+[2020-04-08 12:43:30] [WARNING] Not Found: /
+[2020-04-08 12:45:26] [WARNING] Not Found: /
+[2020-04-08 12:53:24] [WARNING] Not Found: /
+[2020-04-08 13:11:33] [WARNING] Not Found: /
+[2020-04-08 13:52:43] [WARNING] Not Found: /
+[2020-04-08 14:32:52] [WARNING] Not Found: /shell
+[2020-04-08 16:39:22] [WARNING] Not Found: /crd
+[2020-04-08 16:39:58] [WARNING] Not Found: /
+[2020-04-08 16:49:16] [WARNING] Not Found: /axis2/services/Cat/exec
+[2020-04-08 19:07:53] [WARNING] Not Found: /cards
+[2020-04-08 21:40:54] [WARNING] Not Found: /w00tw00t.at.blackhats.romanian.anti-sec:)
+[2020-04-08 21:40:55] [WARNING] Not Found: /phpMyAdmin/scripts/setup.php
+[2020-04-08 21:40:57] [WARNING] Not Found: /phpmyadmin/scripts/setup.php
+[2020-04-08 21:40:58] [WARNING] Not Found: /pma/scripts/setup.php
+[2020-04-08 21:40:59] [WARNING] Not Found: /myadmin/scripts/setup.php
+[2020-04-08 21:41:00] [WARNING] Not Found: /MyAdmin/scripts/setup.php
+[2020-04-08 22:02:03] [WARNING] Not Found: /muieblackcat
+[2020-04-08 22:02:04] [WARNING] Not Found: /phpMyAdmin/scripts/setup.php
+[2020-04-08 22:02:08] [WARNING] Not Found: /phpmyadmin/scripts/setup.php
+[2020-04-08 22:02:08] [WARNING] Not Found: /pma/scripts/setup.php
+[2020-04-08 22:02:09] [WARNING] Not Found: /myadmin/scripts/setup.php
+[2020-04-08 22:02:10] [WARNING] Not Found: /MyAdmin/scripts/setup.php
+[2020-04-08 22:02:14] [WARNING] Not Found: /PhpMyAdmin/scripts/setup.php
+[2020-04-08 22:06:29] [WARNING] Not Found: /
+[2020-04-09 02:02:15] [WARNING] Not Found: /
+[2020-04-09 03:23:30] [WARNING] Not Found: /manager/html
+[2020-04-09 05:03:28] [WARNING] Not Found: /
+[2020-04-09 05:47:21] [WARNING] Not Found: /
+[2020-04-09 06:05:12] [WARNING] Not Found: /
+[2020-04-09 06:05:16] [WARNING] Not Found: /HNAP1/
+[2020-04-09 06:05:16] [WARNING] Not Found: /sqlite/main.php
+[2020-04-09 06:05:16] [WARNING] Not Found: /sqlitemanager/main.php
+[2020-04-09 06:05:16] [WARNING] Not Found: /SQLiteManager/main.php
+[2020-04-09 06:05:16] [WARNING] Not Found: /SQLite/main.php
+[2020-04-09 06:05:16] [WARNING] Not Found: /SQlite/main.php
+[2020-04-09 06:05:16] [WARNING] Not Found: /main.php
+[2020-04-09 06:05:16] [WARNING] Not Found: /test/sqlite/SQLiteManager-1.2.0/SQLiteManager-1.2.0/main.php
+[2020-04-09 06:05:16] [WARNING] Not Found: /SQLiteManager-1.2.4/main.php
+[2020-04-09 06:05:16] [WARNING] Not Found: /agSearch/SQlite/main.php
+[2020-04-09 08:10:19] [WARNING] Not Found: /MyAdmin/scripts/setup.php
+[2020-04-09 08:54:11] [WARNING] Not Found: /phpmyadmin/scripts/setup.php
+[2020-04-09 08:59:50] [WARNING] Not Found: /
+[2020-04-09 09:26:31] [WARNING] Not Found: /pma/scripts/setup.php
+[2020-04-09 10:23:43] [WARNING] Not Found: /
+[2020-04-09 10:30:03] [WARNING] Not Found: /solr/admin/info/system
+[2020-04-09 10:35:40] [WARNING] Not Found: /
+[2020-04-09 10:35:41] [WARNING] Not Found: /
+[2020-04-09 10:38:53] [WARNING] Not Found: /index.php
+[2020-04-09 11:12:59] [WARNING] Not Found: /
+[2020-04-09 11:27:15] [WARNING] Not Found: /
+[2020-04-09 11:58:51] [WARNING] Not Found: /TP/public/index.php
+[2020-04-09 11:58:56] [WARNING] Not Found: /
+[2020-04-09 12:06:51] [WARNING] Not Found: /solr/admin/info/system
+[2020-04-09 12:20:35] [WARNING] Not Found: /hudson
+[2020-04-09 12:30:13] [WARNING] Not Found: /vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+[2020-04-09 13:04:20] [WARNING] Not Found: /db
+[2020-04-09 13:37:06] [WARNING] Not Found: /
+[2020-04-09 14:44:16] [WARNING] Not Found: /vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+[2020-04-09 15:04:39] [WARNING] Not Found: /solr/
+[2020-04-09 15:18:57] [WARNING] Not Found: /vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+[2020-04-09 15:25:06] [WARNING] Not Found: /
+[2020-04-09 15:30:32] [WARNING] Not Found: /
+[2020-04-09 16:36:54] [WARNING] Not Found: /manager/html
+[2020-04-09 16:41:06] [WARNING] Not Found: /
+[2020-04-09 16:51:31] [WARNING] Not Found: /
+[2020-04-09 21:01:34] [WARNING] Not Found: /
+[2020-04-09 21:06:06] [WARNING] Not Found: /
+[2020-04-09 21:06:07] [WARNING] Not Found: /nmaplowercheck1586437571
+[2020-04-09 21:06:07] [WARNING] Not Found: /
+[2020-04-09 21:06:07] [WARNING] Not Found: /evox/about
+[2020-04-09 21:06:08] [WARNING] Not Found: /sdk
+[2020-04-09 21:06:08] [WARNING] Not Found: /
+[2020-04-09 21:06:09] [WARNING] Not Found: /HNAP1
+[2020-04-09 21:33:11] [WARNING] Not Found: /ReportServer
+[2020-04-09 22:40:19] [WARNING] Not Found: /
+[2020-04-09 23:51:11] [WARNING] Not Found: /portal/redlion
+[2020-04-10 03:09:33] [WARNING] Not Found: /w00tw00t.at.blackhats.romanian.anti-sec:)
+[2020-04-10 03:09:34] [WARNING] Not Found: /phpMyAdmin/scripts/setup.php
+[2020-04-10 03:09:38] [WARNING] Not Found: /pma/scripts/setup.php
+[2020-04-10 03:09:39] [WARNING] Not Found: /myadmin/scripts/setup.php
+[2020-04-10 03:09:39] [WARNING] Not Found: /MyAdmin/scripts/setup.php
+[2020-04-10 04:35:46] [WARNING] Not Found: /
+[2020-04-10 04:50:48] [WARNING] Not Found: /
+[2020-04-10 05:43:49] [WARNING] Not Found: /nmaplowercheck1586468629
+[2020-04-10 05:43:49] [WARNING] Not Found: /sdk
+[2020-04-10 05:43:50] [WARNING] Not Found: /HNAP1
+[2020-04-10 05:43:50] [WARNING] Not Found: /
+[2020-04-10 05:43:50] [WARNING] Not Found: /evox/about
+[2020-04-10 05:44:00] [WARNING] Not Found: /
+[2020-04-10 06:18:32] [WARNING] Not Found: /
+[2020-04-10 07:00:19] [WARNING] Not Found: /
+[2020-04-10 07:00:19] [WARNING] Not Found: /index.php
+[2020-04-10 07:26:54] [WARNING] Not Found: /
+[2020-04-10 07:26:54] [WARNING] Not Found: /index.php
+[2020-04-10 07:27:48] [WARNING] Not Found: /
+[2020-04-10 07:42:43] [WARNING] Not Found: /
+[2020-04-10 07:47:22] [WARNING] Not Found: /myadmin/scripts/setup.php
+[2020-04-10 08:13:23] [WARNING] Not Found: /
+[2020-04-10 08:20:22] [WARNING] Not Found: /
+[2020-04-10 08:24:31] [WARNING] Not Found: /
+[2020-04-10 09:31:41] [WARNING] Not Found: /
+[2020-04-10 09:31:41] [WARNING] Not Found: /index.php
+[2020-04-10 09:36:05] [WARNING] Not Found: /
+[2020-04-10 09:36:05] [WARNING] Not Found: /index.php
+[2020-04-10 09:40:06] [WARNING] Not Found: /manager/html
+[2020-04-10 09:53:58] [WARNING] Not Found: /TP/public/index.php
+[2020-04-10 09:53:58] [WARNING] Not Found: /TP/index.php
+[2020-04-10 09:53:58] [WARNING] Not Found: /thinkphp/html/public/index.php
+[2020-04-10 09:53:58] [WARNING] Not Found: /html/public/index.php
+[2020-04-10 09:53:58] [WARNING] Not Found: /public/index.php
+[2020-04-10 09:53:59] [WARNING] Not Found: /TP/html/public/index.php
+[2020-04-10 09:53:59] [WARNING] Not Found: /elrekt.php
+[2020-04-10 09:53:59] [WARNING] Not Found: /index.php
+[2020-04-10 09:53:59] [WARNING] Not Found: /
+[2020-04-10 10:16:27] [WARNING] Not Found: /
+[2020-04-10 10:38:39] [WARNING] Not Found: /
+[2020-04-10 10:38:39] [WARNING] Not Found: /index.php
+[2020-04-10 11:03:40] [WARNING] Not Found: /
+[2020-04-10 11:18:16] [WARNING] Not Found: /
+[2020-04-10 11:19:14] [WARNING] Not Found: /
+[2020-04-10 11:38:25] [WARNING] Not Found: /
+[2020-04-10 12:26:56] [WARNING] Not Found: /
+[2020-04-10 12:26:56] [WARNING] Not Found: /index.php
+[2020-04-10 14:53:30] [WARNING] Not Found: /hudson
+[2020-04-10 15:06:34] [WARNING] Not Found: /SQLiteManager-1.2.4/main.php
+[2020-04-10 15:21:41] [WARNING] Not Found: /SQLiteManager/main.php
+[2020-04-10 15:25:25] [WARNING] Not Found: /main.php
+[2020-04-10 15:33:19] [WARNING] Not Found: /agSearch/SQlite/main.php
+[2020-04-10 15:40:48] [WARNING] Not Found: /sqlitemanager/main.php
+[2020-04-10 15:44:54] [WARNING] Not Found: /
+[2020-04-10 15:48:19] [WARNING] Not Found: /SQlite/main.php
+[2020-04-10 16:08:30] [WARNING] Not Found: /test/sqlite/SQLiteManager-1.2.0/SQLiteManager-1.2.0/main.php
+[2020-04-10 16:11:54] [WARNING] Not Found: /SQLite/main.php
+[2020-04-10 16:27:12] [WARNING] Not Found: /HNAP1/
+[2020-04-10 16:46:04] [WARNING] Not Found: /
+[2020-04-10 17:56:30] [WARNING] Not Found: /
+[2020-04-10 20:53:31] [WARNING] Not Found: /
+[2020-04-11 02:23:27] [WARNING] Not Found: /
+[2020-04-11 02:23:27] [WARNING] Not Found: /index.php
+[2020-04-11 02:33:35] [WARNING] Not Found: /
+[2020-04-11 04:11:21] [WARNING] Not Found: /portal/redlion
+[2020-04-11 05:41:56] [WARNING] Not Found: /
+[2020-04-11 06:09:47] [WARNING] Not Found: /
+[2020-04-11 06:17:17] [WARNING] Not Found: /sqlite/main.php
+[2020-04-11 07:01:57] [WARNING] Not Found: /
+[2020-04-11 08:52:36] [WARNING] Not Found: /
+[2020-04-11 11:15:30] [WARNING] Not Found: /
+[2020-04-11 12:18:58] [WARNING] Not Found: /
+[2020-04-11 13:07:44] [WARNING] Not Found: /HNAP1
+[2020-04-11 13:11:15] [WARNING] Not Found: /invoker/readonly
+[2020-04-11 13:28:14] [WARNING] Not Found: /nmaplowercheck1586468629
+[2020-04-11 16:03:36] [WARNING] Not Found: /
+[2020-04-11 16:29:46] [WARNING] Not Found: /TP/public/index.php
+[2020-04-11 16:29:50] [WARNING] Not Found: /TP/index.php
+[2020-04-11 16:29:50] [WARNING] Not Found: /thinkphp/html/public/index.php
+[2020-04-11 16:31:46] [WARNING] Not Found: /index.php
+[2020-04-11 17:10:08] [WARNING] Not Found: /
+[2020-04-11 17:10:08] [WARNING] Not Found: /index.php
+[2020-04-11 17:20:19] [WARNING] Not Found: /
+[2020-04-11 17:57:30] [WARNING] Not Found: /shell
+[2020-04-11 18:03:30] [WARNING] Not Found: /invoker/readonly
+[2020-04-11 18:53:48] [WARNING] Not Found: /hudson
+[2020-04-11 19:43:50] [WARNING] Not Found: /
+[2020-04-11 19:43:50] [WARNING] Not Found: /index.php
+[2020-04-11 22:54:52] [WARNING] Not Found: /
+[2020-04-11 23:13:27] [WARNING] Not Found: /
+[2020-04-11 23:32:52] [WARNING] Not Found: /struts2-rest-showcase/orders.xhtml
+[2020-04-11 23:32:52] [WARNING] Not Found: /index.action
+[2020-04-11 23:32:52] [WARNING] Not Found: /index.do
+[2020-04-11 23:55:42] [WARNING] Not Found: /TP/public/index.php
+[2020-04-11 23:55:42] [WARNING] Not Found: /TP/index.php
+[2020-04-11 23:55:42] [WARNING] Not Found: /thinkphp/html/public/index.php
+[2020-04-11 23:55:42] [WARNING] Not Found: /html/public/index.php
+[2020-04-11 23:55:42] [WARNING] Not Found: /public/index.php
+[2020-04-11 23:55:42] [WARNING] Not Found: /TP/html/public/index.php
+[2020-04-11 23:55:42] [WARNING] Not Found: /elrekt.php
+[2020-04-11 23:55:42] [WARNING] Not Found: /index.php
+[2020-04-11 23:55:42] [WARNING] Not Found: /
+[2020-04-12 01:32:40] [WARNING] Not Found: /
+[2020-04-12 02:31:12] [WARNING] Not Found: /
+[2020-04-12 03:44:15] [WARNING] Not Found: /
+[2020-04-12 03:44:15] [WARNING] Not Found: /index.php
+[2020-04-12 04:17:29] [WARNING] Not Found: /FxCodeShell.jsp 
+[2020-04-12 04:17:29] [WARNING] Not Found: /FxCodeShell.jsp::$DATA
+[2020-04-12 04:17:29] [WARNING] Not Found: /FxCodeShell.jsp/
+[2020-04-12 04:17:29] [WARNING] Not Found: /FxCodeShell.jsp
+[2020-04-12 06:36:05] [WARNING] Not Found: /portal/redlion
+[2020-04-12 07:39:07] [WARNING] Not Found: /
+[2020-04-12 07:39:07] [WARNING] Not Found: /index.php
+[2020-04-12 08:16:46] [WARNING] Not Found: /
+[2020-04-12 10:21:06] [WARNING] Not Found: /
+[2020-04-12 10:43:18] [WARNING] Not Found: /
+[2020-04-12 11:11:08] [WARNING] Not Found: /hudson
+[2020-04-12 12:22:55] [WARNING] Not Found: /
+[2020-04-12 12:22:55] [WARNING] Not Found: /index.php
+[2020-04-12 12:48:15] [WARNING] Not Found: /
+[2020-04-12 13:05:53] [WARNING] Not Found: /
+[2020-04-12 13:05:54] [WARNING] Not Found: /navigation.html
+[2020-04-12 13:05:54] [WARNING] Not Found: /
+[2020-04-12 13:05:54] [WARNING] Not Found: /
+[2020-04-12 13:05:54] [WARNING] Not Found: /KingViewWeb/
+[2020-04-12 13:05:55] [WARNING] Not Found: /webconfig.ini
+[2020-04-12 13:05:57] [WARNING] Not Found: /
+[2020-04-12 13:05:57] [WARNING] Not Found: /fx_plcinf.html
+[2020-04-12 13:05:58] [WARNING] Not Found: /ifixwebspace/
+[2020-04-12 13:05:58] [WARNING] Not Found: /
+[2020-04-12 13:06:01] [WARNING] Not Found: /cgi-bin/luci/;stok=/locale
+[2020-04-12 13:34:20] [WARNING] Not Found: /
+[2020-04-12 14:16:17] [WARNING] Not Found: /
+[2020-04-12 14:16:17] [WARNING] Not Found: /index.php
+[2020-04-12 14:51:34] [ERROR] Internal Server Error: /video/i-play/
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/ubuntu/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/ubuntu/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "./video/views.py", line 246, in i_play
+    if url.endswith('?src=search'):
+AttributeError: 'NoneType' object has no attribute 'endswith'
+[2020-04-12 14:51:34] [WARNING] Not Found: /favicon.ico
+[2020-04-12 14:51:43] [WARNING] Not Found: /video/i_play/
+[2020-04-12 15:19:02] [WARNING] Not Found: /

