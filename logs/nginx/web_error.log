@@ -9,3 +9,445 @@
 2020/04/12 15:44:16 [error] 2702#2702: *1283 open() "/home/ubuntu/git/django_project/collected_static//plugins/AdminLTE/adminlte.min.css.map" failed (2: No such file or directory), client: 183.27.46.200, server: 49.234.78.157, request: "GET /static/plugins/AdminLTE/adminlte.min.css.map HTTP/1.1", host: "49.234.78.157"
 2020/04/12 15:44:16 [error] 2702#2702: *1283 open() "/home/ubuntu/git/django_project/collected_static//plugins/bootstrap-4.4.1/bootstrap.bundle.min.js.map" failed (2: No such file or directory), client: 183.27.46.200, server: 49.234.78.157, request: "GET /static/plugins/bootstrap-4.4.1/bootstrap.bundle.min.js.map HTTP/1.1", host: "49.234.78.157"
 2020/04/12 15:44:16 [error] 2702#2702: *1284 open() "/home/ubuntu/git/django_project/collected_static//plugins/AdminLTE/adminlte.min.js.map" failed (2: No such file or directory), client: 183.27.46.200, server: 49.234.78.157, request: "GET /static/plugins/AdminLTE/adminlte.min.js.map HTTP/1.1", host: "49.234.78.157"
+2020/04/12 20:10:45 [info] 12293#12293: *20 client 60.110.2.6 closed keepalive connection (104: Connection reset by peer)
+2020/04/12 21:11:52 [error] 12293#12293: *30 open() "/home/ubuntu/git/django_project/collected_static//plugins/bootstrap-4.4.1/bootstrap.bundle.min.js.map" failed (2: No such file or directory), client: 183.27.46.200, server: 49.234.78.157, request: "GET /static/plugins/bootstrap-4.4.1/bootstrap.bundle.min.js.map HTTP/1.1", host: "49.234.78.157"
+2020/04/12 21:11:52 [error] 12293#12293: *33 open() "/home/ubuntu/git/django_project/collected_static//plugins/AdminLTE/adminlte.min.js.map" failed (2: No such file or directory), client: 183.27.46.200, server: 49.234.78.157, request: "GET /static/plugins/AdminLTE/adminlte.min.js.map HTTP/1.1", host: "49.234.78.157"
+2020/04/12 21:11:52 [error] 12293#12293: *30 open() "/home/ubuntu/git/django_project/collected_static//plugins/bootstrap-4.4.1/bootstrap.min.css.map" failed (2: No such file or directory), client: 183.27.46.200, server: 49.234.78.157, request: "GET /static/plugins/bootstrap-4.4.1/bootstrap.min.css.map HTTP/1.1", host: "49.234.78.157"
+2020/04/12 21:11:52 [error] 12293#12293: *33 open() "/home/ubuntu/git/django_project/collected_static//plugins/AdminLTE/adminlte.min.css.map" failed (2: No such file or directory), client: 183.27.46.200, server: 49.234.78.157, request: "GET /static/plugins/AdminLTE/adminlte.min.css.map HTTP/1.1", host: "49.234.78.157"
+2020/04/12 21:53:07 [info] 12293#12293: *37 epoll_wait() reported that client prematurely closed connection, so upstream connection is closed too while sending request to upstream, client: 183.27.46.200, server: 49.234.78.157, request: "GET /video/ HTTP/1.1", upstream: "uwsgi://127.0.0.1:8001", host: "49.234.78.157", referrer: "http://49.234.78.157/admin/"
+2020/04/12 21:53:11 [info] 12293#12293: *39 epoll_wait() reported that client prematurely closed connection, so upstream connection is closed too while sending request to upstream, client: 183.27.46.200, server: 49.234.78.157, request: "GET /video/ HTTP/1.1", upstream: "uwsgi://127.0.0.1:8001", host: "49.234.78.157", referrer: "http://49.234.78.157/admin/"
+2020/04/12 21:53:14 [info] 12293#12293: *41 epoll_wait() reported that client prematurely closed connection, so upstream connection is closed too while sending request to upstream, client: 183.27.46.200, server: 49.234.78.157, request: "GET /video/ HTTP/1.1", upstream: "uwsgi://127.0.0.1:8001", host: "49.234.78.157", referrer: "http://49.234.78.157/admin/"
+2020/04/12 21:53:43 [info] 12293#12293: *43 epoll_wait() reported that client prematurely closed connection, so upstream connection is closed too while sending request to upstream, client: 183.27.46.200, server: 49.234.78.157, request: "GET /video/search/?wd=%E6%96%97%E7%BD%97%E5%A4%A7%E9%99%86&page=1 HTTP/1.1", upstream: "uwsgi://127.0.0.1:8001", host: "49.234.78.157", referrer: "http://49.234.78.157/video/"
+2020/04/12 21:54:35 [error] 12293#12293: *47 open() "/home/ubuntu/git/django_project/collected_static//plugins/hammer/hammer.min.js.map" failed (2: No such file or directory), client: 183.27.46.200, server: 49.234.78.157, request: "GET /static/plugins/hammer/hammer.min.js.map HTTP/1.1", host: "49.234.78.157"
+2020/04/12 22:52:33 [info] 12293#12293: *60 epoll_wait() reported that client prematurely closed connection, so upstream connection is closed too while sending request to upstream, client: 183.27.46.200, server: 49.234.78.157, request: "GET /video/search/?wd=%E7%88%B1%E6%83%85%E5%85%AC%E5%AF%93&page=1 HTTP/1.1", upstream: "uwsgi://127.0.0.1:8001", host: "49.234.78.157", referrer: "http://49.234.78.157/video/"
+2020/04/12 22:52:44 [error] 12293#12293: *62 open() "/home/ubuntu/git/django_project/collected_static//plugins/hammer/hammer.min.js.map" failed (2: No such file or directory), client: 183.27.46.200, server: 49.234.78.157, request: "GET /static/plugins/hammer/hammer.min.js.map HTTP/1.1", host: "49.234.78.157"
+2020/04/12 22:52:50 [info] 12293#12293: *62 epoll_wait() reported that client prematurely closed connection, so upstream connection is closed too while sending request to upstream, client: 183.27.46.200, server: 49.234.78.157, request: "GET /video/search/?wd=%E7%88%B1%E6%83%85%E5%85%AC%E5%AF%93&page=1 HTTP/1.1", upstream: "uwsgi://127.0.0.1:8001", host: "49.234.78.157", referrer: "http://49.234.78.157/video/"
+2020/04/12 22:52:51 [error] 12293#12293: *66 open() "/home/ubuntu/git/django_project/collected_static//plugins/hammer/hammer.min.js.map" failed (2: No such file or directory), client: 183.27.46.200, server: 49.234.78.157, request: "GET /static/plugins/hammer/hammer.min.js.map HTTP/1.1", host: "49.234.78.157"
+2020/04/13 00:07:40 [error] 12293#12293: *76 open() "/home/ubuntu/git/django_project/collected_static//plugins/hammer/hammer.min.js.map" failed (2: No such file or directory), client: 183.27.46.200, server: 49.234.78.157, request: "GET /static/plugins/hammer/hammer.min.js.map HTTP/1.1", host: "49.234.78.157"
+2020/04/13 00:17:21 [info] 12293#12293: *79 client 192.241.236.131 closed keepalive connection
+2020/04/13 00:23:19 [error] 12293#12293: *82 open() "/home/ubuntu/git/django_project/collected_static//plugins/hammer/hammer.min.js.map" failed (2: No such file or directory), client: 183.27.46.200, server: 49.234.78.157, request: "GET /static/plugins/hammer/hammer.min.js.map HTTP/1.1", host: "49.234.78.157"
+2020/04/13 00:23:28 [error] 12293#12293: *82 open() "/home/ubuntu/git/django_project/collected_static//plugins/DPlayer/hls.min.js.map" failed (2: No such file or directory), client: 183.27.46.200, server: 49.234.78.157, request: "GET /static/plugins/DPlayer/hls.min.js.map HTTP/1.1", host: "49.234.78.157"
+2020/04/13 00:23:28 [error] 12293#12293: *85 open() "/home/ubuntu/git/django_project/collected_static//plugins/DPlayer/DPlayer.min.js.map" failed (2: No such file or directory), client: 183.27.46.200, server: 49.234.78.157, request: "GET /static/plugins/DPlayer/DPlayer.min.js.map HTTP/1.1", host: "49.234.78.157"
+2020/04/13 00:36:41 [error] 12293#12293: *86 open() "/home/ubuntu/git/django_project/collected_static//plugins/hammer/hammer.min.js.map" failed (2: No such file or directory), client: 183.27.46.200, server: 49.234.78.157, request: "GET /static/plugins/hammer/hammer.min.js.map HTTP/1.1", host: "49.234.78.157"
+2020/04/13 00:44:50 [error] 30703#30703: *1 open() "/home/ubuntu/git/django_project/collected_static//plugins/hammer/hammer.min.js.map" failed (2: No such file or directory), client: 183.27.46.200, server: 49.234.78.157, request: "GET /static/plugins/hammer/hammer.min.js.map HTTP/1.1", host: "49.234.78.157"
+2020/04/13 00:45:31 [error] 30895#30895: *1 open() "/home/ubuntu/git/django_project/collected_static//plugins/hammer/hammer.min.js.map" failed (2: No such file or directory), client: 183.27.46.200, server: 49.234.78.157, request: "GET /static/plugins/hammer/hammer.min.js.map HTTP/1.1", host: "49.234.78.157"
+2020/04/13 00:45:37 [error] 30895#30895: *6 open() "/home/ubuntu/git/django_project/collected_static//plugins/hammer/hammer.min.js.map" failed (2: No such file or directory), client: 183.27.46.200, server: 49.234.78.157, request: "GET /static/plugins/hammer/hammer.min.js.map HTTP/1.1", host: "49.234.78.157"
+2020/04/13 00:45:44 [error] 30895#30895: *4 open() "/home/ubuntu/git/django_project/collected_static//plugins/bootstrap-4.4.1/bootstrap.min.css.map" failed (2: No such file or directory), client: 183.27.46.200, server: 49.234.78.157, request: "GET /static/plugins/bootstrap-4.4.1/bootstrap.min.css.map HTTP/1.1", host: "49.234.78.157"
+2020/04/13 00:45:44 [error] 30895#30895: *4 open() "/home/ubuntu/git/django_project/collected_static//plugins/AdminLTE/adminlte.min.css.map" failed (2: No such file or directory), client: 183.27.46.200, server: 49.234.78.157, request: "GET /static/plugins/AdminLTE/adminlte.min.css.map HTTP/1.1", host: "49.234.78.157"
+2020/04/13 00:45:44 [error] 30895#30895: *4 open() "/home/ubuntu/git/django_project/collected_static//plugins/bootstrap-4.4.1/bootstrap.bundle.min.js.map" failed (2: No such file or directory), client: 183.27.46.200, server: 49.234.78.157, request: "GET /static/plugins/bootstrap-4.4.1/bootstrap.bundle.min.js.map HTTP/1.1", host: "49.234.78.157"
+2020/04/13 00:45:44 [error] 30895#30895: *5 open() "/home/ubuntu/git/django_project/collected_static//plugins/AdminLTE/adminlte.min.js.map" failed (2: No such file or directory), client: 183.27.46.200, server: 49.234.78.157, request: "GET /static/plugins/AdminLTE/adminlte.min.js.map HTTP/1.1", host: "49.234.78.157"
+2020/04/13 00:46:43 [error] 30895#30895: *5 open() "/home/ubuntu/git/django_project/collected_static//plugins/bootstrap-4.4.1/bootstrap.min.css.map" failed (2: No such file or directory), client: 183.27.46.200, server: 49.234.78.157, request: "GET /static/plugins/bootstrap-4.4.1/bootstrap.min.css.map HTTP/1.1", host: "49.234.78.157"
+2020/04/13 00:46:43 [error] 30895#30895: *4 open() "/home/ubuntu/git/django_project/collected_static//plugins/AdminLTE/adminlte.min.css.map" failed (2: No such file or directory), client: 183.27.46.200, server: 49.234.78.157, request: "GET /static/plugins/AdminLTE/adminlte.min.css.map HTTP/1.1", host: "49.234.78.157"
+2020/04/13 00:46:43 [error] 30895#30895: *5 open() "/home/ubuntu/git/django_project/collected_static//plugins/bootstrap-4.4.1/bootstrap.bundle.min.js.map" failed (2: No such file or directory), client: 183.27.46.200, server: 49.234.78.157, request: "GET /static/plugins/bootstrap-4.4.1/bootstrap.bundle.min.js.map HTTP/1.1", host: "49.234.78.157"
+2020/04/13 00:46:43 [error] 30895#30895: *4 open() "/home/ubuntu/git/django_project/collected_static//plugins/AdminLTE/adminlte.min.js.map" failed (2: No such file or directory), client: 183.27.46.200, server: 49.234.78.157, request: "GET /static/plugins/AdminLTE/adminlte.min.js.map HTTP/1.1", host: "49.234.78.157"
+2020/04/13 00:46:46 [error] 30895#30895: *4 open() "/home/ubuntu/git/django_project/collected_static//plugins/bootstrap-4.4.1/bootstrap.min.css.map" failed (2: No such file or directory), client: 183.27.46.200, server: 49.234.78.157, request: "GET /static/plugins/bootstrap-4.4.1/bootstrap.min.css.map HTTP/1.1", host: "49.234.78.157"
+2020/04/13 00:46:46 [error] 30895#30895: *4 open() "/home/ubuntu/git/django_project/collected_static//plugins/AdminLTE/adminlte.min.css.map" failed (2: No such file or directory), client: 183.27.46.200, server: 49.234.78.157, request: "GET /static/plugins/AdminLTE/adminlte.min.css.map HTTP/1.1", host: "49.234.78.157"
+2020/04/13 00:46:46 [error] 30895#30895: *4 open() "/home/ubuntu/git/django_project/collected_static//plugins/bootstrap-4.4.1/bootstrap.bundle.min.js.map" failed (2: No such file or directory), client: 183.27.46.200, server: 49.234.78.157, request: "GET /static/plugins/bootstrap-4.4.1/bootstrap.bundle.min.js.map HTTP/1.1", host: "49.234.78.157"
+2020/04/13 00:46:46 [error] 30895#30895: *5 open() "/home/ubuntu/git/django_project/collected_static//plugins/AdminLTE/adminlte.min.js.map" failed (2: No such file or directory), client: 183.27.46.200, server: 49.234.78.157, request: "GET /static/plugins/AdminLTE/adminlte.min.js.map HTTP/1.1", host: "49.234.78.157"
+2020/04/13 00:46:49 [error] 30895#30895: *4 open() "/home/ubuntu/git/django_project/collected_static//plugins/hammer/hammer.min.js.map" failed (2: No such file or directory), client: 183.27.46.200, server: 49.234.78.157, request: "GET /static/plugins/hammer/hammer.min.js.map HTTP/1.1", host: "49.234.78.157"
+2020/04/13 00:46:51 [error] 30895#30895: *4 open() "/home/ubuntu/git/django_project/collected_static//plugins/bootstrap-4.4.1/bootstrap.min.css.map" failed (2: No such file or directory), client: 183.27.46.200, server: 49.234.78.157, request: "GET /static/plugins/bootstrap-4.4.1/bootstrap.min.css.map HTTP/1.1", host: "49.234.78.157"
+2020/04/13 00:46:51 [error] 30895#30895: *4 open() "/home/ubuntu/git/django_project/collected_static//plugins/AdminLTE/adminlte.min.css.map" failed (2: No such file or directory), client: 183.27.46.200, server: 49.234.78.157, request: "GET /static/plugins/AdminLTE/adminlte.min.css.map HTTP/1.1", host: "49.234.78.157"
+2020/04/13 00:46:51 [error] 30895#30895: *5 open() "/home/ubuntu/git/django_project/collected_static//plugins/bootstrap-4.4.1/bootstrap.bundle.min.js.map" failed (2: No such file or directory), client: 183.27.46.200, server: 49.234.78.157, request: "GET /static/plugins/bootstrap-4.4.1/bootstrap.bundle.min.js.map HTTP/1.1", host: "49.234.78.157"
+2020/04/13 00:46:51 [error] 30895#30895: *10 open() "/home/ubuntu/git/django_project/collected_static//plugins/AdminLTE/adminlte.min.js.map" failed (2: No such file or directory), client: 183.27.46.200, server: 49.234.78.157, request: "GET /static/plugins/AdminLTE/adminlte.min.js.map HTTP/1.1", host: "49.234.78.157"
+2020/04/13 00:48:08 [error] 30895#30895: *13 open() "/home/ubuntu/git/django_project/collected_static//plugins/bootstrap-4.4.1/bootstrap.min.css.map" failed (2: No such file or directory), client: 183.27.46.200, server: 49.234.78.157, request: "GET /static/plugins/bootstrap-4.4.1/bootstrap.min.css.map HTTP/1.1", host: "49.234.78.157"
+2020/04/13 00:48:08 [error] 30895#30895: *16 open() "/home/ubuntu/git/django_project/collected_static//plugins/AdminLTE/adminlte.min.css.map" failed (2: No such file or directory), client: 183.27.46.200, server: 49.234.78.157, request: "GET /static/plugins/AdminLTE/adminlte.min.css.map HTTP/1.1", host: "49.234.78.157"
+2020/04/13 00:48:08 [error] 30895#30895: *13 open() "/home/ubuntu/git/django_project/collected_static//plugins/AdminLTE/adminlte.min.js.map" failed (2: No such file or directory), client: 183.27.46.200, server: 49.234.78.157, request: "GET /static/plugins/AdminLTE/adminlte.min.js.map HTTP/1.1", host: "49.234.78.157"
+2020/04/13 00:48:08 [error] 30895#30895: *16 open() "/home/ubuntu/git/django_project/collected_static//plugins/bootstrap-4.4.1/bootstrap.bundle.min.js.map" failed (2: No such file or directory), client: 183.27.46.200, server: 49.234.78.157, request: "GET /static/plugins/bootstrap-4.4.1/bootstrap.bundle.min.js.map HTTP/1.1", host: "49.234.78.157"
+2020/04/13 00:54:51 [error] 30895#30895: *22 open() "/home/ubuntu/git/django_project/collected_static//plugins/bootstrap-4.4.1/bootstrap.min.css.map" failed (2: No such file or directory), client: 183.27.46.200, server: 49.234.78.157, request: "GET /static/plugins/bootstrap-4.4.1/bootstrap.min.css.map HTTP/1.1", host: "49.234.78.157"
+2020/04/13 00:54:51 [error] 30895#30895: *22 open() "/home/ubuntu/git/django_project/collected_static//plugins/AdminLTE/adminlte.min.css.map" failed (2: No such file or directory), client: 183.27.46.200, server: 49.234.78.157, request: "GET /static/plugins/AdminLTE/adminlte.min.css.map HTTP/1.1", host: "49.234.78.157"
+2020/04/13 00:54:52 [error] 30895#30895: *22 open() "/home/ubuntu/git/django_project/collected_static//plugins/bootstrap-4.4.1/bootstrap.bundle.min.js.map" failed (2: No such file or directory), client: 183.27.46.200, server: 49.234.78.157, request: "GET /static/plugins/bootstrap-4.4.1/bootstrap.bundle.min.js.map HTTP/1.1", host: "49.234.78.157"
+2020/04/13 00:54:52 [error] 30895#30895: *25 open() "/home/ubuntu/git/django_project/collected_static//plugins/AdminLTE/adminlte.min.js.map" failed (2: No such file or directory), client: 183.27.46.200, server: 49.234.78.157, request: "GET /static/plugins/AdminLTE/adminlte.min.js.map HTTP/1.1", host: "49.234.78.157"
+2020/04/13 00:55:43 [info] 30895#30895: *25 client 183.27.46.200 closed keepalive connection
+2020/04/13 00:56:07 [info] 30895#30895: *22 epoll_wait() reported that client prematurely closed connection, so upstream connection is closed too while sending request to upstream, client: 183.27.46.200, server: 49.234.78.157, request: "POST /video/admin/add_vod/ HTTP/1.1", upstream: "uwsgi://127.0.0.1:8001", host: "49.234.78.157", referrer: "http://49.234.78.157/video/admin/get_request/"
+2020/04/13 00:56:07 [info] 30895#30895: *33 epoll_wait() reported that client prematurely closed connection, so upstream connection is closed too while sending request to upstream, client: 183.27.46.200, server: 49.234.78.157, request: "POST /video/admin/add_vod/ HTTP/1.1", upstream: "uwsgi://127.0.0.1:8001", host: "49.234.78.157", referrer: "http://49.234.78.157/video/admin/get_request/"
+2020/04/13 00:56:16 [info] 30895#30895: *35 epoll_wait() reported that client prematurely closed connection, so upstream connection is closed too while sending request to upstream, client: 183.27.46.200, server: 49.234.78.157, request: "POST /video/admin/add_vod/ HTTP/1.1", upstream: "uwsgi://127.0.0.1:8001", host: "49.234.78.157", referrer: "http://49.234.78.157/video/admin/get_request/"
+2020/04/13 00:58:05 [info] 30895#30895: *44 epoll_wait() reported that client prematurely closed connection, so upstream connection is closed too while sending request to upstream, client: 183.27.46.200, server: 49.234.78.157, request: "GET /video/search/?wd=%E9%99%88%E6%83%85%E4%BB%A4&page=1 HTTP/1.1", upstream: "uwsgi://127.0.0.1:8001", host: "49.234.78.157", referrer: "http://49.234.78.157/video/search/?wd=%E8%A5%BF%E9%83%A8%E4%B8%96%E7%95%8C&page=1"
+2020/04/13 01:00:01 [error] 30895#30895: *49 open() "/home/ubuntu/git/django_project/collected_static//plugins/bootstrap-4.4.1/bootstrap.min.css.map" failed (2: No such file or directory), client: 183.27.46.200, server: 49.234.78.157, request: "GET /static/plugins/bootstrap-4.4.1/bootstrap.min.css.map HTTP/1.1", host: "49.234.78.157"
+2020/04/13 01:00:01 [error] 30895#30895: *49 open() "/home/ubuntu/git/django_project/collected_static//plugins/AdminLTE/adminlte.min.css.map" failed (2: No such file or directory), client: 183.27.46.200, server: 49.234.78.157, request: "GET /static/plugins/AdminLTE/adminlte.min.css.map HTTP/1.1", host: "49.234.78.157"
+2020/04/13 01:00:02 [error] 30895#30895: *49 open() "/home/ubuntu/git/django_project/collected_static//plugins/bootstrap-4.4.1/bootstrap.bundle.min.js.map" failed (2: No such file or directory), client: 183.27.46.200, server: 49.234.78.157, request: "GET /static/plugins/bootstrap-4.4.1/bootstrap.bundle.min.js.map HTTP/1.1", host: "49.234.78.157"
+2020/04/13 01:00:02 [error] 30895#30895: *52 open() "/home/ubuntu/git/django_project/collected_static//plugins/AdminLTE/adminlte.min.js.map" failed (2: No such file or directory), client: 183.27.46.200, server: 49.234.78.157, request: "GET /static/plugins/AdminLTE/adminlte.min.js.map HTTP/1.1", host: "49.234.78.157"
+2020/04/13 01:02:21 [error] 30895#30895: *53 open() "/home/ubuntu/git/django_project/collected_static//plugins/bootstrap-4.4.1/bootstrap.min.css.map" failed (2: No such file or directory), client: 183.27.46.200, server: 49.234.78.157, request: "GET /static/plugins/bootstrap-4.4.1/bootstrap.min.css.map HTTP/1.1", host: "49.234.78.157"
+2020/04/13 01:02:21 [error] 30895#30895: *53 open() "/home/ubuntu/git/django_project/collected_static//plugins/AdminLTE/adminlte.min.css.map" failed (2: No such file or directory), client: 183.27.46.200, server: 49.234.78.157, request: "GET /static/plugins/AdminLTE/adminlte.min.css.map HTTP/1.1", host: "49.234.78.157"
+2020/04/13 01:02:21 [error] 30895#30895: *53 open() "/home/ubuntu/git/django_project/collected_static//plugins/bootstrap-4.4.1/bootstrap.bundle.min.js.map" failed (2: No such file or directory), client: 183.27.46.200, server: 49.234.78.157, request: "GET /static/plugins/bootstrap-4.4.1/bootstrap.bundle.min.js.map HTTP/1.1", host: "49.234.78.157"
+2020/04/13 01:02:21 [error] 30895#30895: *53 open() "/home/ubuntu/git/django_project/collected_static//plugins/AdminLTE/adminlte.min.js.map" failed (2: No such file or directory), client: 183.27.46.200, server: 49.234.78.157, request: "GET /static/plugins/AdminLTE/adminlte.min.js.map HTTP/1.1", host: "49.234.78.157"
+2020/04/13 01:02:46 [error] 30895#30895: *53 open() "/home/ubuntu/git/django_project/collected_static//plugins/hammer/hammer.min.js.map" failed (2: No such file or directory), client: 183.27.46.200, server: 49.234.78.157, request: "GET /static/plugins/hammer/hammer.min.js.map HTTP/1.1", host: "49.234.78.157"
+2020/04/13 01:02:47 [error] 30895#30895: *53 open() "/home/ubuntu/git/django_project/collected_static//plugins/DPlayer/hls.min.js.map" failed (2: No such file or directory), client: 183.27.46.200, server: 49.234.78.157, request: "GET /static/plugins/DPlayer/hls.min.js.map HTTP/1.1", host: "49.234.78.157"
+2020/04/13 01:02:47 [error] 30895#30895: *53 open() "/home/ubuntu/git/django_project/collected_static//plugins/DPlayer/DPlayer.min.js.map" failed (2: No such file or directory), client: 183.27.46.200, server: 49.234.78.157, request: "GET /static/plugins/DPlayer/DPlayer.min.js.map HTTP/1.1", host: "49.234.78.157"
+2020/04/13 01:02:59 [info] 30895#30895: *53 client 183.27.46.200 closed keepalive connection
+2020/04/13 01:42:09 [info] 30895#30895: *69 client 171.67.70.85 closed keepalive connection
+2020/04/13 01:42:27 [info] 30895#30895: *64 epoll_wait() reported that client prematurely closed connection, so upstream connection is closed too while sending request to upstream, client: 183.27.46.200, server: 49.234.78.157, request: "GET /video/ HTTP/1.1", upstream: "uwsgi://127.0.0.1:8001", host: "49.234.78.157", referrer: "http://49.234.78.157/video/play/51725/1-18.html"
+2020/04/13 01:42:41 [info] 30895#30895: *68 client 183.27.46.200 closed keepalive connection
+2020/04/13 01:42:41 [info] 30895#30895: *66 client 183.27.46.200 closed keepalive connection
+2020/04/13 01:43:29 [info] 30895#30895: *67 client 183.27.46.200 closed keepalive connection
+2020/04/13 01:45:02 [info] 30895#30895: *78 client 183.27.46.200 closed keepalive connection
+2020/04/13 01:45:20 [info] 30895#30895: *75 client 183.27.46.200 closed keepalive connection
+2020/04/13 01:45:40 [info] 30895#30895: *80 epoll_wait() reported that client prematurely closed connection, so upstream connection is closed too while sending request to upstream, client: 183.27.46.200, server: 49.234.78.157, request: "POST /video/admin/update/ HTTP/1.1", upstream: "uwsgi://127.0.0.1:8001", host: "49.234.78.157", referrer: "http://49.234.78.157/admin/"
+2020/04/13 01:46:29 [info] 30895#30895: *82 client 183.27.46.200 closed keepalive connection
+2020/04/13 01:47:56 [info] 30895#30895: *86 client 183.27.46.200 closed keepalive connection
+2020/04/13 01:48:27 [info] 30895#30895: *92 client 183.27.46.200 closed keepalive connection
+2020/04/13 01:49:26 [info] 30895#30895: *94 epoll_wait() reported that client prematurely closed connection, so upstream connection is closed too while sending request to upstream, client: 183.27.46.200, server: 49.234.78.157, request: "POST /video/admin/update/ HTTP/1.1", upstream: "uwsgi://127.0.0.1:8001", host: "49.234.78.157", referrer: "http://49.234.78.157/video/admin/update_video/"
+2020/04/13 01:49:57 [info] 30895#30895: *100 epoll_wait() reported that client prematurely closed connection, so upstream connection is closed too while sending request to upstream, client: 183.27.46.200, server: 49.234.78.157, request: "POST /video/admin/update/ HTTP/1.1", upstream: "uwsgi://127.0.0.1:8001", host: "49.234.78.157", referrer: "http://49.234.78.157/video/admin/update_video/"
+2020/04/13 01:50:14 [info] 30895#30895: *102 epoll_wait() reported that client prematurely closed connection, so upstream connection is closed too while sending request to upstream, client: 183.27.46.200, server: 49.234.78.157, request: "POST /video/admin/update/ HTTP/1.1", upstream: "uwsgi://127.0.0.1:8001", host: "49.234.78.157", referrer: "http://49.234.78.157/video/admin/update_video/"
+2020/04/13 01:50:28 [info] 30895#30895: *105 client 183.27.46.200 closed keepalive connection
+2020/04/13 01:50:51 [info] 30895#30895: *104 client 183.27.46.200 closed keepalive connection
+2020/04/13 01:51:32 [info] 30895#30895: *109 client 183.27.46.200 closed keepalive connection (104: Connection reset by peer)
+2020/04/13 02:07:33 [info] 30895#30895: *116 client 223.149.207.104 closed keepalive connection
+2020/04/13 02:17:15 [info] 30895#30895: *118 client 86.57.44.205 closed keepalive connection
+2020/04/13 02:24:09 [info] 30895#30895: *123 client 103.29.144.18 closed keepalive connection
+2020/04/13 03:34:35 [info] 30895#30895: *128 client 192.241.239.179 closed keepalive connection
+2020/04/13 03:58:46 [info] 30895#30895: *130 client 59.36.132.240 closed keepalive connection (104: Connection reset by peer)
+2020/04/13 04:08:22 [info] 30895#30895: *134 epoll_wait() reported that client prematurely closed connection, so upstream connection is closed too while connecting to upstream, client: 129.204.236.241, server: 49.234.78.157, request: "GET /TP/public/index.php HTTP/1.1", upstream: "uwsgi://127.0.0.1:8001", host: "49.234.78.157"
+2020/04/13 04:25:10 [info] 30895#30895: *136 client 59.36.132.112 closed keepalive connection
+2020/04/13 04:38:43 [info] 30895#30895: *137 client 45.83.65.196 closed keepalive connection
+2020/04/13 05:03:01 [info] 30895#30895: *141 client 61.241.50.63 closed keepalive connection (104: Connection reset by peer)
+2020/04/13 05:38:52 [info] 30895#30895: *146 client 58.247.212.239 closed keepalive connection (104: Connection reset by peer)
+2020/04/13 06:31:23 [info] 30895#30895: *149 client 45.76.144.219 closed keepalive connection
+2020/04/13 06:48:33 [info] 30895#30895: *155 client 113.96.198.120 closed keepalive connection
+2020/04/13 07:03:16 [info] 30895#30895: *157 client 113.96.246.221 closed keepalive connection
+2020/04/13 07:33:48 [info] 30895#30895: *160 client 182.254.52.17 closed keepalive connection (104: Connection reset by peer)
+2020/04/13 07:33:48 [info] 30895#30895: *162 client 182.254.52.17 closed keepalive connection (104: Connection reset by peer)
+2020/04/13 07:49:28 [info] 30895#30895: *166 client 183.27.46.200 closed keepalive connection
+2020/04/13 07:49:31 [info] 30895#30895: *168 client 183.27.46.200 closed keepalive connection
+2020/04/13 07:49:33 [info] 30895#30895: *164 client 183.27.46.200 closed keepalive connection
+2020/04/13 07:49:44 [info] 30895#30895: *167 client 183.27.46.200 closed keepalive connection
+2020/04/13 07:49:44 [info] 30895#30895: *169 client prematurely closed connection while sending response to client, client: 183.27.46.200, server: 49.234.78.157, request: "GET /static/plugins/bootstrap-4.4.1/bootstrap.min.css HTTP/1.1", host: "49.234.78.157", referrer: "http://49.234.78.157/video/admin/update_video/"
+2020/04/13 07:49:44 [info] 30895#30895: *172 client prematurely closed connection while sending response to client, client: 183.27.46.200, server: 49.234.78.157, request: "GET /static/plugins/AdminLTE/adminlte.min.css HTTP/1.1", host: "49.234.78.157", referrer: "http://49.234.78.157/video/admin/update_video/"
+2020/04/13 07:49:44 [info] 30895#30895: *171 client 183.27.46.200 closed keepalive connection
+2020/04/13 07:50:19 [info] 30895#30895: *176 client 183.27.46.200 closed keepalive connection
+2020/04/13 07:50:23 [info] 30895#30895: *175 client 183.27.46.200 closed keepalive connection
+2020/04/13 07:50:24 [info] 30895#30895: *177 client 183.27.46.200 closed keepalive connection
+2020/04/13 07:50:37 [info] 30895#30895: *173 client 183.27.46.200 closed keepalive connection
+2020/04/13 08:24:29 [info] 30895#30895: *181 client 182.254.52.17 closed keepalive connection (104: Connection reset by peer)
+2020/04/13 08:24:29 [info] 30895#30895: *183 client 182.254.52.17 closed keepalive connection (104: Connection reset by peer)
+2020/04/13 08:27:54 [info] 30895#30895: *185 client 182.254.52.17 closed keepalive connection (104: Connection reset by peer)
+2020/04/13 09:17:14 [info] 30895#30895: *191 client 59.36.132.240 closed keepalive connection (104: Connection reset by peer)
+2020/04/13 09:17:15 [info] 30895#30895: *193 client 59.36.132.240 closed keepalive connection (104: Connection reset by peer)
+2020/04/13 09:52:46 [info] 30895#30895: *197 client 182.254.52.17 closed keepalive connection (104: Connection reset by peer)
+2020/04/13 10:54:46 [info] 30895#30895: *208 client 61.241.50.63 closed keepalive connection (104: Connection reset by peer)
+2020/04/13 11:25:07 [info] 30895#30895: *212 client 182.254.52.17 closed keepalive connection (104: Connection reset by peer)
+2020/04/13 11:38:58 [info] 30895#30895: *214 client 36.92.211.15 closed keepalive connection
+2020/04/13 12:13:40 [info] 30895#30895: *217 client 112.96.119.21 closed keepalive connection
+2020/04/13 12:13:48 [info] 30895#30895: *219 client 112.96.119.21 closed keepalive connection
+2020/04/13 12:13:57 [info] 30895#30895: *221 epoll_wait() reported that client prematurely closed connection, so upstream connection is closed too while sending request to upstream, client: 112.96.119.21, server: 49.234.78.157, request: "GET /video/ HTTP/1.1", upstream: "uwsgi://127.0.0.1:8001", host: "49.234.78.157", referrer: "http://49.234.78.157/video/admin/get_carousel/"
+2020/04/13 12:14:01 [info] 30895#30895: *224 client 112.96.119.21 closed keepalive connection
+2020/04/13 12:14:01 [info] 30895#30895: *228 client 112.96.119.21 closed keepalive connection
+2020/04/13 12:14:01 [info] 30895#30895: *227 client 112.96.119.21 closed keepalive connection
+2020/04/13 12:14:03 [info] 30895#30895: *226 client 112.96.119.21 closed keepalive connection
+2020/04/13 12:14:03 [info] 30895#30895: *230 client 112.96.119.21 closed keepalive connection
+2020/04/13 12:14:03 [info] 30895#30895: *229 client 112.96.119.21 closed keepalive connection
+2020/04/13 12:14:12 [info] 30895#30895: *231 client 112.96.119.21 closed keepalive connection
+2020/04/13 12:14:21 [info] 30895#30895: *233 client 112.96.119.21 closed keepalive connection
+2020/04/13 12:14:21 [info] 30895#30895: *235 client 112.96.119.21 closed keepalive connection
+2020/04/13 12:14:21 [info] 30895#30895: *237 client 112.96.119.21 closed keepalive connection
+2020/04/13 12:14:23 [info] 30895#30895: *238 client 112.96.119.21 closed keepalive connection
+2020/04/13 12:14:23 [info] 30895#30895: *239 client 112.96.119.21 closed keepalive connection
+2020/04/13 12:14:26 [info] 30895#30895: *243 client 112.96.119.21 closed keepalive connection
+2020/04/13 12:14:26 [info] 30895#30895: *244 client 112.96.119.21 closed keepalive connection
+2020/04/13 12:14:26 [info] 30895#30895: *236 client 112.96.119.21 closed keepalive connection
+2020/04/13 12:14:27 [info] 30895#30895: *242 client 112.96.119.21 closed keepalive connection
+2020/04/13 12:14:28 [info] 30895#30895: *245 client 112.96.119.21 closed keepalive connection
+2020/04/13 12:14:28 [info] 30895#30895: *246 client 112.96.119.21 closed keepalive connection
+2020/04/13 12:14:35 [info] 30895#30895: *247 client 112.96.119.21 closed keepalive connection
+2020/04/13 12:25:08 [info] 30895#30895: *249 client 162.243.131.120 closed keepalive connection
+2020/04/13 13:01:26 [info] 30895#30895: *251 client 101.37.28.27 closed keepalive connection
+2020/04/13 14:30:28 [info] 30895#30895: *277 client 185.243.50.150 closed keepalive connection
+2020/04/13 15:31:30 [info] 30895#30895: *285 client 5.235.239.173 closed keepalive connection
+2020/04/13 15:50:08 [info] 30895#30895: *287 client 101.251.242.238 closed keepalive connection (104: Connection reset by peer)
+2020/04/13 15:50:35 [info] 30895#30895: *289 client 201.76.120.223 closed keepalive connection
+2020/04/13 16:00:20 [info] 30895#30895: *291 client 162.243.131.75 closed keepalive connection
+2020/04/13 18:01:35 [info] 30895#30895: *294 client 61.241.50.63 closed keepalive connection (104: Connection reset by peer)
+2020/04/13 18:01:35 [info] 30895#30895: *296 client 61.241.50.63 closed keepalive connection (104: Connection reset by peer)
+2020/04/13 18:32:10 [info] 30895#30895: *298 client 182.254.52.17 closed keepalive connection (104: Connection reset by peer)
+2020/04/13 18:32:10 [info] 30895#30895: *300 client 182.254.52.17 closed keepalive connection (104: Connection reset by peer)
+2020/04/13 18:33:38 [info] 30895#30895: *302 client 182.254.52.17 closed keepalive connection (104: Connection reset by peer)
+2020/04/13 18:33:38 [info] 30895#30895: *304 client 182.254.52.17 closed keepalive connection (104: Connection reset by peer)
+2020/04/13 19:27:34 [info] 30895#30895: *308 client 5.235.237.206 closed keepalive connection
+2020/04/13 19:48:40 [info] 30895#30895: *313 client 177.125.131.253 closed keepalive connection
+2020/04/13 20:12:37 [info] 30895#30895: *315 client 201.76.120.221 closed keepalive connection
+2020/04/13 20:26:39 [info] 30895#30895: *317 client 112.96.119.21 closed keepalive connection
+2020/04/13 20:26:42 [info] 30895#30895: *321 client 112.96.119.21 closed keepalive connection
+2020/04/13 20:26:44 [info] 30895#30895: *322 client 112.96.119.21 closed keepalive connection
+2020/04/13 20:26:44 [info] 30895#30895: *320 client 112.96.119.21 closed keepalive connection
+2020/04/13 20:26:44 [info] 30895#30895: *319 client 112.96.119.21 closed keepalive connection
+2020/04/13 20:27:13 [info] 30895#30895: *323 client 112.96.119.21 closed keepalive connection
+2020/04/13 20:27:15 [info] 30895#30895: *326 client 112.96.119.21 closed keepalive connection
+2020/04/13 20:27:16 [info] 30895#30895: *327 client 112.96.119.21 closed keepalive connection
+2020/04/13 20:27:18 [info] 30895#30895: *330 client 112.96.119.21 closed keepalive connection
+2020/04/13 20:27:18 [info] 30895#30895: *325 client 112.96.119.21 closed keepalive connection
+2020/04/13 20:27:18 [info] 30895#30895: *329 client 112.96.119.21 closed keepalive connection
+2020/04/13 20:27:44 [info] 30895#30895: *331 client 112.96.119.21 closed keepalive connection
+2020/04/13 20:27:48 [info] 30895#30895: *333 client 112.96.119.21 closed keepalive connection
+2020/04/13 20:27:54 [info] 30895#30895: *335 client 112.96.119.21 closed keepalive connection
+2020/04/13 20:30:56 [info] 30895#30895: *337 client 112.96.119.21 closed keepalive connection
+2020/04/13 20:31:37 [info] 30895#30895: *339 client 112.96.119.21 closed keepalive connection
+2020/04/13 20:35:00 [info] 30895#30895: *341 client 112.96.119.21 closed keepalive connection
+2020/04/13 20:35:10 [info] 30895#30895: *343 client 112.96.119.21 closed keepalive connection
+2020/04/13 20:35:20 [info] 30895#30895: *345 client 112.96.119.21 closed keepalive connection
+2020/04/13 20:35:23 [info] 30895#30895: *347 client 112.96.119.21 closed keepalive connection
+2020/04/13 20:35:28 [info] 30895#30895: *349 client 112.96.119.21 closed keepalive connection
+2020/04/13 20:35:31 [info] 30895#30895: *351 client 112.96.119.21 closed keepalive connection
+2020/04/13 20:35:37 [info] 30895#30895: *353 client 112.96.119.21 closed keepalive connection
+2020/04/13 20:35:40 [info] 30895#30895: *355 client 112.96.119.21 closed keepalive connection
+2020/04/13 20:41:36 [info] 30895#30895: *357 client 62.78.87.217 closed keepalive connection
+2020/04/13 22:24:09 [info] 30895#30895: *364 client 134.122.58.159 closed keepalive connection
+2020/04/14 00:14:44 [info] 30895#30895: *371 client 113.69.34.82 closed keepalive connection
+2020/04/14 00:14:45 [info] 30895#30895: *369 client 113.69.34.82 closed keepalive connection
+2020/04/14 00:14:45 [info] 30895#30895: *367 client 113.69.34.82 closed keepalive connection
+2020/04/14 00:36:23 [info] 30895#30895: *383 client 113.69.34.82 closed keepalive connection
+2020/04/14 00:36:25 [info] 30895#30895: *380 client 113.69.34.82 closed keepalive connection
+2020/04/14 00:36:25 [info] 30895#30895: *382 client 113.69.34.82 closed keepalive connection
+2020/04/14 01:48:50 [info] 30895#30895: *384 client 182.254.52.17 closed keepalive connection (104: Connection reset by peer)
+2020/04/14 02:17:25 [info] 30895#30895: *391 client 192.241.238.183 closed keepalive connection
+2020/04/14 02:19:30 [info] 30895#30895: *409 client 182.254.52.17 closed keepalive connection (104: Connection reset by peer)
+2020/04/14 02:19:30 [info] 30895#30895: *411 client 182.254.52.17 closed keepalive connection (104: Connection reset by peer)
+2020/04/14 03:20:05 [info] 30895#30895: *414 client 182.254.52.17 closed keepalive connection (104: Connection reset by peer)
+2020/04/14 03:43:50 [info] 30895#30895: *416 client 182.254.52.17 closed keepalive connection (104: Connection reset by peer)
+2020/04/14 04:05:21 [info] 30895#30895: *540 client 182.254.52.17 closed keepalive connection (104: Connection reset by peer)
+2020/04/14 04:05:21 [info] 30895#30895: *542 client 182.254.52.17 closed keepalive connection (104: Connection reset by peer)
+2020/04/14 04:11:02 [info] 30895#30895: *544 client 182.254.52.17 closed keepalive connection (104: Connection reset by peer)
+2020/04/14 04:11:02 [info] 30895#30895: *546 client 182.254.52.17 closed keepalive connection (104: Connection reset by peer)
+2020/04/14 04:27:05 [info] 30895#30895: *548 client 182.254.52.17 closed keepalive connection (104: Connection reset by peer)
+2020/04/14 04:27:06 [info] 30895#30895: *550 client 182.254.52.17 closed keepalive connection (104: Connection reset by peer)
+2020/04/14 04:45:34 [info] 30895#30895: *552 client 182.254.52.17 closed keepalive connection (104: Connection reset by peer)
+2020/04/14 05:35:33 [info] 30895#30895: *556 client 61.241.50.63 closed keepalive connection (104: Connection reset by peer)
+2020/04/14 05:35:33 [info] 30895#30895: *558 client 61.241.50.63 closed keepalive connection (104: Connection reset by peer)
+2020/04/14 06:08:51 [info] 30895#30895: *565 client 168.232.12.123 closed keepalive connection
+2020/04/14 06:11:44 [info] 30895#30895: *567 client 171.67.70.85 closed keepalive connection
+2020/04/14 06:51:33 [info] 30895#30895: *571 client 101.89.19.140 closed keepalive connection (104: Connection reset by peer)
+2020/04/14 07:04:57 [info] 30895#30895: *574 client 114.113.112.92 closed keepalive connection
+2020/04/14 08:15:12 [info] 30895#30895: *599 client 138.99.216.171 closed keepalive connection
+2020/04/14 08:31:18 [info] 30895#30895: *604 client 61.241.50.63 closed keepalive connection (104: Connection reset by peer)
+2020/04/14 09:35:26 [info] 30895#30895: *631 client 183.136.225.57 closed keepalive connection
+2020/04/14 09:38:07 [info] 30895#30895: *633 client 59.36.132.240 closed keepalive connection (104: Connection reset by peer)
+2020/04/14 10:23:59 [info] 30895#30895: *637 client 14.18.182.223 closed keepalive connection (104: Connection reset by peer)
+2020/04/14 10:27:04 [info] 30895#30895: *639 client 162.243.133.116 closed keepalive connection
+2020/04/14 11:40:39 [info] 30895#30895: *646 client 112.96.119.21 closed keepalive connection
+2020/04/14 11:40:39 [info] 30895#30895: *642 client 112.96.119.21 closed keepalive connection
+2020/04/14 11:40:39 [info] 30895#30895: *644 client 112.96.119.21 closed keepalive connection
+2020/04/14 11:40:48 [info] 30895#30895: *647 client 112.96.119.21 closed keepalive connection
+2020/04/14 11:40:48 [info] 30895#30895: *649 client 112.96.119.21 closed keepalive connection
+2020/04/14 11:40:50 [info] 30895#30895: *650 client prematurely closed connection (32: Broken pipe) while sending response to client, client: 112.96.119.21, server: 49.234.78.157, request: "GET /static/plugins/AdminLTE/adminlte.min.css HTTP/1.1", host: "49.234.78.157", referrer: "http://49.234.78.157/admin/"
+2020/04/14 11:40:53 [info] 30895#30895: *653 client prematurely closed connection (32: Broken pipe) while sending response to client, client: 112.96.119.21, server: 49.234.78.157, request: "GET /static/jquery/jquery-1.12.4.js HTTP/1.1", host: "49.234.78.157", referrer: "http://49.234.78.157/admin/"
+2020/04/14 11:40:53 [info] 30895#30895: *654 client prematurely closed connection (32: Broken pipe) while sending response to client, client: 112.96.119.21, server: 49.234.78.157, request: "GET /static/plugins/AdminLTE/adminlte.min.css HTTP/1.1", host: "49.234.78.157", referrer: "http://49.234.78.157/admin/"
+2020/04/14 11:40:55 [info] 30895#30895: *651 client 112.96.119.21 closed keepalive connection
+2020/04/14 11:41:01 [info] 30895#30895: *656 client 112.96.119.21 closed keepalive connection
+2020/04/14 11:41:03 [info] 30895#30895: *657 client 112.96.119.21 closed keepalive connection
+2020/04/14 11:41:23 [info] 30895#30895: *645 client prematurely closed connection (104: Connection reset by peer) while sending response to client, client: 112.96.119.21, server: 49.234.78.157, request: "GET /static/jquery/jquery-1.12.4.js HTTP/1.1", host: "49.234.78.157", referrer: "http://49.234.78.157/novel/chapter/1559/971695.html"
+2020/04/14 11:50:14 [info] 30895#30895: *658 client 112.96.119.21 closed keepalive connection
+2020/04/14 11:50:32 [info] 30895#30895: *661 client 112.96.119.21 closed keepalive connection
+2020/04/14 11:50:56 [info] 30895#30895: *663 client 112.96.119.21 closed keepalive connection
+2020/04/14 11:50:57 [info] 30895#30895: *664 client 112.96.119.21 closed keepalive connection
+2020/04/14 11:51:21 [info] 30895#30895: *659 epoll_wait() reported that client prematurely closed connection, so upstream connection is closed too (104: Connection reset by peer) while sending request to upstream, client: 112.96.119.21, server: 49.234.78.157, request: "POST /video/admin/update/ HTTP/1.1", upstream: "uwsgi://127.0.0.1:8001", host: "49.234.78.157", referrer: "http://49.234.78.157/admin/"
+2020/04/14 12:39:22 [info] 30895#30895: *693 client 190.214.14.9 closed keepalive connection
+2020/04/14 13:06:20 [info] 30895#30895: *697 client 182.254.52.17 closed keepalive connection (104: Connection reset by peer)
+2020/04/14 13:39:17 [info] 30895#30895: *699 client 182.254.52.17 closed keepalive connection (104: Connection reset by peer)
+2020/04/14 13:39:17 [info] 30895#30895: *701 client 182.254.52.17 closed keepalive connection (104: Connection reset by peer)
+2020/04/14 15:01:05 [info] 30895#30895: *728 client 192.241.238.129 closed keepalive connection
+2020/04/14 15:13:35 [info] 30895#30895: *730 client 14.18.182.223 closed keepalive connection (104: Connection reset by peer)
+2020/04/14 15:30:27 [info] 30895#30895: *732 client 87.251.136.217 closed keepalive connection
+2020/04/14 16:41:37 [info] 30895#30895: *735 client 14.18.182.223 closed keepalive connection (104: Connection reset by peer)
+2020/04/14 18:13:21 [info] 30895#30895: *739 client 14.18.173.100 closed keepalive connection
+2020/04/14 21:15:14 [info] 30895#30895: *773 client 104.248.229.14 closed keepalive connection
+2020/04/14 21:37:56 [info] 30895#30895: *775 client 106.13.62.145 closed keepalive connection (104: Connection reset by peer)
+2020/04/14 22:50:30 [info] 30895#30895: *791 client 193.112.131.228 closed keepalive connection
+2020/04/14 22:50:30 [info] 30895#30895: *795 client 193.112.155.119 closed keepalive connection
+2020/04/14 23:05:34 [info] 30895#30895: *797 client 14.29.248.120 closed keepalive connection (104: Connection reset by peer)
+2020/04/14 23:11:51 [info] 30895#30895: *811 client 106.13.62.145 closed keepalive connection (104: Connection reset by peer)
+2020/04/15 00:37:00 [info] 30895#30895: *828 client 183.27.47.99 closed keepalive connection (104: Connection reset by peer)
+2020/04/15 00:37:00 [info] 30895#30895: *830 client 183.27.47.99 closed keepalive connection (104: Connection reset by peer)
+2020/04/15 00:37:00 [info] 30895#30895: *831 client 183.27.47.99 closed keepalive connection (104: Connection reset by peer)
+2020/04/15 00:37:00 [info] 30895#30895: *832 client 183.27.47.99 closed keepalive connection (104: Connection reset by peer)
+2020/04/15 01:01:04 [info] 30895#30895: *836 client 183.27.47.99 closed keepalive connection (104: Connection reset by peer)
+2020/04/15 01:02:02 [info] 30895#30895: *843 client 183.27.47.99 closed keepalive connection
+2020/04/15 01:02:04 [info] 30895#30895: *842 client 183.27.47.99 closed keepalive connection
+2020/04/15 01:02:04 [info] 30895#30895: *844 client 183.27.47.99 closed keepalive connection
+2020/04/15 01:02:27 [info] 30895#30895: *837 client 183.27.47.99 closed keepalive connection (104: Connection reset by peer)
+2020/04/15 01:16:42 [info] 30895#30895: *852 client 188.75.255.37 closed keepalive connection
+2020/04/15 01:42:25 [info] 30895#30895: *862 client 50.76.38.66 closed keepalive connection
+2020/04/15 01:42:26 [info] 30895#30895: *864 client 50.76.38.66 closed keepalive connection
+2020/04/15 01:42:26 [info] 30895#30895: *866 client 50.76.38.66 closed keepalive connection
+2020/04/15 01:42:27 [info] 30895#30895: *868 client 50.76.38.66 closed keepalive connection
+2020/04/15 01:42:27 [info] 30895#30895: *870 client 50.76.38.66 closed keepalive connection
+2020/04/15 01:42:28 [info] 30895#30895: *872 client 50.76.38.66 closed keepalive connection
+2020/04/15 01:42:28 [info] 30895#30895: *874 client 50.76.38.66 closed keepalive connection
+2020/04/15 02:01:08 [info] 30895#30895: *876 client 213.119.43.106 closed keepalive connection
+2020/04/15 02:09:53 [info] 30895#30895: *878 client 14.215.156.139 closed keepalive connection
+2020/04/15 02:29:33 [info] 30895#30895: *879 client 171.67.70.85 closed keepalive connection
+2020/04/15 02:35:34 [info] 30895#30895: *881 client 182.254.52.17 closed keepalive connection (104: Connection reset by peer)
+2020/04/15 02:35:34 [info] 30895#30895: *883 client 182.254.52.17 closed keepalive connection (104: Connection reset by peer)
+2020/04/15 02:46:36 [info] 30895#30895: *886 client 182.254.52.17 closed keepalive connection (104: Connection reset by peer)
+2020/04/15 03:28:26 [info] 30895#30895: *891 client 95.80.75.107 closed keepalive connection
+2020/04/15 06:49:19 [info] 30895#30895: *907 client 92.118.160.17 closed keepalive connection
+2020/04/15 07:38:43 [info] 30895#30895: *920 client 106.13.62.145 closed keepalive connection (104: Connection reset by peer)
+2020/04/15 07:42:20 [info] 30895#30895: *934 client 192.241.238.12 closed keepalive connection
+2020/04/15 08:03:57 [info] 30895#30895: *946 client 61.241.50.63 closed keepalive connection (104: Connection reset by peer)
+2020/04/15 08:39:48 [info] 30895#30895: *952 client 110.141.198.66 closed keepalive connection (104: Connection reset by peer)
+2020/04/15 08:46:35 [info] 30895#30895: *954 client 45.76.144.219 closed keepalive connection
+2020/04/15 08:49:35 [info] 30895#30895: *956 client 177.188.94.40 closed keepalive connection
+2020/04/15 08:59:09 [info] 30895#30895: *958 client 59.36.132.240 closed keepalive connection (104: Connection reset by peer)
+2020/04/15 09:07:09 [info] 30895#30895: *960 client 14.18.182.223 closed keepalive connection (104: Connection reset by peer)
+2020/04/15 09:36:14 [info] 30895#30895: *962 client 14.18.182.223 closed keepalive connection (104: Connection reset by peer)
+2020/04/15 09:39:27 [info] 30895#30895: *965 client 54.81.174.114 closed keepalive connection
+2020/04/15 09:39:29 [info] 30895#30895: *967 client 54.81.174.114 closed keepalive connection
+2020/04/15 09:44:18 [info] 30895#30895: *969 client 182.254.52.17 closed keepalive connection (104: Connection reset by peer)
+2020/04/15 09:47:15 [info] 30895#30895: *971 client 171.100.141.162 closed keepalive connection
+2020/04/15 09:58:15 [info] 30895#30895: *973 client 182.254.52.17 closed keepalive connection (104: Connection reset by peer)
+2020/04/15 10:45:41 [info] 30895#30895: *1006 client 198.108.66.144 closed keepalive connection
+2020/04/15 10:54:32 [info] 30895#30895: *1008 client 179.124.214.141 closed keepalive connection
+2020/04/15 11:19:22 [info] 30895#30895: *1010 client 112.96.119.21 closed keepalive connection
+2020/04/15 11:19:30 [info] 30895#30895: *1012 client 112.96.119.21 closed keepalive connection
+2020/04/15 11:19:30 [info] 30895#30895: *1016 client 112.96.119.21 closed keepalive connection
+2020/04/15 11:19:30 [info] 30895#30895: *1014 client 112.96.119.21 closed keepalive connection
+2020/04/15 11:19:40 [info] 30895#30895: *1017 client 112.96.119.21 closed keepalive connection
+2020/04/15 11:19:40 [info] 30895#30895: *1020 client 112.96.119.21 closed keepalive connection
+2020/04/15 11:19:42 [info] 30895#30895: *1021 client 112.96.119.21 closed keepalive connection
+2020/04/15 11:19:42 [info] 30895#30895: *1019 client 112.96.119.21 closed keepalive connection
+2020/04/15 11:19:50 [info] 30895#30895: *1022 client 112.96.119.21 closed keepalive connection
+2020/04/15 11:19:56 [info] 30895#30895: *1026 client 112.96.119.21 closed keepalive connection
+2020/04/15 11:19:56 [info] 30895#30895: *1024 client 112.96.119.21 closed keepalive connection
+2020/04/15 11:19:59 [info] 30895#30895: *1027 client 112.96.119.21 closed keepalive connection
+2020/04/15 11:19:59 [info] 30895#30895: *1028 client 112.96.119.21 closed keepalive connection
+2020/04/15 11:21:25 [info] 30895#30895: *1029 client 190.122.151.254 closed keepalive connection
+2020/04/15 12:50:39 [info] 30895#30895: *1067 client 59.36.132.240 closed keepalive connection (104: Connection reset by peer)
+2020/04/15 14:10:37 [info] 30895#30895: *1070 client 61.241.50.63 closed keepalive connection (104: Connection reset by peer)
+2020/04/15 17:57:32 [info] 30895#30895: *1161 client 76.177.64.162 closed keepalive connection
+2020/04/15 17:57:33 [info] 30895#30895: *1163 client 76.177.64.162 closed keepalive connection
+2020/04/15 17:57:34 [info] 30895#30895: *1165 client 76.177.64.162 closed keepalive connection
+2020/04/15 17:57:35 [info] 30895#30895: *1167 client 76.177.64.162 closed keepalive connection
+2020/04/15 17:57:35 [info] 30895#30895: *1169 client 76.177.64.162 closed keepalive connection
+2020/04/15 17:57:36 [info] 30895#30895: *1171 client 76.177.64.162 closed keepalive connection
+2020/04/15 17:57:37 [info] 30895#30895: *1173 client 76.177.64.162 closed keepalive connection
+2020/04/15 17:57:37 [info] 30895#30895: *1175 client 76.177.64.162 closed keepalive connection
+2020/04/15 18:19:28 [info] 30895#30895: *1177 client 14.215.156.98 closed keepalive connection
+2020/04/15 18:46:20 [info] 30895#30895: *1196 client 88.198.20.72 closed keepalive connection
+2020/04/15 18:46:21 [info] 30895#30895: *1198 client 88.198.20.72 closed keepalive connection
+2020/04/15 18:46:21 [info] 30895#30895: *1200 client 88.198.20.72 closed keepalive connection
+2020/04/15 18:46:22 [info] 30895#30895: *1204 client 88.198.20.72 closed keepalive connection
+2020/04/15 18:46:22 [info] 30895#30895: *1202 client 88.198.20.72 closed keepalive connection
+2020/04/15 18:46:22 [info] 30895#30895: *1206 client 88.198.20.72 closed keepalive connection
+2020/04/15 18:46:23 [info] 30895#30895: *1210 client 88.198.20.72 closed keepalive connection
+2020/04/15 18:46:23 [info] 30895#30895: *1208 client 88.198.20.72 closed keepalive connection
+2020/04/15 18:56:45 [info] 30895#30895: *1212 client 128.14.133.58 closed keepalive connection
+2020/04/15 19:07:07 [info] 30895#30895: *1214 client 36.79.253.143 closed keepalive connection
+2020/04/15 19:50:38 [info] 30895#30895: *1216 client 182.254.52.17 closed keepalive connection (104: Connection reset by peer)
+2020/04/15 20:42:15 [info] 30895#30895: *1220 client 171.67.70.85 closed keepalive connection
+2020/04/15 22:00:22 [info] 30895#30895: *1223 client 71.6.232.4 closed keepalive connection
+2020/04/15 22:07:05 [info] 30895#30895: *1225 client 162.243.131.176 closed keepalive connection
+2020/04/15 22:11:58 [info] 30895#30895: *1227 client 157.97.95.230 closed keepalive connection
+2020/04/15 22:12:22 [info] 30895#30895: *1229 client 49.64.72.200 closed keepalive connection
+2020/04/15 22:42:48 [info] 30895#30895: *1251 client 183.27.47.99 closed keepalive connection
+2020/04/15 22:42:48 [info] 30895#30895: *1252 client 183.27.47.99 closed keepalive connection
+2020/04/15 22:42:50 [info] 30895#30895: *1250 client 183.27.47.99 closed keepalive connection
+2020/04/15 22:43:06 [info] 30895#30895: *1248 client 183.27.47.99 closed keepalive connection
+2020/04/15 22:43:15 [info] 30895#30895: *1256 client 112.96.119.21 closed keepalive connection
+2020/04/15 22:43:18 [info] 30895#30895: *1260 client 112.96.119.21 closed keepalive connection
+2020/04/15 22:43:20 [info] 30895#30895: *1259 client 112.96.119.21 closed keepalive connection
+2020/04/15 22:43:20 [info] 30895#30895: *1258 client 112.96.119.21 closed keepalive connection
+2020/04/15 22:43:20 [info] 30895#30895: *1261 client 112.96.119.21 closed keepalive connection
+2020/04/15 22:43:26 [info] 30895#30895: *1262 client 112.96.119.21 closed keepalive connection
+2020/04/15 22:43:31 [info] 30895#30895: *1264 client 112.96.119.21 closed keepalive connection
+2020/04/15 22:43:35 [info] 30895#30895: *1266 client 112.96.119.21 closed keepalive connection
+2020/04/15 23:24:20 [info] 30895#30895: *1271 client 182.254.52.17 closed keepalive connection (104: Connection reset by peer)
+2020/04/16 00:00:23 [info] 30895#30895: *1273 client 35.198.236.220 closed keepalive connection
+2020/04/16 00:24:27 [info] 30895#30895: *1275 client 94.154.82.190 closed keepalive connection
+2020/04/16 00:58:07 [info] 30895#30895: *1277 client 189.14.22.100 closed keepalive connection
+2020/04/16 00:58:08 [info] 30895#30895: *1279 client 189.14.22.100 closed keepalive connection
+2020/04/16 01:26:27 [info] 30895#30895: *1299 client 185.108.164.80 closed keepalive connection
+2020/04/16 02:19:55 [info] 30895#30895: *1304 client 157.119.214.25 closed keepalive connection
+2020/04/16 02:48:30 [info] 30895#30895: *1306 client 59.36.132.153 closed keepalive connection
+2020/04/16 02:58:27 [info] 30895#30895: *1307 client 59.36.132.116 closed keepalive connection
+2020/04/16 03:04:49 [info] 30895#30895: *1308 client 182.254.52.17 closed keepalive connection (104: Connection reset by peer)
+2020/04/16 03:04:49 [info] 30895#30895: *1310 client 182.254.52.17 closed keepalive connection (104: Connection reset by peer)
+2020/04/16 03:27:23 [info] 30895#30895: *1314 client 58.247.212.239 closed keepalive connection (104: Connection reset by peer)
+2020/04/16 03:31:12 [info] 30895#30895: *1316 client 182.254.52.17 closed keepalive connection (104: Connection reset by peer)
+2020/04/16 04:16:54 [info] 30895#30895: *1318 client 59.36.132.240 closed keepalive connection (104: Connection reset by peer)
+2020/04/16 04:17:58 [info] 30895#30895: *1320 client 59.36.132.240 closed keepalive connection (104: Connection reset by peer)
+2020/04/16 05:25:32 [info] 30895#30895: *1322 client 182.254.52.17 closed keepalive connection (104: Connection reset by peer)
+2020/04/16 05:32:46 [info] 30895#30895: *1324 client 182.254.52.17 closed keepalive connection (104: Connection reset by peer)
+2020/04/16 05:36:39 [info] 30895#30895: *1327 client 182.254.52.17 closed keepalive connection (104: Connection reset by peer)
+2020/04/16 05:50:26 [info] 30895#30895: *1330 client 95.216.216.176 closed keepalive connection
+2020/04/16 05:50:27 [info] 30895#30895: *1332 client 95.216.216.176 closed keepalive connection
+2020/04/16 05:50:27 [info] 30895#30895: *1334 client 95.216.216.176 closed keepalive connection
+2020/04/16 05:50:28 [info] 30895#30895: *1336 client 95.216.216.176 closed keepalive connection
+2020/04/16 05:50:28 [info] 30895#30895: *1338 client 95.216.216.176 closed keepalive connection
+2020/04/16 05:50:30 [info] 30895#30895: *1340 client 95.216.216.176 closed keepalive connection
+2020/04/16 05:50:31 [info] 30895#30895: *1342 client 95.216.216.176 closed keepalive connection
+2020/04/16 05:50:32 [info] 30895#30895: *1344 client 95.216.216.176 closed keepalive connection
+2020/04/16 05:54:58 [info] 30895#30895: *1346 client 182.254.52.17 closed keepalive connection (104: Connection reset by peer)
+2020/04/16 06:23:38 [info] 30895#30895: *1364 client 182.254.52.17 closed keepalive connection (104: Connection reset by peer)
+2020/04/16 07:07:58 [info] 30895#30895: *1366 client 159.255.22.123 closed keepalive connection
+2020/04/16 07:35:38 [info] 30895#30895: *1373 client 61.241.50.63 closed keepalive connection (104: Connection reset by peer)
+2020/04/16 07:59:23 [info] 30895#30895: *1375 client 58.247.212.239 closed keepalive connection (104: Connection reset by peer)
+2020/04/16 08:01:13 [info] 30895#30895: *1377 client 182.254.52.17 closed keepalive connection (104: Connection reset by peer)
+2020/04/16 09:26:46 [info] 30895#30895: *1395 client 14.18.182.223 closed keepalive connection (104: Connection reset by peer)
+2020/04/16 09:32:30 [info] 30895#30895: *1398 client 83.143.86.62 closed keepalive connection
+2020/04/16 09:38:08 [info] 30895#30895: *1403 client 185.237.177.198 closed keepalive connection
+2020/04/16 09:40:12 [info] 30895#30895: *1405 client 183.136.225.57 closed keepalive connection
+2020/04/16 09:51:59 [info] 30895#30895: *1407 client 14.215.156.28 closed keepalive connection
+2020/04/16 10:04:01 [info] 30895#30895: *1409 client 14.18.182.223 closed keepalive connection (104: Connection reset by peer)
+2020/04/16 10:12:30 [info] 30895#30895: *1411 client 182.254.52.17 closed keepalive connection (104: Connection reset by peer)
+2020/04/16 10:30:37 [info] 30895#30895: *1413 client 103.124.173.73 closed keepalive connection
+2020/04/16 10:49:43 [info] 30895#30895: *1415 client 80.213.18.49 closed keepalive connection (104: Connection reset by peer)
+2020/04/16 10:52:02 [info] 30895#30895: *1417 client 182.254.52.17 closed keepalive connection (104: Connection reset by peer)
+2020/04/16 11:11:23 [info] 30895#30895: *1419 client 172.8.153.117 closed keepalive connection
+2020/04/16 11:33:53 [info] 30895#30895: *1424 client 192.241.239.94 closed keepalive connection
+2020/04/16 14:11:43 [info] 30895#30895: *1434 client 61.241.50.63 closed keepalive connection (104: Connection reset by peer)
+2020/04/16 14:16:16 [info] 30895#30895: *1436 client 182.254.52.17 closed keepalive connection (104: Connection reset by peer)
+2020/04/16 15:00:43 [info] 30895#30895: *1438 client 189.112.26.110 closed keepalive connection
+2020/04/16 15:01:38 [info] 30895#30895: *1440 client 171.67.70.85 closed keepalive connection
+2020/04/16 16:07:07 [info] 30895#30895: *1450 client 101.251.242.238 closed keepalive connection (104: Connection reset by peer)
+2020/04/16 18:14:05 [info] 30895#30895: *1466 client 191.103.217.49 closed keepalive connection
+2020/04/16 18:45:22 [info] 30895#30895: *1481 client 103.124.12.16 closed keepalive connection
+2020/04/16 19:00:39 [info] 30895#30895: *1485 client 103.113.106.136 closed keepalive connection
+2020/04/16 20:45:16 [info] 30895#30895: *1504 client 182.254.52.17 closed keepalive connection (104: Connection reset by peer)
+2020/04/16 20:48:15 [info] 30895#30895: *1506 client 14.18.182.223 closed keepalive connection (104: Connection reset by peer)
+2020/04/16 21:33:25 [info] 30895#30895: *1510 client 162.243.128.36 closed keepalive connection
+2020/04/16 23:16:56 [info] 30895#30895: *1512 client 162.243.130.102 closed keepalive connection
+2020/04/17 00:07:23 [info] 30895#30895: *1514 client 93.117.24.135 closed keepalive connection
+2020/04/17 00:57:26 [info] 30895#30895: *1519 client 45.165.225.3 closed keepalive connection
+2020/04/17 01:33:20 [info] 30895#30895: *1521 client 78.150.185.25 closed keepalive connection
+2020/04/17 03:07:48 [info] 30895#30895: *1529 client 128.14.133.58 closed keepalive connection
+2020/04/17 05:25:29 [info] 30895#30895: *1543 client 83.147.248.146 closed keepalive connection
+2020/04/17 05:45:09 [info] 30895#30895: *1551 client 113.69.35.19 closed keepalive connection (104: Connection reset by peer)
+2020/04/17 05:45:09 [info] 30895#30895: *1553 client 113.69.35.19 closed keepalive connection (104: Connection reset by peer)
+2020/04/17 05:45:09 [info] 30895#30895: *1549 client 113.69.35.19 closed keepalive connection (104: Connection reset by peer)
+2020/04/17 05:45:09 [info] 30895#30895: *1552 client 113.69.35.19 closed keepalive connection (104: Connection reset by peer)
+2020/04/17 05:58:11 [info] 30895#30895: *1554 client 112.96.170.74 closed keepalive connection
+2020/04/17 05:58:14 [info] 30895#30895: *1556 client 112.96.170.74 closed keepalive connection
+2020/04/17 05:58:17 [info] 30895#30895: *1557 client 112.96.170.74 closed keepalive connection
+2020/04/17 05:58:33 [info] 30895#30895: *1558 client 112.96.170.74 closed keepalive connection (104: Connection reset by peer)
+2020/04/17 07:14:03 [info] 30895#30895: *1589 client 171.67.70.85 closed keepalive connection
+2020/04/17 07:37:44 [info] 30895#30895: *1591 client 116.252.0.29 closed keepalive connection
+2020/04/17 08:55:43 [info] 30895#30895: *1607 client 113.96.198.46 closed keepalive connection
+2020/04/17 09:56:27 [info] 30895#30895: *1608 client 182.254.52.17 closed keepalive connection (104: Connection reset by peer)
+2020/04/17 11:12:13 [info] 30895#30895: *1629 client 59.36.132.240 closed keepalive connection (104: Connection reset by peer)
+2020/04/17 11:52:44 [info] 30895#30895: *1631 client 183.192.179.16 closed keepalive connection (104: Connection reset by peer)
+2020/04/17 12:22:27 [info] 30895#30895: *1633 client 83.234.218.29 closed keepalive connection
+2020/04/17 12:41:01 [info] 30895#30895: *1637 client 183.3.226.145 closed keepalive connection
+2020/04/17 13:21:34 [info] 30895#30895: *1642 client 186.250.112.138 closed keepalive connection
+2020/04/17 13:24:23 [info] 30895#30895: *1644 client 45.76.144.219 closed keepalive connection
+2020/04/17 14:55:58 [info] 30895#30895: *1648 client 182.254.52.17 closed keepalive connection (104: Connection reset by peer)
+2020/04/17 15:15:08 [info] 30895#30895: *1650 client 182.254.52.17 closed keepalive connection (104: Connection reset by peer)
+2020/04/17 16:12:54 [info] 30895#30895: *1654 client 183.192.179.16 closed keepalive connection (104: Connection reset by peer)
+2020/04/17 16:19:21 [info] 30895#30895: *1656 client 183.192.179.16 closed keepalive connection (104: Connection reset by peer)
+2020/04/17 16:36:15 [info] 30895#30895: *1677 client 167.249.102.244 closed keepalive connection
+2020/04/17 16:57:58 [info] 30895#30895: *1679 client 187.84.81.89 closed keepalive connection
+2020/04/17 17:05:53 [info] 30895#30895: *1681 client 94.64.246.247 closed keepalive connection
+2020/04/17 17:29:06 [info] 30895#30895: *1686 client 182.254.52.17 closed keepalive connection (104: Connection reset by peer)
+2020/04/17 17:36:50 [info] 30895#30895: *1690 client 14.18.182.223 closed keepalive connection (104: Connection reset by peer)
+2020/04/17 17:42:58 [info] 30895#30895: *1692 client 183.192.179.16 closed keepalive connection (104: Connection reset by peer)
+2020/04/17 17:51:55 [info] 30895#30895: *1694 client 14.18.182.223 closed keepalive connection (104: Connection reset by peer)
+2020/04/17 17:52:54 [info] 30895#30895: *1696 client 14.18.182.223 closed keepalive connection (104: Connection reset by peer)
+2020/04/17 18:10:51 [info] 30895#30895: *1699 client 58.247.212.239 closed keepalive connection (104: Connection reset by peer)
+2020/04/17 18:26:16 [info] 30895#30895: *1701 client 103.217.154.2 closed keepalive connection
+2020/04/17 21:33:10 [info] 30895#30895: *1718 epoll_wait() reported that client prematurely closed connection, so upstream connection is closed too while sending request to upstream, client: 113.69.35.19, server: 49.234.78.157, request: "GET /video/ HTTP/1.1", upstream: "uwsgi://127.0.0.1:8001", host: "49.234.78.157", referrer: "http://49.234.78.157/video/jx-play/"
+2020/04/17 21:49:39 [info] 30895#30895: *1747 epoll_wait() reported that client prematurely closed connection, so upstream connection is closed too while sending request to upstream, client: 113.69.35.19, server: 49.234.78.157, request: "POST /video/admin/add_vod/ HTTP/1.1", upstream: "uwsgi://127.0.0.1:8001", host: "49.234.78.157", referrer: "http://49.234.78.157/video/admin/get_request/"
+2020/04/17 21:49:39 [info] 30895#30895: *1751 epoll_wait() reported that client prematurely closed connection, so upstream connection is closed too while sending request to upstream, client: 113.69.35.19, server: 49.234.78.157, request: "POST /video/admin/add_vod/ HTTP/1.1", upstream: "uwsgi://127.0.0.1:8001", host: "49.234.78.157", referrer: "http://49.234.78.157/video/admin/get_request/"
+2020/04/17 21:49:39 [info] 30895#30895: *1727 epoll_wait() reported that client prematurely closed connection, so upstream connection is closed too while sending request to upstream, client: 113.69.35.19, server: 49.234.78.157, request: "POST /video/admin/add_vod/ HTTP/1.1", upstream: "uwsgi://127.0.0.1:8001", host: "49.234.78.157", referrer: "http://49.234.78.157/video/admin/get_request/"
+2020/04/17 21:49:39 [info] 30895#30895: *1749 epoll_wait() reported that client prematurely closed connection, so upstream connection is closed too while sending request to upstream, client: 113.69.35.19, server: 49.234.78.157, request: "POST /video/admin/add_vod/ HTTP/1.1", upstream: "uwsgi://127.0.0.1:8001", host: "49.234.78.157", referrer: "http://49.234.78.157/video/admin/get_request/"
+2020/04/17 22:26:01 [info] 30895#30895: *1771 epoll_wait() reported that client prematurely closed connection, so upstream connection is closed too while sending request to upstream, client: 113.69.35.19, server: 49.234.78.157, request: "POST /video/admin/update/ HTTP/1.1", upstream: "uwsgi://127.0.0.1:8001", host: "49.234.78.157", referrer: "http://49.234.78.157/admin/"
+2020/04/17 22:33:35 [info] 30895#30895: *1779 client 182.254.52.17 closed keepalive connection (104: Connection reset by peer)
+2020/04/17 22:39:11 [info] 30895#30895: *1781 client 185.62.22.91 closed keepalive connection
+2020/04/17 22:54:13 [info] 30895#30895: *1784 client 162.243.133.86 closed keepalive connection
+2020/04/17 23:24:19 [info] 30895#30895: *1786 client 14.18.182.223 closed keepalive connection (104: Connection reset by peer)
+2020/04/17 23:48:03 [info] 30895#30895: *1788 client 159.203.9.99 closed keepalive connection (104: Connection reset by peer)
