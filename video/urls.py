@@ -14,7 +14,6 @@ adminpatterns = [
     path('error_log/', admin_views.error_log),
     path('update_video/', admin_views.update_video),
     path('update/', admin_views.update),
-    path('update2/', admin_views.update2),
     path('get_request/', admin_views.get_request),
     path('get_carousel/', admin_views.get_carousel),
     path('add_carousel/', admin_views.carousel_add),

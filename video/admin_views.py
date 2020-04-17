@@ -201,33 +201,34 @@ def update_video(request):
 def update(request):    # 更新视频数据 最大资源网
     ret = {'status': True, 'error': None, 'data': None}
     try:
-        get_all_data = getAllData("http://www.zdziyuan.com/inc/s_feifei3zuidam3u8/?p=%s")
-        if request.GET.get('flag'):    # 更新全部
-            updata_count = get_all_data.run(flag=1)
-        else:   # 更新当日
-            updata_count = get_all_data.run()
-        ret['data'] = '已更新%s条数据' % updata_count
+        url_index = request.GET.get('url_index',None)
+        up_type = request.GET.get('type',None)
+        # 设定url前缀
+        if url_index == '1':
+            url_temp = "http://www.zdziyuan.com/inc/s_feifei3zuidam3u8/?p=%s"
+        elif url_index == '2':
+            url_temp = "http://cj.bajiecaiji.com/inc/feifei3bjm3u8/index.php?p=%s"
+        else:
+            raise Exception('url参数错误')
+        get_all_data = getAllData(url_temp,int(url_index))
+        if up_type=='today':    # 更新当日
+            update_count = get_all_data.run()
+        elif up_type =='all':   # 更新全部
+            update_count = get_all_data.run(flag=1)
+        elif up_type =='count':
+            up_count = request.GET.get('count',None)
+            if up_count is None or not up_count.isdigit():
+                up_count = 1000
+            else:
+                up_count = int(up_count)
+            update_count = get_all_data.run(up_count=up_count)
+        else:
+            raise Exception('type参数错误')
+        ret['data'] = '已更新%s条数据' % update_count
     except Exception as e:
-        print(e)
+        print('Exception:',e)
         ret['status'] = False
-        ret['error'] = "未知错误"
-    finally:
-        return HttpResponse(json.dumps(ret))
-
-@auth
-def update2(request):   # 更新第二url(八戒资源网)
-    ret = {'status': True, 'error': None, 'data': None}
-    try:
-        get_all_data = getAllData("http://cj.bajiecaiji.com/inc/feifei3bjm3u8/index.php?p=%s",2)
-        if request.POST.get('flag'): # 更新全部
-            updata_count = get_all_data.run(flag=1)
-        else:   # 更新当日
-            updata_count = get_all_data.run()
-        ret['data'] = '已更新%s条数据' % updata_count
-    except Exception as e:
-        print(e)
-        ret['status'] = False
-        ret['error'] = "未知错误"
+        ret['error'] = 'Exception: %s'%e
     finally:
         return HttpResponse(json.dumps(ret))
 
