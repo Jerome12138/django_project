@@ -451,3 +451,53 @@
 2020/04/17 22:54:13 [info] 30895#30895: *1784 client 162.243.133.86 closed keepalive connection
 2020/04/17 23:24:19 [info] 30895#30895: *1786 client 14.18.182.223 closed keepalive connection (104: Connection reset by peer)
 2020/04/17 23:48:03 [info] 30895#30895: *1788 client 159.203.9.99 closed keepalive connection (104: Connection reset by peer)
+2020/04/18 00:31:31 [info] 30895#30895: *1790 client 113.69.35.19 closed keepalive connection
+2020/04/18 00:38:41 [info] 30895#30895: *1797 client prematurely closed connection while sending response to client, client: 113.69.35.19, server: 49.234.78.157, request: "GET /static/plugins/AdminLTE/adminlte.min.css HTTP/1.1", host: "49.234.78.157", referrer: "http://49.234.78.157/admin/login.html"
+2020/04/18 00:39:07 [info] 30895#30895: *1798 client 113.69.35.19 closed keepalive connection
+2020/04/18 00:39:08 [info] 30895#30895: *1799 client 113.69.35.19 closed keepalive connection
+2020/04/18 00:39:29 [info] 30895#30895: *1794 client 113.69.35.19 closed keepalive connection (104: Connection reset by peer)
+2020/04/18 03:09:38 [info] 30895#30895: *1811 client 128.14.133.58 closed keepalive connection
+2020/04/18 06:05:26 [info] 30895#30895: *1818 client 152.249.233.139 closed keepalive connection
+2020/04/18 06:27:41 [info] 30895#30895: *1820 client 196.52.43.94 closed keepalive connection
+2020/04/18 06:38:49 [info] 30895#30895: *1823 client 162.243.133.190 closed keepalive connection
+2020/04/18 08:22:48 [info] 30895#30895: *1826 client 79.111.56.63 closed keepalive connection
+2020/04/18 08:56:36 [info] 30895#30895: *1831 client 58.247.212.239 closed keepalive connection (104: Connection reset by peer)
+2020/04/18 09:24:10 [info] 30895#30895: *1833 client 183.136.225.57 closed keepalive connection
+2020/04/18 10:05:25 [info] 30895#30895: *1837 client 14.18.173.123 closed keepalive connection
+2020/04/18 10:57:20 [info] 30895#30895: *1838 client 182.254.52.17 closed keepalive connection (104: Connection reset by peer)
+2020/04/18 10:57:20 [info] 30895#30895: *1840 client 182.254.52.17 closed keepalive connection (104: Connection reset by peer)
+2020/04/18 11:01:43 [info] 30895#30895: *1842 client 61.241.50.63 closed keepalive connection (104: Connection reset by peer)
+2020/04/18 11:01:43 [info] 30895#30895: *1844 client 61.241.50.63 closed keepalive connection (104: Connection reset by peer)
+2020/04/18 12:12:33 [info] 30895#30895: *1849 client 112.96.170.74 closed keepalive connection
+2020/04/18 12:12:44 [info] 30895#30895: *1854 client 112.96.170.74 closed keepalive connection
+2020/04/18 12:12:46 [info] 30895#30895: *1852 client 112.96.170.74 closed keepalive connection
+2020/04/18 12:12:46 [info] 30895#30895: *1851 client 112.96.170.74 closed keepalive connection
+2020/04/18 12:13:06 [info] 30895#30895: *1857 client 112.96.170.74 closed keepalive connection
+2020/04/18 12:13:13 [info] 30895#30895: *1860 client 112.96.170.74 closed keepalive connection
+2020/04/18 12:13:28 [info] 30895#30895: *1853 client 112.96.170.74 closed keepalive connection
+2020/04/18 12:13:36 [info] 30895#30895: *1866 client 112.96.170.74 closed keepalive connection
+2020/04/18 12:13:37 [info] 30895#30895: *1862 client 112.96.170.74 closed keepalive connection
+2020/04/18 12:13:39 [info] 30895#30895: *1864 client 112.96.170.74 closed keepalive connection
+2020/04/18 12:13:44 [info] 30895#30895: *1865 client 112.96.170.74 closed keepalive connection
+2020/04/18 12:13:48 [info] 30895#30895: *1867 client 112.96.170.74 closed keepalive connection
+2020/04/18 12:13:53 [info] 30895#30895: *1869 client 112.96.170.74 closed keepalive connection
+2020/04/18 12:14:04 [info] 30895#30895: *1871 epoll_wait() reported that client prematurely closed connection, so upstream connection is closed too while sending request to upstream, client: 112.96.170.74, server: 49.234.78.157, request: "POST /video/admin/add_vod/ HTTP/1.1", upstream: "uwsgi://127.0.0.1:8001", host: "49.234.78.157", referrer: "http://49.234.78.157/video/admin/get_request/"
+2020/04/18 12:14:07 [info] 30895#30895: *1873 client 112.96.170.74 closed keepalive connection
+2020/04/18 12:14:16 [info] 30895#30895: *1875 client 112.96.170.74 closed keepalive connection
+2020/04/18 12:28:56 [info] 30895#30895: *1877 client 180.94.68.34 closed keepalive connection
+2020/04/18 12:29:13 [info] 30895#30895: *1879 client 182.254.52.17 closed keepalive connection (104: Connection reset by peer)
+2020/04/18 12:39:06 [info] 30895#30895: *1884 client 59.36.132.240 closed keepalive connection (104: Connection reset by peer)
+2020/04/18 12:48:54 [info] 30895#30895: *1886 client 59.36.132.240 closed keepalive connection (104: Connection reset by peer)
+2020/04/18 12:55:07 [info] 30895#30895: *1888 client 101.89.19.140 closed keepalive connection (104: Connection reset by peer)
+2020/04/18 13:41:19 [info] 30895#30895: *1910 client 198.108.66.240 closed keepalive connection
+2020/04/18 13:58:44 [info] 30895#30895: *1912 client 14.18.182.223 closed keepalive connection (104: Connection reset by peer)
+2020/04/18 14:43:06 [info] 30895#30895: *1914 client 178.136.227.17 closed keepalive connection
+2020/04/18 14:46:39 [info] 30895#30895: *1916 client 59.36.132.240 closed keepalive connection (104: Connection reset by peer)
+2020/04/18 15:17:59 [info] 30895#30895: *1920 client 101.89.19.140 closed keepalive connection (104: Connection reset by peer)
+2020/04/18 16:07:34 [info] 30895#30895: *1925 client 182.254.52.17 closed keepalive connection (104: Connection reset by peer)
+2020/04/18 16:46:20 [info] 30895#30895: *1930 client 101.89.19.140 closed keepalive connection (104: Connection reset by peer)
+2020/04/18 16:54:41 [info] 30895#30895: *1932 client 196.2.9.178 closed keepalive connection
+2020/04/18 16:59:23 [info] 30895#30895: *1934 client 14.215.156.13 closed keepalive connection
+2020/04/18 18:15:50 [info] 30895#30895: *1938 client 59.36.132.111 closed keepalive connection
+2020/04/18 18:18:17 [info] 30895#30895: *1939 client 43.245.87.28 closed keepalive connection
+2020/04/18 19:34:37 [info] 30895#30895: *1943 client 113.96.198.100 closed keepalive connection

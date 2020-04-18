@@ -136,8 +136,6 @@ CRONTAB_COMMAND_PREFIX = 'LANG_ALL=zh_cn.UTF-8'
 CRONJOBS = (
     ('58 11,15,21,23 * * *', 'video.admin_views._auto_update',
      '>>%s' % os.path.join(BASE_DIR, 'logs/update.log')),
-    ('*/5 21 * * *', 'video.admin_views._auto_update',
-     '>>%s' % os.path.join(BASE_DIR, 'logs/update.log')),
 )
 
 # 日志
