@@ -56,7 +56,7 @@ def get_vod_data(vod_id):   # 根据vod_id爬取数据，返回数据字典
     # 1.获取数据
     get_web_data = GetWebData()
     html = get_web_data.get_html(
-        "http://www.zuidazy2.com/?m=vod-detail-id-%s.html" % vod_id)
+        "http://www.zuidazy4.com/?m=vod-detail-id-%s.html" % vod_id)
     if html is None:
         return False
     # 2.转化数据
@@ -98,7 +98,7 @@ def get_vod_data(vod_id):   # 根据vod_id爬取数据，返回数据字典
 def get_data_list(wd, page_index=1):    # 获取搜索列表
     get_web_data = GetWebData()
     html = get_web_data.get_html(
-        "http://zuidazy2.com/index.php?m=vod-search-pg-%s-wd-%s.html" % (page_index, wd))
+        "http://zuidazy4.com/index.php?m=vod-search-pg-%s-wd-%s.html" % (page_index, wd))
     if html is None:
         return False
     data_list = html.xpath('//div[@class="xing_vb"]/ul//span[@class="tt"]/..')
