@@ -13,13 +13,13 @@
 <div class="stui-pannel clearfix">
     <div class="stui-pannel__head clearfix">
         <h3 class="title" style="display: inline-block;">
-            <a href="/video/admin/">后台管理</a>&nbsp;&nbsp;
+            <a href="/admin/">后台管理</a>&nbsp;&nbsp;
         </h3>
         <span>{{ log_date }}日志文件</span>
         {% if not is_today %}
-        <a href="/video/admin/view_log/{% inc_one_day log_date %}" style="float: right;color: cadetblue;padding: 0 5px;">后一天</a>
+        <a href="/admin/view_log/{% inc_one_day log_date %}" style="float: right;color: cadetblue;padding: 0 5px;">后一天</a>
         {% endif %}
-        <a href="/video/admin/view_log/{% dec_one_day log_date %}" style="float: right;color: cadetblue;padding: 0 5px;">前一天</a>
+        <a href="/admin/view_log/{% dec_one_day log_date %}" style="float: right;color: cadetblue;padding: 0 5px;">前一天</a>
     </div>
     <div class="video_list" style="white-space: pre-line; margin:0 30px">
         {{ log }}

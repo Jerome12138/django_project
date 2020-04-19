@@ -1,6 +1,6 @@
 {% extends "video_layout.html" %}
 
-{% block title %} <title>后台管理</title> {% endblock %}
+{% block title %} <title>TV后台管理</title> {% endblock %}
 
 {% block css %}
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css"
@@ -19,48 +19,33 @@
 <div class="stui-pannel clearfix">
     <div class="stui-pannel__head clearfix">
         <h3 class="title" style="display: inline;">
-            <a href="/video/admin/">后台管理</a>&nbsp;共{{ data_count }}条请求
+            <a href="/admin/tv/">TV后台管理</a>&nbsp;共{{ data_count }}条请求
         </h3>
-        <a href="/video/admin/view_log/" style="float: right;margin-right: 20px;">查看日志</a>
-        <a href="javascript:;" id='update' style="float: right;margin-right: 20px;">更新数据</a>
-        <a href="javascript:;" id='update_url2' style="float: right;margin-right: 20px;">更新url2</a>
     </div>
     <div class="video_list">
         <ul class="tt">
             <li>
                 <span class="v-list-1">影片名称</span>
-                <span class="v-list-2">影片类别</span>
                 <span class="v-list-4">操作</span>
-                <span class="hidden-xs v-list-3">更新时间</span>
             </li>
         </ul>
         {% for item in request_list %}
         <ul class="td">
             <li>
-                <span style="display: none;">{{ item.vod_id }}</span>
+                <span style="display: none;">{{ item.id }}</span>
                 <!-- 影片名称 -->
                 <span class="v-list-1">
-                    <a href="http://www.zuidazy2.com/?m=vod-detail-id-{{ item.vod_id }}.html" target="_blank"
-                        title="{{ item.vod_name}}({{ item.vod_continu}})">
-                        <span style="border:none!important">{{ item.vod_name}}</span>
-                        <span class="hidden-xs" style="border:none!important">{{ item.vod_continu}}</span>
+                    <a href="/video/play/{{ item.id }}" target="_blank"
+                        title="{{ item.name}}">
+                        <span style="border:none!important">{{ item.name}}</span>
                     </a>
                 </span>
-                <!-- 影片类别 -->
-                <span class="v-list-2">{{ item.list_name}}</span>
                 <!-- 操作 -->
                 <span class="v-list-4">
-                    {% if item.is_add == 0 %}
                     <a href="javascript:void(0)" class="add_btn"
-                        style="color: red;border-bottom:red 1px solid;">添加资源</a>&nbsp;
-                    {% else %}
-                    <a href="javascript:void(0)" class="add_btn"
-                        style="color: grey;border-bottom:grey 1px solid;">添加资源</a>&nbsp;
-                    {% endif %}
+                        style="color: red;border-bottom:red 1px solid;">更新</a>&nbsp;
                     <a href="javascript:void(0)" class="del_btn" style="color: red;border-bottom:red 1px solid;">删除</a>
                 </span>
-                <!-- 更新时间 -->
-                <span class="v-list-3 hidden-xs">{{ item.vod_addtime}}</span>
             </li>
         </ul>
         {% endfor%}
@@ -70,6 +55,15 @@
             {{ page_str }}
         </ul>
         <!-- end 翻页 -->
+    </div>
+    <div style="font-size: 14px;margin: 10px;text-align: center;">
+        <form class="ff-play visible-xs" name="search" action="javascript:void(0);" method="post" data-sid="0"
+            data-limit="10" style="width: 100%;">
+            {% csrf_token %}
+            <input class="ff-req form-control" type="text" name="vod_name" value="" placeholder="请输入影片id..."
+                style='display: inline-block; width: auto;vertical-align:middle;width: 70%;'>
+            <button class="submit push_req btn btn-default" type="submit" name="submit">提交</button>
+        </form>
     </div>
 </div>
 {% endblock %}
@@ -83,11 +77,11 @@
         $(this).css('border-bottom', 'grey 1px solid')
         if (true) {
             $.ajax({
-                url: '/video/admin/add_vod/',
+                url: '/admin/tv_json/',
                 type: "POST",
                 headers: { "X-CSRFToken": $.cookie('csrftoken') },
                 data: {
-                    'vod_id': $(this).parent().prev().prev().prev().text(),
+                    'add_vid': $(this).parent().prev().prev().text(),
                 }, // 要提交的数据
                 dataType: 'JSON',                 // 自动将接收到的data反序列化成obj返回
                 success: function (obj) {
@@ -96,7 +90,6 @@
                         location.reload();
                     } else {
                         alert(obj.error)
-                        $('#error_msg').text(obj.error)         // 将收到的错误信息传给error_msg标签
                     }
                 },
                 error: function () {
@@ -111,11 +104,11 @@
         // var res = confirm('确认删除？');
         if (true) {
             $.ajax({
-                url: '/video/admin/del_request/',
+                url: '/admin/tv_json/',
                 type: "POST",
                 headers: { "X-CSRFToken": $.cookie('csrftoken') },
                 data: {
-                    'vod_id': $(this).parent().prev().prev().prev().text(),
+                    'del_vid': $(this).parent().prev().prev().text(),
                 }, // 要提交的数据
                 dataType: 'JSON',                 // 自动将接收到的data反序列化成obj返回
                 success: function (obj) {
@@ -123,7 +116,7 @@
                         // alert('删除成功！')
                         location.reload();
                     } else {
-                        $('#error_msg').text(obj.error)         // 将收到的错误信息传给error_msg标签
+                        alert(obj.error)
                     }
                 },
                 error: function () {
@@ -132,56 +125,37 @@
                 }
             })
         };
-    })
-    $('#update').click(function () {
-        $(this).css('color', 'grey')
-        $(this).css('border-bottom', 'grey 1px solid')
-        if (true) {
-            $.ajax({
-                url: '/video/admin/update/',
-                type: "POST",
-                headers: { "X-CSRFToken": $.cookie('csrftoken') },
-                data: {}, // 要提交的数据
-                dataType: 'JSON',                 // 自动将接收到的data反序列化成obj返回
-                success: function (obj) {
-                    if (obj.status) {
-                        alert(obj.data)
-                    } else {
-                        alert(obj.error)
-                    }
-                },
-                error: function () {
-                    alert("update请求出现未知错误")
-                    console.log("update请求出现未知错误")
-                    //后台未接收到请求或未返回数据等未知错误
-                }
-            })
-        };
     });
-    $('#update_url2').click(function () {
-        $(this).css('color', 'grey')
-        $(this).css('border-bottom', 'grey 1px solid')
-        if (true) {
-            $.ajax({
-                url: '/video/admin/update2/',
+    
+    $(".ff-play button").on("click", function () {
+        $req = $(this).siblings('.ff-req').val();
+        if ($req == "") {
+            $(this).siblings('.ff-req').focus();
+            $(this).siblings('.ff-req').attr('data-toggle', 'tooltip').attr('data-placement', 'bottom').attr('title', '请输入影片id').tooltip('show');
+            return false;
+        }
+        $.ajax({
+                url: '/admin/tv_json/',
                 type: "POST",
                 headers: { "X-CSRFToken": $.cookie('csrftoken') },
-                data: {}, // 要提交的数据
+                data: {
+                    'add_vid': $(this).siblings('.ff-req').val(),
+                }, // 要提交的数据
                 dataType: 'JSON',                 // 自动将接收到的data反序列化成obj返回
                 success: function (obj) {
                     if (obj.status) {
-                        alert(obj.data)
+                        // alert(obj.data)
+                        location.reload();
                     } else {
                         alert(obj.error)
                     }
                 },
                 error: function () {
-                    alert("update请求出现未知错误")
-                    console.log("update请求出现未知错误")
+                    alert("添加请求出现未知错误")
+                    console.log("添加请求出现未知错误")
                     //后台未接收到请求或未返回数据等未知错误
                 }
             })
-        };
-    })
+    });
 </script>
 {% endblock %}

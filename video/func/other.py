@@ -62,7 +62,7 @@ def tv(request):     # 管理页面
     page_index = int(request.GET.get('page')) if request.GET.get('page') else 1
     data_list = load_tv_json('video/repository/tv.json')['type']
     data_count = len(data_list)
-    page = Page('/video/admin/tv/?page=', page_index, data_count//24 + 1)
+    page = Page('/admin/tv/?page=', page_index, data_count//24 + 1)
     page_str = page.page_str()
     if page_index < data_count//24 + 1:
         start_index = (page_index-1)*24

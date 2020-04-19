@@ -169,11 +169,14 @@ def db_test():
 
 def dump_carousel_data(carousel_data):  # 将视频数据保存至请求数据库
     try:
-        res = models.CarouselList.objects.get_or_create(**carousel_data)
-        if not res[1]:
-            print('请求已存在:%s' % carousel_data['vod_name'])
+        if carousel_data.get('vod_id'):
+            obj = models.CarouselList.objects.filter(id=carousel_data['vod_id']).first()
+            obj.__dict__.update(carousel_data)
+            obj.save()
+            print('数据已更新:%s' % carousel_data['vod_name'])
         else:
-            print('请求已添加：%s' % carousel_data['vod_name'])
+            models.CarouselList.objects.create(**carousel_data)
+            print('数据已添加：%s' % carousel_data['vod_name'])
         return True
     except Exception as e:
         print(e)
@@ -185,6 +188,6 @@ def load_carousel_data():  # 从数据库获取数据
     return result
 
 
-def del_carousel_data(vod_name):  # 从数据库删除数据
-    result = models.CarouselList.objects.filter(vod_name=vod_name).delete()
+def del_carousel_data(vod_id):  # 从数据库删除数据
+    result = models.CarouselList.objects.filter(id=vod_id).delete()
     return result

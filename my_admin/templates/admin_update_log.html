@@ -1,7 +1,7 @@
 {% extends "admin_layout.html" %}
 {% load change_date %}
 
-{% block title %}<title>后台管理 | 访问日志</title>{% endblock %}
+{% block title %}<title>后台管理 | 更新日志</title>{% endblock %}
 
 {% block css %}{% endblock %}
 
@@ -14,16 +14,14 @@
             <div class="row mb-2">
                 <div class="col-12">
                     <h3 class="m-0 text-dark" style="display: inline-block;">
-                        <a href="/video/admin/view_log/">
-                            <i class="nav-icon iconfont" aria-hidden="true">&#xe787;</i>访问日志&nbsp;&nbsp;
+                        <a href="/admin/update_log/">
+                            <i class="nav-icon iconfont" aria-hidden="true">&#xe787;</i>更新日志&nbsp;&nbsp;
                         </a>
                     </h3>
-                    {% if not is_today %}
-                    <a href="/video/admin/view_log/{% inc_one_day log_date %}"
-                        style="float: right;color: cadetblue;padding: 0 5px;">后一天</a>
-                    {% endif %}
-                    <a href="/video/admin/view_log/{% dec_one_day log_date %}"
-                        style="float: right;color: cadetblue;padding: 0 5px;">前一天</a>
+                    <div class="mt-3 ml-3">
+                        <a href="/admin/access_log/">访问日志</a>
+                        <a href="/admin/error_log/">错误日志</a>
+                    </div>
                 </div><!-- /.col -->
             </div><!-- /.row -->
         </div><!-- /.container-fluid -->
@@ -37,9 +35,7 @@
                 <div class="col-12">
                     <!-- Main content -->
                     <div class="invoice p-3 mb-3">
-                        <!-- title row -->
-                        <h4>{{ log_date }}日志</h4>
-                        <div style="white-space: pre-line;overflow-x: hidden;">{{ log }}</div>
+                        <div class="p-2" style="white-space: pre-line;overflow-x: hidden;">{{ log }}</div>
                         <!-- 翻页 -->
                         <div style="clear: both;"></div>
                         <ul class="stui-page text-center clearfix">

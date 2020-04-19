@@ -1,0 +1,275 @@
+{% extends "admin_layout.html" %}
+
+
+{% block title %}<title>后台管理 | 首页轮播图</title>{% endblock %}
+
+{% block css %}
+<style>
+    #myCarousel {
+        margin: 0 10px 10px 10px;
+        max-width: 500px;
+    }
+
+    .carousel-inner .carousel-item a {
+        background-position: 50% 50% !important;
+        background-size: cover !important;
+        padding-top: 45%;
+        display: block;
+        position: relative;
+    }
+
+    .carousel-inner .pic-text {
+        background-repeat: no-repeat;
+        background-image: linear-gradient(transparent, rgba(0, 0, 0, .5));
+        color: #fff;
+        display: block;
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        padding: 5px 10px;
+        font-size: 15px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+
+    .carousel-indicators {
+        bottom: 15px;
+    }
+
+    @media (max-width:767px) {
+
+        /* carousel */
+        #myCarousel {
+            margin: 5px;
+        }
+
+        .carousel-inner .pic-text {
+            font-size: 12px;
+        }
+    }
+</style>
+{% endblock %}
+
+
+{% block main %}
+<div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+    <div class="content-header">
+        <div class="container-fluid">
+            <div class="row mb-2">
+                <div class="col-12">
+                    <h3 class="m-0 text-dark" style="display: inline-block;">
+                        <a href="/admin/get_carousel/">
+                            <i class="nav-icon iconfont" aria-hidden="true">&#xe787;</i>首页轮播图&nbsp;&nbsp;
+                        </a>
+                    </h3>
+                </div><!-- /.col -->
+            </div><!-- /.row -->
+        </div><!-- /.container-fluid -->
+    </div>
+    <!-- /.content-header -->
+
+    <!-- Main content -->
+    <div class="content">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12">
+                    <!-- invoice -->
+                    <div class="invoice p-2 mb-3">
+                        <!-- 轮播图 -->
+                        <div id="myCarousel" class="carousel slide">
+                            <!-- 轮播（Carousel）指标 -->
+                            <ol class="carousel-indicators">
+                                {% for item in carousel_list %}
+                                {% if forloop.counter0 == 0 %}
+                                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                                {% else %}
+                                <li data-target="#myCarousel" data-slide-to='{{ forloop.counter0 }}'></li>
+                                {% endif %}
+                                {% endfor %}
+                            </ol>
+                            <!-- 轮播（Carousel）项目 -->
+                            <div class="carousel-inner">
+                                {% for item in carousel_list %}
+                                {% if forloop.counter == 1 %}
+                                <div class="carousel-item active">
+                                    <a href="{{ item.vod_url }}" title="{{ item.vod_name }}"
+                                        style="background: url({{item.vod_pic}}) no-repeat;">
+                                        <span class="pic-text text-center">{{ item.vod_name }}</span>
+                                    </a>
+                                </div>
+                                {% else %}
+                                <div class="carousel-item">
+                                    <a href="{{ item.vod_url }}" title="{{ item.vod_name }}"
+                                        style="background: url({{item.vod_pic}}) no-repeat;">
+                                        <span class="pic-text text-center">{{ item.vod_name }}</span>
+                                    </a>
+                                </div>
+                                {% endif %}
+                                {% endfor %}
+                            </div>
+                            <!-- 轮播（Carousel）导航 -->
+                            <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Next</span>
+                            </a>
+                        </div>
+                        <!-- end 图片轮播 -->
+                        <h4>共{{ data_count }}个轮播图</h4>
+                        <div class="table-responsive">
+                            <table class="table">
+                                <thead class="thead-dark">
+                                    <tr>
+                                        <th scope="col">#</th>
+                                        <th scope="col">影片名称</th>
+                                        <th scope="col">影片链接</th>
+                                        <th scope="col">影片图片</th>
+                                        <th scope="col">操作</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    {% for item in carousel_list %}
+                                    <tr>
+                                        <form class="form-inline carousel-form" method="post" style="width: 100%;">
+                                            <th scope="row" style="width: 100px;">
+                                                <label class="vod_id" style="display: none;">{{ item.id}}</label>
+                                                <input class="form-control form-control-sm vod_index" type="text"
+                                                    name="vod_index" value="{{ item.vod_index}}" placeholder="影片序号">
+                                            </th>
+                                            <td>
+                                                <input class="form-control form-control-sm vod_name" type="text"
+                                                    name="vod_name" value="{{ item.vod_name}}" placeholder="影片名称">
+                                            </td>
+                                            <td>
+                                                <input class="form-control form-control-sm vod_url" type="text"
+                                                    name="vod_url" value="{{ item.vod_url}}" placeholder="影片链接">
+                                            </td>
+                                            <td>
+                                                <input class="form-control form-control-sm vod_pic" type="text"
+                                                    name="vod_pic" value="{{ item.vod_pic}}" placeholder="影片图片">
+                                            </td>
+                                            <td>
+                                                <a href="javascript:void(0)" class="add_btn"
+                                                    style="color: red;border-bottom:red 1px solid;">更新</a>
+                                                <a href="javascript:void(0)" class="del_btn"
+                                                    style="color: red;border-bottom:red 1px solid;">删除</a>
+                                            </td>
+                                        </form>
+                                    </tr>
+                                    {% endfor%}
+                                    <tr>
+                                        <form class="form-inline carousel-form" method="post" style="width: 100%;">
+                                            <th scope="row" style="width: 100px;">
+                                                <input class="form-control form-control-sm vod_index" type="text"
+                                                    name="vod_index" placeholder="影片序号">
+                                            </th>
+                                            <td>
+                                                <input class="form-control form-control-sm vod_name" type="text"
+                                                    name="vod_name" placeholder="影片名称">
+                                            </td>
+                                            <td>
+                                                <input class="form-control form-control-sm vod_url" type="text"
+                                                    name="vod_url" placeholder="影片链接">
+                                            </td>
+                                            <td>
+                                                <input class="form-control form-control-sm vod_pic" type="text"
+                                                    name="vod_pic" placeholder="影片图片">
+                                            </td>
+                                            <td>
+                                                <a href="javascript:void(0)" class="add_btn"
+                                                    style="color: red;border-bottom:red 1px solid;">添加</a>
+                                            </td>
+                                        </form>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <!-- 翻页 -->
+                            <div style="clear: both;"></div>
+                            <ul class="stui-page text-center clearfix">
+                                {{ page_str }}
+                            </ul>
+                            <!-- end 翻页 -->
+                        </div>
+                    </div><!-- /.invoice -->
+                </div>
+            </div><!-- /.row -->
+        </div><!-- /.container-fluid -->
+    </div><!-- /.content -->
+</div>
+{% endblock %}
+
+{% block js %}
+<script src='/static/jquery/jquery.cookie.js'></script>
+<script src="/static/plugins/hammer/hammer.min.js"></script>
+<script src="/static/plugins/hammer/jquery.hammer.js"></script>
+<script>
+    $('#myCarousel').hammer().on('swipeleft', function (event) {
+        $(this).carousel('next');
+    });
+    $('#myCarousel').hammer().on('swiperight', function (event) {
+        $(this).carousel('prev');
+    });
+    $(".add_btn").on("click", function () {
+        var res = confirm('确认提交？');
+        if (res == true) {
+            $.ajax({
+                url: '/admin/add_carousel/',
+                type: "POST",
+                headers: { "X-CSRFToken": $.cookie('csrftoken') },
+                data: {
+                    'vod_id': $(this).parent().siblings('th').children('.vod_id').text(),
+                    'vod_index': $(this).parent().siblings().children('.vod_index').val(),
+                    'vod_name': $(this).parent().siblings().children('.vod_name').val(),
+                    'vod_url': $(this).parent().siblings().children('.vod_url').val(),
+                    'vod_pic': $(this).parent().siblings().children('.vod_pic').val(),
+                }, // 要提交的数据
+                dataType: 'JSON',                 // 自动将接收到的data反序列化成obj返回
+                success: function (obj) {
+                    if (obj.status) {
+                        location.reload();
+                    } else {
+                        console.log(obj.error),
+                            alert('请求出错，请稍后重试')
+                    }
+                },
+                error: function () {
+                    console.log("请求未知错误")
+                    //后台未接收到请求或未返回数据等未知错误
+                }
+            })
+        };
+    });
+    $('.del_btn').click(function () {
+        // var res = confirm('确认删除？');
+        if (true) {
+            $.ajax({
+                url: '/admin/del_carousel/',
+                type: "POST",
+                headers: { "X-CSRFToken": $.cookie('csrftoken') },
+                data: {
+                    'vod_id': $(this).parent().siblings('th').children('.vod_id').text(),
+                }, // 要提交的数据
+                dataType: 'JSON',                 // 自动将接收到的data反序列化成obj返回
+                success: function (obj) {
+                    if (obj.status) {
+                        // alert('删除成功！')
+                        location.reload();
+                    } else {
+                        $('#error_msg').text(obj.error)         // 将收到的错误信息传给error_msg标签
+                    }
+                },
+                error: function () {
+                    console.log("删除请求未知错误")
+                    //后台未接收到请求或未返回数据等未知错误
+                }
+            })
+        };
+    })
+</script>
+{% endblock %}
