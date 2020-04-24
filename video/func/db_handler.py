@@ -156,11 +156,13 @@ def dump_bulk_data_url2(data_list):    # 将视频数据保存至数据库url2
 
 
 def clear_url2():
-    models.VideoData.objects.filter(vod_url2='1').update(vod_url2=None)
+    # models.VideoData.objects.filter(vod_url2='1').update(vod_url2=None)
+    pass
 
 
 def clear_url():
-    models.VideoData.objects.filter(vod_url=None).delete()
+    # models.VideoData.objects.filter(vod_url=None).delete()
+    pass
 
 def db_test():
     obj_list = models.VideoData.objects.filter(vod_cid='3').values_list('vod_area').distinct()

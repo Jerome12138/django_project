@@ -14,6 +14,7 @@ from video.func.db_handler import update_request_data,load_request_data,del_requ
 from video.func.db_handler import dump_vod_data,load_log,clear_url2,clear_url,db_test
 from video.func.db_handler import dump_carousel_data,load_carousel_data,del_carousel_data
 from . import models
+from .func import webpToJPG
 # Create your views here.
 
 
@@ -396,6 +397,13 @@ def carousel_add(request):
         carousel_data['vod_url'] = request.POST.get('vod_url')
         carousel_data['vod_index'] = request.POST.get('vod_index')
         # print(carousel_data)
+        # 转换为本地链接
+        vod_pic = request.POST.get('vod_pic')
+        if vod_pic and vod_pic.endswith('.webp'):
+            jpg_path = webpToJPG.webp_to_jpg(vod_pic)
+            carousel_data['vod_pic'] = jpg_path
+        else:
+            carousel_data['vod_pic'] = vod_pic
         flag = dump_carousel_data(carousel_data)
         if flag:
             ret['data'] = "已成功添加轮播图： %s !" % carousel_data['vod_name']
