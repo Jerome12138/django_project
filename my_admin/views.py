@@ -88,6 +88,7 @@ class SignIn(View):
             ret['status'] = False
             ret['error'] = '未知错误'
         finally:
+            print(ret)
             return HttpResponse(json.dumps(ret))
 
 

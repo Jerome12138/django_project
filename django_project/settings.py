@@ -134,7 +134,7 @@ STATICFILES_DIRS = (
 # 自动任务  >>表示追加写入，>表示覆盖写入。
 CRONTAB_COMMAND_PREFIX = 'LANG_ALL=zh_cn.UTF-8'
 CRONJOBS = (
-    ('58 11,15,21,23 * * *', 'video.admin_views._auto_update',
+    ('58 11,15,21,23 * * *', 'my_admin.views._auto_update',
      '>>%s' % os.path.join(BASE_DIR, 'logs/update.log')),
 )
 
@@ -235,9 +235,11 @@ CACHES = {
 }
 
 # redis存储session
-SESSION_ENGINE = 'redis_sessions.session'
-SESSION_REDIS_HOST = '49.234.78.157'
-SESSION_REDIS_PORT = 6379
-SESSION_REDIS_DB = 2
-SESSION_REDIS_PASSWORD = ''
-SESSION_REDIS_PREFIX = 'session'
+# SESSION_ENGINE = 'redis_sessions.session' # django-redis-sessions
+# SESSION_REDIS_HOST = '49.234.78.157'
+# SESSION_REDIS_PORT = 6379
+# SESSION_REDIS_DB = 2
+# SESSION_REDIS_PASSWORD = ''
+# SESSION_REDIS_PREFIX = 'session'
+SESSION_ENGINE = "django.contrib.sessions.backends.cache"   # django-redis
+SESSION_CACHE_ALIAS = "default"

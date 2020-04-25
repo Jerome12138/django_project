@@ -92,34 +92,37 @@
 <!-- AdminLTE App -->
 <script src="/static/plugins/AdminLTE/adminlte.min.js"></script>
 <script>
-    $(function () {
-        var ref = '';
-        if (document.referrer.length > 0) {
-            ref = document.referrer;
-        }
-        try {
-            if (ref.length == 0 && opener.location.href.length > 0) {
-                ref = opener.location.href;
-            }
-        } catch (e) { }
-        $('#sign_in').click(function () {
-            $('.error_msg').text()
-            $.ajax({
-                url: '/admin/login.html',
-                type: 'POST',
-                data: $('form').serialize(),
-                dataType: 'JSON',
-                success: function (obj) {
-                    if (obj.status) {
-                        location.href = '/admin/';
-                    } else {
-                        $('.error_msg').text(obj.error)
-                    }
-                },
-                error: function (obj) {
-                    $('.error_msg').text(obj.error)
+    // $(function () {
+    //     var ref = '';
+    //     if (document.referrer.length > 0) {
+    //         ref = document.referrer;
+    //     }
+    //     try {
+    //         if (ref.length == 0 && opener.location.href.length > 0) {
+    //             ref = opener.location.href;
+    //         }
+    //     } catch (e) { }
+    // });
+    $('#sign_in').click(function () {
+        // $('.error_msg').text();
+        $.ajax({
+            url: '/admin/login.html',
+            type: 'POST',
+            data: $('form').serialize(),
+            dataType: 'JSON',
+            success: function (obj) {
+                if (obj.status) {
+                    console.log(obj.status);
+                    location.href = '/admin/';
+                } else {
+                    console.log(obj.error);
+                    $('.error_msg').text(obj.error);
                 }
-            })
+            },
+            error: function (obj) {
+                console.log(obj.error);
+                $('.error_msg').text(obj.error);
+            }
         })
     })
 </script>
