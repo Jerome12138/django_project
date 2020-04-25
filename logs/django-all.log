@@ -874,3 +874,105 @@ Traceback (most recent call last):
   File "/usr/lib/python3.6/json/encoder.py", line 180, in default
     o.__class__.__name__)
 TypeError: Object of type 'ConnectionError' is not JSON serializable
+[2020-04-18 23:54:26] [ERROR] Internal Server Error: /video/admin/add_vod/
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/ubuntu/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/ubuntu/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "./video/admin_views.py", line 22, in inner
+    return func(request, *args, **kwargs) #user_obj,
+  File "./video/admin_views.py", line 75, in add_vod
+    return HttpResponse(json.dumps(ret))
+  File "/usr/lib/python3.6/json/__init__.py", line 231, in dumps
+    return _default_encoder.encode(obj)
+  File "/usr/lib/python3.6/json/encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "/usr/lib/python3.6/json/encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "/usr/lib/python3.6/json/encoder.py", line 180, in default
+    o.__class__.__name__)
+TypeError: Object of type 'IndexError' is not JSON serializable
+[2020-04-24 12:43:24] [ERROR] Internal Server Error: /novel/search/
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/ubuntu/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/ubuntu/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "./novel/views.py", line 26, in search
+    book_list = get_json_data(url)
+  File "./novel/views.py", line 16, in get_json_data
+    res_dict = get_page.get_json_data(url)
+  File "./novel/func/GetPage.py", line 43, in get_json_data
+    ret_dict = eval(json_str)
+  File "<string>", line 1, in <module>
+NameError: name 'null' is not defined
+[2020-04-24 12:43:27] [ERROR] Internal Server Error: /novel/search/
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/ubuntu/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/ubuntu/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "./novel/views.py", line 26, in search
+    book_list = get_json_data(url)
+  File "./novel/views.py", line 16, in get_json_data
+    res_dict = get_page.get_json_data(url)
+  File "./novel/func/GetPage.py", line 43, in get_json_data
+    ret_dict = eval(json_str)
+  File "<string>", line 1, in <module>
+NameError: name 'null' is not defined
+[2020-04-24 12:43:30] [ERROR] Internal Server Error: /novel/search/
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/ubuntu/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/ubuntu/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "./novel/views.py", line 26, in search
+    book_list = get_json_data(url)
+  File "./novel/views.py", line 16, in get_json_data
+    res_dict = get_page.get_json_data(url)
+  File "./novel/func/GetPage.py", line 43, in get_json_data
+    ret_dict = eval(json_str)
+  File "<string>", line 1, in <module>
+NameError: name 'null' is not defined
+[2020-04-25 09:27:45] [ERROR] Internal Server Error: /video/i-search/
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/ubuntu/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/ubuntu/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "./video/views.py", line 237, in i_search
+    page_index = int(request.GET.get('page'))
+TypeError: int() argument must be a string, a bytes-like object or a number, not 'NoneType'
+[2020-04-25 09:27:52] [ERROR] Internal Server Error: /video/i-search/
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/ubuntu/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/ubuntu/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "./video/views.py", line 237, in i_search
+    page_index = int(request.GET.get('page'))
+TypeError: int() argument must be a string, a bytes-like object or a number, not 'NoneType'
+[2020-04-25 09:27:55] [ERROR] Internal Server Error: /video/i-search/
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/ubuntu/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/ubuntu/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "./video/views.py", line 237, in i_search
+    page_index = int(request.GET.get('page'))
+TypeError: int() argument must be a string, a bytes-like object or a number, not 'NoneType'
