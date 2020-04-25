@@ -222,3 +222,22 @@ LOGGING = {
         },
     }
 }
+
+# redis缓存
+CACHES = {
+    "default": {
+        "BACKEND": "django_redis.cache.RedisCache",
+        "LOCATION": "redis://49.234.78.157:6379/2",
+        "OPTIONS": {
+            "CLIENT_CLASS": "django_redis.client.DefaultClient",
+        }
+    }
+}
+
+# redis存储session
+SESSION_ENGINE = 'redis_sessions.session'
+SESSION_REDIS_HOST = '49.234.78.157'
+SESSION_REDIS_PORT = 6379
+SESSION_REDIS_DB = 2
+SESSION_REDIS_PASSWORD = ''
+SESSION_REDIS_PREFIX = 'session'

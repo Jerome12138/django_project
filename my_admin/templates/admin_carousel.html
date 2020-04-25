@@ -137,7 +137,7 @@
                                     {% for item in carousel_list %}
                                     <tr>
                                         <form class="form-inline carousel-form" method="post" style="width: 100%;">
-                                            <th scope="row" style="width: 60px;">
+                                            <th scope="row">
                                                 <label class="vod_id" style="display: none;">{{ item.id}}</label>
                                                 <input class="form-control form-control-sm vod_index" type="text"
                                                     name="vod_index" value="{{ item.vod_index}}" placeholder="序号">
@@ -155,19 +155,23 @@
                                                     name="vod_pic" value="{{ item.vod_pic}}" placeholder="影片图片">
                                             </td>
                                             <td>
-                                                <a href="javascript:void(0)" class="add_btn"
-                                                    style="color: red;border-bottom:red 1px solid;">更新</a>
-                                                <a href="javascript:void(0)" class="del_btn"
-                                                    style="color: red;border-bottom:red 1px solid;">删除</a>
+                                                <div style="font-size: 22px;line-height: initial;">
+                                                    <a href="javascript:void(0)" class="add_btn">
+                                                        <i class="nav-icon iconfont" aria-hidden="true">&#xe795;</i>
+                                                    </a>
+                                                    <a href="javascript:void(0)" class="del_btn">
+                                                        <i class="nav-icon iconfont" aria-hidden="true">&#xe7c3;</i>
+                                                    </a>
+                                                </div>
                                             </td>
                                         </form>
                                     </tr>
                                     {% endfor%}
                                     <tr>
                                         <form class="form-inline carousel-form" method="post" style="width: 100%;">
-                                            <th scope="row" style="width: 100px;">
+                                            <th scope="row" style="width: 60px;">
                                                 <input class="form-control form-control-sm vod_index" type="text"
-                                                    name="vod_index" placeholder="影片序号">
+                                                    name="vod_index" placeholder="序号">
                                             </th>
                                             <td>
                                                 <input class="form-control form-control-sm vod_name" type="text"
@@ -182,8 +186,11 @@
                                                     name="vod_pic" placeholder="影片图片">
                                             </td>
                                             <td>
-                                                <a href="javascript:void(0)" class="add_btn"
-                                                    style="color: red;border-bottom:red 1px solid;">添加</a>
+                                                <div style="font-size: 22px;line-height: initial;">
+                                                    <a href="javascript:void(0)" class="add_btn">
+                                                        <i class="nav-icon iconfont" aria-hidden="true">&#xe795;</i>
+                                                    </a>
+                                                </div>
                                             </td>
                                         </form>
                                     </tr>

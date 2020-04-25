@@ -101,7 +101,7 @@ def auth(func):   # 登录验证
         username = request.session.get('username', None)
         if not username:
             return redirect('/admin/login.html')
-        user_obj = models.UserInfo.objects.filter(username=username).first()
+        # user_obj = models.UserInfo.objects.filter(username=username).first()
         return func(request, *args, **kwargs)  
     return inner
 

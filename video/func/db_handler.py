@@ -164,10 +164,6 @@ def clear_url():
     # models.VideoData.objects.filter(vod_url=None).delete()
     pass
 
-def db_test():
-    obj_list = models.VideoData.objects.filter(vod_cid='3').values_list('vod_area').distinct()
-    print(obj_list)
-
 
 def dump_carousel_data(carousel_data):  # 将视频数据保存至请求数据库
     try:
@@ -193,3 +189,20 @@ def load_carousel_data():  # 从数据库获取数据
 def del_carousel_data(vod_id):  # 从数据库删除数据
     result = models.CarouselList.objects.filter(id=vod_id).delete()
     return result
+
+
+
+import redis
+
+def db_test():
+    try:
+        #创建StrictRedis对象，与redis服务器建⽴连接
+        sr = redis.StrictRedis(host='49.234.78.157', port=6379, db=0)
+        #添加键name，值为itheima
+        # result=sr.set('name','itheima')
+        # s2 = sr.get('name')
+        s2 = sr.keys()
+
+        print(s2)
+    except Exception as e:
+        print(e)

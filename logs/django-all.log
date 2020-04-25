@@ -976,3 +976,347 @@ Traceback (most recent call last):
   File "./video/views.py", line 237, in i_search
     page_index = int(request.GET.get('page'))
 TypeError: int() argument must be a string, a bytes-like object or a number, not 'NoneType'
+[2020-04-25 11:45:22] [INFO] Watching for file changes with StatReloader
+[2020-04-25 11:48:39] [INFO] "GET /admin/get_carousel/ HTTP/1.1" 200 35494
+[2020-04-25 11:48:40] [INFO] "GET /static/app_video/css/stui_default.css HTTP/1.1" 304 0
+[2020-04-25 11:48:40] [INFO] "GET /static/jquery/jquery-1.12.4.js HTTP/1.1" 304 0
+[2020-04-25 11:48:40] [INFO] "GET /static/jquery/jquery.cookie.js HTTP/1.1" 304 0
+[2020-04-25 11:48:40] [INFO] "GET /static/plugins/hammer/hammer.min.js HTTP/1.1" 304 0
+[2020-04-25 11:48:40] [INFO] "GET /static/plugins/hammer/jquery.hammer.js HTTP/1.1" 304 0
+[2020-04-25 11:48:40] [INFO] "GET /static/app_video/img/bg_icon.jpg HTTP/1.1" 304 0
+[2020-04-25 11:48:40] [INFO] "GET /static/app_video/img/jiongma.jpg HTTP/1.1" 304 0
+[2020-04-25 11:48:40] [INFO] "GET /static/img/favicon.ico HTTP/1.1" 200 16958
+[2020-04-25 11:48:43] [INFO] "GET /admin/get_carousel/ HTTP/1.1" 200 35494
+[2020-04-25 11:48:43] [INFO] "GET /static/fonts/myfont.css HTTP/1.1" 200 722
+[2020-04-25 11:48:43] [INFO] "GET /static/plugins/bootstrap-4.4.1/bootstrap.min.css HTTP/1.1" 200 159515
+[2020-04-25 11:48:43] [INFO] "GET /static/app_video/css/stui_default.css HTTP/1.1" 200 19556
+[2020-04-25 11:48:43] [INFO] "GET /static/plugins/AdminLTE/adminlte.min.css HTTP/1.1" 200 657371
+[2020-04-25 11:48:43] [INFO] "GET /static/jquery/jquery-1.12.4.js HTTP/1.1" 200 304438
+[2020-04-25 11:48:43] [INFO] "GET /static/plugins/bootstrap-4.4.1/bootstrap.bundle.min.js HTTP/1.1" 200 80698
+[2020-04-25 11:48:43] [INFO] "GET /static/plugins/AdminLTE/adminlte.min.js HTTP/1.1" 200 24406
+[2020-04-25 11:48:43] [INFO] "GET /static/jquery/jquery.cookie.js HTTP/1.1" 200 3238
+[2020-04-25 11:48:43] [INFO] "GET /static/plugins/hammer/hammer.min.js HTTP/1.1" 200 20771
+[2020-04-25 11:48:43] [INFO] "GET /static/plugins/hammer/jquery.hammer.js HTTP/1.1" 200 1021
+[2020-04-25 11:48:43] [INFO] "GET /static/plugins/AdminLTE/AdminLTELogo.png HTTP/1.1" 200 10380
+[2020-04-25 11:48:43] [INFO] "GET /static/plugins/AdminLTE/user2-160x160.jpg HTTP/1.1" 200 8103
+[2020-04-25 11:48:46] [INFO] "GET /static/app_video/img/bg_icon.jpg HTTP/1.1" 200 3867
+[2020-04-25 11:48:46] [INFO] "GET /static/app_video/img/jiongma.jpg HTTP/1.1" 200 218527
+[2020-04-25 11:48:46] [INFO] "GET /static/img/favicon.ico HTTP/1.1" 200 16958
+[2020-04-25 11:49:07] [INFO] "GET /admin/get_carousel/ HTTP/1.1" 200 35241
+[2020-04-25 11:49:07] [INFO] "GET /static/fonts/myfont.css HTTP/1.1" 304 0
+[2020-04-25 11:49:08] [INFO] "GET /static/img/favicon.ico HTTP/1.1" 200 16958
+[2020-04-25 11:49:17] [WARNING] "GET /static/plugins/bootstrap-4.4.1/bootstrap.bundle.min.js.map HTTP/1.1" 404 1880
+[2020-04-25 11:49:17] [WARNING] "GET /static/plugins/AdminLTE/adminlte.min.js.map HTTP/1.1" 404 1835
+[2020-04-25 11:49:17] [WARNING] "GET /static/plugins/hammer/hammer.min.js.map HTTP/1.1" 404 1823
+[2020-04-25 11:49:17] [WARNING] "GET /static/plugins/bootstrap-4.4.1/bootstrap.min.css.map HTTP/1.1" 404 1862
+[2020-04-25 11:49:17] [WARNING] "GET /static/plugins/AdminLTE/adminlte.min.css.map HTTP/1.1" 404 1838
+[2020-04-25 11:55:08] [INFO] "GET /admin/get_carousel/ HTTP/1.1" 200 35345
+[2020-04-25 11:55:08] [INFO] "GET /static/fonts/myfont.css HTTP/1.1" 304 0
+[2020-04-25 11:55:09] [WARNING] "GET /static/plugins/bootstrap-4.4.1/bootstrap.min.css.map HTTP/1.1" 404 1862
+[2020-04-25 11:55:09] [WARNING] "GET /static/plugins/AdminLTE/adminlte.min.css.map HTTP/1.1" 404 1838
+[2020-04-25 11:55:09] [WARNING] "GET /static/plugins/AdminLTE/adminlte.min.js.map HTTP/1.1" 404 1835
+[2020-04-25 11:55:09] [WARNING] "GET /static/plugins/bootstrap-4.4.1/bootstrap.bundle.min.js.map HTTP/1.1" 404 1880
+[2020-04-25 11:55:09] [WARNING] "GET /static/plugins/hammer/hammer.min.js.map HTTP/1.1" 404 1823
+[2020-04-25 11:55:09] [INFO] "GET /static/img/favicon.ico HTTP/1.1" 200 16958
+[2020-04-25 11:55:53] [INFO] "GET /admin/get_carousel/ HTTP/1.1" 200 35477
+[2020-04-25 11:55:53] [WARNING] "GET /static/plugins/bootstrap-4.4.1/bootstrap.min.css.map HTTP/1.1" 404 1862
+[2020-04-25 11:55:53] [WARNING] "GET /static/plugins/AdminLTE/adminlte.min.css.map HTTP/1.1" 404 1838
+[2020-04-25 11:55:54] [INFO] "GET /static/img/favicon.ico HTTP/1.1" 200 16958
+[2020-04-25 11:55:54] [WARNING] "GET /static/plugins/bootstrap-4.4.1/bootstrap.bundle.min.js.map HTTP/1.1" 404 1880
+[2020-04-25 11:55:54] [WARNING] "GET /static/plugins/AdminLTE/adminlte.min.js.map HTTP/1.1" 404 1835
+[2020-04-25 11:55:54] [WARNING] "GET /static/plugins/hammer/hammer.min.js.map HTTP/1.1" 404 1823
+[2020-04-25 11:57:13] [INFO] "GET /admin/get_carousel/ HTTP/1.1" 200 35477
+[2020-04-25 11:57:13] [INFO] "GET /static/fonts/myfont.css HTTP/1.1" 304 0
+[2020-04-25 11:57:13] [WARNING] "GET /static/plugins/bootstrap-4.4.1/bootstrap.min.css.map HTTP/1.1" 404 1862
+[2020-04-25 11:57:13] [WARNING] "GET /static/plugins/AdminLTE/adminlte.min.css.map HTTP/1.1" 404 1838
+[2020-04-25 11:57:14] [WARNING] "GET /static/plugins/bootstrap-4.4.1/bootstrap.bundle.min.js.map HTTP/1.1" 404 1880
+[2020-04-25 11:57:14] [WARNING] "GET /static/plugins/AdminLTE/adminlte.min.js.map HTTP/1.1" 404 1835
+[2020-04-25 11:57:14] [WARNING] "GET /static/plugins/hammer/hammer.min.js.map HTTP/1.1" 404 1823
+[2020-04-25 11:57:14] [INFO] "GET /static/img/favicon.ico HTTP/1.1" 200 16958
+[2020-04-25 11:57:15] [INFO] "GET /admin/get_carousel/ HTTP/1.1" 200 35477
+[2020-04-25 11:57:16] [WARNING] "GET /static/plugins/bootstrap-4.4.1/bootstrap.min.css.map HTTP/1.1" 404 1862
+[2020-04-25 11:57:16] [WARNING] "GET /static/plugins/AdminLTE/adminlte.min.css.map HTTP/1.1" 404 1838
+[2020-04-25 11:57:16] [INFO] "GET /static/img/favicon.ico HTTP/1.1" 200 16958
+[2020-04-25 11:57:16] [WARNING] "GET /static/plugins/bootstrap-4.4.1/bootstrap.bundle.min.js.map HTTP/1.1" 404 1880
+[2020-04-25 11:57:16] [WARNING] "GET /static/plugins/AdminLTE/adminlte.min.js.map HTTP/1.1" 404 1835
+[2020-04-25 11:57:16] [WARNING] "GET /static/plugins/hammer/hammer.min.js.map HTTP/1.1" 404 1823
+[2020-04-25 11:57:27] [INFO] "GET /admin/get_carousel/ HTTP/1.1" 200 35477
+[2020-04-25 11:57:27] [WARNING] "GET /static/plugins/bootstrap-4.4.1/bootstrap.min.css.map HTTP/1.1" 404 1862
+[2020-04-25 11:57:27] [WARNING] "GET /static/plugins/AdminLTE/adminlte.min.css.map HTTP/1.1" 404 1838
+[2020-04-25 11:57:28] [INFO] "GET /static/img/favicon.ico HTTP/1.1" 200 16958
+[2020-04-25 11:57:28] [WARNING] "GET /static/plugins/bootstrap-4.4.1/bootstrap.bundle.min.js.map HTTP/1.1" 404 1880
+[2020-04-25 11:57:28] [WARNING] "GET /static/plugins/AdminLTE/adminlte.min.js.map HTTP/1.1" 404 1835
+[2020-04-25 11:57:28] [WARNING] "GET /static/plugins/hammer/hammer.min.js.map HTTP/1.1" 404 1823
+[2020-04-25 11:57:43] [INFO] "GET /admin/get_carousel/ HTTP/1.1" 200 35477
+[2020-04-25 11:57:43] [INFO] "GET /static/plugins/bootstrap-4.4.1/bootstrap.min.css HTTP/1.1" 200 159515
+[2020-04-25 11:57:43] [INFO] "GET /static/fonts/myfont.css HTTP/1.1" 200 722
+[2020-04-25 11:57:43] [INFO] "GET /static/app_video/css/stui_default.css HTTP/1.1" 200 19556
+[2020-04-25 11:57:43] [INFO] "GET /static/plugins/AdminLTE/adminlte.min.css HTTP/1.1" 200 657371
+[2020-04-25 11:57:43] [INFO] "GET /static/jquery/jquery-1.12.4.js HTTP/1.1" 200 304438
+[2020-04-25 11:57:44] [WARNING] "GET /static/plugins/AdminLTE/adminlte.min.css.map HTTP/1.1" 404 1838
+[2020-04-25 11:57:44] [WARNING] "GET /static/plugins/bootstrap-4.4.1/bootstrap.min.css.map HTTP/1.1" 404 1862
+[2020-04-25 11:57:44] [INFO] "GET /static/plugins/bootstrap-4.4.1/bootstrap.bundle.min.js HTTP/1.1" 200 80698
+[2020-04-25 11:57:44] [INFO] "GET /static/plugins/AdminLTE/adminlte.min.js HTTP/1.1" 200 24406
+[2020-04-25 11:57:44] [INFO] "GET /static/jquery/jquery.cookie.js HTTP/1.1" 200 3238
+[2020-04-25 11:57:44] [INFO] "GET /static/plugins/hammer/hammer.min.js HTTP/1.1" 200 20771
+[2020-04-25 11:57:44] [INFO] "GET /static/plugins/hammer/jquery.hammer.js HTTP/1.1" 200 1021
+[2020-04-25 11:57:44] [INFO] "GET /static/plugins/AdminLTE/AdminLTELogo.png HTTP/1.1" 200 10380
+[2020-04-25 11:57:44] [INFO] "GET /static/plugins/AdminLTE/user2-160x160.jpg HTTP/1.1" 200 8103
+[2020-04-25 11:57:45] [INFO] "GET /static/app_video/img/bg_icon.jpg HTTP/1.1" 200 3867
+[2020-04-25 11:57:45] [INFO] "GET /static/app_video/img/jiongma.jpg HTTP/1.1" 200 218527
+[2020-04-25 11:57:45] [WARNING] "GET /static/plugins/bootstrap-4.4.1/bootstrap.bundle.min.js.map HTTP/1.1" 404 1880
+[2020-04-25 11:57:45] [WARNING] "GET /static/plugins/AdminLTE/adminlte.min.js.map HTTP/1.1" 404 1835
+[2020-04-25 11:57:45] [WARNING] "GET /static/plugins/hammer/hammer.min.js.map HTTP/1.1" 404 1823
+[2020-04-25 11:57:45] [INFO] "GET /static/img/favicon.ico HTTP/1.1" 200 16958
+[2020-04-25 11:58:19] [INFO] "GET /admin/get_carousel/ HTTP/1.1" 200 35471
+[2020-04-25 11:58:20] [WARNING] "GET /static/plugins/bootstrap-4.4.1/bootstrap.min.css.map HTTP/1.1" 404 1862
+[2020-04-25 11:58:20] [WARNING] "GET /static/plugins/AdminLTE/adminlte.min.css.map HTTP/1.1" 404 1838
+[2020-04-25 11:58:20] [INFO] "GET /static/img/favicon.ico HTTP/1.1" 200 16958
+[2020-04-25 11:58:21] [WARNING] "GET /static/plugins/bootstrap-4.4.1/bootstrap.bundle.min.js.map HTTP/1.1" 404 1880
+[2020-04-25 11:58:21] [WARNING] "GET /static/plugins/hammer/hammer.min.js.map HTTP/1.1" 404 1823
+[2020-04-25 11:58:21] [WARNING] "GET /static/plugins/AdminLTE/adminlte.min.js.map HTTP/1.1" 404 1835
+[2020-04-25 11:59:09] [INFO] "GET /admin/get_carousel/ HTTP/1.1" 200 35391
+[2020-04-25 11:59:09] [INFO] "GET /static/fonts/myfont.css HTTP/1.1" 304 0
+[2020-04-25 11:59:09] [WARNING] "GET /static/plugins/bootstrap-4.4.1/bootstrap.min.css.map HTTP/1.1" 404 1862
+[2020-04-25 11:59:10] [WARNING] "GET /static/plugins/AdminLTE/adminlte.min.css.map HTTP/1.1" 404 1838
+[2020-04-25 11:59:10] [WARNING] "GET /static/plugins/bootstrap-4.4.1/bootstrap.bundle.min.js.map HTTP/1.1" 404 1880
+[2020-04-25 11:59:10] [WARNING] "GET /static/plugins/AdminLTE/adminlte.min.js.map HTTP/1.1" 404 1835
+[2020-04-25 11:59:10] [INFO] "GET /static/img/favicon.ico HTTP/1.1" 200 16958
+[2020-04-25 11:59:10] [WARNING] "GET /static/plugins/hammer/hammer.min.js.map HTTP/1.1" 404 1823
+[2020-04-25 11:59:11] [INFO] "GET /admin/get_carousel/ HTTP/1.1" 200 35391
+[2020-04-25 11:59:12] [WARNING] "GET /static/plugins/bootstrap-4.4.1/bootstrap.min.css.map HTTP/1.1" 404 1862
+[2020-04-25 11:59:12] [WARNING] "GET /static/plugins/AdminLTE/adminlte.min.css.map HTTP/1.1" 404 1838
+[2020-04-25 11:59:12] [WARNING] "GET /static/plugins/AdminLTE/adminlte.min.js.map HTTP/1.1" 404 1835
+[2020-04-25 11:59:12] [WARNING] "GET /static/plugins/bootstrap-4.4.1/bootstrap.bundle.min.js.map HTTP/1.1" 404 1880
+[2020-04-25 11:59:12] [WARNING] "GET /static/plugins/hammer/hammer.min.js.map HTTP/1.1" 404 1823
+[2020-04-25 11:59:12] [INFO] "GET /static/img/favicon.ico HTTP/1.1" 200 16958
+[2020-04-25 11:59:38] [INFO] "GET /admin/get_carousel/ HTTP/1.1" 200 35390
+[2020-04-25 11:59:39] [WARNING] "GET /static/plugins/bootstrap-4.4.1/bootstrap.min.css.map HTTP/1.1" 404 1862
+[2020-04-25 11:59:39] [WARNING] "GET /static/plugins/AdminLTE/adminlte.min.css.map HTTP/1.1" 404 1838
+[2020-04-25 11:59:39] [INFO] "GET /static/img/favicon.ico HTTP/1.1" 200 16958
+[2020-04-25 11:59:40] [WARNING] "GET /static/plugins/bootstrap-4.4.1/bootstrap.bundle.min.js.map HTTP/1.1" 404 1880
+[2020-04-25 11:59:40] [WARNING] "GET /static/plugins/AdminLTE/adminlte.min.js.map HTTP/1.1" 404 1835
+[2020-04-25 11:59:40] [WARNING] "GET /static/plugins/hammer/hammer.min.js.map HTTP/1.1" 404 1823
+[2020-04-25 12:00:43] [INFO] "GET /static/app_video/img/bangexiju.jpg HTTP/1.1" 304 0
+[2020-04-25 12:03:01] [INFO] Watching for file changes with StatReloader
+[2020-04-25 12:03:05] [INFO] "GET /admin/get_carousel/ HTTP/1.1" 200 35409
+[2020-04-25 12:03:05] [INFO] "GET /static/fonts/myfont.css HTTP/1.1" 304 0
+[2020-04-25 12:03:05] [WARNING] "GET /static/plugins/bootstrap-4.4.1/bootstrap.min.css.map HTTP/1.1" 404 1862
+[2020-04-25 12:03:05] [WARNING] "GET /static/plugins/AdminLTE/adminlte.min.css.map HTTP/1.1" 404 1838
+[2020-04-25 12:03:06] [WARNING] "GET /static/plugins/bootstrap-4.4.1/bootstrap.bundle.min.js.map HTTP/1.1" 404 1880
+[2020-04-25 12:03:06] [WARNING] "GET /static/plugins/AdminLTE/adminlte.min.js.map HTTP/1.1" 404 1835
+[2020-04-25 12:03:06] [WARNING] "GET /static/plugins/hammer/hammer.min.js.map HTTP/1.1" 404 1823
+[2020-04-25 12:03:10] [INFO] "GET /static/img/favicon.ico HTTP/1.1" 200 16958
+[2020-04-25 12:03:46] [INFO] "GET /admin/ HTTP/1.1" 200 27452
+[2020-04-25 12:03:47] [WARNING] "GET /static/plugins/bootstrap-4.4.1/bootstrap.min.css.map HTTP/1.1" 404 1862
+[2020-04-25 12:03:47] [WARNING] "GET /static/plugins/AdminLTE/adminlte.min.css.map HTTP/1.1" 404 1838
+[2020-04-25 12:03:47] [WARNING] "GET /static/plugins/bootstrap-4.4.1/bootstrap.bundle.min.js.map HTTP/1.1" 404 1880
+[2020-04-25 12:03:47] [WARNING] "GET /static/plugins/AdminLTE/adminlte.min.js.map HTTP/1.1" 404 1835
+[2020-04-25 12:04:21] [INFO] "GET /admin/ HTTP/1.1" 200 27452
+[2020-04-25 12:04:22] [WARNING] "GET /static/plugins/bootstrap-4.4.1/bootstrap.min.css.map HTTP/1.1" 404 1862
+[2020-04-25 12:04:22] [WARNING] "GET /static/plugins/AdminLTE/adminlte.min.css.map HTTP/1.1" 404 1838
+[2020-04-25 12:04:22] [WARNING] "GET /static/plugins/bootstrap-4.4.1/bootstrap.bundle.min.js.map HTTP/1.1" 404 1880
+[2020-04-25 12:04:22] [WARNING] "GET /static/plugins/AdminLTE/adminlte.min.js.map HTTP/1.1" 404 1835
+[2020-04-25 12:05:01] [INFO] "GET /admin/view_log/ HTTP/1.1" 200 20627
+[2020-04-25 12:05:01] [INFO] "GET /static/fonts/myfont.css HTTP/1.1" 304 0
+[2020-04-25 12:05:01] [WARNING] "GET /static/plugins/bootstrap-4.4.1/bootstrap.min.css.map HTTP/1.1" 404 1862
+[2020-04-25 12:05:01] [WARNING] "GET /static/plugins/AdminLTE/adminlte.min.css.map HTTP/1.1" 404 1838
+[2020-04-25 12:05:02] [WARNING] "GET /static/plugins/bootstrap-4.4.1/bootstrap.bundle.min.js.map HTTP/1.1" 404 1880
+[2020-04-25 12:05:02] [WARNING] "GET /static/plugins/AdminLTE/adminlte.min.js.map HTTP/1.1" 404 1835
+[2020-04-25 12:05:07] [INFO] "GET /admin/update_log/ HTTP/1.1" 200 18002
+[2020-04-25 12:05:08] [WARNING] "GET /static/plugins/bootstrap-4.4.1/bootstrap.min.css.map HTTP/1.1" 404 1862
+[2020-04-25 12:05:08] [WARNING] "GET /static/plugins/AdminLTE/adminlte.min.css.map HTTP/1.1" 404 1838
+[2020-04-25 12:05:08] [WARNING] "GET /static/plugins/bootstrap-4.4.1/bootstrap.bundle.min.js.map HTTP/1.1" 404 1880
+[2020-04-25 12:05:08] [WARNING] "GET /static/plugins/AdminLTE/adminlte.min.js.map HTTP/1.1" 404 1835
+[2020-04-25 14:59:45] [INFO] Watching for file changes with StatReloader
+[2020-04-25 14:59:53] [INFO] "GET /admin/view_log/ HTTP/1.1" 200 20627
+[2020-04-25 14:59:53] [INFO] "GET /static/fonts/myfont.css HTTP/1.1" 304 0
+[2020-04-25 14:59:53] [INFO] "GET /admin/test HTTP/1.1" 301 0
+[2020-04-25 14:59:58] [INFO] "GET /admin/test/ HTTP/1.1" 200 10
+[2020-04-25 14:59:58] [WARNING] "GET /favicon.ico HTTP/1.1" 404 2634
+[2020-04-25 16:19:07] [INFO] "GET /admin/test/ HTTP/1.1" 200 10
+[2020-04-25 16:23:16] [INFO] Watching for file changes with StatReloader
+[2020-04-25 16:23:20] [INFO] "GET /admin/test/ HTTP/1.1" 200 10
+[2020-04-25 16:25:40] [INFO] D:\Code\Git\django_project\video\func\db_handler.py changed, reloading.
+[2020-04-25 16:25:41] [INFO] Watching for file changes with StatReloader
+[2020-04-25 16:26:09] [INFO] D:\Code\Git\django_project\video\func\db_handler.py changed, reloading.
+[2020-04-25 16:26:10] [INFO] Watching for file changes with StatReloader
+[2020-04-25 16:26:14] [INFO] "GET /admin/test/ HTTP/1.1" 200 10
+[2020-04-25 16:26:34] [INFO] D:\Code\Git\django_project\video\func\db_handler.py changed, reloading.
+[2020-04-25 16:26:35] [INFO] Watching for file changes with StatReloader
+[2020-04-25 16:26:37] [INFO] "GET /admin/test/ HTTP/1.1" 200 10
+[2020-04-25 16:26:53] [INFO] D:\Code\Git\django_project\video\func\db_handler.py changed, reloading.
+[2020-04-25 16:26:54] [INFO] Watching for file changes with StatReloader
+[2020-04-25 16:26:57] [INFO] "GET /admin/test/ HTTP/1.1" 200 10
+[2020-04-25 16:27:06] [INFO] D:\Code\Git\django_project\video\func\db_handler.py changed, reloading.
+[2020-04-25 16:27:07] [INFO] Watching for file changes with StatReloader
+[2020-04-25 16:27:09] [INFO] "GET /admin/test/ HTTP/1.1" 200 10
+[2020-04-25 16:31:35] [INFO] D:\Code\Git\django_project\video\func\db_handler.py changed, reloading.
+[2020-04-25 16:31:37] [INFO] Watching for file changes with StatReloader
+[2020-04-25 16:59:59] [INFO] Watching for file changes with StatReloader
+[2020-04-25 17:00:06] [INFO] "GET /admin/view_log/ HTTP/1.1" 302 0
+[2020-04-25 17:00:06] [INFO] "GET /admin/login.html HTTP/1.1" 200 5255
+[2020-04-25 17:00:06] [INFO] "GET /static/fonts/myfont.css HTTP/1.1" 304 0
+[2020-04-25 17:00:07] [INFO] "GET /static/img/logo.png HTTP/1.1" 200 17257
+[2020-04-25 17:00:41] [ERROR] Internal Server Error: /admin/login.html
+Traceback (most recent call last):
+  File "D:\Program Files\Anaconda3\lib\site-packages\redis\connection.py", line 493, in connect
+    sock = self._connect()
+  File "D:\Program Files\Anaconda3\lib\site-packages\redis\connection.py", line 550, in _connect
+    raise err
+  File "D:\Program Files\Anaconda3\lib\site-packages\redis\connection.py", line 538, in _connect
+    sock.connect(socket_address)
+socket.timeout: timed out
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Program Files\Anaconda3\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\Program Files\Anaconda3\lib\site-packages\django\utils\deprecation.py", line 96, in __call__
+    response = self.process_response(request, response)
+  File "D:\Program Files\Anaconda3\lib\site-packages\django\contrib\sessions\middleware.py", line 58, in process_response
+    request.session.save()
+  File "D:\Program Files\Anaconda3\lib\site-packages\redis_sessions\session.py", line 135, in save
+    return self.create()
+  File "D:\Program Files\Anaconda3\lib\site-packages\redis_sessions\session.py", line 123, in create
+    self._session_key = self._get_new_session_key()
+  File "D:\Program Files\Anaconda3\lib\site-packages\django\contrib\sessions\backends\base.py", line 162, in _get_new_session_key
+    if not self.exists(session_key):
+  File "D:\Program Files\Anaconda3\lib\site-packages\redis_sessions\session.py", line 119, in exists
+    return self.server.exists(self.get_real_stored_key(session_key))
+  File "D:\Program Files\Anaconda3\lib\site-packages\redis\client.py", line 1182, in exists
+    return self.execute_command('EXISTS', *names)
+  File "D:\Program Files\Anaconda3\lib\site-packages\redis\client.py", line 754, in execute_command
+    connection.send_command(*args)
+  File "D:\Program Files\Anaconda3\lib\site-packages\redis\connection.py", line 619, in send_command
+    self.send_packed_command(self.pack_command(*args))
+  File "D:\Program Files\Anaconda3\lib\site-packages\redis\connection.py", line 594, in send_packed_command
+    self.connect()
+  File "D:\Program Files\Anaconda3\lib\site-packages\redis\connection.py", line 495, in connect
+    raise TimeoutError("Timeout connecting to server")
+redis.exceptions.TimeoutError: Timeout connecting to server
+[2020-04-25 17:00:41] [ERROR] "POST /admin/login.html HTTP/1.1" 500 19984
+[2020-04-25 17:00:44] [INFO] "GET /admin/login.html HTTP/1.1" 200 5255
+[2020-04-25 17:00:45] [INFO] "GET /static/img/favicon.ico HTTP/1.1" 200 16958
+[2020-04-25 17:03:44] [INFO] D:\Code\Git\django_project\my_admin\views.py changed, reloading.
+[2020-04-25 17:03:45] [INFO] Watching for file changes with StatReloader
+[2020-04-25 17:04:48] [ERROR] Internal Server Error: /admin/login.html
+Traceback (most recent call last):
+  File "D:\Program Files\Anaconda3\lib\site-packages\redis\connection.py", line 493, in connect
+    sock = self._connect()
+  File "D:\Program Files\Anaconda3\lib\site-packages\redis\connection.py", line 550, in _connect
+    raise err
+  File "D:\Program Files\Anaconda3\lib\site-packages\redis\connection.py", line 538, in _connect
+    sock.connect(socket_address)
+socket.timeout: timed out
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Program Files\Anaconda3\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\Program Files\Anaconda3\lib\site-packages\django\utils\deprecation.py", line 96, in __call__
+    response = self.process_response(request, response)
+  File "D:\Program Files\Anaconda3\lib\site-packages\django\contrib\sessions\middleware.py", line 58, in process_response
+    request.session.save()
+  File "D:\Program Files\Anaconda3\lib\site-packages\redis_sessions\session.py", line 135, in save
+    return self.create()
+  File "D:\Program Files\Anaconda3\lib\site-packages\redis_sessions\session.py", line 123, in create
+    self._session_key = self._get_new_session_key()
+  File "D:\Program Files\Anaconda3\lib\site-packages\django\contrib\sessions\backends\base.py", line 162, in _get_new_session_key
+    if not self.exists(session_key):
+  File "D:\Program Files\Anaconda3\lib\site-packages\redis_sessions\session.py", line 119, in exists
+    return self.server.exists(self.get_real_stored_key(session_key))
+  File "D:\Program Files\Anaconda3\lib\site-packages\redis\client.py", line 1182, in exists
+    return self.execute_command('EXISTS', *names)
+  File "D:\Program Files\Anaconda3\lib\site-packages\redis\client.py", line 754, in execute_command
+    connection.send_command(*args)
+  File "D:\Program Files\Anaconda3\lib\site-packages\redis\connection.py", line 619, in send_command
+    self.send_packed_command(self.pack_command(*args))
+  File "D:\Program Files\Anaconda3\lib\site-packages\redis\connection.py", line 594, in send_packed_command
+    self.connect()
+  File "D:\Program Files\Anaconda3\lib\site-packages\redis\connection.py", line 495, in connect
+    raise TimeoutError("Timeout connecting to server")
+redis.exceptions.TimeoutError: Timeout connecting to server
+[2020-04-25 17:04:48] [ERROR] "POST /admin/login.html HTTP/1.1" 500 19984
+[2020-04-25 17:05:06] [ERROR] Internal Server Error: /admin/login.html
+Traceback (most recent call last):
+  File "D:\Program Files\Anaconda3\lib\site-packages\redis\connection.py", line 493, in connect
+    sock = self._connect()
+  File "D:\Program Files\Anaconda3\lib\site-packages\redis\connection.py", line 550, in _connect
+    raise err
+  File "D:\Program Files\Anaconda3\lib\site-packages\redis\connection.py", line 538, in _connect
+    sock.connect(socket_address)
+socket.timeout: timed out
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Program Files\Anaconda3\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\Program Files\Anaconda3\lib\site-packages\django\utils\deprecation.py", line 96, in __call__
+    response = self.process_response(request, response)
+  File "D:\Program Files\Anaconda3\lib\site-packages\django\contrib\sessions\middleware.py", line 58, in process_response
+    request.session.save()
+  File "D:\Program Files\Anaconda3\lib\site-packages\redis_sessions\session.py", line 135, in save
+    return self.create()
+  File "D:\Program Files\Anaconda3\lib\site-packages\redis_sessions\session.py", line 123, in create
+    self._session_key = self._get_new_session_key()
+  File "D:\Program Files\Anaconda3\lib\site-packages\django\contrib\sessions\backends\base.py", line 162, in _get_new_session_key
+    if not self.exists(session_key):
+  File "D:\Program Files\Anaconda3\lib\site-packages\redis_sessions\session.py", line 119, in exists
+    return self.server.exists(self.get_real_stored_key(session_key))
+  File "D:\Program Files\Anaconda3\lib\site-packages\redis\client.py", line 1182, in exists
+    return self.execute_command('EXISTS', *names)
+  File "D:\Program Files\Anaconda3\lib\site-packages\redis\client.py", line 754, in execute_command
+    connection.send_command(*args)
+  File "D:\Program Files\Anaconda3\lib\site-packages\redis\connection.py", line 619, in send_command
+    self.send_packed_command(self.pack_command(*args))
+  File "D:\Program Files\Anaconda3\lib\site-packages\redis\connection.py", line 594, in send_packed_command
+    self.connect()
+  File "D:\Program Files\Anaconda3\lib\site-packages\redis\connection.py", line 495, in connect
+    raise TimeoutError("Timeout connecting to server")
+redis.exceptions.TimeoutError: Timeout connecting to server
+[2020-04-25 17:05:06] [ERROR] "POST /admin/login.html HTTP/1.1" 500 19984
+[2020-04-25 17:05:17] [INFO] "GET /admin/login.html HTTP/1.1" 200 5255
+[2020-04-25 17:05:18] [INFO] "GET /static/img/favicon.ico HTTP/1.1" 200 16958
+[2020-04-25 17:05:27] [ERROR] Internal Server Error: /admin/login.html
+Traceback (most recent call last):
+  File "D:\Program Files\Anaconda3\lib\site-packages\redis\connection.py", line 493, in connect
+    sock = self._connect()
+  File "D:\Program Files\Anaconda3\lib\site-packages\redis\connection.py", line 550, in _connect
+    raise err
+  File "D:\Program Files\Anaconda3\lib\site-packages\redis\connection.py", line 538, in _connect
+    sock.connect(socket_address)
+socket.timeout: timed out
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Program Files\Anaconda3\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "D:\Program Files\Anaconda3\lib\site-packages\django\utils\deprecation.py", line 96, in __call__
+    response = self.process_response(request, response)
+  File "D:\Program Files\Anaconda3\lib\site-packages\django\contrib\sessions\middleware.py", line 58, in process_response
+    request.session.save()
+  File "D:\Program Files\Anaconda3\lib\site-packages\redis_sessions\session.py", line 135, in save
+    return self.create()
+  File "D:\Program Files\Anaconda3\lib\site-packages\redis_sessions\session.py", line 123, in create
+    self._session_key = self._get_new_session_key()
+  File "D:\Program Files\Anaconda3\lib\site-packages\django\contrib\sessions\backends\base.py", line 162, in _get_new_session_key
+    if not self.exists(session_key):
+  File "D:\Program Files\Anaconda3\lib\site-packages\redis_sessions\session.py", line 119, in exists
+    return self.server.exists(self.get_real_stored_key(session_key))
+  File "D:\Program Files\Anaconda3\lib\site-packages\redis\client.py", line 1182, in exists
+    return self.execute_command('EXISTS', *names)
+  File "D:\Program Files\Anaconda3\lib\site-packages\redis\client.py", line 754, in execute_command
+    connection.send_command(*args)
+  File "D:\Program Files\Anaconda3\lib\site-packages\redis\connection.py", line 619, in send_command
+    self.send_packed_command(self.pack_command(*args))
+  File "D:\Program Files\Anaconda3\lib\site-packages\redis\connection.py", line 594, in send_packed_command
+    self.connect()
+  File "D:\Program Files\Anaconda3\lib\site-packages\redis\connection.py", line 495, in connect
+    raise TimeoutError("Timeout connecting to server")
+redis.exceptions.TimeoutError: Timeout connecting to server
+[2020-04-25 17:05:27] [ERROR] "POST /admin/login.html HTTP/1.1" 500 19984
