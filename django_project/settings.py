@@ -227,7 +227,7 @@ LOGGING = {
 CACHES = {
     "default": {
         "BACKEND": "django_redis.cache.RedisCache",
-        "LOCATION": "redis://49.234.78.157:6379/2",
+        "LOCATION": "redis://:!#abc;'z3201862@49.234.78.157:6372/2",
         "OPTIONS": {
             "CLIENT_CLASS": "django_redis.client.DefaultClient",
         }
@@ -237,7 +237,7 @@ CACHES = {
 # redis存储session
 # SESSION_ENGINE = 'redis_sessions.session' # django-redis-sessions
 # SESSION_REDIS_HOST = '49.234.78.157'
-# SESSION_REDIS_PORT = 6379
+# SESSION_REDIS_PORT = 6372
 # SESSION_REDIS_DB = 2
 # SESSION_REDIS_PASSWORD = ''
 # SESSION_REDIS_PREFIX = 'session'
