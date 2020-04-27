@@ -227,7 +227,7 @@ LOGGING = {
 CACHES = {
     "default": {
         "BACKEND": "django_redis.cache.RedisCache",
-        "LOCATION": "redis://:!#abc_+z3201862@49.234.78.157:6379/2",
+        "LOCATION": "redis://:3201862@49.234.78.157:6379/2",
         "OPTIONS": {
             "CLIENT_CLASS": "django_redis.client.DefaultClient",
         }
