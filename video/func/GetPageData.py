@@ -9,6 +9,9 @@ import threading
 from .db_handler import dump_bulk_data, dump_bulk_data_url2
 
 logger = logging.getLogger('log')
+HEADERS = {
+            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.149 Safari/537.36"
+        }
 
 
 class GetWebData(object):  # 爬取网页数据，返回html数据
@@ -330,3 +333,25 @@ class IQiyi(object):  # 爱奇艺视频搜索及解析
             print(vkey)
         else:
             print('无数据')
+
+
+def getDoubanInfo(wd):
+    url = "https://search.douban.com/movie/subject_search?search_text=%s&cat=1002"%wd
+    get_web_data = GetWebData()
+    html = get_web_data.get_html(url)
+    if html is None:
+        return False
+    data_list = html.xpath('//div[@class="root"]//text()')
+    print(data_list)
+    return data_list
+
+
+def getRating(vid):
+    url = "http://api.douban.com/v2/movie/subject/%s?apikey=0df993c66c0c636e29ecbb5344252a4a"%vid
+    response = requests.get(url, headers=HEADERS)
+    if response.status_code != 200:
+        print('Status Code：', response.status_code)
+        return False
+    res_json = json.loads(response.content.decode())
+    print(res_json)
+    return res_json

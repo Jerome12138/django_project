@@ -10,6 +10,7 @@ from django.forms import widgets as Fwidgets
 
 from video.func.pagination import Page
 from video.func.GetPageData import get_vod_data,getAllData
+from video.func import GetPageData
 from video.func.db_handler import update_request_data,load_request_data,del_request_data
 from video.func.db_handler import dump_vod_data,load_log,clear_url2,clear_url,db_test
 from video.func.db_handler import dump_carousel_data,load_carousel_data,del_carousel_data
@@ -356,11 +357,6 @@ def url_clear(request):
     clear_url()
     return HttpResponse('已清空值为1的url')
 
-@auth
-def test(request):
-    db_test()
-    return HttpResponse('test完成')
-
 
 def _auto_update():
     get_all_data = getAllData("http://www.zdziyuan.com/inc/s_feifei3zuidam3u8/?p=%s")
@@ -429,3 +425,10 @@ def carousel_del(request):
         ret['error'] = e
     finally:
         return HttpResponse(json.dumps(ret))
+
+
+
+@auth
+def test(request):
+    rep = GetPageData.getDoubanInfo('西部世界第一部')
+    return HttpResponse(rep)
