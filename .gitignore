@@ -1,6 +1,7 @@
 ##ignore this file##
 __pycache__/
 .classpath
+.vscode/
 .project
 .settings
 file_storage/    
