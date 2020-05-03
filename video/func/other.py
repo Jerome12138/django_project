@@ -1,4 +1,3 @@
-# db_handler
 
 
 def load_tv_json(json_path):

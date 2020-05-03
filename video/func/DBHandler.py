@@ -26,7 +26,7 @@ def load_vod_data(vod_id):  # 从数据库获取某影片数据
 
 def load_all_vod_data():    # 从数据库获取全部影片数据
     result = models.VideoData.objects.exclude(vod_cid__in=[16, 17]).values(
-        'vod_id', 'vod_pic', 'vod_name', 'vod_continu', 'vod_actor').order_by('-ctime')
+        'vod_id', 'vod_pic', 'vod_name', 'vod_continu', 'vod_actor', 'vod_rating', 'vod_douban_id', 'vod_year').order_by('-ctime')
     return result
 
 
@@ -59,7 +59,7 @@ def del_request_data(vod_id):  # 从数据库获取数据
 
 def search_data(wd):  # 从数据库按关键字搜索
     result = models.VideoData.objects.filter(vod_name__icontains=wd).exclude(vod_cid__in=[16, 17]).all().values(
-        'vod_id', 'vod_pic', 'vod_name', 'vod_continu', 'vod_actor').order_by('-ctime')
+        'vod_id', 'vod_pic', 'vod_name', 'vod_continu', 'vod_actor', 'vod_douban_id', 'vod_rating').order_by('-ctime')
     return result
 
 
@@ -68,18 +68,20 @@ def load_type_data(**filter_param):  # 从数据库查询视频分类数据
         filter_param['vod_cid__in'] = [
             '1', '5', '6', '7', '8', '9', '10', '11', '22']
         filter_param.pop('vod_cid')
-    elif filter_param['vod_cid'] == '2': # 所有电视剧
+    elif filter_param['vod_cid'] == '2':  # 所有电视剧
         filter_param['vod_cid__in'] = [
             '2', '12', '13', '14', '15', '19', '20', '21']
         filter_param.pop('vod_cid')
-    if filter_param.get('vod_year') and filter_param['vod_year'] == '更早':  # 2010年以前
+    # 2010年以前
+    if filter_param.get('vod_year') and filter_param['vod_year'] == '更早':
         filter_param['vod_year__lt'] = '2010'
         filter_param.pop('vod_year')
-    if filter_param.get('vod_area') and filter_param['vod_area'] == '其他':  # 其他地区
-        filter_param['vod_area__in'] = ['新加坡','马来西亚','俄罗斯','其他','']
+    # 其他地区
+    if filter_param.get('vod_area') and filter_param['vod_area'] == '其他':
+        filter_param['vod_area__in'] = ['新加坡', '马来西亚', '俄罗斯', '其他', '']
         filter_param.pop('vod_area')
     result = models.VideoData.objects.filter(**filter_param).all().values(
-        'vod_id', 'vod_pic', 'vod_name', 'vod_continu', 'vod_actor').order_by('-ctime')
+        'vod_id', 'vod_pic', 'vod_name', 'vod_continu', 'vod_actor', 'vod_rating', 'vod_douban_id', 'vod_year').order_by('-ctime')
     return result
 
 
@@ -168,7 +170,8 @@ def clear_url():
 def dump_carousel_data(carousel_data):  # 将视频数据保存至请求数据库
     try:
         if carousel_data.get('vod_id'):
-            obj = models.CarouselList.objects.filter(id=carousel_data['vod_id']).first()
+            obj = models.CarouselList.objects.filter(
+                id=carousel_data['vod_id']).first()
             obj.__dict__.update(carousel_data)
             obj.save()
             print('数据已更新:%s' % carousel_data['vod_name'])
@@ -191,18 +194,50 @@ def del_carousel_data(vod_id):  # 从数据库删除数据
     return result
 
 
+def dump_douban_id(vod_id, douban_id):
+    models.VideoData.objects.filter(
+        vod_id=vod_id).update(vod_douban_id=douban_id)
 
-import redis
+
+def dump_rating(vod_id, rating):
+    models.VideoData.objects.filter(vod_id=vod_id).update(vod_rating=rating)
+
 
 def db_test():
-    try:
-        #创建StrictRedis对象，与redis服务器建⽴连接
-        sr = redis.StrictRedis(host='49.234.78.157', port=6379, db=0)
-        #添加键name，值为itheima
-        # result=sr.set('name','itheima')
-        # s2 = sr.get('name')
-        s2 = sr.keys()
+    models.VideoData.objects.update(vod_douban_id=None)
+    models.VideoData.objects.update(vod_rating=None)
 
-        print(s2)
+
+def redis_dumplist(skey, data_list):
+    try:
+        import redis
+        # 创建StrictRedis对象，与redis服务器建⽴连接
+        sr = redis.StrictRedis(host='49.234.78.157',
+                               port=6379, db=0, password='3201862')
+        exist_list = sr.lrange(skey, 0, -1)
+        data_list = list(set(data_list).difference(set(exist_list)))
+        result = sr.rpush(skey, *data_list)
+        # s2 = sr.keys()
+        # print(s2)
+        return True
     except Exception as e:
-        print(e)
+        print('redis_dump exception:', e)
+        return False
+
+
+def redis_loadlist(skey):
+    try:
+        import redis
+        # 创建StrictRedis对象，与redis服务器建⽴连接
+        sr = redis.StrictRedis(host='49.234.78.157',
+                               port=6379, db=0, password='3201862')
+        # 添加键name，值为itheima
+        # result=sr.set('name','itheima')
+        result = sr.lrange(skey, 0, -1)
+        result = [item.decode() for item in result]
+        # s2 = sr.keys()
+        # print(result)
+        return result
+    except Exception as e:
+        print('redis_dump exception:', e)
+        return []

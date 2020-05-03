@@ -1,18 +1,36 @@
 import json
 import re
-import time
+import time,random
 import logging
 import requests
 from lxml import etree
 from queue import Queue, LifoQueue
 import threading
-from .db_handler import dump_bulk_data, dump_bulk_data_url2
+from .DBHandler import dump_bulk_data, dump_bulk_data_url2
 
 logger = logging.getLogger('log')
-HEADERS = {
-            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.149 Safari/537.36"
-        }
 
+user_agent = [
+    "Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; AcooBrowser; .NET CLR 1.1.4322; .NET CLR 2.0.50727)",
+    "Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.0; Acoo Browser; SLCC1; .NET CLR 2.0.50727; Media Center PC 5.0; .NET CLR 3.0.04506)",
+    "Mozilla/4.0 (compatible; MSIE 7.0; AOL 9.5; AOLBuild 4337.35; Windows NT 5.1; .NET CLR 1.1.4322; .NET CLR 2.0.50727)",
+    "Mozilla/5.0 (Windows; U; MSIE 9.0; Windows NT 9.0; en-US)",
+    "Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; Win64; x64; Trident/5.0; .NET CLR 3.5.30729; .NET CLR 3.0.30729; .NET CLR 2.0.50727; Media Center PC 6.0)",
+    "Mozilla/5.0 (compatible; MSIE 8.0; Windows NT 6.0; Trident/4.0; WOW64; Trident/4.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; .NET CLR 1.0.3705; .NET CLR 1.1.4322)",
+    "Mozilla/4.0 (compatible; MSIE 7.0b; Windows NT 5.2; .NET CLR 1.1.4322; .NET CLR 2.0.50727; InfoPath.2; .NET CLR 3.0.04506.30)",
+    "Mozilla/5.0 (Windows; U; Windows NT 5.1; zh-CN) AppleWebKit/523.15 (KHTML, like Gecko, Safari/419.3) Arora/0.3 (Change: 287 c9dfb30)",
+    "Mozilla/5.0 (X11; U; Linux; en-US) AppleWebKit/527+ (KHTML, like Gecko, Safari/419.3) Arora/0.6",
+    "Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.8.1.2pre) Gecko/20070215 K-Ninja/2.1.1",
+    "Mozilla/5.0 (Windows; U; Windows NT 5.1; zh-CN; rv:1.9) Gecko/20080705 Firefox/3.0 Kapiko/3.0",
+    "Mozilla/5.0 (X11; Linux i686; U;) Gecko/20070322 Kazehakase/0.4.5",
+    "Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.9.0.8) Gecko Fedora/1.9.0.8-1.fc10 Kazehakase/0.5.6",
+    "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.149 Safari/537.36",
+    "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_7_3) AppleWebKit/535.20 (KHTML, like Gecko) Chrome/19.0.1036.7 Safari/535.20",
+    "Opera/9.80 (Macintosh; Intel Mac OS X 10.6.8; U; fr) Presto/2.9.168 Version/11.52",
+]
+HEADERS = {
+    "User-Agent": random.choice(user_agent)
+}
 
 class GetWebData(object):  # 爬取网页数据，返回html数据
     def __init__(self):
@@ -51,7 +69,7 @@ class GetWebData(object):  # 爬取网页数据，返回html数据
                 print('page%s请求超时，重试%s次' % (url.split('?p=')[1], i))
             except json.decoder.JSONDecodeError:
                 i += 1
-                print('page%s jSON解析错误，重试%s次' % (url.split('?p=')[1],i))
+                print('page%s jSON解析错误，重试%s次' % (url.split('?p=')[1], i))
         return False
 
 
@@ -335,8 +353,8 @@ class IQiyi(object):  # 爱奇艺视频搜索及解析
             print('无数据')
 
 
-def getDoubanInfo(wd):
-    url = "https://search.douban.com/movie/subject_search?search_text=%s&cat=1002"%wd
+def getDoubanInfo(wd):  # 爬虫
+    url = "https://search.douban.com/movie/subject_search?search_text=%s&cat=1002" % wd
     get_web_data = GetWebData()
     html = get_web_data.get_html(url)
     if html is None:
@@ -346,12 +364,37 @@ def getDoubanInfo(wd):
     return data_list
 
 
-def getRating(vid):
-    url = "http://api.douban.com/v2/movie/subject/%s?apikey=0df993c66c0c636e29ecbb5344252a4a"%vid
+def getRating(douban_id):
+    url = "http://api.douban.com/v2/movie/subject/%s?apikey=0df993c66c0c636e29ecbb5344252a4a" % douban_id
     response = requests.get(url, headers=HEADERS)
     if response.status_code != 200:
-        print('Status Code：', response.status_code)
+        print('Status Code: ', response.status_code)
         return False
-    res_json = json.loads(response.content.decode())
-    print(res_json)
-    return res_json
+    vod_info = json.loads(response.content.decode())
+    # print(vod_info['rating']['average'])
+    return vod_info['rating']['average']
+
+
+def findID(name, vod_year):  # name即剧名
+    try:
+        url = 'https://movie.douban.com/j/subject_suggest?q=%s' % name
+        response = requests.get(url, headers=HEADERS)
+        if response.status_code != 200:
+            print('Status Code: ', response.status_code)
+            return False
+        item_list = json.loads(response.content.decode())
+        # 从item_list中的每个item中提取对应的ID值
+        id_list = []  # ID存放列表
+        for item in item_list:
+            # print(item)
+            if item['year'] == vod_year:   # 1.同年
+                id_list.append(item)
+        if len(id_list) == 1:
+            return id_list[0]['id']
+        else:   # 匹配到了多个ID（可能是同名不同剧）
+            print(name,'未匹配到合适id',id_list)
+            return None
+    except Exception as e:  # 如果不能正常运行上述代码（不能访问网页等），输出未成功的剧名name。
+        print('ERROR:', name,e)
+        return None
+

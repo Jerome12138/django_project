@@ -1,4 +1,7 @@
-import json,time,os
+import json
+import time
+import os
+import random
 
 from django.shortcuts import render, HttpResponse, redirect
 from django.http.response import JsonResponse
@@ -9,11 +12,8 @@ from django.forms import fields as Ffields
 from django.forms import widgets as Fwidgets
 
 from video.func.pagination import Page
-from video.func.GetPageData import get_vod_data,getAllData
 from video.func import GetPageData
-from video.func.db_handler import update_request_data,load_request_data,del_request_data
-from video.func.db_handler import dump_vod_data,load_log,clear_url2,clear_url,db_test
-from video.func.db_handler import dump_carousel_data,load_carousel_data,del_carousel_data
+from video.func import DBHandler
 from . import models
 from .func import webpToJPG
 # Create your views here.
@@ -104,13 +104,13 @@ def auth(func):   # 登录验证
         if not username:
             return redirect('/admin/login.html')
         # user_obj = models.UserInfo.objects.filter(username=username).first()
-        return func(request, *args, **kwargs)  
+        return func(request, *args, **kwargs)
     return inner
 
 
 @auth
 def admin(request):     # 管理页面
-    return render(request,'admin_home.html')
+    return render(request, 'admin_home.html')
 
 
 @auth
@@ -126,13 +126,14 @@ def upload(request):     # 上传页面
                             f.write(i)
                     else:
                         f.write(file_obj.read())
-                    print('文件"%s"上传成功(%sKB)'%(file_obj.name,round(file_obj.size/1024,2)))
+                    print('文件"%s"上传成功(%sKB)' %
+                          (file_obj.name, round(file_obj.size/1024, 2)))
                 ret['status'] = True
             else:
                 ret['status'] = False
                 ret['error'] = '后台未收到文件'
     except Exception as e:
-        print('Exception:',e)
+        print('Exception:', e)
         ret['status'] = False
         ret['error'] = '遇到异常'+e
     finally:
@@ -140,14 +141,14 @@ def upload(request):     # 上传页面
 
 
 @auth
-def get_request(request):# 用户请求
+def get_request(request):  # 用户请求
     # 分页处理
     page_index = int(request.GET.get('page')) if request.GET.get('page') else 1
-    data_list = load_request_data()
+    data_list = DBHandler.load_request_data()
     data_count = len(data_list)
     page = Page(request.path_info+'?page=', page_index, data_count//24 + 1)
     page_str = page.page_str()
-    request_list =page.video_page(data_list,24)
+    request_list = page.video_page(data_list, 24)
     if request_list == -1:
         return HttpResponse('请求错误')
     return render(request, 'admin_requests.html', {
@@ -156,12 +157,13 @@ def get_request(request):# 用户请求
         "data_count": data_count
     })
 
+
 @auth
 def del_request(request):   # 删除请求
     ret = {'status': True, 'error': None, 'data': None}
     try:
         vod_id = request.POST.get('vod_id')
-        del_request_data(vod_id)
+        DBHandler.del_request_data(vod_id)
     except Exception as e:
         print(e)
         ret['status'] = False
@@ -169,14 +171,15 @@ def del_request(request):   # 删除请求
     finally:
         return HttpResponse(json.dumps(ret))
 
+
 @auth
 def add_vod(request):   # 添加视频数据
     ret = {'status': True, 'error': None, 'data': None}
     try:
         vod_id = request.POST.get('vod_id')
-        vod_data = get_vod_data(vod_id)
-        flag = dump_vod_data(vod_data)
-        update_request_data(vod_id)
+        vod_data = GetPageData.get_vod_data(vod_id)
+        flag = DBHandler.dump_vod_data(vod_data)
+        DBHandler.update_request_data(vod_id)
         if flag:
             ret['data'] = "已成功添加 %s !" % vod_data['vod_name']
         else:
@@ -189,17 +192,18 @@ def add_vod(request):   # 添加视频数据
     finally:
         return HttpResponse(json.dumps(ret))
 
+
 @auth
 def update_log(request):
     log_path = 'logs/update.log'
-    log_str = load_log(log_path)
+    log_str = DBHandler.load_log(log_path)
     # 分页处理
     page_index = int(request.GET.get('page')) if request.GET.get('page') else 1
     data_list = log_str.split('\n')
     data_count = len(data_list)
     page = Page(request.path_info+'?page=', page_index, data_count//100 + 1)
     page_str = page.page_str()
-    log_list =page.video_page(data_list,100)
+    log_list = page.video_page(data_list, 100)
     if log_list == -1:
         return HttpResponse('请求错误')
     log_str = '\n'.join(log_list)
@@ -212,14 +216,14 @@ def update_log(request):
 @auth
 def access_log(request):
     log_path = 'logs/nginx/web_access.log'
-    log_str = load_log(log_path)
+    log_str = DBHandler.load_log(log_path)
     # 分页处理
     page_index = int(request.GET.get('page')) if request.GET.get('page') else 1
     data_list = log_str.split('\n')
     data_count = len(data_list)
     page = Page(request.path_info+'?page=', page_index, data_count//100 + 1)
     page_str = page.page_str()
-    log_list =page.video_page(data_list,100)
+    log_list = page.video_page(data_list, 100)
     if log_list == -1:
         return HttpResponse('请求错误')
     log_str = '\n'.join(log_list)
@@ -228,17 +232,18 @@ def access_log(request):
         'page_str': page_str,
     })
 
+
 @auth
 def error_log(request):
     log_path = 'logs/nginx/web_error.log'
-    log_str = load_log(log_path)
+    log_str = DBHandler.load_log(log_path)
     # 分页处理
     page_index = int(request.GET.get('page')) if request.GET.get('page') else 1
     data_list = log_str.split('\n')
     data_count = len(data_list)
     page = Page(request.path_info+'?page=', page_index, data_count//100 + 1)
     page_str = page.page_str()
-    log_list =page.video_page(data_list,100)
+    log_list = page.video_page(data_list, 100)
     if log_list == -1:
         return HttpResponse('请求错误')
     log_str = '\n'.join(log_list)
@@ -270,7 +275,7 @@ def view_log(request, log_date=0):
                 'is_today': is_today,
                 'page_str': '',
             })
-    log = load_log(log_path)
+    log = DBHandler.load_log(log_path)
     # 剔除部分字段
     import re
     log = re.sub(
@@ -294,7 +299,7 @@ def view_log(request, log_date=0):
     data_count = len(data_list)
     page = Page(request.path_info+'?page=', page_index, data_count//100 + 1)
     page_str = page.page_str()
-    log_list =page.video_page(data_list,100)
+    log_list = page.video_page(data_list, 100)
     if log_list == -1:
         return HttpResponse('请求错误')
     log_str = '\n'.join(log_list)
@@ -307,17 +312,19 @@ def view_log(request, log_date=0):
         'page_str': page_str,
     })
 
+
 @auth
 def update_video(request):
     pass
-    return render(request,'admin_update.html')
+    return render(request, 'admin_update.html')
+
 
 @auth
 def update(request):    # 更新视频数据 最大资源网
     ret = {'status': True, 'error': None, 'data': None}
     try:
-        url_index = request.GET.get('url_index',None)
-        up_type = request.GET.get('type',None)
+        url_index = request.GET.get('url_index', None)
+        up_type = request.GET.get('type', None)
         # 设定url前缀
         if url_index == '1':
             url_temp = "http://www.zdziyuan.com/inc/s_feifei3zuidam3u8/?p=%s"
@@ -325,13 +332,13 @@ def update(request):    # 更新视频数据 最大资源网
             url_temp = "http://cj.bajiecaiji.com/inc/feifei3bjm3u8/index.php?p=%s"
         else:
             raise Exception('url参数错误')
-        get_all_data = getAllData(url_temp,int(url_index))
-        if up_type=='today':    # 更新当日
+        get_all_data = GetPageData.getAllData(url_temp, int(url_index))
+        if up_type == 'today':    # 更新当日
             update_count = get_all_data.run()
-        elif up_type =='all':   # 更新全部
+        elif up_type == 'all':   # 更新全部
             update_count = get_all_data.run(flag=1)
-        elif up_type =='count':
-            up_count = request.GET.get('count',None)
+        elif up_type == 'count':
+            up_count = request.GET.get('count', None)
             if up_count is None or not up_count.isdigit():
                 up_count = 1000
             else:
@@ -341,38 +348,43 @@ def update(request):    # 更新视频数据 最大资源网
             raise Exception('type参数错误')
         ret['data'] = '已更新%s条数据' % update_count
     except Exception as e:
-        print('Exception:',e)
+        print('Exception:', e)
         ret['status'] = False
-        ret['error'] = 'Exception: %s'%e
+        ret['error'] = 'Exception: %s' % e
     finally:
         return HttpResponse(json.dumps(ret))
 
+
 @auth
 def url2_clear(request):
-    clear_url2()
+    DBHandler.clear_url2()
     return HttpResponse('已清空值为1的url2')
+
 
 @auth
 def url_clear(request):
-    clear_url()
+    DBHandler.clear_url()
     return HttpResponse('已清空值为1的url')
 
 
 def _auto_update():
-    get_all_data = getAllData("http://www.zdziyuan.com/inc/s_feifei3zuidam3u8/?p=%s")
+    get_all_data = GetPageData.getAllData(
+        "http://www.zdziyuan.com/inc/s_feifei3zuidam3u8/?p=%s")
     get_all_data.run()
-    get_all_data2 = getAllData("http://cj.bajiecaiji.com/inc/feifei3bjm3u8/index.php?p=%s",2)
+    get_all_data2 = GetPageData.getAllData(
+        "http://cj.bajiecaiji.com/inc/feifei3bjm3u8/index.php?p=%s", 2)
     get_all_data2.run()
 
+
 @auth
-def get_carousel(request):# 用户请求
+def get_carousel(request):  # 用户请求
     # 分页处理
     page_index = int(request.GET.get('page')) if request.GET.get('page') else 1
-    data_list = load_carousel_data()
+    data_list = DBHandler.load_carousel_data()
     data_count = len(data_list)
     page = Page(request.path_info+'?page=', page_index, data_count//24 + 1)
     page_str = page.page_str()
-    carousel_list =page.video_page(data_list,24)
+    carousel_list = page.video_page(data_list, 24)
     if carousel_list == -1:
         return HttpResponse('请求错误')
     return render(request, 'admin_carousel.html', {
@@ -380,6 +392,7 @@ def get_carousel(request):# 用户请求
         'page_str': page_str,
         "data_count": data_count
     })
+
 
 @auth
 def carousel_add(request):
@@ -401,7 +414,7 @@ def carousel_add(request):
             carousel_data['vod_pic'] = jpg_path
         else:
             carousel_data['vod_pic'] = vod_pic
-        flag = dump_carousel_data(carousel_data)
+        flag = DBHandler.dump_carousel_data(carousel_data)
         if flag:
             ret['data'] = "已成功添加轮播图： %s !" % carousel_data['vod_name']
         else:
@@ -414,11 +427,12 @@ def carousel_add(request):
     finally:
         return HttpResponse(json.dumps(ret))
 
+
 def carousel_del(request):
     ret = {'status': True, 'error': None, 'data': None}
     try:
         vod_id = request.POST.get('vod_id')
-        del_carousel_data(vod_id)
+        DBHandler.del_carousel_data(vod_id)
     except Exception as e:
         print(e)
         ret['status'] = False
@@ -427,8 +441,56 @@ def carousel_del(request):
         return HttpResponse(json.dumps(ret))
 
 
-
 @auth
 def test(request):
-    rep = GetPageData.getDoubanInfo('西部世界第一部')
-    return HttpResponse(rep)
+    DBHandler.db_test()
+    return HttpResponse('rep')
+
+
+@auth
+def get_douban_rating(request):
+    data_list = []
+    none_list = DBHandler.redis_loadlist('douban_none_list')
+    res_status = False
+    try:
+        data_list.extend(DBHandler.load_type_data(**{'vod_cid': '1'}))    # 获取所有电影
+        # data_list.extend(DBHandler.load_type_data(**{'vod_cid': '2'}))  # 获取所有电视剧
+        timeout=0
+        for item in data_list:
+            if item['vod_douban_id'] is None and item['vod_id'] not in none_list:  # 不存在豆瓣id，则查找id
+            #     print(item['vod_douban_id'],item['vod_rating'])
+            # if False:
+                # douban_id = GetPageData.findID('爱情公寓2','2011')    # test network
+                douban_id = GetPageData.findID(item['vod_name'], item['vod_year'])
+                if douban_id:   # 如果查找到豆瓣id
+                    # print(douban_id)
+                    DBHandler.dump_douban_id(item['vod_id'], douban_id)
+                    rating = GetPageData.getRating(douban_id)
+                    print(item['vod_name'], douban_id, rating)
+                    DBHandler.dump_rating(item['vod_id'], rating)
+                    # 防止账号被封，随机延迟
+                    time.sleep(3 + float(random.randint(40, 100)) / 20)
+                else:   # 未查找到豆瓣id
+                    test_net = GetPageData.findID('爱情公寓2', '2011')
+                    if test_net is None:
+                        print('地址被限制,稍后重试')
+                        if none_list:
+                            DBHandler.redis_dumplist('douban_none_list',none_list)
+                        time.sleep(60)
+                        timeout+=1
+                        if timeout>5:
+                            time.sleep(300)
+                        elif timeout>10:
+                            break
+                        print('重新启动查找')
+                    else:
+                        print(item['vod_name'],'无豆瓣id数据')
+                        none_list.append(item['vod_id'])
+        res_status = True
+    except Exception as e:
+        print('redis_dump exception:',e)
+        res_status = 'redis_dump exception:%s'%e
+    finally:
+        if none_list:
+            DBHandler.redis_dumplist('douban_none_list',none_list)
+        return HttpResponse(res_status)

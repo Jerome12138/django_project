@@ -3,7 +3,7 @@ from django.http.response import JsonResponse
 
 from video import models
 from .func.GetPageData import get_data_list, IQiyi
-from .func.db_handler import load_vod_data, load_all_vod_data, dump_request_data, search_data, load_type_data, load_carousel_data
+from .func import DBHandler
 from .func.pagination import Page
 import time
 import json
@@ -15,14 +15,14 @@ import os
 def home(request):  # 主页
     # 分页处理
     page_index = int(request.GET.get('page')) if request.GET.get('page') else 1
-    data_list = load_all_vod_data()
+    data_list = DBHandler.load_all_vod_data()
     data_count = len(data_list)
     page = Page(request.path_info+'?page=', page_index, data_count//24 + 1)
     page_str = page.page_str()
     video_list = page.video_page(data_list, 24)
     if video_list == -1:
         return HttpResponse('请求错误')
-    carousel_list = load_carousel_data()
+    carousel_list = DBHandler.load_carousel_data()
     return render(request, 'video_home.html', {
         "carousel_list":carousel_list,
         "video_list": video_list,
@@ -70,7 +70,7 @@ def vod_type(request, vod_cid):  # 视频分类页
         filter_dict['area'] = ['大陆', '香港', '美国', '台湾', '英国', '韩国', '日本', '其它']
         all_type_id = vod_cid
     # 查询数据
-    data_list = load_type_data(**filter_param)
+    data_list = DBHandler.load_type_data(**filter_param)
     data_count = len(data_list)
     # 分页处理
     page_index = int(request.GET.get('page')) if request.GET.get('page') else 1
@@ -96,7 +96,7 @@ def vod_type(request, vod_cid):  # 视频分类页
 
 
 def play(request, vod_id, url_index=1, index=1):  # 播放页面
-    vod_data = load_vod_data(vod_id)
+    vod_data = DBHandler.load_vod_data(vod_id)
     if not vod_data:
         return render(request, 'video_nonepage.html', {'msg': "影片尚未收录,有需要请联系管理员"})
     # url1
@@ -159,7 +159,8 @@ def search(request):  # 搜索ORM获取视频信息
     elif request.method == "GET":   # 翻页方式
         wd = request.GET.get('wd')
         page_index = int(request.GET.get('page'))
-    data_list = search_data(wd)
+    data_list = DBHandler.search_data(wd)
+    print(data_list)
     data_count = len(data_list)
     page = Page(request.path_info+'?wd=%s&page=' %
                 wd, page_index, data_count//24 + 1)
@@ -186,7 +187,7 @@ def search2(request):  # 搜索外源视频信息
     video_list, data_count = get_data_list(wd, page_index)
     # print(video_list)
     for item in video_list:
-        if load_vod_data(item['vod_id']):
+        if DBHandler.load_vod_data(item['vod_id']):
             item['is_save'] = 1
         else:
             item['is_save'] = 0
@@ -213,7 +214,7 @@ def push_request(request):  # 提交请求给管理员
         request_data['list_name'] = request.POST.get('list_name')
         request_data['is_add'] = 0
         # print(request_data)
-        flag = dump_request_data(request_data)
+        flag = DBHandler.dump_request_data(request_data)
         if flag:
             ret['data'] = "已成功添加请求： %s !" % request_data['vod_name']
         else:

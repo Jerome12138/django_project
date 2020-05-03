@@ -1,5 +1,5 @@
 from django.shortcuts import render, HttpResponse
-from .func.db_handler import *
+from .func.DBHandler import *
 from .func.GetPage import *
 from django.utils.safestring import mark_safe
 import re

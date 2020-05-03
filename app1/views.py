@@ -1,6 +1,5 @@
 from django.shortcuts import render, HttpResponse
 from django.shortcuts import redirect
-from . import db_handler
 from app1 import models
 import json
 

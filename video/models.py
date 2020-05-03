@@ -29,6 +29,8 @@ class VideoData(models.Model):
     # video_list = models.ForeignKey(
     #     "VideoList", to_field='list_id', on_delete=models.CASCADE)  # "剧情片"
     ctime = models.DateTimeField(auto_now=True)
+    vod_douban_id = models.CharField(max_length=16,null=True) # 豆瓣id
+    vod_rating = models.CharField(max_length=4,null=True) # 豆瓣评分
 
 
 # class VideoList(models.Model):
