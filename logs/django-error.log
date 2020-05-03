@@ -55,3 +55,4 @@ Traceback (most recent call last):
   File "./video/views.py", line 246, in i_play
     if url.endswith('?src=search'):
 AttributeError: 'NoneType' object has no attribute 'endswith'
+[2020-04-30 21:58:06] [GetPageData:get_first_page] [ERROR] 首页请求无数据
