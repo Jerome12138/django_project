@@ -387,7 +387,7 @@ def findID(name, vod_year):  # name即剧名
         id_list = []  # ID存放列表
         for item in item_list:
             # print(item)
-            if item['year'] == vod_year:   # 1.同年
+            if item.get('year') == vod_year:   # 1.同年
                 id_list.append(item)
         if len(id_list) == 1:
             return id_list[0]['id']

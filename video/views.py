@@ -160,7 +160,7 @@ def search(request):  # 搜索ORM获取视频信息
         wd = request.GET.get('wd')
         page_index = int(request.GET.get('page'))
     data_list = DBHandler.search_data(wd)
-    print(data_list)
+    # print(data_list)
     data_count = len(data_list)
     page = Page(request.path_info+'?wd=%s&page=' %
                 wd, page_index, data_count//24 + 1)
