@@ -479,7 +479,7 @@ def get_douban_rating(request):
                             DBHandler.redis_dumplist('douban_none_list',none_list)
                         time.sleep(60)
                         timeout+=1
-                        if timeout = 5:
+                        if timeout == 5:
                             print('连续五次失败，等待5分钟')
                             time.sleep(300)
                         elif timeout>10:
