@@ -463,6 +463,7 @@ def get_douban_rating(request):
                 # douban_id = GetPageData.findID('爱情公寓2','2011')    # test network
                 douban_id = GetPageData.findID(item['vod_name'], item['vod_year'])
                 if douban_id:   # 如果查找到豆瓣id
+                    timeout = 0
                     # print(douban_id)
                     DBHandler.dump_douban_id(item['vod_id'], douban_id)
                     rating = GetPageData.getRating(douban_id)
@@ -484,7 +485,7 @@ def get_douban_rating(request):
                             break
                         print('重新启动查找')
                     else:
-                        print(item['vod_name'],'无豆瓣id数据')
+                        print(item['vod_name'],'无豆瓣id数据，存入列表')
                         none_list.append(item['vod_id'])
         res_status = True
     except Exception as e:
