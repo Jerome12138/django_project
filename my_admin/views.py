@@ -474,7 +474,7 @@ def get_douban_rating(request):
                 else:   # 未查找到豆瓣id
                     test_net = GetPageData.findID('爱情公寓2', '2011')
                     if test_net is None:
-                        print('地址被限制,稍后重试')
+                        print('----------地址被限制,稍后重试----------')
                         if none_list:
                             DBHandler.redis_dumplist('douban_none_list',none_list)
                         time.sleep(60)
@@ -483,7 +483,7 @@ def get_douban_rating(request):
                             time.sleep(300)
                         elif timeout>10:
                             break
-                        print('重新启动查找')
+                        print('----------重新启动查找------------')
                     else:
                         print(item['vod_name'],'无豆瓣id数据，存入列表')
                         none_list.append(item['vod_id'])
