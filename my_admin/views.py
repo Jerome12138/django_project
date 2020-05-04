@@ -455,7 +455,7 @@ def get_douban_rating(request):
     try:
         while flag:
             data_list = DBHandler.load_type_data(**{'vod_cid': '1'})    # 获取所有电影
-            print('剩%s部影片待获取'%(len(data_list)))
+            # print('剩%s部影片待获取'%(len(data_list)))
             # data_list.extend(DBHandler.load_type_data(**{'vod_cid': '2'}))  # 获取所有电视剧
             timeout = 0
             for item in data_list:

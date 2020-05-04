@@ -36,15 +36,20 @@ def vod_type(request, vod_cid):  # 视频分类页
     # 筛选项处理
     area = request.GET.get('area')
     year = request.GET.get('year')
-    filter_param = {'vod_cid': vod_cid}
+    rating = request.GET.get('rating')
+    filter_param = {'vod_cid': vod_cid} # 筛选参数集，查询数据库时使用
     filter_flag = False
     if area:
         filter_param['vod_area'] = area
     if year:
         filter_param['vod_year'] = year
+    if rating:
+        filter_param['vod_rating'] = rating
+    # filter_dict 筛选参数，用于前端筛选
     filter_dict = {
         'type': [], 'area': [],
-        'year': ['2020', '2019', '2018', '2017', '2016', '2015', '2014', '2013', '2012', '2011', '2010', '更早']}
+        'year': ['2020', '2019', '2018', '2017', '2016', '2015', '2014', '2013', '2012', '2011', '2010', '更早'],
+        'rating':['9.0','8.0','7.0','6.0','5.0','5.0以下']}
     if vod_cid in ['1', '5', '6', '7', '8', '9', '10', '11', '22']:
         all_type_id = '1'
         filter_flag = True

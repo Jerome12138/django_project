@@ -454,7 +454,7 @@ class Get80sScore(object):
                     time.sleep(1 + float(random.randint(0, 100)) / 100)
                 else:
                     self.timeout += 1
-                    time.sleep(60)
+                    time.sleep(180)
                     if self.timeout == 5:
                         print('----80s连续五次失败，等待30分钟---')
                         time.sleep(1800)

@@ -76,13 +76,20 @@ def load_type_data(**filter_param):  # 从数据库查询视频分类数据
             '2', '12', '13', '14', '15', '19', '20', '21']
         filter_param.pop('vod_cid')
     # 2010年以前
-    if filter_param.get('vod_year') and filter_param['vod_year'] == '更早':
+    if filter_param.get('vod_year') == '更早':
         filter_param['vod_year__lt'] = '2010'
         filter_param.pop('vod_year')
     # 其他地区
-    if filter_param.get('vod_area') and filter_param['vod_area'] == '其他':
+    if filter_param.get('vod_area') == '其他':
         filter_param['vod_area__in'] = ['新加坡', '马来西亚', '俄罗斯', '其他', '']
         filter_param.pop('vod_area')
+    if filter_param.get('vod_rating') is not None:
+        rating = filter_param.pop('vod_rating')
+        if rating.endswith('以下'):
+            filter_param['vod_rating__lt'] = '5'
+        else:
+            filter_param['vod_rating__gt'] = rating.strip('.0')
+            filter_param['vod_rating__lt'] = int(rating.strip('.0'))+1
     result = models.VideoData.objects.filter(**filter_param).all().values(
         'vod_id', 'vod_pic', 'vod_name', 'vod_continu', 'vod_actor', 'vod_rating', 'vod_douban_id', 'vod_year').order_by('-ctime')
     return result
@@ -218,7 +225,7 @@ def redis_dumplist(skey, data_list):
         sr = redis.StrictRedis(host='49.234.78.157',
                                port=6379, db=0, password='3201862')
         exist_list = sr.lrange(skey, 0, -1)
-        data_list = list(set(data_list).difference(set(exist_list)))
+        data_list = list(set(data_list).difference(set(exist_list)))    # 差集，已存在则不添加
         result = sr.rpush(skey, *data_list)
         # s2 = sr.keys()
         # print(s2)

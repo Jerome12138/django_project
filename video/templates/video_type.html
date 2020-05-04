@@ -12,33 +12,43 @@
 <div class="stui-pannel clearfix">
     {% if filter_flag %}
     <ul class="stui-screen__list clearfix">
-        <li><a class="text-muted" href="/video/type/{{ all_type_id }}/?area={{ filter_param.vod_area }}&year={{ filter_param.vod_year }}">按剧情</a></li>
+        <li><a class="text-muted" href="/video/type/{{ all_type_id }}/?area={{ filter_param.vod_area }}&year={{ filter_param.vod_year }}&rating={{ filter_param.vod_rating }}">按剧情</a></li>
         {% for item in filter_dict.type %}
         {% if filter_param.vod_cid == item.cid %}
-        <li class="active"><a href="/video/type/{{ item.cid }}/?area={{ filter_param.vod_area }}&year={{ filter_param.vod_year }}">{{ item.cname|slice:"2" }}</a></li>
+        <li class="active"><a href="/video/type/{{ item.cid }}/?area={{ filter_param.vod_area }}&year={{ filter_param.vod_year }}&rating={{ filter_param.vod_rating }}">{{ item.cname|slice:"2" }}</a></li>
         {% else %}
-        <li><a href="/video/type/{{ item.cid }}/?area={{ filter_param.vod_area }}&year={{ filter_param.vod_year }}">{{ item.cname|slice:"2" }}</a></li>
+        <li><a href="/video/type/{{ item.cid }}/?area={{ filter_param.vod_area }}&year={{ filter_param.vod_year }}&rating={{ filter_param.vod_rating }}">{{ item.cname|slice:"2" }}</a></li>
         {% endif %}
         {% endfor %}
     </ul>
     {% endif %}
     <ul class="stui-screen__list clearfix">
-        <li><a class="text-muted" href="/video/type/{{ filter_param.vod_cid }}/?year={{ filter_param.vod_year }}">按地区</a></li>
+        <li><a class="text-muted" href="/video/type/{{ filter_param.vod_cid }}/?year={{ filter_param.vod_year }}&rating={{ filter_param.vod_rating }}">按地区</a></li>
         {% for area in filter_dict.area %}
         {% if filter_param.vod_area == area %}
-        <li class="active"><a href="/video/type/{{ filter_param.vod_cid }}/?area={{ area }}&year={{ filter_param.vod_year }}">{{ area }}</a></li>
+        <li class="active"><a href="/video/type/{{ filter_param.vod_cid }}/?area={{ area }}&year={{ filter_param.vod_year }}&rating={{ filter_param.vod_rating }}">{{ area }}</a></li>
         {% else %}
-        <li><a href="/video/type/{{ filter_param.vod_cid }}/?area={{ area }}&year={{ filter_param.vod_year }}">{{ area }}</a></li>
+        <li><a href="/video/type/{{ filter_param.vod_cid }}/?area={{ area }}&year={{ filter_param.vod_year }}&rating={{ filter_param.vod_rating }}">{{ area }}</a></li>
         {% endif %}
         {% endfor %}
     </ul>
     <ul class="stui-screen__list clearfix">
-        <li><a class="text-muted" href="/video/type/{{ filter_param.vod_cid }}/?area={{ filter_param.vod_area }}">按年份</a></li>
+        <li><a class="text-muted" href="/video/type/{{ filter_param.vod_cid }}/?area={{ filter_param.vod_area }}&rating={{ filter_param.vod_rating }}">按年份</a></li>
         {% for year in filter_dict.year %}
         {% if filter_param.vod_year == year %}
-        <li class="active"><a href="/video/type/{{ filter_param.vod_cid }}/?year={{ year }}&area={{ filter_param.vod_area }}">{{ year }}</a></li>
+        <li class="active"><a href="/video/type/{{ filter_param.vod_cid }}/?year={{ year }}&area={{ filter_param.vod_area }}&rating={{ filter_param.vod_rating }}">{{ year }}</a></li>
         {% else %}
-        <li><a href="/video/type/{{ filter_param.vod_cid }}/?year={{ year }}&area={{ filter_param.vod_area }}">{{ year }}</a></li>
+        <li><a href="/video/type/{{ filter_param.vod_cid }}/?year={{ year }}&area={{ filter_param.vod_area }}&rating={{ filter_param.vod_rating }}">{{ year }}</a></li>
+        {% endif %}
+        {% endfor %}
+    </ul>
+    <ul class="stui-screen__list clearfix">
+        <li><a class="text-muted" href="/video/type/{{ filter_param.vod_cid }}/?area={{ filter_param.vod_area }}">按评分</a></li>
+        {% for rating in filter_dict.rating %}
+        {% if filter_param.vod_rating == rating %}
+        <li class="active"><a href="/video/type/{{ filter_param.vod_cid }}/?year={{ filter_param.vod_year }}&area={{ filter_param.vod_area }}&rating={{ rating }}">{{ rating }}</a></li>
+        {% else %}
+        <li><a href="/video/type/{{ filter_param.vod_cid }}/?year={{ filter_param.vod_year }}&area={{ filter_param.vod_area }}&rating={{ rating }}">{{ rating }}</a></li>
         {% endif %}
         {% endfor %}
     </ul>
