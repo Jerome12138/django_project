@@ -33,68 +33,59 @@
             {% for item in carousel_list %}
             {% if forloop.counter == 1 %}
             <div class="item active">
-            {% else %}
-            <div class="item">
-            {% endif %}
-                <a href="{{ item.vod_url }}" title="{{ item.vod_name }}"
-                    style="background: url({{item.vod_pic}}) no-repeat;">
-                    <span class="pic-text text-center">{{ item.vod_name }}</span>
-                </a>
+                {% else %}
+                <div class="item">
+                    {% endif %}
+                    <a href="{{ item.vod_url }}" title="{{ item.vod_name }}"
+                        style="background: url({{item.vod_pic}}) no-repeat;">
+                        <span class="pic-text text-center">{{ item.vod_name }}</span>
+                    </a>
+                </div>
+                {% endfor %}
             </div>
-            {% endfor %}
-        </div>
-        <!-- 轮播（Carousel）导航 -->
-        <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
-        </a>
-        <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
-        </a>
-    </div>
-    <!-- end 图片轮播 -->
-    <div class="stui-pannel__head clearfix" style="margin-top: 10px;">
-        <h3 class="title">
-            共收录{{data_count}}部影片
-        </h3>
-    </div>
-    <ul class="stui-vodlist clearfix">
-        {% for item in video_list %}
-        <li class="stui-vodlist__item">
-            <a class="stui-vodlist__thumb lazyload" href="/video/play/{{ item.vod_id }}/" title="{{item.vod_name}}"
-                data-original="{{ item.vod_pic }}" style="display: block; background-image: url('{{ item.vod_pic }}');">
-                <span class="play hidden-xs"></span>
-                <span class="pic-text text-right">{{item.vod_continu}}</span>
+            <!-- 轮播（Carousel）导航 -->
+            <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
             </a>
-            <h4 class="stui-vodlist__title"><a href="/video/play/{{ item.vod_id }}/"
-                    title="{{item.vod_name}}">{{item.vod_name}}</a></h4>
-            <p class="text text-overflow text-muted hidden-xs" title="{{item.vod_actor}}">{{item.vod_actor}}</p>
-        </li>
-        {% endfor%}
-    </ul>
-    <!-- 翻页 -->
-    <div style="clear: both;"></div>
-    <ul class="stui-page text-center clearfix">
-        {{ page_str }}
-    </ul>
-    <!-- end 翻页 -->
-</div>
-{% endblock %}
+            <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+        <!-- end 图片轮播 -->
+        <div class="stui-pannel__head clearfix" style="margin-top: 10px;">
+            <h3 class="title">
+                共收录{{data_count}}部影片
+            </h3>
+        </div>
+        <ul class="stui-vodlist clearfix">
+            {% for item in video_list %}
+            {% include "video_tag.html" %}
+            {% endfor%}
+        </ul>
+        <!-- 翻页 -->
+        <div style="clear: both;"></div>
+        <ul class="stui-page text-center clearfix">
+            {{ page_str }}
+        </ul>
+        <!-- end 翻页 -->
+    </div>
+    {% endblock %}
 
 
-{% block js %}
-<script src="/static/plugins/hammer/hammer.min.js"></script>
-<script src="/static/plugins/hammer/jquery.hammer.js"></script>
+    {% block js %}
+    <script src="/static/plugins/hammer/hammer.min.js"></script>
+    <script src="/static/plugins/hammer/jquery.hammer.js"></script>
 
-<script>
-    $('#myCarousel').hammer().on('swipeleft', function (event) {
-        console.log('1');
-        $(this).carousel('next');
-    });
-    $('#myCarousel').hammer().on('swiperight', function (event) {
-        console.log('2');
-        $(this).carousel('prev');
-    });
-</script>
-{% endblock %}
+    <script>
+        $('#myCarousel').hammer().on('swipeleft', function (event) {
+            console.log('1');
+            $(this).carousel('next');
+        });
+        $('#myCarousel').hammer().on('swiperight', function (event) {
+            console.log('2');
+            $(this).carousel('prev');
+        });
+    </script>
+    {% endblock %}

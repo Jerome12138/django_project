@@ -1,12 +1,13 @@
 import json
 import re
-import time,random
+import time
+import random
 import logging
 import requests
 from lxml import etree
 from queue import Queue, LifoQueue
 import threading
-from .DBHandler import dump_bulk_data, dump_bulk_data_url2
+from . import DBHandler
 
 logger = logging.getLogger('log')
 
@@ -32,16 +33,12 @@ HEADERS = {
     "User-Agent": random.choice(user_agent)
 }
 
-class GetWebData(object):  # 爬取网页数据，返回html数据
-    def __init__(self):
-        self.headers = {
-            "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.149 Safari/537.36"
-        }
 
+class GetWebData(object):  # 爬取网页数据，返回html数据
     def get_html(self, url, is_debug=0, *args, **kwargs):  # 实现主要逻辑
         if kwargs.get('referer'):
             self.headers['Referer'] = kwargs['referer']
-        res = requests.get(url, headers=self.headers)
+        res = requests.get(url, headers=HEADERS)
         if res.status_code == 200:
             html_str = res.content.decode()
         else:
@@ -51,6 +48,8 @@ class GetWebData(object):  # 爬取网页数据，返回html数据
             with open('abc.html', 'w', encoding="utf-8") as f:
                 f.write(html_str)
         html = etree.HTML(html_str)
+        if html is None:
+            return False
         return html
 
     def get_json(self, url):
@@ -78,7 +77,7 @@ def get_vod_data(vod_id):   # 根据vod_id爬取数据，返回数据字典
     get_web_data = GetWebData()
     html = get_web_data.get_html(
         "http://www.zuidazy4.com/?m=vod-detail-id-%s.html" % vod_id)
-    if html is None:
+    if not html:
         return False
     # 2.转化数据
     data = {}
@@ -120,7 +119,7 @@ def get_data_list(wd, page_index=1):    # 获取搜索列表
     get_web_data = GetWebData()
     html = get_web_data.get_html(
         "http://zuidazy4.com/index.php?m=vod-search-pg-%s-wd-%s.html" % (page_index, wd))
-    if html is None:
+    if not html:
         return False
     data_list = html.xpath('//div[@class="xing_vb"]/ul//span[@class="tt"]/..')
     data_count = int(html.xpath(
@@ -153,6 +152,11 @@ def run_forever(func):  # 无限循环运行
             func(obj)
     return wrapper
 
+def run_use_more_thread(func, count=1):   # 运行多线程
+    for i in range(count):
+        t = threading.Thread(target=func)
+        t.setDaemon(True)
+        t.start()
 
 class getAllData(object):   # 获取所有数据
     def __init__(self, url, url_index=1):
@@ -161,8 +165,8 @@ class getAllData(object):   # 获取所有数据
         self.updated = 0
         self.page_size = 40
         self.get_web_data = GetWebData()
-        self.url_queue = LifoQueue()
-        self.page_queue = Queue()
+        self.url_queue = LifoQueue()    # 先进后出
+        self.page_queue = Queue()    # 先进先出
         self.error_pages = []
 
     def parse_url(self, url):  # 发送请求，获取响应
@@ -180,7 +184,7 @@ class getAllData(object):   # 获取所有数据
             # 2.获取数据
             get_web_data = GetWebData()
             html = get_web_data.get_html(url)
-            if html is None:
+            if not html:
                 update_count = 480
             # 3.转化数据
             x_update = html.xpath(x_match)
@@ -229,9 +233,9 @@ class getAllData(object):   # 获取所有数据
         res_dict = self.page_queue.get()
         # 匹配站点
         if self.url_index == 1:
-            is_saved = dump_bulk_data(res_dict['data'])
+            is_saved = DBHandler.dump_bulk_data(res_dict['data'])
         elif self.url_index == 2:
-            is_saved = dump_bulk_data_url2(res_dict['data'])
+            is_saved = DBHandler.dump_bulk_data_url2(res_dict['data'])
         else:
             raise Exception('url参数错误(save_data)')
         if not is_saved:
@@ -242,12 +246,6 @@ class getAllData(object):   # 获取所有数据
             if int(res_dict['page']['pageindex']) % 100 == 0:
                 logger.console('page%s保存成功' % res_dict['page']['pageindex'])
         self.page_queue.task_done()
-
-    def run_use_more_thread(self, func, count=1):   # 运行多线程
-        for i in range(count):
-            t = threading.Thread(target=func)
-            t.setDaemon(True)
-            t.start()
 
     def run(self, flag=0, up_count=-1):  # 实现主要逻辑
         print('--------%s 站点%s开始更新--------' %
@@ -272,8 +270,8 @@ class getAllData(object):   # 获取所有数据
         if update_page:
             # 获取下页数据
             self.add_url_to_queue(update_page)
-            self.run_use_more_thread(self.add_page_to_queue, page_thread)
-            self.run_use_more_thread(self.save_data, save_thread)
+            run_use_more_thread(self.add_page_to_queue, page_thread)
+            run_use_more_thread(self.save_data, save_thread)
             # 等待线程结束
             self.url_queue.join()
             self.page_queue.join()
@@ -291,7 +289,7 @@ class IQiyi(object):  # 爱奇艺视频搜索及解析
 
     def i_search(self, wd):  # 搜索视频
         html = self.get_web_data.get_html('https://so.iqiyi.com/so/q_'+wd)
-        if html is None:
+        if not html:
             return False
         x_vod_list = html.xpath(
             '//div[contains(@class,"qy-search-result-con")]/div[@class="layout-main"]/div[@desc="搜索列表"]/div[@desc="card"]')
@@ -341,7 +339,7 @@ class IQiyi(object):  # 爱奇艺视频搜索及解析
         base_url = "https://www.administratorm.com/WANG.WANG/index.php?url="+vod_url
         referer = "https://www.administratorm.com/index.php?url="+vod_url
         html = self.get_web_data.get_html(base_url, referer=referer)
-        if html is None:
+        if not html:
             return False
         x_script = html.xpath('//script[contains(text(),"var vkey =")]/text()')
         if x_script:
@@ -357,14 +355,14 @@ def getDoubanInfo(wd):  # 爬虫
     url = "https://search.douban.com/movie/subject_search?search_text=%s&cat=1002" % wd
     get_web_data = GetWebData()
     html = get_web_data.get_html(url)
-    if html is None:
+    if not html:
         return False
     data_list = html.xpath('//div[@class="root"]//text()')
     print(data_list)
     return data_list
 
 
-def getRating(douban_id):
+def getRating(douban_id):   # 根据豆瓣id获取评分
     url = "http://api.douban.com/v2/movie/subject/%s?apikey=0df993c66c0c636e29ecbb5344252a4a" % douban_id
     response = requests.get(url, headers=HEADERS)
     if response.status_code != 200:
@@ -380,8 +378,7 @@ def findID(name, vod_year):  # name即剧名
         url = 'https://movie.douban.com/j/subject_suggest?q=%s' % name
         response = requests.get(url, headers=HEADERS)
         if response.status_code != 200:
-            print('Status Code: ', response.status_code)
-            return False
+            raise Exception('Status Code:', response.status_code)
         item_list = json.loads(response.content.decode())
         # 从item_list中的每个item中提取对应的ID值
         id_list = []  # ID存放列表
@@ -392,9 +389,105 @@ def findID(name, vod_year):  # name即剧名
         if len(id_list) == 1:
             return id_list[0]['id']
         else:   # 匹配到了多个ID（可能是同名不同剧）
-            print(name,'未匹配到合适id',id_list)
+            print(name, '未匹配到合适id', id_list)
             return None
     except Exception as e:  # 如果不能正常运行上述代码（不能访问网页等），输出未成功的剧名name。
-        print('ERROR:', name,e)
+        print('ERROR:', name, e)
         return None
 
+
+class Get80sScore(object):
+    def __init__(self):
+        self.url_temp = 'https://www.80s.tw/movie/list/-%s----p/%s'
+        self.data_queue = Queue()    # 先进先出
+        self.page_queue = Queue()    # 先进先出
+        self.get_web_data = GetWebData()
+        self.error_list = []
+        self.timeout = 0
+    
+    def get_page(self):
+        for year in range(2019, 2007, -1):
+            html = self.get_web_data.get_html(self.url_temp % (year, 1))
+            last_pager = html.xpath('//div[@class="pager"]/a[contains(text(),"尾页")]/@href')
+            if last_pager != []:
+                page_count = int(last_pager[0].split('/')[-1])
+            else:
+                print(last_pager)
+                page_count = 1
+            print('%s共%s页数据'%(year,page_count))
+            for page_index in range(1,page_count+1):
+                self.page_queue.put((str(year),page_index))
+
+    @run_forever
+    def get_video(self):    # 获取80s视频列表
+        page = self.page_queue.get()
+        html = self.get_web_data.get_html(self.url_temp % page )
+        if len(html) == 0:
+            print(self.url_temp % page,'无数据返回')
+            self.error_list.append(page)
+            return False
+        li_list = html.xpath('//ul[@class="me1 clearfix"]/li')
+        for item_li in li_list:
+            score = item_li.xpath('./a/span[@class="poster_score"]/text()')
+            if score != []:
+                self.data_queue.put({
+                    'vod_name': item_li.xpath('./h3/a/text()')[0].strip(),
+                    '80s_url': item_li.xpath('./h3/a/@href')[0],
+                    'year':page[0],
+                    'score': score,
+                })
+    
+    @run_forever
+    def save_score(self):   # 匹配视频信息并储存评分数据
+        video_data = self.data_queue.get()
+        vod_info = DBHandler.load_vod_data_by_name(video_data['vod_name'])
+        if len(vod_info) == 1 and vod_info[0].vod_douban_id is None:
+            if vod_info[0].vod_year == video_data['year']:
+                res = self.get_detail(video_data['80s_url'])
+                if res:
+                    (douban_id,rating) = res
+                    print(vod_info[0].vod_name, douban_id, rating,end='')
+                    DBHandler.dump_douban_id(vod_info[0].vod_id, douban_id)
+                    DBHandler.dump_rating(vod_info[0].vod_id, rating)
+                    print(' 保存成功[80s]')
+                    self.timeout = 0
+                    time.sleep(1 + float(random.randint(0, 100)) / 100)
+                else:
+                    self.timeout += 1
+                    time.sleep(60)
+                    if self.timeout == 5:
+                        print('----80s连续五次失败，等待30分钟---')
+                        time.sleep(1800)
+                    elif self.timeout > 10:
+                        print('-----80s连续十次失败，等待2h-----')
+                        time.sleep(7200)
+                    print('----------80s重新启动查找------------')
+
+
+    def get_detail(self,url):    # 获取豆瓣id
+        try:
+            html = self.get_web_data.get_html('https://www.80s.tw%s'%url)
+            if len(html) == 0:
+                print(self.url_temp % page,'无数据返回')
+                self.error_list.append(page)
+                return False
+            x_rating = html.xpath('//div[@class="info"]/div[@class="clearfix"]//span[contains(text(),"豆瓣评分：")]/../text()')
+            x_douban_id = html.xpath('//div[@class="info"]/div[@class="clearfix"]//a[contains(text(),"豆瓣短评")]/@href')
+            if len(x_rating)>=1 and len(x_douban_id)==1:
+                vod_score = x_rating[2].strip()
+                vod_douban_id = x_douban_id[0].split('/')[-2]
+                return (vod_douban_id,vod_score)
+            else:
+                print('detail:',x_rating,x_douban_id)
+                return False
+        except Exception as e:
+            print('get_detail Exception',url,e)
+            return False
+        
+
+    def run(self):  # 主程序逻辑
+        # 1.获取80s有豆瓣评分的电影数据
+        self.get_page()
+        run_use_more_thread(self.get_video,1)
+        # 2.将电影数据与数据库数据对比，匹配则储存评分
+        run_use_more_thread(self.save_score,1)

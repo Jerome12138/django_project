@@ -49,19 +49,7 @@
     </div>
     <ul class="stui-vodlist clearfix">
         {% for item in video_list %}
-        <li class="stui-vodlist__item">
-            <a class="stui-vodlist__thumb lazyload" href="/video/play/{{ item.vod_id }}/" title="{{item.vod_name}}"
-                data-original="{{ item.vod_pic }}" style="display: block; background-image: url('{{ item.vod_pic }}');">
-                <span class="play hidden-xs"></span>
-                <span class="pic-text text-right">{{item.vod_continu}}</span>
-                {% if item.vod_rating is not None %}
-                <span class="pic-text text-right" style="top: 0;bottom: unset;background-image: linear-gradient(to top,transparent,rgba(0,0,0,0.5));">{{item.vod_rating}}</span>
-                {% endif %}
-            </a>
-            <h4 class="stui-vodlist__title"><a href="/video/play/{{ item.vod_id }}/"
-                    title="{{item.vod_name}}">{{item.vod_name}}</a></h4>
-            <p class="text text-overflow text-muted hidden-xs" title="{{item.vod_actor}}">{{item.vod_actor}}</p>
-        </li>
+        {% include "video_tag.html" %}
         {% endfor%}
     </ul>
     <!-- 翻页 -->

@@ -28,6 +28,7 @@ urlpatterns = [
     path('add_carousel/', views.carousel_add),
     path('del_carousel/', views.carousel_del),
     path('get_rating/', views.get_douban_rating),
+    path('get_80s_rating/', views.get_80s_rating),
 
     # 其他
     path('url2_clear/', views.url2_clear),

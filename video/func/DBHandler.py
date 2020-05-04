@@ -23,6 +23,9 @@ def load_vod_data(vod_id):  # 从数据库获取某影片数据
     result = models.VideoData.objects.filter(vod_id=vod_id).first()
     return result
 
+def load_vod_data_by_name(vod_name):  # 从数据库根据视频名称获取影片数据
+    result = models.VideoData.objects.filter(vod_name=vod_name).all()
+    return result
 
 def load_all_vod_data():    # 从数据库获取全部影片数据
     result = models.VideoData.objects.exclude(vod_cid__in=[16, 17]).values(

@@ -230,11 +230,11 @@
                 type: "POST",
                 headers: { "X-CSRFToken": $.cookie('csrftoken') },
                 data: {
-                    'vod_id': $(this).parent().siblings('th').children('.vod_id').text(),
-                    'vod_index': $(this).parent().siblings().children('.vod_index').val(),
-                    'vod_name': $(this).parent().siblings().children('.vod_name').val(),
-                    'vod_url': $(this).parent().siblings().children('.vod_url').val(),
-                    'vod_pic': $(this).parent().siblings().children('.vod_pic').val(),
+                    'vod_id': $(this).parent().parent().siblings('th').children('.vod_id').text(),
+                    'vod_index': $(this).parent().parent().siblings().children('.vod_index').val(),
+                    'vod_name': $(this).parent().parent().siblings().children('.vod_name').val(),
+                    'vod_url': $(this).parent().parent().siblings().children('.vod_url').val(),
+                    'vod_pic': $(this).parent().parent().siblings().children('.vod_pic').val(),
                 }, // 要提交的数据
                 dataType: 'JSON',                 // 自动将接收到的data反序列化成obj返回
                 success: function (obj) {
@@ -253,14 +253,14 @@
         };
     });
     $('.del_btn').click(function () {
-        // var res = confirm('确认删除？');
+        var res = confirm('确认删除？');
         if (true) {
             $.ajax({
                 url: '/admin/del_carousel/',
                 type: "POST",
                 headers: { "X-CSRFToken": $.cookie('csrftoken') },
                 data: {
-                    'vod_id': $(this).parent().siblings('th').children('.vod_id').text(),
+                    'vod_id': $(this).parent().parent().siblings('th').children('.vod_id').text(),
                 }, // 要提交的数据
                 dataType: 'JSON',                 // 自动将接收到的data反序列化成obj返回
                 success: function (obj) {

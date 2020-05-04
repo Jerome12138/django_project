@@ -406,7 +406,7 @@ def carousel_add(request):
         carousel_data['vod_pic'] = request.POST.get('vod_pic')
         carousel_data['vod_url'] = request.POST.get('vod_url')
         carousel_data['vod_index'] = request.POST.get('vod_index')
-        # print(carousel_data)
+        print(carousel_data)
         # 转换为本地链接
         vod_pic = request.POST.get('vod_pic')
         if vod_pic and vod_pic.endswith('.webp'):
@@ -443,57 +443,71 @@ def carousel_del(request):
 
 @auth
 def test(request):
-    DBHandler.db_test()
+    # DBHandler.db_test()
     return HttpResponse('rep')
 
 
 @auth
 def get_douban_rating(request):
-    data_list = []
     none_list = DBHandler.redis_loadlist('douban_none_list')
     res_status = False
+    flag = True
     try:
-        data_list.extend(DBHandler.load_type_data(**{'vod_cid': '1'}))    # 获取所有电影
-        # data_list.extend(DBHandler.load_type_data(**{'vod_cid': '2'}))  # 获取所有电视剧
-        timeout=0
-        for item in data_list:
-            if item['vod_douban_id'] is None and item['vod_id'] not in none_list:  # 不存在豆瓣id，则查找id
-            #     print(item['vod_douban_id'],item['vod_rating'])
-            # if False:
-                # douban_id = GetPageData.findID('爱情公寓2','2011')    # test network
-                douban_id = GetPageData.findID(item['vod_name'], item['vod_year'])
-                if douban_id:   # 如果查找到豆瓣id
-                    timeout = 0
-                    # print(douban_id)
-                    DBHandler.dump_douban_id(item['vod_id'], douban_id)
-                    rating = GetPageData.getRating(douban_id)
-                    print(item['vod_name'], douban_id, rating)
-                    DBHandler.dump_rating(item['vod_id'], rating)
-                    # 防止账号被封，随机延迟
-                    time.sleep(3 + float(random.randint(40, 100)) / 20)
-                else:   # 未查找到豆瓣id
-                    test_net = GetPageData.findID('爱情公寓2', '2011')
-                    if test_net is None:
-                        print('----------地址被限制,稍后重试----------')
-                        if none_list:
-                            DBHandler.redis_dumplist('douban_none_list',none_list)
-                        time.sleep(60)
-                        timeout+=1
-                        if timeout == 5:
-                            print('连续五次失败，等待30分钟')
-                            time.sleep(1800)
-                        elif timeout>10:
-                            print('-----连续十次失败，退出-----')
-                            break
-                        print('----------重新启动查找------------')
-                    else:
-                        print(item['vod_name'],'无豆瓣id数据，存入列表')
-                        none_list.append(item['vod_id'])
+        while flag:
+            data_list = DBHandler.load_type_data(**{'vod_cid': '1'})    # 获取所有电影
+            print('剩%s部影片待获取'%(len(data_list)))
+            # data_list.extend(DBHandler.load_type_data(**{'vod_cid': '2'}))  # 获取所有电视剧
+            timeout = 0
+            for item in data_list:
+                if item['vod_douban_id'] is None and item['vod_id'] not in none_list:  # 不存在豆瓣id，则查找id
+                    #     print(item['vod_douban_id'],item['vod_rating'])
+                    # if False:
+                    # douban_id = GetPageData.findID('爱情公寓2','2011')    # test network
+                    douban_id = GetPageData.findID(
+                        item['vod_name'], item['vod_year'])
+                    if douban_id:   # 如果查找到豆瓣id
+                        timeout = 0
+                        rating = GetPageData.getRating(douban_id)
+                        print(item['vod_name'], douban_id, rating,end='')
+                        DBHandler.dump_douban_id(item['vod_id'], douban_id)
+                        DBHandler.dump_rating(item['vod_id'], rating)
+                        print('保存成功[douban]')
+                        # 防止账号被封，随机延迟
+                        time.sleep(3 + float(random.randint(40, 100)) / 20)
+                    else:   # 未查找到豆瓣id
+                        test_net = GetPageData.findID('爱情公寓2', '2011')
+                        if test_net is None:
+                            print('----------地址被限制,稍后重试----------')
+                            if none_list:
+                                DBHandler.redis_dumplist(
+                                    'douban_none_list', none_list)
+                            time.sleep(60)
+                            timeout += 1
+                            if timeout == 5:
+                                print('连续五次失败，等待20分钟')
+                                time.sleep(1200)
+                                print('----------重新启动查找------------')
+                                break
+                            elif timeout > 10:
+                                print('-----连续十次失败，退出-----')
+                                flag = False
+                                break
+                        else:
+                            print(item['vod_name'], '无豆瓣id数据，存入列表')
+                            none_list.append(item['vod_id'])
         res_status = True
     except Exception as e:
-        print('redis_dump exception:',e)
-        res_status = 'redis_dump exception:%s'%e
+        print('redis_dump exception:', e)
+        res_status = 'redis_dump exception:%s' % e
     finally:
         if none_list:
-            DBHandler.redis_dumplist('douban_none_list',none_list)
+            DBHandler.redis_dumplist('douban_none_list', none_list)
         return HttpResponse(res_status)
+
+
+@auth
+def get_80s_rating(request):
+    get_80s_score = GetPageData.Get80sScore()
+    get_80s_score.run()       
+
+
