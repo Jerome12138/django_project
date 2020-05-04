@@ -15,7 +15,9 @@
         </div>
         <div class="stui-player__detail detail">
             <h4 class="title">
-                <a href="/video/play/{{vod_data.vod_id}}/1/{{ index }}/">{{vod_data.vod_name}}</a>&nbsp;{{ video_url.0 }}
+                <a href="/video/play/{{vod_data.vod_id}}/1/{{ index }}/">{{vod_data.vod_name}}</a>
+                <span style="font-size: 14px;">&nbsp;{{ video_url.0 }}</span>
+                <a href="https://movie.douban.com/subject/{{ vod_data.vod_douban_id }}/" title="{{vod_data.vod_rating}}" style="color:#ff5f00;font-size: 14px;">[ {{vod_data.vod_rating }} ]</a>
                 <span style="float: right;font-size: 14px;color: red;">
                     <span class="hidden-xs">已有最新资源？点击→</span>
                     <a id="push_req" href="javascript:void(0);"
@@ -35,7 +37,7 @@
                 <span class="text-muted hidden-xs">导演：</span>
                 <a href="javascript:void(0)">{{vod_data.vod_director}}</a>&nbsp; <span class="split-line"></span>
                 <span class="text-muted hidden-xs">主演：</span>
-                <a href="javascript:void(0)" title="{{vod_data.vod_actor}}">{{vod_data.vod_actor|slice:"30"}}</a>&nbsp;
+                <a href="javascript:void(0)" title="{{vod_data.vod_actor}}">{{vod_data.vod_actor|slice:"30"}}</a>
             </p>
         </div>
     </div>

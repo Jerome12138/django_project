@@ -406,22 +406,32 @@ class Get80sScore(object):
         self.timeout = 0
     
     def get_page(self):
-        for year in range(2019, 2007, -1):
-            html = self.get_web_data.get_html(self.url_temp % (year, 1))
-            last_pager = html.xpath('//div[@class="pager"]/a[contains(text(),"尾页")]/@href')
-            if last_pager != []:
-                page_count = int(last_pager[0].split('/')[-1])
-            else:
-                print(last_pager)
-                page_count = 1
-            print('%s共%s页数据'%(year,page_count))
-            for page_index in range(1,page_count+1):
-                self.page_queue.put((str(year),page_index))
+        with open('80s_list.json','r',encoding='utf-8') as f:
+            page_list = json.load(f)
+        if len(page_list) !=0 :
+            for item in page_list:
+                self.page_queue.put(item)
+        else:
+            page_list = []
+            for year in range(2019, 2007, -1):
+                html = self.get_web_data.get_html(self.url_temp % (year, 1))
+                last_pager = html.xpath('//div[@class="pager"]/a[contains(text(),"尾页")]/@href')
+                if last_pager != []:
+                    page_count = int(last_pager[0].split('/')[-1])
+                else:
+                    print(last_pager)
+                    page_count = 1
+                print('%s共%s页数据'%(year,page_count))
+                for page_index in range(1,page_count+1):
+                    page_list.append((str(year),page_index))
+                    self.page_queue.put((str(year),page_index))
+                with open('80s_list.json','w',encoding='utf-8') as f:
+                    json.dump(page_list,f)
 
     @run_forever
     def get_video(self):    # 获取80s视频列表
         page = self.page_queue.get()
-        html = self.get_web_data.get_html(self.url_temp % page )
+        html = self.get_web_data.get_html(self.url_temp % (page[0],page[1]))
         if len(html) == 0:
             print(self.url_temp % page,'无数据返回')
             self.error_list.append(page)
