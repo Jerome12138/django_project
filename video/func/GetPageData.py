@@ -389,7 +389,8 @@ def findID(name, vod_year):  # name即剧名
         if len(id_list) == 1:
             return id_list[0]['id']
         else:   # 匹配到了多个ID（可能是同名不同剧）
-            print(name, '未匹配到合适id', id_list)
+            if name != '爱情公寓2':
+                print(name, '未匹配到合适id', id_list)
             return None
     except Exception as e:  # 如果不能正常运行上述代码（不能访问网页等），输出未成功的剧名name。
         print('ERROR:', name, e)
@@ -437,9 +438,11 @@ class Get80sScore(object):
 
     @run_forever
     def get_video(self):    # 获取80s视频列表
+        time.sleep(30)
         page = self.page_queue.get()
         if page[1] ==1:
             print(page[0],'开始获取')
+            time.sleep(180)
         html = self.get_web_data.get_html(self.url_temp % (page[0],page[1]))
         if len(html) == 0:
             print(self.url_temp % page,'无数据返回')
@@ -455,6 +458,7 @@ class Get80sScore(object):
                     'year':page[0],
                     'score': score,
                 })
+        
     
     @run_forever
     def save_score(self):   # 匹配视频信息并储存评分数据
