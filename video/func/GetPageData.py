@@ -470,6 +470,9 @@ class Get80sScore(object):
             self.count+=1
             if self.count%50==0:
                 print('已读取80s数据:%s'%self.count)
+                with open('80s_detail_list.json','w',encoding='utf-8') as f:
+                    json.dump(self.detail_list,f)
+                    print('详情页列表更新')
             vod_info = DBHandler.load_vod_data_by_name(video_data['vod_name'].replace(' ',''))
             if len(vod_info) == 1:
                 if vod_info[0].vod_douban_id:   # 如果已存在豆瓣id
@@ -478,6 +481,8 @@ class Get80sScore(object):
                 if vod_info[0].vod_year == video_data['year']:
                     res = self.get_detail(video_data['80s_url'])
                     if res:
+                        if res == -1:
+                            return
                         (douban_id,rating) = res
                         print(vod_info[0].vod_name, douban_id, rating,end='')
                         DBHandler.dump_douban_id(vod_info[0].vod_id, douban_id)
@@ -513,6 +518,9 @@ class Get80sScore(object):
                 vod_score = x_rating[2].strip()
                 vod_douban_id = x_douban_id[0].split('/')[-2]
                 return (vod_douban_id,vod_score)
+            elif len(x_rating)>=1:
+                print('无豆瓣id数据:',x_rating,x_douban_id,url)
+                return -1
             else:
                 print('detail:',x_rating,x_douban_id,url)
                 return False
