@@ -508,6 +508,7 @@ def get_douban_rating(request):
 @auth
 def get_80s_rating(request):
     get_80s_score = GetPageData.Get80sScore()
-    get_80s_score.run()       
+    get_80s_score.run() 
+    return HttpResponse('res')      
 
 
