@@ -459,6 +459,7 @@ class Get80sScore(object):
                     'year':page[0],
                     'score': score,
                 })
+                print(score)
         
     
     @run_forever
