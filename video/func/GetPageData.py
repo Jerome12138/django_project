@@ -35,29 +35,36 @@ HEADERS = {
 
 
 class GetWebData(object):  # 爬取网页数据，返回html数据
-    def get_html(self, url, is_debug=0, *args, **kwargs):  # 实现主要逻辑
-        if kwargs.get('referer'):
-            self.headers['Referer'] = kwargs['referer']
-        res = requests.get(url, headers=HEADERS)
-        if res.status_code == 200:
-            html_str = res.content.decode()
-        else:
-            print('爬虫网站%s返回状态码错误：%s' % (url, res.status_code))
-            return False
-        if is_debug:
-            with open('abc.html', 'w', encoding="utf-8") as f:
-                f.write(html_str)
-        html = etree.HTML(html_str)
-        if html is None:
-            return False
-        return html
+    def get_html(self, url, is_debug=0, *args, **kwargs): 
+        i = 0
+        while i < 3:
+            try:
+                if kwargs.get('referer'):
+                    self.headers['Referer'] = kwargs['referer']
+                res = requests.get(url, headers=HEADERS, timeout=(3, 15))
+                if res.status_code == 200:
+                    html_str = res.content.decode()
+                else:
+                    print('爬虫网站%s返回状态码错误：%s' % (url, res.status_code))
+                    return False
+                if is_debug:
+                    with open('abc.html', 'w', encoding="utf-8") as f:
+                        f.write(html_str)
+                html = etree.HTML(html_str)
+                if html is None:
+                    return False
+                return html
+            except requests.exceptions.RequestException:
+                i += 1
+                print('%s请求超时，重试%s次' % (url, i))
+        return False
 
     def get_json(self, url):
         i = 0
         while i < 3:
             try:
                 response = requests.get(
-                    url, headers=self.headers, timeout=(3, 15))
+                    url, headers=HEADERS, timeout=(3, 15))
                 if response.status_code != 200:
                     print('Status Code：', response.status_code)
                     return False
@@ -403,78 +410,75 @@ class Get80sScore(object):
         # https://www.80s.tw/ju/list/---2019-0--p/2
         # 'https://www.80s.tw/movie/list/-%s----p/%s'
         self.data_queue = Queue()    # 先进先出
-        self.page_queue = Queue()    # 先进先出
         self.get_web_data = GetWebData()
         self.error_list = []
+        self.detail_list = []
         self.timeout = 0
         self.count = 0
     
-    def get_page(self):
+    def get_page(self): # 获取80s页面
         try:
-            # page_list = []
-            with open('80s_list.json','r',encoding='utf-8') as f:
-                page_list = json.load(f)
-            if len(page_list) != 0: #----------
-                print(len(page_list))
-                for item in page_list:
-                    self.page_queue.put(item)
-            else:
-                page_list = []
-                for year in range(2019, 2007, -1):
-                    html = self.get_web_data.get_html(self.url_temp % (year, 1))
-                    last_pager = html.xpath('//div[@class="pager"]/a[contains(text(),"尾页")]/@href')
-                    if last_pager != []:
-                        page_count = int(last_pager[0].split('/')[-1])
-                    else:
-                        print(last_pager)
-                        page_count = 1
-                    print('%s共%s页数据'%(year,page_count))
-                    for page_index in range(1,page_count+1):
-                        page_list.append((str(year),page_index))
-                        self.page_queue.put((str(year),page_index))
-                    with open('80s_list.json','w',encoding='utf-8') as f:
-                        json.dump(page_list,f)
+            page_list = []
+            for year in range(2020, 2007, -1):
+                html = self.get_web_data.get_html(self.url_temp % (year, 1))
+                last_pager = html.xpath('//div[@class="pager"]/a[contains(text(),"尾页")]/@href')
+                if last_pager != []:
+                    page_count = int(last_pager[0].split('/')[-1])
+                else:
+                    print('获取页数错误：',last_pager)
+                    page_count = 1
+                print('%s共%s页数据'%(year,page_count))
+                for page_index in range(1,page_count+1):
+                    page_list.append((str(year),page_index))
+                with open('80s_list.json','w',encoding='utf-8') as f:
+                    json.dump(page_list,f)
+                    print('页面列表保存成功')
+            return page_list
         except Exception as e:
             print('get_80s Exception: ',e)
-
-    @run_forever
-    def get_video(self):    # 获取80s视频列表
-        time.sleep(30)
-        page = self.page_queue.get()
-        if page[1] ==1:
-            print(page[0],'开始获取')
-            time.sleep(180)
-        html = self.get_web_data.get_html(self.url_temp % (page[0],page[1]))
-        if len(html) == 0:
-            print(self.url_temp % page,'无数据返回')
-            self.error_list.append(page)
             return False
-        li_list = html.xpath('//ul[@class="me1 clearfix"]/li')
-        for item_li in li_list:
-            score = item_li.xpath('./a/span[@class="poster_score"]/text()')
-            if score != []:
-                self.data_queue.put({
-                    'vod_name': item_li.xpath('./h3/a/text()')[0].strip(),
-                    '80s_url': item_li.xpath('./h3/a/@href')[0],
-                    'year':page[0],
-                    'score': score,
-                })
-                print(score)
+
+    def get_video(self,year,page_index):    # 获取当前页面的80s视频列表
+        video_list = []
+        try:
+            # if page_index == 1 : # 第一页时输出
+            print('开始获取',year,page_index)
+            html = self.get_web_data.get_html(self.url_temp % (year,page_index))
+            if len(html) == 0:
+                self.error_list.append((year,page_index))
+                raise Exception('html%s无数据返回' % self.url_temp % (year,page_index))
+            li_list = html.xpath('//ul[@class="me1 clearfix"]/li')
+            for item_li in li_list: # 爬取视频列表数据
+                name = item_li.xpath('./h3/a/text()')[0].strip()
+                score = item_li.xpath('./a/span[@class="poster_score"]/text()')
+                if score != []: # 有评分，添加进列表
+                    vod_data = {
+                        'vod_name': name,
+                        '80s_url': item_li.xpath('./h3/a/@href')[0],
+                        'year':year,
+                        'score': score[0].strip(),
+                    }
+                    video_list.append(vod_data)
+            return video_list
+        except Exception as e:
+            print('get_video_list Exception',url,e)
+            return False
         
-    
-    @run_forever
-    def save_score(self):   # 匹配视频信息并储存评分数据
-        video_data = self.data_queue.get()
+
+    def save_score(self,video_data):   # 匹配视频信息并储存评分数据
         self.count+=1
-        if self.count%10==0:
-            print(self.count)
-        vod_info = DBHandler.load_vod_data_by_name(video_data['vod_name'])
-        if len(vod_info) == 1 and vod_info[0].vod_douban_id is None:
+        if self.count%50==0:
+            print('已读取80s数据',self.count)
+        vod_info = DBHandler.load_vod_data_by_name(video_data['vod_name'].replace(' ',''))
+        if len(vod_info) == 1:
+            if vod_info[0].vod_douban_id:   # 如果已存在豆瓣id
+                self.detail_list.pop(video_data)
+                return
             if vod_info[0].vod_year == video_data['year']:
                 res = self.get_detail(video_data['80s_url'])
                 if res:
                     (douban_id,rating) = res
-                    print(vod_info[0].vod_name, douban_id, rating,end='')
+                    print('视频',vod_info[0].vod_name, douban_id, rating,end='')
                     DBHandler.dump_douban_id(vod_info[0].vod_id, douban_id)
                     DBHandler.dump_rating(vod_info[0].vod_id, rating)
                     print(' 保存成功[80s]')
@@ -496,7 +500,7 @@ class Get80sScore(object):
         try:
             html = self.get_web_data.get_html('https://www.80s.tw%s'%url)
             if len(html) == 0:
-                print(self.url_temp % page,'无数据返回')
+                print('https://www.80s.tw%s'%url,'无数据返回')
                 self.error_list.append(page)
                 return False
             x_rating = html.xpath('//div[@class="info"]/div[@class="clearfix"]//span[contains(text(),"豆瓣评分：")]/../text()')
@@ -506,7 +510,7 @@ class Get80sScore(object):
                 vod_douban_id = x_douban_id[0].split('/')[-2]
                 return (vod_douban_id,vod_score)
             else:
-                print('detail:',x_rating,x_douban_id)
+                print('detail:',x_rating,x_douban_id,url)
                 return False
         except Exception as e:
             print('get_detail Exception',url,e)
@@ -514,8 +518,39 @@ class Get80sScore(object):
         
 
     def run(self):  # 主程序逻辑
-        # 1.获取80s有豆瓣评分的电影数据
-        self.get_page()
-        run_use_more_thread(self.get_video,1)
-        # 2.将电影数据与数据库数据对比，匹配则储存评分
-        run_use_more_thread(self.save_score,1)
+        page_list = []
+        try:
+            # 1.获取80s页面
+            with open('80s_list.json','r',encoding='utf-8') as f:
+                page_list = json.load(f)
+            if len(page_list) != 0: # 已存在目录
+                print('共有80s页面：%s' % len(page_list))
+            else:
+                page_list = self.get_page()
+            assert page_list
+            # 2.获取80s页面中有豆瓣评分的电影数据
+            with open('80s_detail_list.json','r',encoding='utf-8') as f:
+                self.detail_list = json.load(f)
+            if len(self.detail_list) == 0: # 无视频列表则重新获取
+                print('视频列表为空，重新获取')
+                for page in page_list:
+                    video_list = self.get_video(*page)
+                    self.detail_list.extend(video_list)
+                    # time.sleep(5) # 每3分钟获取一次页面
+            # 3.将电影数据与数据库数据对比，匹配则储存评分
+            for video_data in self.detail_list:
+                self.save_score(video_data)
+            print('------80s获取完毕-----')
+            print(self.error_list)
+            if len(self.detail_list)!=0:
+                with open('80s_detail_list.json','w',encoding='utf-8') as f:
+                    json.dump(self.detail_list,f)
+                    print('详情页列表保存成功')
+            return True
+        except Exception as e:
+            print('80s_main Exception',e)
+            if len(self.detail_list)!=0:
+                with open('80s_detail_list.json','w',encoding='utf-8') as f:
+                    json.dump(self.detail_list,f)
+                    print('详情页列表保存成功')
+            return False

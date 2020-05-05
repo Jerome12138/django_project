@@ -455,14 +455,11 @@ def get_douban_rating(request):
     try:
         while flag:
             data_list = DBHandler.load_type_data(**{'vod_cid': '1'})    # 获取所有电影
-            # print('剩%s部影片待获取'%(len(data_list)))
             # data_list.extend(DBHandler.load_type_data(**{'vod_cid': '2'}))  # 获取所有电视剧
             timeout = 0
             for item in data_list:
                 if item['vod_douban_id'] is None and item['vod_id'] not in none_list:  # 不存在豆瓣id，则查找id
-                    #     print(item['vod_douban_id'],item['vod_rating'])
-                    # if False:
-                    # douban_id = GetPageData.findID('爱情公寓2','2011')    # test network
+                    # print(item['vod_douban_id'],item['vod_rating'])
                     douban_id = GetPageData.findID(
                         item['vod_name'], item['vod_year'])
                     if douban_id:   # 如果查找到豆瓣id
@@ -472,23 +469,22 @@ def get_douban_rating(request):
                         DBHandler.dump_douban_id(item['vod_id'], douban_id)
                         DBHandler.dump_rating(item['vod_id'], rating)
                         print('保存成功[douban]')
-                        # 防止账号被封，随机延迟
-                        time.sleep(3 + float(random.randint(40, 100)) / 20)
+                        time.sleep(3 + float(random.randint(40, 100)) / 20) # 防止账号被封，随机延迟
                     else:   # 未查找到豆瓣id
                         test_net = GetPageData.findID('爱情公寓2', '2011')
-                        if test_net is None:
+                        if test_net is None:    # 网络异常
                             print('----------地址被限制,稍后重试----------')
                             if none_list:
                                 DBHandler.redis_dumplist(
                                     'douban_none_list', none_list)
-                            time.sleep(60)
+                            time.sleep(180)
                             timeout += 1
                             if timeout == 5:
                                 print('连续五次失败，等待20分钟')
                                 time.sleep(1200)
                                 print('----------重新启动查找------------')
                                 break
-                            elif timeout > 10:
+                            elif timeout >= 10:
                                 print('-----连续十次失败，退出-----')
                                 flag = False
                                 break

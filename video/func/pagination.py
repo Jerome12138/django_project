@@ -38,10 +38,11 @@ class Page(object):
         # 页码
         page_num = '<li class="visible-xs page-num" style="width:34%%"><span class="num">%s/%s</span></li>' % (self.current_page, self.page_count)
         page_input = '''
-            <li class="page-input hide" style="width:22%%"><input name="page-id" id="page-id" value=%s
+            <li class="page-input" style="width:22%%;display: none!important;">
+            <input name="page-id" id="page-id" value=%s
             style="width:100%%;display: inline-block;padding: 5px 15px;border-radius: 4px;background-color: #fff;border: 1px solid #eee;"/></li>
             '''%self.current_page
-        page_go = '<li class="page-go-li hide active" style="width:12%"><a class="page-go" href="javascript:">GO</a></li>'
+        page_go = '<li class="page-go-li active" style="width:12%;display: none!important;"><a class="page-go" href="javascript:">GO</a></li>'
         page_list.append(page_num)
         page_list.append(page_input)
         page_list.append(page_go)
@@ -68,15 +69,15 @@ class Page(object):
         page_js = '''
         <script>
             $(".page-num").click(function () {
-                $(".page-num").removeClass("visible-xs").addClass("hide");
-                $(".page-input").removeClass("hide");
-                $(".page-go-li").removeClass("hide");
-                $("#page-id").removeClass("hide").focus();
+                $(".page-num").removeClass("visible-xs").css("display","none!important");
+                $(".page-input").css("display");
+                $(".page-go-li").css("display");
+                $("#page-id").css("display").focus();
             });
             function func1(){
                 $(".page-num").addClass("visible-xs");
-                $(".page-input").addClass("hide");
-                $(".page-go-li").addClass("hide");
+                $(".page-input").css("display","none!important");
+                $(".page-go-li").css("display","none!important");
             };
             $("#page-id").blur(function(){
                 setTimeout('func1()',2000);
