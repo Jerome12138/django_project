@@ -469,12 +469,12 @@ class Get80sScore(object):
         try:
             self.count+=1
             if self.count%50==0:
-                print('已读取80s数据',self.count)
+                print('已读取80s数据:%s'%self.count)
             vod_info = DBHandler.load_vod_data_by_name(video_data['vod_name'].replace(' ',''))
             if len(vod_info) == 1:
                 if vod_info[0].vod_douban_id:   # 如果已存在豆瓣id
-                    self.detail_list.pop(video_data)
-                    return
+                    self.detail_list.remove(video_data)
+                    return False
                 if vod_info[0].vod_year == video_data['year']:
                     res = self.get_detail(video_data['80s_url'])
                     if res:
@@ -496,7 +496,7 @@ class Get80sScore(object):
                             time.sleep(7200)
                         print('----------80s重新启动查找------------')
         except Exception as e:
-            print('save_score Exception:',video_data,e)
+            print('save_score Exception:',video_data['vod_name'],e)
             return False
 
 
