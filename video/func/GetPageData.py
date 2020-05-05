@@ -466,34 +466,38 @@ class Get80sScore(object):
         
 
     def save_score(self,video_data):   # 匹配视频信息并储存评分数据
-        self.count+=1
-        if self.count%50==0:
-            print('已读取80s数据',self.count)
-        vod_info = DBHandler.load_vod_data_by_name(video_data['vod_name'].replace(' ',''))
-        if len(vod_info) == 1:
-            if vod_info[0].vod_douban_id:   # 如果已存在豆瓣id
-                self.detail_list.pop(video_data)
-                return
-            if vod_info[0].vod_year == video_data['year']:
-                res = self.get_detail(video_data['80s_url'])
-                if res:
-                    (douban_id,rating) = res
-                    print('视频',vod_info[0].vod_name, douban_id, rating,end='')
-                    DBHandler.dump_douban_id(vod_info[0].vod_id, douban_id)
-                    DBHandler.dump_rating(vod_info[0].vod_id, rating)
-                    print(' 保存成功[80s]')
-                    self.timeout = 0
-                    time.sleep(1 + float(random.randint(0, 100)) / 100)
-                else:
-                    self.timeout += 1
-                    time.sleep(180)
-                    if self.timeout == 5:
-                        print('----80s连续五次失败，等待30分钟---')
-                        time.sleep(1800)
-                    elif self.timeout > 10:
-                        print('-----80s连续十次失败，等待2h-----')
-                        time.sleep(7200)
-                    print('----------80s重新启动查找------------')
+        try:
+            self.count+=1
+            if self.count%50==0:
+                print('已读取80s数据',self.count)
+            vod_info = DBHandler.load_vod_data_by_name(video_data['vod_name'].replace(' ',''))
+            if len(vod_info) == 1:
+                if vod_info[0].vod_douban_id:   # 如果已存在豆瓣id
+                    self.detail_list.pop(video_data)
+                    return
+                if vod_info[0].vod_year == video_data['year']:
+                    res = self.get_detail(video_data['80s_url'])
+                    if res:
+                        (douban_id,rating) = res
+                        print(vod_info[0].vod_name, douban_id, rating,end='')
+                        DBHandler.dump_douban_id(vod_info[0].vod_id, douban_id)
+                        DBHandler.dump_rating(vod_info[0].vod_id, rating)
+                        print(' 保存成功[80s]')
+                        self.timeout = 0
+                        time.sleep(1 + float(random.randint(0, 100)) / 100)
+                    else:
+                        self.timeout += 1
+                        time.sleep(180)
+                        if self.timeout == 5:
+                            print('----80s连续五次失败，等待30分钟---')
+                            time.sleep(1800)
+                        elif self.timeout > 10:
+                            print('-----80s连续十次失败，等待2h-----')
+                            time.sleep(7200)
+                        print('----------80s重新启动查找------------')
+        except Exception as e:
+            print('save_score Exception:',video_data,e)
+            return False
 
 
     def get_detail(self,url):    # 获取豆瓣id
