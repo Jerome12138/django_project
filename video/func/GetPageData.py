@@ -407,6 +407,7 @@ class Get80sScore(object):
         self.get_web_data = GetWebData()
         self.error_list = []
         self.timeout = 0
+        self.count = 0
     
     def get_page(self):
         try:
@@ -463,6 +464,9 @@ class Get80sScore(object):
     @run_forever
     def save_score(self):   # 匹配视频信息并储存评分数据
         video_data = self.data_queue.get()
+        self.count+=1
+        if self.count%10==0:
+            print(self.count)
         vod_info = DBHandler.load_vod_data_by_name(video_data['vod_name'])
         if len(vod_info) == 1 and vod_info[0].vod_douban_id is None:
             if vod_info[0].vod_year == video_data['year']:
