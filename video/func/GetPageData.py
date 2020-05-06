@@ -406,7 +406,7 @@ def findID(name, vod_year):  # name即剧名
 
 class Get80sScore(object):
     def __init__(self):
-        self.url_temp = 'https://www.80s.tw/ju/list/---%s-0--p/%s'
+        self.url_temp = 'https://www.80s.tw/movie/list/-%s----p/%s'
         # https://www.80s.tw/ju/list/---2019-0--p/2
         # 'https://www.80s.tw/movie/list/-%s----p/%s'
         self.data_queue = Queue()    # 先进先出
