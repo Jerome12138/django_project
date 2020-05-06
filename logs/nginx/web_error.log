@@ -2161,3 +2161,778 @@
 2020/05/03 12:11:34 [info] 7716#7716: *3516 epoll_wait() reported that client prematurely closed connection, so upstream connection is closed too while sending request to upstream, client: 223.73.88.34, server: 49.234.78.157, request: "GET /admin/get_rating/ HTTP/1.1", upstream: "uwsgi://127.0.0.1:8001", host: "49.234.78.157", referrer: "http://49.234.78.157/admin/"
 2020/05/03 12:11:39 [info] 7716#7716: *3519 client 223.73.88.34 closed keepalive connection
 2020/05/03 12:11:49 [info] 7716#7716: *3522 client 223.73.88.34 closed keepalive connection
+2020/05/03 12:19:19 [info] 7716#7716: *3525 client 223.73.88.34 closed keepalive connection
+2020/05/03 12:19:40 [info] 7716#7716: *3527 epoll_wait() reported that client prematurely closed connection, so upstream connection is closed too while sending request to upstream, client: 223.73.88.34, server: 49.234.78.157, request: "GET /admin/get_rating/ HTTP/1.1", upstream: "uwsgi://127.0.0.1:8001", host: "49.234.78.157", referrer: "http://49.234.78.157/admin/"
+2020/05/03 12:19:49 [info] 7716#7716: *3532 client 223.73.88.34 closed keepalive connection
+2020/05/03 12:21:09 [info] 7716#7716: *3534 client 223.73.88.34 closed keepalive connection
+2020/05/03 12:21:49 [info] 7716#7716: *3536 client 223.73.88.34 closed keepalive connection
+2020/05/03 12:22:09 [info] 7716#7716: *3539 client 223.73.88.34 closed keepalive connection
+2020/05/03 12:22:19 [info] 7716#7716: *3541 client 223.73.88.34 closed keepalive connection
+2020/05/03 12:22:29 [info] 7716#7716: *3544 client 223.73.88.34 closed keepalive connection
+2020/05/03 12:22:39 [info] 7716#7716: *3546 client 223.73.88.34 closed keepalive connection
+2020/05/03 12:22:59 [info] 7716#7716: *3549 client 223.73.88.34 closed keepalive connection
+2020/05/03 12:23:09 [info] 7716#7716: *3551 client 223.73.88.34 closed keepalive connection
+2020/05/03 12:23:39 [info] 7716#7716: *3553 client 223.73.88.34 closed keepalive connection
+2020/05/03 12:23:49 [info] 7716#7716: *3558 client 223.73.88.34 closed keepalive connection
+2020/05/03 12:23:49 [info] 7716#7716: *3557 client 223.73.88.34 closed keepalive connection
+2020/05/03 12:23:49 [info] 7716#7716: *3555 client 223.73.88.34 closed keepalive connection
+2020/05/03 12:23:49 [info] 7716#7716: *3559 client 223.73.88.34 closed keepalive connection
+2020/05/03 12:23:49 [info] 7716#7716: *3560 client 223.73.88.34 closed keepalive connection
+2020/05/03 12:23:59 [info] 7716#7716: *3561 client 223.73.88.34 closed keepalive connection
+2020/05/03 12:23:59 [info] 7716#7716: *3566 client 223.73.88.34 closed keepalive connection
+2020/05/03 12:23:59 [info] 7716#7716: *3565 client 223.73.88.34 closed keepalive connection
+2020/05/03 12:24:09 [info] 7716#7716: *3564 client 223.73.88.34 closed keepalive connection
+2020/05/03 12:24:09 [info] 7716#7716: *3567 client 223.73.88.34 closed keepalive connection
+2020/05/03 12:24:19 [info] 7716#7716: *3568 client 223.73.88.34 closed keepalive connection
+2020/05/03 13:00:51 [info] 7716#7716: *3569 client 43.229.73.245 closed keepalive connection
+2020/05/03 14:05:39 [info] 7716#7716: *3571 client 183.192.179.16 closed keepalive connection (104: Connection reset by peer)
+2020/05/03 14:10:09 [info] 7716#7716: *3574 recv() failed (104: Connection reset by peer) while sending to client, client: 80.82.78.104, server: 49.234.78.157, request: "POST /editBlackAndWhiteList HTTP/1.1", upstream: "uwsgi://127.0.0.1:8001", host: "49.234.78.157:80"
+2020/05/03 14:23:24 [info] 7716#7716: *3578 client 223.73.88.34 closed keepalive connection
+2020/05/03 14:23:26 [info] 7716#7716: *3580 client 223.73.88.34 closed keepalive connection
+2020/05/03 14:23:29 [info] 7716#7716: *3579 client 223.73.88.34 closed keepalive connection
+2020/05/03 14:23:38 [info] 7716#7716: *3576 client 223.73.88.34 closed keepalive connection
+2020/05/03 14:24:23 [info] 7716#7716: *3584 client 223.73.88.34 closed keepalive connection
+2020/05/03 14:24:57 [info] 7716#7716: *3586 epoll_wait() reported that client prematurely closed connection, so upstream connection is closed too while sending request to upstream, client: 223.73.88.34, server: 49.234.78.157, request: "GET /admin/get_rating/ HTTP/1.1", upstream: "uwsgi://127.0.0.1:8001", host: "49.234.78.157", referrer: "http://49.234.78.157/admin/"
+2020/05/03 14:25:59 [info] 7716#7716: *3590 client 223.73.88.34 closed keepalive connection
+2020/05/03 14:26:27 [info] 7716#7716: *3594 client 223.73.88.34 closed keepalive connection (104: Connection reset by peer)
+2020/05/03 14:31:03 [info] 7716#7716: *3596 client 138.255.185.140 closed keepalive connection
+2020/05/03 14:33:22 [error] 7716#7716: *3598 open() "/home/ubuntu/git/django_project/collected_static//pay-simple.css" failed (2: No such file or directory), client: 171.107.184.148, server: 49.234.78.157, request: "GET /static/pay-simple.css HTTP/1.1", host: "49.234.78.157"
+2020/05/03 14:33:22 [info] 7716#7716: *3598 client 171.107.184.148 closed keepalive connection
+2020/05/03 16:01:16 [info] 7716#7716: *3601 client 182.254.52.17 closed keepalive connection (104: Connection reset by peer)
+2020/05/03 16:03:20 [info] 7716#7716: *3603 client 223.73.88.34 closed keepalive connection
+2020/05/03 16:07:43 [info] 7716#7716: *3606 epoll_wait() reported that client prematurely closed connection, so upstream connection is closed too while sending request to upstream, client: 223.73.88.34, server: 49.234.78.157, request: "GET /admin/get_rating/ HTTP/1.1", upstream: "uwsgi://127.0.0.1:8001", host: "49.234.78.157", referrer: "http://49.234.78.157/admin/"
+2020/05/03 16:07:47 [info] 7716#7716: *3610 client 223.73.88.34 closed keepalive connection
+2020/05/03 16:07:52 [info] 7716#7716: *3611 client 223.73.88.34 closed keepalive connection
+2020/05/03 16:07:55 [info] 7716#7716: *3609 client 223.73.88.34 closed keepalive connection (104: Connection reset by peer)
+2020/05/03 17:46:23 [info] 7716#7716: *3620 client 155.133.4.141 closed keepalive connection
+2020/05/03 18:41:51 [info] 7716#7716: *3642 client 162.243.136.135 closed keepalive connection
+2020/05/03 19:17:48 [info] 7716#7716: *3644 client 101.89.19.140 closed keepalive connection (104: Connection reset by peer)
+2020/05/03 20:09:33 [info] 7716#7716: *3648 client 45.76.144.219 closed keepalive connection
+2020/05/03 20:32:05 [info] 7716#7716: *3652 client 182.254.52.17 closed keepalive connection (104: Connection reset by peer)
+2020/05/03 21:13:57 [info] 7716#7716: *3654 client 112.96.109.175 closed keepalive connection
+2020/05/03 21:13:58 [info] 7716#7716: *3656 client 112.96.109.175 closed keepalive connection
+2020/05/03 21:14:02 [info] 7716#7716: *3657 client 112.96.109.175 closed keepalive connection
+2020/05/03 21:14:04 [info] 7716#7716: *3658 client 112.96.109.175 closed keepalive connection
+2020/05/03 21:14:06 [info] 7716#7716: *3659 client 112.96.109.175 closed keepalive connection
+2020/05/03 21:14:22 [info] 7716#7716: *3661 client 112.96.109.175 closed keepalive connection
+2020/05/03 21:14:55 [info] 7716#7716: *3663 client 112.96.109.175 closed keepalive connection
+2020/05/03 21:14:59 [info] 7716#7716: *3665 client 112.96.109.175 closed keepalive connection
+2020/05/03 21:15:05 [info] 7716#7716: *3667 client 112.96.109.175 closed keepalive connection
+2020/05/03 21:15:12 [info] 7716#7716: *3669 client 112.96.109.175 closed keepalive connection
+2020/05/03 21:15:31 [info] 7716#7716: *3671 client 112.96.109.175 closed keepalive connection
+2020/05/03 21:15:36 [info] 7716#7716: *3673 client 112.96.109.175 closed keepalive connection
+2020/05/03 21:15:43 [info] 7716#7716: *3675 client 112.96.109.175 closed keepalive connection
+2020/05/03 21:15:47 [info] 7716#7716: *3677 client 112.96.109.175 closed keepalive connection
+2020/05/03 21:15:53 [info] 7716#7716: *3679 client 112.96.109.175 closed keepalive connection
+2020/05/03 21:15:57 [info] 7716#7716: *3681 client 112.96.109.175 closed keepalive connection
+2020/05/03 21:16:50 [info] 7716#7716: *3683 client 112.96.109.175 closed keepalive connection
+2020/05/03 21:16:53 [info] 7716#7716: *3685 client 112.96.109.175 closed keepalive connection
+2020/05/03 21:19:39 [info] 7716#7716: *3689 client 112.96.109.175 closed keepalive connection
+2020/05/03 21:19:42 [info] 7716#7716: *3687 client 112.96.109.175 closed keepalive connection
+2020/05/03 21:19:58 [info] 7716#7716: *3690 client 112.96.109.175 closed keepalive connection
+2020/05/03 21:20:09 [info] 7716#7716: *3692 client 112.96.109.175 closed keepalive connection
+2020/05/03 22:11:57 [info] 7716#7716: *3694 client 83.34.162.179 closed keepalive connection
+2020/05/03 22:48:38 [info] 7716#7716: *3701 client 223.73.88.34 closed keepalive connection
+2020/05/03 22:49:30 [info] 7716#7716: *3705 client 223.73.88.34 closed keepalive connection
+2020/05/03 22:52:19 [info] 7716#7716: *3708 client 223.73.88.34 closed keepalive connection (104: Connection reset by peer)
+2020/05/03 22:59:10 [info] 7716#7716: *3710 client 83.34.162.179 closed keepalive connection
+2020/05/04 00:07:24 [info] 7716#7716: *3715 client 223.73.88.34 closed keepalive connection (104: Connection reset by peer)
+2020/05/04 00:08:43 [info] 7716#7716: *3728 client 223.73.88.34 closed keepalive connection (104: Connection reset by peer)
+2020/05/04 00:20:19 [info] 7716#7716: *3733 client 14.215.156.145 closed keepalive connection
+2020/05/04 00:21:54 [info] 7716#7716: *3734 client 112.96.109.175 closed keepalive connection
+2020/05/04 00:23:08 [info] 7716#7716: *3736 client 112.96.109.175 closed keepalive connection
+2020/05/04 00:23:11 [info] 7716#7716: *3738 client 112.96.109.175 closed keepalive connection
+2020/05/04 03:33:28 [info] 7716#7716: *3782 client 14.18.182.223 closed keepalive connection (104: Connection reset by peer)
+2020/05/04 03:47:37 [info] 7716#7716: *3785 client 103.82.80.229 closed keepalive connection
+2020/05/04 04:10:28 [info] 7716#7716: *3787 client 184.154.47.2 closed keepalive connection
+2020/05/04 05:01:21 [info] 7716#7716: *3789 client 190.216.231.150 closed keepalive connection
+2020/05/04 05:15:01 [info] 7716#7716: *3791 client 162.243.142.169 closed keepalive connection
+2020/05/04 05:24:17 [info] 7716#7716: *3793 client 182.254.52.17 closed keepalive connection (104: Connection reset by peer)
+2020/05/04 06:15:59 [info] 7716#7716: *3797 client 31.206.178.10 closed keepalive connection
+2020/05/04 06:27:11 [info] 7716#7716: *3801 client 59.36.132.110 closed keepalive connection
+2020/05/04 07:59:09 [info] 7716#7716: *3805 client 179.106.100.182 closed keepalive connection
+2020/05/04 08:12:40 [info] 7716#7716: *3809 client 223.73.88.34 closed keepalive connection
+2020/05/04 08:12:54 [info] 7716#7716: *3807 epoll_wait() reported that client prematurely closed connection, so upstream connection is closed too while sending request to upstream, client: 223.73.88.34, server: 49.234.78.157, request: "GET /admin/get_rating/ HTTP/1.1", upstream: "uwsgi://127.0.0.1:8001", host: "49.234.78.157", referrer: "http://49.234.78.157/admin/"
+2020/05/04 08:13:05 [info] 7716#7716: *3810 client 223.73.88.34 closed keepalive connection
+2020/05/04 08:13:42 [info] 7716#7716: *3811 client 223.73.88.34 closed keepalive connection
+2020/05/04 08:14:25 [info] 7716#7716: *3818 client 223.73.88.34 closed keepalive connection (104: Connection reset by peer)
+2020/05/04 08:15:07 [info] 7716#7716: *3826 client 223.73.88.34 closed keepalive connection
+2020/05/04 08:15:08 [info] 7716#7716: *3825 client 223.73.88.34 closed keepalive connection
+2020/05/04 08:15:09 [info] 7716#7716: *3824 client 223.73.88.34 closed keepalive connection
+2020/05/04 08:15:32 [info] 7716#7716: *3822 client 223.73.88.34 closed keepalive connection
+2020/05/04 08:16:12 [info] 7716#7716: *3829 client 223.73.88.34 closed keepalive connection
+2020/05/04 08:16:48 [info] 7716#7716: *3831 client 223.73.88.34 closed keepalive connection (104: Connection reset by peer)
+2020/05/04 08:19:22 [info] 7716#7716: *3834 client 185.237.177.233 closed keepalive connection
+2020/05/04 08:32:13 [info] 7716#7716: *3836 client 182.254.52.17 closed keepalive connection (104: Connection reset by peer)
+2020/05/04 08:32:13 [info] 7716#7716: *3838 client 182.254.52.17 closed keepalive connection (104: Connection reset by peer)
+2020/05/04 08:43:19 [info] 7716#7716: *3842 client 185.216.140.6 closed keepalive connection
+2020/05/04 08:50:48 [info] 7716#7716: *3844 client 223.73.88.34 closed keepalive connection
+2020/05/04 09:06:29 [info] 7716#7716: *3847 client 59.36.132.240 closed keepalive connection (104: Connection reset by peer)
+2020/05/04 09:06:29 [info] 7716#7716: *3849 client 59.36.132.240 closed keepalive connection (104: Connection reset by peer)
+2020/05/04 09:22:43 [info] 7716#7716: *3851 client 130.61.249.6 closed keepalive connection
+2020/05/04 09:22:44 [info] 7716#7716: *3853 client 130.61.249.6 closed keepalive connection
+2020/05/04 09:22:45 [info] 7716#7716: *3855 client 130.61.249.6 closed keepalive connection
+2020/05/04 09:22:45 [info] 7716#7716: *3857 client 130.61.249.6 closed keepalive connection
+2020/05/04 09:22:46 [info] 7716#7716: *3859 client 130.61.249.6 closed keepalive connection
+2020/05/04 09:22:46 [info] 7716#7716: *3861 client 130.61.249.6 closed keepalive connection
+2020/05/04 09:22:48 [info] 7716#7716: *3865 client 130.61.249.6 closed keepalive connection
+2020/05/04 09:22:48 [info] 7716#7716: *3863 client 130.61.249.6 closed keepalive connection
+2020/05/04 09:22:49 [info] 7716#7716: *3867 client 130.61.249.6 closed keepalive connection
+2020/05/04 09:41:21 [info] 7716#7716: *3869 client 178.93.7.7 closed keepalive connection
+2020/05/04 09:44:29 [info] 7716#7716: *3871 client 93.94.181.19 closed keepalive connection
+2020/05/04 09:52:08 [info] 7716#7716: *3873 client prematurely closed connection, client: 91.234.62.246, server: 49.234.78.157, request: "POST /HNAP1/ HTTP/1.0", host: "49.234.78.157:80"
+2020/05/04 09:53:01 [info] 7716#7716: *3874 client 223.73.88.34 closed keepalive connection
+2020/05/04 09:56:52 [info] 7716#7716: *3876 client 223.73.88.34 closed keepalive connection
+2020/05/04 09:57:02 [info] 7716#7716: *3879 client 223.73.88.34 closed keepalive connection
+2020/05/04 10:10:42 [info] 7716#7716: *3881 client 223.73.88.34 closed keepalive connection
+2020/05/04 10:16:00 [info] 7716#7716: *3884 client 183.136.225.57 closed keepalive connection
+2020/05/04 11:59:36 [info] 7716#7716: *3907 client 182.254.52.17 closed keepalive connection (104: Connection reset by peer)
+2020/05/04 12:28:35 [info] 7716#7716: *3912 client 162.243.138.127 closed keepalive connection
+2020/05/04 12:57:21 [info] 7716#7716: *3914 client 182.254.52.17 closed keepalive connection (104: Connection reset by peer)
+2020/05/04 13:06:56 [info] 7716#7716: *3916 client 185.34.20.184 closed keepalive connection
+2020/05/04 13:41:33 [info] 7716#7716: *3919 client 116.128.128.41 closed keepalive connection (104: Connection reset by peer)
+2020/05/04 13:47:27 [info] 7716#7716: *3921 client 193.118.53.202 closed keepalive connection
+2020/05/04 15:01:31 [info] 7716#7716: *3924 client 61.241.50.63 closed keepalive connection (104: Connection reset by peer)
+2020/05/04 15:16:12 [info] 7716#7716: *3926 client 172.105.89.161 closed keepalive connection
+2020/05/04 15:36:06 [info] 7716#7716: *3928 client 182.254.52.17 closed keepalive connection (104: Connection reset by peer)
+2020/05/04 15:46:44 [info] 7716#7716: *3930 client 2.183.83.124 closed keepalive connection
+2020/05/04 16:26:36 [info] 7716#7716: *3954 client 80.82.64.110 closed keepalive connection
+2020/05/04 16:29:25 [info] 7716#7716: *3956 client 116.128.128.41 closed keepalive connection (104: Connection reset by peer)
+2020/05/04 16:29:25 [info] 7716#7716: *3958 client 116.128.128.41 closed keepalive connection (104: Connection reset by peer)
+2020/05/04 16:32:13 [info] 7716#7716: *3960 client 182.254.52.17 closed keepalive connection (104: Connection reset by peer)
+2020/05/04 16:32:13 [info] 7716#7716: *3962 client 182.254.52.17 closed keepalive connection (104: Connection reset by peer)
+2020/05/04 16:50:29 [info] 7716#7716: *3964 client 152.231.59.100 closed keepalive connection
+2020/05/04 17:08:31 [info] 7716#7716: *3967 client 61.241.50.63 closed keepalive connection (104: Connection reset by peer)
+2020/05/04 17:33:30 [info] 7716#7716: *3969 client 182.254.52.17 closed keepalive connection (104: Connection reset by peer)
+2020/05/04 17:44:30 [info] 7716#7716: *3971 client 182.254.52.17 closed keepalive connection (104: Connection reset by peer)
+2020/05/04 18:00:36 [info] 7716#7716: *3973 client 182.254.52.17 closed keepalive connection (104: Connection reset by peer)
+2020/05/04 18:02:41 [info] 7716#7716: *3975 client 182.254.52.17 closed keepalive connection (104: Connection reset by peer)
+2020/05/04 18:32:44 [info] 7716#7716: *3977 client 182.254.52.17 closed keepalive connection (104: Connection reset by peer)
+2020/05/04 18:47:18 [info] 7716#7716: *3979 client 134.209.88.198 closed keepalive connection
+2020/05/04 18:59:48 [info] 7716#7716: *3982 client 162.243.145.54 closed keepalive connection
+2020/05/04 19:27:56 [info] 7716#7716: *3988 client 83.219.136.226 closed keepalive connection
+2020/05/04 20:20:03 [info] 7716#7716: *3990 client 182.254.52.17 closed keepalive connection (104: Connection reset by peer)
+2020/05/04 20:24:18 [info] 7716#7716: *3992 client 182.254.52.17 closed keepalive connection (104: Connection reset by peer)
+2020/05/04 20:34:21 [info] 7716#7716: *3994 client 182.254.52.17 closed keepalive connection (104: Connection reset by peer)
+2020/05/04 22:03:16 [info] 7716#7716: *4000 client 152.235.210.176 closed keepalive connection
+2020/05/04 22:35:53 [info] 7716#7716: *4002 client 101.251.242.238 closed keepalive connection (104: Connection reset by peer)
+2020/05/04 22:37:35 [info] 7716#7716: *4004 client 223.73.88.34 closed keepalive connection
+2020/05/04 22:37:45 [info] 7716#7716: *4007 client 223.73.88.34 closed keepalive connection
+2020/05/04 22:37:55 [info] 7716#7716: *4009 client 223.73.88.34 closed keepalive connection
+2020/05/04 23:02:56 [info] 7716#7716: *4012 client 223.73.88.34 closed keepalive connection
+2020/05/04 23:03:06 [info] 7716#7716: *4014 client 223.73.88.34 closed keepalive connection
+2020/05/04 23:03:15 [info] 7716#7716: *4016 epoll_wait() reported that client prematurely closed connection, so upstream connection is closed too while sending request to upstream, client: 223.73.88.34, server: 49.234.78.157, request: "GET /admin/get_80s_rating/ HTTP/1.1", upstream: "uwsgi://127.0.0.1:8001", host: "49.234.78.157", referrer: "http://49.234.78.157/admin/"
+2020/05/04 23:03:15 [info] 7716#7716: *4019 epoll_wait() reported that client prematurely closed connection, so upstream connection is closed too while sending request to upstream, client: 223.73.88.34, server: 49.234.78.157, request: "GET /admin/get_rating/ HTTP/1.1", upstream: "uwsgi://127.0.0.1:8001", host: "49.234.78.157", referrer: "http://49.234.78.157/admin/"
+2020/05/04 23:03:16 [info] 7716#7716: *4021 client 223.73.88.34 closed keepalive connection
+2020/05/04 23:03:26 [info] 7716#7716: *4023 client 223.73.88.34 closed keepalive connection
+2020/05/04 23:03:36 [info] 7716#7716: *4025 client 223.73.88.34 closed keepalive connection
+2020/05/04 23:03:46 [info] 7716#7716: *4027 client 223.73.88.34 closed keepalive connection
+2020/05/04 23:03:56 [info] 7716#7716: *4032 client 223.73.88.34 closed keepalive connection
+2020/05/04 23:03:56 [info] 7716#7716: *4035 client 223.73.88.34 closed keepalive connection
+2020/05/04 23:03:56 [info] 7716#7716: *4034 client 223.73.88.34 closed keepalive connection
+2020/05/04 23:03:56 [info] 7716#7716: *4029 client 223.73.88.34 closed keepalive connection
+2020/05/04 23:04:06 [info] 7716#7716: *4033 client 223.73.88.34 closed keepalive connection
+2020/05/04 23:04:06 [info] 7716#7716: *4036 client 223.73.88.34 closed keepalive connection
+2020/05/04 23:04:06 [info] 7716#7716: *4037 client 223.73.88.34 closed keepalive connection
+2020/05/04 23:05:36 [info] 7716#7716: *4039 client 223.73.88.34 closed keepalive connection
+2020/05/04 23:06:26 [info] 7716#7716: *4041 client 223.73.88.34 closed keepalive connection
+2020/05/04 23:06:56 [info] 7716#7716: *4043 client 223.73.88.34 closed keepalive connection
+2020/05/04 23:07:26 [info] 7716#7716: *4045 client 223.73.88.34 closed keepalive connection
+2020/05/04 23:07:46 [info] 7716#7716: *4047 client 223.73.88.34 closed keepalive connection
+2020/05/04 23:08:36 [info] 7716#7716: *4049 client 223.73.88.34 closed keepalive connection
+2020/05/04 23:08:57 [info] 7716#7716: *4051 client 223.73.88.34 closed keepalive connection
+2020/05/04 23:09:47 [info] 7716#7716: *4054 client 223.73.88.34 closed keepalive connection
+2020/05/04 23:11:47 [info] 7716#7716: *4056 client 223.73.88.34 closed keepalive connection
+2020/05/05 00:17:44 [info] 7716#7716: *4059 client 223.73.88.34 closed keepalive connection
+2020/05/05 00:18:04 [info] 7716#7716: *4062 client 223.73.88.34 closed keepalive connection
+2020/05/05 00:18:14 [info] 7716#7716: *4073 client 223.73.88.34 closed keepalive connection
+2020/05/05 00:18:24 [info] 7716#7716: *4077 client 223.73.88.34 closed keepalive connection
+2020/05/05 00:20:54 [info] 7716#7716: *4081 client 223.73.88.34 closed keepalive connection
+2020/05/05 00:21:04 [info] 7716#7716: *4083 epoll_wait() reported that client prematurely closed connection, so upstream connection is closed too while sending request to upstream, client: 223.73.88.34, server: 49.234.78.157, request: "GET /admin/get_80s_rating/ HTTP/1.1", upstream: "uwsgi://127.0.0.1:8001", host: "49.234.78.157", referrer: "http://49.234.78.157/admin/"
+2020/05/05 00:21:14 [info] 7716#7716: *4086 client 223.73.88.34 closed keepalive connection
+2020/05/05 00:21:24 [info] 7716#7716: *4089 client 223.73.88.34 closed keepalive connection
+2020/05/05 00:21:54 [info] 7716#7716: *4091 client 223.73.88.34 closed keepalive connection
+2020/05/05 00:22:04 [info] 7716#7716: *4094 client 223.73.88.34 closed keepalive connection
+2020/05/05 00:22:14 [info] 7716#7716: *4096 client 223.73.88.34 closed keepalive connection
+2020/05/05 00:22:24 [info] 7716#7716: *4100 client 186.250.241.44 closed keepalive connection
+2020/05/05 00:22:24 [info] 7716#7716: *4098 client 223.73.88.34 closed keepalive connection
+2020/05/05 00:23:04 [info] 7716#7716: *4102 client 223.73.88.34 closed keepalive connection
+2020/05/05 00:24:14 [info] 7716#7716: *4104 client 223.73.88.34 closed keepalive connection
+2020/05/05 00:24:54 [info] 7716#7716: *4106 client 223.73.88.34 closed keepalive connection
+2020/05/05 00:25:54 [info] 7716#7716: *4108 client 223.73.88.34 closed keepalive connection
+2020/05/05 00:27:44 [info] 7716#7716: *4110 client 223.73.88.34 closed keepalive connection
+2020/05/05 00:29:14 [info] 7716#7716: *4112 client 223.73.88.34 closed keepalive connection
+2020/05/05 00:29:24 [info] 7716#7716: *4114 client 223.73.88.34 closed keepalive connection
+2020/05/05 00:29:35 [info] 7716#7716: *4117 client 223.73.88.34 closed keepalive connection
+2020/05/05 00:29:44 [info] 7716#7716: *4119 client 223.73.88.34 closed keepalive connection
+2020/05/05 00:30:14 [info] 7716#7716: *4125 client 223.73.88.34 closed keepalive connection
+2020/05/05 00:30:44 [info] 7716#7716: *4132 client 223.73.88.34 closed keepalive connection
+2020/05/05 00:44:25 [info] 7716#7716: *4134 client 223.73.88.34 closed keepalive connection
+2020/05/05 00:44:35 [info] 7716#7716: *4137 client 223.73.88.34 closed keepalive connection
+2020/05/05 01:14:57 [info] 7716#7716: *4142 client 223.73.88.34 closed keepalive connection
+2020/05/05 01:15:07 [info] 7716#7716: *4145 client 223.73.88.34 closed keepalive connection
+2020/05/05 01:18:17 [info] 7716#7716: *4148 client 80.232.216.244 closed keepalive connection
+2020/05/05 01:19:12 [info] 7716#7716: *4150 epoll_wait() reported that client prematurely closed connection, so upstream connection is closed too while sending request to upstream, client: 223.73.88.34, server: 49.234.78.157, request: "GET /admin/get_80s_rating/ HTTP/1.1", upstream: "uwsgi://127.0.0.1:8001", host: "49.234.78.157", referrer: "http://49.234.78.157/admin/"
+2020/05/05 01:19:17 [info] 7716#7716: *4152 client 223.73.88.34 closed keepalive connection
+2020/05/05 01:25:40 [info] 7716#7716: *4155 client 80.82.68.17 closed keepalive connection
+2020/05/05 01:31:30 [info] 7716#7716: *4161 epoll_wait() reported that client prematurely closed connection, so upstream connection is closed too while sending request to upstream, client: 223.73.88.34, server: 49.234.78.157, request: "GET /admin/get_rating/ HTTP/1.1", upstream: "uwsgi://127.0.0.1:8001", host: "49.234.78.157", referrer: "http://49.234.78.157/admin/"
+2020/05/05 01:32:36 [info] 7716#7716: *4166 client 223.73.88.34 closed keepalive connection
+2020/05/05 01:33:15 [info] 7716#7716: *4173 client 223.73.88.34 closed keepalive connection
+2020/05/05 01:34:02 [info] 7716#7716: *4177 client 223.73.88.34 closed keepalive connection
+2020/05/05 01:34:04 [info] 7716#7716: *4174 client 223.73.88.34 closed keepalive connection
+2020/05/05 01:34:04 [info] 7716#7716: *4175 client 223.73.88.34 closed keepalive connection
+2020/05/05 01:34:46 [info] 7716#7716: *4171 client 223.73.88.34 closed keepalive connection
+2020/05/05 01:36:33 [info] 7716#7716: *4185 client 223.73.88.34 closed keepalive connection
+2020/05/05 01:36:56 [info] 7716#7716: *4193 client 223.73.88.34 closed keepalive connection (104: Connection reset by peer)
+2020/05/05 02:17:54 [info] 7716#7716: *4199 client 162.243.140.108 closed keepalive connection
+2020/05/05 02:26:08 [info] 7716#7716: *4201 client 171.81.171.0 closed keepalive connection
+2020/05/05 02:31:16 [info] 7716#7716: *4203 client 14.215.156.109 closed keepalive connection
+2020/05/05 02:45:02 [info] 7716#7716: *4223 client 185.50.59.29 closed keepalive connection
+2020/05/05 03:12:04 [info] 7716#7716: *4225 client 61.241.50.63 closed keepalive connection (104: Connection reset by peer)
+2020/05/05 03:12:04 [info] 7716#7716: *4227 client 61.241.50.63 closed keepalive connection (104: Connection reset by peer)
+2020/05/05 03:12:04 [info] 7716#7716: *4229 client 61.241.50.63 closed keepalive connection (104: Connection reset by peer)
+2020/05/05 03:36:28 [info] 7716#7716: *4231 client 201.76.113.127 closed keepalive connection
+2020/05/05 04:20:01 [info] 7716#7716: *4233 client 182.254.52.17 closed keepalive connection (104: Connection reset by peer)
+2020/05/05 04:20:01 [info] 7716#7716: *4235 client 182.254.52.17 closed keepalive connection (104: Connection reset by peer)
+2020/05/05 04:50:52 [info] 7716#7716: *4237 client 113.96.198.92 closed keepalive connection
+2020/05/05 05:44:05 [info] 7716#7716: *4238 client 193.118.53.210 closed keepalive connection
+2020/05/05 05:46:02 [info] 7716#7716: *4240 client 61.241.50.63 closed keepalive connection (104: Connection reset by peer)
+2020/05/05 06:14:50 [info] 7716#7716: *4242 client 182.254.52.17 closed keepalive connection (104: Connection reset by peer)
+2020/05/05 06:14:50 [info] 7716#7716: *4244 client 182.254.52.17 closed keepalive connection (104: Connection reset by peer)
+2020/05/05 06:32:52 [info] 7716#7716: *4246 client 59.36.132.240 closed keepalive connection (104: Connection reset by peer)
+2020/05/05 06:32:52 [info] 7716#7716: *4248 client 59.36.132.240 closed keepalive connection (104: Connection reset by peer)
+2020/05/05 07:11:15 [info] 7716#7716: *4250 client 35.187.98.101 closed keepalive connection
+2020/05/05 07:13:47 [info] 7716#7716: *4252 client 101.89.19.140 closed keepalive connection (104: Connection reset by peer)
+2020/05/05 07:13:47 [info] 7716#7716: *4254 client 101.89.19.140 closed keepalive connection (104: Connection reset by peer)
+2020/05/05 07:15:40 [info] 7716#7716: *4256 client 14.18.173.47 closed keepalive connection
+2020/05/05 08:06:37 [info] 7716#7716: *4257 client 223.73.88.8 closed keepalive connection (104: Connection reset by peer)
+2020/05/05 08:08:06 [info] 7716#7716: *4281 client 223.73.88.8 closed keepalive connection (104: Connection reset by peer)
+2020/05/05 08:10:10 [info] 7716#7716: *4284 client 223.73.88.8 closed keepalive connection
+2020/05/05 08:11:25 [info] 7716#7716: *4286 client 223.73.88.8 closed keepalive connection
+2020/05/05 08:13:15 [info] 7716#7716: *4294 client 223.73.88.8 closed keepalive connection
+2020/05/05 08:22:21 [info] 7716#7716: *4309 client 223.73.88.8 closed keepalive connection
+2020/05/05 08:22:41 [info] 7716#7716: *4311 client 223.73.88.8 closed keepalive connection
+2020/05/05 08:22:51 [info] 7716#7716: *4317 client 223.73.88.8 closed keepalive connection
+2020/05/05 08:23:21 [info] 7716#7716: *4319 client 223.73.88.8 closed keepalive connection
+2020/05/05 08:24:01 [info] 7716#7716: *4321 client 223.73.88.8 closed keepalive connection
+2020/05/05 08:27:07 [info] 7716#7716: *4323 client 101.89.19.140 closed keepalive connection (104: Connection reset by peer)
+2020/05/05 08:33:52 [info] 7716#7716: *4325 client 223.73.88.8 closed keepalive connection
+2020/05/05 08:34:42 [info] 7716#7716: *4327 client 223.73.88.8 closed keepalive connection
+2020/05/05 08:34:52 [info] 7716#7716: *4329 client 223.73.88.8 closed keepalive connection
+2020/05/05 08:35:02 [info] 7716#7716: *4332 client 223.73.88.8 closed keepalive connection
+2020/05/05 08:35:12 [info] 7716#7716: *4334 client 223.73.88.8 closed keepalive connection
+2020/05/05 08:35:22 [info] 7716#7716: *4338 client 223.73.88.8 closed keepalive connection
+2020/05/05 08:35:32 [info] 7716#7716: *4344 client 223.73.88.8 closed keepalive connection
+2020/05/05 08:48:08 [info] 7716#7716: *4347 client 223.73.88.8 closed keepalive connection
+2020/05/05 08:48:14 [info] 7716#7716: *4350 epoll_wait() reported that client prematurely closed connection, so upstream connection is closed too while sending request to upstream, client: 223.73.88.8, server: 49.234.78.157, request: "GET /admin/get_rating/ HTTP/1.1", upstream: "uwsgi://127.0.0.1:8001", host: "49.234.78.157", referrer: "http://49.234.78.157/admin/"
+2020/05/05 08:48:18 [info] 7716#7716: *4353 client 223.73.88.8 closed keepalive connection
+2020/05/05 08:48:28 [info] 7716#7716: *4356 client 223.73.88.8 closed keepalive connection
+2020/05/05 08:48:38 [info] 7716#7716: *4358 client 223.73.88.8 closed keepalive connection
+2020/05/05 08:48:48 [info] 7716#7716: *4361 client 223.73.88.8 closed keepalive connection
+2020/05/05 08:48:58 [info] 7716#7716: *4364 client 223.73.88.8 closed keepalive connection
+2020/05/05 08:50:58 [info] 7716#7716: *4366 client 223.73.88.8 closed keepalive connection
+2020/05/05 09:24:49 [info] 7716#7716: *4369 client 223.73.88.8 closed keepalive connection
+2020/05/05 09:27:23 [info] 7716#7716: *4371 epoll_wait() reported that client prematurely closed connection, so upstream connection is closed too while sending request to upstream, client: 223.73.88.8, server: 49.234.78.157, request: "GET /video/search/?wd=%E8%B7%AF%E8%BE%B9%E6%96%B0%E5%A8%98&page=1 HTTP/1.1", upstream: "uwsgi://127.0.0.1:8001", host: "49.234.78.157", referrer: "http://49.234.78.157/video/play/84305/"
+2020/05/05 09:27:25 [info] 7716#7716: *4373 client 223.73.88.8 closed keepalive connection
+2020/05/05 09:27:37 [info] 7716#7716: *4375 epoll_wait() reported that client prematurely closed connection, so upstream connection is closed too while sending request to upstream, client: 223.73.88.8, server: 49.234.78.157, request: "GET /video/search/?wd=%E7%88%B1%E5%9C%A8%E6%97%85%E9%80%94&page=1 HTTP/1.1", upstream: "uwsgi://127.0.0.1:8001", host: "49.234.78.157", referrer: "http://49.234.78.157/video/search/?wd=%E8%B7%AF%E8%BE%B9%E6%96%B0%E5%A8%98&page=1"
+2020/05/05 09:27:45 [info] 7716#7716: *4377 client 223.73.88.8 closed keepalive connection
+2020/05/05 09:28:21 [info] 7716#7716: *4379 epoll_wait() reported that client prematurely closed connection, so upstream connection is closed too while sending request to upstream, client: 223.73.88.8, server: 49.234.78.157, request: "GET /video/search/?wd=%E8%A5%BF%E9%83%A8%E4%B8%96%E7%95%8C&page=1 HTTP/1.1", upstream: "uwsgi://127.0.0.1:8001", host: "49.234.78.157", referrer: "http://49.234.78.157/video/search/?wd=%E7%88%B1%E5%9C%A8%E6%97%85%E9%80%94&page=1"
+2020/05/05 09:28:25 [info] 7716#7716: *4381 client 223.73.88.8 closed keepalive connection
+2020/05/05 09:29:05 [info] 7716#7716: *4383 client 223.73.88.8 closed keepalive connection
+2020/05/05 09:29:15 [info] 7716#7716: *4388 client 223.73.88.8 closed keepalive connection
+2020/05/05 09:29:30 [info] 7716#7716: *4390 client 223.73.88.8 closed keepalive connection
+2020/05/05 09:29:40 [info] 7716#7716: *4392 client 223.73.88.8 closed keepalive connection
+2020/05/05 09:30:50 [info] 7716#7716: *4394 client 223.73.88.8 closed keepalive connection
+2020/05/05 09:31:20 [info] 7716#7716: *4396 client 223.73.88.8 closed keepalive connection
+2020/05/05 09:31:30 [info] 7716#7716: *4399 client 223.73.88.8 closed keepalive connection
+2020/05/05 09:32:15 [info] 7716#7716: *4401 client 223.73.88.8 closed keepalive connection
+2020/05/05 09:34:45 [info] 7716#7716: *4403 client 223.73.88.8 closed keepalive connection
+2020/05/05 09:35:55 [info] 7716#7716: *4406 client 223.73.88.8 closed keepalive connection
+2020/05/05 09:36:25 [info] 7716#7716: *4408 client 223.73.88.8 closed keepalive connection
+2020/05/05 09:36:35 [info] 7716#7716: *4411 client 223.73.88.8 closed keepalive connection
+2020/05/05 09:36:45 [info] 7716#7716: *4415 client 223.73.88.8 closed keepalive connection
+2020/05/05 09:39:25 [info] 7716#7716: *4417 client 223.73.88.8 closed keepalive connection
+2020/05/05 09:39:35 [info] 7716#7716: *4419 client 223.73.88.8 closed keepalive connection
+2020/05/05 09:39:45 [info] 7716#7716: *4422 client 223.73.88.8 closed keepalive connection
+2020/05/05 09:40:05 [info] 7716#7716: *4426 client 223.73.88.8 closed keepalive connection
+2020/05/05 09:43:26 [info] 7716#7716: *4432 client 223.73.88.8 closed keepalive connection
+2020/05/05 09:45:56 [info] 7716#7716: *4435 client 223.73.88.8 closed keepalive connection
+2020/05/05 09:46:06 [info] 7716#7716: *4437 client 223.73.88.8 closed keepalive connection
+2020/05/05 09:46:16 [info] 7716#7716: *4441 client 223.73.88.8 closed keepalive connection
+2020/05/05 09:46:26 [info] 7716#7716: *4444 client 223.73.88.8 closed keepalive connection
+2020/05/05 09:46:46 [info] 7716#7716: *4446 client 223.73.88.8 closed keepalive connection
+2020/05/05 09:47:36 [info] 7716#7716: *4448 client 223.73.88.8 closed keepalive connection
+2020/05/05 09:48:16 [info] 7716#7716: *4450 client 223.73.88.8 closed keepalive connection
+2020/05/05 09:50:16 [info] 7716#7716: *4452 client 223.73.88.8 closed keepalive connection
+2020/05/05 09:50:26 [info] 7716#7716: *4454 client 223.73.88.8 closed keepalive connection
+2020/05/05 09:54:40 [info] 7716#7716: *4456 client 223.73.88.8 closed keepalive connection (104: Connection reset by peer)
+2020/05/05 09:57:18 [info] 7716#7716: *4467 client 223.73.88.8 closed keepalive connection
+2020/05/05 09:58:21 [info] 7716#7716: *4474 client 109.125.129.14 closed keepalive connection
+2020/05/05 10:19:11 [info] 7716#7716: *4476 client 223.73.88.8 closed keepalive connection
+2020/05/05 10:19:46 [info] 7716#7716: *4482 client 223.73.88.8 closed keepalive connection
+2020/05/05 10:35:34 [info] 7716#7716: *4488 client 112.96.68.50 closed keepalive connection
+2020/05/05 10:35:44 [info] 7716#7716: *4490 client 112.96.68.50 closed keepalive connection
+2020/05/05 10:37:23 [info] 7716#7716: *4492 client 112.96.68.50 closed keepalive connection
+2020/05/05 10:37:34 [info] 7716#7716: *4494 client 112.96.68.50 closed keepalive connection
+2020/05/05 10:37:56 [info] 7716#7716: *4496 client 112.96.68.50 closed keepalive connection
+2020/05/05 10:38:02 [info] 7716#7716: *4498 client 112.96.68.50 closed keepalive connection
+2020/05/05 10:38:07 [info] 7716#7716: *4502 client 112.96.68.50 closed keepalive connection
+2020/05/05 10:38:10 [info] 7716#7716: *4504 client 112.96.68.50 closed keepalive connection
+2020/05/05 10:38:13 [info] 7716#7716: *4506 client 112.96.68.50 closed keepalive connection
+2020/05/05 10:38:24 [info] 7716#7716: *4508 client 112.96.68.50 closed keepalive connection
+2020/05/05 10:38:48 [info] 7716#7716: *4515 client 112.96.68.50 closed keepalive connection
+2020/05/05 10:38:52 [info] 7716#7716: *4520 client 112.96.68.50 closed keepalive connection
+2020/05/05 10:38:54 [info] 7716#7716: *4523 client 112.96.68.50 closed keepalive connection
+2020/05/05 10:38:58 [info] 7716#7716: *4525 client 112.96.68.50 closed keepalive connection
+2020/05/05 10:39:02 [info] 7716#7716: *4527 client 112.96.68.50 closed keepalive connection
+2020/05/05 10:39:21 [info] 7716#7716: *4530 epoll_wait() reported that client prematurely closed connection, so upstream connection is closed too while sending request to upstream, client: 112.96.68.50, server: 49.234.78.157, request: "GET /admin/get_rating/ HTTP/1.1", upstream: "uwsgi://127.0.0.1:8001", host: "49.234.78.157", referrer: "http://49.234.78.157/admin/"
+2020/05/05 10:39:23 [info] 7716#7716: *4533 client 112.96.68.50 closed keepalive connection
+2020/05/05 10:39:27 [info] 7716#7716: *4535 client 112.96.68.50 closed keepalive connection
+2020/05/05 10:39:39 [info] 7716#7716: *4537 client 112.96.68.50 closed keepalive connection
+2020/05/05 10:53:28 [info] 7716#7716: *4540 client 68.192.9.232 closed keepalive connection (104: Connection reset by peer)
+2020/05/05 11:36:34 [info] 7716#7716: *4544 client 182.254.52.17 closed keepalive connection (104: Connection reset by peer)
+2020/05/05 12:08:43 [info] 7716#7716: *4549 client 112.96.68.50 closed keepalive connection (104: Connection reset by peer)
+2020/05/05 12:08:43 [info] 7716#7716: *4551 client 112.96.68.50 closed keepalive connection (104: Connection reset by peer)
+2020/05/05 12:08:43 [info] 7716#7716: *4550 client prematurely closed connection (104: Connection reset by peer) while sending response to client, client: 112.96.68.50, server: 49.234.78.157, request: "GET /static/plugins/AdminLTE/adminlte.min.css HTTP/1.1", host: "49.234.78.157", referrer: "http://49.234.78.157/admin/view_log/?page=19"
+2020/05/05 12:08:43 [info] 7716#7716: *4547 client 112.96.68.50 closed keepalive connection (104: Connection reset by peer)
+2020/05/05 12:09:06 [info] 7716#7716: *4554 client 112.96.68.50 closed keepalive connection
+2020/05/05 12:09:07 [info] 7716#7716: *4555 client 112.96.68.50 closed keepalive connection
+2020/05/05 12:09:07 [info] 7716#7716: *4552 client 112.96.68.50 closed keepalive connection
+2020/05/05 12:09:07 [info] 7716#7716: *4553 client 112.96.68.50 closed keepalive connection
+2020/05/05 12:09:11 [info] 7716#7716: *4559 client 112.96.68.50 closed keepalive connection
+2020/05/05 12:09:13 [info] 7716#7716: *4556 client 112.96.68.50 closed keepalive connection
+2020/05/05 12:09:14 [info] 7716#7716: *4558 client 112.96.68.50 closed keepalive connection
+2020/05/05 12:09:18 [info] 7716#7716: *4560 client 112.96.68.50 closed keepalive connection
+2020/05/05 12:09:34 [info] 7716#7716: *4561 client 112.96.68.50 closed keepalive connection
+2020/05/05 12:09:36 [info] 7716#7716: *4563 client 112.96.68.50 closed keepalive connection
+2020/05/05 12:09:42 [info] 7716#7716: *4565 client 112.96.68.50 closed keepalive connection
+2020/05/05 12:09:51 [info] 7716#7716: *4567 client 112.96.68.50 closed keepalive connection
+2020/05/05 12:09:58 [info] 7716#7716: *4569 client 112.96.68.50 closed keepalive connection
+2020/05/05 12:09:58 [info] 7716#7716: *4572 client 112.96.68.50 closed keepalive connection
+2020/05/05 12:09:58 [info] 7716#7716: *4573 client 112.96.68.50 closed keepalive connection
+2020/05/05 12:10:00 [info] 7716#7716: *4576 client 112.96.68.50 closed keepalive connection
+2020/05/05 12:10:00 [info] 7716#7716: *4574 client 112.96.68.50 closed keepalive connection
+2020/05/05 12:10:01 [info] 7716#7716: *4575 client 112.96.68.50 closed keepalive connection
+2020/05/05 12:10:02 [info] 7716#7716: *4571 client 112.96.68.50 closed keepalive connection
+2020/05/05 12:10:06 [info] 7716#7716: *4578 client 112.96.68.50 closed keepalive connection
+2020/05/05 12:10:17 [info] 7716#7716: *4580 client 112.96.68.50 closed keepalive connection
+2020/05/05 12:10:22 [info] 7716#7716: *4584 client 112.96.68.50 closed keepalive connection
+2020/05/05 12:10:25 [info] 7716#7716: *4586 client 112.96.68.50 closed keepalive connection
+2020/05/05 12:10:30 [info] 7716#7716: *4588 client 112.96.68.50 closed keepalive connection
+2020/05/05 12:10:37 [info] 7716#7716: *4590 client 112.96.68.50 closed keepalive connection
+2020/05/05 12:10:40 [info] 7716#7716: *4592 client 112.96.68.50 closed keepalive connection
+2020/05/05 12:10:42 [info] 7716#7716: *4594 client 112.96.68.50 closed keepalive connection
+2020/05/05 12:10:48 [info] 7716#7716: *4596 client 112.96.68.50 closed keepalive connection
+2020/05/05 12:11:04 [info] 7716#7716: *4599 client 112.96.68.50 closed keepalive connection
+2020/05/05 12:11:32 [info] 7716#7716: *4601 client 112.96.68.50 closed keepalive connection
+2020/05/05 12:11:39 [info] 7716#7716: *4603 client 112.96.68.50 closed keepalive connection
+2020/05/05 12:11:46 [info] 7716#7716: *4608 client 112.96.68.50 closed keepalive connection
+2020/05/05 12:11:50 [info] 7716#7716: *4615 client 112.96.68.50 closed keepalive connection
+2020/05/05 12:11:57 [info] 7716#7716: *4619 client 112.96.68.50 closed keepalive connection
+2020/05/05 12:12:06 [info] 7716#7716: *4621 client 112.96.68.50 closed keepalive connection
+2020/05/05 12:13:07 [info] 7716#7716: *4623 client 112.96.68.50 closed keepalive connection
+2020/05/05 12:14:32 [info] 7716#7716: *4625 client 112.96.68.50 closed keepalive connection
+2020/05/05 12:15:16 [info] 7716#7716: *4627 client 112.96.68.50 closed keepalive connection
+2020/05/05 12:50:46 [info] 7716#7716: *4629 client 104.168.134.177 closed keepalive connection
+2020/05/05 12:53:13 [info] 7716#7716: *4631 client 112.96.68.50 closed keepalive connection
+2020/05/05 12:53:22 [info] 7716#7716: *4633 client 112.96.68.50 closed keepalive connection
+2020/05/05 12:53:27 [info] 7716#7716: *4635 client 112.96.68.50 closed keepalive connection
+2020/05/05 12:53:29 [info] 7716#7716: *4638 client 112.96.68.50 closed keepalive connection
+2020/05/05 12:53:33 [info] 7716#7716: *4640 client 112.96.68.50 closed keepalive connection
+2020/05/05 12:54:06 [info] 7716#7716: *4642 client 112.96.68.50 closed keepalive connection
+2020/05/05 12:54:10 [info] 7716#7716: *4644 client 112.96.68.50 closed keepalive connection
+2020/05/05 12:54:28 [info] 7716#7716: *4646 client 112.96.68.50 closed keepalive connection
+2020/05/05 12:56:56 [info] 7716#7716: *4648 client 112.96.68.50 closed keepalive connection
+2020/05/05 12:57:11 [info] 7716#7716: *4650 client 112.96.68.50 closed keepalive connection
+2020/05/05 12:57:17 [info] 7716#7716: *4652 client 112.96.68.50 closed keepalive connection
+2020/05/05 12:57:25 [info] 7716#7716: *4654 client 45.76.144.219 closed keepalive connection
+2020/05/05 12:57:53 [info] 7716#7716: *4656 client 112.96.68.50 closed keepalive connection
+2020/05/05 12:58:13 [info] 7716#7716: *4658 client 112.96.68.50 closed keepalive connection
+2020/05/05 12:58:15 [info] 7716#7716: *4660 client 112.96.68.50 closed keepalive connection
+2020/05/05 12:58:22 [info] 7716#7716: *4662 client 112.96.68.50 closed keepalive connection
+2020/05/05 12:59:00 [info] 7716#7716: *4664 client 112.96.68.50 closed keepalive connection
+2020/05/05 12:59:03 [info] 7716#7716: *4666 client 112.96.68.50 closed keepalive connection
+2020/05/05 12:59:10 [info] 7716#7716: *4669 client 112.96.68.50 closed keepalive connection
+2020/05/05 13:00:11 [info] 7716#7716: *4671 client 112.96.68.50 closed keepalive connection
+2020/05/05 13:00:31 [info] 7716#7716: *4673 client 112.96.68.50 closed keepalive connection
+2020/05/05 13:00:36 [info] 7716#7716: *4675 client 112.96.68.50 closed keepalive connection
+2020/05/05 13:01:16 [info] 7716#7716: *4677 client 112.96.68.50 closed keepalive connection
+2020/05/05 13:01:21 [info] 7716#7716: *4679 client 112.96.68.50 closed keepalive connection
+2020/05/05 13:01:51 [info] 7716#7716: *4681 client 188.166.18.118 closed keepalive connection
+2020/05/05 13:18:32 [info] 7716#7716: *4683 client 182.254.52.17 closed keepalive connection (104: Connection reset by peer)
+2020/05/05 13:34:32 [info] 7716#7716: *4685 client 162.243.142.133 closed keepalive connection
+2020/05/05 13:35:18 [info] 7716#7716: *4687 client 183.192.179.16 closed keepalive connection (104: Connection reset by peer)
+2020/05/05 13:38:40 [info] 7716#7716: *4691 client 112.96.68.50 closed keepalive connection
+2020/05/05 13:38:44 [info] 7716#7716: *4693 client 112.96.68.50 closed keepalive connection
+2020/05/05 13:40:10 [info] 7716#7716: *4695 client 112.96.68.50 closed keepalive connection
+2020/05/05 13:40:16 [info] 7716#7716: *4697 client 112.96.68.50 closed keepalive connection
+2020/05/05 13:40:19 [info] 7716#7716: *4699 client 112.96.68.50 closed keepalive connection
+2020/05/05 13:40:22 [info] 7716#7716: *4701 client 112.96.68.50 closed keepalive connection
+2020/05/05 13:40:46 [info] 7716#7716: *4703 client 112.96.68.50 closed keepalive connection
+2020/05/05 13:40:50 [info] 7716#7716: *4711 client 112.96.68.50 closed keepalive connection
+2020/05/05 14:05:54 [info] 7716#7716: *4728 client 31.206.184.24 closed keepalive connection
+2020/05/05 14:13:41 [info] 7716#7716: *4731 client 112.96.68.50 closed keepalive connection
+2020/05/05 14:13:43 [info] 7716#7716: *4737 client 112.96.68.50 closed keepalive connection
+2020/05/05 14:55:54 [info] 7716#7716: *4740 client 61.241.50.63 closed keepalive connection (104: Connection reset by peer)
+2020/05/05 15:15:16 [info] 7716#7716: *4742 client 14.18.173.16 closed keepalive connection
+2020/05/05 15:23:32 [info] 7716#7716: *4743 client 182.254.52.17 closed keepalive connection (104: Connection reset by peer)
+2020/05/05 16:10:31 [info] 7716#7716: *4746 client 113.96.246.207 closed keepalive connection
+2020/05/05 16:18:11 [info] 7716#7716: *4747 client 178.62.4.124 closed keepalive connection
+2020/05/05 17:40:30 [info] 7716#7716: *4751 client 113.69.33.199 closed keepalive connection (104: Connection reset by peer)
+2020/05/05 17:43:29 [info] 7716#7716: *4760 client 113.69.33.199 closed keepalive connection (104: Connection reset by peer)
+2020/05/05 17:45:05 [info] 7716#7716: *4769 client 113.69.33.199 closed keepalive connection (104: Connection reset by peer)
+2020/05/05 17:45:28 [info] 7716#7716: *4786 client 113.69.33.199 closed keepalive connection (104: Connection reset by peer)
+2020/05/05 17:50:42 [info] 7716#7716: *4789 client 162.243.141.184 closed keepalive connection
+2020/05/05 17:54:00 [info] 7716#7716: *4791 client 113.69.33.199 closed keepalive connection
+2020/05/05 18:12:14 [info] 7716#7716: *4799 client 61.241.50.63 closed keepalive connection (104: Connection reset by peer)
+2020/05/05 18:26:04 [info] 7716#7716: *4802 client 64.227.76.254 closed keepalive connection
+2020/05/05 18:27:49 [info] 7716#7716: *4804 client 113.69.33.199 closed keepalive connection (104: Connection reset by peer)
+2020/05/05 18:29:11 [info] 7716#7716: *4810 client 113.69.33.199 closed keepalive connection
+2020/05/05 18:46:45 [info] 7716#7716: *4824 client 187.207.10.241 closed keepalive connection
+2020/05/05 19:17:22 [info] 7716#7716: *4828 client 113.69.33.199 closed keepalive connection (104: Connection reset by peer)
+2020/05/05 19:23:26 [info] 7716#7716: *4832 client 113.69.33.199 closed keepalive connection
+2020/05/05 19:24:42 [info] 7716#7716: *4836 client 113.69.33.199 closed keepalive connection
+2020/05/05 20:01:52 [info] 7716#7716: *4844 client 113.69.33.199 closed keepalive connection
+2020/05/05 20:01:52 [info] 7716#7716: *4841 client 113.69.33.199 closed keepalive connection
+2020/05/05 20:01:52 [info] 7716#7716: *4843 client 113.69.33.199 closed keepalive connection
+2020/05/05 20:03:00 [info] 7716#7716: *4851 client 113.69.33.199 closed keepalive connection
+2020/05/05 20:03:53 [info] 7716#7716: *4859 client 182.254.52.17 closed keepalive connection (104: Connection reset by peer)
+2020/05/05 20:25:28 [info] 7716#7716: *4861 client 27.223.105.66 closed keepalive connection
+2020/05/05 20:25:28 [info] 7716#7716: *4863 client 27.223.105.66 closed keepalive connection
+2020/05/05 20:25:28 [info] 7716#7716: *4865 client 27.223.105.66 closed keepalive connection
+2020/05/05 20:25:28 [info] 7716#7716: *4867 client 27.223.105.66 closed keepalive connection
+2020/05/05 20:25:28 [info] 7716#7716: *4869 client 27.223.105.66 closed keepalive connection
+2020/05/05 20:25:28 [info] 7716#7716: *4871 client 27.223.105.66 closed keepalive connection
+2020/05/05 20:25:28 [info] 7716#7716: *4873 client 27.223.105.66 closed keepalive connection
+2020/05/05 20:25:28 [info] 7716#7716: *4875 client 27.223.105.66 closed keepalive connection
+2020/05/05 20:25:29 [info] 7716#7716: *4877 client 27.223.105.66 closed keepalive connection
+2020/05/05 20:27:12 [info] 7716#7716: *4879 client 112.96.192.223 closed keepalive connection
+2020/05/05 20:27:38 [info] 7716#7716: *4881 client 112.96.192.223 closed keepalive connection
+2020/05/05 20:27:58 [info] 7716#7716: *4883 client 112.96.192.223 closed keepalive connection
+2020/05/05 20:41:07 [info] 7716#7716: *4886 client 113.69.33.199 closed keepalive connection
+2020/05/05 20:44:30 [info] 7716#7716: *4893 client 47.105.98.80 closed keepalive connection
+2020/05/05 20:44:30 [info] 7716#7716: *4895 client 47.105.98.80 closed keepalive connection
+2020/05/05 20:44:30 [info] 7716#7716: *4897 client 47.105.98.80 closed keepalive connection
+2020/05/05 20:44:30 [info] 7716#7716: *4899 client 47.105.98.80 closed keepalive connection
+2020/05/05 20:44:30 [info] 7716#7716: *4901 client 47.105.98.80 closed keepalive connection
+2020/05/05 20:44:30 [info] 7716#7716: *4903 client 47.105.98.80 closed keepalive connection
+2020/05/05 20:44:30 [info] 7716#7716: *4905 client 47.105.98.80 closed keepalive connection
+2020/05/05 20:44:30 [info] 7716#7716: *4907 client 47.105.98.80 closed keepalive connection
+2020/05/05 20:44:30 [info] 7716#7716: *4909 client 47.105.98.80 closed keepalive connection
+2020/05/05 20:48:39 [info] 7716#7716: *4911 client 101.89.19.140 closed keepalive connection (104: Connection reset by peer)
+2020/05/05 20:55:53 [error] 7716#7716: *4924 open() "/home/ubuntu/git/django_project/collected_static//plugins/AdminLTE/adminlte.min.js.map" failed (2: No such file or directory), client: 113.69.33.199, server: 49.234.78.157, request: "GET /static/plugins/AdminLTE/adminlte.min.js.map HTTP/1.1", host: "49.234.78.157"
+2020/05/05 20:55:53 [error] 7716#7716: *4923 open() "/home/ubuntu/git/django_project/collected_static//plugins/bootstrap-4.4.1/bootstrap.bundle.min.js.map" failed (2: No such file or directory), client: 113.69.33.199, server: 49.234.78.157, request: "GET /static/plugins/bootstrap-4.4.1/bootstrap.bundle.min.js.map HTTP/1.1", host: "49.234.78.157"
+2020/05/05 20:55:53 [error] 7716#7716: *4923 open() "/home/ubuntu/git/django_project/collected_static//plugins/bootstrap-4.4.1/bootstrap.min.css.map" failed (2: No such file or directory), client: 113.69.33.199, server: 49.234.78.157, request: "GET /static/plugins/bootstrap-4.4.1/bootstrap.min.css.map HTTP/1.1", host: "49.234.78.157"
+2020/05/05 20:55:53 [error] 7716#7716: *4924 open() "/home/ubuntu/git/django_project/collected_static//plugins/AdminLTE/adminlte.min.css.map" failed (2: No such file or directory), client: 113.69.33.199, server: 49.234.78.157, request: "GET /static/plugins/AdminLTE/adminlte.min.css.map HTTP/1.1", host: "49.234.78.157"
+2020/05/05 21:11:44 [error] 7716#7716: *4929 open() "/home/ubuntu/git/django_project/collected_static//plugins/bootstrap-4.4.1/bootstrap.bundle.min.js.map" failed (2: No such file or directory), client: 113.69.33.199, server: 49.234.78.157, request: "GET /static/plugins/bootstrap-4.4.1/bootstrap.bundle.min.js.map HTTP/1.1", host: "49.234.78.157"
+2020/05/05 21:11:44 [error] 7716#7716: *4930 open() "/home/ubuntu/git/django_project/collected_static//plugins/AdminLTE/adminlte.min.js.map" failed (2: No such file or directory), client: 113.69.33.199, server: 49.234.78.157, request: "GET /static/plugins/AdminLTE/adminlte.min.js.map HTTP/1.1", host: "49.234.78.157"
+2020/05/05 21:11:44 [error] 7716#7716: *4931 open() "/home/ubuntu/git/django_project/collected_static//plugins/bootstrap-4.4.1/bootstrap.min.css.map" failed (2: No such file or directory), client: 113.69.33.199, server: 49.234.78.157, request: "GET /static/plugins/bootstrap-4.4.1/bootstrap.min.css.map HTTP/1.1", host: "49.234.78.157"
+2020/05/05 21:11:44 [error] 7716#7716: *4932 open() "/home/ubuntu/git/django_project/collected_static//plugins/AdminLTE/adminlte.min.css.map" failed (2: No such file or directory), client: 113.69.33.199, server: 49.234.78.157, request: "GET /static/plugins/AdminLTE/adminlte.min.css.map HTTP/1.1", host: "49.234.78.157"
+2020/05/05 22:03:08 [error] 7716#7716: *4938 open() "/home/ubuntu/git/django_project/collected_static//plugins/bootstrap-4.4.1/bootstrap.min.css.map" failed (2: No such file or directory), client: 113.69.33.199, server: 49.234.78.157, request: "GET /static/plugins/bootstrap-4.4.1/bootstrap.min.css.map HTTP/1.1", host: "49.234.78.157"
+2020/05/05 22:03:08 [error] 7716#7716: *4940 open() "/home/ubuntu/git/django_project/collected_static//plugins/AdminLTE/adminlte.min.css.map" failed (2: No such file or directory), client: 113.69.33.199, server: 49.234.78.157, request: "GET /static/plugins/AdminLTE/adminlte.min.css.map HTTP/1.1", host: "49.234.78.157"
+2020/05/05 22:03:08 [error] 7716#7716: *4940 open() "/home/ubuntu/git/django_project/collected_static//plugins/bootstrap-4.4.1/bootstrap.bundle.min.js.map" failed (2: No such file or directory), client: 113.69.33.199, server: 49.234.78.157, request: "GET /static/plugins/bootstrap-4.4.1/bootstrap.bundle.min.js.map HTTP/1.1", host: "49.234.78.157"
+2020/05/05 22:03:08 [error] 7716#7716: *4938 open() "/home/ubuntu/git/django_project/collected_static//plugins/AdminLTE/adminlte.min.js.map" failed (2: No such file or directory), client: 113.69.33.199, server: 49.234.78.157, request: "GET /static/plugins/AdminLTE/adminlte.min.js.map HTTP/1.1", host: "49.234.78.157"
+2020/05/05 22:03:21 [error] 7716#7716: *4938 open() "/home/ubuntu/git/django_project/collected_static//plugins/bootstrap-4.4.1/bootstrap.min.css.map" failed (2: No such file or directory), client: 113.69.33.199, server: 49.234.78.157, request: "GET /static/plugins/bootstrap-4.4.1/bootstrap.min.css.map HTTP/1.1", host: "49.234.78.157"
+2020/05/05 22:03:21 [error] 7716#7716: *4940 open() "/home/ubuntu/git/django_project/collected_static//plugins/AdminLTE/adminlte.min.css.map" failed (2: No such file or directory), client: 113.69.33.199, server: 49.234.78.157, request: "GET /static/plugins/AdminLTE/adminlte.min.css.map HTTP/1.1", host: "49.234.78.157"
+2020/05/05 22:03:21 [error] 7716#7716: *4940 open() "/home/ubuntu/git/django_project/collected_static//plugins/bootstrap-4.4.1/bootstrap.bundle.min.js.map" failed (2: No such file or directory), client: 113.69.33.199, server: 49.234.78.157, request: "GET /static/plugins/bootstrap-4.4.1/bootstrap.bundle.min.js.map HTTP/1.1", host: "49.234.78.157"
+2020/05/05 22:03:21 [error] 7716#7716: *4938 open() "/home/ubuntu/git/django_project/collected_static//plugins/AdminLTE/adminlte.min.js.map" failed (2: No such file or directory), client: 113.69.33.199, server: 49.234.78.157, request: "GET /static/plugins/AdminLTE/adminlte.min.js.map HTTP/1.1", host: "49.234.78.157"
+2020/05/05 22:03:31 [error] 7716#7716: *4938 open() "/home/ubuntu/git/django_project/collected_static//plugins/bootstrap-4.4.1/bootstrap.min.css.map" failed (2: No such file or directory), client: 113.69.33.199, server: 49.234.78.157, request: "GET /static/plugins/bootstrap-4.4.1/bootstrap.min.css.map HTTP/1.1", host: "49.234.78.157"
+2020/05/05 22:03:31 [error] 7716#7716: *4938 open() "/home/ubuntu/git/django_project/collected_static//plugins/AdminLTE/adminlte.min.css.map" failed (2: No such file or directory), client: 113.69.33.199, server: 49.234.78.157, request: "GET /static/plugins/AdminLTE/adminlte.min.css.map HTTP/1.1", host: "49.234.78.157"
+2020/05/05 22:03:31 [error] 7716#7716: *4940 open() "/home/ubuntu/git/django_project/collected_static//plugins/bootstrap-4.4.1/bootstrap.bundle.min.js.map" failed (2: No such file or directory), client: 113.69.33.199, server: 49.234.78.157, request: "GET /static/plugins/bootstrap-4.4.1/bootstrap.bundle.min.js.map HTTP/1.1", host: "49.234.78.157"
+2020/05/05 22:03:32 [error] 7716#7716: *4938 open() "/home/ubuntu/git/django_project/collected_static//plugins/AdminLTE/adminlte.min.js.map" failed (2: No such file or directory), client: 113.69.33.199, server: 49.234.78.157, request: "GET /static/plugins/AdminLTE/adminlte.min.js.map HTTP/1.1", host: "49.234.78.157"
+2020/05/05 22:35:14 [info] 7716#7716: *4947 client 113.96.198.25 closed keepalive connection
+2020/05/06 00:23:35 [error] 7716#7716: *4968 open() "/home/ubuntu/git/django_project/collected_static//plugins/bootstrap-4.4.1/bootstrap.min.css.map" failed (2: No such file or directory), client: 113.69.33.199, server: 49.234.78.157, request: "GET /static/plugins/bootstrap-4.4.1/bootstrap.min.css.map HTTP/1.1", host: "49.234.78.157"
+2020/05/06 00:23:35 [error] 7716#7716: *4970 open() "/home/ubuntu/git/django_project/collected_static//plugins/AdminLTE/adminlte.min.css.map" failed (2: No such file or directory), client: 113.69.33.199, server: 49.234.78.157, request: "GET /static/plugins/AdminLTE/adminlte.min.css.map HTTP/1.1", host: "49.234.78.157"
+2020/05/06 00:23:35 [error] 7716#7716: *4970 open() "/home/ubuntu/git/django_project/collected_static//plugins/bootstrap-4.4.1/bootstrap.bundle.min.js.map" failed (2: No such file or directory), client: 113.69.33.199, server: 49.234.78.157, request: "GET /static/plugins/bootstrap-4.4.1/bootstrap.bundle.min.js.map HTTP/1.1", host: "49.234.78.157"
+2020/05/06 00:23:35 [error] 7716#7716: *4968 open() "/home/ubuntu/git/django_project/collected_static//plugins/AdminLTE/adminlte.min.js.map" failed (2: No such file or directory), client: 113.69.33.199, server: 49.234.78.157, request: "GET /static/plugins/AdminLTE/adminlte.min.js.map HTTP/1.1", host: "49.234.78.157"
+2020/05/06 00:23:40 [error] 7716#7716: *4968 open() "/home/ubuntu/git/django_project/collected_static//plugins/bootstrap-4.4.1/bootstrap.min.css.map" failed (2: No such file or directory), client: 113.69.33.199, server: 49.234.78.157, request: "GET /static/plugins/bootstrap-4.4.1/bootstrap.min.css.map HTTP/1.1", host: "49.234.78.157"
+2020/05/06 00:23:40 [error] 7716#7716: *4968 open() "/home/ubuntu/git/django_project/collected_static//plugins/AdminLTE/adminlte.min.css.map" failed (2: No such file or directory), client: 113.69.33.199, server: 49.234.78.157, request: "GET /static/plugins/AdminLTE/adminlte.min.css.map HTTP/1.1", host: "49.234.78.157"
+2020/05/06 00:23:41 [error] 7716#7716: *4968 open() "/home/ubuntu/git/django_project/collected_static//plugins/bootstrap-4.4.1/bootstrap.bundle.min.js.map" failed (2: No such file or directory), client: 113.69.33.199, server: 49.234.78.157, request: "GET /static/plugins/bootstrap-4.4.1/bootstrap.bundle.min.js.map HTTP/1.1", host: "49.234.78.157"
+2020/05/06 00:23:41 [error] 7716#7716: *4970 open() "/home/ubuntu/git/django_project/collected_static//plugins/AdminLTE/adminlte.min.js.map" failed (2: No such file or directory), client: 113.69.33.199, server: 49.234.78.157, request: "GET /static/plugins/AdminLTE/adminlte.min.js.map HTTP/1.1", host: "49.234.78.157"
+2020/05/06 00:23:47 [info] 7716#7716: *4970 epoll_wait() reported that client prematurely closed connection, so upstream connection is closed too while sending request to upstream, client: 113.69.33.199, server: 49.234.78.157, request: "GET /admin/get_80s_rating/ HTTP/1.1", upstream: "uwsgi://127.0.0.1:8001", host: "49.234.78.157", referrer: "http://49.234.78.157/admin/"
+2020/05/06 00:23:47 [error] 7716#7716: *4968 open() "/home/ubuntu/git/django_project/collected_static//plugins/bootstrap-4.4.1/bootstrap.min.css.map" failed (2: No such file or directory), client: 113.69.33.199, server: 49.234.78.157, request: "GET /static/plugins/bootstrap-4.4.1/bootstrap.min.css.map HTTP/1.1", host: "49.234.78.157"
+2020/05/06 00:23:47 [error] 7716#7716: *4968 open() "/home/ubuntu/git/django_project/collected_static//plugins/AdminLTE/adminlte.min.css.map" failed (2: No such file or directory), client: 113.69.33.199, server: 49.234.78.157, request: "GET /static/plugins/AdminLTE/adminlte.min.css.map HTTP/1.1", host: "49.234.78.157"
+2020/05/06 00:23:47 [error] 7716#7716: *4974 open() "/home/ubuntu/git/django_project/collected_static//plugins/bootstrap-4.4.1/bootstrap.bundle.min.js.map" failed (2: No such file or directory), client: 113.69.33.199, server: 49.234.78.157, request: "GET /static/plugins/bootstrap-4.4.1/bootstrap.bundle.min.js.map HTTP/1.1", host: "49.234.78.157"
+2020/05/06 00:23:47 [error] 7716#7716: *4968 open() "/home/ubuntu/git/django_project/collected_static//plugins/AdminLTE/adminlte.min.js.map" failed (2: No such file or directory), client: 113.69.33.199, server: 49.234.78.157, request: "GET /static/plugins/AdminLTE/adminlte.min.js.map HTTP/1.1", host: "49.234.78.157"
+2020/05/06 00:23:54 [error] 7716#7716: *4968 open() "/home/ubuntu/git/django_project/collected_static//plugins/bootstrap-4.4.1/bootstrap.min.css.map" failed (2: No such file or directory), client: 113.69.33.199, server: 49.234.78.157, request: "GET /static/plugins/bootstrap-4.4.1/bootstrap.min.css.map HTTP/1.1", host: "49.234.78.157"
+2020/05/06 00:23:54 [error] 7716#7716: *4974 open() "/home/ubuntu/git/django_project/collected_static//plugins/AdminLTE/adminlte.min.css.map" failed (2: No such file or directory), client: 113.69.33.199, server: 49.234.78.157, request: "GET /static/plugins/AdminLTE/adminlte.min.css.map HTTP/1.1", host: "49.234.78.157"
+2020/05/06 00:23:54 [error] 7716#7716: *4968 open() "/home/ubuntu/git/django_project/collected_static//plugins/bootstrap-4.4.1/bootstrap.bundle.min.js.map" failed (2: No such file or directory), client: 113.69.33.199, server: 49.234.78.157, request: "GET /static/plugins/bootstrap-4.4.1/bootstrap.bundle.min.js.map HTTP/1.1", host: "49.234.78.157"
+2020/05/06 00:23:54 [error] 7716#7716: *4974 open() "/home/ubuntu/git/django_project/collected_static//plugins/AdminLTE/adminlte.min.js.map" failed (2: No such file or directory), client: 113.69.33.199, server: 49.234.78.157, request: "GET /static/plugins/AdminLTE/adminlte.min.js.map HTTP/1.1", host: "49.234.78.157"
+2020/05/06 00:24:51 [error] 7716#7716: *4968 open() "/home/ubuntu/git/django_project/collected_static//plugins/bootstrap-4.4.1/bootstrap.min.css.map" failed (2: No such file or directory), client: 113.69.33.199, server: 49.234.78.157, request: "GET /static/plugins/bootstrap-4.4.1/bootstrap.min.css.map HTTP/1.1", host: "49.234.78.157"
+2020/05/06 00:24:51 [error] 7716#7716: *4974 open() "/home/ubuntu/git/django_project/collected_static//plugins/AdminLTE/adminlte.min.css.map" failed (2: No such file or directory), client: 113.69.33.199, server: 49.234.78.157, request: "GET /static/plugins/AdminLTE/adminlte.min.css.map HTTP/1.1", host: "49.234.78.157"
+2020/05/06 00:24:51 [error] 7716#7716: *4974 open() "/home/ubuntu/git/django_project/collected_static//plugins/AdminLTE/adminlte.min.js.map" failed (2: No such file or directory), client: 113.69.33.199, server: 49.234.78.157, request: "GET /static/plugins/AdminLTE/adminlte.min.js.map HTTP/1.1", host: "49.234.78.157"
+2020/05/06 00:24:51 [error] 7716#7716: *4968 open() "/home/ubuntu/git/django_project/collected_static//plugins/bootstrap-4.4.1/bootstrap.bundle.min.js.map" failed (2: No such file or directory), client: 113.69.33.199, server: 49.234.78.157, request: "GET /static/plugins/bootstrap-4.4.1/bootstrap.bundle.min.js.map HTTP/1.1", host: "49.234.78.157"
+2020/05/06 00:25:09 [error] 7716#7716: *4974 open() "/home/ubuntu/git/django_project/collected_static//plugins/AdminLTE/adminlte.min.css.map" failed (2: No such file or directory), client: 113.69.33.199, server: 49.234.78.157, request: "GET /static/plugins/AdminLTE/adminlte.min.css.map HTTP/1.1", host: "49.234.78.157"
+2020/05/06 00:25:09 [error] 7716#7716: *4968 open() "/home/ubuntu/git/django_project/collected_static//plugins/bootstrap-4.4.1/bootstrap.min.css.map" failed (2: No such file or directory), client: 113.69.33.199, server: 49.234.78.157, request: "GET /static/plugins/bootstrap-4.4.1/bootstrap.min.css.map HTTP/1.1", host: "49.234.78.157"
+2020/05/06 00:25:09 [error] 7716#7716: *4974 open() "/home/ubuntu/git/django_project/collected_static//plugins/AdminLTE/adminlte.min.js.map" failed (2: No such file or directory), client: 113.69.33.199, server: 49.234.78.157, request: "GET /static/plugins/AdminLTE/adminlte.min.js.map HTTP/1.1", host: "49.234.78.157"
+2020/05/06 00:25:09 [error] 7716#7716: *4968 open() "/home/ubuntu/git/django_project/collected_static//plugins/bootstrap-4.4.1/bootstrap.bundle.min.js.map" failed (2: No such file or directory), client: 113.69.33.199, server: 49.234.78.157, request: "GET /static/plugins/bootstrap-4.4.1/bootstrap.bundle.min.js.map HTTP/1.1", host: "49.234.78.157"
+2020/05/06 00:26:00 [error] 7716#7716: *4974 open() "/home/ubuntu/git/django_project/collected_static//plugins/AdminLTE/adminlte.min.css.map" failed (2: No such file or directory), client: 113.69.33.199, server: 49.234.78.157, request: "GET /static/plugins/AdminLTE/adminlte.min.css.map HTTP/1.1", host: "49.234.78.157"
+2020/05/06 00:26:00 [error] 7716#7716: *4968 open() "/home/ubuntu/git/django_project/collected_static//plugins/bootstrap-4.4.1/bootstrap.min.css.map" failed (2: No such file or directory), client: 113.69.33.199, server: 49.234.78.157, request: "GET /static/plugins/bootstrap-4.4.1/bootstrap.min.css.map HTTP/1.1", host: "49.234.78.157"
+2020/05/06 00:26:01 [error] 7716#7716: *4968 open() "/home/ubuntu/git/django_project/collected_static//plugins/bootstrap-4.4.1/bootstrap.bundle.min.js.map" failed (2: No such file or directory), client: 113.69.33.199, server: 49.234.78.157, request: "GET /static/plugins/bootstrap-4.4.1/bootstrap.bundle.min.js.map HTTP/1.1", host: "49.234.78.157"
+2020/05/06 00:26:01 [error] 7716#7716: *4974 open() "/home/ubuntu/git/django_project/collected_static//plugins/AdminLTE/adminlte.min.js.map" failed (2: No such file or directory), client: 113.69.33.199, server: 49.234.78.157, request: "GET /static/plugins/AdminLTE/adminlte.min.js.map HTTP/1.1", host: "49.234.78.157"
+2020/05/06 00:26:29 [info] 7716#7716: *4968 epoll_wait() reported that client prematurely closed connection, so upstream connection is closed too while sending request to upstream, client: 113.69.33.199, server: 49.234.78.157, request: "GET /admin/get_rating/ HTTP/1.1", upstream: "uwsgi://127.0.0.1:8001", host: "49.234.78.157", referrer: "http://49.234.78.157/admin/"
+2020/05/06 00:26:29 [error] 7716#7716: *4974 open() "/home/ubuntu/git/django_project/collected_static//plugins/bootstrap-4.4.1/bootstrap.min.css.map" failed (2: No such file or directory), client: 113.69.33.199, server: 49.234.78.157, request: "GET /static/plugins/bootstrap-4.4.1/bootstrap.min.css.map HTTP/1.1", host: "49.234.78.157"
+2020/05/06 00:26:29 [error] 7716#7716: *4982 open() "/home/ubuntu/git/django_project/collected_static//plugins/AdminLTE/adminlte.min.css.map" failed (2: No such file or directory), client: 113.69.33.199, server: 49.234.78.157, request: "GET /static/plugins/AdminLTE/adminlte.min.css.map HTTP/1.1", host: "49.234.78.157"
+2020/05/06 00:26:30 [error] 7716#7716: *4974 open() "/home/ubuntu/git/django_project/collected_static//plugins/AdminLTE/adminlte.min.js.map" failed (2: No such file or directory), client: 113.69.33.199, server: 49.234.78.157, request: "GET /static/plugins/AdminLTE/adminlte.min.js.map HTTP/1.1", host: "49.234.78.157"
+2020/05/06 00:26:30 [error] 7716#7716: *4982 open() "/home/ubuntu/git/django_project/collected_static//plugins/bootstrap-4.4.1/bootstrap.bundle.min.js.map" failed (2: No such file or directory), client: 113.69.33.199, server: 49.234.78.157, request: "GET /static/plugins/bootstrap-4.4.1/bootstrap.bundle.min.js.map HTTP/1.1", host: "49.234.78.157"
+2020/05/06 00:26:51 [error] 7716#7716: *4974 open() "/home/ubuntu/git/django_project/collected_static//plugins/bootstrap-4.4.1/bootstrap.min.css.map" failed (2: No such file or directory), client: 113.69.33.199, server: 49.234.78.157, request: "GET /static/plugins/bootstrap-4.4.1/bootstrap.min.css.map HTTP/1.1", host: "49.234.78.157"
+2020/05/06 00:26:51 [error] 7716#7716: *4974 open() "/home/ubuntu/git/django_project/collected_static//plugins/AdminLTE/adminlte.min.css.map" failed (2: No such file or directory), client: 113.69.33.199, server: 49.234.78.157, request: "GET /static/plugins/AdminLTE/adminlte.min.css.map HTTP/1.1", host: "49.234.78.157"
+2020/05/06 00:26:51 [error] 7716#7716: *4982 open() "/home/ubuntu/git/django_project/collected_static//plugins/bootstrap-4.4.1/bootstrap.bundle.min.js.map" failed (2: No such file or directory), client: 113.69.33.199, server: 49.234.78.157, request: "GET /static/plugins/bootstrap-4.4.1/bootstrap.bundle.min.js.map HTTP/1.1", host: "49.234.78.157"
+2020/05/06 00:26:51 [error] 7716#7716: *4974 open() "/home/ubuntu/git/django_project/collected_static//plugins/AdminLTE/adminlte.min.js.map" failed (2: No such file or directory), client: 113.69.33.199, server: 49.234.78.157, request: "GET /static/plugins/AdminLTE/adminlte.min.js.map HTTP/1.1", host: "49.234.78.157"
+2020/05/06 00:28:29 [error] 7716#7716: *4985 open() "/home/ubuntu/git/django_project/collected_static//plugins/bootstrap-4.4.1/bootstrap.min.css.map" failed (2: No such file or directory), client: 113.69.33.199, server: 49.234.78.157, request: "GET /static/plugins/bootstrap-4.4.1/bootstrap.min.css.map HTTP/1.1", host: "49.234.78.157"
+2020/05/06 00:28:29 [error] 7716#7716: *4987 open() "/home/ubuntu/git/django_project/collected_static//plugins/AdminLTE/adminlte.min.css.map" failed (2: No such file or directory), client: 113.69.33.199, server: 49.234.78.157, request: "GET /static/plugins/AdminLTE/adminlte.min.css.map HTTP/1.1", host: "49.234.78.157"
+2020/05/06 00:28:30 [error] 7716#7716: *4987 open() "/home/ubuntu/git/django_project/collected_static//plugins/bootstrap-4.4.1/bootstrap.bundle.min.js.map" failed (2: No such file or directory), client: 113.69.33.199, server: 49.234.78.157, request: "GET /static/plugins/bootstrap-4.4.1/bootstrap.bundle.min.js.map HTTP/1.1", host: "49.234.78.157"
+2020/05/06 00:28:30 [error] 7716#7716: *4985 open() "/home/ubuntu/git/django_project/collected_static//plugins/AdminLTE/adminlte.min.js.map" failed (2: No such file or directory), client: 113.69.33.199, server: 49.234.78.157, request: "GET /static/plugins/AdminLTE/adminlte.min.js.map HTTP/1.1", host: "49.234.78.157"
+2020/05/06 00:28:34 [error] 7716#7716: *4985 open() "/home/ubuntu/git/django_project/collected_static//plugins/bootstrap-4.4.1/bootstrap.min.css.map" failed (2: No such file or directory), client: 113.69.33.199, server: 49.234.78.157, request: "GET /static/plugins/bootstrap-4.4.1/bootstrap.min.css.map HTTP/1.1", host: "49.234.78.157"
+2020/05/06 00:28:34 [error] 7716#7716: *4987 open() "/home/ubuntu/git/django_project/collected_static//plugins/AdminLTE/adminlte.min.css.map" failed (2: No such file or directory), client: 113.69.33.199, server: 49.234.78.157, request: "GET /static/plugins/AdminLTE/adminlte.min.css.map HTTP/1.1", host: "49.234.78.157"
+2020/05/06 00:28:34 [error] 7716#7716: *4987 open() "/home/ubuntu/git/django_project/collected_static//plugins/bootstrap-4.4.1/bootstrap.bundle.min.js.map" failed (2: No such file or directory), client: 113.69.33.199, server: 49.234.78.157, request: "GET /static/plugins/bootstrap-4.4.1/bootstrap.bundle.min.js.map HTTP/1.1", host: "49.234.78.157"
+2020/05/06 00:28:34 [error] 7716#7716: *4985 open() "/home/ubuntu/git/django_project/collected_static//plugins/AdminLTE/adminlte.min.js.map" failed (2: No such file or directory), client: 113.69.33.199, server: 49.234.78.157, request: "GET /static/plugins/AdminLTE/adminlte.min.js.map HTTP/1.1", host: "49.234.78.157"
+2020/05/06 00:28:36 [error] 7716#7716: *4985 open() "/home/ubuntu/git/django_project/collected_static//plugins/bootstrap-4.4.1/bootstrap.min.css.map" failed (2: No such file or directory), client: 113.69.33.199, server: 49.234.78.157, request: "GET /static/plugins/bootstrap-4.4.1/bootstrap.min.css.map HTTP/1.1", host: "49.234.78.157"
+2020/05/06 00:28:36 [error] 7716#7716: *4987 open() "/home/ubuntu/git/django_project/collected_static//plugins/AdminLTE/adminlte.min.css.map" failed (2: No such file or directory), client: 113.69.33.199, server: 49.234.78.157, request: "GET /static/plugins/AdminLTE/adminlte.min.css.map HTTP/1.1", host: "49.234.78.157"
+2020/05/06 00:28:36 [error] 7716#7716: *4987 open() "/home/ubuntu/git/django_project/collected_static//plugins/bootstrap-4.4.1/bootstrap.bundle.min.js.map" failed (2: No such file or directory), client: 113.69.33.199, server: 49.234.78.157, request: "GET /static/plugins/bootstrap-4.4.1/bootstrap.bundle.min.js.map HTTP/1.1", host: "49.234.78.157"
+2020/05/06 00:28:36 [error] 7716#7716: *4985 open() "/home/ubuntu/git/django_project/collected_static//plugins/AdminLTE/adminlte.min.js.map" failed (2: No such file or directory), client: 113.69.33.199, server: 49.234.78.157, request: "GET /static/plugins/AdminLTE/adminlte.min.js.map HTTP/1.1", host: "49.234.78.157"
+2020/05/06 00:28:38 [error] 7716#7716: *4985 open() "/home/ubuntu/git/django_project/collected_static//plugins/bootstrap-4.4.1/bootstrap.min.css.map" failed (2: No such file or directory), client: 113.69.33.199, server: 49.234.78.157, request: "GET /static/plugins/bootstrap-4.4.1/bootstrap.min.css.map HTTP/1.1", host: "49.234.78.157"
+2020/05/06 00:28:38 [error] 7716#7716: *4987 open() "/home/ubuntu/git/django_project/collected_static//plugins/AdminLTE/adminlte.min.css.map" failed (2: No such file or directory), client: 113.69.33.199, server: 49.234.78.157, request: "GET /static/plugins/AdminLTE/adminlte.min.css.map HTTP/1.1", host: "49.234.78.157"
+2020/05/06 00:28:38 [error] 7716#7716: *4987 open() "/home/ubuntu/git/django_project/collected_static//plugins/bootstrap-4.4.1/bootstrap.bundle.min.js.map" failed (2: No such file or directory), client: 113.69.33.199, server: 49.234.78.157, request: "GET /static/plugins/bootstrap-4.4.1/bootstrap.bundle.min.js.map HTTP/1.1", host: "49.234.78.157"
+2020/05/06 00:28:38 [error] 7716#7716: *4985 open() "/home/ubuntu/git/django_project/collected_static//plugins/AdminLTE/adminlte.min.js.map" failed (2: No such file or directory), client: 113.69.33.199, server: 49.234.78.157, request: "GET /static/plugins/AdminLTE/adminlte.min.js.map HTTP/1.1", host: "49.234.78.157"
+2020/05/06 00:29:01 [error] 7716#7716: *4985 open() "/home/ubuntu/git/django_project/collected_static//plugins/bootstrap-4.4.1/bootstrap.min.css.map" failed (2: No such file or directory), client: 113.69.33.199, server: 49.234.78.157, request: "GET /static/plugins/bootstrap-4.4.1/bootstrap.min.css.map HTTP/1.1", host: "49.234.78.157"
+2020/05/06 00:29:01 [error] 7716#7716: *4987 open() "/home/ubuntu/git/django_project/collected_static//plugins/AdminLTE/adminlte.min.css.map" failed (2: No such file or directory), client: 113.69.33.199, server: 49.234.78.157, request: "GET /static/plugins/AdminLTE/adminlte.min.css.map HTTP/1.1", host: "49.234.78.157"
+2020/05/06 00:29:01 [error] 7716#7716: *4987 open() "/home/ubuntu/git/django_project/collected_static//plugins/bootstrap-4.4.1/bootstrap.bundle.min.js.map" failed (2: No such file or directory), client: 113.69.33.199, server: 49.234.78.157, request: "GET /static/plugins/bootstrap-4.4.1/bootstrap.bundle.min.js.map HTTP/1.1", host: "49.234.78.157"
+2020/05/06 00:29:01 [error] 7716#7716: *4985 open() "/home/ubuntu/git/django_project/collected_static//plugins/AdminLTE/adminlte.min.js.map" failed (2: No such file or directory), client: 113.69.33.199, server: 49.234.78.157, request: "GET /static/plugins/AdminLTE/adminlte.min.js.map HTTP/1.1", host: "49.234.78.157"
+2020/05/06 00:29:04 [error] 7716#7716: *4985 open() "/home/ubuntu/git/django_project/collected_static//plugins/bootstrap-4.4.1/bootstrap.min.css.map" failed (2: No such file or directory), client: 113.69.33.199, server: 49.234.78.157, request: "GET /static/plugins/bootstrap-4.4.1/bootstrap.min.css.map HTTP/1.1", host: "49.234.78.157"
+2020/05/06 00:29:04 [error] 7716#7716: *4987 open() "/home/ubuntu/git/django_project/collected_static//plugins/AdminLTE/adminlte.min.css.map" failed (2: No such file or directory), client: 113.69.33.199, server: 49.234.78.157, request: "GET /static/plugins/AdminLTE/adminlte.min.css.map HTTP/1.1", host: "49.234.78.157"
+2020/05/06 00:29:04 [error] 7716#7716: *4987 open() "/home/ubuntu/git/django_project/collected_static//plugins/bootstrap-4.4.1/bootstrap.bundle.min.js.map" failed (2: No such file or directory), client: 113.69.33.199, server: 49.234.78.157, request: "GET /static/plugins/bootstrap-4.4.1/bootstrap.bundle.min.js.map HTTP/1.1", host: "49.234.78.157"
+2020/05/06 00:29:04 [error] 7716#7716: *4985 open() "/home/ubuntu/git/django_project/collected_static//plugins/AdminLTE/adminlte.min.js.map" failed (2: No such file or directory), client: 113.69.33.199, server: 49.234.78.157, request: "GET /static/plugins/AdminLTE/adminlte.min.js.map HTTP/1.1", host: "49.234.78.157"
+2020/05/06 00:29:05 [error] 7716#7716: *4985 open() "/home/ubuntu/git/django_project/collected_static//plugins/bootstrap-4.4.1/bootstrap.min.css.map" failed (2: No such file or directory), client: 113.69.33.199, server: 49.234.78.157, request: "GET /static/plugins/bootstrap-4.4.1/bootstrap.min.css.map HTTP/1.1", host: "49.234.78.157"
+2020/05/06 00:29:05 [error] 7716#7716: *4987 open() "/home/ubuntu/git/django_project/collected_static//plugins/AdminLTE/adminlte.min.css.map" failed (2: No such file or directory), client: 113.69.33.199, server: 49.234.78.157, request: "GET /static/plugins/AdminLTE/adminlte.min.css.map HTTP/1.1", host: "49.234.78.157"
+2020/05/06 00:29:06 [error] 7716#7716: *4987 open() "/home/ubuntu/git/django_project/collected_static//plugins/bootstrap-4.4.1/bootstrap.bundle.min.js.map" failed (2: No such file or directory), client: 113.69.33.199, server: 49.234.78.157, request: "GET /static/plugins/bootstrap-4.4.1/bootstrap.bundle.min.js.map HTTP/1.1", host: "49.234.78.157"
+2020/05/06 00:29:06 [error] 7716#7716: *4985 open() "/home/ubuntu/git/django_project/collected_static//plugins/AdminLTE/adminlte.min.js.map" failed (2: No such file or directory), client: 113.69.33.199, server: 49.234.78.157, request: "GET /static/plugins/AdminLTE/adminlte.min.js.map HTTP/1.1", host: "49.234.78.157"
+2020/05/06 00:29:08 [error] 7716#7716: *4987 open() "/home/ubuntu/git/django_project/collected_static//plugins/bootstrap-4.4.1/bootstrap.min.css.map" failed (2: No such file or directory), client: 113.69.33.199, server: 49.234.78.157, request: "GET /static/plugins/bootstrap-4.4.1/bootstrap.min.css.map HTTP/1.1", host: "49.234.78.157"
+2020/05/06 00:29:08 [error] 7716#7716: *4985 open() "/home/ubuntu/git/django_project/collected_static//plugins/AdminLTE/adminlte.min.css.map" failed (2: No such file or directory), client: 113.69.33.199, server: 49.234.78.157, request: "GET /static/plugins/AdminLTE/adminlte.min.css.map HTTP/1.1", host: "49.234.78.157"
+2020/05/06 00:29:08 [error] 7716#7716: *4987 open() "/home/ubuntu/git/django_project/collected_static//plugins/bootstrap-4.4.1/bootstrap.bundle.min.js.map" failed (2: No such file or directory), client: 113.69.33.199, server: 49.234.78.157, request: "GET /static/plugins/bootstrap-4.4.1/bootstrap.bundle.min.js.map HTTP/1.1", host: "49.234.78.157"
+2020/05/06 00:29:08 [error] 7716#7716: *4985 open() "/home/ubuntu/git/django_project/collected_static//plugins/AdminLTE/adminlte.min.js.map" failed (2: No such file or directory), client: 113.69.33.199, server: 49.234.78.157, request: "GET /static/plugins/AdminLTE/adminlte.min.js.map HTTP/1.1", host: "49.234.78.157"
+2020/05/06 00:29:21 [error] 7716#7716: *4987 open() "/home/ubuntu/git/django_project/collected_static//plugins/AdminLTE/adminlte.min.css.map" failed (2: No such file or directory), client: 113.69.33.199, server: 49.234.78.157, request: "GET /static/plugins/AdminLTE/adminlte.min.css.map HTTP/1.1", host: "49.234.78.157"
+2020/05/06 00:29:21 [error] 7716#7716: *4985 open() "/home/ubuntu/git/django_project/collected_static//plugins/bootstrap-4.4.1/bootstrap.min.css.map" failed (2: No such file or directory), client: 113.69.33.199, server: 49.234.78.157, request: "GET /static/plugins/bootstrap-4.4.1/bootstrap.min.css.map HTTP/1.1", host: "49.234.78.157"
+2020/05/06 00:29:21 [error] 7716#7716: *4987 open() "/home/ubuntu/git/django_project/collected_static//plugins/AdminLTE/adminlte.min.js.map" failed (2: No such file or directory), client: 113.69.33.199, server: 49.234.78.157, request: "GET /static/plugins/AdminLTE/adminlte.min.js.map HTTP/1.1", host: "49.234.78.157"
+2020/05/06 00:29:21 [error] 7716#7716: *4985 open() "/home/ubuntu/git/django_project/collected_static//plugins/bootstrap-4.4.1/bootstrap.bundle.min.js.map" failed (2: No such file or directory), client: 113.69.33.199, server: 49.234.78.157, request: "GET /static/plugins/bootstrap-4.4.1/bootstrap.bundle.min.js.map HTTP/1.1", host: "49.234.78.157"
+2020/05/06 00:29:51 [error] 7716#7716: *4985 open() "/home/ubuntu/git/django_project/collected_static//plugins/bootstrap-4.4.1/bootstrap.min.css.map" failed (2: No such file or directory), client: 113.69.33.199, server: 49.234.78.157, request: "GET /static/plugins/bootstrap-4.4.1/bootstrap.min.css.map HTTP/1.1", host: "49.234.78.157"
+2020/05/06 00:29:51 [error] 7716#7716: *4987 open() "/home/ubuntu/git/django_project/collected_static//plugins/AdminLTE/adminlte.min.css.map" failed (2: No such file or directory), client: 113.69.33.199, server: 49.234.78.157, request: "GET /static/plugins/AdminLTE/adminlte.min.css.map HTTP/1.1", host: "49.234.78.157"
+2020/05/06 00:29:51 [error] 7716#7716: *4987 open() "/home/ubuntu/git/django_project/collected_static//plugins/bootstrap-4.4.1/bootstrap.bundle.min.js.map" failed (2: No such file or directory), client: 113.69.33.199, server: 49.234.78.157, request: "GET /static/plugins/bootstrap-4.4.1/bootstrap.bundle.min.js.map HTTP/1.1", host: "49.234.78.157"
+2020/05/06 00:29:51 [error] 7716#7716: *4985 open() "/home/ubuntu/git/django_project/collected_static//plugins/AdminLTE/adminlte.min.js.map" failed (2: No such file or directory), client: 113.69.33.199, server: 49.234.78.157, request: "GET /static/plugins/AdminLTE/adminlte.min.js.map HTTP/1.1", host: "49.234.78.157"
+2020/05/06 00:32:45 [error] 7716#7716: *4997 open() "/home/ubuntu/git/django_project/collected_static//plugins/bootstrap-4.4.1/bootstrap.min.css.map" failed (2: No such file or directory), client: 113.69.33.199, server: 49.234.78.157, request: "GET /static/plugins/bootstrap-4.4.1/bootstrap.min.css.map HTTP/1.1", host: "49.234.78.157"
+2020/05/06 00:32:45 [error] 7716#7716: *4997 open() "/home/ubuntu/git/django_project/collected_static//plugins/AdminLTE/adminlte.min.css.map" failed (2: No such file or directory), client: 113.69.33.199, server: 49.234.78.157, request: "GET /static/plugins/AdminLTE/adminlte.min.css.map HTTP/1.1", host: "49.234.78.157"
+2020/05/06 00:32:45 [error] 7716#7716: *4997 open() "/home/ubuntu/git/django_project/collected_static//plugins/bootstrap-4.4.1/bootstrap.bundle.min.js.map" failed (2: No such file or directory), client: 113.69.33.199, server: 49.234.78.157, request: "GET /static/plugins/bootstrap-4.4.1/bootstrap.bundle.min.js.map HTTP/1.1", host: "49.234.78.157"
+2020/05/06 00:32:45 [error] 7716#7716: *4997 open() "/home/ubuntu/git/django_project/collected_static//plugins/AdminLTE/adminlte.min.js.map" failed (2: No such file or directory), client: 113.69.33.199, server: 49.234.78.157, request: "GET /static/plugins/AdminLTE/adminlte.min.js.map HTTP/1.1", host: "49.234.78.157"
+2020/05/06 00:32:48 [error] 7716#7716: *4997 open() "/home/ubuntu/git/django_project/collected_static//plugins/bootstrap-4.4.1/bootstrap.min.css.map" failed (2: No such file or directory), client: 113.69.33.199, server: 49.234.78.157, request: "GET /static/plugins/bootstrap-4.4.1/bootstrap.min.css.map HTTP/1.1", host: "49.234.78.157"
+2020/05/06 00:32:48 [error] 7716#7716: *4999 open() "/home/ubuntu/git/django_project/collected_static//plugins/AdminLTE/adminlte.min.css.map" failed (2: No such file or directory), client: 113.69.33.199, server: 49.234.78.157, request: "GET /static/plugins/AdminLTE/adminlte.min.css.map HTTP/1.1", host: "49.234.78.157"
+2020/05/06 00:32:48 [error] 7716#7716: *4997 open() "/home/ubuntu/git/django_project/collected_static//plugins/AdminLTE/adminlte.min.js.map" failed (2: No such file or directory), client: 113.69.33.199, server: 49.234.78.157, request: "GET /static/plugins/AdminLTE/adminlte.min.js.map HTTP/1.1", host: "49.234.78.157"
+2020/05/06 00:32:48 [error] 7716#7716: *4999 open() "/home/ubuntu/git/django_project/collected_static//plugins/bootstrap-4.4.1/bootstrap.bundle.min.js.map" failed (2: No such file or directory), client: 113.69.33.199, server: 49.234.78.157, request: "GET /static/plugins/bootstrap-4.4.1/bootstrap.bundle.min.js.map HTTP/1.1", host: "49.234.78.157"
+2020/05/06 00:32:51 [error] 7716#7716: *4997 open() "/home/ubuntu/git/django_project/collected_static//plugins/bootstrap-4.4.1/bootstrap.min.css.map" failed (2: No such file or directory), client: 113.69.33.199, server: 49.234.78.157, request: "GET /static/plugins/bootstrap-4.4.1/bootstrap.min.css.map HTTP/1.1", host: "49.234.78.157"
+2020/05/06 00:32:51 [error] 7716#7716: *4999 open() "/home/ubuntu/git/django_project/collected_static//plugins/AdminLTE/adminlte.min.css.map" failed (2: No such file or directory), client: 113.69.33.199, server: 49.234.78.157, request: "GET /static/plugins/AdminLTE/adminlte.min.css.map HTTP/1.1", host: "49.234.78.157"
+2020/05/06 00:32:51 [error] 7716#7716: *4999 open() "/home/ubuntu/git/django_project/collected_static//plugins/bootstrap-4.4.1/bootstrap.bundle.min.js.map" failed (2: No such file or directory), client: 113.69.33.199, server: 49.234.78.157, request: "GET /static/plugins/bootstrap-4.4.1/bootstrap.bundle.min.js.map HTTP/1.1", host: "49.234.78.157"
+2020/05/06 00:32:51 [error] 7716#7716: *4997 open() "/home/ubuntu/git/django_project/collected_static//plugins/AdminLTE/adminlte.min.js.map" failed (2: No such file or directory), client: 113.69.33.199, server: 49.234.78.157, request: "GET /static/plugins/AdminLTE/adminlte.min.js.map HTTP/1.1", host: "49.234.78.157"
+2020/05/06 00:33:48 [info] 7716#7716: *5004 client 162.243.139.192 closed keepalive connection
+2020/05/06 00:34:09 [info] 7716#7716: *5006 client 185.173.35.25 closed keepalive connection
+2020/05/06 00:36:28 [error] 7716#7716: *5008 open() "/home/ubuntu/git/django_project/collected_static//plugins/bootstrap-4.4.1/bootstrap.min.css.map" failed (2: No such file or directory), client: 113.69.33.199, server: 49.234.78.157, request: "GET /static/plugins/bootstrap-4.4.1/bootstrap.min.css.map HTTP/1.1", host: "49.234.78.157"
+2020/05/06 00:36:28 [error] 7716#7716: *5010 open() "/home/ubuntu/git/django_project/collected_static//plugins/AdminLTE/adminlte.min.css.map" failed (2: No such file or directory), client: 113.69.33.199, server: 49.234.78.157, request: "GET /static/plugins/AdminLTE/adminlte.min.css.map HTTP/1.1", host: "49.234.78.157"
+2020/05/06 00:36:28 [error] 7716#7716: *5010 open() "/home/ubuntu/git/django_project/collected_static//plugins/bootstrap-4.4.1/bootstrap.bundle.min.js.map" failed (2: No such file or directory), client: 113.69.33.199, server: 49.234.78.157, request: "GET /static/plugins/bootstrap-4.4.1/bootstrap.bundle.min.js.map HTTP/1.1", host: "49.234.78.157"
+2020/05/06 00:36:28 [error] 7716#7716: *5008 open() "/home/ubuntu/git/django_project/collected_static//plugins/AdminLTE/adminlte.min.js.map" failed (2: No such file or directory), client: 113.69.33.199, server: 49.234.78.157, request: "GET /static/plugins/AdminLTE/adminlte.min.js.map HTTP/1.1", host: "49.234.78.157"
+2020/05/06 00:36:31 [info] 7716#7716: *5008 epoll_wait() reported that client prematurely closed connection, so upstream connection is closed too while sending request to upstream, client: 113.69.33.199, server: 49.234.78.157, request: "GET /admin/get_80s_rating/ HTTP/1.1", upstream: "uwsgi://127.0.0.1:8001", host: "49.234.78.157", referrer: "http://49.234.78.157/admin/"
+2020/05/06 00:36:31 [error] 7716#7716: *5010 open() "/home/ubuntu/git/django_project/collected_static//plugins/bootstrap-4.4.1/bootstrap.min.css.map" failed (2: No such file or directory), client: 113.69.33.199, server: 49.234.78.157, request: "GET /static/plugins/bootstrap-4.4.1/bootstrap.min.css.map HTTP/1.1", host: "49.234.78.157"
+2020/05/06 00:36:32 [error] 7716#7716: *5013 open() "/home/ubuntu/git/django_project/collected_static//plugins/AdminLTE/adminlte.min.css.map" failed (2: No such file or directory), client: 113.69.33.199, server: 49.234.78.157, request: "GET /static/plugins/AdminLTE/adminlte.min.css.map HTTP/1.1", host: "49.234.78.157"
+2020/05/06 00:36:32 [error] 7716#7716: *5013 open() "/home/ubuntu/git/django_project/collected_static//plugins/bootstrap-4.4.1/bootstrap.bundle.min.js.map" failed (2: No such file or directory), client: 113.69.33.199, server: 49.234.78.157, request: "GET /static/plugins/bootstrap-4.4.1/bootstrap.bundle.min.js.map HTTP/1.1", host: "49.234.78.157"
+2020/05/06 00:36:32 [error] 7716#7716: *5010 open() "/home/ubuntu/git/django_project/collected_static//plugins/AdminLTE/adminlte.min.js.map" failed (2: No such file or directory), client: 113.69.33.199, server: 49.234.78.157, request: "GET /static/plugins/AdminLTE/adminlte.min.js.map HTTP/1.1", host: "49.234.78.157"
+2020/05/06 00:36:36 [error] 7716#7716: *5013 open() "/home/ubuntu/git/django_project/collected_static//plugins/bootstrap-4.4.1/bootstrap.min.css.map" failed (2: No such file or directory), client: 113.69.33.199, server: 49.234.78.157, request: "GET /static/plugins/bootstrap-4.4.1/bootstrap.min.css.map HTTP/1.1", host: "49.234.78.157"
+2020/05/06 00:36:36 [error] 7716#7716: *5010 open() "/home/ubuntu/git/django_project/collected_static//plugins/AdminLTE/adminlte.min.css.map" failed (2: No such file or directory), client: 113.69.33.199, server: 49.234.78.157, request: "GET /static/plugins/AdminLTE/adminlte.min.css.map HTTP/1.1", host: "49.234.78.157"
+2020/05/06 00:36:36 [error] 7716#7716: *5010 open() "/home/ubuntu/git/django_project/collected_static//plugins/bootstrap-4.4.1/bootstrap.bundle.min.js.map" failed (2: No such file or directory), client: 113.69.33.199, server: 49.234.78.157, request: "GET /static/plugins/bootstrap-4.4.1/bootstrap.bundle.min.js.map HTTP/1.1", host: "49.234.78.157"
+2020/05/06 00:36:36 [error] 7716#7716: *5015 open() "/home/ubuntu/git/django_project/collected_static//plugins/AdminLTE/adminlte.min.js.map" failed (2: No such file or directory), client: 113.69.33.199, server: 49.234.78.157, request: "GET /static/plugins/AdminLTE/adminlte.min.js.map HTTP/1.1", host: "49.234.78.157"
+2020/05/06 00:37:09 [error] 7716#7716: *5015 open() "/home/ubuntu/git/django_project/collected_static//plugins/bootstrap-4.4.1/bootstrap.min.css.map" failed (2: No such file or directory), client: 113.69.33.199, server: 49.234.78.157, request: "GET /static/plugins/bootstrap-4.4.1/bootstrap.min.css.map HTTP/1.1", host: "49.234.78.157"
+2020/05/06 00:37:09 [error] 7716#7716: *5010 open() "/home/ubuntu/git/django_project/collected_static//plugins/AdminLTE/adminlte.min.css.map" failed (2: No such file or directory), client: 113.69.33.199, server: 49.234.78.157, request: "GET /static/plugins/AdminLTE/adminlte.min.css.map HTTP/1.1", host: "49.234.78.157"
+2020/05/06 00:37:09 [error] 7716#7716: *5015 open() "/home/ubuntu/git/django_project/collected_static//plugins/AdminLTE/adminlte.min.js.map" failed (2: No such file or directory), client: 113.69.33.199, server: 49.234.78.157, request: "GET /static/plugins/AdminLTE/adminlte.min.js.map HTTP/1.1", host: "49.234.78.157"
+2020/05/06 00:37:09 [error] 7716#7716: *5010 open() "/home/ubuntu/git/django_project/collected_static//plugins/bootstrap-4.4.1/bootstrap.bundle.min.js.map" failed (2: No such file or directory), client: 113.69.33.199, server: 49.234.78.157, request: "GET /static/plugins/bootstrap-4.4.1/bootstrap.bundle.min.js.map HTTP/1.1", host: "49.234.78.157"
+2020/05/06 00:38:41 [info] 7716#7716: *5018 client 103.146.232.2 closed keepalive connection
+2020/05/06 00:39:31 [info] 7716#7716: *5020 epoll_wait() reported that client prematurely closed connection, so upstream connection is closed too while sending request to upstream, client: 113.69.33.199, server: 49.234.78.157, request: "GET /video/search/?wd=%E9%87%8D%E7%94%9F&page=1 HTTP/1.1", upstream: "uwsgi://127.0.0.1:8001", host: "49.234.78.157"
+2020/05/06 00:43:57 [error] 7716#7716: *5024 open() "/home/ubuntu/git/django_project/collected_static//plugins/bootstrap-4.4.1/bootstrap.min.css.map" failed (2: No such file or directory), client: 113.69.33.199, server: 49.234.78.157, request: "GET /static/plugins/bootstrap-4.4.1/bootstrap.min.css.map HTTP/1.1", host: "49.234.78.157"
+2020/05/06 00:43:57 [error] 7716#7716: *5026 open() "/home/ubuntu/git/django_project/collected_static//plugins/AdminLTE/adminlte.min.css.map" failed (2: No such file or directory), client: 113.69.33.199, server: 49.234.78.157, request: "GET /static/plugins/AdminLTE/adminlte.min.css.map HTTP/1.1", host: "49.234.78.157"
+2020/05/06 00:43:57 [error] 7716#7716: *5024 open() "/home/ubuntu/git/django_project/collected_static//plugins/bootstrap-4.4.1/bootstrap.bundle.min.js.map" failed (2: No such file or directory), client: 113.69.33.199, server: 49.234.78.157, request: "GET /static/plugins/bootstrap-4.4.1/bootstrap.bundle.min.js.map HTTP/1.1", host: "49.234.78.157"
+2020/05/06 00:43:57 [error] 7716#7716: *5026 open() "/home/ubuntu/git/django_project/collected_static//plugins/AdminLTE/adminlte.min.js.map" failed (2: No such file or directory), client: 113.69.33.199, server: 49.234.78.157, request: "GET /static/plugins/AdminLTE/adminlte.min.js.map HTTP/1.1", host: "49.234.78.157"
+2020/05/06 00:43:59 [info] 7716#7716: *5026 epoll_wait() reported that client prematurely closed connection, so upstream connection is closed too while sending request to upstream, client: 113.69.33.199, server: 49.234.78.157, request: "GET /admin/get_80s_rating/ HTTP/1.1", upstream: "uwsgi://127.0.0.1:8001", host: "49.234.78.157", referrer: "http://49.234.78.157/admin/"
+2020/05/06 00:44:00 [error] 7716#7716: *5027 open() "/home/ubuntu/git/django_project/collected_static//plugins/AdminLTE/adminlte.min.css.map" failed (2: No such file or directory), client: 113.69.33.199, server: 49.234.78.157, request: "GET /static/plugins/AdminLTE/adminlte.min.css.map HTTP/1.1", host: "49.234.78.157"
+2020/05/06 00:44:00 [error] 7716#7716: *5024 open() "/home/ubuntu/git/django_project/collected_static//plugins/bootstrap-4.4.1/bootstrap.min.css.map" failed (2: No such file or directory), client: 113.69.33.199, server: 49.234.78.157, request: "GET /static/plugins/bootstrap-4.4.1/bootstrap.min.css.map HTTP/1.1", host: "49.234.78.157"
+2020/05/06 00:44:00 [error] 7716#7716: *5027 open() "/home/ubuntu/git/django_project/collected_static//plugins/bootstrap-4.4.1/bootstrap.bundle.min.js.map" failed (2: No such file or directory), client: 113.69.33.199, server: 49.234.78.157, request: "GET /static/plugins/bootstrap-4.4.1/bootstrap.bundle.min.js.map HTTP/1.1", host: "49.234.78.157"
+2020/05/06 00:44:00 [error] 7716#7716: *5024 open() "/home/ubuntu/git/django_project/collected_static//plugins/AdminLTE/adminlte.min.js.map" failed (2: No such file or directory), client: 113.69.33.199, server: 49.234.78.157, request: "GET /static/plugins/AdminLTE/adminlte.min.js.map HTTP/1.1", host: "49.234.78.157"
+2020/05/06 00:44:03 [error] 7716#7716: *5024 open() "/home/ubuntu/git/django_project/collected_static//plugins/bootstrap-4.4.1/bootstrap.min.css.map" failed (2: No such file or directory), client: 113.69.33.199, server: 49.234.78.157, request: "GET /static/plugins/bootstrap-4.4.1/bootstrap.min.css.map HTTP/1.1", host: "49.234.78.157"
+2020/05/06 00:44:03 [error] 7716#7716: *5027 open() "/home/ubuntu/git/django_project/collected_static//plugins/AdminLTE/adminlte.min.css.map" failed (2: No such file or directory), client: 113.69.33.199, server: 49.234.78.157, request: "GET /static/plugins/AdminLTE/adminlte.min.css.map HTTP/1.1", host: "49.234.78.157"
+2020/05/06 00:44:03 [error] 7716#7716: *5024 open() "/home/ubuntu/git/django_project/collected_static//plugins/bootstrap-4.4.1/bootstrap.bundle.min.js.map" failed (2: No such file or directory), client: 113.69.33.199, server: 49.234.78.157, request: "GET /static/plugins/bootstrap-4.4.1/bootstrap.bundle.min.js.map HTTP/1.1", host: "49.234.78.157"
+2020/05/06 00:44:03 [error] 7716#7716: *5031 open() "/home/ubuntu/git/django_project/collected_static//plugins/AdminLTE/adminlte.min.js.map" failed (2: No such file or directory), client: 113.69.33.199, server: 49.234.78.157, request: "GET /static/plugins/AdminLTE/adminlte.min.js.map HTTP/1.1", host: "49.234.78.157"
+2020/05/06 00:44:15 [error] 7716#7716: *5031 open() "/home/ubuntu/git/django_project/collected_static//plugins/AdminLTE/adminlte.min.css.map" failed (2: No such file or directory), client: 113.69.33.199, server: 49.234.78.157, request: "GET /static/plugins/AdminLTE/adminlte.min.css.map HTTP/1.1", host: "49.234.78.157"
+2020/05/06 00:44:15 [error] 7716#7716: *5024 open() "/home/ubuntu/git/django_project/collected_static//plugins/bootstrap-4.4.1/bootstrap.min.css.map" failed (2: No such file or directory), client: 113.69.33.199, server: 49.234.78.157, request: "GET /static/plugins/bootstrap-4.4.1/bootstrap.min.css.map HTTP/1.1", host: "49.234.78.157"
+2020/05/06 00:44:15 [error] 7716#7716: *5027 open() "/home/ubuntu/git/django_project/collected_static//plugins/bootstrap-4.4.1/bootstrap.bundle.min.js.map" failed (2: No such file or directory), client: 113.69.33.199, server: 49.234.78.157, request: "GET /static/plugins/bootstrap-4.4.1/bootstrap.bundle.min.js.map HTTP/1.1", host: "49.234.78.157"
+2020/05/06 00:44:15 [error] 7716#7716: *5024 open() "/home/ubuntu/git/django_project/collected_static//plugins/AdminLTE/adminlte.min.js.map" failed (2: No such file or directory), client: 113.69.33.199, server: 49.234.78.157, request: "GET /static/plugins/AdminLTE/adminlte.min.js.map HTTP/1.1", host: "49.234.78.157"
+2020/05/06 00:44:34 [error] 7716#7716: *5024 open() "/home/ubuntu/git/django_project/collected_static//plugins/bootstrap-4.4.1/bootstrap.min.css.map" failed (2: No such file or directory), client: 113.69.33.199, server: 49.234.78.157, request: "GET /static/plugins/bootstrap-4.4.1/bootstrap.min.css.map HTTP/1.1", host: "49.234.78.157"
+2020/05/06 00:44:34 [error] 7716#7716: *5027 open() "/home/ubuntu/git/django_project/collected_static//plugins/AdminLTE/adminlte.min.css.map" failed (2: No such file or directory), client: 113.69.33.199, server: 49.234.78.157, request: "GET /static/plugins/AdminLTE/adminlte.min.css.map HTTP/1.1", host: "49.234.78.157"
+2020/05/06 00:44:34 [error] 7716#7716: *5031 open() "/home/ubuntu/git/django_project/collected_static//plugins/bootstrap-4.4.1/bootstrap.bundle.min.js.map" failed (2: No such file or directory), client: 113.69.33.199, server: 49.234.78.157, request: "GET /static/plugins/bootstrap-4.4.1/bootstrap.bundle.min.js.map HTTP/1.1", host: "49.234.78.157"
+2020/05/06 00:44:34 [error] 7716#7716: *5024 open() "/home/ubuntu/git/django_project/collected_static//plugins/AdminLTE/adminlte.min.js.map" failed (2: No such file or directory), client: 113.69.33.199, server: 49.234.78.157, request: "GET /static/plugins/AdminLTE/adminlte.min.js.map HTTP/1.1", host: "49.234.78.157"
+2020/05/06 00:44:39 [info] 7716#7716: *5027 client 113.69.33.199 closed keepalive connection
+2020/05/06 00:44:39 [info] 7716#7716: *5031 client 113.69.33.199 closed keepalive connection
+2020/05/06 00:44:39 [info] 7716#7716: *5024 client 113.69.33.199 closed keepalive connection
+2020/05/06 00:47:37 [info] 7716#7716: *5037 client 113.69.33.199 closed keepalive connection (104: Connection reset by peer)
+2020/05/06 00:48:51 [info] 7716#7716: *5044 client 113.69.33.199 closed keepalive connection (104: Connection reset by peer)
+2020/05/06 00:49:26 [info] 7716#7716: *5048 client 113.69.33.199 closed keepalive connection (104: Connection reset by peer)
+2020/05/06 00:51:51 [info] 7716#7716: *5050 client 113.69.33.199 closed keepalive connection (104: Connection reset by peer)
+2020/05/06 00:52:58 [info] 7716#7716: *5053 client 113.69.33.199 closed keepalive connection
+2020/05/06 00:58:37 [info] 7716#7716: *5055 epoll_wait() reported that client prematurely closed connection, so upstream connection is closed too while sending request to upstream, client: 113.69.33.199, server: 49.234.78.157, request: "GET /admin/get_80s_rating/ HTTP/1.1", upstream: "uwsgi://127.0.0.1:8001", host: "49.234.78.157", referrer: "http://49.234.78.157/admin/"
+2020/05/06 00:58:37 [info] 7716#7716: *5060 epoll_wait() reported that client prematurely closed connection, so upstream connection is closed too while sending request to upstream, client: 113.69.33.199, server: 49.234.78.157, request: "GET /admin/get_rating/ HTTP/1.1", upstream: "uwsgi://127.0.0.1:8001", host: "49.234.78.157", referrer: "http://49.234.78.157/admin/"
+2020/05/06 01:00:25 [info] 7716#7716: *5062 epoll_wait() reported that client prematurely closed connection, so upstream connection is closed too while sending request to upstream, client: 113.69.33.199, server: 49.234.78.157, request: "GET /admin/get_80s_rating/ HTTP/1.1", upstream: "uwsgi://127.0.0.1:8001", host: "49.234.78.157", referrer: "http://49.234.78.157/admin/"
+2020/05/06 01:01:29 [info] 7716#7716: *5075 client 113.69.33.199 closed keepalive connection (104: Connection reset by peer)
+2020/05/06 01:02:01 [info] 7716#7716: *5088 client 113.69.33.199 closed keepalive connection
+2020/05/06 01:02:04 [info] 7716#7716: *5086 client 113.69.33.199 closed keepalive connection
+2020/05/06 01:02:04 [info] 7716#7716: *5087 client 113.69.33.199 closed keepalive connection
+2020/05/06 01:02:09 [info] 7716#7716: *5084 client 113.69.33.199 closed keepalive connection (104: Connection reset by peer)
+2020/05/06 01:02:34 [info] 7716#7716: *5099 client 113.69.33.199 closed keepalive connection (104: Connection reset by peer)
+2020/05/06 01:03:15 [info] 7716#7716: *5113 epoll_wait() reported that client prematurely closed connection, so upstream connection is closed too while sending request to upstream, client: 113.69.33.199, server: 49.234.78.157, request: "GET /admin/update/?url_index=2&type=count HTTP/1.1", upstream: "uwsgi://127.0.0.1:8001", host: "49.234.78.157", referrer: "http://49.234.78.157/admin/"
+2020/05/06 01:04:05 [info] 7716#7716: *5108 client 113.69.33.199 closed keepalive connection (104: Connection reset by peer)
+2020/05/06 01:25:56 [info] 7716#7716: *5124 client 103.249.180.29 closed keepalive connection
+2020/05/06 02:09:57 [info] 7716#7716: *5128 client 183.192.179.16 closed keepalive connection (104: Connection reset by peer)
+2020/05/06 02:18:47 [info] 7716#7716: *5130 client 59.36.132.240 closed keepalive connection (104: Connection reset by peer)
+2020/05/06 02:18:47 [info] 7716#7716: *5132 client 59.36.132.240 closed keepalive connection (104: Connection reset by peer)
+2020/05/06 02:18:47 [info] 7716#7716: *5134 client 59.36.132.240 closed keepalive connection (104: Connection reset by peer)
+2020/05/06 02:25:24 [info] 7716#7716: *5136 client 182.254.52.17 closed keepalive connection (104: Connection reset by peer)
+2020/05/06 02:57:17 [info] 7716#7716: *5142 client 45.236.242.39 closed keepalive connection
+2020/05/06 03:07:46 [info] 7716#7716: *5144 client 182.254.52.17 closed keepalive connection (104: Connection reset by peer)
+2020/05/06 03:19:31 [info] 7716#7716: *5146 client 217.15.155.61 closed keepalive connection
+2020/05/06 03:22:44 [info] 7716#7716: *5148 client 131.221.107.58 closed keepalive connection
+2020/05/06 03:25:49 [info] 7716#7716: *5150 client 182.254.52.17 closed keepalive connection (104: Connection reset by peer)
+2020/05/06 03:25:49 [info] 7716#7716: *5152 client 182.254.52.17 closed keepalive connection (104: Connection reset by peer)
+2020/05/06 03:39:46 [info] 7716#7716: *5154 client 103.196.36.41 closed keepalive connection
+2020/05/06 03:57:09 [info] 7716#7716: *5156 client 182.254.52.17 closed keepalive connection (104: Connection reset by peer)
+2020/05/06 04:20:08 [info] 7716#7716: *5160 client 182.254.52.17 closed keepalive connection (104: Connection reset by peer)
+2020/05/06 04:33:23 [info] 7716#7716: *5162 client 183.192.179.16 closed keepalive connection (104: Connection reset by peer)
+2020/05/06 05:24:19 [info] 7716#7716: *5166 client 183.192.179.16 closed keepalive connection (104: Connection reset by peer)
+2020/05/06 05:37:52 [info] 7716#7716: *5168 client 192.95.41.112 closed keepalive connection
+2020/05/06 05:37:52 [info] 7716#7716: *5170 client 192.95.41.112 closed keepalive connection
+2020/05/06 05:37:53 [info] 7716#7716: *5172 client 192.95.41.112 closed keepalive connection
+2020/05/06 05:37:53 [info] 7716#7716: *5174 client 192.95.41.112 closed keepalive connection
+2020/05/06 05:37:54 [info] 7716#7716: *5176 client 192.95.41.112 closed keepalive connection
+2020/05/06 05:37:54 [info] 7716#7716: *5178 client 192.95.41.112 closed keepalive connection
+2020/05/06 05:37:55 [info] 7716#7716: *5180 client 192.95.41.112 closed keepalive connection
+2020/05/06 05:37:55 [info] 7716#7716: *5182 client 192.95.41.112 closed keepalive connection
+2020/05/06 05:37:56 [info] 7716#7716: *5184 client 192.95.41.112 closed keepalive connection
+2020/05/06 06:07:42 [info] 7716#7716: *5194 client 101.89.19.140 closed keepalive connection (104: Connection reset by peer)
+2020/05/06 06:07:53 [info] 7716#7716: *5196 client 182.254.52.17 closed keepalive connection (104: Connection reset by peer)
+2020/05/06 06:14:46 [info] 7716#7716: *5198 client 182.254.52.17 closed keepalive connection (104: Connection reset by peer)
+2020/05/06 06:52:10 [info] 7716#7716: *5204 client 213.111.72.218 closed keepalive connection
+2020/05/06 07:15:46 [info] 7716#7716: *5206 client 182.254.52.17 closed keepalive connection (104: Connection reset by peer)
+2020/05/06 07:18:16 [info] 7716#7716: *5208 client 58.247.212.239 closed keepalive connection (104: Connection reset by peer)
+2020/05/06 07:36:23 [info] 7716#7716: *5210 client 182.254.52.17 closed keepalive connection (104: Connection reset by peer)
+2020/05/06 07:58:31 [info] 7716#7716: *5212 client 182.254.52.17 closed keepalive connection (104: Connection reset by peer)
+2020/05/06 07:59:19 [info] 7716#7716: *5214 client 47.110.129.37 closed keepalive connection
+2020/05/06 07:59:19 [info] 7716#7716: *5216 client 47.110.129.37 closed keepalive connection
+2020/05/06 07:59:19 [info] 7716#7716: *5218 client 47.110.129.37 closed keepalive connection
+2020/05/06 07:59:19 [info] 7716#7716: *5220 client 47.110.129.37 closed keepalive connection
+2020/05/06 07:59:20 [info] 7716#7716: *5222 client 47.110.129.37 closed keepalive connection
+2020/05/06 07:59:20 [info] 7716#7716: *5224 client 47.110.129.37 closed keepalive connection
+2020/05/06 07:59:20 [info] 7716#7716: *5226 client 47.110.129.37 closed keepalive connection
+2020/05/06 07:59:20 [info] 7716#7716: *5228 client 47.110.129.37 closed keepalive connection
+2020/05/06 07:59:20 [info] 7716#7716: *5230 client 47.110.129.37 closed keepalive connection
+2020/05/06 08:20:51 [info] 7716#7716: *5234 client 182.254.52.17 closed keepalive connection (104: Connection reset by peer)
+2020/05/06 08:20:51 [info] 7716#7716: *5236 client 182.254.52.17 closed keepalive connection (104: Connection reset by peer)
+2020/05/06 08:25:42 [info] 7716#7716: *5238 client 14.215.156.18 closed keepalive connection
+2020/05/06 08:26:17 [info] 7716#7716: *5239 client 182.254.52.17 closed keepalive connection (104: Connection reset by peer)
+2020/05/06 08:26:17 [info] 7716#7716: *5241 client 182.254.52.17 closed keepalive connection (104: Connection reset by peer)
+2020/05/06 08:35:08 [info] 7716#7716: *5244 client 182.254.52.17 closed keepalive connection (104: Connection reset by peer)
+2020/05/06 08:46:51 [info] 7716#7716: *6210 client 61.241.50.63 closed keepalive connection (104: Connection reset by peer)
+2020/05/06 08:55:29 [info] 7716#7716: *6212 client 61.241.50.63 closed keepalive connection (104: Connection reset by peer)
+2020/05/06 08:55:29 [info] 7716#7716: *6214 client 61.241.50.63 closed keepalive connection (104: Connection reset by peer)
+2020/05/06 09:15:54 [info] 7716#7716: *6217 client 182.254.52.17 closed keepalive connection (104: Connection reset by peer)
+2020/05/06 09:24:01 [info] 7716#7716: *6220 client 183.136.225.57 closed keepalive connection
+2020/05/06 09:24:48 [info] 7716#7716: *6222 client 182.254.52.17 closed keepalive connection (104: Connection reset by peer)
+2020/05/06 09:24:55 [info] 7716#7716: *6224 client 58.247.212.239 closed keepalive connection (104: Connection reset by peer)
+2020/05/06 10:23:15 [info] 7716#7716: *6226 client 182.254.52.17 closed keepalive connection (104: Connection reset by peer)
+2020/05/06 10:42:02 [info] 7716#7716: *6228 client 115.127.51.46 closed keepalive connection
+2020/05/06 11:19:00 [info] 7716#7716: *6230 client 182.254.52.17 closed keepalive connection (104: Connection reset by peer)
+2020/05/06 11:24:07 [info] 7716#7716: *6232 client 193.118.53.194 closed keepalive connection
+2020/05/06 11:50:51 [info] 7716#7716: *6235 client 61.241.50.63 closed keepalive connection (104: Connection reset by peer)
+2020/05/06 11:53:14 [info] 7716#7716: *6237 client 14.18.182.223 closed keepalive connection (104: Connection reset by peer)
+2020/05/06 11:53:14 [info] 7716#7716: *6239 client 14.18.182.223 closed keepalive connection (104: Connection reset by peer)
+2020/05/06 11:56:49 [info] 7716#7716: *6241 client 182.254.52.17 closed keepalive connection (104: Connection reset by peer)
+2020/05/06 11:56:50 [info] 7716#7716: *6243 client 182.254.52.17 closed keepalive connection (104: Connection reset by peer)
+2020/05/06 12:02:38 [info] 7716#7716: *6246 client 188.212.77.126 closed keepalive connection
+2020/05/06 12:06:47 [info] 7716#7716: *6248 client 182.254.52.17 closed keepalive connection (104: Connection reset by peer)
+2020/05/06 12:20:12 [info] 7716#7716: *6252 client 182.254.52.17 closed keepalive connection (104: Connection reset by peer)
+2020/05/06 12:34:00 [info] 7716#7716: *6259 client 112.96.192.223 closed keepalive connection
+2020/05/06 12:34:00 [info] 7716#7716: *6256 client 112.96.192.223 closed keepalive connection
+2020/05/06 12:34:03 [info] 7716#7716: *6260 client 112.96.192.223 closed keepalive connection
+2020/05/06 12:34:09 [info] 7716#7716: *6258 client 112.96.192.223 closed keepalive connection
+2020/05/06 12:34:11 [info] 7716#7716: *6261 client 112.96.192.223 closed keepalive connection
+2020/05/06 12:34:24 [info] 7716#7716: *6263 epoll_wait() reported that client prematurely closed connection, so upstream connection is closed too (104: Connection reset by peer) while sending request to upstream, client: 112.96.192.223, server: 49.234.78.157, request: "GET /admin/get_80s_rating/ HTTP/1.1", upstream: "uwsgi://127.0.0.1:8001", host: "49.234.78.157", referrer: "http://49.234.78.157/admin/"
+2020/05/06 12:34:28 [info] 7716#7716: *6268 client prematurely closed connection while sending response to client, client: 112.96.192.223, server: 49.234.78.157, request: "GET /static/app_video/img/carousel/p2593362391.jpg HTTP/1.1", host: "49.234.78.157"
+2020/05/06 12:34:28 [info] 7716#7716: *6271 client 112.96.192.223 closed keepalive connection
+2020/05/06 12:34:31 [info] 7716#7716: *6270 client 112.96.192.223 closed keepalive connection
+2020/05/06 12:34:38 [info] 7716#7716: *6273 client 112.96.192.223 closed keepalive connection
+2020/05/06 12:34:42 [info] 7716#7716: *6277 client 112.96.192.223 closed keepalive connection
+2020/05/06 12:34:51 [info] 7716#7716: *6280 client 112.96.192.223 closed keepalive connection
+2020/05/06 12:34:53 [info] 7716#7716: *6286 client 112.96.192.223 closed keepalive connection
+2020/05/06 12:34:55 [info] 7716#7716: *6288 client 112.96.192.223 closed keepalive connection
+2020/05/06 12:34:59 [info] 7716#7716: *6290 client 112.96.192.223 closed keepalive connection
+2020/05/06 12:35:01 [info] 7716#7716: *6292 client 112.96.192.223 closed keepalive connection
+2020/05/06 12:35:04 [info] 7716#7716: *6294 client 112.96.192.223 closed keepalive connection
+2020/05/06 12:35:20 [info] 7716#7716: *6297 client 112.96.192.223 closed keepalive connection
+2020/05/06 12:35:24 [error] 7716#7716: *6266 upstream timed out (110: Connection timed out) while reading response header from upstream, client: 112.96.192.223, server: 49.234.78.157, request: "GET /admin/get_80s_rating/ HTTP/1.1", upstream: "uwsgi://127.0.0.1:8001", host: "49.234.78.157", referrer: "http://49.234.78.157/admin/"
+2020/05/06 12:35:26 [info] 7716#7716: *6299 client 112.96.192.223 closed keepalive connection
+2020/05/06 12:35:27 [info] 7716#7716: *6266 client 112.96.192.223 closed keepalive connection
+2020/05/06 12:35:34 [info] 7716#7716: *6302 client 112.96.192.223 closed keepalive connection
+2020/05/06 13:00:36 [info] 7716#7716: *6307 client 112.96.192.223 closed keepalive connection
+2020/05/06 13:00:50 [info] 7716#7716: *6309 client 112.96.192.223 closed keepalive connection
+2020/05/06 13:00:59 [info] 7716#7716: *6311 client 112.96.192.223 closed keepalive connection
+2020/05/06 13:01:18 [info] 7716#7716: *6313 client 112.96.192.223 closed keepalive connection
+2020/05/06 13:02:52 [info] 7716#7716: *6315 client 112.96.192.223 closed keepalive connection
+2020/05/06 13:03:09 [info] 7716#7716: *6317 client 112.96.192.223 closed keepalive connection
+2020/05/06 13:03:25 [info] 7716#7716: *6319 client 112.96.192.223 closed keepalive connection
+2020/05/06 13:10:49 [info] 7716#7716: *6321 client 182.254.52.17 closed keepalive connection (104: Connection reset by peer)
+2020/05/06 14:37:47 [info] 7716#7716: *6329 client 198.108.66.240 closed keepalive connection
+2020/05/06 14:51:54 [info] 7716#7716: *6331 client 61.241.50.63 closed keepalive connection (104: Connection reset by peer)
+2020/05/06 15:31:56 [info] 7716#7716: *6335 client 182.254.52.17 closed keepalive connection (104: Connection reset by peer)
+2020/05/06 16:03:33 [info] 7716#7716: *6337 client 182.254.52.17 closed keepalive connection (104: Connection reset by peer)
+2020/05/06 16:03:33 [info] 7716#7716: *6339 client 182.254.52.17 closed keepalive connection (104: Connection reset by peer)
+2020/05/06 16:05:42 [info] 7716#7716: *6341 client 182.254.52.17 closed keepalive connection (104: Connection reset by peer)
+2020/05/06 16:16:10 [info] 7716#7716: *6345 client prematurely closed connection, client: 218.21.170.238, server: 49.234.78.157, request: "POST /HNAP1/ HTTP/1.0", host: "49.234.78.157:80"
+2020/05/06 16:17:09 [info] 7716#7716: *6349 client 190.122.154.150 closed keepalive connection
+2020/05/06 16:20:50 [info] 7716#7716: *6351 client 182.254.52.17 closed keepalive connection (104: Connection reset by peer)
+2020/05/06 16:32:52 [info] 7716#7716: *6353 client 182.254.52.17 closed keepalive connection (104: Connection reset by peer)
+2020/05/06 16:32:52 [info] 7716#7716: *6355 client 182.254.52.17 closed keepalive connection (104: Connection reset by peer)
+2020/05/06 16:32:52 [info] 7716#7716: *6357 client 182.254.52.17 closed keepalive connection (104: Connection reset by peer)
+2020/05/06 17:35:14 [info] 7716#7716: *6360 client 182.254.52.17 closed keepalive connection (104: Connection reset by peer)
+2020/05/06 17:35:14 [info] 7716#7716: *6362 client 182.254.52.17 closed keepalive connection (104: Connection reset by peer)
+2020/05/06 17:37:56 [info] 7716#7716: *6364 client 14.18.182.223 closed keepalive connection (104: Connection reset by peer)
+2020/05/06 17:37:56 [info] 7716#7716: *6366 client 14.18.182.223 closed keepalive connection (104: Connection reset by peer)
+2020/05/06 17:54:16 [info] 7716#7716: *6368 client 191.242.215.122 closed keepalive connection
+2020/05/06 17:55:08 [info] 7716#7716: *6370 client 162.243.139.56 closed keepalive connection
+2020/05/06 18:30:35 [info] 7716#7716: *6377 client 213.92.250.29 closed keepalive connection
+2020/05/06 18:31:20 [info] 7716#7716: *6379 client 101.89.19.140 closed keepalive connection (104: Connection reset by peer)
+2020/05/06 18:43:28 [info] 7716#7716: *6381 client 5.160.197.198 closed keepalive connection (104: Connection reset by peer)
+2020/05/06 19:08:05 [info] 7716#7716: *6383 client 101.89.19.140 closed keepalive connection (104: Connection reset by peer)
+2020/05/06 19:08:05 [info] 7716#7716: *6385 client 101.89.19.140 closed keepalive connection (104: Connection reset by peer)
+2020/05/06 19:17:34 [info] 7716#7716: *6387 client 202.70.69.85 closed keepalive connection
+2020/05/06 19:56:33 [info] 7716#7716: *7357 client 112.96.192.223 closed keepalive connection
+2020/05/06 19:56:43 [info] 7716#7716: *7359 client 112.96.192.223 closed keepalive connection
+2020/05/06 19:56:43 [info] 7716#7716: *7361 client prematurely closed connection while sending response to client, client: 112.96.192.223, server: 49.234.78.157, request: "GET /static/jquery/jquery-1.12.4.js HTTP/1.1", host: "49.234.78.157", referrer: "http://49.234.78.157/admin/view_log/?page=14"
+2020/05/06 19:56:43 [info] 7716#7716: *7362 client prematurely closed connection (32: Broken pipe) while sending response to client, client: 112.96.192.223, server: 49.234.78.157, request: "GET /static/plugins/AdminLTE/adminlte.min.css HTTP/1.1", host: "49.234.78.157", referrer: "http://49.234.78.157/admin/view_log/?page=14"
+2020/05/06 19:56:46 [info] 7716#7716: *7360 client 112.96.192.223 closed keepalive connection
+2020/05/06 19:56:51 [info] 7716#7716: *7366 client 112.96.192.223 closed keepalive connection
+2020/05/06 19:56:53 [info] 7716#7716: *7365 client 112.96.192.223 closed keepalive connection
+2020/05/06 19:56:54 [info] 7716#7716: *7367 client 112.96.192.223 closed keepalive connection
+2020/05/06 19:56:59 [info] 7716#7716: *7370 client 182.254.52.17 closed keepalive connection (104: Connection reset by peer)
+2020/05/06 19:57:00 [info] 7716#7716: *7368 client 112.96.192.223 closed keepalive connection
+2020/05/06 19:57:03 [info] 7716#7716: *7372 client 112.96.192.223 closed keepalive connection
+2020/05/06 19:57:27 [info] 7716#7716: *7374 client 112.96.192.223 closed keepalive connection
+2020/05/06 19:57:51 [info] 7716#7716: *7376 client 172.105.89.161 closed keepalive connection
+2020/05/06 19:58:00 [info] 7716#7716: *7378 client 112.96.192.223 closed keepalive connection
+2020/05/06 19:58:06 [info] 7716#7716: *7380 client 112.96.192.223 closed keepalive connection
+2020/05/06 19:59:14 [info] 7716#7716: *7385 client 182.254.52.17 closed keepalive connection (104: Connection reset by peer)
+2020/05/06 19:59:15 [info] 7716#7716: *7387 client 182.254.52.17 closed keepalive connection (104: Connection reset by peer)
+2020/05/06 21:36:29 [info] 7716#7716: *7389 client 182.254.52.17 closed keepalive connection (104: Connection reset by peer)
+2020/05/06 21:55:11 [info] 7716#7716: *7391 client 113.69.33.199 closed keepalive connection (104: Connection reset by peer)
+2020/05/07 00:24:11 [info] 7716#7716: *7400 client 188.233.188.82 closed keepalive connection
+2020/05/07 00:35:32 [info] 7716#7716: *7404 client 159.65.121.162 closed keepalive connection
+2020/05/07 00:35:34 [info] 7716#7716: *7406 client 159.65.121.162 closed keepalive connection

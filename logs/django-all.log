@@ -3198,3 +3198,59 @@ Traceback (most recent call last):
   File "/home/ubuntu/.local/lib/python3.6/site-packages/django/db/backends/sqlite3/base.py", line 396, in execute
     return Database.Cursor.execute(self, query, params)
 django.db.utils.OperationalError: no such column: video_videodata.vod_rating
+[2020-05-04 23:03:42] [ERROR] Internal Server Error: /admin/get_80s_rating/
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/ubuntu/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    "returned None instead." % (callback.__module__, view_name)
+ValueError: The view my_admin.views.inner didn't return an HttpResponse object. It returned None instead.
+[2020-05-05 00:21:43] [ERROR] Internal Server Error: /admin/get_80s_rating/
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/ubuntu/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    "returned None instead." % (callback.__module__, view_name)
+ValueError: The view my_admin.views.inner didn't return an HttpResponse object. It returned None instead.
+[2020-05-05 01:19:19] [ERROR] Internal Server Error: /admin/get_80s_rating/
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/ubuntu/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    "returned None instead." % (callback.__module__, view_name)
+ValueError: The view my_admin.views.inner didn't return an HttpResponse object. It returned None instead.
+[2020-05-05 01:31:26] [ERROR] Internal Server Error: /admin/get_80s_rating/
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/ubuntu/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    "returned None instead." % (callback.__module__, view_name)
+ValueError: The view my_admin.views.inner didn't return an HttpResponse object. It returned None instead.
+[2020-05-05 08:06:03] [ERROR] Internal Server Error: /admin/get_80s_rating/
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/ubuntu/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    "returned None instead." % (callback.__module__, view_name)
+ValueError: The view my_admin.views.inner didn't return an HttpResponse object. It returned None instead.
+[2020-05-05 08:12:28] [ERROR] Internal Server Error: /admin/get_80s_rating/
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/ubuntu/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    "returned None instead." % (callback.__module__, view_name)
+ValueError: The view my_admin.views.inner didn't return an HttpResponse object. It returned None instead.
+[2020-05-05 08:22:36] [ERROR] Internal Server Error: /admin/get_80s_rating/
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/ubuntu/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    "returned None instead." % (callback.__module__, view_name)
+ValueError: The view my_admin.views.inner didn't return an HttpResponse object. It returned None instead.
+[2020-05-05 08:35:14] [ERROR] Internal Server Error: /admin/get_80s_rating/
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/ubuntu/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
+    "returned None instead." % (callback.__module__, view_name)
+ValueError: The view my_admin.views.inner didn't return an HttpResponse object. It returned None instead.
