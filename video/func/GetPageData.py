@@ -471,7 +471,7 @@ class Get80sScore(object):
             if self.count%50==0:
                 print('已读取80s数据:%s'%self.count)
                 with open('80s_detail_list.json','w',encoding='utf-8') as f:
-                    json.dump(self.detail_list,f)
+                    json.dump(self.detail_list,f,ensure_ascii=False, indent=4)
                     print('详情页列表更新')
             vod_info = DBHandler.load_vod_data_by_name(video_data['vod_name'].replace(' ',''))
             if len(vod_info) == 1:
@@ -549,6 +549,10 @@ class Get80sScore(object):
                     video_list = self.get_video(*page)
                     self.detail_list.extend(video_list)
                     # time.sleep(5) # 每3分钟获取一次页面
+                if len(self.detail_list)!=0:
+                    with open('80s_detail_list.json','w',encoding='utf-8') as f:
+                        json.dump(self.detail_list,f,ensure_ascii=False, indent=4)
+                        print('详情页列表保存成功')
             # 3.将电影数据与数据库数据对比，匹配则储存评分
             for video_data in self.detail_list:
                 self.save_score(video_data)
@@ -556,13 +560,13 @@ class Get80sScore(object):
             print(self.error_list)
             if len(self.detail_list)!=0:
                 with open('80s_detail_list.json','w',encoding='utf-8') as f:
-                    json.dump(self.detail_list,f)
+                    json.dump(self.detail_list,f,ensure_ascii=False, indent=4)
                     print('详情页列表保存成功')
             return True
         except Exception as e:
             print('80s_main Exception',e)
             if len(self.detail_list)!=0:
                 with open('80s_detail_list.json','w',encoding='utf-8') as f:
-                    json.dump(self.detail_list,f)
+                    json.dump(self.detail_list,f,ensure_ascii=False, indent=4)
                     print('详情页列表保存成功')
             return False

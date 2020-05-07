@@ -480,8 +480,8 @@ def get_douban_rating(request):
                             time.sleep(180)
                             timeout += 1
                             if timeout == 5:
-                                print('连续五次失败，等待20分钟')
-                                time.sleep(1200)
+                                print('连续五次失败，等待30分钟')
+                                time.sleep(1800)
                                 print('----------重新启动查找------------')
                                 break
                             elif timeout >= 10:
