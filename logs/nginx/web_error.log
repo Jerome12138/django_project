@@ -3041,3 +3041,93 @@
 2020/05/07 22:50:19 [info] 7716#7716: *7758 epoll_wait() reported that client prematurely closed connection, so upstream connection is closed too while sending request to upstream, client: 183.27.45.6, server: 49.234.78.157, request: "GET /admin/get_80s_rating/ HTTP/1.1", upstream: "uwsgi://127.0.0.1:8001", host: "49.234.78.157", referrer: "http://49.234.78.157/admin/"
 2020/05/07 23:04:44 [info] 7716#7716: *7771 client 36.89.213.53 closed keepalive connection
 2020/05/07 23:10:00 [info] 7716#7716: *7773 epoll_wait() reported that client prematurely closed connection, so upstream connection is closed too while sending request to upstream, client: 183.27.45.6, server: 49.234.78.157, request: "GET /admin/get_80s_rating/ HTTP/1.1", upstream: "uwsgi://127.0.0.1:8001", host: "49.234.78.157", referrer: "http://49.234.78.157/admin/"
+2020/05/07 23:23:09 [info] 7716#7716: *7788 epoll_wait() reported that client prematurely closed connection, so upstream connection is closed too while sending request to upstream, client: 183.27.45.6, server: 49.234.78.157, request: "GET /video/search/?wd=%E7%9C%8B%E4%B8%8D%E8%A7%81%E7%9A%84%E5%A5%B3%E4%BA%BA&page=1 HTTP/1.1", upstream: "uwsgi://127.0.0.1:8001", host: "49.234.78.157", referrer: "http://49.234.78.157/video/type/1/"
+2020/05/07 23:25:00 [info] 7716#7716: *7790 client 183.27.45.6 closed keepalive connection
+2020/05/07 23:26:19 [info] 7716#7716: *7795 client 183.27.45.6 closed keepalive connection
+2020/05/07 23:35:48 [info] 7716#7716: *7804 client 104.37.152.61 closed keepalive connection (104: Connection reset by peer)
+2020/05/07 23:41:55 [info] 7716#7716: *7806 epoll_wait() reported that client prematurely closed connection, so upstream connection is closed too while sending request to upstream, client: 183.27.45.6, server: 49.234.78.157, request: "GET /admin/get_80s_rating/ HTTP/1.1", upstream: "uwsgi://127.0.0.1:8001", host: "49.234.78.157", referrer: "http://49.234.78.157/admin/"
+2020/05/07 23:42:42 [info] 7716#7716: *7810 client 183.27.45.6 closed keepalive connection
+2020/05/07 23:54:25 [info] 7716#7716: *7817 client prematurely closed connection while sending response to client, client: 183.27.45.6, server: 49.234.78.157, request: "GET /static/plugins/AdminLTE/adminlte.min.css HTTP/1.1", host: "49.234.78.157", referrer: "http://49.234.78.157/admin/view_log/?page=28"
+2020/05/07 23:54:59 [info] 7716#7716: *7816 client 183.27.45.6 closed keepalive connection
+2020/05/07 23:55:03 [info] 7716#7716: *7818 client 183.27.45.6 closed keepalive connection
+2020/05/07 23:55:08 [info] 7716#7716: *7814 epoll_wait() reported that client prematurely closed connection, so upstream connection is closed too while sending request to upstream, client: 183.27.45.6, server: 49.234.78.157, request: "GET /admin/get_80s_rating/ HTTP/1.1", upstream: "uwsgi://127.0.0.1:8001", host: "49.234.78.157", referrer: "http://49.234.78.157/admin/"
+2020/05/07 23:55:08 [info] 7716#7716: *7821 epoll_wait() reported that client prematurely closed connection, so upstream connection is closed too while sending request to upstream, client: 183.27.45.6, server: 49.234.78.157, request: "GET /admin/get_rating/ HTTP/1.1", upstream: "uwsgi://127.0.0.1:8001", host: "49.234.78.157", referrer: "http://49.234.78.157/admin/"
+2020/05/07 23:56:00 [info] 7716#7716: *7827 client 183.27.45.6 closed keepalive connection (104: Connection reset by peer)
+2020/05/08 00:30:57 [info] 7716#7716: *7835 client 101.251.242.238 closed keepalive connection (104: Connection reset by peer)
+2020/05/08 02:37:45 [info] 7716#7716: *7842 client 58.247.212.239 closed keepalive connection (104: Connection reset by peer)
+2020/05/08 02:48:01 [info] 7716#7716: *7847 client 46.229.205.14 closed keepalive connection
+2020/05/08 02:58:37 [info] 7716#7716: *7849 client 138.204.49.186 closed keepalive connection
+2020/05/08 03:02:35 [info] 7716#7716: *7852 client 59.36.132.110 closed keepalive connection
+2020/05/08 03:03:27 [info] 7716#7716: *7853 client 182.254.52.17 closed keepalive connection (104: Connection reset by peer)
+2020/05/08 03:03:28 [info] 7716#7716: *7855 client 182.254.52.17 closed keepalive connection (104: Connection reset by peer)
+2020/05/08 03:30:41 [info] 7716#7716: *7857 client 138.185.124.106 closed keepalive connection
+2020/05/08 03:33:44 [info] 7716#7716: *7859 client 182.254.52.17 closed keepalive connection (104: Connection reset by peer)
+2020/05/08 03:33:44 [info] 7716#7716: *7861 client 182.254.52.17 closed keepalive connection (104: Connection reset by peer)
+2020/05/08 03:33:44 [info] 7716#7716: *7863 client 182.254.52.17 closed keepalive connection (104: Connection reset by peer)
+2020/05/08 03:54:52 [info] 7716#7716: *7865 client 182.254.52.17 closed keepalive connection (104: Connection reset by peer)
+2020/05/08 04:01:44 [info] 7716#7716: *7867 client 182.254.52.17 closed keepalive connection (104: Connection reset by peer)
+2020/05/08 04:12:22 [info] 7716#7716: *7870 client 45.175.181.201 closed keepalive connection
+2020/05/08 04:20:54 [info] 7716#7716: *7872 client 101.89.19.140 closed keepalive connection (104: Connection reset by peer)
+2020/05/08 04:48:40 [info] 7716#7716: *7875 client 193.118.53.194 closed keepalive connection
+2020/05/08 05:00:50 [info] 7716#7716: *7878 client 182.254.52.17 closed keepalive connection (104: Connection reset by peer)
+2020/05/08 05:00:50 [info] 7716#7716: *7880 client 182.254.52.17 closed keepalive connection (104: Connection reset by peer)
+2020/05/08 05:10:15 [info] 7716#7716: *7882 client 183.192.179.16 closed keepalive connection (104: Connection reset by peer)
+2020/05/08 05:42:08 [info] 7716#7716: *7885 client 182.254.52.17 closed keepalive connection (104: Connection reset by peer)
+2020/05/08 05:44:43 [info] 7716#7716: *7887 client 182.254.52.17 closed keepalive connection (104: Connection reset by peer)
+2020/05/08 06:06:20 [info] 7716#7716: *7889 client 45.76.144.219 closed keepalive connection
+2020/05/08 06:20:47 [info] 7716#7716: *7891 client 14.215.156.109 closed keepalive connection
+2020/05/08 06:29:20 [info] 7716#7716: *7892 client 59.36.132.112 closed keepalive connection
+2020/05/08 07:09:42 [info] 7716#7716: *7896 client 182.254.52.17 closed keepalive connection (104: Connection reset by peer)
+2020/05/08 07:09:43 [info] 7716#7716: *7898 client 182.254.52.17 closed keepalive connection (104: Connection reset by peer)
+2020/05/08 08:00:24 [info] 7716#7716: *7908 client 162.243.141.134 closed keepalive connection
+2020/05/08 08:09:28 [info] 7716#7716: *7910 client 182.254.52.17 closed keepalive connection (104: Connection reset by peer)
+2020/05/08 08:09:28 [info] 7716#7716: *7912 client 182.254.52.17 closed keepalive connection (104: Connection reset by peer)
+2020/05/08 08:28:33 [info] 7716#7716: *7914 client 182.254.52.17 closed keepalive connection (104: Connection reset by peer)
+2020/05/08 08:28:33 [info] 7716#7716: *7916 client 182.254.52.17 closed keepalive connection (104: Connection reset by peer)
+2020/05/08 08:28:33 [info] 7716#7716: *7918 client 182.254.52.17 closed keepalive connection (104: Connection reset by peer)
+2020/05/08 09:02:52 [info] 7716#7716: *7920 client 182.254.52.17 closed keepalive connection (104: Connection reset by peer)
+2020/05/08 09:08:06 [info] 7716#7716: *7922 client 116.128.128.41 closed keepalive connection (104: Connection reset by peer)
+2020/05/08 09:09:43 [info] 7716#7716: *7924 client 116.128.128.41 closed keepalive connection (104: Connection reset by peer)
+2020/05/08 09:43:12 [info] 7716#7716: *7930 client 182.254.52.17 closed keepalive connection (104: Connection reset by peer)
+2020/05/08 09:43:12 [info] 7716#7716: *7932 client 182.254.52.17 closed keepalive connection (104: Connection reset by peer)
+2020/05/08 09:47:15 [info] 7716#7716: *7934 client 61.241.50.63 closed keepalive connection (104: Connection reset by peer)
+2020/05/08 09:56:25 [info] 7716#7716: *7938 client 182.254.52.17 closed keepalive connection (104: Connection reset by peer)
+2020/05/08 09:56:25 [info] 7716#7716: *7940 client 182.254.52.17 closed keepalive connection (104: Connection reset by peer)
+2020/05/08 10:17:38 [info] 7716#7716: *7942 client 182.254.52.17 closed keepalive connection (104: Connection reset by peer)
+2020/05/08 10:50:33 [info] 7716#7716: *7944 client 59.36.132.109 closed keepalive connection
+2020/05/08 11:20:54 [info] 7716#7716: *7945 client 183.136.225.57 closed keepalive connection
+2020/05/08 11:59:37 [info] 7716#7716: *7947 client 112.96.199.44 closed keepalive connection
+2020/05/08 12:00:03 [info] 7716#7716: *7949 client 112.96.199.44 closed keepalive connection
+2020/05/08 12:00:14 [info] 7716#7716: *7951 client 112.96.199.44 closed keepalive connection
+2020/05/08 12:00:39 [info] 7716#7716: *7957 client 112.96.199.44 closed keepalive connection
+2020/05/08 12:00:39 [info] 7716#7716: *7956 client 112.96.199.44 closed keepalive connection
+2020/05/08 12:00:39 [info] 7716#7716: *7953 client 112.96.199.44 closed keepalive connection
+2020/05/08 12:00:47 [info] 7716#7716: *7958 client 112.96.199.44 closed keepalive connection
+2020/05/08 12:00:47 [info] 7716#7716: *7955 client 112.96.199.44 closed keepalive connection
+2020/05/08 12:00:49 [info] 7716#7716: *7959 client 112.96.199.44 closed keepalive connection
+2020/05/08 12:01:17 [info] 7716#7716: *7960 client 112.96.199.44 closed keepalive connection
+2020/05/08 12:01:22 [info] 7716#7716: *7965 client 112.96.199.44 closed keepalive connection
+2020/05/08 12:01:28 [info] 7716#7716: *7968 client 112.96.199.44 closed keepalive connection
+2020/05/08 12:01:38 [info] 7716#7716: *7973 client 112.96.199.44 closed keepalive connection
+2020/05/08 12:01:40 [info] 7716#7716: *7980 client 112.96.199.44 closed keepalive connection
+2020/05/08 13:18:26 [info] 7716#7716: *8001 client 129.213.104.245 closed keepalive connection
+2020/05/08 13:18:29 [info] 7716#7716: *8003 client 129.213.104.245 closed keepalive connection
+2020/05/08 13:18:33 [info] 7716#7716: *8005 client 129.213.104.245 closed keepalive connection
+2020/05/08 13:18:38 [info] 7716#7716: *8007 client 129.213.104.245 closed keepalive connection
+2020/05/08 13:18:41 [info] 7716#7716: *8009 client 129.213.104.245 closed keepalive connection
+2020/05/08 13:18:45 [info] 7716#7716: *8011 client 129.213.104.245 closed keepalive connection
+2020/05/08 13:18:48 [info] 7716#7716: *8013 client 129.213.104.245 closed keepalive connection
+2020/05/08 13:18:53 [info] 7716#7716: *8015 client 129.213.104.245 closed keepalive connection
+2020/05/08 13:18:56 [info] 7716#7716: *8017 client 129.213.104.245 closed keepalive connection
+2020/05/08 13:50:19 [info] 7716#7716: *8019 client 61.241.50.63 closed keepalive connection (104: Connection reset by peer)
+2020/05/08 14:45:25 [info] 7716#7716: *8034 client 182.254.52.17 closed keepalive connection (104: Connection reset by peer)
+2020/05/08 14:45:25 [info] 7716#7716: *8036 client 182.254.52.17 closed keepalive connection (104: Connection reset by peer)
+2020/05/08 16:00:18 [info] 7716#7716: *8050 client 185.100.87.250 closed keepalive connection
+2020/05/08 18:46:00 [info] 7716#7716: *8085 client 195.154.61.206 closed keepalive connection
+2020/05/08 19:09:48 [info] 7716#7716: *8092 client 182.254.52.17 closed keepalive connection (104: Connection reset by peer)
+2020/05/08 21:42:22 [info] 7716#7716: *8097 epoll_wait() reported that client prematurely closed connection, so upstream connection is closed too while sending request to upstream, client: 183.27.45.6, server: 49.234.78.157, request: "GET /admin/get_80s_rating/ HTTP/1.1", upstream: "uwsgi://127.0.0.1:8001", host: "49.234.78.157", referrer: "http://49.234.78.157/admin/"
+2020/05/08 21:49:11 [info] 7716#7716: *8108 client 182.254.52.17 closed keepalive connection (104: Connection reset by peer)
+2020/05/08 21:49:32 [info] 7716#7716: *8110 client 185.219.118.18 closed keepalive connection
+2020/05/08 22:22:54 [info] 7716#7716: *8113 client 182.254.52.17 closed keepalive connection (104: Connection reset by peer)
+2020/05/08 22:25:46 [info] 7716#7716: *8115 client 89.235.89.9 closed keepalive connection
+2020/05/08 22:41:23 [info] 7716#7716: *8118 client 190.94.149.70 closed keepalive connection
