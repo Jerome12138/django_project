@@ -3,6 +3,7 @@ import re
 import time
 import random
 import logging
+import traceback
 import requests
 from lxml import etree
 from queue import Queue, LifoQueue
@@ -536,7 +537,7 @@ class Get80sScore(object):
             # 2.获取80s页面中有豆瓣评分的电影数据
             with open('80s_detail_list.json','r',encoding='utf-8') as f:
                 self.detail_list = json.load(f)
-            print('共有80s视频：'%len(self.detail_list))
+            print('共有80s视频：%s' % len(self.detail_list))
             if len(self.detail_list) == 0: # 无视频列表则重新获取
                 print('视频列表为空，重新获取')
                 # 1.获取80s页面
@@ -561,7 +562,8 @@ class Get80sScore(object):
             print('错误列表：',self.error_list)
             return_flag = True
         except Exception as e:
-            print('80s_main Exception',e)
+            print('80s_main Exception:')
+            print(traceback.print_exc())
         finally:
             if len(self.detail_list)!=0:
                 with open('80s_detail_list.json','w',encoding='utf-8') as f:
