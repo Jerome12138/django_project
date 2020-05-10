@@ -88,7 +88,8 @@ def load_type_data(**filter_param):  # 从数据库查询视频分类数据
             filter_param['vod_rating__lt'] = '5'
         else:
             filter_param['vod_rating__gt'] = rating.strip('.0')
-            filter_param['vod_rating__lt'] = int(rating.strip('.0'))+1
+            filter_param['vod_rating__lt'] = str(int(rating.strip('.0'))+1)
+            # print(rating.strip('.0'),int(rating.strip('.0'))+1)
     result = models.VideoData.objects.filter(**filter_param).all().values(
         'vod_id', 'vod_pic', 'vod_name', 'vod_continu', 'vod_actor', 'vod_rating', 'vod_douban_id', 'vod_year').order_by('-ctime')
     return result

@@ -468,24 +468,21 @@ class Get80sScore(object):
 
     def save_score(self,video_data):   # 匹配视频信息并储存评分数据
         try:
-            self.count+=1
-            if self.count%50==0:
-                print('已读取80s数据:%s'%self.count)
-                with open('80s_detail_list.json','w',encoding='utf-8') as f:
-                    json.dump(self.detail_list,f,ensure_ascii=False, indent=4)
-                    print('详情页列表更新')
             vod_info_list = DBHandler.search_data2(video_data['vod_name'].replace(' ',''),video_data['year'])
             if len(vod_info_list) == 0:
                 re_str = re.search(r'(\[第[一二三四五六七八九]季\])',video_data['vod_name'])
                 if re_str is not None:
                     sub_str = re_str.group().lstrip('[').rstrip(']')
                     video_data['vod_name'] = re.sub(r'\[%s\]'%sub_str,sub_str,video_data['vod_name'])
-                    # print(video_data['vod_name'])
-                    self.save_score(video_data)
+                    return self.save_score(video_data)
+                re_str2 = re.search(r'(\/)',video_data['vod_name'])
+                if re_str2 is not None:
+                    video_data['vod_name'] = video_data['vod_name'].split('/')[0]
+                    return self.save_score(video_data)
             if len(vod_info_list) == 1:   # 如果只有一项
                 if vod_info_list[0].vod_douban_id: # 如果已存在豆瓣id,则返回
-                    self.detail_list.remove(video_data)
-                    return False
+                    # self.detail_list.remove(video_data)
+                    return True
                 else:
                     res = self.get_detail(video_data['80s_url'])    # 获取详情
                     if res: # 正常返回结果
@@ -497,7 +494,8 @@ class Get80sScore(object):
                         DBHandler.dump_rating(vod_info_list[0].vod_id, rating)
                         print(' 保存成功[80s]')
                         self.timeout = 0
-                        time.sleep(1 + float(random.randint(0, 100)) / 100)
+                        # time.sleep(1 + float(random.randint(0, 100)) / 100)
+                        return True
                     else:   # 异常
                         self.timeout += 1
                         time.sleep(180)
@@ -517,7 +515,7 @@ class Get80sScore(object):
     def get_detail(self,url):    # 获取豆瓣id
         try:
             html = self.get_web_data.get_html('https://www.80s.tw%s'%url)
-            if len(html) == 0:
+            if not html:
                 print('https://www.80s.tw%s'%url,'无数据返回')
                 self.error_list.append(page)
                 return False
@@ -565,7 +563,14 @@ class Get80sScore(object):
                         print('详情页列表保存成功')
             # 3.将电影数据与数据库数据对比，匹配则储存评分
             for video_data in self.detail_list:
-                self.save_score(video_data)
+                self.count+=1
+                if self.save_score(video_data):
+                    self.detail_list.remove(video_data)
+                if self.count%50==0:
+                    print('已读取80s数据:%s'%self.count)
+                    with open('80s_detail_list.json','w',encoding='utf-8') as f:
+                        json.dump(self.detail_list,f,ensure_ascii=False, indent=4)
+                        print('详情页列表已更新')
             print('------80s获取完毕-----')
             print('错误列表：',self.error_list)
             return_flag = True
