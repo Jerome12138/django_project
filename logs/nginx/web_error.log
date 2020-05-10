@@ -3265,3 +3265,15 @@
 2020/05/10 13:05:01 [info] 7716#7716: *8667 client 61.241.50.63 closed keepalive connection (104: Connection reset by peer)
 2020/05/10 13:20:17 [info] 7716#7716: *8672 client 116.128.128.41 closed keepalive connection (104: Connection reset by peer)
 2020/05/10 13:46:48 [info] 7716#7716: *8676 client 49.70.53.139 closed keepalive connection
+2020/05/10 14:10:00 [error] 7716#7716: *8721 upstream timed out (110: Connection timed out) while reading response header from upstream, client: 183.27.47.217, server: 49.234.78.157, request: "GET /admin/get_rating/ HTTP/1.1", upstream: "uwsgi://127.0.0.1:8001", host: "49.234.78.157", referrer: "http://49.234.78.157/admin/"
+2020/05/10 14:29:34 [info] 7716#7716: *8731 client 5.143.120.28 closed keepalive connection
+2020/05/10 14:38:03 [info] 7716#7716: *8734 client 182.254.52.17 closed keepalive connection (104: Connection reset by peer)
+2020/05/10 14:48:04 [info] 7716#7716: *8739 client 183.27.47.217 closed keepalive connection
+2020/05/10 14:48:07 [info] 7716#7716: *8741 client 183.27.47.217 closed keepalive connection
+2020/05/10 14:48:09 [info] 7716#7716: *8740 client 183.27.47.217 closed keepalive connection
+2020/05/10 14:48:20 [info] 7716#7716: *8737 client 183.27.47.217 closed keepalive connection
+2020/05/10 14:49:53 [info] 7716#7716: *8745 client 183.27.47.217 closed keepalive connection
+2020/05/10 14:54:00 [info] 7716#7716: *8755 client 183.27.47.217 closed keepalive connection (104: Connection reset by peer)
+2020/05/10 15:01:07 [info] 7716#7716: *8779 client 183.27.47.217 closed keepalive connection
+2020/05/10 15:13:03 [info] 7716#7716: *8781 epoll_wait() reported that client prematurely closed connection, so upstream connection is closed too while sending request to upstream, client: 183.27.47.217, server: 49.234.78.157, request: "GET /admin/get_80s_rating/ HTTP/1.1", upstream: "uwsgi://127.0.0.1:8001", host: "49.234.78.157", referrer: "http://49.234.78.157/admin/"
+2020/05/10 15:15:08 [info] 7716#7716: *8785 client 183.27.47.217 closed keepalive connection
