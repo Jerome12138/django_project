@@ -3131,3 +3131,137 @@
 2020/05/08 22:22:54 [info] 7716#7716: *8113 client 182.254.52.17 closed keepalive connection (104: Connection reset by peer)
 2020/05/08 22:25:46 [info] 7716#7716: *8115 client 89.235.89.9 closed keepalive connection
 2020/05/08 22:41:23 [info] 7716#7716: *8118 client 190.94.149.70 closed keepalive connection
+2020/05/09 00:26:24 [info] 7716#7716: *8152 client 113.96.198.51 closed keepalive connection
+2020/05/09 01:48:45 [info] 7716#7716: *8155 client 85.149.51.154 closed keepalive connection
+2020/05/09 02:05:36 [info] 7716#7716: *8158 client 182.254.52.17 closed keepalive connection (104: Connection reset by peer)
+2020/05/09 02:05:36 [info] 7716#7716: *8160 client 182.254.52.17 closed keepalive connection (104: Connection reset by peer)
+2020/05/09 02:08:15 [info] 7716#7716: *8162 client 182.254.52.17 closed keepalive connection (104: Connection reset by peer)
+2020/05/09 02:22:37 [info] 7716#7716: *8164 client 94.20.66.140 closed keepalive connection
+2020/05/09 02:43:35 [info] 7716#7716: *8168 client 182.254.52.17 closed keepalive connection (104: Connection reset by peer)
+2020/05/09 02:43:35 [info] 7716#7716: *8170 client 182.254.52.17 closed keepalive connection (104: Connection reset by peer)
+2020/05/09 02:49:12 [info] 7716#7716: *8172 client 59.36.132.240 closed keepalive connection (104: Connection reset by peer)
+2020/05/09 03:08:01 [info] 7716#7716: *8176 client 162.243.144.56 closed keepalive connection
+2020/05/09 03:27:38 [info] 7716#7716: *8179 client 194.208.107.76 closed keepalive connection
+2020/05/09 03:32:33 [info] 7716#7716: *8182 client 59.36.132.240 closed keepalive connection (104: Connection reset by peer)
+2020/05/09 04:11:07 [info] 7716#7716: *8186 client 14.18.182.223 closed keepalive connection (104: Connection reset by peer)
+2020/05/09 04:13:21 [info] 7716#7716: *8188 client 116.128.128.41 closed keepalive connection (104: Connection reset by peer)
+2020/05/09 04:13:21 [info] 7716#7716: *8190 client 116.128.128.41 closed keepalive connection (104: Connection reset by peer)
+2020/05/09 04:17:21 [info] 7716#7716: *8192 client 182.254.52.17 closed keepalive connection (104: Connection reset by peer)
+2020/05/09 04:17:21 [info] 7716#7716: *8194 client 182.254.52.17 closed keepalive connection (104: Connection reset by peer)
+2020/05/09 04:32:57 [info] 7716#7716: *8201 client 182.254.52.17 closed keepalive connection (104: Connection reset by peer)
+2020/05/09 04:35:30 [info] 7716#7716: *8203 client 182.254.52.17 closed keepalive connection (104: Connection reset by peer)
+2020/05/09 04:40:05 [info] 7716#7716: *8205 client 196.52.43.84 closed keepalive connection
+2020/05/09 04:44:56 [info] 7716#7716: *8209 client 14.18.182.223 closed keepalive connection (104: Connection reset by peer)
+2020/05/09 04:57:07 [info] 7716#7716: *8211 client 182.254.52.17 closed keepalive connection (104: Connection reset by peer)
+2020/05/09 04:57:32 [info] 7716#7716: *8213 client 180.254.244.57 closed keepalive connection (104: Connection reset by peer)
+2020/05/09 05:25:54 [info] 7716#7716: *8217 client 14.18.182.223 closed keepalive connection (104: Connection reset by peer)
+2020/05/09 05:26:00 [info] 7716#7716: *8219 client 182.254.52.17 closed keepalive connection (104: Connection reset by peer)
+2020/05/09 05:40:14 [info] 7716#7716: *8221 client 93.245.74.35 closed keepalive connection (104: Connection reset by peer)
+2020/05/09 05:59:38 [info] 7716#7716: *8224 client 182.254.52.17 closed keepalive connection (104: Connection reset by peer)
+2020/05/09 06:14:50 [info] 7716#7716: *8229 client 59.36.132.240 closed keepalive connection (104: Connection reset by peer)
+2020/05/09 07:13:55 [info] 7716#7716: *8241 client 182.254.52.17 closed keepalive connection (104: Connection reset by peer)
+2020/05/09 07:13:55 [info] 7716#7716: *8243 client 182.254.52.17 closed keepalive connection (104: Connection reset by peer)
+2020/05/09 07:25:09 [info] 7716#7716: *8247 client 61.241.50.63 closed keepalive connection (104: Connection reset by peer)
+2020/05/09 07:52:31 [info] 7716#7716: *8249 client 61.241.50.63 closed keepalive connection (104: Connection reset by peer)
+2020/05/09 08:16:25 [info] 7716#7716: *8255 client 182.254.52.17 closed keepalive connection (104: Connection reset by peer)
+2020/05/09 08:33:19 [info] 7716#7716: *8257 client 182.254.52.17 closed keepalive connection (104: Connection reset by peer)
+2020/05/09 08:38:13 [info] 7716#7716: *8259 client 182.254.52.17 closed keepalive connection (104: Connection reset by peer)
+2020/05/09 09:59:03 [info] 7716#7716: *8267 client 182.254.52.17 closed keepalive connection (104: Connection reset by peer)
+2020/05/09 11:13:24 [info] 7716#7716: *8294 client 182.254.52.17 closed keepalive connection (104: Connection reset by peer)
+2020/05/09 11:13:32 [info] 7716#7716: *8296 client 182.254.52.17 closed keepalive connection (104: Connection reset by peer)
+2020/05/09 11:26:50 [info] 7716#7716: *8299 client 182.254.52.17 closed keepalive connection (104: Connection reset by peer)
+2020/05/09 11:38:40 [info] 7716#7716: *8303 client 162.243.136.67 closed keepalive connection
+2020/05/09 12:29:14 [info] 7716#7716: *8312 client 112.96.199.44 closed keepalive connection
+2020/05/09 12:29:14 [info] 7716#7716: *8309 client 112.96.199.44 closed keepalive connection
+2020/05/09 12:29:15 [info] 7716#7716: *8313 client 112.96.199.44 closed keepalive connection
+2020/05/09 12:29:28 [info] 7716#7716: *8311 client 112.96.199.44 closed keepalive connection
+2020/05/09 12:29:32 [info] 7716#7716: *8314 client 112.96.199.44 closed keepalive connection
+2020/05/09 12:29:36 [info] 7716#7716: *8316 client 112.96.199.44 closed keepalive connection
+2020/05/09 12:29:52 [info] 7716#7716: *8318 client 112.96.199.44 closed keepalive connection
+2020/05/09 12:30:16 [info] 7716#7716: *8320 client 112.96.199.44 closed keepalive connection
+2020/05/09 12:30:29 [info] 7716#7716: *8326 client 112.96.199.44 closed keepalive connection
+2020/05/09 12:30:29 [info] 7716#7716: *8322 client 112.96.199.44 closed keepalive connection
+2020/05/09 12:30:29 [info] 7716#7716: *8325 client 112.96.199.44 closed keepalive connection
+2020/05/09 12:30:31 [info] 7716#7716: *8328 client 112.96.199.44 closed keepalive connection
+2020/05/09 12:30:31 [info] 7716#7716: *8327 client 112.96.199.44 closed keepalive connection
+2020/05/09 12:30:31 [info] 7716#7716: *8324 client 112.96.199.44 closed keepalive connection
+2020/05/09 12:30:33 [info] 7716#7716: *8329 client 112.96.199.44 closed keepalive connection
+2020/05/09 12:30:36 [info] 7716#7716: *8331 client 112.96.199.44 closed keepalive connection
+2020/05/09 12:30:39 [info] 7716#7716: *8333 client 112.96.199.44 closed keepalive connection
+2020/05/09 12:30:44 [info] 7716#7716: *8336 client 112.96.199.44 closed keepalive connection
+2020/05/09 12:30:48 [info] 7716#7716: *8338 client 112.96.199.44 closed keepalive connection
+2020/05/09 12:30:53 [info] 7716#7716: *8340 client 112.96.199.44 closed keepalive connection
+2020/05/09 12:31:01 [info] 7716#7716: *8342 client 112.96.199.44 closed keepalive connection
+2020/05/09 12:31:10 [info] 7716#7716: *8345 client 112.96.199.44 closed keepalive connection
+2020/05/09 12:31:13 [info] 7716#7716: *8348 client 112.96.199.44 closed keepalive connection
+2020/05/09 12:31:16 [info] 7716#7716: *8350 client 112.96.199.44 closed keepalive connection
+2020/05/09 12:31:20 [info] 7716#7716: *8352 client 112.96.199.44 closed keepalive connection
+2020/05/09 12:31:24 [info] 7716#7716: *8355 client 112.96.199.44 closed keepalive connection
+2020/05/09 12:31:26 [info] 7716#7716: *8357 client 112.96.199.44 closed keepalive connection
+2020/05/09 12:31:31 [info] 7716#7716: *8359 client 112.96.199.44 closed keepalive connection
+2020/05/09 12:31:35 [info] 7716#7716: *8362 client 112.96.199.44 closed keepalive connection
+2020/05/09 12:40:13 [info] 7716#7716: *8365 client 173.212.251.146 closed keepalive connection
+2020/05/09 14:34:01 [info] 7716#7716: *8379 client 212.154.63.32 closed keepalive connection
+2020/05/09 14:38:01 [info] 7716#7716: *8383 client 14.215.156.139 closed keepalive connection
+2020/05/09 14:57:08 [info] 7716#7716: *8384 client 59.36.132.153 closed keepalive connection
+2020/05/09 15:03:59 [info] 7716#7716: *8386 client 185.213.169.137 closed keepalive connection
+2020/05/09 15:07:05 [info] 7716#7716: *8388 client 185.234.218.68 closed keepalive connection
+2020/05/09 16:23:41 [info] 7716#7716: *8409 client 182.254.52.17 closed keepalive connection (104: Connection reset by peer)
+2020/05/09 17:48:19 [info] 7716#7716: *8413 client 61.163.139.142 closed keepalive connection
+2020/05/09 17:52:34 [info] 7716#7716: *8415 client 186.232.192.154 closed keepalive connection
+2020/05/09 18:48:56 [info] 7716#7716: *8420 client 103.43.4.165 closed keepalive connection
+2020/05/09 19:24:25 [info] 7716#7716: *8435 client 180.167.210.6 closed keepalive connection (104: Connection reset by peer)
+2020/05/09 19:24:26 [info] 7716#7716: *8437 client 180.167.210.6 closed keepalive connection (104: Connection reset by peer)
+2020/05/09 19:24:26 [info] 7716#7716: *8429 client 180.167.210.6 closed keepalive connection (104: Connection reset by peer)
+2020/05/09 19:24:26 [info] 7716#7716: *8425 client 180.167.210.6 closed keepalive connection (104: Connection reset by peer)
+2020/05/09 19:24:26 [info] 7716#7716: *8431 client 180.167.210.6 closed keepalive connection
+2020/05/09 19:24:26 [info] 7716#7716: *8433 client 180.167.210.6 closed keepalive connection (104: Connection reset by peer)
+2020/05/09 19:24:27 [info] 7716#7716: *8439 client 180.167.210.6 closed keepalive connection (104: Connection reset by peer)
+2020/05/09 19:24:28 [info] 7716#7716: *8443 client 180.167.210.6 closed keepalive connection (104: Connection reset by peer)
+2020/05/09 19:24:28 [info] 7716#7716: *8441 client 180.167.210.6 closed keepalive connection (104: Connection reset by peer)
+2020/05/09 19:24:29 [info] 7716#7716: *8447 client 180.167.210.6 closed keepalive connection
+2020/05/09 19:24:29 [info] 7716#7716: *8445 client 180.167.210.6 closed keepalive connection
+2020/05/09 21:17:28 [info] 7716#7716: *8468 client 14.18.173.100 closed keepalive connection
+2020/05/09 22:29:25 [info] 7716#7716: *8477 client 47.89.192.12 closed keepalive connection
+2020/05/09 23:58:25 [info] 7716#7716: *8500 client 162.243.137.24 closed keepalive connection
+2020/05/10 00:03:05 [info] 7716#7716: *8502 client 198.108.66.247 closed keepalive connection
+2020/05/10 00:13:10 [info] 7716#7716: *8504 client 172.105.89.161 closed keepalive connection
+2020/05/10 00:25:15 [info] 7716#7716: *8506 client 173.212.251.146 closed keepalive connection
+2020/05/10 01:19:51 [info] 7716#7716: *8508 client 182.254.52.17 closed keepalive connection (104: Connection reset by peer)
+2020/05/10 03:10:24 [info] 7716#7716: *8513 client 162.243.136.246 closed keepalive connection
+2020/05/10 03:52:38 [info] 7716#7716: *8517 client 182.254.52.17 closed keepalive connection (104: Connection reset by peer)
+2020/05/10 03:55:14 [info] 7716#7716: *8519 client 182.254.52.17 closed keepalive connection (104: Connection reset by peer)
+2020/05/10 03:58:42 [info] 7716#7716: *8531 client 81.183.61.89 closed keepalive connection
+2020/05/10 05:02:23 [info] 7716#7716: *8541 client 182.254.52.17 closed keepalive connection (104: Connection reset by peer)
+2020/05/10 05:18:52 [info] 7716#7716: *8543 client 170.84.93.74 closed keepalive connection
+2020/05/10 05:34:06 [info] 7716#7716: *8550 client 84.241.19.148 closed keepalive connection
+2020/05/10 05:57:15 [info] 7716#7716: *8568 client 183.192.179.16 closed keepalive connection (104: Connection reset by peer)
+2020/05/10 06:39:24 [info] 7716#7716: *8570 client 174.138.44.253 closed keepalive connection
+2020/05/10 06:42:06 [info] 7716#7716: *8572 client 182.254.52.17 closed keepalive connection (104: Connection reset by peer)
+2020/05/10 06:58:21 [info] 7716#7716: *8576 client 218.58.36.91 closed keepalive connection
+2020/05/10 08:18:40 [info] 7716#7716: *8584 client 182.254.52.17 closed keepalive connection (104: Connection reset by peer)
+2020/05/10 08:18:41 [info] 7716#7716: *8586 client 182.254.52.17 closed keepalive connection (104: Connection reset by peer)
+2020/05/10 09:02:58 [info] 7716#7716: *8589 client 182.254.52.17 closed keepalive connection (104: Connection reset by peer)
+2020/05/10 09:39:37 [info] 7716#7716: *8597 client 183.27.47.217 closed keepalive connection
+2020/05/10 09:39:37 [info] 7716#7716: *8600 client 183.27.47.217 closed keepalive connection
+2020/05/10 09:39:37 [info] 7716#7716: *8599 client 183.27.47.217 closed keepalive connection
+2020/05/10 09:39:38 [info] 7716#7716: *8601 client 183.27.47.217 closed keepalive connection
+2020/05/10 09:42:41 [info] 7716#7716: *8605 client 183.27.47.217 closed keepalive connection
+2020/05/10 09:42:42 [info] 7716#7716: *8602 client 183.27.47.217 closed keepalive connection
+2020/05/10 09:43:27 [info] 7716#7716: *8608 client 183.27.47.217 closed keepalive connection
+2020/05/10 10:52:59 [info] 7716#7716: *8612 client 101.89.19.140 closed keepalive connection (104: Connection reset by peer)
+2020/05/10 11:03:15 [info] 7716#7716: *8615 client 182.254.52.17 closed keepalive connection (104: Connection reset by peer)
+2020/05/10 11:08:45 [info] 7716#7716: *8618 client 182.254.52.17 closed keepalive connection (104: Connection reset by peer)
+2020/05/10 11:24:47 [info] 7716#7716: *8621 client 183.27.47.217 closed keepalive connection
+2020/05/10 11:44:22 [info] 7716#7716: *8628 client 183.136.225.57 closed keepalive connection
+2020/05/10 11:52:33 [info] 7716#7716: *8632 client 88.135.86.187 closed keepalive connection
+2020/05/10 11:53:35 [info] 7716#7716: *8634 client 101.89.19.140 closed keepalive connection (104: Connection reset by peer)
+2020/05/10 12:22:04 [error] 7716#7716: *8655 open() "/home/ubuntu/git/django_project/collected_static//plugins/hammer/hammer.min.js.map" failed (2: No such file or directory), client: 183.27.47.217, server: 49.234.78.157, request: "GET /static/plugins/hammer/hammer.min.js.map HTTP/1.1", host: "49.234.78.157"
+2020/05/10 12:22:09 [error] 7716#7716: *8655 open() "/home/ubuntu/git/django_project/collected_static//plugins/hammer/hammer.min.js.map" failed (2: No such file or directory), client: 183.27.47.217, server: 49.234.78.157, request: "GET /static/plugins/hammer/hammer.min.js.map HTTP/1.1", host: "49.234.78.157"
+2020/05/10 12:24:10 [error] 7716#7716: *8657 open() "/home/ubuntu/git/django_project/collected_static//plugins/hammer/hammer.min.js.map" failed (2: No such file or directory), client: 183.27.47.217, server: 49.234.78.157, request: "GET /static/plugins/hammer/hammer.min.js.map HTTP/1.1", host: "49.234.78.157"
+2020/05/10 12:25:46 [info] 7716#7716: *8658 client 45.5.203.131 closed keepalive connection
+2020/05/10 12:42:17 [info] 7716#7716: *8661 client 188.65.131.110 closed keepalive connection (104: Connection reset by peer)
+2020/05/10 12:59:06 [info] 7716#7716: *8665 client 198.108.66.200 closed keepalive connection
+2020/05/10 13:05:01 [info] 7716#7716: *8667 client 61.241.50.63 closed keepalive connection (104: Connection reset by peer)
+2020/05/10 13:20:17 [info] 7716#7716: *8672 client 116.128.128.41 closed keepalive connection (104: Connection reset by peer)
+2020/05/10 13:46:48 [info] 7716#7716: *8676 client 49.70.53.139 closed keepalive connection
