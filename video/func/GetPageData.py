@@ -475,6 +475,13 @@ class Get80sScore(object):
                     json.dump(self.detail_list,f,ensure_ascii=False, indent=4)
                     print('详情页列表更新')
             vod_info_list = DBHandler.search_data2(video_data['vod_name'].replace(' ',''),video_data['year'])
+            if len(vod_info_list) == 0:
+                re_str = re.search(r'(\[第[一二三四五六七八九]季\])',video_data['vod_name'])
+                if re_str is not None:
+                    sub_str = re_str.group().lstrip('[').rstrip(']')
+                    video_data['vod_name'] = re.sub(r'\[%s\]'%sub_str,sub_str,video_data['vod_name'])
+                    # print(video_data['vod_name'])
+                    self.save_score(video_data)
             if len(vod_info_list) == 1:   # 如果只有一项
                 if vod_info_list[0].vod_douban_id: # 如果已存在豆瓣id,则返回
                     self.detail_list.remove(video_data)
