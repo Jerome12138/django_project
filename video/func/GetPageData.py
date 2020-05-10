@@ -481,7 +481,7 @@ class Get80sScore(object):
                     return self.save_score(video_data)
                 re_str3 = re.search(r'(第[一二三四五六七八九]季)',video_data['vod_name'])
                 if re_str3 is not None:
-                    video_data['vod_name'] = re.sub(re_str3,'',video_data['vod_name'])
+                    video_data['vod_name'] = re.sub(re_str3.group(),'',video_data['vod_name'])
                     return self.save_score(video_data)
             if len(vod_info_list) == 1:   # 如果只有一项
                 if vod_info_list[0].vod_douban_id: # 如果已存在豆瓣id,则返回
