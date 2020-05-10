@@ -470,7 +470,7 @@ class Get80sScore(object):
         try:
             vod_info_list = DBHandler.search_data2(video_data['vod_name'].replace(' ',''),video_data['year'])
             if len(vod_info_list) == 0:
-                re_str = re.search(r'(\[第[一二三四五六七八九]季\])',video_data['vod_name'])
+                re_str = re.search(r'(\[第[一二三四五六七八九十]季\])',video_data['vod_name'])
                 if re_str is not None:
                     sub_str = re_str.group().lstrip('[').rstrip(']')
                     video_data['vod_name'] = re.sub(r'\[%s\]'%sub_str,sub_str,video_data['vod_name'])
@@ -478,6 +478,10 @@ class Get80sScore(object):
                 re_str2 = re.search(r'(\/)',video_data['vod_name'])
                 if re_str2 is not None:
                     video_data['vod_name'] = video_data['vod_name'].split('/')[0]
+                    return self.save_score(video_data)
+                re_str3 = re.search(r'(第[一二三四五六七八九]季)',video_data['vod_name'])
+                if re_str3 is not None:
+                    video_data['vod_name'] = re.sub(re_str3,'',video_data['vod_name'])
                     return self.save_score(video_data)
             if len(vod_info_list) == 1:   # 如果只有一项
                 if vod_info_list[0].vod_douban_id: # 如果已存在豆瓣id,则返回
