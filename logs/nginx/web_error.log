@@ -3296,3 +3296,11 @@
 2020/05/10 19:34:06 [error] 7716#7716: *8965 upstream timed out (110: Connection timed out) while reading response header from upstream, client: 183.27.47.217, server: 49.234.78.157, request: "GET /admin/get_rating/ HTTP/1.1", upstream: "uwsgi://127.0.0.1:8001", host: "49.234.78.157", referrer: "http://49.234.78.157/admin/"
 2020/05/10 20:40:44 [info] 7716#7716: *8991 client 14.18.182.223 closed keepalive connection (104: Connection reset by peer)
 2020/05/10 21:15:56 [info] 7716#7716: *8994 client 182.254.52.17 closed keepalive connection (104: Connection reset by peer)
+2020/05/10 22:06:31 [info] 7716#7716: *9008 client 183.27.47.217 closed keepalive connection
+2020/05/10 22:07:01 [info] 7716#7716: *9021 client 183.27.47.217 closed keepalive connection
+2020/05/10 22:07:07 [info] 7716#7716: *9026 client 183.27.47.217 closed keepalive connection
+2020/05/10 22:37:33 [info] 7716#7716: *9031 client 185.174.120.159 closed keepalive connection
+2020/05/10 22:46:14 [info] 7716#7716: *9033 epoll_wait() reported that client prematurely closed connection, so upstream connection is closed too while sending request to upstream, client: 183.27.47.217, server: 49.234.78.157, request: "GET /admin/get_80s_rating/ HTTP/1.1", upstream: "uwsgi://127.0.0.1:8001", host: "49.234.78.157", referrer: "http://49.234.78.157/admin/"
+2020/05/10 22:59:05 [info] 7716#7716: *9080 epoll_wait() reported that client prematurely closed connection, so upstream connection is closed too while sending request to upstream, client: 183.27.47.217, server: 49.234.78.157, request: "GET /video/search/?wd=%E7%BE%8E%E5%B0%91%E5%A5%B3%E7%9A%84%E8%B0%8E%E8%A8%80&page=1 HTTP/1.1", upstream: "uwsgi://127.0.0.1:8001", host: "49.234.78.157", referrer: "http://49.234.78.157/video/search/?wd=%E6%9D%83%E5%8A%9B%E7%9A%84%E6%B8%B8%E6%88%8F&page=1"
+2020/05/10 23:36:56 [info] 7716#7716: *9186 client 103.70.147.70 closed keepalive connection
+2020/05/10 23:37:11 [info] 7716#7716: *9188 client 183.27.47.217 closed keepalive connection
