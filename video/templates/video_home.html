@@ -54,22 +54,100 @@
             </a>
         </div>
         <!-- end 图片轮播 -->
-        <div class="stui-pannel__head clearfix" style="margin-top: 10px;">
+        <!-- <div class="stui-pannel__head clearfix" style="margin-top: 10px;">
             <h3 class="title">
                 共收录{{data_count}}部影片
             </h3>
-        </div>
-        <ul class="stui-vodlist clearfix">
+        </div> -->
+        <!-- <ul class="stui-vodlist clearfix">
             {% for item in video_list %}
             {% include "video_tag.html" %}
             {% endfor%}
-        </ul>
-        <!-- 翻页 -->
-        <div style="clear: both;"></div>
-        <ul class="stui-page text-center clearfix">
-            {{ page_str }}
-        </ul>
-        <!-- end 翻页 -->
+        </ul> -->
+        <!-- 视频列表 -->
+        <div class="stui-pannel clearfix">
+            <div class="col-pd">
+                <h3 class="title">
+                    <span class="pull-left">电影</span>
+                </h3>
+                <ul class="pull-right">
+                    <li class="hidden-xs pull-left"><a href="/video/type/5/" style="padding: 0 7px;">动作片</a>/</li>
+                    <li class="hidden-xs pull-left"><a href="/video/type/6/" style="padding: 0 7px;">喜剧片</a>/</li>
+                    <li class="hidden-xs pull-left"><a href="/video/type/7/" style="padding: 0 7px;">爱情片</a>/</li>
+                    <li class="hidden-xs pull-left"><a href="/video/type/8/" style="padding: 0 7px;">科幻片</a>/</li>
+                    <li class="hidden-xs pull-left"><a href="/video/type/9/" style="padding: 0 7px;">恐怖片</a>/</li>
+                    <li class="hidden-xs pull-left"><a href="/video/type/10/" style="padding: 0 7px;">剧情片</a>/</li>
+                    <li class="hidden-xs pull-left"><a href="/video/type/11/" style="padding: 0 7px;">战争片</a>/</li>
+                    <li class="hidden-xs pull-left"><a href="/video/type/22/" style="padding: 0 7px;">记录片</a>/</li>
+                    <li class="pull-left"><a href="/video/type/1/" style="padding: 0 7px;">更多</a></li>
+                </ul>
+            </div>
+            <ul class="stui-vodlist clearfix">
+                {% for item in movie_list %}
+                {% include "video_tag.html" %}
+                {% endfor%}
+            </ul>
+        </div>
+        <div class="stui-pannel clearfix">
+            <div class="col-pd">
+                <h3 class="title">
+                    <span class="pull-left">电视剧</span>
+                </h3>
+                <ul class="pull-right">
+                    <li class="hidden-xs pull-left"><a href="/video/type/12/" style="padding: 0 7px;">国产剧</a>/</li>
+                    <li class="hidden-xs pull-left"><a href="/video/type/13/" style="padding: 0 7px;">香港剧</a>/</li>
+                    <li class="hidden-xs pull-left"><a href="/video/type/15/" style="padding: 0 7px;">欧美剧</a>/</li>
+                    <li class="hidden-xs pull-left"><a href="/video/type/19/" style="padding: 0 7px;">台湾剧</a>/</li>
+                    <li class="hidden-xs pull-left"><a href="/video/type/14/" style="padding: 0 7px;">韩国剧</a>/</li>
+                    <li class="hidden-xs pull-left"><a href="/video/type/20/" style="padding: 0 7px;">日本剧</a>/</li>
+                    <li class="hidden-xs pull-left"><a href="/video/type/21/" style="padding: 0 7px;">海外剧</a>/</li>
+                    <li class="pull-left"><a href="/video/type/2/" style="padding: 0 7px;">更多</a></li>
+                </ul>
+            </div>
+            <ul class="stui-vodlist clearfix">
+                {% for item in ju_list %}
+                {% include "video_tag.html" %}
+                {% endfor%}
+            </ul>
+        </div>
+        <div class="stui-pannel clearfix">
+            <div class="col-pd">
+                <h3 class="title">
+                    <span class="pull-left">综艺</span>
+                </h3>
+                <ul class="pull-right">
+                    <li class="hidden-xs pull-left"><a href="/video/type/3/?area=大陆" style="padding: 0 7px;">大陆综艺</a>/</li>
+                    <li class="hidden-xs pull-left"><a href="/video/type/3/?area=香港" style="padding: 0 7px;">香港综艺</a>/</li>
+                    <li class="hidden-xs pull-left"><a href="/video/type/3/?area=台湾" style="padding: 0 7px;">台湾综艺</a>/</li>
+                    <li class="hidden-xs pull-left"><a href="/video/type/3/?area=韩国" style="padding: 0 7px;">韩国综艺</a>/</li>
+                    <li class="hidden-xs pull-left"><a href="/video/type/3/?area=美国" style="padding: 0 7px;">美国综艺</a>/</li>
+                    <li class="pull-left"><a href="/video/type/3/" style="padding: 0 7px;">更多</a></li>
+                </ul>
+            </div>
+            <ul class="stui-vodlist clearfix">
+                {% for item in show_list %}
+                {% include "video_tag.html" %}
+                {% endfor%}
+            </ul>
+        </div>
+        <div class="stui-pannel clearfix">
+            <div class="col-pd">
+                <h3 class="title">
+                    <span class="pull-left">动漫</span>
+                </h3>
+                <ul class="pull-right">
+                    <li class="hidden-xs pull-left"><a href="/video/type/4/?area=大陆" style="padding: 0 7px;">大陆动漫</a>/</li>
+                    <li class="hidden-xs pull-left"><a href="/video/type/4/?area=美国" style="padding: 0 7px;">美国动漫</a>/</li>
+                    <li class="hidden-xs pull-left"><a href="/video/type/4/?area=日本" style="padding: 0 7px;">日本动漫</a>/</li>
+                    <li class="pull-left"><a href="/video/type/4/" style="padding: 0 7px;">更多</a></li>
+                </ul>
+            </div>
+            <ul class="stui-vodlist clearfix">
+                {% for item in animation_list %}
+                {% include "video_tag.html" %}
+                {% endfor%}
+            </ul>
+        </div>
     </div>
     {% endblock %}
 

@@ -301,7 +301,7 @@ def view_log(request, log_date=0):
     page_str = page.page_str()
     log_list = page.video_page(data_list, 100)
     if log_list == -1:
-        return HttpResponse('请求错误')
+        return redirect('/view_log/%s/' % log_date)
     log_str = '\n'.join(log_list)
     if log_date == 0:
         log_date = time.strftime("%Y-%m-%d", time.localtime(time.time()))

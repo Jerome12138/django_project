@@ -13,21 +13,18 @@ import os
 
 
 def home(request):  # 主页
-    # 分页处理
-    page_index = int(request.GET.get('page')) if request.GET.get('page') else 1
-    data_list = DBHandler.load_all_vod_data()
-    data_count = len(data_list)
-    page = Page(request.path_info+'?page=', page_index, data_count//24 + 1)
-    page_str = page.page_str()
-    video_list = page.video_page(data_list, 24)
-    if video_list == -1:
-        return HttpResponse('请求错误')
+    movie_list = DBHandler.load_type_data(**{'vod_cid':'1','vod_year':'2020'})
+    ju_list = DBHandler.load_type_data(**{'vod_cid':'2','vod_year':'2020'})
+    show_list = DBHandler.load_type_data(**{'vod_cid':'3','vod_year':'2020'})
+    animation_list = DBHandler.load_type_data(**{'vod_cid':'4','vod_year':'2020'})
+    # 轮播图
     carousel_list = DBHandler.load_carousel_data()
     return render(request, 'video_home.html', {
         "carousel_list":carousel_list,
-        "video_list": video_list,
-        'page_str': page_str,
-        "data_count": data_count,
+        "movie_list": movie_list[0:12],
+        "ju_list": ju_list[0:12],
+        "show_list": show_list[0:12],
+        "animation_list": animation_list[0:12],
         'all_type_id': '0'
     })
 
