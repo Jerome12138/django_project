@@ -473,24 +473,24 @@ class Get80sScore(object):
                 with open('80s_detail_list.json','w',encoding='utf-8') as f:
                     json.dump(self.detail_list,f,ensure_ascii=False, indent=4)
                     print('详情页列表更新')
-            vod_info = DBHandler.load_vod_data_by_name(video_data['vod_name'].replace(' ',''))
-            if len(vod_info) == 1:
-                if vod_info[0].vod_douban_id:   # 如果已存在豆瓣id
+            vod_info_list = DBHandler.search_data2(video_data['vod_name'].replace(' ',''),video_data['year'])
+            if len(vod_info_list) == 1:   # 如果只有一项
+                if  vod_info_list[0].vod_douban_id: # 如果已存在豆瓣id,则返回
                     self.detail_list.remove(video_data)
                     return False
-                if vod_info[0].vod_year == video_data['year']:
-                    res = self.get_detail(video_data['80s_url'])
-                    if res:
-                        if res == -1:
+                else:
+                    res = self.get_detail(video_data['80s_url'])    # 获取详情
+                    if res: # 正常返回结果
+                        if res == -1:   # 搜索无数据
                             return
                         (douban_id,rating) = res
-                        print(vod_info[0].vod_name, douban_id, rating,end='')
-                        DBHandler.dump_douban_id(vod_info[0].vod_id, douban_id)
-                        DBHandler.dump_rating(vod_info[0].vod_id, rating)
+                        print(vod_info_list[0].vod_name, douban_id, rating,end='')
+                        DBHandler.dump_douban_id(vod_info_list[0].vod_id, douban_id)
+                        DBHandler.dump_rating(vod_info_list[0].vod_id, rating)
                         print(' 保存成功[80s]')
                         self.timeout = 0
                         time.sleep(1 + float(random.randint(0, 100)) / 100)
-                    else:
+                    else:   # 异常
                         self.timeout += 1
                         time.sleep(180)
                         if self.timeout == 5:
@@ -518,7 +518,7 @@ class Get80sScore(object):
                 vod_score = x_rating[2].strip()
                 vod_douban_id = x_douban_id[0].split('/')[-2]
                 return (vod_douban_id,vod_score)
-            elif len(x_rating)>=1:
+            elif len(x_douban_id)==0:
                 print('无豆瓣id数据:',x_rating,x_douban_id,url)
                 return -1
             else:
@@ -531,20 +531,21 @@ class Get80sScore(object):
 
     def run(self):  # 主程序逻辑
         page_list = []
+        return_flag = False
         try:
-            # 1.获取80s页面
-            with open('80s_list.json','r',encoding='utf-8') as f:
-                page_list = json.load(f)
-            if len(page_list) != 0: # 已存在目录
-                print('共有80s页面：%s' % len(page_list))
-            else:
-                page_list = self.get_page()
-            assert page_list
             # 2.获取80s页面中有豆瓣评分的电影数据
             with open('80s_detail_list.json','r',encoding='utf-8') as f:
                 self.detail_list = json.load(f)
+            print('共有80s视频：'%len(self.detail_list))
             if len(self.detail_list) == 0: # 无视频列表则重新获取
                 print('视频列表为空，重新获取')
+                # 1.获取80s页面
+                with open('80s_list.json','r',encoding='utf-8') as f:
+                    page_list = json.load(f)
+                if len(page_list) != 0: # 已存在目录
+                    print('共有80s页面：%s' % len(page_list))
+                else:
+                    page_list = self.get_page()
                 for page in page_list:
                     video_list = self.get_video(*page)
                     self.detail_list.extend(video_list)
@@ -557,16 +558,13 @@ class Get80sScore(object):
             for video_data in self.detail_list:
                 self.save_score(video_data)
             print('------80s获取完毕-----')
-            print(self.error_list)
-            if len(self.detail_list)!=0:
-                with open('80s_detail_list.json','w',encoding='utf-8') as f:
-                    json.dump(self.detail_list,f,ensure_ascii=False, indent=4)
-                    print('详情页列表保存成功')
-            return True
+            print('错误列表：',self.error_list)
+            return_flag = True
         except Exception as e:
             print('80s_main Exception',e)
+        finally:
             if len(self.detail_list)!=0:
                 with open('80s_detail_list.json','w',encoding='utf-8') as f:
                     json.dump(self.detail_list,f,ensure_ascii=False, indent=4)
                     print('详情页列表保存成功')
-            return False
+            return return_flag

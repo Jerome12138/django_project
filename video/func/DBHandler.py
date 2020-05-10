@@ -23,10 +23,6 @@ def load_vod_data(vod_id):  # 从数据库获取某影片数据
     result = models.VideoData.objects.filter(vod_id=vod_id).first()
     return result
 
-def load_vod_data_by_name(vod_name):  # 从数据库根据视频名称获取影片数据
-    result = models.VideoData.objects.filter(vod_name=vod_name).all()
-    return result
-
 def load_all_vod_data():    # 从数据库获取全部影片数据
     result = models.VideoData.objects.exclude(vod_cid__in=[16, 17]).values(
         'vod_id', 'vod_pic', 'vod_name', 'vod_continu', 'vod_actor', 'vod_rating', 'vod_douban_id', 'vod_year').order_by('-ctime')
@@ -65,6 +61,10 @@ def search_data(wd):  # 从数据库按关键字搜索
         'vod_id', 'vod_pic', 'vod_name', 'vod_continu', 'vod_actor', 'vod_douban_id', 'vod_rating').order_by('-ctime')
     return result
 
+def search_data2(wd,year):  # 从数据库按关键字搜索
+    result = models.VideoData.objects.filter(vod_name__icontains=wd).filter(vod_year=year).exclude(vod_cid__in=[16, 17]).all().values(
+        'vod_id', 'vod_pic', 'vod_name', 'vod_continu', 'vod_actor', 'vod_douban_id', 'vod_rating').order_by('-ctime')
+    return result
 
 def load_type_data(**filter_param):  # 从数据库查询视频分类数据
     if filter_param['vod_cid'] == '1':  # 所有电影
