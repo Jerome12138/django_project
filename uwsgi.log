@@ -1500,3 +1500,707 @@ https://www.80s.tw/movie/16901请求超时，重试1次
 详情页列表保存成功
 [pid: 13926|app: 0|req: 15/19] 183.27.47.217 () {46 vars in 876 bytes} [Sun May 10 16:15:20 2020] GET /admin/get_80s_rating/ => generated 3 bytes in 396280 msecs (HTTP/1.1 200) 5 headers in 148 bytes (1 switches on core 0)
 [pid: 13926|app: 0|req: 16/20] 183.27.47.217 () {46 vars in 970 bytes} [Sun May 10 16:22:14 2020] GET /admin/view_log/?page=14 => generated 16657 bytes in 125 msecs (HTTP/1.1 200) 5 headers in 152 bytes (1 switches on core 1)
+*** Starting uWSGI 2.0.18 (64bit) on [Sun May 10 16:47:36 2020] ***
+compiled with version: 7.4.0 on 31 January 2020 10:32:09
+os: Linux-4.15.0-54-generic #58-Ubuntu SMP Mon Jun 24 10:55:24 UTC 2019
+nodename: VM-32-8-ubuntu
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 1
+current working directory: /home/ubuntu/git/django_project
+writing pidfile to ./uwsgi.pid
+detected binary path: /home/ubuntu/.local/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+chdir() to /home/ubuntu/git/django_project
+your processes number limit is 7079
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address 127.0.0.1:8001 fd 6
+Python version: 3.6.8 (default, Oct  7 2019, 12:59:55)  [GCC 8.3.0]
+Python main interpreter initialized at 0x55718907a540
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 416720 bytes (406 KB) for 8 cores
+*** Operational MODE: preforking+threaded ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x55718907a540 pid: 14977 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 14977)
+spawned uWSGI worker 1 (pid: 14979, cores: 2)
+spawned uWSGI worker 2 (pid: 14980, cores: 2)
+spawned uWSGI worker 3 (pid: 14981, cores: 2)
+spawned uWSGI worker 4 (pid: 14982, cores: 2)
+[pid: 14979|app: 0|req: 1/1] 183.27.47.217 () {48 vars in 1001 bytes} [Sun May 10 16:47:42 2020] GET /admin/view_log/?page=14 => generated 16962 bytes in 290 msecs (HTTP/1.1 200) 5 headers in 152 bytes (1 switches on core 0)
+[pid: 14979|app: 0|req: 2/2] 183.27.47.217 () {46 vars in 937 bytes} [Sun May 10 16:47:44 2020] GET /admin/ => generated 27873 bytes in 5 msecs (HTTP/1.1 200) 6 headers in 320 bytes (1 switches on core 1)
+共有80s视频：2174
+[pid: 14982|app: 0|req: 2/3] 183.27.47.217 () {46 vars in 938 bytes} [Sun May 10 16:47:47 2020] GET /admin/view_log/ => generated 24644 bytes in 151 msecs (HTTP/1.1 200) 5 headers in 152 bytes (1 switches on core 1)
+亿万第五季 33440173 9.6 保存成功[80s]
+[pid: 14982|app: 0|req: 3/4] 183.27.47.217 () {46 vars in 962 bytes} [Sun May 10 16:47:50 2020] GET /admin/view_log/?page=14 => generated 17175 bytes in 160 msecs (HTTP/1.1 200) 5 headers in 152 bytes (1 switches on core 1)
+美国夫人第一季 30366454 8.9 保存成功[80s]
+无人知晓 33446371 8.7 保存成功[80s]
+惊异传奇第一季 26650021 7.8 保存成功[80s]
+第5大道第一季 27155139 6.6 保存成功[80s]
+局外人2020 30246686 8.7 保存成功[80s]
+非我所愿第一季 30402183 7.6 保存成功[80s]
+蝙蝠女侠第一季 30279863 6.2 保存成功[80s]
+巧克力2019 30428221 8.2 保存成功[80s]
+[pid: 14982|app: 0|req: 4/5] 183.27.47.217 () {46 vars in 970 bytes} [Sun May 10 16:48:09 2020] GET /admin/view_log/?page=14 => generated 17628 bytes in 126 msecs (HTTP/1.1 200) 5 headers in 152 bytes (1 switches on core 1)
+灵异女仆第一季 30157629 7.5 保存成功[80s]
+早间新闻第一季 27099158 8.6 保存成功[80s]
+鬼作秀第一季 30279899 8.2 保存成功[80s]
+[pid: 14982|app: 0|req: 5/6] 183.27.47.217 () {48 vars in 1069 bytes} [Sun May 10 16:48:28 2020] GET /video/search/?wd=%E4%BC%A6%E6%95%A6%E7%94%9F%E6%B4%BB&page=1 => generated 15348 bytes in 53 msecs (HTTP/1.1 200) 6 headers in 320 bytes (1 switches on core 1)
+[pid: 14979|app: 0|req: 3/7] 183.27.47.217 () {46 vars in 996 bytes} [Sun May 10 16:48:30 2020] GET /video/play/57272/ => generated 12881 bytes in 14 msecs (HTTP/1.1 200) 6 headers in 320 bytes (1 switches on core 0)
+https://www.80s.tw/ju/24995请求超时，重试1次
+我们的男孩第一季 34440183 8.1 保存成功[80s]
+山巅之城第一季 27099210 8.5 保存成功[80s]
+血宝藏第一季 27594876 5.9 保存成功[80s]
+亢奋第一季 30181462 7.8 保存成功[80s]
+沼泽怪物第一季 30216642 8.3 保存成功[80s]
+香水2019 30450613 7.2 保存成功[80s]
+已读取80s数据:50
+详情页列表更新
+幻影恶灵第一季 26682920 6.3 保存成功[80s]
+切尔诺贝利第一季 27098632 9.6 保存成功[80s]
+血疫第一季 26581181 8.5 保存成功[80s]
+[pid: 14979|app: 0|req: 4/8] 183.27.47.217 () {46 vars in 1022 bytes} [Sun May 10 16:48:52 2020] GET /video/search/?wd=%E7%AC%AC5%E5%A4%A7%E9%81%93&page=1 => generated 15274 bytes in 53 msecs (HTTP/1.1 200) 6 headers in 320 bytes (1 switches on core 1)
+[pid: 14982|app: 0|req: 6/9] 183.27.47.217 () {46 vars in 1022 bytes} [Sun May 10 16:48:52 2020] GET /video/search/?wd=%E7%AC%AC5%E5%A4%A7%E9%81%93&page=1 => generated 15274 bytes in 46 msecs (HTTP/1.1 200) 6 headers in 320 bytes (1 switches on core 1)
+新阴阳魔界第一季 26336778 8.0 保存成功[80s]
+[pid: 14982|app: 0|req: 7/10] 183.27.47.217 () {46 vars in 988 bytes} [Sun May 10 16:48:54 2020] GET /video/play/77514/ => generated 13378 bytes in 8 msecs (HTTP/1.1 200) 6 headers in 320 bytes (1 switches on core 1)
+佛西与沃登第一季 30282767 8.4 保存成功[80s]
+第二十二条军规第一季 27200836 8.1 保存成功[80s]
+公关第一季 30395072 8.2 保存成功[80s]
+附身2019 30318030 7.3 保存成功[80s]
+奇迹缔造者第一季 27045850 6.6 保存成功[80s]
+[pid: 14982|app: 0|req: 8/11] 183.27.47.217 () {46 vars in 970 bytes} [Sun May 10 16:49:06 2020] GET /admin/view_log/?page=14 => generated 19088 bytes in 126 msecs (HTTP/1.1 200) 5 headers in 152 bytes (1 switches on core 1)
+通天塔2019 30305043 8.3 保存成功[80s]
+杀手一班第一季 26841335 7.5 保存成功[80s]
+[pid: 14982|app: 0|req: 9/12] 183.27.47.217 () {46 vars in 970 bytes} [Sun May 10 16:49:27 2020] GET /admin/view_log/?page=12 => generated 22422 bytes in 127 msecs (HTTP/1.1 200) 5 headers in 152 bytes (1 switches on core 1)
+https://www.80s.tw/ju/23973请求超时，重试1次
+蓝皮书第一季 26888711 7.8 保存成功[80s]
+[pid: 14982|app: 0|req: 10/13] 183.27.47.217 () {46 vars in 970 bytes} [Sun May 10 16:49:30 2020] GET /admin/view_log/?page=13 => generated 20550 bytes in 130 msecs (HTTP/1.1 200) 5 headers in 152 bytes (1 switches on core 1)
+圈套韩剧 30328748 8.4 保存成功[80s]
+诡探前传粤语 27168798 7.3 保存成功[80s]
+[pid: 14982|app: 0|req: 11/14] 183.27.47.217 () {46 vars in 970 bytes} [Sun May 10 16:49:44 2020] GET /admin/view_log/?page=14 => generated 19619 bytes in 127 msecs (HTTP/1.1 200) 5 headers in 152 bytes (1 switches on core 1)
+[pid: 14979|app: 0|req: 5/15] 183.27.47.217 () {46 vars in 970 bytes} [Sun May 10 16:49:46 2020] GET /admin/view_log/?page=15 => generated 14910 bytes in 131 msecs (HTTP/1.1 200) 5 headers in 152 bytes (1 switches on core 0)
+[pid: 14979|app: 0|req: 6/16] 183.27.47.217 () {46 vars in 970 bytes} [Sun May 10 16:49:49 2020] GET /admin/view_log/?page=15 => generated 14966 bytes in 127 msecs (HTTP/1.1 200) 5 headers in 152 bytes (1 switches on core 1)
+[pid: 14982|app: 0|req: 12/17] 183.27.47.217 () {46 vars in 970 bytes} [Sun May 10 16:49:51 2020] GET /admin/view_log/?page=14 => generated 19619 bytes in 126 msecs (HTTP/1.1 200) 5 headers in 152 bytes (1 switches on core 1)
+https://www.80s.tw/ju/23909请求超时，重试1次
+悲惨世界第一季 26842796 8.3 保存成功[80s]
+https://www.80s.tw/ju/23740请求超时，重试1次
+https://www.80s.tw/ju/23740请求超时，重试2次
+https://www.80s.tw/ju/23740请求超时，重试3次
+get_detail Exception /ju/23740 object of type 'bool' has no len()
+[pid: 14982|app: 0|req: 13/18] 183.27.47.217 () {46 vars in 937 bytes} [Sun May 10 16:50:22 2020] GET /video/ => generated 57393 bytes in 352 msecs (HTTP/1.1 200) 6 headers in 320 bytes (1 switches on core 1)
+[pid: 14979|app: 0|req: 7/19] 183.27.47.217 () {44 vars in 948 bytes} [Sun May 10 16:50:27 2020] GET /video/search/?wd=%E9%97%A8%E9%94%81&page=1 => generated 14294 bytes in 48 msecs (HTTP/1.1 200) 6 headers in 320 bytes (1 switches on core 0)
+[pid: 14979|app: 0|req: 8/20] 183.27.47.217 () {44 vars in 948 bytes} [Sun May 10 16:50:27 2020] GET /video/search/?wd=%E9%97%A8%E9%94%81&page=1 => generated 14294 bytes in 46 msecs (HTTP/1.1 200) 6 headers in 320 bytes (1 switches on core 1)
+[pid: 14982|app: 0|req: 14/21] 183.27.47.217 () {46 vars in 978 bytes} [Sun May 10 16:50:33 2020] GET /video/play/55428/ => generated 12844 bytes in 4 msecs (HTTP/1.1 200) 6 headers in 320 bytes (1 switches on core 1)
+[pid: 14982|app: 0|req: 15/22] 183.27.47.217 () {46 vars in 1038 bytes} [Sun May 10 16:50:41 2020] GET /video/search/?wd=%E8%9D%B4%E8%9D%B6%E6%95%88%E5%BA%94&page=1 => generated 16606 bytes in 49 msecs (HTTP/1.1 200) 6 headers in 320 bytes (1 switches on core 1)
+[pid: 14979|app: 0|req: 9/23] 183.27.47.217 () {46 vars in 1038 bytes} [Sun May 10 16:50:41 2020] GET /video/search/?wd=%E8%9D%B4%E8%9D%B6%E6%95%88%E5%BA%94&page=1 => generated 16606 bytes in 47 msecs (HTTP/1.1 200) 6 headers in 320 bytes (1 switches on core 0)
+[pid: 14979|app: 0|req: 10/24] 183.27.47.217 () {46 vars in 996 bytes} [Sun May 10 16:50:51 2020] GET /video/play/69440/ => generated 13089 bytes in 4 msecs (HTTP/1.1 200) 6 headers in 320 bytes (1 switches on core 1)
+----------80s重新启动查找------------
+已读取80s数据:100
+详情页列表更新
+我的天才女友第一季 28427782 9.4 保存成功[80s]
+夜行者第一季 27042534 5.8 保存成功[80s]
+是咁的，法官阁下国语 27119494 7.3 保存成功[80s]
+最完美的离婚韩国版 30140097 7.5 保存成功[80s]
+[pid: 14982|app: 0|req: 16/25] 183.27.47.217 () {46 vars in 970 bytes} [Sun May 10 16:53:37 2020] GET /admin/view_log/?page=15 => generated 16229 bytes in 125 msecs (HTTP/1.1 200) 5 headers in 152 bytes (1 switches on core 1)
+https://www.80s.tw/ju/23716请求超时，重试1次
+起源号第一季 30206930 7.1 保存成功[80s]
+毒枭：墨西哥第一季 26869686 9.6 保存成功[80s]
+鬼入侵第一季 27016554 8.5 保存成功[80s]
+火星先驱第一季 27036736 7.3 保存成功[80s]
+城堡岩第一季 26978048 8.7 保存成功[80s]
+利器第一季 26252279 8.7 保存成功[80s]
+斗篷与匕首第一季 26767521 7.4 保存成功[80s]
+节食王国第一季 26903924 6.5 保存成功[80s]
+姿态第一季 26997983 8.8 保存成功[80s]
+已读取80s数据:150
+详情页列表更新
+我的大叔/My Mister 27602137 9.1 保存成功[80s]
+https://www.80s.tw/ju/22605请求超时，重试1次
+无妄之灾 第一季 26886270 8.6 保存成功[80s]
+情妇韩国版 27624640 6.6 保存成功[80s]
+https://www.80s.tw/ju/22425请求超时，重试1次
+美好生活 26972555 8.0 保存成功[80s]
+连带伤害 第一季 27002131 8.2 保存成功[80s]
+诸事不顺 第一季 27079310 8.3 保存成功[80s]
+已读取80s数据:200
+详情页列表更新
+漫长归途第一季 26846968 8.2 保存成功[80s]
+地狱使者Black 27043568 6.6 保存成功[80s]
+路从今夜白之遇见青春DVD版 26425605 5.0 保存成功[80s]
+高玩救未来 第一季 26730556 6.8 保存成功[80s]
+异人族 第一季 25958810 6.0 保存成功[80s]
+飞哥大英雄之飞哥战队 26857689 5.3 保存成功[80s]
+爱人同志 26638521 4.0 保存成功[80s]
+已读取80s数据:250
+详情页列表更新
+[pid: 14982|app: 0|req: 17/26] 183.27.47.217 () {46 vars in 970 bytes} [Sun May 10 16:55:16 2020] GET /admin/view_log/?page=15 => generated 17735 bytes in 127 msecs (HTTP/1.1 200) 5 headers in 152 bytes (1 switches on core 1)
+短暂的婚姻粤语版 27112705 9.0 保存成功[80s]
+救救我 26977172 6.5 保存成功[80s]
+对不起，我爱你 27015856 5.6 保存成功[80s]
+镇魂街第一季 26882293 6.6 保存成功[80s]
+已读取80s数据:300
+详情页列表更新
+特工皇妃楚乔传  26363186 5.4 保存成功[80s]
+[pid: 14982|app: 0|req: 18/27] 183.27.47.217 () {46 vars in 970 bytes} [Sun May 10 16:55:30 2020] GET /admin/view_log/?page=14 => generated 19619 bytes in 129 msecs (HTTP/1.1 200) 5 headers in 152 bytes (1 switches on core 1)
+无豆瓣id数据: ['\n                ', '\n                                    ', '7.5                            '] [] /ju/21099
+https://www.80s.tw/ju/20790请求超时，重试1次
+我的野蛮女友 25910099 6.3 保存成功[80s]
+龙珠传奇之无间道 26755568 5.1 保存成功[80s]
+超级小郎中(网络剧) 27040741 5.3 保存成功[80s]
+守望者 26976354 6.3 保存成功[80s]
+[pid: 14982|app: 0|req: 19/28] 183.27.47.217 () {46 vars in 970 bytes} [Sun May 10 16:56:02 2020] GET /admin/view_log/?page=15 => generated 18566 bytes in 135 msecs (HTTP/1.1 200) 5 headers in 152 bytes (1 switches on core 1)
+诡探粤语 27018290 6.5 保存成功[80s]
+已读取80s数据:350
+详情页列表更新
+深夜食堂中国版 26411410 2.6 保存成功[80s]
+白鹿原 26322644 8.9 保存成功[80s]
+林子大了(郭麒麟版) 26974042 4.2 保存成功[80s]
+画心师第一季 26873085 5.2 保存成功[80s]
+求婚大作战 26743546 4.2 保存成功[80s]
+耳语/悄悄话 26934348 8.7 保存成功[80s]
+隧道 26928896 7.9 保存成功[80s]
+已读取80s数据:400
+详情页列表更新
+无豆瓣id数据: ['\n                ', '\n                                    ', '6.5                            '] [] /ju/20418
+她爱上了我的谎 26934345 5.8 保存成功[80s]
+花间提壶方大厨第二季 26868416 8.2 保存成功[80s]
+我是幸运儿 26592987 4.3 保存成功[80s]
+剃刀边缘 26746951 6.4 保存成功[80s]
+https://www.80s.tw/ju/20148请求超时，重试1次
+https://www.80s.tw/ju/20148请求超时，重试2次
+我瞒结婚了国语 26923052 5.8 保存成功[80s]
+已读取80s数据:450
+详情页列表更新
+无豆瓣id数据: ['\n                ', '\n                                    ', '5.2                            '] [] /ju/20101
+宠物情人 26788941 8.1 保存成功[80s]
+那片星空那片海Ⅱ 26613421 3.5 保存成功[80s]
+校花前传之很纯很暧昧 26939227 3.5 保存成功[80s]
+乘胜狙击国语版 26716191 6.4 保存成功[80s]
+已读取80s数据:500
+详情页列表更新
+味想天开粤语版 26667081 4.5 保存成功[80s]
+漂亮的李慧珍[DVD版] 26752700 4.7 保存成功[80s]
+守护丽人DVD版 25960721 5.2 保存成功[80s]
+于成龙 26745143 6.7 保存成功[80s]
+已读取80s数据:550
+详情页列表更新
+已读取80s数据:600
+详情页列表更新
+战火中的兄弟 26870211 3.5 保存成功[80s]
+器灵 第一季 26882249 5.6 保存成功[80s]
+已读取80s数据:650
+详情页列表更新
+无豆瓣id数据: ['\n                ', '\n                                    ', '8.2                            '] [] /ju/19325
+幕后玩家粤语 26715657 7.4 保存成功[80s]
+恋爱真美 25919379 7.4 保存成功[80s]
+[pid: 14982|app: 0|req: 20/29] 183.27.47.217 () {46 vars in 970 bytes} [Sun May 10 16:58:07 2020] GET /admin/view_log/?page=15 => generated 20131 bytes in 130 msecs (HTTP/1.1 200) 5 headers in 152 bytes (1 switches on core 1)
+已读取80s数据:700
+详情页列表更新
+THE K2 26827945 6.6 保存成功[80s]
+[pid: 14982|app: 0|req: 21/30] 183.27.47.217 () {46 vars in 970 bytes} [Sun May 10 16:58:12 2020] GET /admin/view_log/?page=16 => generated 15706 bytes in 129 msecs (HTTP/1.1 200) 5 headers in 152 bytes (1 switches on core 1)
+红旗漫卷西风 26860799 6.2 保存成功[80s]
+红星照耀中国[DVD版] 26711025 6.8 保存成功[80s]
+好家伙 10726963 8.0 保存成功[80s]
+已读取80s数据:750
+详情页列表更新
+九州天空城纪录片 26611039 5.1 保存成功[80s]
+黄金血道 25876124 6.1 保存成功[80s]
+无豆瓣id数据: ['\n                ', '\n                                    ', '5.3                            '] [] /ju/18373
+无豆瓣id数据: ['\n                ', '\n                                    ', '5.8                            '] [] /ju/18138
+城寨英雄国语 26381346 8.1 保存成功[80s]
+已读取80s数据:800
+详情页列表更新
+致青春·原来你还在这里 24859459 5.6 保存成功[80s]
+追击者2016 26322949 6.6 保存成功[80s]
+谢文东4：风云再起之再战江湖 26740261 6.6 保存成功[80s]
+亲爱的翻译官 26287804 5.0 保存成功[80s]
+哈啦大发师3 26663553 7.6 保存成功[80s]
+已读取80s数据:850
+详情页列表更新
+头号前妻2016 26415263 4.7 保存成功[80s]
+欢乐颂 26430092 7.3 保存成功[80s]
+末代御医国语 26258079 5.8 保存成功[80s]
+已读取80s数据:900
+详情页列表更新
+EU超时任务国语版 26342366 8.0 保存成功[80s]
+https://www.80s.tw/ju/16934请求超时，重试1次
+信号 26310143 9.1 保存成功[80s]
+新萧十一郎 25966185 5.6 保存成功[80s]
+已读取80s数据:950
+详情页列表更新
+向着幸福前进 25762396 3.1 保存成功[80s]
+心理罪1 26345152 7.6 保存成功[80s]
+热血青春 25953526 7.9 保存成功[80s]
+狭路2016 25840407 4.1 保存成功[80s]
+已读取80s数据:1000
+详情页列表更新
+两个女人的战争 25975253 5.0 保存成功[80s]
+已读取80s数据:1050
+详情页列表更新
+实习天使粤语 26418061 5.3 保存成功[80s]
+[pid: 14982|app: 0|req: 22/31] 183.27.47.217 () {46 vars in 970 bytes} [Sun May 10 16:59:48 2020] GET /admin/view_log/?page=16 => generated 17594 bytes in 175 msecs (HTTP/1.1 200) 5 headers in 152 bytes (1 switches on core 1)
+已读取80s数据:1100
+详情页列表更新
+激战 25865476 3.9 保存成功[80s]
+D-Day 26384921 7.2 保存成功[80s]
+已读取80s数据:1150
+详情页列表更新
+张保仔粤语 25977215 5.7 保存成功[80s]
+陪着你走粤语 25741350 6.8 保存成功[80s]
+纳妾记第一季 26470019 5.6 保存成功[80s]
+已读取80s数据:1200
+详情页列表更新
+拆局专家粤语 26298046 6.6 保存成功[80s]
+旋风少女第一季 26315292 5.9 保存成功[80s]
+鬼同你OT粤语 26235529 6.2 保存成功[80s]
+上流社会2015 26335546 6.6 保存成功[80s]
+已读取80s数据:1250
+详情页列表更新
+华胥引之绝爱之城 20413548 6.1 保存成功[80s]
+盗墓笔记第一季 25907063 4.0 保存成功[80s]
+两生花 26088145 3.8 保存成功[80s]
+已读取80s数据:1300
+详情页列表更新
+华丽转身粤语 25838967 6.2 保存成功[80s]
+执念师 26322805 7.1 保存成功[80s]
+活色生香 25849012 5.5 保存成功[80s]
+已读取80s数据:1350
+详情页列表更新
+奶爸的爱情生活 24699332 6.4 保存成功[80s]
+新济公活佛下部 24840621 3.6 保存成功[80s]
+地下地上之大陆小岛 24736275 6.3 保存成功[80s]
+匹诺曹 25928794 8.2 保存成功[80s]
+怒放之青春再见 25803272 4.3 保存成功[80s]
+劫中劫 24753671 5.3 保存成功[80s]
+已读取80s数据:1400
+详情页列表更新
+傲慢与偏见 25953626 7.1 保存成功[80s]
+已读取80s数据:1450
+详情页列表更新
+坏家伙们 25811005 8.2 保存成功[80s]
+已读取80s数据:1500
+详情页列表更新
+朝鲜美女三剑客 25830710 8.1 保存成功[80s]
+魁拔Ⅲ战神崛起 25736076 4.8 保存成功[80s]
+已读取80s数据:1550
+详情页列表更新
+https://www.80s.tw/ju/11609请求超时，重试1次
+使徒行者粤语 25708579 8.1 保存成功[80s]
+[pid: 14982|app: 0|req: 23/32] 183.27.47.217 () {46 vars in 970 bytes} [Sun May 10 17:01:43 2020] GET /admin/view_log/?page=16 => generated 19140 bytes in 136 msecs (HTTP/1.1 200) 5 headers in 152 bytes (1 switches on core 1)
+勇敢的心 24867836 5.2 保存成功[80s]
+载得有情人粤语 25722162 6.8 保存成功[80s]
+[pid: 14982|app: 0|req: 24/33] 183.27.47.217 () {46 vars in 970 bytes} [Sun May 10 17:01:49 2020] GET /admin/view_log/?page=17 => generated 15352 bytes in 130 msecs (HTTP/1.1 200) 5 headers in 152 bytes (1 switches on core 1)
+已读取80s数据:1600
+详情页列表更新
+小时代3：刺金时代 7161723 4.0 保存成功[80s]
+已读取80s数据:1650
+详情页列表更新
+已读取80s数据:1700
+详情页列表更新
+爱我请留言国语 24753689 8.4 保存成功[80s]
+夺命枪火 20458805 4.9 保存成功[80s]
+已读取80s数据:1750
+详情页列表更新
+单恋双城国语 20019486 7.1 保存成功[80s]
+无尽的爱[泰剧] 24875599 7.5 保存成功[80s]
+已读取80s数据:1800
+详情页列表更新
+亲爱的奶奶 10554942 6.7 保存成功[80s]
+已读取80s数据:1850
+详情页列表更新
+独生子女的婆婆妈妈 11632727 6.5 保存成功[80s]
+已读取80s数据:1900
+详情页列表更新
+大漠苍狼 24846476 5.6 保存成功[80s]
+OnCall36小时2粤语 19899700 6.4 保存成功[80s]
+咱们结婚吧 11577139 7.0 保存成功[80s]
+狼烟遍地 11625223 5.1 保存成功[80s]
+哆啦A梦剧场版大雄的秘密道具博物馆 25703454 8.0 保存成功[80s]
+已读取80s数据:1950
+详情页列表更新
+已读取80s数据:2000
+详情页列表更新
+火线三兄弟 19965685 7.0 保存成功[80s]
+陆贞传奇[DVD版] 10484007 6.3 保存成功[80s]
+百万爱情宝贝 20427014 7.0 保存成功[80s]
+唐山大地震 6872258 6.7 保存成功[80s]
+已读取80s数据:2050
+详情页列表更新
+初五启市录国语 11610945 5.9 保存成功[80s]
+已读取80s数据:2100
+详情页列表更新
+已读取80s数据:2150
+详情页列表更新
+------80s获取完毕-----
+错误列表： []
+详情页列表保存成功
+[pid: 14982|app: 0|req: 24/34] 183.27.47.217 () {46 vars in 876 bytes} [Sun May 10 16:47:46 2020] GET /admin/get_80s_rating/ => generated 3 bytes in 908993 msecs (HTTP/1.1 200) 5 headers in 148 bytes (1 switches on core 0)
+[pid: 14982|app: 0|req: 25/35] 183.27.47.217 () {48 vars in 1001 bytes} [Sun May 10 17:05:06 2020] GET /admin/view_log/?page=17 => generated 16966 bytes in 133 msecs (HTTP/1.1 200) 5 headers in 152 bytes (1 switches on core 1)
+[pid: 14979|app: 0|req: 11/36] 183.27.47.217 () {44 vars in 877 bytes} [Sun May 10 17:05:21 2020] GET /video/ => generated 57393 bytes in 342 msecs (HTTP/1.1 200) 6 headers in 320 bytes (1 switches on core 0)
+[pid: 14979|app: 0|req: 12/37] 183.27.47.217 () {44 vars in 891 bytes} [Sun May 10 17:07:11 2020] GET /video/type/2/ => generated 35301 bytes in 160 msecs (HTTP/1.1 200) 6 headers in 320 bytes (1 switches on core 1)
+[pid: 14979|app: 0|req: 13/38] 183.27.47.217 () {46 vars in 986 bytes} [Sun May 10 17:07:14 2020] GET /video/type/2/?year=&area=&rating=9.0 => generated 12754 bytes in 92 msecs (HTTP/1.1 200) 6 headers in 320 bytes (1 switches on core 0)
+[pid: 14979|app: 0|req: 14/39] 183.27.47.217 () {46 vars in 1009 bytes} [Sun May 10 17:07:16 2020] GET /video/type/2/?year=&area=&rating=8.0 => generated 39425 bytes in 97 msecs (HTTP/1.1 200) 6 headers in 320 bytes (1 switches on core 1)
+[pid: 14979|app: 0|req: 15/40] 183.27.47.217 () {46 vars in 1009 bytes} [Sun May 10 17:07:18 2020] GET /video/type/2/?year=&area=&rating=7.0 => generated 36785 bytes in 96 msecs (HTTP/1.1 200) 6 headers in 320 bytes (1 switches on core 0)
+[pid: 14979|app: 0|req: 16/41] 183.27.47.217 () {46 vars in 1009 bytes} [Sun May 10 17:07:21 2020] GET /video/type/2/?year=&area=&rating=6.0 => generated 36675 bytes in 99 msecs (HTTP/1.1 200) 6 headers in 320 bytes (1 switches on core 1)
+[pid: 14979|app: 0|req: 17/42] 183.27.47.217 () {46 vars in 1009 bytes} [Sun May 10 17:07:23 2020] GET /video/type/2/?year=&area=&rating=5.0 => generated 35523 bytes in 98 msecs (HTTP/1.1 200) 6 headers in 320 bytes (1 switches on core 0)
+[pid: 14979|app: 0|req: 18/43] 183.27.47.217 () {46 vars in 1045 bytes} [Sun May 10 17:07:26 2020] GET /video/type/2/?year=&area=&rating=5.0%E4%BB%A5%E4%B8%8B => generated 36527 bytes in 98 msecs (HTTP/1.1 200) 6 headers in 320 bytes (1 switches on core 1)
+[pid: 14979|app: 0|req: 19/44] 183.27.47.217 () {46 vars in 1027 bytes} [Sun May 10 17:07:30 2020] GET /video/type/2/?year=&area=&rating=9.0 => generated 12754 bytes in 94 msecs (HTTP/1.1 200) 6 headers in 320 bytes (1 switches on core 0)
+[pid: 14979|app: 0|req: 20/45] 183.27.47.217 () {46 vars in 975 bytes} [Sun May 10 17:07:32 2020] GET /video/type/2/?area= => generated 35301 bytes in 154 msecs (HTTP/1.1 200) 6 headers in 320 bytes (1 switches on core 1)
+[pid: 14979|app: 0|req: 21/46] 183.27.47.217 () {46 vars in 937 bytes} [Sun May 10 17:09:32 2020] GET /admin/ => generated 27873 bytes in 2 msecs (HTTP/1.1 200) 6 headers in 320 bytes (1 switches on core 0)
+[pid: 14979|app: 0|req: 22/47] 183.27.47.217 () {46 vars in 938 bytes} [Sun May 10 17:09:42 2020] GET /admin/view_log/ => generated 24644 bytes in 130 msecs (HTTP/1.1 200) 5 headers in 152 bytes (1 switches on core 1)
+[pid: 14979|app: 0|req: 23/48] 183.27.47.217 () {46 vars in 962 bytes} [Sun May 10 17:09:49 2020] GET /admin/view_log/?page=17 => generated 17803 bytes in 135 msecs (HTTP/1.1 200) 5 headers in 152 bytes (1 switches on core 0)
+[pid: 14979|app: 0|req: 24/49] 183.27.47.217 () {46 vars in 970 bytes} [Sun May 10 17:10:37 2020] GET /admin/view_log/?page=17 => generated 17859 bytes in 139 msecs (HTTP/1.1 200) 5 headers in 152 bytes (1 switches on core 1)
+[pid: 14979|app: 0|req: 25/50] 183.27.47.217 () {46 vars in 970 bytes} [Sun May 10 17:10:48 2020] GET /admin/view_log/?page=17 => generated 17915 bytes in 131 msecs (HTTP/1.1 200) 5 headers in 152 bytes (1 switches on core 0)
+[pid: 14979|app: 0|req: 26/51] 183.27.47.217 () {46 vars in 937 bytes} [Sun May 10 17:10:55 2020] GET /admin/ => generated 27873 bytes in 2 msecs (HTTP/1.1 200) 6 headers in 320 bytes (1 switches on core 1)
+共有80s视频：2168
+[pid: 14979|app: 0|req: 28/52] 183.27.47.217 () {46 vars in 938 bytes} [Sun May 10 17:11:00 2020] GET /admin/view_log/ => generated 24644 bytes in 138 msecs (HTTP/1.1 200) 5 headers in 152 bytes (1 switches on core 1)
+都市故事第四季 30206440 7.8 保存成功[80s]
+已读取80s数据:50
+详情页列表更新
+已读取80s数据:100
+详情页列表更新
+[pid: 14979|app: 0|req: 29/53] 183.27.47.217 () {46 vars in 962 bytes} [Sun May 10 17:11:06 2020] GET /admin/view_log/?page=17 => generated 18223 bytes in 152 msecs (HTTP/1.1 200) 5 headers in 152 bytes (1 switches on core 1)
+已读取80s数据:150
+详情页列表更新
+已读取80s数据:200
+详情页列表更新
+已读取80s数据:250
+详情页列表更新
+无豆瓣id数据: ['\n                ', '\n                                    ', '7.5                            '] [] /ju/21099
+已读取80s数据:300
+详情页列表更新
+无豆瓣id数据: ['\n                ', '\n                                    ', '6.5                            '] [] /ju/20418
+已读取80s数据:350
+详情页列表更新
+无豆瓣id数据: ['\n                ', '\n                                    ', '5.2                            '] [] /ju/20101
+已读取80s数据:400
+详情页列表更新
+已读取80s数据:450
+详情页列表更新
+已读取80s数据:500
+详情页列表更新
+已读取80s数据:550
+详情页列表更新
+无豆瓣id数据: ['\n                ', '\n                                    ', '8.2                            '] [] /ju/19325
+已读取80s数据:600
+详情页列表更新
+[pid: 14979|app: 0|req: 30/54] 183.27.47.217 () {46 vars in 970 bytes} [Sun May 10 17:11:32 2020] GET /admin/view_log/?page=17 => generated 19148 bytes in 165 msecs (HTTP/1.1 200) 5 headers in 152 bytes (1 switches on core 1)
+已读取80s数据:650
+详情页列表更新
+无豆瓣id数据: ['\n                ', '\n                                    ', '5.3                            '] [] /ju/18373
+已读取80s数据:700
+详情页列表更新
+[pid: 14979|app: 0|req: 31/55] 183.27.47.217 () {46 vars in 970 bytes} [Sun May 10 17:11:37 2020] GET /admin/view_log/?page=18 => generated 15459 bytes in 136 msecs (HTTP/1.1 200) 5 headers in 152 bytes (1 switches on core 1)
+无豆瓣id数据: ['\n                ', '\n                                    ', '5.8                            '] [] /ju/18138
+已读取80s数据:750
+详情页列表更新
+已读取80s数据:800
+详情页列表更新
+已读取80s数据:850
+详情页列表更新
+已读取80s数据:900
+详情页列表更新
+已读取80s数据:950
+详情页列表更新
+已读取80s数据:1000
+详情页列表更新
+已读取80s数据:1050
+详情页列表更新
+已读取80s数据:1100
+详情页列表更新
+已读取80s数据:1150
+详情页列表更新
+已读取80s数据:1200
+详情页列表更新
+已读取80s数据:1250
+详情页列表更新
+已读取80s数据:1300
+详情页列表更新
+已读取80s数据:1350
+详情页列表更新
+已读取80s数据:1400
+详情页列表更新
+已读取80s数据:1450
+详情页列表更新
+已读取80s数据:1500
+详情页列表更新
+已读取80s数据:1550
+详情页列表更新
+已读取80s数据:1600
+详情页列表更新
+已读取80s数据:1650
+详情页列表更新
+已读取80s数据:1700
+详情页列表更新
+已读取80s数据:1750
+详情页列表更新
+已读取80s数据:1800
+详情页列表更新
+已读取80s数据:1850
+详情页列表更新
+已读取80s数据:1900
+详情页列表更新
+已读取80s数据:1950
+详情页列表更新
+已读取80s数据:2000
+详情页列表更新
+------80s获取完毕-----
+错误列表： []
+详情页列表保存成功
+[pid: 14979|app: 0|req: 31/56] 183.27.47.217 () {46 vars in 876 bytes} [Sun May 10 17:10:59 2020] GET /admin/get_80s_rating/ => generated 3 bytes in 95120 msecs (HTTP/1.1 200) 5 headers in 148 bytes (1 switches on core 0)
+[pid: 14979|app: 0|req: 32/57] 195.54.160.121 () {36 vars in 624 bytes} [Sun May 10 17:13:58 2020] GET /vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php => generated 179 bytes in 2 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 1)
+[pid: 14979|app: 0|req: 33/58] 183.27.47.217 () {48 vars in 1001 bytes} [Sun May 10 17:16:40 2020] GET /admin/view_log/?page=18 => generated 16996 bytes in 145 msecs (HTTP/1.1 200) 5 headers in 152 bytes (1 switches on core 0)
+[pid: 14979|app: 0|req: 34/59] 183.27.47.217 () {46 vars in 968 bytes} [Sun May 10 17:17:32 2020] GET /admin/view_log/?page=1 => generated 24644 bytes in 136 msecs (HTTP/1.1 200) 5 headers in 152 bytes (1 switches on core 1)
+[pid: 14979|app: 0|req: 35/60] 183.27.47.217 () {46 vars in 969 bytes} [Sun May 10 17:52:35 2020] GET /admin/view_log/?page=18 => generated 17107 bytes in 133 msecs (HTTP/1.1 200) 5 headers in 152 bytes (1 switches on core 0)
+[pid: 14979|app: 0|req: 36/61] 191.193.118.17 () {32 vars in 464 bytes} [Sun May 10 17:58:02 2020] GET / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 1)
+[pid: 14981|app: 0|req: 1/62] 191.193.118.17 () {32 vars in 464 bytes} [Sun May 10 17:58:02 2020] GET / => generated 179 bytes in 161 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+[pid: 14981|app: 0|req: 2/63] 195.54.160.121 () {38 vars in 712 bytes} [Sun May 10 18:10:40 2020] POST /vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php => generated 179 bytes in 2 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 1)
+[pid: 14979|app: 0|req: 37/64] 172.105.89.161 () {34 vars in 490 bytes} [Sun May 10 18:56:58 2020] GET /0bef => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+[pid: 14979|app: 0|req: 38/65] 183.27.47.217 () {46 vars in 947 bytes} [Sun May 10 18:59:19 2020] GET /video/type/1/ => generated 36577 bytes in 252 msecs (HTTP/1.1 200) 6 headers in 320 bytes (1 switches on core 1)
+[pid: 14979|app: 0|req: 39/66] 183.27.47.217 () {46 vars in 986 bytes} [Sun May 10 18:59:21 2020] GET /video/type/1/?year=&area=&rating=8.0 => generated 40260 bytes in 102 msecs (HTTP/1.1 200) 6 headers in 320 bytes (1 switches on core 0)
+[pid: 14979|app: 0|req: 40/67] 183.27.47.217 () {46 vars in 1009 bytes} [Sun May 10 18:59:22 2020] GET /video/type/1/?year=&area=&rating=7.0 => generated 37656 bytes in 103 msecs (HTTP/1.1 200) 6 headers in 320 bytes (1 switches on core 1)
+[pid: 14979|app: 0|req: 41/68] 183.27.47.217 () {46 vars in 1009 bytes} [Sun May 10 18:59:23 2020] GET /video/type/1/?year=&area=&rating=6.0 => generated 37676 bytes in 106 msecs (HTTP/1.1 200) 6 headers in 320 bytes (1 switches on core 0)
+[pid: 14979|app: 0|req: 42/69] 183.27.47.217 () {46 vars in 1009 bytes} [Sun May 10 18:59:24 2020] GET /video/type/1/?year=&area=&rating=5.0 => generated 37854 bytes in 107 msecs (HTTP/1.1 200) 6 headers in 320 bytes (1 switches on core 1)
+[pid: 14979|app: 0|req: 43/70] 183.27.47.217 () {46 vars in 964 bytes} [Sun May 10 18:59:27 2020] GET /video/type/4/ => generated 34922 bytes in 110 msecs (HTTP/1.1 200) 6 headers in 320 bytes (1 switches on core 0)
+[pid: 14979|app: 0|req: 44/71] 183.27.47.217 () {46 vars in 927 bytes} [Sun May 10 18:59:28 2020] GET /video/ => generated 57393 bytes in 342 msecs (HTTP/1.1 200) 6 headers in 320 bytes (1 switches on core 1)
+[pid: 14979|app: 0|req: 45/72] 183.27.47.217 () {44 vars in 984 bytes} [Sun May 10 18:59:38 2020] GET /video/search/?wd=%E6%96%97%E7%BD%97%E5%A4%A7%E9%99%86&page=1 => generated 17494 bytes in 49 msecs (HTTP/1.1 200) 6 headers in 320 bytes (1 switches on core 0)
+[pid: 14979|app: 0|req: 46/73] 183.27.47.217 () {44 vars in 984 bytes} [Sun May 10 18:59:38 2020] GET /video/search/?wd=%E6%96%97%E7%BD%97%E5%A4%A7%E9%99%86&page=1 => generated 17494 bytes in 46 msecs (HTTP/1.1 200) 6 headers in 320 bytes (1 switches on core 1)
+[pid: 14979|app: 0|req: 47/74] 183.27.47.217 () {46 vars in 996 bytes} [Sun May 10 18:59:41 2020] GET /video/play/44229/ => generated 26413 bytes in 15 msecs (HTTP/1.1 200) 6 headers in 320 bytes (1 switches on core 0)
+[pid: 14979|app: 0|req: 48/75] 183.27.47.217 () {46 vars in 973 bytes} [Sun May 10 18:59:45 2020] GET /video/play/44229/1-102.html => generated 26423 bytes in 15 msecs (HTTP/1.1 200) 6 headers in 320 bytes (1 switches on core 1)
+[pid: 14979|app: 0|req: 49/76] 183.27.47.217 () {46 vars in 983 bytes} [Sun May 10 19:16:38 2020] GET /video/play/44229/1-103.html => generated 26427 bytes in 15 msecs (HTTP/1.1 200) 6 headers in 320 bytes (1 switches on core 0)
+[pid: 14979|app: 0|req: 50/77] 183.27.47.217 () {46 vars in 970 bytes} [Sun May 10 19:33:00 2020] GET /admin/view_log/?page=18 => generated 18025 bytes in 131 msecs (HTTP/1.1 200) 5 headers in 152 bytes (1 switches on core 1)
+[pid: 14979|app: 0|req: 51/78] 183.27.47.217 () {46 vars in 937 bytes} [Sun May 10 19:33:05 2020] GET /admin/ => generated 27873 bytes in 2 msecs (HTTP/1.1 200) 6 headers in 320 bytes (1 switches on core 0)
+[pid: 14979|app: 0|req: 52/79] 183.27.47.217 () {46 vars in 955 bytes} [Sun May 10 19:33:09 2020] GET /video/type/1/ => generated 36577 bytes in 228 msecs (HTTP/1.1 200) 6 headers in 320 bytes (1 switches on core 1)
+[pid: 14982|app: 0|req: 27/80] 183.27.47.217 () {46 vars in 986 bytes} [Sun May 10 19:33:12 2020] GET /video/type/1/?year=&area=&rating=8.0 => generated 40260 bytes in 121 msecs (HTTP/1.1 200) 6 headers in 320 bytes (1 switches on core 1)
+[pid: 14982|app: 0|req: 28/81] 183.27.47.217 () {46 vars in 964 bytes} [Sun May 10 19:33:15 2020] GET /video/type/2/ => generated 35301 bytes in 165 msecs (HTTP/1.1 200) 6 headers in 320 bytes (1 switches on core 1)
+[pid: 14982|app: 0|req: 29/82] 183.27.47.217 () {46 vars in 986 bytes} [Sun May 10 19:33:17 2020] GET /video/type/2/?year=&area=&rating=7.0 => generated 36785 bytes in 98 msecs (HTTP/1.1 200) 6 headers in 320 bytes (1 switches on core 1)
+[pid: 14982|app: 0|req: 30/83] 183.27.47.217 () {46 vars in 1009 bytes} [Sun May 10 19:33:18 2020] GET /video/type/2/?year=&area=&rating=8.0 => generated 39425 bytes in 118 msecs (HTTP/1.1 200) 6 headers in 320 bytes (1 switches on core 1)
+[pid: 14982|app: 0|req: 31/84] 183.27.47.217 () {46 vars in 1009 bytes} [Sun May 10 19:33:19 2020] GET /video/type/2/?year=&area=&rating=9.0 => generated 12754 bytes in 91 msecs (HTTP/1.1 200) 6 headers in 320 bytes (1 switches on core 1)
+[pid: 14982|app: 0|req: 32/85] 183.27.47.217 () {46 vars in 1009 bytes} [Sun May 10 19:33:20 2020] GET /video/type/2/?year=&area=&rating=5.0 => generated 35523 bytes in 116 msecs (HTTP/1.1 200) 6 headers in 320 bytes (1 switches on core 1)
+[pid: 14979|app: 0|req: 53/86] 183.27.47.217 () {46 vars in 1045 bytes} [Sun May 10 19:33:21 2020] GET /video/type/2/?year=&area=&rating=5.0%E4%BB%A5%E4%B8%8B => generated 36527 bytes in 111 msecs (HTTP/1.1 200) 6 headers in 320 bytes (1 switches on core 0)
+[pid: 14979|app: 0|req: 54/87] 183.27.47.217 () {46 vars in 1039 bytes} [Sun May 10 19:33:28 2020] GET /video/search/?wd=%E8%9D%B4%E8%9D%B6&page=1 => generated 34914 bytes in 49 msecs (HTTP/1.1 200) 6 headers in 320 bytes (1 switches on core 1)
+[pid: 14982|app: 0|req: 33/88] 183.27.47.217 () {46 vars in 1039 bytes} [Sun May 10 19:33:28 2020] GET /video/search/?wd=%E8%9D%B4%E8%9D%B6&page=1 => generated 34914 bytes in 53 msecs (HTTP/1.1 200) 6 headers in 320 bytes (1 switches on core 1)
+[pid: 14982|app: 0|req: 34/89] 183.27.47.217 () {46 vars in 1063 bytes} [Sun May 10 19:33:36 2020] GET /video/search/?wd=%E8%9D%B4%E8%9D%B6%E6%95%88%E5%BA%94&page=1 => generated 16606 bytes in 60 msecs (HTTP/1.1 200) 6 headers in 320 bytes (1 switches on core 1)
+[pid: 14979|app: 0|req: 55/90] 183.27.47.217 () {46 vars in 1063 bytes} [Sun May 10 19:33:36 2020] GET /video/search/?wd=%E8%9D%B4%E8%9D%B6%E6%95%88%E5%BA%94&page=1 => generated 16606 bytes in 69 msecs (HTTP/1.1 200) 6 headers in 320 bytes (1 switches on core 0)
+死亡之握 19974015 0保存成功[douban]
+太极先锋 26942407 0保存成功[douban]
+通天之眼 未匹配到合适id []
+通天之眼 无豆瓣id数据，存入列表
+异类之两生妖 26918866 0保存成功[douban]
+终结武器 未匹配到合适id []
+----------地址被限制,稍后重试----------
+隐于书后 26392856 7.8保存成功[douban]
+最后的武林 26860797 3.2保存成功[douban]
+不死警官 26594431 4.1保存成功[douban]
+坏孩子下地狱2 25929963 4.6保存成功[douban]
+绝对控制 26608448 5.2保存成功[douban]
+恐攻密码战 26889759 3.4保存成功[douban]
+邻家大贱谍 未匹配到合适id []
+----------地址被限制,稍后重试----------
+摩天悍将 1296546 6.9保存成功[douban]
+女子雇佣军 26101846 4.4保存成功[douban]
+痞子校草2 26930555 0保存成功[douban]
+沁感：未知的秘密 未匹配到合适id []
+沁感：未知的秘密 无豆瓣id数据，存入列表
+拳霸3 4826765 5.2保存成功[douban]
+少年陈浩南 未匹配到合适id []
+----------地址被限制,稍后重试----------
+深林抢案 27121815 3.5保存成功[douban]
+时间·猎杀者 26979231 2.9保存成功[douban]
+世界在我们脚下 未匹配到合适id []
+世界在我们脚下 无豆瓣id数据，存入列表
+我是你的英雄 22389952 6.2保存成功[douban]
+西贡保镖出任务 未匹配到合适id []
+----------地址被限制,稍后重试----------
+英明神武维拉特 26929069 4.8保存成功[douban]
+Z岛 未匹配到合适id [{'episode': '', 'img': 'https://img1.doubanio.com/view/photo/s_ratio_poster/public/p2283998959.jpg', 'title': 'Z岛', 'url': 'https://movie.douban.com/subject/25872196/?suggest=Z%E5%B2%9B', 'type': 'movie', 'year': '2015', 'sub_title': 'Zアイランド', 'id': '25872196'}, {'episode': '4', 'img': 'https://img1.doubanio.com/view/photo/s_ratio_poster/public/p2367244378.jpg', 'title': 'Z岛：关东黑道火拼篇', 'url': 'https://movie.douban.com/subject/26353243/?suggest=Z%E5%B2%9B', 'type': 'movie', 'year': '2015', 'sub_title': 'Zアイランド～関東極道炎上篇～', 'id': '26353243'}]
+Z岛 无豆瓣id数据，存入列表
+安德烈：黑色的迷宫 26011994 3.4保存成功[douban]
+暗杀教室 真人版 25912924 6.5保存成功[douban]
+仇杀 未匹配到合适id []
+----------地址被限制,稍后重试----------
+[pid: 14979|app: 0|req: 56/91] 119.61.6.135 () {28 vars in 309 bytes} [Sun May 10 19:54:56 2020] GET / => generated 179 bytes in 1 msecs (HTTP/1.0 404) 4 headers in 128 bytes (1 switches on core 1)
+谍·莲花 未匹配到合适id []
+谍·莲花 无豆瓣id数据，存入列表
+夺金三王 1294202 7.0保存成功[douban]
+夺命三头鲨 26435918 2.9保存成功[douban]
+非常小特务4 未匹配到合适id []
+----------地址被限制,稍后重试----------
+疯狗强尼 3047756 7.2保存成功[douban]
+复仇的怒火 未匹配到合适id []
+复仇的怒火 无豆瓣id数据，存入列表
+来自星星的教练 26126096 2.2保存成功[douban]
+窃听风云 3412882 7.5保存成功[douban]
+杀死我吧，苏珊娜 未匹配到合适id []
+----------地址被限制,稍后重试----------
+无敌浩克 1866475 7.0保存成功[douban]
+新白蛇传之龙吉公主 30382776 0保存成功[douban]
+中国刀锋战士 30377695 0保存成功[douban]
+魔偶奇谭：崛起 20274058 3.3保存成功[douban]
+七武士 1295399 9.2保存成功[douban]
+雪·葬 27592569 7.2保存成功[douban]
+震撼性教育 1308002 6.6保存成功[douban]
+绝地营救 未匹配到合适id []
+----------地址被限制,稍后重试----------
+银河护卫队2 25937854 8.0保存成功[douban]
+猩球崛起3：终极之战 25808075 6.9保存成功[douban]
+野性都市[纪录片]国语 未匹配到合适id []
+野性都市[纪录片]国语 无豆瓣id数据，存入列表
+宝塔镇河妖2绝世妖龙 未匹配到合适id []
+宝塔镇河妖2绝世妖龙 无豆瓣id数据，存入列表
+协议 未匹配到合适id []
+----------地址被限制,稍后重试----------
+心有灵犀 27148685 5.2保存成功[douban]
+海鸥2018 未匹配到合适id []
+海鸥2018 无豆瓣id数据，存入列表
+遗忘尼克 27155360 6.0保存成功[douban]
+美女与怪物 30376928 0保存成功[douban]
+猴子2017 未匹配到合适id []
+----------地址被限制,稍后重试----------
+倒霉蛋淘金记 30385506 0保存成功[douban]
+精英部队2：大敌当前 4304402 8.7保存成功[douban]
+前度 4709904 7.0保存成功[douban]
+武林外传电影版 4822848 6.4保存成功[douban]
+大地震 27055837 5.4保存成功[douban]
+卢顿·万恩怀特三世 未匹配到合适id []
+----------地址被限制,稍后重试----------
+阁楼房客是总裁 30238349 0保存成功[douban]
+朦胧的青春 30385501 0保存成功[douban]
+东北不冷 30385508 0保存成功[douban]
+废柴联盟2018 未匹配到合适id []
+废柴联盟2018 无豆瓣id数据，存入列表
+道森市：冰封时光 26741037 8.0保存成功[douban]
+失落帝国之七星诡镜 30385502 0保存成功[douban]
+卧虎藏龙 未匹配到合适id []
+----------地址被限制,稍后重试----------
+拉姆·达斯的最后时光 30178892 6.6保存成功[douban]
+混乱信息 30307153 0保存成功[douban]
+视觉 27133211 5.7保存成功[douban]
+魔音盒 30330918 3.4保存成功[douban]
+摸金笑尉（上）  未匹配到合适id []
+摸金笑尉（上）  无豆瓣id数据，存入列表
+摸金笑尉（下）  未匹配到合适id []
+摸金笑尉（下）  无豆瓣id数据，存入列表
+迷途之人 未匹配到合适id []
+----------地址被限制,稍后重试----------
+[pid: 14982|app: 0|req: 35/92] 183.27.47.217 () {46 vars in 996 bytes} [Sun May 10 20:35:06 2020] GET /video/play/69449/ => generated 12755 bytes in 4 msecs (HTTP/1.1 200) 6 headers in 320 bytes (1 switches on core 1)
+鬼迷心窍 未匹配到合适id [{'episode': '', 'img': 'https://img3.doubanio.com/view/photo/s_ratio_poster/public/p1579788340.jpg', 'title': '鬼迷心窍', 'url': 'https://movie.douban.com/subject/3011621/?suggest=%E9%AC%BC%E8%BF%B7%E5%BF%83%E7%AA%8D', 'type': 'movie', 'year': '2009', 'sub_title': 'Obsessed', 'id': '3011621'}, {'episode': '', 'img': 'https://img1.doubanio.com/view/photo/s_ratio_poster/public/p2155001338.jpg', 'title': '鬼迷心窍', 'url': 'https://movie.douban.com/subject/3727598/?suggest=%E9%AC%BC%E8%BF%B7%E5%BF%83%E7%AA%8D', 'type': 'movie', 'year': '2009', 'sub_title': 'No-Do', 'id': '3727598'}]
+鬼迷心窍 无豆瓣id数据，存入列表
+白雪公主与猎人 5327463 5.5保存成功[douban]
+百条大道 26318329 6.6保存成功[douban]
+波多黎各人在巴黎 26783373 6.3保存成功[douban]
+波洛克 未匹配到合适id []
+----------地址被限制,稍后重试----------
+超级名模2 4319234 4.7保存成功[douban]
+超能敢死队 3212398 5.9保存成功[douban]
+但丁密码 24860318 6.2保存成功[douban]
+当树枝折断时 3578943 5.6保存成功[douban]
+第五波 25866686 4.8保存成功[douban]
+航班蛇患 未匹配到合适id []
+----------地址被限制,稍后重试----------
+[pid: 14982|app: 0|req: 36/93] 14.18.182.223 () {36 vars in 564 bytes} [Sun May 10 20:40:44 2020] GET /phpmyadmin/ => generated 179 bytes in 2 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 1)
+丽兹 6874365 6.1保存成功[douban]
+出国 26910929 5.0保存成功[douban]
+阿博恶魔 26956755 3.4保存成功[douban]
+美国摹因 30209385 5.9保存成功[douban]
+把哥哥退货可以吗 30192287 5.3保存成功[douban]
+男人不可以穷 25824741 6.0保存成功[douban]
+回魂夜 未匹配到合适id []
+----------地址被限制,稍后重试----------
+南京，今夜请将我遗忘 30408348 0保存成功[douban]
+天空之默 26661230 6.1保存成功[douban]
+九品芝麻官 1297518 8.5保存成功[douban]
+十字路口 30199566 6.1保存成功[douban]
+陈真传奇 30410910 0保存成功[douban]
+狗十三 25716096 8.2保存成功[douban]
+记忆回放 未匹配到合适id []
+----------地址被限制,稍后重试----------
+盗爱时空之笨贼也疯狂 27016624 0保存成功[douban]
+酒店风云之冒牌大总裁 30430414 0保存成功[douban]
+恐怖流浪公园 2363373 5.9保存成功[douban]
+少女的世界 未匹配到合适id []
+少女的世界 无豆瓣id数据，存入列表
+荒岛168小时 30430413 0保存成功[douban]
+公寓管理员 未匹配到合适id []
+----------地址被限制,稍后重试----------
+业内人士[纪录片] 未匹配到合适id []
+业内人士[纪录片] 无豆瓣id数据，存入列表
+印度制造 未匹配到合适id [{'episode': '', 'img': 'https://img1.doubanio.com/view/photo/s_ratio_poster/public/p2531064347.jpg', 'title': '印度制造', 'url': 'https://movie.douban.com/subject/30157153/?suggest=%E5%8D%B0%E5%BA%A6%E5%88%B6%E9%80%A0', 'type': 'movie', 'year': '2018', 'sub_title': 'Sui Dhaaga - Made In India', 'id': '30157153'}, {'episode': '', 'img': 'https://img9.doubanio.com/view/photo/s_ratio_poster/public/p2541268926.jpg', 'title': '一个被设计制造的梦—印度高考', 'url': 'https://movie.douban.com/subject/30379203/?suggest=%E5%8D%B0%E5%BA%A6%E5%88%B6%E9%80%A0', 'type': 'movie', 'year': '2018', 'sub_title': 'An Engineered Dream', 'id': '30379203'}]
+印度制造 无豆瓣id数据，存入列表
+世界属于你 27071216 5.8保存成功[douban]
+剑影喋血 未匹配到合适id []
+----------地址被限制,稍后重试----------
+潜龙夺宝2019 未匹配到合适id []
+潜龙夺宝2019 无豆瓣id数据，存入列表
+红番区 1296011 7.5保存成功[douban]
+我拿什么拯救你 未匹配到合适id []
+我拿什么拯救你 无豆瓣id数据，存入列表
+米拉2017 未匹配到合适id []
+----------地址被限制,稍后重试----------
+最佳好友 26896916 5.2保存成功[douban]
+最佳好友2 30162998 5.6保存成功[douban]
+丛林怪物 27179284 4.3保存成功[douban]
+恋上女镖师 30439597 0保存成功[douban]
+黑色河流 26746717 6.0保存成功[douban]
+漫长的沉默之路 27030950 6.1保存成功[douban]
+寄希望于比特币 26713749 7.2保存成功[douban]
+莱卡 27624742 0保存成功[douban]
+醉乡民谣 未匹配到合适id [{'episode': '', 'img': 'https://img9.doubanio.com/view/photo/s_ratio_poster/public/p2156418604.jpg', 'title': '醉乡民谣', 'url': 'https://movie.douban.com/subject/6887029/?suggest=%E9%86%89%E4%B9%A1%E6%B0%91%E8%B0%A3', 'type': 'movie', 'year': '2013', 'sub_title': 'Inside Llewyn Davis', 'id': '6887029'}, {'episode': '', 'img': 'https://img1.doubanio.com/view/photo/s_ratio_poster/public/p2171391157.jpg', 'title': '另一天，另一时：《醉乡民谣》原声音乐演唱会', 'url': 'https://movie.douban.com/subject/25833557/?suggest=%E9%86%89%E4%B9%A1%E6%B0%91%E8%B0%A3', 'type': 'movie', 'year': '2013', 'sub_title': 'Another Day, Another Time: Celebrating the Music of Inside Llewyn Davis', 'id': '25833557'}]
+醉乡民谣 无豆瓣id数据，存入列表
+古利亚瓦西亚！ 未匹配到合适id []
+----------地址被限制,稍后重试----------
+我是官兵你是贼 未匹配到合适id []
+我是官兵你是贼 无豆瓣id数据，存入列表
+他人之屋 26807632 7.1保存成功[douban]
+水面之下的真相 未匹配到合适id []
+水面之下的真相 无豆瓣id数据，存入列表
+妻子的怀疑 未匹配到合适id []
+----------地址被限制,稍后重试----------
+[pid: 14982|app: 0|req: 37/94] 182.254.52.17 () {36 vars in 574 bytes} [Sun May 10 21:15:56 2020] GET /cgi-bin/test-cgi => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 1)
+绝色武器 10828426 4.0保存成功[douban]
+红尘囧探刘小唐2 30259851 0保存成功[douban]
+爱情游戏 未匹配到合适id []
+爱情游戏 无豆瓣id数据，存入列表
+海岛之恋 26325490 2.9保存成功[douban]
+幻想的色彩 27035673 5.7保存成功[douban]
+神犬出击 未匹配到合适id []
+----------地址被限制,稍后重试----------
+王牌霸王花 30482096 0保存成功[douban]
+硬核风暴 30479915 4.7保存成功[douban]
+少女四大名捕 30475093 0保存成功[douban]
+阴影之中 26901238 3.6保存成功[douban]
+你的青春闻起来很香 26946445 0保存成功[douban]
+猫咪咖啡厅 30309258 4.0保存成功[douban]
+新罗曼蒂克 30155794 6.0保存成功[douban]
+挣扎：生命与失落的艺术 30386912 8.8保存成功[douban]
+永恒之门 未匹配到合适id []
+----------地址被限制,稍后重试----------
+搭车 未匹配到合适id []
+搭车 无豆瓣id数据，存入列表
+遗迹 未匹配到合适id []
+遗迹 无豆瓣id数据，存入列表
+本命年 1296266 8.3保存成功[douban]
+超强台风 未匹配到合适id []
+----------地址被限制,稍后重试----------
+侠探锦毛鼠之如梦令 未匹配到合适id []
+----------地址被限制,稍后重试----------
+侠探锦毛鼠之逍遥劫 未匹配到合适id []
+----------地址被限制,稍后重试----------
+侠探锦毛鼠之血光再起 未匹配到合适id []
+----------地址被限制,稍后重试----------
+侠探锦毛鼠之血弥东京 未匹配到合适id []
+----------地址被限制,稍后重试----------
+连续五次失败，等待30分钟
+[pid: 14982|app: 0|req: 38/95] 183.27.47.217 () {46 vars in 1063 bytes} [Sun May 10 21:58:20 2020] GET /video/search/?wd=%E8%9D%B4%E8%9D%B6%E6%95%88%E5%BA%94&page=1 => generated 16606 bytes in 101 msecs (HTTP/1.1 200) 6 headers in 320 bytes (1 switches on core 1)
+[pid: 14979|app: 0|req: 57/96] 183.27.47.217 () {46 vars in 938 bytes} [Sun May 10 21:58:24 2020] GET /admin/view_log/ => generated 24644 bytes in 323 msecs (HTTP/1.1 200) 5 headers in 152 bytes (1 switches on core 0)
+[pid: 14979|app: 0|req: 58/97] 183.27.47.217 () {46 vars in 962 bytes} [Sun May 10 21:58:27 2020] GET /admin/view_log/?page=21 => generated 15494 bytes in 292 msecs (HTTP/1.1 200) 5 headers in 152 bytes (1 switches on core 1)
+[pid: 14982|app: 0|req: 39/98] 183.27.47.217 () {46 vars in 970 bytes} [Sun May 10 21:58:31 2020] GET /admin/view_log/?page=20 => generated 22531 bytes in 299 msecs (HTTP/1.1 200) 5 headers in 152 bytes (1 switches on core 1)
+[pid: 14982|app: 0|req: 40/99] 183.27.47.217 () {46 vars in 970 bytes} [Sun May 10 21:58:43 2020] GET /admin/view_log/?page=19 => generated 20716 bytes in 155 msecs (HTTP/1.1 200) 5 headers in 152 bytes (1 switches on core 1)
+[pid: 14982|app: 0|req: 41/100] 183.27.47.217 () {46 vars in 996 bytes} [Sun May 10 21:58:54 2020] GET /video/play/69450/ => generated 13155 bytes in 5 msecs (HTTP/1.1 200) 6 headers in 320 bytes (1 switches on core 1)
+[pid: 14982|app: 0|req: 42/101] 183.27.47.217 () {46 vars in 931 bytes} [Sun May 10 21:59:14 2020] GET /video/ => generated 57477 bytes in 348 msecs (HTTP/1.1 200) 6 headers in 320 bytes (1 switches on core 1)
+[pid: 14982|app: 0|req: 43/102] 183.27.47.217 () {46 vars in 970 bytes} [Sun May 10 21:59:49 2020] GET /admin/view_log/?page=20 => generated 22531 bytes in 150 msecs (HTTP/1.1 200) 5 headers in 152 bytes (1 switches on core 1)
