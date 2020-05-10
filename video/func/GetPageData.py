@@ -476,7 +476,7 @@ class Get80sScore(object):
                     print('详情页列表更新')
             vod_info_list = DBHandler.search_data2(video_data['vod_name'].replace(' ',''),video_data['year'])
             if len(vod_info_list) == 1:   # 如果只有一项
-                if  vod_info_list[0].vod_douban_id: # 如果已存在豆瓣id,则返回
+                if vod_info_list[0].vod_douban_id: # 如果已存在豆瓣id,则返回
                     self.detail_list.remove(video_data)
                     return False
                 else:
@@ -503,6 +503,7 @@ class Get80sScore(object):
                         print('----------80s重新启动查找------------')
         except Exception as e:
             print('save_score Exception:',video_data['vod_name'],e)
+            # print(traceback.print_exc())
             return False
 
 
