@@ -58,7 +58,8 @@ def del_request_data(vod_id):  # 从数据库获取数据
 
 def search_data(wd):  # 从数据库按关键字搜索
     result = models.VideoData.objects.filter(vod_name__icontains=wd).exclude(vod_cid__in=[16, 17]).all().values(
-        'vod_id', 'vod_pic', 'vod_name', 'vod_year', 'vod_continu', 'vod_actor', 'vod_douban_id', 'vod_rating').order_by('-ctime')
+        'vod_id', 'vod_pic', 'vod_name', 'vod_year', 'vod_continu', 'vod_actor', 'vod_douban_id', 'vod_rating'
+        ).order_by('-vod_year','-ctime')
     return result
 
 def search_data2(wd,year):  # 从数据库按关键字搜索
@@ -92,7 +93,8 @@ def load_type_data(**filter_param):  # 从数据库查询视频分类数据
             filter_param['vod_rating__gte'] = rating
             filter_param['vod_rating__lt'] = float(rating)+1
     result = models.VideoData.objects.filter(**filter_param).all().values(
-        'vod_id', 'vod_pic', 'vod_name', 'vod_continu', 'vod_actor', 'vod_rating', 'vod_douban_id', 'vod_year').order_by('-ctime')
+        'vod_id', 'vod_pic', 'vod_name', 'vod_continu', 'vod_actor', 'vod_rating', 'vod_douban_id', 'vod_year'
+        ).order_by('-vod_year','-ctime')
     return result
 
 
