@@ -443,8 +443,8 @@ def carousel_del(request):
 
 @auth
 def test(request):
-    # DBHandler.db_test()
-    return HttpResponse('rep')
+    rep = DBHandler.db_test()
+    return HttpResponse(rep)
 
 
 @auth

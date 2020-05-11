@@ -479,7 +479,7 @@ class Get80sScore(object):
                 if re_str2 is not None:
                     video_data['vod_name'] = video_data['vod_name'].split('/')[0]
                     return self.save_score(video_data)
-                re_str3 = re.search(r'(第[一二三四五六七八九]季)',video_data['vod_name'])
+                re_str3 = re.search(r'(第[一二三四五六七八九十]季)',video_data['vod_name'])
                 if re_str3 is not None:
                     video_data['vod_name'] = re.sub(re_str3.group(),'',video_data['vod_name'])
                     return self.save_score(video_data)

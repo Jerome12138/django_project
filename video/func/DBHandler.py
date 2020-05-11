@@ -86,10 +86,11 @@ def load_type_data(**filter_param):  # 从数据库查询视频分类数据
         rating = filter_param.pop('vod_rating')
         if rating.endswith('以下'):
             filter_param['vod_rating__lt'] = '5'
+        elif rating =='9.0':
+            filter_param['vod_rating__gte'] = rating
         else:
-            filter_param['vod_rating__gt'] = rating.strip('.0')
-            filter_param['vod_rating__lt'] = str(int(rating.strip('.0'))+1)
-            # print(rating.strip('.0'),int(rating.strip('.0'))+1)
+            filter_param['vod_rating__gte'] = rating
+            filter_param['vod_rating__lt'] = float(rating)+1
     result = models.VideoData.objects.filter(**filter_param).all().values(
         'vod_id', 'vod_pic', 'vod_name', 'vod_continu', 'vod_actor', 'vod_rating', 'vod_douban_id', 'vod_year').order_by('-ctime')
     return result
@@ -214,8 +215,11 @@ def dump_rating(vod_id, rating):
 
 
 def db_test():
-    models.VideoData.objects.update(vod_douban_id=None)
-    models.VideoData.objects.update(vod_rating=None)
+    # models.VideoData.objects.update(vod_douban_id=None)
+    # models.VideoData.objects.update(vod_rating=None)
+    result = models.VideoData.objects.filter(vod_rating__gte=9.0,vod_rating__lt=9.9).all().values('vod_name','vod_rating').order_by('-ctime')
+    print(result)
+    return result
 
 
 def redis_dumplist(skey, data_list):
