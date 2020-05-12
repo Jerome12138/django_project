@@ -3,7 +3,7 @@
         data-original="{{ item.vod_pic }}" style="display: block; background-image: url('{{ item.vod_pic }}');">
         <span class="play hidden-xs"></span>
         <span class="pic-text text-right">{{item.vod_continu}}</span>
-        {% if item.vod_rating is not None and item.vod_rating != '0' %}
+        {% if item.vod_rating is not None %}
         <span class="stui-vodlist__rating">{{item.vod_rating}}</span>
         {% endif %}
     </a>
