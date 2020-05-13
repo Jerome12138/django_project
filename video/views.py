@@ -47,7 +47,7 @@ def vod_type(request, vod_cid):  # 视频分类页
         'type': [], 'area': [],
         'year': ['2020', '2019', '2018', '2017', '2016', '2015', '2014', '2013', '2012', '2011', '2010', '更早'],
         'rating':['9.0','8.0','7.0','6.0','5.0','5.0以下']}
-    if vod_cid in ['1', '5', '6', '7', '8', '9', '10', '11', '22']:
+    if vod_cid in ['1', '5', '6', '7', '8', '9', '10', '11']:
         all_type_id = '1'
         filter_flag = True
         filter_dict['type'] = [
@@ -55,21 +55,21 @@ def vod_type(request, vod_cid):  # 视频分类页
                                            'cname': '喜剧片'}, {'cid': '8', 'cname': '科幻片'},
             {'cid': '7', 'cname': '爱情片'}, {'cid': '9', 'cname': '恐怖片'}, {
                 'cid': '11', 'cname': '战争片'},
-            {'cid': '10', 'cname': '剧情片'}, {'cid': '22', 'cname': '记录片'}]
+            {'cid': '10', 'cname': '剧情片'}]
         filter_dict['area'] = ['大陆', '香港', '美国', '台湾', '英国',
                                '韩国', '日本', '西班牙', '法国', '印度', '加拿大', '泰国', '其它']
-    elif vod_cid in ['2', '12', '13', '14', '15', '19', '20', '21']:
+    elif vod_cid in ['2', '12', '13', '14', '15', '19', '20', '21', '22']:
         all_type_id = '2'
         filter_dict['type'] = [
             {'cid': '12', 'cname': '国产剧'}, {'cid': '13',
                                             'cname': '香港剧'}, {'cid': '15', 'cname': '欧美剧'},
             {'cid': '14', 'cname': '韩国剧'}, {'cid': '19',
                                             'cname': '台湾剧'}, {'cid': '20', 'cname': '日本剧'},
-            {'cid': '21', 'cname': '海外剧'}]
+            {'cid': '21', 'cname': '海外剧'}, {'cid': '22', 'cname': '记录片'}]
         filter_dict['area'] = ['大陆', '香港', '美国',
                                '台湾', '英国', '韩国', '日本', '加拿大', '泰国', '其它']
     else:
-        filter_dict['area'] = ['大陆', '香港', '美国', '台湾', '英国', '韩国', '日本', '其它']
+        filter_dict['area'] = ['大陆', '香港', '美国', '台湾', '韩国', '日本', '其它']
         all_type_id = vod_cid
     # 查询数据
     data_list = DBHandler.load_type_data(**filter_param)

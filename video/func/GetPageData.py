@@ -187,7 +187,7 @@ class getAllData(object):   # 获取所有数据
                 url = "http://www.zuidazy4.com/"
                 x_match = "//li[contains(text(),'今日更新：')]/strong/text()"
             else:
-                url = "http://bajieziyuan.com/"
+                url = "http://www.bajiezy.cc/"
                 x_match = "//a[contains(string(),'今日更新：')]/font[2]/text()"
             # 2.获取数据
             get_web_data = GetWebData()

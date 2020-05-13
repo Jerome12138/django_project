@@ -69,11 +69,11 @@ def search_data2(wd,year):  # 从数据库按关键字搜索
 def load_type_data(**filter_param):  # 从数据库查询视频分类数据
     if filter_param['vod_cid'] == '1':  # 所有电影
         filter_param['vod_cid__in'] = [
-            '1', '5', '6', '7', '8', '9', '10', '11', '22']
+            '1', '5', '6', '7', '8', '9', '10', '11']
         filter_param.pop('vod_cid')
     elif filter_param['vod_cid'] == '2':  # 所有电视剧
         filter_param['vod_cid__in'] = [
-            '2', '12', '13', '14', '15', '19', '20', '21']
+            '2', '12', '13', '14', '15', '19', '20', '21', '22']
         filter_param.pop('vod_cid')
     # 2010年以前
     if filter_param.get('vod_year') == '更早':
@@ -81,7 +81,7 @@ def load_type_data(**filter_param):  # 从数据库查询视频分类数据
         filter_param.pop('vod_year')
     # 其他地区
     if filter_param.get('vod_area') == '其他':
-        filter_param['vod_area__in'] = ['新加坡', '马来西亚', '俄罗斯', '其他', '']
+        filter_param['vod_area__in'] = ['新加坡', '马来西亚', '俄罗斯', '英国', '其他', '']
         filter_param.pop('vod_area')
     if filter_param.get('vod_rating') is not None:
         rating = filter_param.pop('vod_rating')
