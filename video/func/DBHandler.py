@@ -227,7 +227,8 @@ def redis_dumplist(skey, data_list):
     try:
         exist_list = SR.lrange(skey, 0, -1)
         data_list = list(set(data_list)-set(exist_list))    # 差集，已存在则不添加
-        result = SR.rpush(skey, *data_list)
+        if len(data_list)>0:
+            result = SR.rpush(skey, *data_list)
         # s2 = SR.keys()
         # print(s2)
         return True
@@ -247,7 +248,7 @@ def redis_loadlist(skey):
         # print(result)
         return result
     except Exception as e:
-        print('redis_dump exception:', e)
+        print('redis_load exception:', e)
         return []
 
 
@@ -268,6 +269,6 @@ def db_test():
                 print(j)
         result = True
     except Exception as e:
-        print('redis_dump exception:', e)
+        print('db_test exception:', e)
         result = False
     return result
