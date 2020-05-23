@@ -449,10 +449,11 @@ def test(request):
 
 @auth
 def get_douban_rating(request):
-    none_list = DBHandler.redis_loadlist('douban_none_list')
     res_status = False
     flag = True
     try:
+        print('————————开始获取豆瓣id数据————————')
+        none_list = DBHandler.redis_loadlist('douban_none_list')
         while flag:
             data_list = DBHandler.load_type_data(**{'vod_cid': '1','no_rating':True})    # 获取所有电影
             # data_list.extend(DBHandler.load_type_data(**{'vod_cid': '2'}))  # 获取所有电视剧
@@ -479,6 +480,7 @@ def get_douban_rating(request):
                             if none_list:
                                 DBHandler.redis_dumplist(
                                     'douban_none_list', none_list)
+                                none_list = []
                             time.sleep(180)
                             timeout += 1
                             if timeout == 5:
@@ -508,5 +510,6 @@ def get_80s_rating(request):
     get_80s_score = GetPageData.Get80sScore()
     get_80s_score.run() 
     return HttpResponse('res')      
+
 
 

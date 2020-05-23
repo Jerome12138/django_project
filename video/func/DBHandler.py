@@ -1,6 +1,10 @@
 from video import models
 import json
 
+import redis
+
+# 创建StrictRedis对象，与redis服务器建⽴连接
+SR = redis.StrictRedis(host='49.234.78.157', port=6379, db=0, password='3201862')
 
 def dump_vod_data(vod_data):    # 将视频数据保存至数据库
     try:
@@ -219,24 +223,12 @@ def dump_rating(vod_id, rating):
     models.VideoData.objects.filter(vod_id=vod_id).update(vod_rating=rating)
 
 
-def db_test():
-    # models.VideoData.objects.update(vod_douban_id=None)
-    # models.VideoData.objects.update(vod_rating=None)
-    result = models.VideoData.objects.filter(vod_rating__gte=9.0,vod_rating__lt=9.9).all().values('vod_name','vod_rating').order_by('-ctime')
-    print(result)
-    return result
-
-
 def redis_dumplist(skey, data_list):
     try:
-        import redis
-        # 创建StrictRedis对象，与redis服务器建⽴连接
-        sr = redis.StrictRedis(host='49.234.78.157',
-                               port=6379, db=0, password='3201862')
-        exist_list = sr.lrange(skey, 0, -1)
-        data_list = list(set(data_list).difference(set(exist_list)))    # 差集，已存在则不添加
-        result = sr.rpush(skey, *data_list)
-        # s2 = sr.keys()
+        exist_list = SR.lrange(skey, 0, -1)
+        data_list = list(set(data_list)-set(exist_list))    # 差集，已存在则不添加
+        result = SR.rpush(skey, *data_list)
+        # s2 = SR.keys()
         # print(s2)
         return True
     except Exception as e:
@@ -246,17 +238,36 @@ def redis_dumplist(skey, data_list):
 
 def redis_loadlist(skey):
     try:
-        import redis
-        # 创建StrictRedis对象，与redis服务器建⽴连接
-        sr = redis.StrictRedis(host='49.234.78.157',
-                               port=6379, db=0, password='3201862')
         # 添加键name，值为itheima
-        # result=sr.set('name','itheima')
-        result = sr.lrange(skey, 0, -1)
-        result = [item.decode() for item in result]
-        # s2 = sr.keys()
+        # result=SR.set('name','itheima')
+        result = SR.lrange(skey, 0, 1000)
+        # result = SR.get(skey)
+        # result = [item.decode() for item in result]
+        # s2 = SR.keys()
         # print(result)
         return result
     except Exception as e:
         print('redis_dump exception:', e)
         return []
+
+
+def db_test():
+    try:
+        l_len = SR.llen('douban_none_list')
+        
+        print(SR.lrange('douban_none_list', 0, -1))
+        return SR.lrange('douban_none_list', 0, -1)
+        j=0
+        while l_len-j>50:
+            none_list = SR.lrange('douban_none_list', 0, 100)
+            # print(none_list)
+            for item in set(none_list):
+                SR.lrem('douban_none_list', 0, item)
+                SR.rpush('douban_none_list', item)
+                j+=1
+                print(j)
+        result = True
+    except Exception as e:
+        print('redis_dump exception:', e)
+        result = False
+    return result
