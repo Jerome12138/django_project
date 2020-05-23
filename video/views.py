@@ -36,12 +36,16 @@ def vod_type(request, vod_cid):  # 视频分类页
     rating = request.GET.get('rating')
     filter_param = {'vod_cid': vod_cid} # 筛选参数集，查询数据库时使用
     filter_flag = False
+    url_str = request.path_info+'?'
     if area:
         filter_param['vod_area'] = area
+        url_str += '&area=%s' % area
     if year:
         filter_param['vod_year'] = year
+        url_str += '&year=%s' % year
     if rating:
         filter_param['vod_rating'] = rating
+        url_str += '&rating=%s' % rating
     # filter_dict 筛选参数，用于前端筛选
     filter_dict = {
         'type': [], 'area': [],
@@ -76,11 +80,6 @@ def vod_type(request, vod_cid):  # 视频分类页
     data_count = len(data_list)
     # 分页处理
     page_index = int(request.GET.get('page')) if request.GET.get('page') else 1
-    url_str = request.path_info+'?'
-    if area:
-        url_str += '&area=%s' % area
-    if year:
-        url_str += '&year=%s' % year
     page = Page(url_str+'&page=', page_index, data_count//24 + 1)
     page_str = page.page_str()
     video_list = page.video_page(data_list, 24)
