@@ -394,12 +394,14 @@ def findID(name, vod_year):  # name即剧名
             # print(item)
             if item.get('year') == vod_year:   # 1.同年
                 id_list.append(item)
-        if len(id_list) == 1:
+        if len(id_list) == 1:   # 只有一条数据
             return id_list[0]['id']
-        else:   # 匹配到了多个ID（可能是同名不同剧）
+        elif len(id_list) == 0:   # 无数据
             if name != '爱情公寓2':
-                print(name, '未匹配到合适id', id_list)
+                print(name, '未匹配到合适id')
             return None
+        else:   # 匹配到了多个ID（可能是同名不同剧）
+            return [item['id'] for item in id_list]
     except Exception as e:  # 如果不能正常运行上述代码（不能访问网页等），输出未成功的剧名name。
         print('ERROR:', name, e)
         return None
@@ -469,7 +471,7 @@ class Get80sScore(object):
     def save_score(self,video_data):   # 匹配视频信息并储存评分数据
         try:
             vod_info_list = DBHandler.search_data2(video_data['vod_name'].replace(' ',''),video_data['year'])
-            if len(vod_info_list) == 0:
+            if len(vod_info_list) == 0: # 如果无结果
                 re_str = re.search(r'(\[第[一二三四五六七八九十]季\])',video_data['vod_name'])
                 if re_str is not None:
                     sub_str = re_str.group().lstrip('[').rstrip(']')
@@ -483,7 +485,17 @@ class Get80sScore(object):
                 if re_str3 is not None:
                     video_data['vod_name'] = re.sub(re_str3.group(),'',video_data['vod_name'])
                     return self.save_score(video_data)
-            if len(vod_info_list) == 1:   # 如果只有一项
+            if len(vod_info_list) == 2:   # 如果匹配到多项
+                video_data2 = video_data
+                video_data['vod_name'] = video_data['vod_name']+'国语'
+                flag1 = self.save_score(video_data)
+                video_data2['vod_name'] = video_data2['vod_name']+'粤语'
+                flag2 = self.save_score(video_data2)
+                if flag1 and flag2:
+                    return True
+                else:
+                    return False
+            elif len(vod_info_list) == 1:   # 如果只有一项
                 if vod_info_list[0].vod_douban_id: # 如果已存在豆瓣id,则返回
                     # self.detail_list.remove(video_data)
                     return True

@@ -454,25 +454,32 @@ def get_douban_rating(request):
     try:
         print('————————开始获取豆瓣id数据————————')
         none_list = DBHandler.redis_loadlist('douban_none_list')
+        none_list2 = DBHandler.redis_loadlist('douban_none_list2')
         while flag:
-            data_list = DBHandler.load_type_data(**{'vod_cid': '1','no_rating':True})    # 获取所有电影
+            data_list = DBHandler.load_type_data(
+                **{'vod_cid': '1', 'no_rating': True})    # 获取所有电影
             # data_list.extend(DBHandler.load_type_data(**{'vod_cid': '2'}))  # 获取所有电视剧
             timeout = 0
-            print('无豆瓣id的视频总数：%s'%len(data_list))
-            print('无匹配视频总数：%s'%len(none_list))
+            print('无豆瓣id的视频总数：%s' % len(data_list))
+            print('无匹配视频总数：%s' % len(none_list))
             for item in data_list:
-                if item['vod_douban_id'] is None and item['vod_id'] not in none_list:  # 不存在豆瓣id，则查找id
+                if item['vod_douban_id'] is None and item['vod_id'] not in none_list and item['vod_id'] not in none_list2:  # 不存在豆瓣id，则查找id
                     # print(item['vod_douban_id'],item['vod_rating'])
                     douban_id = GetPageData.findID(
                         item['vod_name'], item['vod_year'])
                     if douban_id:   # 如果查找到豆瓣id
                         timeout = 0
-                        rating = GetPageData.getRating(douban_id)
-                        print(item['vod_name'], douban_id, rating,end='')
-                        DBHandler.dump_douban_id(item['vod_id'], douban_id)
-                        DBHandler.dump_rating(item['vod_id'], rating)
-                        print('保存成功[douban]')
-                        time.sleep(3 + float(random.randint(40, 100)) / 20) # 防止账号被封，随机延迟
+                        if len(douban_id) > 1:
+                            print(item['vod_name'], '匹配到多个豆瓣id数据，存入列表2')
+                            none_list2.append(item['vod_id'])
+                        else:
+                            rating = GetPageData.getRating(douban_id)
+                            print(item['vod_name'], douban_id, rating, end='')
+                            DBHandler.dump_douban_id(item['vod_id'], douban_id)
+                            DBHandler.dump_rating(item['vod_id'], rating)
+                            print('保存成功[douban]')
+                        # 防止账号被封，随机延迟
+                        time.sleep(3 + float(random.randint(40, 100)) / 20)
                     else:   # 未查找到豆瓣id
                         test_net = GetPageData.findID('爱情公寓2', '2011')
                         if test_net is None:    # 网络异常
@@ -481,6 +488,12 @@ def get_douban_rating(request):
                                 DBHandler.redis_dumplist(
                                     'douban_none_list', none_list)
                                 none_list = []
+                                print('none_list 暂存')
+                            if none_list2:
+                                DBHandler.redis_dumplist(
+                                    'douban_none_list2', none_list2)
+                                none_list2 = []
+                                print('none_list2 暂存')
                             time.sleep(180)
                             timeout += 1
                             if timeout == 5:
@@ -502,14 +515,14 @@ def get_douban_rating(request):
     finally:
         if none_list:
             DBHandler.redis_dumplist('douban_none_list', none_list)
+        if none_list2:
+            DBHandler.redis_dumplist('douban_none_list2', none_list2)
         return HttpResponse(res_status)
 
 
 @auth
 def get_80s_rating(request):
     get_80s_score = GetPageData.Get80sScore()
-    get_80s_score.run() 
-    return HttpResponse('res')      
-
-
+    get_80s_score.run()
+    return HttpResponse('res')
 
