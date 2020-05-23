@@ -92,6 +92,9 @@ def load_type_data(**filter_param):  # 从数据库查询视频分类数据
         else:
             filter_param['vod_rating__gte'] = rating
             filter_param['vod_rating__lt'] = float(rating)+1
+    if filter_param.get('no_rating'):
+        filter_param.pop('no_rating')
+        filter_param['vod_rating'] = None
     result = models.VideoData.objects.filter(**filter_param).all().values(
         'vod_id', 'vod_pic', 'vod_name', 'vod_continu', 'vod_actor', 'vod_rating', 'vod_douban_id', 'vod_year'
         ).order_by('-vod_year','-ctime')
