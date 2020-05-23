@@ -240,7 +240,7 @@ def redis_loadlist(skey):
     try:
         # 添加键name，值为itheima
         # result=SR.set('name','itheima')
-        result = SR.lrange(skey, 0, 1000)
+        result = SR.lrange(skey, 0, -1)
         # result = SR.get(skey)
         # result = [item.decode() for item in result]
         # s2 = SR.keys()
