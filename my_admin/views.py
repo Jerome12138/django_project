@@ -469,7 +469,7 @@ def get_douban_rating(request):
                         item['vod_name'], item['vod_year'])
                     if douban_id:   # 如果查找到豆瓣id
                         timeout = 0
-                        if type(douban_id)=='list' and len(douban_id) > 1:
+                        if type(douban_id)==list and len(douban_id) > 1:
                             print(item['vod_name'], '匹配到多个豆瓣id数据，存入列表2')
                             none_list2.append(item['vod_id'])
                         else:
