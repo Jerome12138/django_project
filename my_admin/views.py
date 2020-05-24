@@ -469,8 +469,8 @@ def get_douban_rating(request):
                         item['vod_name'], item['vod_year'])
                     if douban_id:   # 如果查找到豆瓣id
                         timeout = 0
-                        if type(douban_id)==list and len(douban_id) > 1:
-                            print(item['vod_name'], '匹配到多个豆瓣id数据，存入列表2')
+                        if type(douban_id)==list:
+                            print(item['vod_name'], '匹配到多个豆瓣id数据，存入列表2',douban_id)
                             none_list2.append(item['vod_id'])
                         else:
                             rating = GetPageData.getRating(douban_id)
@@ -526,3 +526,66 @@ def get_80s_rating(request):
     get_80s_score.run()
     return HttpResponse('res')
 
+@auth
+def get_rating_by_name(request):
+    ret = {'status': True, 'error': None, 'data': None}
+    try:
+        vod_id = request.POST.get('vod_id')
+        vod_name = request.POST.get('vod_name')
+        vod_year = request.POST.get('vod_year')
+        douban_id = GetPageData.findID(vod_name,vod_year)
+        if douban_id:   # 如果查找到豆瓣id
+            ret['data'] = douban_id
+            if type(douban_id)==list:
+                ret['status'] = False
+                ret['error'] = '存在多个数据'
+            else:
+                rating = GetPageData.getRating(douban_id)
+                print(vod_name, douban_id, rating, end='')
+                DBHandler.dump_douban_id(vod_id, douban_id)
+                DBHandler.dump_rating(vod_id, rating)
+                print('保存成功[douban]')
+        else:   # 未查找到豆瓣id
+            ret['status'] = False
+            test_net = GetPageData.findID('爱情公寓2', '2011')
+            if test_net is None:    # 网络异常
+                ret['error'] = '地址被限制,请稍后重试'
+            else:
+                ret['error'] = '无豆瓣id数据'
+    except Exception as e:
+        print(e)
+        ret['status'] = False
+        ret['error'] = e
+    finally:
+        return HttpResponse(json.dumps(ret))
+
+@auth
+def set_rating(request):
+    ret = {'status': True, 'error': None, 'data': None}
+    try:
+        vod_id = request.GET.get('vod_id')
+        douban_id = request.GET.get('douban_id')
+        if douban_id:   # 如果查找到豆瓣id
+            ret['data'] = douban_id
+            if type(douban_id)==list:
+                ret['status'] = False
+                ret['error'] = '存在多个数据'
+            else:
+                rating = GetPageData.getRating(douban_id)
+                print(vod_id, douban_id, rating, end='')
+                DBHandler.dump_douban_id(vod_id, douban_id)
+                DBHandler.dump_rating(vod_id, rating)
+                print('保存成功[douban]')
+        else:   # 未查找到豆瓣id
+            ret['status'] = False
+            test_net = GetPageData.findID('爱情公寓2', '2011')
+            if test_net is None:    # 网络异常
+                ret['error'] = '地址被限制,请稍后重试'
+            else:
+                ret['error'] = '无豆瓣id数据'
+    except Exception as e:
+        print(e)
+        ret['status'] = False
+        ret['error'] = e
+    finally:
+        return HttpResponse(json.dumps(ret))

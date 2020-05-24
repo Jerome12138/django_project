@@ -29,6 +29,8 @@ urlpatterns = [
     path('del_carousel/', views.carousel_del),
     path('get_rating/', views.get_douban_rating),
     path('get_80s_rating/', views.get_80s_rating),
+    path('get_rating_by_name/', views.get_rating_by_name),
+    path('set_rating/', views.set_rating),
 
     # 其他
     path('url2_clear/', views.url2_clear),

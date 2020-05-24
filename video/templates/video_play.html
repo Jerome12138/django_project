@@ -105,6 +105,11 @@
     </div>
 </div>
 <!-- end 剧情  -->
+<div class="stui-pannel clearfix" id="desc" style="margin-left: 10px;margin-right: 10px;">
+    <a id="get_douban_id" href="javascript:void(0);">.</a>
+    <div class='msg'></div>
+    <div class='douban_link'></div>
+</div>
 {% endblock %}
 
 {% block js %}
@@ -120,11 +125,11 @@
                 type: "POST",
                 headers: { "X-CSRFToken": $.cookie('csrftoken') },
                 data: {
-                    'vod_addtime': $(this).parents('.title').next('.data').children('span:eq(1)').text(),
-                    'list_name': $(this).parents('.title').next('.data').children('a:eq(0)').text(),
-                    'vod_name': $(this).parent().prev('a').text(),
-                    'vod_continu': $(this).parents('.title').next('.data').children('span:eq(2)').text(),
-                    'vod_id': $(this).parents('.title').next('.data').children('span:eq(0)').text(),
+                    'vod_addtime': '{{vod_data.vod_addtime}}',
+                    'list_name': '{{vod_data.list_name}}',
+                    'vod_name': '{{vod_data.vod_name}}',
+                    'vod_continu': '{{vod_data.vod_continu}}',
+                    'vod_id': '{{vod_data.vod_id}}',
                 }, // 要提交的数据
                 dataType: 'JSON',                 // 自动将接收到的data反序列化成obj返回
                 success: function (obj) {
@@ -141,6 +146,40 @@
                 }
             })
         };
+    });
+    $('#get_douban_id').click(function () {
+        $.ajax({
+            url: '/admin/get_rating_by_name/',
+            type: "POST",
+            headers: { "X-CSRFToken": $.cookie('csrftoken') },
+            data: {
+                'vod_id': '{{vod_data.vod_id}}',
+                'vod_name': '{{vod_data.vod_name}}',
+                'vod_year': '{{vod_data.vod_year}}',
+            }, // 要提交的数据
+            dataType: 'JSON',                 // 自动将接收到的data反序列化成obj返回
+            success: function (obj) {
+                if (obj.status) {
+                    $('.douban_link').html("<a href='https://movie.douban.com/subject/"+obj.data+"/' target='_blank'>"+obj.data+"</a>")
+                } else {
+                    $('.msg').text(obj.error)
+                    if (obj.data){
+                        var html_str = "";
+                        for(i in obj.data){
+                            html_str += "<a href='https://movie.douban.com/subject/"+obj.data[i]+"/' target='_blank'>"+obj.data[i]+"</a>&nbsp;&nbsp;"
+                            html_str += "<a href='/admin/get_rating_by_name/?vod_id={{vod_data.vod_id}}&douban_id="+obj.data[i]+"/' target='_blank'>"+'提交'+"</a><br>"
+                        };
+                        $('.douban_link').html(html_str)
+                    }else{
+                        
+                    }
+                }
+            },
+            error: function () {
+                console.log("请求未知错误")
+                //后台未接收到请求或未返回数据等未知错误
+            }
+        })
     });
     (function () {
         var player = new DPlayer({
