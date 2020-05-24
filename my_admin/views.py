@@ -451,6 +451,7 @@ def test(request):
 def get_douban_rating(request):
     res_status = False
     flag = True
+    timeout = 0
     try:
         print('————————开始获取豆瓣id数据————————')
         while flag:
@@ -459,11 +460,10 @@ def get_douban_rating(request):
             data_list = DBHandler.load_type_data(
                 **{'vod_cid': '1', 'no_rating': True})    # 获取所有电影
             # data_list.extend(DBHandler.load_type_data(**{'vod_cid': '2'}))  # 获取所有电视剧
-            timeout = 0
             print('无豆瓣id的视频总数：%s' % len(data_list))
             print('无匹配视频总数：%s' % len(none_list))
             for item in data_list:
-                if item['vod_douban_id'] is None and (item['vod_id'] not in none_list or item['vod_id'] not in none_list2):  # 不存在豆瓣id，则查找id
+                if item['vod_douban_id'] is None and (bytes(item['vod_id'],encoding='utf-8') not in none_list or bytes(item['vod_id'],encoding='utf-8') not in none_list2):  # 不存在豆瓣id，则查找id
                     # print(item['vod_douban_id'],item['vod_rating'])
                     douban_id = GetPageData.findID(
                         item['vod_name'], item['vod_year'])
@@ -471,7 +471,7 @@ def get_douban_rating(request):
                         timeout = 0
                         if type(douban_id)==list:
                             print(item['vod_name'], '匹配到多个豆瓣id数据，存入列表2',douban_id)
-                            if item['vod_id'] not in none_list2:
+                            if bytes(item['vod_id'],encoding='utf-8') not in none_list2:
                                 none_list2.append(item['vod_id'])
                         else:
                             rating = GetPageData.getRating(douban_id)
@@ -503,12 +503,13 @@ def get_douban_rating(request):
                                 print('----------重新启动查找------------')
                                 break
                             elif timeout >= 10:
-                                print('-----连续十次失败，退出-----')
-                                flag = False
+                                print('-----连续十次失败，等待1小时-----')
+                                time.sleep(3600)
+                                timeout = 0
                                 break
                         else:
                             print(item['vod_name'], '无豆瓣id数据，存入列表')
-                            if item['vod_id'] not in none_list:
+                            if bytes(item['vod_id'],encoding='utf-8') not in none_list:
                                 none_list.append(item['vod_id'])
         res_status = True
     except Exception as e:
