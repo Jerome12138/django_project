@@ -471,7 +471,8 @@ def get_douban_rating(request):
                         timeout = 0
                         if type(douban_id)==list:
                             print(item['vod_name'], '匹配到多个豆瓣id数据，存入列表2',douban_id)
-                            none_list2.append(item['vod_id'])
+                            if item['vod_id'] not in none_list2:
+                                none_list2.append(item['vod_id'])
                         else:
                             rating = GetPageData.getRating(douban_id)
                             print(item['vod_name'], douban_id, rating, end='')
@@ -507,7 +508,8 @@ def get_douban_rating(request):
                                 break
                         else:
                             print(item['vod_name'], '无豆瓣id数据，存入列表')
-                            none_list.append(item['vod_id'])
+                            if item['vod_id'] not in none_list:
+                                none_list.append(item['vod_id'])
         res_status = True
     except Exception as e:
         print('redis_dump exception:', e)

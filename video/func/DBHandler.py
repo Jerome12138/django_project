@@ -255,9 +255,9 @@ def redis_loadlist(skey):
 def db_test():
     try:
         l_len = SR.llen('douban_none_list')
-        
-        print(SR.lrange('douban_none_list', 0, -1))
-        return SR.lrange('douban_none_list', 0, -1)
+        print(l_len)
+        # print(SR.lrange('douban_none_list', 0, -1))
+        # return SR.lrange('douban_none_list', 0, -1)
         j=0
         while l_len-j>50:
             none_list = SR.lrange('douban_none_list', 0, 100)
