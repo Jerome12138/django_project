@@ -454,14 +454,14 @@ def get_douban_rating(request):
     timeout = 0
     try:
         print('————————开始获取豆瓣id数据————————')
+        data_list = DBHandler.load_type_data(
+            **{'vod_cid': '1', 'no_rating': True})    # 获取所有电影
+        # data_list.extend(DBHandler.load_type_data(**{'vod_cid': '2'}))  # 获取所有电视剧
+        none_list = DBHandler.redis_loadlist('douban_none_list')
+        none_list2 = DBHandler.redis_loadlist('douban_none_list2')
+        print('无豆瓣id的视频总数：%s' % len(data_list))
+        print('无匹配视频总数：%s' % len(none_list))
         while flag:
-            none_list = DBHandler.redis_loadlist('douban_none_list')
-            none_list2 = DBHandler.redis_loadlist('douban_none_list2')
-            data_list = DBHandler.load_type_data(
-                **{'vod_cid': '1', 'no_rating': True})    # 获取所有电影
-            # data_list.extend(DBHandler.load_type_data(**{'vod_cid': '2'}))  # 获取所有电视剧
-            print('无豆瓣id的视频总数：%s' % len(data_list))
-            print('无匹配视频总数：%s' % len(none_list))
             for item in data_list:
                 if item['vod_douban_id'] is None and (bytes(item['vod_id'],encoding='utf-8') not in none_list or bytes(item['vod_id'],encoding='utf-8') not in none_list2):  # 不存在豆瓣id，则查找id
                     # print(item['vod_douban_id'],item['vod_rating'])
