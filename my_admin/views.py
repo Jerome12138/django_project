@@ -461,56 +461,56 @@ def get_douban_rating(request):
         none_list2 = DBHandler.redis_loadlist('douban_none_list2')
         print('无豆瓣id的视频总数：%s' % len(data_list))
         print('无匹配视频总数：%s' % len(none_list))
-        while flag:
-            for item in data_list:
-                if item['vod_douban_id'] is None and (bytes(item['vod_id'],encoding='utf-8') not in none_list or bytes(item['vod_id'],encoding='utf-8') not in none_list2):  # 不存在豆瓣id，则查找id
-                    # print(item['vod_douban_id'],item['vod_rating'])
-                    douban_id = GetPageData.findID(
-                        item['vod_name'], item['vod_year'])
-                    if douban_id:   # 如果查找到豆瓣id
-                        timeout = 0
-                        if type(douban_id)==list:
-                            print(item['vod_name'], '匹配到多个豆瓣id数据，存入列表2',douban_id)
-                            if bytes(item['vod_id'],encoding='utf-8') not in none_list2:
-                                none_list2.append(item['vod_id'])
-                        else:
-                            rating = GetPageData.getRating(douban_id)
-                            print(item['vod_name'], douban_id, rating, end='')
-                            DBHandler.dump_douban_id(item['vod_id'], douban_id)
-                            DBHandler.dump_rating(item['vod_id'], rating)
-                            print('保存成功[douban]')
-                        # 防止账号被封，随机延迟
-                        time.sleep(3 + float(random.randint(40, 100)) / 20)
-                    else:   # 未查找到豆瓣id
-                        test_net = GetPageData.findID('爱情公寓2', '2011')
-                        if test_net is None:    # 网络异常
-                            print('----------地址被限制,稍后重试----------')
-                            if none_list:
-                                DBHandler.redis_dumplist(
-                                    'douban_none_list', none_list)
-                                none_list = []
-                                print('none_list 暂存')
-                            if none_list2:
-                                DBHandler.redis_dumplist(
-                                    'douban_none_list2', none_list2)
-                                none_list2 = []
-                                print('none_list2 暂存')
-                            time.sleep(180)
-                            timeout += 1
-                            if timeout == 5:
-                                print('连续五次失败，等待30分钟')
-                                time.sleep(1800)
-                                print('----------重新启动查找------------')
-                                break
-                            elif timeout >= 10:
-                                print('-----连续十次失败，等待1小时-----')
-                                time.sleep(3600)
-                                timeout = 0
-                                break
-                        else:
-                            print(item['vod_name'], '无豆瓣id数据，存入列表')
-                            if bytes(item['vod_id'],encoding='utf-8') not in none_list:
-                                none_list.append(item['vod_id'])
+        # while flag:
+        for item in data_list:
+            if item['vod_douban_id'] is None and (bytes(item['vod_id'],encoding='utf-8') not in none_list or bytes(item['vod_id'],encoding='utf-8') not in none_list2):  # 不存在豆瓣id，则查找id
+                # print(item['vod_douban_id'],item['vod_rating'])
+                douban_id = GetPageData.findID(
+                    item['vod_name'], item['vod_year'])
+                if douban_id:   # 如果查找到豆瓣id
+                    timeout = 0
+                    if type(douban_id)==list:
+                        print(item['vod_name'], '匹配到多个豆瓣id数据，存入列表2',douban_id)
+                        if bytes(item['vod_id'],encoding='utf-8') not in none_list2:
+                            none_list2.append(item['vod_id'])
+                    else:
+                        rating = GetPageData.getRating(douban_id)
+                        print(item['vod_name'], douban_id, rating, end='')
+                        DBHandler.dump_douban_id(item['vod_id'], douban_id)
+                        DBHandler.dump_rating(item['vod_id'], rating)
+                        print('保存成功[douban]')
+                    # 防止账号被封，随机延迟
+                    time.sleep(3 + float(random.randint(40, 100)) / 20)
+                else:   # 未查找到豆瓣id
+                    test_net = GetPageData.findID('爱情公寓2', '2011')
+                    if test_net is None:    # 网络异常
+                        print('----------地址被限制,稍后重试----------')
+                        if none_list:
+                            DBHandler.redis_dumplist(
+                                'douban_none_list', none_list)
+                            none_list = []
+                            print('none_list 暂存')
+                        if none_list2:
+                            DBHandler.redis_dumplist(
+                                'douban_none_list2', none_list2)
+                            none_list2 = []
+                            print('none_list2 暂存')
+                        time.sleep(180)
+                        timeout += 1
+                        if timeout == 5:
+                            print('连续五次失败，等待30分钟')
+                            time.sleep(1800)
+                            print('----------重新启动查找------------')
+                            continue
+                        elif timeout >= 10:
+                            print('-----连续十次失败，等待1小时-----')
+                            time.sleep(3600)
+                            timeout = 0
+                            continue
+                    else:
+                        print(item['vod_name'], '无豆瓣id数据，存入列表')
+                        if bytes(item['vod_id'],encoding='utf-8') not in none_list:
+                            none_list.append(item['vod_id'])
         res_status = True
     except Exception as e:
         print('redis_dump exception:', e)
