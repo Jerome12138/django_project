@@ -462,8 +462,10 @@ def get_douban_rating(request):
         print('无豆瓣id的视频总数：%s' % len(data_list))
         print('无匹配视频总数：%s' % len(none_list))
         # while flag:
+        # print(bytes('75519',encoding='utf-8') not in none_list and bytes('75519',encoding='utf-8') not in none_list2)
+        # return HttpResponse(none_list)
         for item in data_list:
-            if item['vod_douban_id'] is None and (bytes(item['vod_id'],encoding='utf-8') not in none_list or bytes(item['vod_id'],encoding='utf-8') not in none_list2):  # 不存在豆瓣id，则查找id
+            if item['vod_douban_id'] is None and (bytes(item['vod_id'],encoding='utf-8') not in none_list and bytes(item['vod_id'],encoding='utf-8') not in none_list2):  # 不存在豆瓣id，则查找id
                 # print(item['vod_douban_id'],item['vod_rating'])
                 douban_id = GetPageData.findID(
                     item['vod_name'], item['vod_year'])
