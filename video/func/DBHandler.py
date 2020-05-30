@@ -255,18 +255,26 @@ def redis_loadlist(skey):
 def db_test():
     try:
         l_len = SR.llen('douban_none_list')
+        l_list = SR.lrange('douban_none_list', 0, -1)
         print(l_len)
         # print(SR.lrange('douban_none_list', 0, -1))
         # return SR.lrange('douban_none_list', 0, -1)
         j=0
-        while l_len-j>50:
-            none_list = SR.lrange('douban_none_list', 0, 100)
-            # print(none_list)
-            for item in set(none_list):
-                SR.lrem('douban_none_list', 0, item)
-                SR.rpush('douban_none_list', item)
+        for i in set(l_list):
+            if l_list.count(i)>1:
+                SR.lrem('douban_none_list', 1-l_list.count(i), i)
+                # SR.rpush('douban_none_list', i)
                 j+=1
                 print(j)
+        # j=0
+        # while l_len-j>50:
+        #     none_list = SR.lrange('douban_none_list', 0, 100)
+        #     # print(none_list)
+        #     for item in set(none_list):
+        #         SR.lrem('douban_none_list', 0, item)
+        #         SR.rpush('douban_none_list', item)
+        #         j+=1
+        #         print(j)
         result = True
     except Exception as e:
         print('db_test exception:', e)
