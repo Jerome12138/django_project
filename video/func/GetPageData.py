@@ -470,7 +470,7 @@ class Get80sScore(object):
 
     def save_score(self,video_data0):   # 匹配视频信息并储存评分数据
         try:
-            video_data = list(video_data0)
+            video_data = dict(video_data0)
             vod_info_list = DBHandler.search_data2(video_data['vod_name'].replace(' ',''),video_data['year'])
             if len(vod_info_list) == 0: # 如果无结果
                 re_str = re.search(r'(\[第[一二三四五六七八九十]季\])',video_data['vod_name'])
@@ -490,7 +490,7 @@ class Get80sScore(object):
                 return self.save_score(video_data)
             if len(vod_info_list) == 2:   # 如果匹配到多项
                 # video_data1 = list(video_data)
-                video_data2 = list(video_data)
+                video_data2 = dict(video_data)
                 # video_data1['vod_name'] = video_data1['vod_name']+'国语'
                 # flag1 = self.save_score(video_data1)
                 video_data2['vod_name'] = video_data2['vod_name']+'粤语'
