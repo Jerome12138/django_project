@@ -1150,3 +1150,144 @@ https://www.80s.tw/ju/18876请求超时，重试2次
 [pid: 20084|app: 0|req: 22/24] 183.27.47.200 () {46 vars in 986 bytes} [Sun May 31 13:28:25 2020] GET /video/play/85155/ => generated 19921 bytes in 11 msecs (HTTP/1.1 200) 6 headers in 320 bytes (1 switches on core 1)
 [pid: 20084|app: 0|req: 23/25] 183.27.47.200 () {46 vars in 1041 bytes} [Sun May 31 13:28:31 2020] GET /video/type/2/?&area=%E9%A6%99%E6%B8%AF&page=2 => generated 36567 bytes in 95 msecs (HTTP/1.1 200) 6 headers in 320 bytes (1 switches on core 0)
 [pid: 20084|app: 0|req: 24/26] 183.27.47.200 () {46 vars in 1035 bytes} [Sun May 31 13:29:35 2020] GET /video/type/2/?&area=%E9%A6%99%E6%B8%AF&page=4 => generated 32169 bytes in 97 msecs (HTTP/1.1 200) 6 headers in 320 bytes (1 switches on core 1)
+[pid: 20084|app: 0|req: 25/27] 183.27.47.200 () {46 vars in 1047 bytes} [Sun May 31 13:33:19 2020] GET /video/type/2/?area=%E9%A6%99%E6%B8%AF&year=&rating= => generated 53687 bytes in 98 msecs (HTTP/1.1 200) 6 headers in 320 bytes (1 switches on core 0)
+[pid: 20084|app: 0|req: 26/28] 183.27.47.200 () {46 vars in 986 bytes} [Sun May 31 13:33:28 2020] GET /video/play/85155/ => generated 19921 bytes in 8 msecs (HTTP/1.1 200) 6 headers in 320 bytes (1 switches on core 1)
+[pid: 20084|app: 0|req: 27/29] 183.27.47.200 () {46 vars in 1089 bytes} [Sun May 31 13:35:27 2020] GET /video/search/?wd=%E5%BE%B7%E5%8F%A4%E6%8B%89%E7%B2%A4%E8%AF%AD&page=1 => generated 13560 bytes in 55 msecs (HTTP/1.1 200) 6 headers in 320 bytes (1 switches on core 0)
+[pid: 20084|app: 0|req: 28/30] 183.27.47.200 () {46 vars in 1089 bytes} [Sun May 31 13:35:27 2020] GET /video/search/?wd=%E5%BE%B7%E5%8F%A4%E6%8B%89%E7%B2%A4%E8%AF%AD&page=1 => generated 13560 bytes in 51 msecs (HTTP/1.1 200) 6 headers in 320 bytes (1 switches on core 1)
+[pid: 20084|app: 0|req: 29/31] 183.27.47.200 () {46 vars in 1071 bytes} [Sun May 31 13:35:31 2020] GET /video/search/?wd=%E5%BE%B7%E5%8F%A4%E6%8B%89&page=1 => generated 18051 bytes in 53 msecs (HTTP/1.1 200) 6 headers in 320 bytes (1 switches on core 0)
+[pid: 20084|app: 0|req: 30/32] 183.27.47.200 () {46 vars in 1071 bytes} [Sun May 31 13:35:31 2020] GET /video/search/?wd=%E5%BE%B7%E5%8F%A4%E6%8B%89&page=1 => generated 18051 bytes in 56 msecs (HTTP/1.1 200) 6 headers in 320 bytes (1 switches on core 1)
+[pid: 20084|app: 0|req: 31/33] 183.27.47.200 () {46 vars in 986 bytes} [Sun May 31 13:35:40 2020] GET /video/play/76064/ => generated 14545 bytes in 5 msecs (HTTP/1.1 200) 6 headers in 320 bytes (1 switches on core 0)
+[pid: 20084|app: 0|req: 32/34] 182.254.52.17 () {36 vars in 568 bytes} [Sun May 31 13:36:08 2020] GET /ifixwebspace/ => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 1)
+[pid: 20084|app: 0|req: 33/35] 183.27.47.200 () {46 vars in 1099 bytes} [Sun May 31 13:40:33 2020] GET /video/search/?wd=%E7%BE%8E%E5%9B%BD%E6%81%90%E6%80%96%E6%95%85%E4%BA%8B%EF%BC%9A1984&page=1 => generated 13650 bytes in 54 msecs (HTTP/1.1 200) 6 headers in 320 bytes (1 switches on core 0)
+[pid: 20084|app: 0|req: 34/36] 183.27.47.200 () {46 vars in 1099 bytes} [Sun May 31 13:40:33 2020] GET /video/search/?wd=%E7%BE%8E%E5%9B%BD%E6%81%90%E6%80%96%E6%95%85%E4%BA%8B%EF%BC%9A1984&page=1 => generated 13650 bytes in 54 msecs (HTTP/1.1 200) 6 headers in 320 bytes (1 switches on core 1)
+[pid: 20084|app: 0|req: 35/37] 183.27.47.200 () {46 vars in 1147 bytes} [Sun May 31 13:40:38 2020] GET /video/search/?wd=%E7%BE%8E%E5%9B%BD%E6%81%90%E6%80%96%E6%95%85%E4%BA%8B&page=1 => generated 21994 bytes in 56 msecs (HTTP/1.1 200) 6 headers in 320 bytes (1 switches on core 0)
+[pid: 20084|app: 0|req: 36/38] 183.27.47.200 () {46 vars in 1147 bytes} [Sun May 31 13:40:38 2020] GET /video/search/?wd=%E7%BE%8E%E5%9B%BD%E6%81%90%E6%80%96%E6%95%85%E4%BA%8B&page=1 => generated 21994 bytes in 57 msecs (HTTP/1.1 200) 6 headers in 320 bytes (1 switches on core 1)
+[pid: 20084|app: 0|req: 37/39] 183.27.47.200 () {46 vars in 1099 bytes} [Sun May 31 13:41:04 2020] GET /video/search/?wd=%E9%99%8D%E9%AD%94%E7%9A%842.0&page=1 => generated 17496 bytes in 54 msecs (HTTP/1.1 200) 6 headers in 320 bytes (1 switches on core 0)
+[pid: 20084|app: 0|req: 38/40] 183.27.47.200 () {46 vars in 1099 bytes} [Sun May 31 13:41:04 2020] GET /video/search/?wd=%E9%99%8D%E9%AD%94%E7%9A%842.0&page=1 => generated 17496 bytes in 52 msecs (HTTP/1.1 200) 6 headers in 320 bytes (1 switches on core 1)
+*** Starting uWSGI 2.0.18 (64bit) on [Sun May 31 13:47:07 2020] ***
+compiled with version: 7.4.0 on 31 January 2020 10:32:09
+os: Linux-4.15.0-54-generic #58-Ubuntu SMP Mon Jun 24 10:55:24 UTC 2019
+nodename: VM-32-8-ubuntu
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 1
+current working directory: /home/ubuntu/git/django_project
+writing pidfile to ./uwsgi.pid
+detected binary path: /home/ubuntu/.local/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+chdir() to /home/ubuntu/git/django_project
+your processes number limit is 7079
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address 127.0.0.1:8001 fd 6
+Python version: 3.6.8 (default, Oct  7 2019, 12:59:55)  [GCC 8.3.0]
+Python main interpreter initialized at 0x55990527f540
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 416720 bytes (406 KB) for 8 cores
+*** Operational MODE: preforking+threaded ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x55990527f540 pid: 20752 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 20752)
+spawned uWSGI worker 1 (pid: 20754, cores: 2)
+spawned uWSGI worker 2 (pid: 20755, cores: 2)
+spawned uWSGI worker 3 (pid: 20756, cores: 2)
+spawned uWSGI worker 4 (pid: 20757, cores: 2)
+[pid: 20757|app: 0|req: 1/1] 183.27.47.200 () {46 vars in 936 bytes} [Sun May 31 13:47:12 2020] GET /admin/ => generated 27873 bytes in 166 msecs (HTTP/1.1 200) 6 headers in 320 bytes (1 switches on core 0)
+共有80s视频：1243
+80s_main Exception:
+Traceback (most recent call last):
+  File "./video/func/GetPageData.py", line 474, in save_score
+    vod_info_list = DBHandler.search_data2(video_data['vod_name'].replace(' ',''),video_data['year'])
+TypeError: list indices must be integers or slices, not str
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "./video/func/GetPageData.py", line 587, in run
+    if self.save_score(video_data):
+  File "./video/func/GetPageData.py", line 530, in save_score
+    print('save_score Exception:',video_data['vod_name'],e)
+TypeError: list indices must be integers or slices, not str
+None
+详情页列表保存成功
+[pid: 20757|app: 0|req: 2/2] 183.27.47.200 () {46 vars in 875 bytes} [Sun May 31 13:47:14 2020] GET /admin/get_80s_rating/ => generated 3 bytes in 20 msecs (HTTP/1.1 200) 5 headers in 148 bytes (1 switches on core 1)
+[pid: 20754|app: 0|req: 1/3] 183.27.47.200 () {46 vars in 937 bytes} [Sun May 31 13:47:15 2020] GET /admin/view_log/ => generated 19348 bytes in 192 msecs (HTTP/1.1 200) 5 headers in 152 bytes (1 switches on core 0)
+[pid: 20754|app: 0|req: 2/4] 183.27.47.200 () {46 vars in 961 bytes} [Sun May 31 13:47:17 2020] GET /admin/view_log/?page=11 => generated 18964 bytes in 22 msecs (HTTP/1.1 200) 5 headers in 152 bytes (1 switches on core 1)
+*** Starting uWSGI 2.0.18 (64bit) on [Sun May 31 13:49:28 2020] ***
+compiled with version: 7.4.0 on 31 January 2020 10:32:09
+os: Linux-4.15.0-54-generic #58-Ubuntu SMP Mon Jun 24 10:55:24 UTC 2019
+nodename: VM-32-8-ubuntu
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 1
+current working directory: /home/ubuntu/git/django_project
+writing pidfile to ./uwsgi.pid
+detected binary path: /home/ubuntu/.local/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+chdir() to /home/ubuntu/git/django_project
+your processes number limit is 7079
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address 127.0.0.1:8001 fd 6
+Python version: 3.6.8 (default, Oct  7 2019, 12:59:55)  [GCC 8.3.0]
+Python main interpreter initialized at 0x564ed40b6540
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 416720 bytes (406 KB) for 8 cores
+*** Operational MODE: preforking+threaded ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x564ed40b6540 pid: 20843 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 20843)
+spawned uWSGI worker 1 (pid: 20848, cores: 2)
+spawned uWSGI worker 2 (pid: 20849, cores: 2)
+spawned uWSGI worker 3 (pid: 20850, cores: 2)
+spawned uWSGI worker 4 (pid: 20851, cores: 2)
+[pid: 20851|app: 0|req: 1/1] 183.27.47.200 () {46 vars in 936 bytes} [Sun May 31 13:49:31 2020] GET /admin/ => generated 27873 bytes in 165 msecs (HTTP/1.1 200) 6 headers in 320 bytes (1 switches on core 0)
+共有80s视频：1243
+./video/func/GetPageData.py:538: FutureWarning: The behavior of this method will change in future versions. Use specific 'len(elem)' or 'elem is not None' test instead.
+  if not html:
+降魔的2.0粤语 30150688 8.8 保存成功[80s]
+[pid: 20848|app: 0|req: 1/2] 183.27.47.200 () {46 vars in 937 bytes} [Sun May 31 13:49:34 2020] GET /admin/view_log/ => generated 19348 bytes in 374 msecs (HTTP/1.1 200) 5 headers in 152 bytes (1 switches on core 0)
+[pid: 20848|app: 0|req: 2/3] 183.27.47.200 () {46 vars in 961 bytes} [Sun May 31 13:49:36 2020] GET /admin/view_log/?page=11 => generated 19633 bytes in 44 msecs (HTTP/1.1 200) 5 headers in 152 bytes (1 switches on core 1)
+[pid: 20848|app: 0|req: 3/4] 183.27.47.200 () {46 vars in 969 bytes} [Sun May 31 13:49:45 2020] GET /admin/view_log/?page=11 => generated 19689 bytes in 44 msecs (HTTP/1.1 200) 5 headers in 152 bytes (1 switches on core 0)
+save_score Exception: 机智医生生活20202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020 maximum recursion depth exceeded while calling a Python object
+[pid: 20848|app: 0|req: 4/5] 183.27.47.200 () {46 vars in 969 bytes} [Sun May 31 13:50:23 2020] GET /admin/view_log/?page=11 => generated 23553 bytes in 634 msecs (HTTP/1.1 200) 5 headers in 152 bytes (1 switches on core 1)
+*** Starting uWSGI 2.0.18 (64bit) on [Sun May 31 13:50:39 2020] ***
+compiled with version: 7.4.0 on 31 January 2020 10:32:09
+os: Linux-4.15.0-54-generic #58-Ubuntu SMP Mon Jun 24 10:55:24 UTC 2019
+nodename: VM-32-8-ubuntu
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 1
+current working directory: /home/ubuntu/git/django_project
+writing pidfile to ./uwsgi.pid
+detected binary path: /home/ubuntu/.local/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+chdir() to /home/ubuntu/git/django_project
+your processes number limit is 7079
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address 127.0.0.1:8001 fd 6
+Python version: 3.6.8 (default, Oct  7 2019, 12:59:55)  [GCC 8.3.0]
+Python main interpreter initialized at 0x55f5eab56540
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 416720 bytes (406 KB) for 8 cores
+*** Operational MODE: preforking+threaded ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x55f5eab56540 pid: 20941 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 20941)
+spawned uWSGI worker 1 (pid: 20943, cores: 2)
+spawned uWSGI worker 2 (pid: 20944, cores: 2)
+spawned uWSGI worker 3 (pid: 20945, cores: 2)
+spawned uWSGI worker 4 (pid: 20946, cores: 2)
