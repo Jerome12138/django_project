@@ -1,4 +1,4 @@
-form . import getRequest
+from . import getRequest
 from . import DBHandler
 
 import requests
