@@ -1,0 +1,889 @@
+[1590422402] ./uwsgi.log reopened.
+我们都不满意 未匹配到合适id
+我们都不满意 无豆瓣id数据，存入列表
+女房客2020 未匹配到合适id
+女房客2020 无豆瓣id数据，存入列表
+势不可挡2020 未匹配到合适id
+----------地址被限制,稍后重试----------
+none_list 暂存
+平行宇宙之恋 未匹配到合适id
+平行宇宙之恋 无豆瓣id数据，存入列表
+冬年2020 未匹配到合适id
+冬年2020 无豆瓣id数据，存入列表
+毒战[2020] 未匹配到合适id
+----------地址被限制,稍后重试----------
+none_list 暂存
+连续五次失败，等待30分钟
+[pid: 5303|app: 0|req: 5/4] 183.27.45.190 () {42 vars in 901 bytes} [Tue May 26 00:07:59 2020] GET /admin/view_log/?page=5 => generated 0 bytes in 10 msecs (HTTP/1.1 302) 6 headers in 184 bytes (1 switches on core 0)
+[pid: 5306|app: 0|req: 1/5] 183.27.45.190 () {42 vars in 898 bytes} [Tue May 26 00:07:59 2020] GET /view_log/2020-05-26/ => generated 179 bytes in 159 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+[pid: 5306|app: 0|req: 2/6] 183.27.45.190 () {42 vars in 901 bytes} [Tue May 26 00:08:10 2020] GET /admin/view_log/?page=5 => generated 0 bytes in 17 msecs (HTTP/1.1 302) 6 headers in 184 bytes (1 switches on core 1)
+[pid: 5303|app: 0|req: 6/7] 183.27.45.190 () {42 vars in 898 bytes} [Tue May 26 00:08:11 2020] GET /view_log/2020-05-26/ => generated 179 bytes in 2 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+[pid: 5305|app: 0|req: 1/8] 183.27.45.190 () {42 vars in 901 bytes} [Tue May 26 00:08:11 2020] GET /admin/view_log/?page=4 => generated 0 bytes in 176 msecs (HTTP/1.1 302) 6 headers in 184 bytes (1 switches on core 0)
+[pid: 5305|app: 0|req: 2/9] 183.27.45.190 () {42 vars in 898 bytes} [Tue May 26 00:08:11 2020] GET /view_log/2020-05-26/ => generated 179 bytes in 11 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 1)
+[pid: 5303|app: 0|req: 7/10] 183.27.45.190 () {42 vars in 901 bytes} [Tue May 26 00:08:11 2020] GET /admin/view_log/?page=5 => generated 0 bytes in 2 msecs (HTTP/1.1 302) 6 headers in 184 bytes (1 switches on core 0)
+[pid: 5305|app: 0|req: 3/11] 183.27.45.190 () {42 vars in 898 bytes} [Tue May 26 00:08:12 2020] GET /view_log/2020-05-26/ => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+[pid: 5304|app: 0|req: 1/12] 183.27.45.190 () {42 vars in 888 bytes} [Tue May 26 00:08:12 2020] GET /admin/view_log/ => generated 15550 bytes in 170 msecs (HTTP/1.1 200) 5 headers in 152 bytes (1 switches on core 0)
+[pid: 5304|app: 0|req: 2/13] 183.27.45.190 () {42 vars in 870 bytes} [Tue May 26 00:08:13 2020] GET /admin/ => generated 27873 bytes in 5 msecs (HTTP/1.1 200) 6 headers in 320 bytes (1 switches on core 1)
+[pid: 5303|app: 0|req: 8/14] 183.27.45.190 () {42 vars in 901 bytes} [Tue May 26 00:08:13 2020] GET /admin/view_log/?page=6 => generated 0 bytes in 2 msecs (HTTP/1.1 302) 6 headers in 184 bytes (1 switches on core 0)
+[pid: 5305|app: 0|req: 4/15] 183.27.45.190 () {42 vars in 898 bytes} [Tue May 26 00:08:13 2020] GET /view_log/2020-05-26/ => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+[pid: 5305|app: 0|req: 5/16] 183.27.45.190 () {42 vars in 870 bytes} [Tue May 26 00:08:15 2020] GET /admin/ => generated 27873 bytes in 5 msecs (HTTP/1.1 200) 6 headers in 320 bytes (1 switches on core 1)
+[pid: 5303|app: 0|req: 9/17] 183.27.45.190 () {44 vars in 931 bytes} [Tue May 26 00:08:17 2020] GET /admin/view_log/ => generated 15750 bytes in 3 msecs (HTTP/1.1 200) 5 headers in 152 bytes (1 switches on core 0)
+[pid: 5303|app: 0|req: 10/18] 183.27.45.190 () {44 vars in 953 bytes} [Tue May 26 00:08:56 2020] GET /admin/view_log/?page=1 => generated 15798 bytes in 2 msecs (HTTP/1.1 200) 5 headers in 152 bytes (1 switches on core 0)
+----------重新启动查找------------
+伤口 未匹配到合适id
+伤口 无豆瓣id数据，存入列表
+超能电竞：传奇一代 未匹配到合适id
+超能电竞：传奇一代 无豆瓣id数据，存入列表
+萌宠奇缘 未匹配到合适id
+----------地址被限制,稍后重试----------
+none_list 暂存
+咸鱼要翻身 未匹配到合适id
+咸鱼要翻身 无豆瓣id数据，存入列表
+春潮 未匹配到合适id
+春潮 无豆瓣id数据，存入列表
+继承2020 未匹配到合适id
+----------地址被限制,稍后重试----------
+none_list 暂存
+牛皮纸袋 未匹配到合适id
+牛皮纸袋 无豆瓣id数据，存入列表
+生死夜2020 未匹配到合适id
+生死夜2020 无豆瓣id数据，存入列表
+蒙眼缉凶 未匹配到合适id
+----------地址被限制,稍后重试----------
+none_list 暂存
+我们都不满意 未匹配到合适id
+我们都不满意 无豆瓣id数据，存入列表
+女房客2020 未匹配到合适id
+女房客2020 无豆瓣id数据，存入列表
+势不可挡2020 未匹配到合适id
+----------地址被限制,稍后重试----------
+none_list 暂存
+[pid: 5303|app: 0|req: 11/19] 47.89.192.12 () {34 vars in 392 bytes} [Tue May 26 00:45:59 2020] GET / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+平行宇宙之恋 未匹配到合适id
+平行宇宙之恋 无豆瓣id数据，存入列表
+冬年2020 未匹配到合适id
+冬年2020 无豆瓣id数据，存入列表
+毒战[2020] 未匹配到合适id
+----------地址被限制,稍后重试----------
+none_list 暂存
+-----连续十次失败，等待1小时-----
+[pid: 5303|app: 0|req: 12/20] 59.36.132.240 () {36 vars in 590 bytes} [Tue May 26 01:02:35 2020] GET /TP/html/public/index.php => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+[pid: 5303|app: 0|req: 13/21] 182.254.52.17 () {36 vars in 574 bytes} [Tue May 26 01:07:05 2020] GET /public/index.php => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+[pid: 5303|app: 0|req: 14/22] 59.36.132.240 () {36 vars in 602 bytes} [Tue May 26 01:30:52 2020] GET /thinkphp/html/public/index.php => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+[pid: 5303|app: 0|req: 15/23] 182.254.52.17 () {36 vars in 560 bytes} [Tue May 26 01:44:53 2020] GET /index.php => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+伤口 未匹配到合适id
+----------地址被限制,稍后重试----------
+超能电竞：传奇一代 未匹配到合适id
+----------地址被限制,稍后重试----------
+[pid: 5303|app: 0|req: 16/24] 89.251.70.181 () {32 vars in 463 bytes} [Tue May 26 01:57:05 2020] GET / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+萌宠奇缘 未匹配到合适id
+----------地址被限制,稍后重试----------
+咸鱼要翻身 未匹配到合适id
+----------地址被限制,稍后重试----------
+春潮 未匹配到合适id
+----------地址被限制,稍后重试----------
+连续五次失败，等待30分钟
+[pid: 5303|app: 0|req: 17/25] 101.89.19.140 () {36 vars in 576 bytes} [Tue May 26 02:34:07 2020] GET /manager/text/list => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+----------重新启动查找------------
+伤口 未匹配到合适id
+----------地址被限制,稍后重试----------
+超能电竞：传奇一代 未匹配到合适id
+----------地址被限制,稍后重试----------
+萌宠奇缘 未匹配到合适id
+----------地址被限制,稍后重试----------
+咸鱼要翻身 未匹配到合适id
+----------地址被限制,稍后重试----------
+春潮 未匹配到合适id
+----------地址被限制,稍后重试----------
+-----连续十次失败，等待1小时-----
+[pid: 5303|app: 0|req: 18/26] 182.254.52.17 () {36 vars in 537 bytes} [Tue May 26 03:13:59 2020] GET /admin/view_log/?page%3D17 => generated 0 bytes in 1 msecs (HTTP/1.1 302) 6 headers in 180 bytes (1 switches on core 0)
+[pid: 5305|app: 0|req: 6/27] 182.254.52.17 () {38 vars in 582 bytes} [Tue May 26 03:13:59 2020] GET /admin/login.html => generated 5348 bytes in 2 msecs (HTTP/1.1 200) 6 headers in 319 bytes (1 switches on core 0)
+伤口 未匹配到合适id
+----------地址被限制,稍后重试----------
+超能电竞：传奇一代 未匹配到合适id
+----------地址被限制,稍后重试----------
+萌宠奇缘 未匹配到合适id
+----------地址被限制,稍后重试----------
+咸鱼要翻身 未匹配到合适id
+----------地址被限制,稍后重试----------
+春潮 未匹配到合适id
+----------地址被限制,稍后重试----------
+连续五次失败，等待30分钟
+[pid: 5305|app: 0|req: 7/28] 108.78.187.84 () {36 vars in 541 bytes} [Tue May 26 04:07:23 2020] POST / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 1)
+[pid: 5303|app: 0|req: 19/29] 108.78.187.84 () {36 vars in 541 bytes} [Tue May 26 04:09:23 2020] POST / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+[pid: 5303|app: 0|req: 20/30] 108.78.187.84 () {36 vars in 541 bytes} [Tue May 26 04:11:24 2020] POST / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+[pid: 5303|app: 0|req: 21/31] 108.78.187.84 () {36 vars in 541 bytes} [Tue May 26 04:13:25 2020] POST / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+[pid: 5303|app: 0|req: 22/32] 108.78.187.84 () {36 vars in 541 bytes} [Tue May 26 04:15:26 2020] POST / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+[pid: 5303|app: 0|req: 23/33] 108.78.187.84 () {36 vars in 541 bytes} [Tue May 26 04:17:27 2020] POST / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+[pid: 5303|app: 0|req: 24/34] 108.78.187.84 () {36 vars in 541 bytes} [Tue May 26 04:19:28 2020] POST / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+[pid: 5303|app: 0|req: 25/35] 108.78.187.84 () {36 vars in 541 bytes} [Tue May 26 04:21:29 2020] POST / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+[pid: 5303|app: 0|req: 26/36] 108.78.187.84 () {36 vars in 541 bytes} [Tue May 26 04:23:30 2020] POST / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+[pid: 5303|app: 0|req: 27/37] 108.78.187.84 () {36 vars in 541 bytes} [Tue May 26 04:25:30 2020] POST / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+[pid: 5303|app: 0|req: 28/38] 108.78.187.84 () {36 vars in 541 bytes} [Tue May 26 04:27:31 2020] POST / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+[pid: 5303|app: 0|req: 29/39] 108.78.187.84 () {36 vars in 541 bytes} [Tue May 26 04:29:32 2020] POST / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+[pid: 5303|app: 0|req: 30/40] 108.78.187.84 () {36 vars in 541 bytes} [Tue May 26 04:31:33 2020] POST / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+[pid: 5303|app: 0|req: 31/41] 108.78.187.84 () {36 vars in 541 bytes} [Tue May 26 04:33:33 2020] POST / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+[pid: 5303|app: 0|req: 32/42] 108.78.187.84 () {36 vars in 541 bytes} [Tue May 26 04:35:34 2020] POST / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+----------重新启动查找------------
+伤口 未匹配到合适id
+----------地址被限制,稍后重试----------
+[pid: 5303|app: 0|req: 33/43] 108.78.187.84 () {36 vars in 541 bytes} [Tue May 26 04:37:35 2020] POST / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+[pid: 5303|app: 0|req: 34/44] 108.78.187.84 () {36 vars in 541 bytes} [Tue May 26 04:39:36 2020] POST / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+超能电竞：传奇一代 未匹配到合适id
+----------地址被限制,稍后重试----------
+[pid: 5303|app: 0|req: 35/45] 108.78.187.84 () {36 vars in 541 bytes} [Tue May 26 04:41:37 2020] POST / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+萌宠奇缘 未匹配到合适id
+----------地址被限制,稍后重试----------
+[pid: 5303|app: 0|req: 36/46] 108.78.187.84 () {36 vars in 541 bytes} [Tue May 26 04:43:38 2020] POST / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+[pid: 5303|app: 0|req: 37/47] 182.254.52.17 () {36 vars in 592 bytes} [Tue May 26 04:44:46 2020] GET /admin/view_log/2020-05-24 => generated 0 bytes in 1 msecs (HTTP/1.1 301) 4 headers in 165 bytes (1 switches on core 0)
+[pid: 5306|app: 0|req: 3/48] 182.254.52.17 () {38 vars in 656 bytes} [Tue May 26 04:44:46 2020] GET /admin/view_log/2020-05-24/ => generated 0 bytes in 1 msecs (HTTP/1.1 302) 6 headers in 180 bytes (1 switches on core 0)
+[pid: 5305|app: 0|req: 8/49] 182.254.52.17 () {38 vars in 637 bytes} [Tue May 26 04:44:46 2020] GET /admin/login.html => generated 5348 bytes in 1 msecs (HTTP/1.1 200) 6 headers in 319 bytes (1 switches on core 0)
+[pid: 5306|app: 0|req: 4/50] 108.78.187.84 () {36 vars in 541 bytes} [Tue May 26 04:45:38 2020] POST / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 1)
+咸鱼要翻身 未匹配到合适id
+----------地址被限制,稍后重试----------
+[pid: 5305|app: 0|req: 9/51] 108.78.187.84 () {36 vars in 541 bytes} [Tue May 26 04:47:39 2020] POST / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 1)
+春潮 未匹配到合适id
+----------地址被限制,稍后重试----------
+[pid: 5303|app: 0|req: 38/52] 108.78.187.84 () {36 vars in 541 bytes} [Tue May 26 04:49:40 2020] POST / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+[pid: 5303|app: 0|req: 39/53] 182.254.52.17 () {36 vars in 576 bytes} [Tue May 26 04:49:48 2020] GET /video/play/43782/ => generated 13958 bytes in 9 msecs (HTTP/1.1 200) 6 headers in 320 bytes (1 switches on core 0)
+[pid: 5303|app: 0|req: 40/54] 108.78.187.84 () {36 vars in 541 bytes} [Tue May 26 04:51:40 2020] POST / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+-----连续十次失败，等待1小时-----
+[pid: 5303|app: 0|req: 41/55] 108.78.187.84 () {36 vars in 541 bytes} [Tue May 26 04:53:41 2020] POST / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+[pid: 5303|app: 0|req: 42/56] 182.254.52.17 () {36 vars in 594 bytes} [Tue May 26 04:54:15 2020] GET /admin/view_log/2020-05-24/ => generated 0 bytes in 1 msecs (HTTP/1.1 302) 6 headers in 180 bytes (1 switches on core 0)
+[pid: 5305|app: 0|req: 10/57] 182.254.52.17 () {38 vars in 637 bytes} [Tue May 26 04:54:15 2020] GET /admin/login.html => generated 5348 bytes in 1 msecs (HTTP/1.1 200) 6 headers in 319 bytes (1 switches on core 0)
+[pid: 5305|app: 0|req: 11/58] 108.78.187.84 () {36 vars in 541 bytes} [Tue May 26 04:55:42 2020] POST / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 1)
+[pid: 5303|app: 0|req: 43/59] 108.78.187.84 () {36 vars in 541 bytes} [Tue May 26 04:57:42 2020] POST / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+[pid: 5303|app: 0|req: 44/60] 108.78.187.84 () {36 vars in 541 bytes} [Tue May 26 04:59:43 2020] POST / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+[pid: 5303|app: 0|req: 45/61] 108.78.187.84 () {36 vars in 541 bytes} [Tue May 26 05:01:44 2020] POST / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+[pid: 5303|app: 0|req: 46/62] 108.78.187.84 () {36 vars in 541 bytes} [Tue May 26 05:03:44 2020] POST / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+[pid: 5303|app: 0|req: 47/63] 108.78.187.84 () {36 vars in 541 bytes} [Tue May 26 05:05:45 2020] POST / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+[pid: 5303|app: 0|req: 48/64] 108.78.187.84 () {36 vars in 541 bytes} [Tue May 26 05:07:46 2020] POST / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+[pid: 5303|app: 0|req: 49/65] 108.78.187.84 () {36 vars in 541 bytes} [Tue May 26 05:09:47 2020] POST / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+[pid: 5303|app: 0|req: 50/66] 108.78.187.84 () {36 vars in 541 bytes} [Tue May 26 05:11:47 2020] POST / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+[pid: 5303|app: 0|req: 51/67] 108.78.187.84 () {36 vars in 541 bytes} [Tue May 26 05:13:48 2020] POST / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+[pid: 5303|app: 0|req: 52/68] 108.78.187.84 () {36 vars in 541 bytes} [Tue May 26 05:15:49 2020] POST / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+[pid: 5303|app: 0|req: 53/69] 108.78.187.84 () {36 vars in 541 bytes} [Tue May 26 05:17:49 2020] POST / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+[pid: 5303|app: 0|req: 54/70] 108.78.187.84 () {36 vars in 541 bytes} [Tue May 26 05:19:50 2020] POST / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+[pid: 5303|app: 0|req: 55/71] 108.78.187.84 () {36 vars in 541 bytes} [Tue May 26 05:21:51 2020] POST / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+[pid: 5303|app: 0|req: 56/72] 108.78.187.84 () {36 vars in 541 bytes} [Tue May 26 05:23:52 2020] POST / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+[pid: 5303|app: 0|req: 57/73] 108.78.187.84 () {36 vars in 541 bytes} [Tue May 26 05:25:52 2020] POST / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+[pid: 5303|app: 0|req: 58/74] 108.78.187.84 () {36 vars in 541 bytes} [Tue May 26 05:27:53 2020] POST / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+[pid: 5303|app: 0|req: 59/75] 35.203.28.59 () {28 vars in 310 bytes} [Tue May 26 05:28:34 2020] OPTIONS / => generated 179 bytes in 1 msecs (HTTP/1.0 404) 4 headers in 128 bytes (1 switches on core 0)
+[pid: 5303|app: 0|req: 60/76] 108.78.187.84 () {36 vars in 541 bytes} [Tue May 26 05:29:54 2020] POST / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+[pid: 5303|app: 0|req: 61/77] 108.78.187.84 () {36 vars in 541 bytes} [Tue May 26 05:31:55 2020] POST / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+[pid: 5303|app: 0|req: 62/78] 108.78.187.84 () {36 vars in 541 bytes} [Tue May 26 05:33:55 2020] POST / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+[pid: 5303|app: 0|req: 63/79] 114.47.113.96 () {32 vars in 464 bytes} [Tue May 26 05:34:38 2020] GET / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+[pid: 5303|app: 0|req: 64/80] 108.78.187.84 () {36 vars in 541 bytes} [Tue May 26 05:35:56 2020] POST / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+[pid: 5303|app: 0|req: 65/81] 108.78.187.84 () {36 vars in 541 bytes} [Tue May 26 05:37:57 2020] POST / => generated 179 bytes in 2 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+[pid: 5303|app: 0|req: 66/82] 108.78.187.84 () {36 vars in 541 bytes} [Tue May 26 05:39:57 2020] POST / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+[pid: 5303|app: 0|req: 67/83] 108.78.187.84 () {36 vars in 541 bytes} [Tue May 26 05:41:59 2020] POST / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+[pid: 5303|app: 0|req: 68/84] 108.78.187.84 () {36 vars in 541 bytes} [Tue May 26 05:43:59 2020] POST / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+[pid: 5303|app: 0|req: 69/85] 108.78.187.84 () {36 vars in 541 bytes} [Tue May 26 05:46:00 2020] POST / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+伤口 未匹配到合适id
+----------地址被限制,稍后重试----------
+超能电竞：传奇一代 未匹配到合适id
+----------地址被限制,稍后重试----------
+萌宠奇缘 未匹配到合适id
+----------地址被限制,稍后重试----------
+咸鱼要翻身 未匹配到合适id
+咸鱼要翻身 无豆瓣id数据，存入列表
+春潮 未匹配到合适id
+春潮 无豆瓣id数据，存入列表
+继承2020 未匹配到合适id
+----------地址被限制,稍后重试----------
+none_list 暂存
+牛皮纸袋 未匹配到合适id
+牛皮纸袋 无豆瓣id数据，存入列表
+生死夜2020 未匹配到合适id
+生死夜2020 无豆瓣id数据，存入列表
+蒙眼缉凶 未匹配到合适id
+----------地址被限制,稍后重试----------
+none_list 暂存
+连续五次失败，等待30分钟
+[pid: 5303|app: 0|req: 70/86] 80.82.68.72 () {30 vars in 432 bytes} [Tue May 26 06:08:18 2020] GET / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+[pid: 5306|app: 0|req: 5/87] 80.82.68.72 () {30 vars in 452 bytes} [Tue May 26 06:08:18 2020] GET /robots.txt => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+[pid: 5306|app: 0|req: 6/88] 80.82.68.72 () {30 vars in 454 bytes} [Tue May 26 06:08:19 2020] GET /favicon.ico => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 1)
+----------重新启动查找------------
+伤口 未匹配到合适id
+伤口 无豆瓣id数据，存入列表
+超能电竞：传奇一代 未匹配到合适id
+超能电竞：传奇一代 无豆瓣id数据，存入列表
+萌宠奇缘 未匹配到合适id
+----------地址被限制,稍后重试----------
+none_list 暂存
+咸鱼要翻身 未匹配到合适id
+咸鱼要翻身 无豆瓣id数据，存入列表
+春潮 未匹配到合适id
+春潮 无豆瓣id数据，存入列表
+继承2020 未匹配到合适id
+----------地址被限制,稍后重试----------
+none_list 暂存
+牛皮纸袋 未匹配到合适id
+牛皮纸袋 无豆瓣id数据，存入列表
+生死夜2020 未匹配到合适id
+生死夜2020 无豆瓣id数据，存入列表
+蒙眼缉凶 未匹配到合适id
+----------地址被限制,稍后重试----------
+none_list 暂存
+我们都不满意 未匹配到合适id
+我们都不满意 无豆瓣id数据，存入列表
+女房客2020 未匹配到合适id
+女房客2020 无豆瓣id数据，存入列表
+势不可挡2020 未匹配到合适id
+----------地址被限制,稍后重试----------
+none_list 暂存
+平行宇宙之恋 未匹配到合适id
+平行宇宙之恋 无豆瓣id数据，存入列表
+冬年2020 未匹配到合适id
+冬年2020 无豆瓣id数据，存入列表
+毒战[2020] 未匹配到合适id
+----------地址被限制,稍后重试----------
+none_list 暂存
+-----连续十次失败，等待1小时-----
+[pid: 5303|app: 0|req: 71/89] 182.254.52.17 () {36 vars in 605 bytes} [Tue May 26 07:40:38 2020] GET /solr/admin/info/system?wt%3Djson => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+[pid: 5306|app: 0|req: 7/90] 134.49.250.185 () {32 vars in 464 bytes} [Tue May 26 07:40:40 2020] GET / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+伤口 未匹配到合适id
+伤口 无豆瓣id数据，存入列表
+超能电竞：传奇一代 未匹配到合适id
+超能电竞：传奇一代 无豆瓣id数据，存入列表
+萌宠奇缘 未匹配到合适id
+萌宠奇缘 无豆瓣id数据，存入列表
+咸鱼要翻身 未匹配到合适id
+----------地址被限制,稍后重试----------
+none_list 暂存
+春潮 未匹配到合适id
+春潮 无豆瓣id数据，存入列表
+继承2020 未匹配到合适id
+继承2020 无豆瓣id数据，存入列表
+牛皮纸袋 未匹配到合适id
+----------地址被限制,稍后重试----------
+none_list 暂存
+[pid: 5306|app: 0|req: 8/91] 182.254.52.17 () {36 vars in 596 bytes} [Tue May 26 07:55:50 2020] GET /admin/phpmyadmin2/index.php => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 1)
+生死夜2020 未匹配到合适id
+生死夜2020 无豆瓣id数据，存入列表
+蒙眼缉凶 未匹配到合适id
+蒙眼缉凶 无豆瓣id数据，存入列表
+我们都不满意 未匹配到合适id
+----------地址被限制,稍后重试----------
+none_list 暂存
+女房客2020 未匹配到合适id
+女房客2020 无豆瓣id数据，存入列表
+势不可挡2020 未匹配到合适id
+势不可挡2020 无豆瓣id数据，存入列表
+平行宇宙之恋 未匹配到合适id
+----------地址被限制,稍后重试----------
+none_list 暂存
+冬年2020 未匹配到合适id
+冬年2020 无豆瓣id数据，存入列表
+毒战[2020] 未匹配到合适id
+毒战[2020] 无豆瓣id数据，存入列表
+虫族2020 未匹配到合适id
+----------地址被限制,稍后重试----------
+none_list 暂存
+连续五次失败，等待30分钟
+[pid: 5303|app: 0|req: 72/92] 183.192.179.16 () {36 vars in 606 bytes} [Tue May 26 08:23:53 2020] GET /?XDEBUG_SESSION_START%3Dphpstorm => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+----------重新启动查找------------
+伤口 未匹配到合适id
+伤口 无豆瓣id数据，存入列表
+超能电竞：传奇一代 未匹配到合适id
+超能电竞：传奇一代 无豆瓣id数据，存入列表
+萌宠奇缘 未匹配到合适id
+----------地址被限制,稍后重试----------
+none_list 暂存
+[pid: 5303|app: 0|req: 73/93] 182.254.52.17 () {36 vars in 592 bytes} [Tue May 26 08:37:22 2020] GET /myadmin/scripts/setup.php => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+咸鱼要翻身 未匹配到合适id
+咸鱼要翻身 无豆瓣id数据，存入列表
+春潮 未匹配到合适id
+春潮 无豆瓣id数据，存入列表
+继承2020 未匹配到合适id
+----------地址被限制,稍后重试----------
+none_list 暂存
+牛皮纸袋 未匹配到合适id
+牛皮纸袋 无豆瓣id数据，存入列表
+生死夜2020 未匹配到合适id
+生死夜2020 无豆瓣id数据，存入列表
+蒙眼缉凶 未匹配到合适id
+----------地址被限制,稍后重试----------
+none_list 暂存
+我们都不满意 未匹配到合适id
+我们都不满意 无豆瓣id数据，存入列表
+女房客2020 未匹配到合适id
+女房客2020 无豆瓣id数据，存入列表
+势不可挡2020 未匹配到合适id
+----------地址被限制,稍后重试----------
+none_list 暂存
+平行宇宙之恋 未匹配到合适id
+平行宇宙之恋 无豆瓣id数据，存入列表
+冬年2020 未匹配到合适id
+冬年2020 无豆瓣id数据，存入列表
+毒战[2020] 未匹配到合适id
+----------地址被限制,稍后重试----------
+none_list 暂存
+-----连续十次失败，等待1小时-----
+[pid: 5303|app: 0|req: 74/94] 119.61.6.135 () {28 vars in 309 bytes} [Tue May 26 08:52:45 2020] GET / => generated 179 bytes in 1 msecs (HTTP/1.0 404) 4 headers in 128 bytes (1 switches on core 0)
+[pid: 5303|app: 0|req: 75/95] 119.61.6.135 () {38 vars in 627 bytes} [Tue May 26 08:53:37 2020] GET / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+[pid: 5303|app: 0|req: 76/96] 182.254.52.17 () {36 vars in 556 bytes} [Tue May 26 09:14:18 2020] GET /rxr.php => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+[pid: 5303|app: 0|req: 77/97] 183.136.225.57 () {34 vars in 456 bytes} [Tue May 26 09:22:02 2020] GET / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+[pid: 5303|app: 0|req: 78/98] 198.108.66.243 () {34 vars in 394 bytes} [Tue May 26 09:30:38 2020] GET / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+伤口 未匹配到合适id
+伤口 无豆瓣id数据，存入列表
+超能电竞：传奇一代 未匹配到合适id
+超能电竞：传奇一代 无豆瓣id数据，存入列表
+萌宠奇缘 未匹配到合适id
+----------地址被限制,稍后重试----------
+none_list 暂存
+咸鱼要翻身 未匹配到合适id
+咸鱼要翻身 无豆瓣id数据，存入列表
+春潮 未匹配到合适id
+春潮 无豆瓣id数据，存入列表
+继承2020 未匹配到合适id
+----------地址被限制,稍后重试----------
+none_list 暂存
+牛皮纸袋 未匹配到合适id
+牛皮纸袋 无豆瓣id数据，存入列表
+生死夜2020 未匹配到合适id
+生死夜2020 无豆瓣id数据，存入列表
+蒙眼缉凶 未匹配到合适id
+----------地址被限制,稍后重试----------
+none_list 暂存
+我们都不满意 未匹配到合适id
+我们都不满意 无豆瓣id数据，存入列表
+女房客2020 未匹配到合适id
+女房客2020 无豆瓣id数据，存入列表
+势不可挡2020 未匹配到合适id
+----------地址被限制,稍后重试----------
+none_list 暂存
+[pid: 5303|app: 0|req: 79/99] 182.254.52.17 () {36 vars in 562 bytes} [Tue May 26 10:04:12 2020] GET /taisui.php => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+平行宇宙之恋 未匹配到合适id
+平行宇宙之恋 无豆瓣id数据，存入列表
+冬年2020 未匹配到合适id
+冬年2020 无豆瓣id数据，存入列表
+毒战[2020] 未匹配到合适id
+----------地址被限制,稍后重试----------
+none_list 暂存
+连续五次失败，等待30分钟
+----------重新启动查找------------
+伤口 未匹配到合适id
+伤口 无豆瓣id数据，存入列表
+超能电竞：传奇一代 未匹配到合适id
+超能电竞：传奇一代 无豆瓣id数据，存入列表
+萌宠奇缘 未匹配到合适id
+----------地址被限制,稍后重试----------
+none_list 暂存
+[pid: 5303|app: 0|req: 80/100] 182.254.52.17 () {36 vars in 562 bytes} [Tue May 26 10:37:45 2020] GET /doudou.php => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+咸鱼要翻身 未匹配到合适id
+咸鱼要翻身 无豆瓣id数据，存入列表
+春潮 未匹配到合适id
+春潮 无豆瓣id数据，存入列表
+继承2020 未匹配到合适id
+----------地址被限制,稍后重试----------
+none_list 暂存
+牛皮纸袋 未匹配到合适id
+牛皮纸袋 无豆瓣id数据，存入列表
+生死夜2020 未匹配到合适id
+生死夜2020 无豆瓣id数据，存入列表
+蒙眼缉凶 未匹配到合适id
+----------地址被限制,稍后重试----------
+none_list 暂存
+我们都不满意 未匹配到合适id
+我们都不满意 无豆瓣id数据，存入列表
+女房客2020 未匹配到合适id
+女房客2020 无豆瓣id数据，存入列表
+势不可挡2020 未匹配到合适id
+----------地址被限制,稍后重试----------
+none_list 暂存
+平行宇宙之恋 未匹配到合适id
+平行宇宙之恋 无豆瓣id数据，存入列表
+冬年2020 未匹配到合适id
+冬年2020 无豆瓣id数据，存入列表
+毒战[2020] 未匹配到合适id
+----------地址被限制,稍后重试----------
+none_list 暂存
+-----连续十次失败，等待1小时-----
+[pid: 5303|app: 0|req: 81/101] 112.96.112.79 () {42 vars in 901 bytes} [Tue May 26 11:51:25 2020] GET /admin/view_log/?page=1 => generated 19073 bytes in 7 msecs (HTTP/1.1 200) 5 headers in 152 bytes (1 switches on core 0)
+[pid: 5303|app: 0|req: 82/102] 112.96.112.79 () {44 vars in 960 bytes} [Tue May 26 11:51:39 2020] GET /admin/view_log/?page=4 => generated 17806 bytes in 7 msecs (HTTP/1.1 200) 5 headers in 152 bytes (1 switches on core 0)
+[pid: 5303|app: 0|req: 83/103] 112.96.112.79 () {44 vars in 960 bytes} [Tue May 26 11:51:58 2020] GET /admin/view_log/?page=4 => generated 17861 bytes in 8 msecs (HTTP/1.1 200) 5 headers in 152 bytes (1 switches on core 0)
+[pid: 5303|app: 0|req: 84/104] 112.96.112.79 () {42 vars in 908 bytes} [Tue May 26 11:52:19 2020] GET /video/play/84919/1-7.html => generated 14825 bytes in 5 msecs (HTTP/1.1 200) 6 headers in 320 bytes (1 switches on core 0)
+伤口 未匹配到合适id
+伤口 无豆瓣id数据，存入列表
+超能电竞：传奇一代 未匹配到合适id
+超能电竞：传奇一代 无豆瓣id数据，存入列表
+萌宠奇缘 未匹配到合适id
+----------地址被限制,稍后重试----------
+none_list 暂存
+[pid: 5303|app: 0|req: 85/105] 112.96.112.79 () {44 vars in 970 bytes} [Tue May 26 11:52:26 2020] GET /video/play/84919/1-8.html => generated 14825 bytes in 5 msecs (HTTP/1.1 200) 6 headers in 320 bytes (1 switches on core 0)
+咸鱼要翻身 未匹配到合适id
+咸鱼要翻身 无豆瓣id数据，存入列表
+春潮 未匹配到合适id
+春潮 无豆瓣id数据，存入列表
+继承2020 未匹配到合适id
+----------地址被限制,稍后重试----------
+none_list 暂存
+[pid: 5303|app: 0|req: 86/106] 182.254.52.17 () {36 vars in 542 bytes} [Tue May 26 11:57:39 2020] GET / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+牛皮纸袋 未匹配到合适id
+----------地址被限制,稍后重试----------
+[pid: 5303|app: 0|req: 87/107] 182.254.52.17 () {36 vars in 502 bytes} [Tue May 26 11:59:40 2020] GET /xiu.php => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+生死夜2020 未匹配到合适id
+生死夜2020 无豆瓣id数据，存入列表
+蒙眼缉凶 未匹配到合适id
+蒙眼缉凶 无豆瓣id数据，存入列表
+我们都不满意 未匹配到合适id
+----------地址被限制,稍后重试----------
+none_list 暂存
+女房客2020 未匹配到合适id
+女房客2020 无豆瓣id数据，存入列表
+势不可挡2020 未匹配到合适id
+势不可挡2020 无豆瓣id数据，存入列表
+平行宇宙之恋 未匹配到合适id
+平行宇宙之恋 无豆瓣id数据，存入列表
+冬年2020 未匹配到合适id
+----------地址被限制,稍后重试----------
+none_list 暂存
+连续五次失败，等待30分钟
+----------重新启动查找------------
+伤口 未匹配到合适id
+伤口 无豆瓣id数据，存入列表
+超能电竞：传奇一代 未匹配到合适id
+超能电竞：传奇一代 无豆瓣id数据，存入列表
+萌宠奇缘 未匹配到合适id
+----------地址被限制,稍后重试----------
+none_list 暂存
+咸鱼要翻身 未匹配到合适id
+咸鱼要翻身 无豆瓣id数据，存入列表
+春潮 未匹配到合适id
+春潮 无豆瓣id数据，存入列表
+继承2020 未匹配到合适id
+----------地址被限制,稍后重试----------
+none_list 暂存
+牛皮纸袋 未匹配到合适id
+牛皮纸袋 无豆瓣id数据，存入列表
+生死夜2020 未匹配到合适id
+生死夜2020 无豆瓣id数据，存入列表
+蒙眼缉凶 未匹配到合适id
+----------地址被限制,稍后重试----------
+none_list 暂存
+我们都不满意 未匹配到合适id
+我们都不满意 无豆瓣id数据，存入列表
+女房客2020 未匹配到合适id
+女房客2020 无豆瓣id数据，存入列表
+势不可挡2020 未匹配到合适id
+----------地址被限制,稍后重试----------
+none_list 暂存
+平行宇宙之恋 未匹配到合适id
+平行宇宙之恋 无豆瓣id数据，存入列表
+冬年2020 未匹配到合适id
+冬年2020 无豆瓣id数据，存入列表
+毒战[2020] 未匹配到合适id
+----------地址被限制,稍后重试----------
+none_list 暂存
+-----连续十次失败，等待1小时-----
+[pid: 5303|app: 0|req: 88/108] 183.192.179.16 () {36 vars in 599 bytes} [Tue May 26 12:59:21 2020] GET /mysql/mysqlmanager/index.php => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+[pid: 5303|app: 0|req: 89/109] 101.251.242.238 () {38 vars in 597 bytes} [Tue May 26 13:13:21 2020] GET / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+[pid: 5303|app: 0|req: 90/110] 182.254.52.17 () {36 vars in 562 bytes} [Tue May 26 13:49:43 2020] GET /xiaxia.php => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+伤口 未匹配到合适id
+伤口 无豆瓣id数据，存入列表
+超能电竞：传奇一代 未匹配到合适id
+超能电竞：传奇一代 无豆瓣id数据，存入列表
+萌宠奇缘 未匹配到合适id
+----------地址被限制,稍后重试----------
+none_list 暂存
+咸鱼要翻身 未匹配到合适id
+咸鱼要翻身 无豆瓣id数据，存入列表
+春潮 未匹配到合适id
+春潮 无豆瓣id数据，存入列表
+继承2020 未匹配到合适id
+----------地址被限制,稍后重试----------
+none_list 暂存
+牛皮纸袋 未匹配到合适id
+牛皮纸袋 无豆瓣id数据，存入列表
+生死夜2020 未匹配到合适id
+生死夜2020 无豆瓣id数据，存入列表
+蒙眼缉凶 未匹配到合适id
+----------地址被限制,稍后重试----------
+none_list 暂存
+[pid: 5303|app: 0|req: 91/111] 182.254.52.17 () {36 vars in 554 bytes} [Tue May 26 14:00:54 2020] GET /admin/ => generated 0 bytes in 1 msecs (HTTP/1.1 302) 6 headers in 180 bytes (1 switches on core 0)
+[pid: 5304|app: 0|req: 3/112] 182.254.52.17 () {38 vars in 617 bytes} [Tue May 26 14:00:54 2020] GET /admin/login.html => generated 5348 bytes in 2 msecs (HTTP/1.1 200) 6 headers in 319 bytes (1 switches on core 0)
+我们都不满意 未匹配到合适id
+我们都不满意 无豆瓣id数据，存入列表
+女房客2020 未匹配到合适id
+女房客2020 无豆瓣id数据，存入列表
+势不可挡2020 未匹配到合适id
+----------地址被限制,稍后重试----------
+none_list 暂存
+平行宇宙之恋 未匹配到合适id
+平行宇宙之恋 无豆瓣id数据，存入列表
+冬年2020 未匹配到合适id
+冬年2020 无豆瓣id数据，存入列表
+毒战[2020] 未匹配到合适id
+----------地址被限制,稍后重试----------
+none_list 暂存
+连续五次失败，等待30分钟
+[pid: 5304|app: 0|req: 4/113] 182.254.52.17 () {36 vars in 562 bytes} [Tue May 26 14:14:12 2020] GET /help-e.php => generated 179 bytes in 3 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 1)
+----------重新启动查找------------
+伤口 未匹配到合适id
+伤口 无豆瓣id数据，存入列表
+超能电竞：传奇一代 未匹配到合适id
+超能电竞：传奇一代 无豆瓣id数据，存入列表
+萌宠奇缘 未匹配到合适id
+----------地址被限制,稍后重试----------
+none_list 暂存
+咸鱼要翻身 未匹配到合适id
+咸鱼要翻身 无豆瓣id数据，存入列表
+春潮 未匹配到合适id
+春潮 无豆瓣id数据，存入列表
+继承2020 未匹配到合适id
+----------地址被限制,稍后重试----------
+none_list 暂存
+牛皮纸袋 未匹配到合适id
+牛皮纸袋 无豆瓣id数据，存入列表
+生死夜2020 未匹配到合适id
+生死夜2020 无豆瓣id数据，存入列表
+蒙眼缉凶 未匹配到合适id
+----------地址被限制,稍后重试----------
+none_list 暂存
+我们都不满意 未匹配到合适id
+我们都不满意 无豆瓣id数据，存入列表
+女房客2020 未匹配到合适id
+女房客2020 无豆瓣id数据，存入列表
+势不可挡2020 未匹配到合适id
+----------地址被限制,稍后重试----------
+none_list 暂存
+平行宇宙之恋 未匹配到合适id
+平行宇宙之恋 无豆瓣id数据，存入列表
+冬年2020 未匹配到合适id
+冬年2020 无豆瓣id数据，存入列表
+毒战[2020] 未匹配到合适id
+----------地址被限制,稍后重试----------
+none_list 暂存
+-----连续十次失败，等待1小时-----
+[pid: 5303|app: 0|req: 92/114] 190.94.150.158 () {30 vars in 437 bytes} [Tue May 26 14:58:49 2020] GET / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+[pid: 5303|app: 0|req: 93/115] 182.254.52.17 () {36 vars in 637 bytes} [Tue May 26 15:03:51 2020] GET /app/member/show/Json/BaseBall.php?leaguename%3D1 => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+[pid: 5303|app: 0|req: 94/116] 47.96.114.93 () {34 vars in 499 bytes} [Tue May 26 15:41:47 2020] GET /TP/public/index.php => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+[pid: 5306|app: 0|req: 9/117] 47.96.114.93 () {34 vars in 464 bytes} [Tue May 26 15:41:47 2020] GET / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+伤口 未匹配到合适id
+伤口 无豆瓣id数据，存入列表
+超能电竞：传奇一代 未匹配到合适id
+超能电竞：传奇一代 无豆瓣id数据，存入列表
+萌宠奇缘 未匹配到合适id
+----------地址被限制,稍后重试----------
+none_list 暂存
+咸鱼要翻身 未匹配到合适id
+咸鱼要翻身 无豆瓣id数据，存入列表
+春潮 未匹配到合适id
+春潮 无豆瓣id数据，存入列表
+继承2020 未匹配到合适id
+----------地址被限制,稍后重试----------
+none_list 暂存
+牛皮纸袋 未匹配到合适id
+牛皮纸袋 无豆瓣id数据，存入列表
+生死夜2020 未匹配到合适id
+生死夜2020 无豆瓣id数据，存入列表
+蒙眼缉凶 未匹配到合适id
+----------地址被限制,稍后重试----------
+none_list 暂存
+[pid: 5306|app: 0|req: 10/118] 58.247.212.239 () {36 vars in 571 bytes} [Tue May 26 16:00:02 2020] GET /portal/redlion => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 1)
+我们都不满意 未匹配到合适id
+我们都不满意 无豆瓣id数据，存入列表
+女房客2020 未匹配到合适id
+女房客2020 无豆瓣id数据，存入列表
+势不可挡2020 未匹配到合适id
+----------地址被限制,稍后重试----------
+none_list 暂存
+平行宇宙之恋 未匹配到合适id
+平行宇宙之恋 无豆瓣id数据，存入列表
+冬年2020 未匹配到合适id
+冬年2020 无豆瓣id数据，存入列表
+毒战[2020] 未匹配到合适id
+----------地址被限制,稍后重试----------
+none_list 暂存
+连续五次失败，等待30分钟
+----------重新启动查找------------
+伤口 未匹配到合适id
+伤口 无豆瓣id数据，存入列表
+超能电竞：传奇一代 未匹配到合适id
+超能电竞：传奇一代 无豆瓣id数据，存入列表
+萌宠奇缘 未匹配到合适id
+----------地址被限制,稍后重试----------
+none_list 暂存
+[pid: 5303|app: 0|req: 95/119] 116.128.128.41 () {36 vars in 575 bytes} [Tue May 26 16:40:20 2020] GET /admin/login.html => generated 5348 bytes in 2 msecs (HTTP/1.1 200) 6 headers in 319 bytes (1 switches on core 0)
+咸鱼要翻身 未匹配到合适id
+咸鱼要翻身 无豆瓣id数据，存入列表
+春潮 未匹配到合适id
+春潮 无豆瓣id数据，存入列表
+继承2020 未匹配到合适id
+继承2020 无豆瓣id数据，存入列表
+牛皮纸袋 未匹配到合适id
+----------地址被限制,稍后重试----------
+none_list 暂存
+[pid: 5303|app: 0|req: 96/120] 181.114.151.10 () {32 vars in 471 bytes} [Tue May 26 16:43:14 2020] GET / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+生死夜2020 未匹配到合适id
+生死夜2020 无豆瓣id数据，存入列表
+蒙眼缉凶 未匹配到合适id
+蒙眼缉凶 无豆瓣id数据，存入列表
+我们都不满意 未匹配到合适id
+----------地址被限制,稍后重试----------
+none_list 暂存
+女房客2020 未匹配到合适id
+女房客2020 无豆瓣id数据，存入列表
+势不可挡2020 未匹配到合适id
+势不可挡2020 无豆瓣id数据，存入列表
+平行宇宙之恋 未匹配到合适id
+----------地址被限制,稍后重试----------
+none_list 暂存
+冬年2020 未匹配到合适id
+冬年2020 无豆瓣id数据，存入列表
+毒战[2020] 未匹配到合适id
+毒战[2020] 无豆瓣id数据，存入列表
+虫族2020 未匹配到合适id
+----------地址被限制,稍后重试----------
+none_list 暂存
+-----连续十次失败，等待1小时-----
+[pid: 5303|app: 0|req: 97/121] 172.104.108.109 () {34 vars in 391 bytes} [Tue May 26 16:53:59 2020] GET / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+[pid: 5303|app: 0|req: 98/122] 182.254.52.17 () {36 vars in 594 bytes} [Tue May 26 17:47:29 2020] GET /admin/view_log/2020-05-23/ => generated 0 bytes in 1 msecs (HTTP/1.1 302) 6 headers in 180 bytes (1 switches on core 0)
+[pid: 5306|app: 0|req: 11/123] 182.254.52.17 () {38 vars in 637 bytes} [Tue May 26 17:47:29 2020] GET /admin/login.html => generated 5348 bytes in 3 msecs (HTTP/1.1 200) 6 headers in 319 bytes (1 switches on core 0)
+伤口 未匹配到合适id
+伤口 无豆瓣id数据，存入列表
+超能电竞：传奇一代 未匹配到合适id
+超能电竞：传奇一代 无豆瓣id数据，存入列表
+萌宠奇缘 未匹配到合适id
+----------地址被限制,稍后重试----------
+none_list 暂存
+咸鱼要翻身 未匹配到合适id
+咸鱼要翻身 无豆瓣id数据，存入列表
+春潮 未匹配到合适id
+春潮 无豆瓣id数据，存入列表
+继承2020 未匹配到合适id
+----------地址被限制,稍后重试----------
+none_list 暂存
+牛皮纸袋 未匹配到合适id
+牛皮纸袋 无豆瓣id数据，存入列表
+生死夜2020 未匹配到合适id
+生死夜2020 无豆瓣id数据，存入列表
+蒙眼缉凶 未匹配到合适id
+----------地址被限制,稍后重试----------
+none_list 暂存
+我们都不满意 未匹配到合适id
+我们都不满意 无豆瓣id数据，存入列表
+女房客2020 未匹配到合适id
+女房客2020 无豆瓣id数据，存入列表
+势不可挡2020 未匹配到合适id
+----------地址被限制,稍后重试----------
+none_list 暂存
+平行宇宙之恋 未匹配到合适id
+平行宇宙之恋 无豆瓣id数据，存入列表
+冬年2020 未匹配到合适id
+冬年2020 无豆瓣id数据，存入列表
+毒战[2020] 未匹配到合适id
+----------地址被限制,稍后重试----------
+none_list 暂存
+连续五次失败，等待30分钟
+----------重新启动查找------------
+伤口 未匹配到合适id
+伤口 无豆瓣id数据，存入列表
+超能电竞：传奇一代 未匹配到合适id
+超能电竞：传奇一代 无豆瓣id数据，存入列表
+萌宠奇缘 未匹配到合适id
+----------地址被限制,稍后重试----------
+none_list 暂存
+咸鱼要翻身 未匹配到合适id
+咸鱼要翻身 无豆瓣id数据，存入列表
+春潮 未匹配到合适id
+春潮 无豆瓣id数据，存入列表
+继承2020 未匹配到合适id
+----------地址被限制,稍后重试----------
+none_list 暂存
+牛皮纸袋 未匹配到合适id
+牛皮纸袋 无豆瓣id数据，存入列表
+生死夜2020 未匹配到合适id
+生死夜2020 无豆瓣id数据，存入列表
+蒙眼缉凶 未匹配到合适id
+----------地址被限制,稍后重试----------
+none_list 暂存
+我们都不满意 未匹配到合适id
+我们都不满意 无豆瓣id数据，存入列表
+女房客2020 未匹配到合适id
+女房客2020 无豆瓣id数据，存入列表
+势不可挡2020 未匹配到合适id
+----------地址被限制,稍后重试----------
+none_list 暂存
+平行宇宙之恋 未匹配到合适id
+平行宇宙之恋 无豆瓣id数据，存入列表
+冬年2020 未匹配到合适id
+冬年2020 无豆瓣id数据，存入列表
+毒战[2020] 未匹配到合适id
+----------地址被限制,稍后重试----------
+none_list 暂存
+-----连续十次失败，等待1小时-----
+[pid: 5306|app: 0|req: 12/124] 182.254.52.17 () {36 vars in 542 bytes} [Tue May 26 19:23:22 2020] GET / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 1)
+伤口 未匹配到合适id
+伤口 无豆瓣id数据，存入列表
+超能电竞：传奇一代 未匹配到合适id
+超能电竞：传奇一代 无豆瓣id数据，存入列表
+萌宠奇缘 未匹配到合适id
+----------地址被限制,稍后重试----------
+none_list 暂存
+咸鱼要翻身 未匹配到合适id
+咸鱼要翻身 无豆瓣id数据，存入列表
+春潮 未匹配到合适id
+春潮 无豆瓣id数据，存入列表
+继承2020 未匹配到合适id
+----------地址被限制,稍后重试----------
+none_list 暂存
+牛皮纸袋 未匹配到合适id
+牛皮纸袋 无豆瓣id数据，存入列表
+生死夜2020 未匹配到合适id
+生死夜2020 无豆瓣id数据，存入列表
+蒙眼缉凶 未匹配到合适id
+----------地址被限制,稍后重试----------
+none_list 暂存
+我们都不满意 未匹配到合适id
+我们都不满意 无豆瓣id数据，存入列表
+女房客2020 未匹配到合适id
+女房客2020 无豆瓣id数据，存入列表
+势不可挡2020 未匹配到合适id
+----------地址被限制,稍后重试----------
+none_list 暂存
+平行宇宙之恋 未匹配到合适id
+平行宇宙之恋 无豆瓣id数据，存入列表
+冬年2020 未匹配到合适id
+冬年2020 无豆瓣id数据，存入列表
+毒战[2020] 未匹配到合适id
+----------地址被限制,稍后重试----------
+none_list 暂存
+[pid: 5303|app: 0|req: 99/125] 182.254.52.17 () {36 vars in 576 bytes} [Tue May 26 20:06:46 2020] GET /admin/get_rating/ => generated 0 bytes in 1 msecs (HTTP/1.1 302) 6 headers in 180 bytes (1 switches on core 0)
+[pid: 5306|app: 0|req: 13/126] 182.254.52.17 () {38 vars in 628 bytes} [Tue May 26 20:06:46 2020] GET /admin/login.html => generated 5348 bytes in 1 msecs (HTTP/1.1 200) 6 headers in 319 bytes (1 switches on core 0)
+连续五次失败，等待30分钟
+[pid: 5306|app: 0|req: 14/127] 34.75.237.194 () {30 vars in 397 bytes} [Tue May 26 20:29:42 2020] GET /7d01b98ebc13a5b4ff8fb999c841dc16.php => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 1)
+[pid: 5303|app: 0|req: 100/128] 34.75.237.194 () {30 vars in 397 bytes} [Tue May 26 20:29:42 2020] GET /87041BFEA9CBCD27FDD0B2F45B737314.php => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+[pid: 5306|app: 0|req: 15/129] 34.75.237.194 () {30 vars in 397 bytes} [Tue May 26 20:29:43 2020] GET /142f72019210affb5fdb61780df96e63.php => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+[pid: 5304|app: 0|req: 5/130] 34.75.237.194 () {30 vars in 365 bytes} [Tue May 26 20:29:43 2020] GET /phpmyadmin/index.php => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+[pid: 5304|app: 0|req: 6/131] 34.75.237.194 () {30 vars in 365 bytes} [Tue May 26 20:29:44 2020] GET /phpMyAdmin/index.php => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 1)
+[pid: 5306|app: 0|req: 16/132] 128.14.209.250 () {34 vars in 508 bytes} [Tue May 26 20:30:55 2020] GET /login.html => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 1)
+----------重新启动查找------------
+伤口 未匹配到合适id
+伤口 无豆瓣id数据，存入列表
+超能电竞：传奇一代 未匹配到合适id
+超能电竞：传奇一代 无豆瓣id数据，存入列表
+萌宠奇缘 未匹配到合适id
+----------地址被限制,稍后重试----------
+none_list 暂存
+咸鱼要翻身 未匹配到合适id
+咸鱼要翻身 无豆瓣id数据，存入列表
+春潮 未匹配到合适id
+春潮 无豆瓣id数据，存入列表
+继承2020 未匹配到合适id
+----------地址被限制,稍后重试----------
+none_list 暂存
+牛皮纸袋 未匹配到合适id
+牛皮纸袋 无豆瓣id数据，存入列表
+生死夜2020 未匹配到合适id
+生死夜2020 无豆瓣id数据，存入列表
+蒙眼缉凶 未匹配到合适id
+----------地址被限制,稍后重试----------
+none_list 暂存
+我们都不满意 未匹配到合适id
+我们都不满意 无豆瓣id数据，存入列表
+女房客2020 未匹配到合适id
+女房客2020 无豆瓣id数据，存入列表
+势不可挡2020 未匹配到合适id
+----------地址被限制,稍后重试----------
+none_list 暂存
+平行宇宙之恋 未匹配到合适id
+平行宇宙之恋 无豆瓣id数据，存入列表
+冬年2020 未匹配到合适id
+冬年2020 无豆瓣id数据，存入列表
+毒战[2020] 未匹配到合适id
+----------地址被限制,稍后重试----------
+none_list 暂存
+-----连续十次失败，等待1小时-----
+伤口 未匹配到合适id
+伤口 无豆瓣id数据，存入列表
+超能电竞：传奇一代 未匹配到合适id
+超能电竞：传奇一代 无豆瓣id数据，存入列表
+萌宠奇缘 未匹配到合适id
+----------地址被限制,稍后重试----------
+none_list 暂存
+咸鱼要翻身 未匹配到合适id
+咸鱼要翻身 无豆瓣id数据，存入列表
+春潮 未匹配到合适id
+春潮 无豆瓣id数据，存入列表
+继承2020 未匹配到合适id
+----------地址被限制,稍后重试----------
+none_list 暂存
+牛皮纸袋 未匹配到合适id
+牛皮纸袋 无豆瓣id数据，存入列表
+生死夜2020 未匹配到合适id
+生死夜2020 无豆瓣id数据，存入列表
+蒙眼缉凶 未匹配到合适id
+----------地址被限制,稍后重试----------
+none_list 暂存
+我们都不满意 未匹配到合适id
+我们都不满意 无豆瓣id数据，存入列表
+女房客2020 未匹配到合适id
+女房客2020 无豆瓣id数据，存入列表
+势不可挡2020 未匹配到合适id
+----------地址被限制,稍后重试----------
+none_list 暂存
+平行宇宙之恋 未匹配到合适id
+平行宇宙之恋 无豆瓣id数据，存入列表
+冬年2020 未匹配到合适id
+冬年2020 无豆瓣id数据，存入列表
+毒战[2020] 未匹配到合适id
+----------地址被限制,稍后重试----------
+none_list 暂存
+连续五次失败，等待30分钟
+----------重新启动查找------------
+伤口 未匹配到合适id
+----------地址被限制,稍后重试----------
+超能电竞：传奇一代 未匹配到合适id
+超能电竞：传奇一代 无豆瓣id数据，存入列表
+萌宠奇缘 未匹配到合适id
+萌宠奇缘 无豆瓣id数据，存入列表
+咸鱼要翻身 未匹配到合适id
+----------地址被限制,稍后重试----------
+none_list 暂存
+春潮 未匹配到合适id
+春潮 无豆瓣id数据，存入列表
+继承2020 未匹配到合适id
+继承2020 无豆瓣id数据，存入列表
+牛皮纸袋 未匹配到合适id
+----------地址被限制,稍后重试----------
+none_list 暂存
+生死夜2020 未匹配到合适id
+生死夜2020 无豆瓣id数据，存入列表
+蒙眼缉凶 未匹配到合适id
+蒙眼缉凶 无豆瓣id数据，存入列表
+我们都不满意 未匹配到合适id
+----------地址被限制,稍后重试----------
+none_list 暂存
+女房客2020 未匹配到合适id
+女房客2020 无豆瓣id数据，存入列表
+势不可挡2020 未匹配到合适id
+----------地址被限制,稍后重试----------
+none_list 暂存
+-----连续十次失败，等待1小时-----
+[pid: 5303|app: 0|req: 101/133] 183.27.45.190 () {46 vars in 918 bytes} [Tue May 26 23:31:13 2020] GET /admin/view_log/?page=10 => generated 0 bytes in 1 msecs (HTTP/1.1 302) 6 headers in 180 bytes (1 switches on core 0)
+[pid: 5306|app: 0|req: 17/134] 183.27.45.190 () {46 vars in 905 bytes} [Tue May 26 23:31:13 2020] GET /admin/login.html => generated 5348 bytes in 1 msecs (HTTP/1.1 200) 6 headers in 319 bytes (1 switches on core 0)
+[pid: 5306|app: 0|req: 18/135] 183.27.45.190 () {46 vars in 905 bytes} [Tue May 26 23:31:17 2020] GET /video/play/43782/ => generated 13958 bytes in 11 msecs (HTTP/1.1 200) 6 headers in 320 bytes (1 switches on core 1)
+伤口 未匹配到合适id
+伤口 无豆瓣id数据，存入列表
+超能电竞：传奇一代 未匹配到合适id
+超能电竞：传奇一代 无豆瓣id数据，存入列表
+萌宠奇缘 未匹配到合适id
+----------地址被限制,稍后重试----------
+none_list 暂存
+咸鱼要翻身 未匹配到合适id
+咸鱼要翻身 无豆瓣id数据，存入列表
+春潮 未匹配到合适id
+春潮 无豆瓣id数据，存入列表
+继承2020 未匹配到合适id
+----------地址被限制,稍后重试----------
+none_list 暂存
+牛皮纸袋 未匹配到合适id
+牛皮纸袋 无豆瓣id数据，存入列表
+生死夜2020 未匹配到合适id
+生死夜2020 无豆瓣id数据，存入列表
+蒙眼缉凶 未匹配到合适id
+----------地址被限制,稍后重试----------
+none_list 暂存
+[1590508801] logsize: 56634, triggering log-reopen...

@@ -1,0 +1,1544 @@
+[1589558401] ./uwsgi.log reopened.
+[pid: 11746|app: 0|req: 156/220] 195.54.160.121 () {38 vars in 610 bytes} [Sat May 16 00:12:57 2020] POST /api/jsonws/invoke => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+[pid: 11746|app: 0|req: 157/221] 88.132.222.129 () {32 vars in 464 bytes} [Sat May 16 00:15:16 2020] GET / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+----------重新启动查找------------
+出山 未匹配到合适id [{'episode': '', 'img': 'https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2515537070.jpg', 'title': '出山记', 'url': 'https://movie.douban.com/subject/30162172/?suggest=%E5%87%BA%E5%B1%B1', 'type': 'movie', 'year': '2018', 'sub_title': '出山记', 'id': '30162172'}, {'episode': '', 'img': 'https://img9.doubanio.com/view/photo/s_ratio_poster/public/p2327644456.jpg', 'title': '出山', 'url': 'https://movie.douban.com/subject/25966209/?suggest=%E5%87%BA%E5%B1%B1', 'type': 'movie', 'year': '2018', 'sub_title': '出山', 'id': '25966209'}]
+出山 无豆瓣id数据，存入列表
+蝠鲼 30283653 6.2保存成功[douban]
+谎言之城 26916153 7.0保存成功[douban]
+我房即世界 26706826 5.9保存成功[douban]
+如父如母 未匹配到合适id []
+----------地址被限制,稍后重试----------
+敬畏 26785583 6.6保存成功[douban]
+美人鱼战队 未匹配到合适id []
+美人鱼战队 无豆瓣id数据，存入列表
+黑暗2017 未匹配到合适id []
+黑暗2017 无豆瓣id数据，存入列表
+尸囚狱：前篇 未匹配到合适id []
+----------地址被限制,稍后重试----------
+伦德尔 26751651 3.5保存成功[douban]
+以为是老大2金三角风云 未匹配到合适id []
+以为是老大2金三角风云 无豆瓣id数据，存入列表
+扎马 24719134 7.1保存成功[douban]
+地狱之路 30317091 4.2保存成功[douban]
+七岁男友 未匹配到合适id []
+----------地址被限制,稍后重试----------
+炭火仔：勇战巨魔王 27109362 5.7保存成功[douban]
+玩命毒师2 26937224 5.7保存成功[douban]
+大闹天竺 未匹配到合适id [{'episode': '', 'img': 'https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2408307430.jpg', 'title': '大闹天竺', 'url': 'https://movie.douban.com/subject/26389696/?suggest=%E5%A4%A7%E9%97%B9%E5%A4%A9%E7%AB%BA', 'type': 'movie', 'year': '2017', 'sub_title': '大闹天竺', 'id': '26389696'}, {'episode': '', 'img': 'https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2459704691.jpg', 'title': '大闹天竺村', 'url': 'https://movie.douban.com/subject/26966112/?suggest=%E5%A4%A7%E9%97%B9%E5%A4%A9%E7%AB%BA', 'type': 'movie', 'year': '2017', 'sub_title': '大闹天竺村', 'id': '26966112'}]
+大闹天竺 无豆瓣id数据，存入列表
+铁锅传奇 30328673 0保存成功[douban]
+深宫蜜语 未匹配到合适id []
+----------地址被限制,稍后重试----------
+怪物计划 27069641 4.9保存成功[douban]
+死亡棚屋 27082617 3.9保存成功[douban]
+厨霸江湖 未匹配到合适id []
+厨霸江湖 无豆瓣id数据，存入列表
+不能犯 未匹配到合适id [{'episode': '', 'img': 'https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2502941070.jpg', 'title': '不能犯', 'url': 'https://movie.douban.com/subject/26892831/?suggest=%E4%B8%8D%E8%83%BD%E7%8A%AF', 'type': 'movie', 'year': '2017', 'sub_title': '不能犯', 'id': '26892831'}, {'episode': '4', 'img': 'https://img9.doubanio.com/view/photo/s_ratio_poster/public/p2535072915.jpg', 'title': '不能犯', 'url': 'https://movie.douban.com/subject/27186317/?suggest=%E4%B8%8D%E8%83%BD%E7%8A%AF', 'type': 'movie', 'year': '2017', 'sub_title': '不能犯', 'id': '27186317'}]
+----------地址被限制,稍后重试----------
+无尽 26269726 6.9保存成功[douban]
+爷爷死了 27065128 7.1保存成功[douban]
+高幻想 30141538 5.0保存成功[douban]
+金沙血 26993306 3.6保存成功[douban]
+沙海番外之蚌人 未匹配到合适id []
+沙海番外之蚌人 无豆瓣id数据，存入列表
+蓝翔传奇 未匹配到合适id []
+----------地址被限制,稍后重试----------
+暗流 未匹配到合适id []
+----------地址被限制,稍后重试----------
+剧场誓约 未匹配到合适id []
+----------地址被限制,稍后重试----------
+叛教 未匹配到合适id []
+----------地址被限制,稍后重试----------
+古堡 未匹配到合适id []
+----------地址被限制,稍后重试----------
+连续五次失败，等待30分钟
+----------重新启动查找------------
+如父如母 未匹配到合适id []
+----------地址被限制,稍后重试----------
+[pid: 11746|app: 0|req: 158/222] 80.240.104.10 () {32 vars in 463 bytes} [Sat May 16 01:55:36 2020] GET / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+尸囚狱：前篇 未匹配到合适id []
+----------地址被限制,稍后重试----------
+[pid: 11746|app: 0|req: 159/223] 194.187.154.72 () {32 vars in 471 bytes} [Sat May 16 02:03:25 2020] GET / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+[pid: 11746|app: 0|req: 160/224] 61.241.50.63 () {36 vars in 567 bytes} [Sat May 16 02:06:19 2020] GET /video/type/4/ => generated 33231 bytes in 110 msecs (HTTP/1.1 200) 6 headers in 320 bytes (1 switches on core 0)
+七岁男友 未匹配到合适id []
+----------地址被限制,稍后重试----------
+深宫蜜语 未匹配到合适id []
+----------地址被限制,稍后重试----------
+不能犯 未匹配到合适id []
+----------地址被限制,稍后重试----------
+连续五次失败，等待30分钟
+[pid: 11746|app: 0|req: 161/225] 182.254.52.17 () {36 vars in 633 bytes} [Sat May 16 02:24:53 2020] GET /video/type/1/?year%3D%26area%3D%26rating%3D6.0 => generated 37098 bytes in 213 msecs (HTTP/1.1 200) 6 headers in 320 bytes (1 switches on core 0)
+[pid: 11746|app: 0|req: 162/226] 5.22.154.11 () {32 vars in 468 bytes} [Sat May 16 02:37:34 2020] GET / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+----------重新启动查找------------
+如父如母 未匹配到合适id []
+----------地址被限制,稍后重试----------
+尸囚狱：前篇 未匹配到合适id []
+----------地址被限制,稍后重试----------
+七岁男友 未匹配到合适id []
+----------地址被限制,稍后重试----------
+深宫蜜语 未匹配到合适id []
+----------地址被限制,稍后重试----------
+不能犯 未匹配到合适id []
+----------地址被限制,稍后重试----------
+连续五次失败，等待30分钟
+----------重新启动查找------------
+如父如母 未匹配到合适id []
+----------地址被限制,稍后重试----------
+[pid: 11746|app: 0|req: 163/227] 182.254.52.17 () {36 vars in 576 bytes} [Sat May 16 03:56:00 2020] GET /video/play/85860/ => generated 12426 bytes in 5 msecs (HTTP/1.1 200) 6 headers in 320 bytes (1 switches on core 0)
+尸囚狱：前篇 未匹配到合适id []
+----------地址被限制,稍后重试----------
+七岁男友 未匹配到合适id []
+----------地址被限制,稍后重试----------
+深宫蜜语 未匹配到合适id []
+----------地址被限制,稍后重试----------
+[pid: 11746|app: 0|req: 164/228] 58.247.212.239 () {36 vars in 555 bytes} [Sat May 16 04:17:01 2020] GET /video/ => generated 61144 bytes in 344 msecs (HTTP/1.1 200) 6 headers in 320 bytes (1 switches on core 0)
+不能犯 未匹配到合适id []
+----------地址被限制,稍后重试----------
+连续五次失败，等待30分钟
+----------重新启动查找------------
+如父如母 未匹配到合适id []
+----------地址被限制,稍后重试----------
+尸囚狱：前篇 未匹配到合适id []
+----------地址被限制,稍后重试----------
+七岁男友 未匹配到合适id []
+----------地址被限制,稍后重试----------
+深宫蜜语 未匹配到合适id []
+----------地址被限制,稍后重试----------
+不能犯 未匹配到合适id []
+----------地址被限制,稍后重试----------
+连续五次失败，等待30分钟
+[pid: 11746|app: 0|req: 165/229] 183.192.179.16 () {36 vars in 569 bytes} [Sat May 16 05:32:25 2020] GET /video/type/2/ => generated 39197 bytes in 159 msecs (HTTP/1.1 200) 6 headers in 320 bytes (1 switches on core 0)
+[pid: 11746|app: 0|req: 166/230] 195.54.160.121 () {36 vars in 624 bytes} [Sat May 16 05:40:59 2020] GET /vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+[pid: 11746|app: 0|req: 167/231] 182.254.52.17 () {36 vars in 568 bytes} [Sat May 16 05:42:58 2020] GET /video/type/3/ => generated 32933 bytes in 99 msecs (HTTP/1.1 200) 6 headers in 320 bytes (1 switches on core 0)
+[pid: 11746|app: 0|req: 168/232] 61.241.50.63 () {36 vars in 571 bytes} [Sat May 16 05:48:34 2020] GET /admin/view_log/ => generated 0 bytes in 1 msecs (HTTP/1.1 302) 6 headers in 180 bytes (1 switches on core 0)
+[pid: 11748|app: 0|req: 19/233] 61.241.50.63 () {38 vars in 625 bytes} [Sat May 16 05:48:34 2020] GET /admin/login.html => generated 5348 bytes in 1 msecs (HTTP/1.1 200) 6 headers in 319 bytes (1 switches on core 0)
+----------重新启动查找------------
+如父如母 未匹配到合适id []
+----------地址被限制,稍后重试----------
+尸囚狱：前篇 未匹配到合适id []
+----------地址被限制,稍后重试----------
+七岁男友 27144885 0保存成功[douban]
+深宫蜜语 27077550 0保存成功[douban]
+不能犯 未匹配到合适id [{'episode': '', 'img': 'https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2502941070.jpg', 'title': '不能犯', 'url': 'https://movie.douban.com/subject/26892831/?suggest=%E4%B8%8D%E8%83%BD%E7%8A%AF', 'type': 'movie', 'year': '2017', 'sub_title': '不能犯', 'id': '26892831'}, {'episode': '4', 'img': 'https://img9.doubanio.com/view/photo/s_ratio_poster/public/p2535072915.jpg', 'title': '不能犯', 'url': 'https://movie.douban.com/subject/27186317/?suggest=%E4%B8%8D%E8%83%BD%E7%8A%AF', 'type': 'movie', 'year': '2017', 'sub_title': '不能犯', 'id': '27186317'}]
+不能犯 无豆瓣id数据，存入列表
+蓝翔传奇 未匹配到合适id []
+----------地址被限制,稍后重试----------
+暗流 26735287 5.7保存成功[douban]
+剧场誓约 27194981 0保存成功[douban]
+叛教 27123742 6.3保存成功[douban]
+古堡 未匹配到合适id []
+古堡 无豆瓣id数据，存入列表
+又见钟无艳 未匹配到合适id []
+----------地址被限制,稍后重试----------
+伴你同行 未匹配到合适id [{'episode': '', 'img': 'https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2526153751.jpg', 'title': '伴你同行', 'url': 'https://movie.douban.com/subject/30256761/?suggest=%E4%BC%B4%E4%BD%A0%E5%90%8C%E8%A1%8C', 'type': 'movie', 'year': '2017', 'sub_title': 'Chalay Thay Sath', 'id': '30256761'}, {'episode': '', 'img': 'https://img9.doubanio.com/view/photo/s_ratio_poster/public/p2594218556.jpg', 'title': '伴你同行', 'url': 'https://movie.douban.com/subject/34996627/?suggest=%E4%BC%B4%E4%BD%A0%E5%90%8C%E8%A1%8C', 'type': 'movie', 'year': '2017', 'sub_title': 'You Will Never Walk Alone', 'id': '34996627'}]
+伴你同行 无豆瓣id数据，存入列表
+违命 26884373 6.9保存成功[douban]
+坂本龙一：终曲 26984189 8.8保存成功[douban]
+刺猬湖 27115509 5.8保存成功[douban]
+镭射小队2 未匹配到合适id []
+----------地址被限制,稍后重试----------
+罗曼蒂克振兴史 未匹配到合适id []
+罗曼蒂克振兴史 无豆瓣id数据，存入列表
+喜欢你 26816383 6.8保存成功[douban]
+泰国派 30242619 5.5保存成功[douban]
+大传说 未匹配到合适id []
+----------地址被限制,稍后重试----------
+婚活巡航 26888537 4.8保存成功[douban]
+释放 26900753 6.0保存成功[douban]
+请唤醒我 27621704 7.0保存成功[douban]
+书店 25728612 7.7保存成功[douban]
+女神大人 26989732 5.3保存成功[douban]
+洛杉矶大劫难 26791673 4.7保存成功[douban]
+撒旦的奴隶 未匹配到合适id []
+----------地址被限制,稍后重试----------
+幸福时光 30289512 5.6保存成功[douban]
+姜戈 26948950 6.4保存成功[douban]
+桃出天际 未匹配到合适id []
+桃出天际 无豆瓣id数据，存入列表
+啦啦队之舞2017 未匹配到合适id []
+----------地址被限制,稍后重试----------
+[pid: 11748|app: 0|req: 20/234] 162.243.137.118 () {34 vars in 407 bytes} [Sat May 16 06:39:44 2020] GET /hudson => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 1)
+山门 未匹配到合适id []
+山门 无豆瓣id数据，存入列表
+上瘾 27056797 5.4保存成功[douban]
+易燃的孩子 26767858 6.2保存成功[douban]
+舍友大作战 27052621 0保存成功[douban]
+宅男爱上她 27055705 0保存成功[douban]
+梅根·利维 26610786 6.8保存成功[douban]
+遗产2017 未匹配到合适id []
+遗产2017 无豆瓣id数据，存入列表
+异教徒 未匹配到合适id []
+----------地址被限制,稍后重试----------
+逃亡 未匹配到合适id []
+逃亡 无豆瓣id数据，存入列表
+好孩子 26753452 6.5保存成功[douban]
+窥私之危险接触 26909949 0保存成功[douban]
+恐怖理发店 26865690 2.3保存成功[douban]
+京城四少2017 未匹配到合适id []
+----------地址被限制,稍后重试----------
+第7秒营救 27034607 0保存成功[douban]
+大宋绯闻录 26894691 3.3保存成功[douban]
+丛林生死门 26884498 0保存成功[douban]
+八万里 未匹配到合适id []
+八万里 无豆瓣id数据，存入列表
+校园猛诡传说 未匹配到合适id []
+----------地址被限制,稍后重试----------
+捍卫者 未匹配到合适id [{'episode': '', 'img': 'https://img1.doubanio.com/view/photo/s_ratio_poster/public/p2515803508.jpg', 'title': '捍卫者', 'url': 'https://movie.douban.com/subject/27063335/?suggest=%E6%8D%8D%E5%8D%AB%E8%80%85', 'type': 'movie', 'year': '2017', 'sub_title': '捍卫者', 'id': '27063335'}, {'episode': '8', 'img': 'https://img1.doubanio.com/view/photo/s_ratio_poster/public/p2465515328.jpg', 'title': '捍卫者联盟', 'url': 'https://movie.douban.com/subject/26293633/?suggest=%E6%8D%8D%E5%8D%AB%E8%80%85', 'type': 'movie', 'year': '2017', 'sub_title': 'The Defenders', 'id': '26293633'}]
+捍卫者 无豆瓣id数据，存入列表
+我们相爱的时刻 30263956 5.2保存成功[douban]
+智勇三响炮 27662879 0保存成功[douban]
+无聊现代生活 26392635 6.4保存成功[douban]
+好警察坏警察2 27046401 5.8保存成功[douban]
+鬼故事 26721644 7.2保存成功[douban]
+黄鸟 25889684 6.2保存成功[douban]
+野性侵袭 26613118 3.6保存成功[douban]
+生存家族 未匹配到合适id []
+----------地址被限制,稍后重试----------
+勇气森林小男孩 27184965 0保存成功[douban]
+刮目相看 未匹配到合适id []
+刮目相看 无豆瓣id数据，存入列表
+哈啰义乌 26574989 0保存成功[douban]
+闺蜜之“涩”女郎 27191646 0保存成功[douban]
+骑士2017 未匹配到合适id []
+----------地址被限制,稍后重试----------
+洪德罗斯 27021897 8.0保存成功[douban]
+射手2017 未匹配到合适id []
+射手2017 无豆瓣id数据，存入列表
+混社会3之大庆故事 未匹配到合适id []
+混社会3之大庆故事 无豆瓣id数据，存入列表
+混社会4雾色迷城 未匹配到合适id []
+----------地址被限制,稍后重试----------
+该死的歌德3 26995787 6.5保存成功[douban]
+噬童魔 27062889 5.1保存成功[douban]
+米花之味 27077266 7.5保存成功[douban]
+突破极限 27200835 7.3保存成功[douban]
+高山 未匹配到合适id []
+高山 无豆瓣id数据，存入列表
+皮小子斯皮鲁 未匹配到合适id []
+----------地址被限制,稍后重试----------
+夏日将止 24875520 5.7保存成功[douban]
+蓝色天使 未匹配到合适id []
+蓝色天使 无豆瓣id数据，存入列表
+撞邪31号 27063551 2.6保存成功[douban]
+诱惑街头 26798953 0保存成功[douban]
+能量唤醒 未匹配到合适id []
+----------地址被限制,稍后重试----------
+记忆重现 20490909 6.2保存成功[douban]
+美丽的人 未匹配到合适id [{'episode': '', 'img': 'https://img1.doubanio.com/view/photo/s_ratio_poster/public/p2455275948.jpg', 'title': '美丽的人', 'url': 'https://movie.douban.com/subject/27019575/?suggest=%E7%BE%8E%E4%B8%BD%E7%9A%84%E4%BA%BA', 'type': 'movie', 'year': '2017', 'sub_title': 'うつくしいひと サバ？', 'id': '27019575'}, {'episode': '', 'img': 'https://img1.doubanio.com/view/photo/s_ratio_poster/public/p2165588548.jpg', 'title': '美丽的人', 'url': 'https://movie.douban.com/subject/25807929/?suggest=%E7%BE%8E%E4%B8%BD%E7%9A%84%E4%BA%BA', 'type': 'movie', 'year': '2017', 'sub_title': 'The Beautiful Ones', 'id': '25807929'}]
+美丽的人 无豆瓣id数据，存入列表
+致命穿越 26965135 0保存成功[douban]
+牧野诡事之神仙眼 未匹配到合适id []
+----------地址被限制,稍后重试----------
+少女侦探社 未匹配到合适id []
+少女侦探社 无豆瓣id数据，存入列表
+狂妃千寻 未匹配到合适id []
+狂妃千寻 无豆瓣id数据，存入列表
+电影大亨之横店风云 未匹配到合适id []
+----------地址被限制,稍后重试----------
+嘻哈江湖 27041516 0保存成功[douban]
+误会啦 27047881 0保存成功[douban]
+无名者传说I：异能觉醒 27043587 0保存成功[douban]
+天降机器女仆 27042543 0保存成功[douban]
+噬梦者之超能雇佣兵 未匹配到合适id []
+噬梦者之超能雇佣兵 无豆瓣id数据，存入列表
+深圳梦 27052628 0保存成功[douban]
+花开那时 27052633 0保存成功[douban]
+黑白无间 未匹配到合适id []
+----------地址被限制,稍后重试----------
+爱在囧途 27052625 0保存成功[douban]
+魔游纪3：天都暗潮 27006227 5.2保存成功[douban]
+我的蛇精女友 26958442 5.8保存成功[douban]
+唐伯虎之幻变奇缘 26895284 0保存成功[douban]
+噢，露西！ 26938058 7.1保存成功[douban]
+男狐聊斋2兰若寺 未匹配到合适id []
+----------地址被限制,稍后重试----------
+家[韩版] 未匹配到合适id []
+家[韩版] 无豆瓣id数据，存入列表
+黄金出口 26788584 6.6保存成功[douban]
+一袋弹子 26936217 8.3保存成功[douban]
+总裁在上9：生死恋 27029423 0保存成功[douban]
+总裁在上8：偏执爱成 27021314 0保存成功[douban]
+总裁在上7：遥远的她 27016158 0保存成功[douban]
+总裁在上6：好心分手 27016159 0保存成功[douban]
+总裁在上5：继承者的爱恋 27005803 0保存成功[douban]
+总裁在上4：总裁的专属守护 未匹配到合适id []
+----------地址被限制,稍后重试----------
+[pid: 11746|app: 0|req: 169/235] 107.6.150.242 () {34 vars in 507 bytes} [Sat May 16 08:00:10 2020] GET /login.html => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+总裁在上3：换子疑云 26995443 0保存成功[douban]
+总裁在上2：恶魔情人 26990403 0保存成功[douban]
+总裁在上1初见初念 26884512 3.2保存成功[douban]
+指甲刀人魔 26352435 4.3保存成功[douban]
+永生猎杀 27000280 0保存成功[douban]
+排华法案 27030930 7.4保存成功[douban]
+玛蒂尔达 26739506 6.5保存成功[douban]
+公主成人礼 27042585 6.3保存成功[douban]
+澳门往事之虎龙斗 27054622 0保存成功[douban]
+意识强殖 未匹配到合适id []
+----------地址被限制,稍后重试----------
+挟刀揉手 27606997 8.3保存成功[douban]
+萌犬好声音2 27062191 6.1保存成功[douban]
+侦探韩森 27002107 5.0保存成功[douban]
+为爱担当 26969096 0保存成功[douban]
+绝杀(爱奇艺独播) 未匹配到合适id []
+绝杀(爱奇艺独播) 无豆瓣id数据，存入列表
+欢乐喜剧人 未匹配到合适id [{'episode': '', 'img': 'https://img1.doubanio.com/view/photo/s_ratio_poster/public/p2449680079.jpg', 'title': '欢乐喜剧人', 'url': 'https://movie.douban.com/subject/26850326/?suggest=%E6%AC%A2%E4%B9%90%E5%96%9C%E5%89%A7%E4%BA%BA', 'type': 'movie', 'year': '2017', 'sub_title': '欢乐喜剧人', 'id': '26850326'}, {'episode': '12', 'img': 'https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2411700673.jpg', 'title': '欢乐喜剧人 第三季', 'url': 'https://movie.douban.com/subject/26785171/?suggest=%E6%AC%A2%E4%B9%90%E5%96%9C%E5%89%A7%E4%BA%BA', 'type': 'movie', 'year': '2017', 'sub_title': '欢乐喜剧人 第三季', 'id': '26785171'}]
+欢乐喜剧人 无豆瓣id数据，存入列表
+非凡任务 26616690 6.3保存成功[douban]
+精灵保姆 未匹配到合适id []
+----------地址被限制,稍后重试----------
+米拉达 26986000 7.6保存成功[douban]
+青春辞典之毕业季 26966427 0保存成功[douban]
+病友们 26951690 7.1保存成功[douban]
+战境：火线突围 未匹配到合适id []
+战境：火线突围 无豆瓣id数据，存入列表
+比老虎可怕的冬季客人 未匹配到合适id []
+----------地址被限制,稍后重试----------
+灵殇 27025795 3.6保存成功[douban]
+蒂娜 26928128 7.6保存成功[douban]
+魔游纪5：宿命之争 27007098 4.3保存成功[douban]
+魔游纪4：白骨之姬 27007097 5.3保存成功[douban]
+魔游纪1：盘古之心 26948479 5.5保存成功[douban]
+魔游纪2：异乡奇遇 未匹配到合适id []
+----------地址被限制,稍后重试----------
+魔游纪6：一瞬决战 27007099 5.3保存成功[douban]
+西小河的夏天 26799232 6.8保存成功[douban]
+海德女士 26633218 5.5保存成功[douban]
+吻我！ 27046623 6.2保存成功[douban]
+我的女朋友男朋友 未匹配到合适id [{'episode': '', 'img': 'https://img9.doubanio.com/view/photo/s_ratio_poster/public/p2501880115.jpg', 'title': '我的女朋友男朋友', 'url': 'https://movie.douban.com/subject/27073736/?suggest=%E6%88%91%E7%9A%84%E5%A5%B3%E6%9C%8B%E5%8F%8B%E7%94%B7%E6%9C%8B%E5%8F%8B', 'type': 'movie', 'year': '2017', 'sub_title': 'Anchor and Hope', 'id': '27073736'}, {'episode': '15', 'img': 'https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2494928802.jpg', 'title': '我女朋友的男朋友2', 'url': 'https://movie.douban.com/subject/27103771/?suggest=%E6%88%91%E7%9A%84%E5%A5%B3%E6%9C%8B%E5%8F%8B%E7%94%B7%E6%9C%8B%E5%8F%8B', 'type': 'movie', 'year': '2017', 'sub_title': '我女朋友的男朋友2', 'id': '27103771'}, {'episode': '16', 'img': 'https://img9.doubanio.com/view/photo/s_ratio_poster/public/p2461024174.jpg', 'title': '我女朋友的男朋友', 'url': 'https://movie.douban.com/subject/26873744/?suggest=%E6%88%91%E7%9A%84%E5%A5%B3%E6%9C%8B%E5%8F%8B%E7%94%B7%E6%9C%8B%E5%8F%8B', 'type': 'movie', 'year': '2017', 'sub_title': '我女朋友的男朋友', 'id': '26873744'}]
+我的女朋友男朋友 无豆瓣id数据，存入列表
+火花 未匹配到合适id []
+----------地址被限制,稍后重试----------
+觉醒：仿生浩劫 27205163 0保存成功[douban]
+黑疯婆子的万圣节2 27035416 4.3保存成功[douban]
+美女与猎犬 27018320 7.6保存成功[douban]
+昼颜 26877106 6.4保存成功[douban]
+卡特效应 27135952 7.5保存成功[douban]
+指定被害者 未匹配到合适id []
+----------地址被限制,稍后重试----------
+一天零一夜 27029569 0保存成功[douban]
+凶猛的项链 未匹配到合适id []
+凶猛的项链 无豆瓣id数据，存入列表
+仙医神厨3 27039043 0保存成功[douban]
+仙医神厨2 26969321 0保存成功[douban]
+西游之御弟哥哥 27039106 0保存成功[douban]
+午夜逃杀 未匹配到合适id []
+----------地址被限制,稍后重试----------
+我们。 未匹配到合适id []
+我们。 无豆瓣id数据，存入列表
+童颜赌徒 27039098 0保存成功[douban]
+生化危机：终章 未匹配到合适id []
+生化危机：终章 无豆瓣id数据，存入列表
+情迷探长 未匹配到合适id []
+----------地址被限制,稍后重试----------
+青春年华 27039096 0保存成功[douban]
+奇葩三人行 27038994 0保存成功[douban]
+媚娘造畜 27035375 0保存成功[douban]
+绝色行动之克隆特攻 27052445 0保存成功[douban]
+回乡偶遇 27044133 0保存成功[douban]
+换青春 未匹配到合适id []
+换青春 无豆瓣id数据，存入列表
+后悔的直跺脚 27039097 0保存成功[douban]
+红在囧途 26954011 0保存成功[douban]
+簋街的鬼 未匹配到合适id [{'episode': '', 'img': 'https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2458358041.jpg', 'title': '簋街的鬼2', 'url': 'https://movie.douban.com/subject/27037497/?suggest=%E7%B0%8B%E8%A1%97%E7%9A%84%E9%AC%BC', 'type': 'movie', 'year': '2017', 'sub_title': '簋街的鬼2', 'id': '27037497'}, {'episode': '', 'img': 'https://img9.doubanio.com/view/photo/s_ratio_poster/public/p2432463846.jpg', 'title': '簋街的鬼', 'url': 'https://movie.douban.com/subject/26979509/?suggest=%E7%B0%8B%E8%A1%97%E7%9A%84%E9%AC%BC', 'type': 'movie', 'year': '2017', 'sub_title': '簋街的鬼', 'id': '26979509'}]
+----------地址被限制,稍后重试----------
+狐步舞 26756258 7.8保存成功[douban]
+宽恕2017 未匹配到合适id []
+宽恕2017 无豆瓣id数据，存入列表
+拳击场故事 26852891 5.7保存成功[douban]
+2036来历不明 27004090 4.8保存成功[douban]
+最后的肖像 未匹配到合适id []
+----------地址被限制,稍后重试----------
+叙利亚的哭声 26964229 7.9保存成功[douban]
+最后的食谱 麒麟之舌的记忆 26837951 7.3保存成功[douban]
+粗麦面疙瘩 27195601 6.8保存成功[douban]
+他不是你的戴蒙 27060154 6.8保存成功[douban]
+克莱尔的相机 26791627 6.4保存成功[douban]
+鬼话怪谈·祥云寺 26903992 5.8保存成功[douban]
+赶尽杀绝 26881142 5.0保存成功[douban]
+寻魔神探之换脸惊情 27003656 0保存成功[douban]
+校园流星雨 27021877 0保存成功[douban]
+我的珍宝 未匹配到合适id []
+----------地址被限制,稍后重试----------
+沙堡 25884712 6.6保存成功[douban]
+酷儿鸭 未匹配到合适id []
+酷儿鸭 无豆瓣id数据，存入列表
+极品伏妖师 27034963 0保存成功[douban]
+海军陆战队员5：杀戮战场 26876161 4.7保存成功[douban]
+不正常人类研究中心 未匹配到合适id []
+----------地址被限制,稍后重试----------
+[pid: 11746|app: 0|req: 170/236] 186.226.216.92 () {32 vars in 464 bytes} [Sat May 16 09:21:56 2020] GET / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+兵心无悔 27029397 0保存成功[douban]
+北京遇上唐伯虎 27008585 0保存成功[douban]
+齐木楠雄的灾难 真人版 26425035 5.7保存成功[douban]
+梦想公寓 27029398 0保存成功[douban]
+好事行龙 26956363 0保存成功[douban]
+致命纪录 27005775 0保存成功[douban]
+时光扇 未匹配到合适id []
+----------地址被限制,稍后重试----------
+[pid: 11746|app: 0|req: 171/237] 112.96.134.253 () {42 vars in 911 bytes} [Sat May 16 09:29:35 2020] GET /video/play/51726/1-11.html => generated 15552 bytes in 7 msecs (HTTP/1.1 200) 6 headers in 320 bytes (1 switches on core 0)
+[pid: 11746|app: 0|req: 172/238] 112.96.134.253 () {42 vars in 902 bytes} [Sat May 16 09:29:47 2020] GET /admin/view_log/?page=1 => generated 21921 bytes in 38 msecs (HTTP/1.1 200) 5 headers in 152 bytes (1 switches on core 0)
+[pid: 11746|app: 0|req: 173/239] 112.96.134.253 () {44 vars in 961 bytes} [Sat May 16 09:30:09 2020] GET /admin/view_log/?page=4 => generated 20782 bytes in 39 msecs (HTTP/1.1 200) 5 headers in 152 bytes (1 switches on core 0)
+电竞高手之春风得意 27034976 0保存成功[douban]
+逆光天使 26760445 6.8保存成功[douban]
+水浒恶人传之黄金七镖客 27030617 5.8保存成功[douban]
+顺风鱼 30234461 0保存成功[douban]
+芭芭拉 26761939 6.8保存成功[douban]
+[pid: 11746|app: 0|req: 174/240] 112.96.134.253 () {44 vars in 961 bytes} [Sat May 16 09:31:05 2020] GET /admin/view_log/?page=3 => generated 21631 bytes in 38 msecs (HTTP/1.1 200) 5 headers in 152 bytes (1 switches on core 0)
+大逃杀 26979529 0保存成功[douban]
+主播食神 27059315 0保存成功[douban]
+咱们分手吧 未匹配到合适id []
+咱们分手吧 无豆瓣id数据，存入列表
+怨灵宿舍之人偶老师 未匹配到合适id []
+----------地址被限制,稍后重试----------
+[pid: 11746|app: 0|req: 175/241] 182.254.52.17 () {36 vars in 542 bytes} [Sat May 16 09:35:50 2020] GET / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+怨灵宿舍之白纸女生 26948814 2.2保存成功[douban]
+有完没完 26828019 5.4保存成功[douban]
+商界 26586692 0保存成功[douban]
+玄笔录前传之七苦 27042559 0保存成功[douban]
+邪王重生 27059316 0保存成功[douban]
+小阴谋大爱情 未匹配到合适id []
+----------地址被限制,稍后重试----------
+男模的秘密 27040879 0保存成功[douban]
+玛格丽特的春天 26961684 2.9保存成功[douban]
+轮回日 未匹配到合适id [{'episode': '', 'img': 'https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2495758820.jpg', 'title': '轮回日2', 'url': 'https://movie.douban.com/subject/27099254/?suggest=%E8%BD%AE%E5%9B%9E%E6%97%A5', 'type': 'movie', 'year': '2017', 'sub_title': '轮回日2', 'id': '27099254'}, {'episode': '', 'img': 'https://img1.doubanio.com/f/movie/b6dc761f5e4cf04032faa969826986efbecd54bb/pics/movie/movie_default_small.png', 'title': '轮回日', 'url': 'https://movie.douban.com/subject/27059320/?suggest=%E8%BD%AE%E5%9B%9E%E6%97%A5', 'type': 'movie', 'year': '2017', 'sub_title': '轮回日', 'id': '27059320'}]
+轮回日 无豆瓣id数据，存入列表
+绑架者 26602933 4.9保存成功[douban]
+爱乐之城 未匹配到合适id []
+----------地址被限制,稍后重试----------
+致命旅行 27034625 0保存成功[douban]
+因果之恐怖教室 27044121 0保存成功[douban]
+午夜办公室 未匹配到合适id []
+午夜办公室 无豆瓣id数据，存入列表
+全能天团 27020939 0保存成功[douban]
+秘藏传说之长生姬 未匹配到合适id []
+----------地址被限制,稍后重试----------
+上帝：塞伦盖蒂 27084320 7.6保存成功[douban]
+凶宅惊魂 30162568 4.8保存成功[douban]
+复仇 未匹配到合适id []
+复仇 无豆瓣id数据，存入列表
+天竺蓝调 3736405 4.8保存成功[douban]
+重塑马文 未匹配到合适id []
+----------地址被限制,稍后重试----------
+卖笑的蒂姆 26920328 6.9保存成功[douban]
+母狗 26961909 4.9保存成功[douban]
+命运咖啡馆 27202889 6.3保存成功[douban]
+睡沙发的人 27062994 7.8保存成功[douban]
+光影之战 27155186 0保存成功[douban]
+玄笔录前传之异域魔道 27042503 0保存成功[douban]
+星岛之恋 未匹配到合适id []
+----------地址被限制,稍后重试----------
+我的吸血鬼学姐 27049044 0保存成功[douban]
+王牌游戏之情人劫 27052282 0保存成功[douban]
+王的记事簿 26636807 6.6保存成功[douban]
+烧烤江湖 未匹配到合适id []
+烧烤江湖 无豆瓣id数据，存入列表
+山炮奇遇记之魏三出城 未匹配到合适id []
+----------地址被限制,稍后重试----------
+全民道士 未匹配到合适id []
+全民道士 无豆瓣id数据，存入列表
+欺诈圣手 6875268 6.5保存成功[douban]
+迷雾2017 27059305 0保存成功[douban]
+迷失战纪 27059310 0保存成功[douban]
+美女总裁的贴身特工 27059306 0保存成功[douban]
+冒牌男神萌女侠 27052635 0保存成功[douban]
+猫妖传奇 27054538 0保存成功[douban]
+克罗索巨兽 未匹配到合适id []
+----------地址被限制,稍后重试----------
+[pid: 11746|app: 0|req: 176/242] 183.136.225.57 () {34 vars in 456 bytes} [Sat May 16 10:21:08 2020] GET / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+尖叫耐撕男女之恶犬女友 27047919 0保存成功[douban]
+寄居少女 27059302 0保存成功[douban]
+极度恐惧之演员 27054768 0保存成功[douban]
+魂飞魔路 26394105 0保存成功[douban]
+黑客风云 27052647 0保存成功[douban]
+梵天秘咒 27059311 0保存成功[douban]
+范先生的十里桃花开 27054557 0保存成功[douban]
+订制男友 27054033 4.4保存成功[douban]
+木星之卫 26949578 6.3保存成功[douban]
+南瓜与美乃滋 未匹配到合适id []
+----------地址被限制,稍后重试----------
+盲/失明恋曲 未匹配到合适id []
+盲/失明恋曲 无豆瓣id数据，存入列表
+贞子大战碟仙 27037503 0保存成功[douban]
+人生果实 26874505 9.5保存成功[douban]
+女劫 26312104 5.5保存成功[douban]
+2018台中跨年丽宝后里现场 未匹配到合适id []
+----------地址被限制,稍后重试----------
+2018台北high新年城 未匹配到合适id []
+2018台北high新年城 无豆瓣id数据，存入列表
+JK忍者女孩 26945863 0保存成功[douban]
+黑蔷薇：刑事课强行犯系神木恭子 26969671 6.4保存成功[douban]
+聊天区 27093748 0保存成功[douban]
+查维拉 26969267 7.7保存成功[douban]
+西关大屋 27153690 0保存成功[douban]
+心灵暖阳 26836810 6.5保存成功[douban]
+隐形守护者 未匹配到合适id []
+----------地址被限制,稍后重试----------
+阳光夏令营 26765024 0保存成功[douban]
+柯达克罗姆胶卷 21349343 7.7保存成功[douban]
+六月与弓箭 26996771 3.6保存成功[douban]
+恋恋有声 26920219 3.2保存成功[douban]
+爱情冻住了 未匹配到合适id []
+爱情冻住了 无豆瓣id数据，存入列表
+爱情对赌 26958457 0保存成功[douban]
+傲娇与偏见 26644002 4.8保存成功[douban]
+东北往事之痞子训练营2 27054533 0保存成功[douban]
+诡眼 未匹配到合适id []
+----------地址被限制,稍后重试----------
+合约男女 26425081 4.4保存成功[douban]
+记忆边缘 27059318 0保存成功[douban]
+鬼面车神 27052579 0保存成功[douban]
+中医神探 27003533 0保存成功[douban]
+爱也有阿禾 未匹配到合适id []
+----------地址被限制,稍后重试----------
+[pid: 11746|app: 0|req: 177/243] 103.54.31.232 () {32 vars in 464 bytes} [Sat May 16 10:53:14 2020] GET / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+极限拯救 未匹配到合适id []
+极限拯救 无豆瓣id数据，存入列表
+记得我 26657440 5.7保存成功[douban]
+爱上你主播 27617848 0保存成功[douban]
+八武将 27157737 0保存成功[douban]
+妈妈的笔记本: 记忆的配方 未匹配到合适id []
+妈妈的笔记本: 记忆的配方 无豆瓣id数据，存入列表
+彪哥闯奉天之做梦没想到 30181439 3.7保存成功[douban]
+汉普斯特德公园 26792576 7.1保存成功[douban]
+爱，不由自主 未匹配到合适id []
+----------地址被限制,稍后重试----------
+异像博士 27064798 0保存成功[douban]
+心火2017 26972574 0保存成功[douban]
+温暖如故的日子 27059326 0保存成功[douban]
+天才少年之冬令营迷局 27064796 0保存成功[douban]
+世界之外 26318239 5.8保存成功[douban]
+情难自禁 27068227 0保存成功[douban]
+空手戏白狼 27064797 0保存成功[douban]
+畸形异能 27064795 0保存成功[douban]
+壶说扒盗 27086155 0保存成功[douban]
+诡婴 27034699 0保存成功[douban]
+东京怪谈 未匹配到合适id []
+----------地址被限制,稍后重试----------
+金三角大营救 未匹配到合适id []
+金三角大营救 无豆瓣id数据，存入列表
+捉鬼 未匹配到合适id []
+捉鬼 无豆瓣id数据，存入列表
+索菲亚的儿子 26707505 7.1保存成功[douban]
+无法触及 未匹配到合适id []
+----------地址被限制,稍后重试----------
+单身汪的假期 27052453 0保存成功[douban]
+大清王爷爱上我 27059308 0保存成功[douban]
+草台班子拍破戏 27053278 0保存成功[douban]
+柏林综合症 26612600 6.2保存成功[douban]
+巴德里纳特的新娘 26942569 7.3保存成功[douban]
+爱上调音师 26975550 0保存成功[douban]
+淘女郎的魔戒 未匹配到合适id []
+----------地址被限制,稍后重试----------
+[pid: 11746|app: 0|req: 178/244] 162.243.144.15 () {34 vars in 394 bytes} [Sat May 16 11:19:51 2020] GET / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+疯狂的豆子 27059225 0保存成功[douban]
+西西里鬼故事 27035437 6.8保存成功[douban]
+儿童十字军 未匹配到合适id []
+儿童十字军 无豆瓣id数据，存入列表
+赤脚 26909300 7.2保存成功[douban]
+只是查理 未匹配到合适id []
+----------地址被限制,稍后重试----------
+王牌宫女 未匹配到合适id []
+王牌宫女 无豆瓣id数据，存入列表
+暗黑西游之灭神 未匹配到合适id []
+暗黑西游之灭神 无豆瓣id数据，存入列表
+终极直播3六道之局 26992367 0保存成功[douban]
+小小心愿 未匹配到合适id []
+----------地址被限制,稍后重试----------
+午夜惊情 27052480 0保存成功[douban]
+盗行神府 未匹配到合适id [{'episode': '', 'img': 'https://img9.doubanio.com/view/photo/s_ratio_poster/public/p2497670744.jpg', 'title': '盗行神府', 'url': 'https://movie.douban.com/subject/27059323/?suggest=%E7%9B%97%E8%A1%8C%E7%A5%9E%E5%BA%9C', 'type': 'movie', 'year': '2017', 'sub_title': '盗行神府', 'id': '27059323'}, {'episode': '', 'img': 'https://img1.doubanio.com/f/movie/b6dc761f5e4cf04032faa969826986efbecd54bb/pics/movie/movie_default_small.png', 'title': '盗行神府2', 'url': 'https://movie.douban.com/subject/27617834/?suggest=%E7%9B%97%E8%A1%8C%E7%A5%9E%E5%BA%9C', 'type': 'movie', 'year': '2017', 'sub_title': '盗行神府2', 'id': '27617834'}]
+盗行神府 无豆瓣id数据，存入列表
+哥们儿，别闹！ 27059322 0保存成功[douban]
+超级大山炮之夺宝奇兵 27039022 3.0保存成功[douban]
+小奸小恶 未匹配到合适id []
+----------地址被限制,稍后重试----------
+侠灵 26985036 0保存成功[douban]
+我在清朝当密探 27031425 0保存成功[douban]
+墙里的声音 4734756 5.4保存成功[douban]
+我的学科男神 27000074 0保存成功[douban]
+逃跑吧！同学 27029573 0保存成功[douban]
+山炮驾到 未匹配到合适id []
+----------地址被限制,稍后重试----------
+[pid: 11746|app: 0|req: 179/245] 27.147.240.118 () {32 vars in 465 bytes} [Sat May 16 11:46:28 2020] GET / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+蚯蚓 27038968 7.2保存成功[douban]
+青春不毕业 27016146 0保存成功[douban]
+空中俏佳人 27018234 0保存成功[douban]
+降龙大师 27029591 4.4保存成功[douban]
+僵尸前传 27034993 0保存成功[douban]
+舰姬 27034789 2.2保存成功[douban]
+霍利.凯恩潜意识实验 未匹配到合适id []
+----------地址被限制,稍后重试----------
+[pid: 11746|app: 0|req: 180/246] 112.96.134.253 () {42 vars in 911 bytes} [Sat May 16 11:53:12 2020] GET /video/play/51726/1-11.html => generated 15552 bytes in 8 msecs (HTTP/1.1 200) 6 headers in 320 bytes (1 switches on core 0)
+[pid: 11746|app: 0|req: 181/247] 112.96.134.253 () {44 vars in 1059 bytes} [Sat May 16 11:53:27 2020] GET /video/search/?wd=%E5%90%91%E5%BE%80%E7%9A%84%E7%94%9F%E6%B4%BB&page=1 => generated 17913 bytes in 50 msecs (HTTP/1.1 200) 6 headers in 320 bytes (1 switches on core 0)
+[pid: 11747|app: 0|req: 37/248] 112.96.134.253 () {44 vars in 999 bytes} [Sat May 16 11:53:34 2020] GET /video/play/84919/ => generated 12748 bytes in 5 msecs (HTTP/1.1 200) 6 headers in 320 bytes (1 switches on core 0)
+恶魔总裁的契约情人 27034977 0保存成功[douban]
+超能嗨战队 27029568 0保存成功[douban]
+北风和太阳的法庭 未匹配到合适id [{'episode': '', 'img': 'https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2448354040.jpg', 'title': '北风和太阳的法庭', 'url': 'https://movie.douban.com/subject/26967749/?suggest=%E5%8C%97%E9%A3%8E%E5%92%8C%E5%A4%AA%E9%98%B3%E7%9A%84%E6%B3%95%E5%BA%AD', 'type': 'movie', 'year': '2017', 'sub_title': '北風と太陽の法廷', 'id': '26967749'}, {'episode': '4', 'img': 'https://img1.doubanio.com/view/photo/s_ratio_poster/public/p2494175308.jpg', 'title': '北风和太阳的法庭 番外篇', 'url': 'https://movie.douban.com/subject/27097871/?suggest=%E5%8C%97%E9%A3%8E%E5%92%8C%E5%A4%AA%E9%98%B3%E7%9A%84%E6%B3%95%E5%BA%AD', 'type': 'movie', 'year': '2017', 'sub_title': '北風の法廷～鉄仮面弁護士·櫻川風香～ 太陽の法廷～不戦弁護士·麹谷陽太～', 'id': '27097871'}]
+北风和太阳的法庭 无豆瓣id数据，存入列表
+包小姐的包 27030557 4.0保存成功[douban]
+爱上吸血鬼 27026044 0保存成功[douban]
+运动学概论 未匹配到合适id []
+运动学概论 无豆瓣id数据，存入列表
+莫斯科陷落 26796845 4.8保存成功[douban]
+前往火星 26334810 4.4保存成功[douban]
+山寨大王 未匹配到合适id []
+----------地址被限制,稍后重试----------
+[pid: 11747|app: 0|req: 38/249] 195.54.160.121 () {34 vars in 556 bytes} [Sat May 16 11:59:37 2020] GET /solr/admin/info/system?wt=json => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 1)
+杀码特工队 27052616 0保存成功[douban]
+容器 26965774 0保存成功[douban]
+热血情敌 27044137 0保存成功[douban]
+千亦有道2 27043870 0保存成功[douban]
+亡命救赎 27052613 0保存成功[douban]
+威尔逊 6981216 6.0保存成功[douban]
+舞台背后(爱奇艺独播) 未匹配到合适id []
+舞台背后(爱奇艺独播) 无豆瓣id数据，存入列表
+误差 27017266 5.5保存成功[douban]
+玄笔录前传之妖王图 26798450 0保存成功[douban]
+一路抛行 未匹配到合适id []
+----------地址被限制,稍后重试----------
+赢家 25723628 5.6保存成功[douban]
+千门之荣耀江湖 27040773 0保存成功[douban]
+七十二变 27052631 0保存成功[douban]
+女总裁的王牌高手 27044130 0保存成功[douban]
+逆转杀局 27052291 0保存成功[douban]
+津门侠盗团3 未匹配到合适id []
+----------地址被限制,稍后重试----------
+[pid: 11746|app: 0|req: 182/250] 195.54.160.121 () {34 vars in 556 bytes} [Sat May 16 12:12:56 2020] GET /?XDEBUG_SESSION_START=phpstorm => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+[pid: 11747|app: 0|req: 39/251] 195.54.160.121 () {36 vars in 653 bytes} [Sat May 16 12:12:56 2020] GET /?a=fetch&content=<php>die(@md5(HelloThinkCMF))</php> => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+[pid: 11747|app: 0|req: 40/252] 80.82.78.104 () {40 vars in 627 bytes} [Sat May 16 12:14:18 2020] GET / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 1)
+歧途2016 未匹配到合适id []
+歧途2016 无豆瓣id数据，存入列表
+鸡飞狗跳 26991765 2.3保存成功[douban]
+忽然七日 5327217 6.6保存成功[douban]
+簋街的鬼2 27037497 0保存成功[douban]
+攻略前女友 27052629 0保存成功[douban]
+非常突然 27037469 0保存成功[douban]
+道亦有道 27052620 0保存成功[douban]
+柏林墙 未匹配到合适id []
+----------地址被限制,稍后重试----------
+洛溪的养成计划 未匹配到合适id []
+洛溪的养成计划 无豆瓣id数据，存入列表
+时间上的家 26875251 6.5保存成功[douban]
+那才是我的世界 未匹配到合适id []
+那才是我的世界 无豆瓣id数据，存入列表
+你的苏露 未匹配到合适id []
+----------地址被限制,稍后重试----------
+敏感恋爱 27204925 0保存成功[douban]
+铁甲战神 25891853 4.2保存成功[douban]
+嘶吼青春之拳击少女 26946270 0保存成功[douban]
+重生之龙族圣女 27064786 0保存成功[douban]
+摘星的女孩 27021305 0保存成功[douban]
+咏春侠 26953943 0保存成功[douban]
+血姬传 27055683 0保存成功[douban]
+我的驱魔总裁 未匹配到合适id []
+----------地址被限制,稍后重试----------
+危城救赎 27064787 0保存成功[douban]
+少女擒兽记 27035370 0保存成功[douban]
+青梅成熟时 27059149 0保存成功[douban]
+魔域血刹 27064785 0保存成功[douban]
+降魔十兄妹 27006911 0保存成功[douban]
+公告牌2017音乐大奖颁奖礼 未匹配到合适id []
+公告牌2017音乐大奖颁奖礼 无豆瓣id数据，存入列表
+逗B三宝 未匹配到合适id []
+----------地址被限制,稍后重试----------
+[pid: 11746|app: 0|req: 183/253] 195.54.160.121 () {34 vars in 716 bytes} [Sat May 16 12:36:01 2020] GET /index.php?s=/Index/\think\app/invokefunction&function=call_user_func_array&vars[0]=md5&vars[1][]=HelloThinkPHP => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+第七日 27109228 0保存成功[douban]
+长城 27091195 0保存成功[douban]
+假期露营 27035673 5.7保存成功[douban]
+离狼之歌 27195392 6.6保存成功[douban]
+星期8 27103195 3.9保存成功[douban]
+房客(2017) 未匹配到合适id []
+----------地址被限制,稍后重试----------
+同指婚事 27204863 6.5保存成功[douban]
+绑架 未匹配到合适id [{'episode': '', 'img': 'https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2445601403.jpg', 'title': '绑架者', 'url': 'https://movie.douban.com/subject/26602933/?suggest=%E7%BB%91%E6%9E%B6', 'type': 'movie', 'year': '2017', 'sub_title': '绑架者', 'id': '26602933'}, {'episode': '', 'img': 'https://img9.doubanio.com/view/photo/s_ratio_poster/public/p2462197205.jpg', 'title': '绑架', 'url': 'https://movie.douban.com/subject/3808583/?suggest=%E7%BB%91%E6%9E%B6', 'type': 'movie', 'year': '2017', 'sub_title': 'Kidnap', 'id': '3808583'}]
+绑架 无豆瓣id数据，存入列表
+炸裂青春 26745194 0保存成功[douban]
+刽子手 27166110 3.7保存成功[douban]
+科洛 未匹配到合适id []
+----------地址被限制,稍后重试----------
+[pid: 11746|app: 0|req: 184/254] 182.254.52.17 () {36 vars in 583 bytes} [Sat May 16 12:48:31 2020] GET /video/type/2/?area%3D => generated 38971 bytes in 183 msecs (HTTP/1.1 200) 6 headers in 320 bytes (1 switches on core 0)
+[pid: 11746|app: 0|req: 185/255] 182.254.52.17 () {36 vars in 576 bytes} [Sat May 16 12:53:40 2020] GET /video/play/80136/ => generated 12576 bytes in 5 msecs (HTTP/1.1 200) 6 headers in 320 bytes (1 switches on core 0)
+夏末少年 27596821 0保存成功[douban]
+双重约会 26961881 4.7保存成功[douban]
+关西杰尼斯Jr.之搞笑明星诞生 27083571 6.5保存成功[douban]
+超能整蛊王 未匹配到合适id []
+超能整蛊王 无豆瓣id数据，存入列表
+宠物恐龙 未匹配到合适id []
+----------地址被限制,稍后重试----------
+没有上帝的青春 27128545 5.5保存成功[douban]
+养鬼吃人10：审判 未匹配到合适id []
+养鬼吃人10：审判 无豆瓣id数据，存入列表
+盲道 26415327 5.1保存成功[douban]
+脸庞，村庄 26764928 9.2保存成功[douban]
+亚人 真人版 26864096 6.8保存成功[douban]
+梦回追凶 未匹配到合适id []
+梦回追凶 无豆瓣id数据，存入列表
+勒克瑙中心 27181742 6.4保存成功[douban]
+皇拳2017之京归来 未匹配到合适id []
+----------地址被限制,稍后重试----------
+塑料王国 未匹配到合适id []
+塑料王国 无豆瓣id数据，存入列表
+我来自纽约2 27597115 0保存成功[douban]
+沉默的孩子 27603770 8.0保存成功[douban]
+画室惊魂 27104249 0保存成功[douban]
+1987：黎明到来的那一天 未匹配到合适id []
+----------地址被限制,稍后重试----------
+[pid: 11746|app: 0|req: 186/256] 182.254.52.17 () {36 vars in 500 bytes} [Sat May 16 13:10:52 2020] GET /hudson => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+[pid: 11746|app: 0|req: 187/257] 14.18.182.223 () {36 vars in 589 bytes} [Sat May 16 13:11:06 2020] GET /admin/view_log/?page%3D5 => generated 0 bytes in 1 msecs (HTTP/1.1 302) 6 headers in 180 bytes (1 switches on core 0)
+[pid: 11747|app: 0|req: 41/258] 14.18.182.223 () {38 vars in 635 bytes} [Sat May 16 13:11:06 2020] GET /admin/login.html => generated 5348 bytes in 1 msecs (HTTP/1.1 200) 6 headers in 319 bytes (1 switches on core 0)
+[pid: 11747|app: 0|req: 42/259] 14.18.182.223 () {36 vars in 572 bytes} [Sat May 16 13:11:49 2020] GET /admin/view_log/ => generated 0 bytes in 1 msecs (HTTP/1.1 302) 6 headers in 180 bytes (1 switches on core 1)
+[pid: 11746|app: 0|req: 188/260] 14.18.182.223 () {38 vars in 626 bytes} [Sat May 16 13:11:49 2020] GET /admin/login.html => generated 5348 bytes in 1 msecs (HTTP/1.1 200) 6 headers in 319 bytes (1 switches on core 0)
+巨人 未匹配到合适id []
+巨人 无豆瓣id数据，存入列表
+蝾螈的多重杀伤力 26929019 5.4保存成功[douban]
+斯特拉顿 26607685 5.3保存成功[douban]
+恋爱禁止的世界电影版 未匹配到合适id []
+恋爱禁止的世界电影版 无豆瓣id数据，存入列表
+神经兄妹 27617825 0保存成功[douban]
+韦罗妮卡 27126455 6.2保存成功[douban]
+夺命头条 未匹配到合适id []
+----------地址被限制,稍后重试----------
+超能萌妹战江湖 27602210 0保存成功[douban]
+机械娇娃 27602085 0保存成功[douban]
+萌宝找辣妈 27613191 0保存成功[douban]
+梦幻之旅 27617827 0保存成功[douban]
+花战 26732270 6.9保存成功[douban]
+莫娣/彩绘心天地 未匹配到合适id []
+莫娣/彩绘心天地 无豆瓣id数据，存入列表
+预言家请睁眼/异能情人 未匹配到合适id []
+预言家请睁眼/异能情人 无豆瓣id数据，存入列表
+阳光萌星社 27092812 0保存成功[douban]
+引魂灯 未匹配到合适id []
+----------地址被限制,稍后重试----------
+南部僵尸来袭 27056464 3.1保存成功[douban]
+人流 27099390 6.6保存成功[douban]
+天上再见 26731376 8.1保存成功[douban]
+预兆剧场版 未匹配到合适id []
+预兆剧场版 无豆瓣id数据，存入列表
+再看我一眼 未匹配到合适id []
+----------地址被限制,稍后重试----------
+梦呓雨林/梦呓别语 未匹配到合适id []
+梦呓雨林/梦呓别语 无豆瓣id数据，存入列表
+最后的诗句 26968495 7.6保存成功[douban]
+标志动作 26979295 5.1保存成功[douban]
+网关 未匹配到合适id []
+网关 无豆瓣id数据，存入列表
+达琳达 26770719 6.6保存成功[douban]
+局外人 未匹配到合适id []
+局外人 无豆瓣id数据，存入列表
+夜色撩人 未匹配到合适id []
+----------地址被限制,稍后重试----------
+[pid: 11746|app: 0|req: 189/261] 5.101.0.209 () {34 vars in 553 bytes} [Sat May 16 13:38:19 2020] GET /solr/admin/info/system?wt=json => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+[pid: 11746|app: 0|req: 190/262] 5.101.0.209 () {36 vars in 650 bytes} [Sat May 16 13:38:48 2020] GET /?a=fetch&content=<php>die(@md5(HelloThinkCMF))</php> => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+[pid: 11746|app: 0|req: 191/263] 5.101.0.209 () {34 vars in 553 bytes} [Sat May 16 13:38:50 2020] GET /?XDEBUG_SESSION_START=phpstorm => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+[pid: 11746|app: 0|req: 192/264] 5.101.0.209 () {34 vars in 713 bytes} [Sat May 16 13:39:09 2020] GET /index.php?s=/Index/\think\app/invokefunction&function=call_user_func_array&vars[0]=md5&vars[1][]=HelloThinkPHP => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+换季期 未匹配到合适id []
+换季期 无豆瓣id数据，存入列表
+一周的朋友 26646360 6.7保存成功[douban]
+可爱的小东西 26438658 2.9保存成功[douban]
+劫数 26430516 5.6保存成功[douban]
+贝克斯 未匹配到合适id []
+----------地址被限制,稍后重试----------
+我的老婆未成年4 未匹配到合适id []
+我的老婆未成年4 无豆瓣id数据，存入列表
+初行 26946485 6.9保存成功[douban]
+之后 27018296 7.5保存成功[douban]
+宝贝，再爱我一次 27027635 0保存成功[douban]
+大毛狗 未匹配到合适id []
+----------地址被限制,稍后重试----------
+逆光之时 26901449 6.3保存成功[douban]
+铁雨 26863778 8.2保存成功[douban]
+毒舌上司校花妹 27320069 0保存成功[douban]
+混蛋法则 27203046 0保存成功[douban]
+小男人周记之吾家有喜 26903766 5.7保存成功[douban]
+恐怖电影院2 26958645 2.3保存成功[douban]
+午夜凶妻 未匹配到合适id []
+----------地址被限制,稍后重试----------
+踏破浮屠 27160679 0保存成功[douban]
+爱国者之日 未匹配到合适id []
+爱国者之日 无豆瓣id数据，存入列表
+超级兵王之战狼归来 27192293 0保存成功[douban]
+大英雄 27200848 0保存成功[douban]
+痞子衰神 27203154 0保存成功[douban]
+只留青春不留你 27203155 0保存成功[douban]
+暗夜鬼抓床 27082612 5.1保存成功[douban]
+特战王妃1幻境之争 27203161 0保存成功[douban]
+特战王妃4自由之路 未匹配到合适id []
+----------地址被限制,稍后重试----------
+[pid: 11746|app: 0|req: 193/265] 182.254.52.17 () {36 vars in 633 bytes} [Sat May 16 14:02:29 2020] GET /video/type/1/?year%3D%26area%3D%26rating%3D8.0 => generated 37921 bytes in 260 msecs (HTTP/1.1 200) 6 headers in 320 bytes (1 switches on core 0)
+[pid: 11746|app: 0|req: 194/266] 182.254.52.17 () {36 vars in 576 bytes} [Sat May 16 14:02:40 2020] GET /video/play/84563/ => generated 12878 bytes in 5 msecs (HTTP/1.1 200) 6 headers in 320 bytes (1 switches on core 0)
+[pid: 11746|app: 0|req: 195/267] 5.101.0.209 () {38 vars in 607 bytes} [Sat May 16 14:04:50 2020] POST /api/jsonws/invoke => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+特战王妃3神族之谜 27597265 0保存成功[douban]
+特战王妃2圣剑之战 27591766 0保存成功[douban]
+朋友游戏 真人版下 26887170 6.8保存成功[douban]
+重磅炸弹 25766389 0保存成功[douban]
+特种兵之战狼归来 27591430 0保存成功[douban]
+山田孝之3D 27003912 7.0保存成功[douban]
+宾果：晨光之王 27140416 6.4保存成功[douban]
+与生命有约 26962608 6.8保存成功[douban]
+一日情人 未匹配到合适id []
+----------地址被限制,稍后重试----------
+[pid: 11746|app: 0|req: 196/268] 182.254.52.17 () {36 vars in 576 bytes} [Sat May 16 14:08:44 2020] GET /video/play/85163/ => generated 13194 bytes in 9 msecs (HTTP/1.1 200) 6 headers in 320 bytes (1 switches on core 0)
+雾路奇途 27613196 0保存成功[douban]
+惊梦奇缘之心爱 27614416 0保存成功[douban]
+极致追击 26426099 3.4保存成功[douban]
+九三年夏天 26979007 7.9保存成功[douban]
+反诈风暴之情爱迷局 27617844 0保存成功[douban]
+整蛊先锋队 未匹配到合适id []
+整蛊先锋队 无豆瓣id数据，存入列表
+归来 未匹配到合适id []
+----------地址被限制,稍后重试----------
+[pid: 11746|app: 0|req: 197/269] 79.146.22.100 () {32 vars in 463 bytes} [Sat May 16 14:20:02 2020] GET / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+春太与千夏 未匹配到合适id []
+春太与千夏 无豆瓣id数据，存入列表
+菲丽希缇 未匹配到合适id [{'episode': '', 'img': 'https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2424727881.jpg', 'title': '菲丽希缇', 'url': 'https://movie.douban.com/subject/26757827/?suggest=%E8%8F%B2%E4%B8%BD%E5%B8%8C%E7%BC%87', 'type': 'movie', 'year': '2017', 'sub_title': 'Félicité', 'id': '26757827'}, {'episode': '', 'img': 'https://img9.doubanio.com/view/photo/s_ratio_poster/public/p2568117634.jpg', 'title': '菲丽希缇Remix#1:豪华台球厅', 'url': 'https://movie.douban.com/subject/34816476/?suggest=%E8%8F%B2%E4%B8%BD%E5%B8%8C%E7%BC%87', 'type': 'movie', 'year': '2017', 'sub_title': 'Félicité Remix #1: Billard Luxury Palace', 'id': '34816476'}]
+菲丽希缇 无豆瓣id数据，存入列表
+梅格雷在蒙马特 27012010 7.3保存成功[douban]
+辣妹特工 未匹配到合适id []
+----------地址被限制,稍后重试----------
+推理笔记 未匹配到合适id [{'episode': '', 'img': 'https://img9.doubanio.com/view/photo/s_ratio_poster/public/p2506041645.jpg', 'title': '推理笔记', 'url': 'https://movie.douban.com/subject/26890502/?suggest=%E6%8E%A8%E7%90%86%E7%AC%94%E8%AE%B0', 'type': 'movie', 'year': '2017', 'sub_title': '推理笔记', 'id': '26890502'}, {'episode': '20', 'img': 'https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2472727970.jpg', 'title': '推理笔记', 'url': 'https://movie.douban.com/subject/26975750/?suggest=%E6%8E%A8%E7%90%86%E7%AC%94%E8%AE%B0', 'type': 'movie', 'year': '2017', 'sub_title': '推理笔记', 'id': '26975750'}]
+推理笔记 无豆瓣id数据，存入列表
+妖凤云城 27126380 0保存成功[douban]
+私人英雄 未匹配到合适id []
+私人英雄 无豆瓣id数据，存入列表
+时空妖姬 未匹配到合适id []
+----------地址被限制,稍后重试----------
+同居进化史 27180902 0保存成功[douban]
+西游之铁扇公主 27192295 0保存成功[douban]
+末日硬汉 27593460 0保存成功[douban]
+活死人入侵 27202870 0保存成功[douban]
+英雄凌凌GO 27178948 0保存成功[douban]
+猪太郎的夏天 未匹配到合适id []
+猪太郎的夏天 无豆瓣id数据，存入列表
+西游鲛人传 27591705 0保存成功[douban]
+求生之路：冲出禁区 未匹配到合适id []
+----------地址被限制,稍后重试----------
+[pid: 11746|app: 0|req: 198/270] 182.254.52.17 () {36 vars in 576 bytes} [Sat May 16 14:37:16 2020] GET /video/play/81467/ => generated 13774 bytes in 5 msecs (HTTP/1.1 200) 6 headers in 320 bytes (1 switches on core 0)
+电竞争霸 27316577 0保存成功[douban]
+沉默 未匹配到合适id []
+沉默 无豆瓣id数据，存入列表
+银魂真人版 未匹配到合适id [{'episode': '', 'img': 'https://img1.doubanio.com/view/photo/s_ratio_poster/public/p2497751588.jpg', 'title': '银魂', 'url': 'https://movie.douban.com/subject/26816086/?suggest=%E9%93%B6%E9%AD%82%E7%9C%9F%E4%BA%BA%E7%89%88', 'type': 'movie', 'year': '2017', 'sub_title': '銀魂', 'id': '26816086'}, {'episode': '3', 'img': 'https://img9.doubanio.com/view/photo/s_ratio_poster/public/p2504914015.jpg', 'title': '银魂 三叶篇', 'url': 'https://movie.douban.com/subject/27061520/?suggest=%E9%93%B6%E9%AD%82%E7%9C%9F%E4%BA%BA%E7%89%88', 'type': 'movie', 'year': '2017', 'sub_title': '銀魂-ミツバ篇', 'id': '27061520'}]
+银魂真人版 无豆瓣id数据，存入列表
+西游之诸神再战 未匹配到合适id []
+----------地址被限制,稍后重试----------
+[pid: 11746|app: 0|req: 199/271] 182.254.52.17 () {36 vars in 582 bytes} [Sat May 16 14:43:13 2020] GET /view_log/2020-05-15/ => generated 179 bytes in 2 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+神偷色佳人 27199899 0保存成功[douban]
+十二星座大乱斗 27591772 0保存成功[douban]
+摇滚学徒 26717074 6.5保存成功[douban]
+牛之晚春 27591715 0保存成功[douban]
+杰罗德游戏 26602795 6.3保存成功[douban]
+青春大作战 27160785 0保存成功[douban]
+邻居明星 未匹配到合适id []
+邻居明星 无豆瓣id数据，存入列表
+3月的狮子：前篇 未匹配到合适id []
+----------地址被限制,稍后重试----------
+许我爱你 27107561 0保存成功[douban]
+哈利·波特：一段魔法史 27135416 7.9保存成功[douban]
+圣女芳心 28439068 0保存成功[douban]
+澤水困 未匹配到合适id []
+澤水困 无豆瓣id数据，存入列表
+敬畏 未匹配到合适id []
+----------地址被限制,稍后重试----------
+笔仙咒怨 27054612 3.2保存成功[douban]
+佣兵特战队 未匹配到合适id []
+佣兵特战队 无豆瓣id数据，存入列表
+伏妖·白鱼镇 27597020 6.2保存成功[douban]
+将军在上之极乐净土 27195071 3.6保存成功[douban]
+美少女赌神 27602239 0保存成功[douban]
+我是大明星 未匹配到合适id []
+----------地址被限制,稍后重试----------
+[pid: 11746|app: 0|req: 200/272] 5.101.0.209 () {36 vars in 621 bytes} [Sat May 16 15:04:54 2020] GET /vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+异能者3 未匹配到合适id []
+异能者3 无豆瓣id数据，存入列表
+最强王者 27594301 0保存成功[douban]
+人体游戏 27168936 0保存成功[douban]
+哥哥太爱我了怎么办 未匹配到合适id [{'episode': '', 'img': 'https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2446655373.jpg', 'title': '哥哥太爱我了怎么办', 'url': 'https://movie.douban.com/subject/26874517/?suggest=%E5%93%A5%E5%93%A5%E5%A4%AA%E7%88%B1%E6%88%91%E4%BA%86%E6%80%8E%E4%B9%88%E5%8A%9E', 'type': 'movie', 'year': '2017', 'sub_title': '兄に愛されすぎて困ってます', 'id': '26874517'}, {'episode': '5', 'img': 'https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2453852192.jpg', 'title': '哥哥太爱我了怎么办', 'url': 'https://movie.douban.com/subject/26989728/?suggest=%E5%93%A5%E5%93%A5%E5%A4%AA%E7%88%B1%E6%88%91%E4%BA%86%E6%80%8E%E4%B9%88%E5%8A%9E', 'type': 'movie', 'year': '2017', 'sub_title': '兄に愛されすぎて困ってます', 'id': '26989728'}]
+----------地址被限制,稍后重试----------
+总有刁民想害朕 26929983 4.1保存成功[douban]
+笔仙之生死劫2 27607348 0保存成功[douban]
+惊魂派对 27607347 0保存成功[douban]
+脸庞，村庄 26764928 9.2保存成功[douban]
+智能危姬 27603692 0保存成功[douban]
+合约情侣 27617841 0保存成功[douban]
+绝色保镖之洪门天赐 27608524 0保存成功[douban]
+小琴尸 未匹配到合适id []
+----------地址被限制,稍后重试----------
+[pid: 11746|app: 0|req: 201/273] 5.101.0.209 () {38 vars in 709 bytes} [Sat May 16 15:16:07 2020] POST /vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+铁蛋铜锤 27617843 0保存成功[douban]
+冷宫女刺客 27613198 0保存成功[douban]
+催乳大师2废柴宗师 27605665 0保存成功[douban]
+时空游戏 27614398 0保存成功[douban]
+本色英雄 未匹配到合适id []
+本色英雄 无豆瓣id数据，存入列表
+寻龙计 27614394 0保存成功[douban]
+我的青春非主流 未匹配到合适id []
+----------地址被限制,稍后重试----------
+后座上的杀手 27614402 0保存成功[douban]
+废柴王爷2之御姐王妃 27611659 0保存成功[douban]
+相声大电影之我要幸福 26811605 3.0保存成功[douban]
+两束光 27594850 7.7保存成功[douban]
+FE特工局 27007681 0保存成功[douban]
+爱上男主播 未匹配到合适id []
+----------地址被限制,稍后重试----------
+富贵别闹 27617832 0保存成功[douban]
+小城一梦之臭棋乱飞象 27603674 0保存成功[douban]
+盗行神府2 27617834 0保存成功[douban]
+美少女危机 27608427 0保存成功[douban]
+结婚 未匹配到合适id []
+----------地址被限制,稍后重试----------
+圣诞遗产 27604692 5.0保存成功[douban]
+咸水鸡的滋味 27059141 7.5保存成功[douban]
+待斩情人 未匹配到合适id []
+待斩情人 无豆瓣id数据，存入列表
+古惑往事之龙虎斗 27064184 0保存成功[douban]
+我的极品新娘 未匹配到合适id []
+----------地址被限制,稍后重试----------
+千王2017 27594289 0保存成功[douban]
+深夜18楼 27602083 0保存成功[douban]
+谁偷的我滴亲 27098638 0保存成功[douban]
+漂洋过海遇见你 27618191 0保存成功[douban]
+我是MC 27618192 0保存成功[douban]
+浙江卫视2018跨年演唱会 未匹配到合适id []
+----------地址被限制,稍后重试----------
+热血兄弟 27617411 0保存成功[douban]
+少年，你对群马一无所知 未匹配到合适id [{'episode': '4', 'img': 'https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2457465440.jpg', 'title': '少年，你对群马一无所知', 'url': 'https://movie.douban.com/subject/26969669/?suggest=%E5%B0%91%E5%B9%B4%EF%BC%8C%E4%BD%A0%E5%AF%B9%E7%BE%A4%E9%A9%AC%E4%B8%80%E6%97%A0%E6%89%80%E7%9F%A5', 'type': 'movie', 'year': '2017', 'sub_title': 'お前はまだグンマを知らない', 'id': '26969669'}, {'episode': '', 'img': 'https://img1.doubanio.com/view/photo/s_ratio_poster/public/p2452064799.jpg', 'title': '少年，你对群马一无所知', 'url': 'https://movie.douban.com/subject/26969670/?suggest=%E5%B0%91%E5%B9%B4%EF%BC%8C%E4%BD%A0%E5%AF%B9%E7%BE%A4%E9%A9%AC%E4%B8%80%E6%97%A0%E6%89%80%E7%9F%A5', 'type': 'movie', 'year': '2017', 'sub_title': 'お前はまだグンマを知らない', 'id': '26969670'}]
+少年，你对群马一无所知 无豆瓣id数据，存入列表
+火力地堡 27078485 7.7保存成功[douban]
+普通人 未匹配到合适id [{'episode': '', 'img': 'https://img9.doubanio.com/view/photo/s_ratio_poster/public/p2436304214.jpg', 'title': '普通人', 'url': 'https://movie.douban.com/subject/26781663/?suggest=%E6%99%AE%E9%80%9A%E4%BA%BA', 'type': 'movie', 'year': '2017', 'sub_title': '보통사람', 'id': '26781663'}, {'episode': '', 'img': 'https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2499135561.jpg', 'title': '英伦对决', 'url': 'https://movie.douban.com/subject/25723583/?suggest=%E6%99%AE%E9%80%9A%E4%BA%BA', 'type': 'movie', 'year': '2017', 'sub_title': 'The Foreigner', 'id': '25723583'}]
+----------地址被限制,稍后重试----------
+恶魔的耳语 27119617 4.4保存成功[douban]
+爱上女蒲团2 26948510 2.8保存成功[douban]
+真爱禁区 27097066 3.1保存成功[douban]
+不做有钱人 27199887 0保存成功[douban]
+浪漫骑士请放手 27203156 0保存成功[douban]
+禁足少女罗曼史 27203157 0保存成功[douban]
+芊叶长笙伏魔篇 未匹配到合适id []
+----------地址被限制,稍后重试----------
+[pid: 11746|app: 0|req: 202/274] 45.229.53.18 () {32 vars in 469 bytes} [Sat May 16 16:02:13 2020] GET / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+啊，荒野：前篇 26842503 8.4保存成功[douban]
+啊，荒野：后篇 27030639 8.6保存成功[douban]
+朋友游戏 真人版上 26887169 6.6保存成功[douban]
+偷香魔盗团2 27186647 0保存成功[douban]
+解冻 未匹配到合适id [{'episode': '', 'img': 'https://img1.doubanio.com/view/photo/s_ratio_poster/public/p2418474789.jpg', 'title': '解冻', 'url': 'https://movie.douban.com/subject/26574949/?suggest=%E8%A7%A3%E5%86%BB', 'type': 'movie', 'year': '2017', 'sub_title': '해빙', 'id': '26574949'}, {'episode': '', 'img': 'https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2503238003.jpg', 'title': '解冻', 'url': 'https://movie.douban.com/subject/27181871/?suggest=%E8%A7%A3%E5%86%BB', 'type': 'movie', 'year': '2017', 'sub_title': 'Thaw of the Dead', 'id': '27181871'}]
+解冻 无豆瓣id数据，存入列表
+海滩游侠 3837666 5.7保存成功[douban]
+原谅他77次 未匹配到合适id []
+----------地址被限制,稍后重试----------
+千术2千王之战 27006175 0保存成功[douban]
+博格对战麦肯罗 26793860 7.1保存成功[douban]
+黑暗崛起 27072785 3.2保存成功[douban]
+松本清张 鬼畜 27607383 6.6保存成功[douban]
+我罩袍下的口红 未匹配到合适id []
+----------地址被限制,稍后重试----------
+亡命夜驰 26792249 6.0保存成功[douban]
+痴情男子汉 26707072 5.1保存成功[douban]
+幸福转身 27168860 0保存成功[douban]
+外星人来了 27016154 0保存成功[douban]
+盲刺 27607335 0保存成功[douban]
+灵魂载体 未匹配到合适id []
+----------地址被限制,稍后重试----------
+因为爱情 26892272 3.0保存成功[douban]
+极品王爷 未匹配到合适id []
+极品王爷 无豆瓣id数据，存入列表
+疯狂的旅馆 27195017 0保存成功[douban]
+猎魔女警 27018281 0保存成功[douban]
+捉个九尾狐做女友2 27197208 0保存成功[douban]
+捉个九尾狐做女友 未匹配到合适id [{'episode': '', 'img': 'https://img1.doubanio.com/view/photo/s_ratio_poster/public/p2504882677.jpg', 'title': '捉个九尾狐做女友2', 'url': 'https://movie.douban.com/subject/27197208/?suggest=%E6%8D%89%E4%B8%AA%E4%B9%9D%E5%B0%BE%E7%8B%90%E5%81%9A%E5%A5%B3%E5%8F%8B', 'type': 'movie', 'year': '2017', 'sub_title': '捉个九尾狐做女友2', 'id': '27197208'}, {'episode': '', 'img': 'https://img9.doubanio.com/view/photo/s_ratio_poster/public/p2455008364.jpg', 'title': '捉个九尾狐做女友', 'url': 'https://movie.douban.com/subject/27013250/?suggest=%E6%8D%89%E4%B8%AA%E4%B9%9D%E5%B0%BE%E7%8B%90%E5%81%9A%E5%A5%B3%E5%8F%8B', 'type': 'movie', 'year': '2017', 'sub_title': '捉个九尾狐做女友', 'id': '27013250'}]
+捉个九尾狐做女友 无豆瓣id数据，存入列表
+古玺追杀令之囧偷来袭 27611629 0保存成功[douban]
+52赫兹，我爱你 未匹配到合适id []
+----------地址被限制,稍后重试----------
+七娃降魔篇 27006906 0保存成功[douban]
+破局 26760160 6.2保存成功[douban]
+厦门风云 27613192 0保存成功[douban]
+诡代码 27614413 0保存成功[douban]
+废柴外星人 未匹配到合适id []
+----------地址被限制,稍后重试----------
+斗鸡侠 27611553 0保存成功[douban]
+借口.com 未匹配到合适id []
+借口.com 无豆瓣id数据，存入列表
+友情岁月2之只手遮天 27614414 0保存成功[douban]
+机车兄弟 未匹配到合适id []
+----------地址被限制,稍后重试----------
+造梦大师 27157697 0保存成功[douban]
+陌路兄弟 27592601 0保存成功[douban]
+神秘家族 未匹配到合适id []
+神秘家族 无豆瓣id数据，存入列表
+逃出绝命镇 26688480 7.7保存成功[douban]
+黑狱逃杀 未匹配到合适id []
+----------地址被限制,稍后重试----------
+奇机少年 25766838 5.3保存成功[douban]
+敷唤爱情，要有伴！ 27597253 0保存成功[douban]
+同班绯闻 27597254 0保存成功[douban]
+[pid: 11746|app: 0|req: 203/275] 195.54.160.121 () {38 vars in 610 bytes} [Sat May 16 16:51:12 2020] POST /api/jsonws/invoke => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+死亡笔记本之迷途 27597255 0保存成功[douban]
+心跳主播迷魂劫 27597252 0保存成功[douban]
+诡宅行者 27205192 0保存成功[douban]
+财神当铺 未匹配到合适id []
+----------地址被限制,稍后重试----------
+惊天预谋 27597256 0保存成功[douban]
+舞动青春之女子天团 27592603 0保存成功[douban]
+方法派 27094896 6.8保存成功[douban]
+坏蛋先生2 27011799 0保存成功[douban]
+坏蛋先生3 27168931 0保存成功[douban]
+绝色锦衣卫 27176734 0保存成功[douban]
+西游之诸神之战 未匹配到合适id []
+西游之诸神之战 无豆瓣id数据，存入列表
+遗忘空间 27132412 0保存成功[douban]
+我们那年 未匹配到合适id []
+----------地址被限制,稍后重试----------
+没出息的晓丽 27126972 0保存成功[douban]
+偷爱心慌慌 未匹配到合适id []
+偷爱心慌慌 无豆瓣id数据，存入列表
+睡梦神探 27173453 0保存成功[douban]
+决战江湖之乞丐传奇 未匹配到合适id []
+----------地址被限制,稍后重试----------
+龙凤店来了个马老三 27168927 0保存成功[douban]
+心魔 未匹配到合适id []
+心魔 无豆瓣id数据，存入列表
+小伙时代之忆当年2 27168929 0保存成功[douban]
+豆腐貂蝉 27174477 0保存成功[douban]
+烽火丽人 27168923 0保存成功[douban]
+天鹅恋 未匹配到合适id []
+----------地址被限制,稍后重试----------
+玄魔笔记之妖女灵蛇 未匹配到合适id []
+玄魔笔记之妖女灵蛇 无豆瓣id数据，存入列表
+重回校园爱上你 27168910 0保存成功[douban]
+浪漫岛屿 27168917 0保存成功[douban]
+七夜客栈 27168916 0保存成功[douban]
+京城怪谈之水箱谜案 未匹配到合适id []
+----------地址被限制,稍后重试----------
+[pid: 11746|app: 0|req: 204/276] 2.184.168.128 () {32 vars in 464 bytes} [Sat May 16 17:20:25 2020] GET / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+不可言说之手机的秘密 27145068 5.2保存成功[douban]
+死亡迷宫2 27598819 0保存成功[douban]
+爱情灵药 27604032 0保存成功[douban]
+我的灯塔就是你 27086179 0保存成功[douban]
+难以无视的真相2 未匹配到合适id []
+难以无视的真相2 无豆瓣id数据，存入列表
+杀死冈瑟 未匹配到合适id []
+----------地址被限制,稍后重试----------
+全民战神 27614412 0保存成功[douban]
+奇门诡秘之古井深渊 未匹配到合适id []
+奇门诡秘之古井深渊 无豆瓣id数据，存入列表
+怨灵岛 27614406 0保存成功[douban]
+百年诅咒 27617829 0保存成功[douban]
+冷酷的心 未匹配到合适id []
+----------地址被限制,稍后重试----------
+你若安好 27108785 0保存成功[douban]
+送葬人 26685111 5.8保存成功[douban]
+极速游戏 27602243 0保存成功[douban]
+超能联盟之葫芦战队 27604319 0保存成功[douban]
+神秘来访者 27614391 0保存成功[douban]
+套路大师 未匹配到合适id []
+----------地址被限制,稍后重试----------
+将军在上之芙蓉密案 27195145 0保存成功[douban]
+赌城风云之扭转乾坤 27608424 0保存成功[douban]
+东京食尸鬼 真人版 26817016 5.7保存成功[douban]
+B主任和情书 27602212 6.9保存成功[douban]
+斗鸡 27611553 0保存成功[douban]
+绝色女神团 27064207 0保存成功[douban]
+古墓夺宝 27607332 0保存成功[douban]
+香港大师 26935282 0保存成功[douban]
+挣扎 未匹配到合适id []
+----------地址被限制,稍后重试----------
+只约七天 27617821 0保存成功[douban]
+食人录 27118080 6.8保存成功[douban]
+贱神三少爷2 27180935 0保存成功[douban]
+丝袜传奇 27607340 0保存成功[douban]
+寂静烟火 27604313 0保存成功[douban]
+来一打麻花 27607341 0保存成功[douban]
+天际浩劫2 5324813 5.2保存成功[douban]
+检查站 未匹配到合适id []
+----------地址被限制,稍后重试----------
+请勿靠近 26956054 2.7保存成功[douban]
+时间中的孩子 26977165 6.5保存成功[douban]
+1992洛杉矶大暴动 27025845 8.2保存成功[douban]
+大话三国之愚人劫 未匹配到合适id []
+大话三国之愚人劫 无豆瓣id数据，存入列表
+的士神探 26775511 0保存成功[douban]
+追回24小时 27597039 0保存成功[douban]
+星灵之末日异能 未匹配到合适id []
+----------地址被限制,稍后重试----------
+[pid: 11746|app: 0|req: 205/277] 198.108.66.212 () {34 vars in 394 bytes} [Sat May 16 18:02:45 2020] GET / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+致梦想 27602232 0保存成功[douban]
+神将归来：阿修罗之泪 27602234 0保存成功[douban]
+御宠娇妃 26923019 4.4保存成功[douban]
+中国劳工兵团：英国被遗忘的军队 27197072 8.2保存成功[douban]
+大笑天竹 27316442 0保存成功[douban]
+阔少家的小魔头 27591761 0保存成功[douban]
+傲娇千金惹人醉 27319821 0保存成功[douban]
+房子与狗 27157698 0保存成功[douban]
+致命体香 27198142 0保存成功[douban]
+艾娃 未匹配到合适id []
+----------地址被限制,稍后重试----------
+超能夫妻 27607344 0保存成功[douban]
+魔幻西游2之伏魔篇 27607345 0保存成功[douban]
+剩女斗士 27603706 0保存成功[douban]
+捉妖战记 27601015 0保存成功[douban]
+教数学的体育老师 27203625 0保存成功[douban]
+杀人狂 未匹配到合适id []
+杀人狂 无豆瓣id数据，存入列表
+夜梦传说之天狼使者 未匹配到合适id []
+----------地址被限制,稍后重试----------
+跃迁管理局 27317684 0保存成功[douban]
+古巴与摄影师 27185473 9.1保存成功[douban]
+不眠夜 26317352 5.6保存成功[douban]
+人狼游戏：爱人 26918602 6.6保存成功[douban]
+战争机器 11518990 6.1保存成功[douban]
+猜火车2 22263645 8.0保存成功[douban]
+贼心魅影 27602241 0保存成功[douban]
+热血军训 未匹配到合适id []
+热血军训 无豆瓣id数据，存入列表
+疾速特攻 26333560 7.7保存成功[douban]
+陋室 未匹配到合适id []
+----------地址被限制,稍后重试----------
+天穹之幻境重生 27186937 0保存成功[douban]
+八侍卫之英雄崛起 26937558 0保存成功[douban]
+超自然事件之坠龙事件 27180936 3.6保存成功[douban]
+四平青年之江湖学院 未匹配到合适id []
+四平青年之江湖学院 无豆瓣id数据，存入列表
+熟悉的陌生人 27005338 5.2保存成功[douban]
+青春无敌 27167080 0保存成功[douban]
+恶魔指路 27186936 0保存成功[douban]
+大将金昌洙 未匹配到合适id []
+----------地址被限制,稍后重试----------
+酒吧 未匹配到合适id [{'episode': '', 'img': 'https://img1.doubanio.com/view/photo/s_ratio_poster/public/p2494819969.jpg', 'title': '酒吧', 'url': 'https://movie.douban.com/subject/26694497/?suggest=%E9%85%92%E5%90%A7', 'type': 'movie', 'year': '2017', 'sub_title': 'El bar', 'id': '26694497'}, {'episode': '', 'img': 'https://img9.doubanio.com/view/photo/s_ratio_poster/public/p2516439546.jpg', 'title': '酒吧探戈', 'url': 'https://movie.douban.com/subject/27079384/?suggest=%E9%85%92%E5%90%A7', 'type': 'movie', 'year': '2017', 'sub_title': '파도 여인 그리고 탱고', 'id': '27079384'}]
+酒吧 无豆瓣id数据，存入列表
+VR嫌疑人 27597017 0保存成功[douban]
+变身爱 27597248 0保存成功[douban]
+灵魂剪辑师 27205186 0保存成功[douban]
+烽火小侠之装神弄鬼 未匹配到合适id []
+----------地址被限制,稍后重试----------
+喵星咖啡 27597018 0保存成功[douban]
+血缎惊瞳 27191651 0保存成功[douban]
+蝶影惊魂 27195044 0保存成功[douban]
+三界传说之浮屠秘术 27197556 0保存成功[douban]
+雪山奇迹 26736090 5.8保存成功[douban]
+这一刻，我要世界看见 未匹配到合适id []
+----------地址被限制,稍后重试----------
+鬼魅浮生 26920017 7.5保存成功[douban]
+十二星座大逃杀(上) 27160799 0保存成功[douban]
+V.I.P 26858970 7.1保存成功[douban]
+魔衣 27175973 0保存成功[douban]
+我的学霸男友 27186600 0保存成功[douban]
+纵情之路 27173452 0保存成功[douban]
+葬魂旅馆 27173449 0保存成功[douban]
+消失的330公车 未匹配到合适id []
+----------地址被限制,稍后重试----------
+简装男神 未匹配到合适id []
+简装男神 无豆瓣id数据，存入列表
+我的魔镜男友 27077066 0保存成功[douban]
+我的直男BF 27167107 0保存成功[douban]
+秦贼有道 27072647 0保存成功[douban]
+疯狂的彩礼 27168770 0保存成功[douban]
+超能侠 27039110 0保存成功[douban]
+13号诊室 27160627 0保存成功[douban]
+72天搞定你 未匹配到合适id []
+----------地址被限制,稍后重试----------
+刺客冷血 27173446 0保存成功[douban]
+超能少年之梦幻奇想 27168741 0保存成功[douban]
+江湖少女变形记 27173448 0保存成功[douban]
+功夫宅男之绝版女神 27067714 0保存成功[douban]
+黑拳之龙虎兄弟 27168919 0保存成功[douban]
+海带 未匹配到合适id [{'episode': '', 'img': 'https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2500173711.jpg', 'title': '海带', 'url': 'https://movie.douban.com/subject/27133264/?suggest=%E6%B5%B7%E5%B8%A6', 'type': 'movie', 'year': '2017', 'sub_title': '海带', 'id': '27133264'}, {'episode': '8', 'img': 'https://img1.doubanio.com/view/photo/s_ratio_poster/public/p2486128977.jpg', 'title': '海带双椒', 'url': 'https://movie.douban.com/subject/27084010/?suggest=%E6%B5%B7%E5%B8%A6', 'type': 'movie', 'year': '2017', 'sub_title': '海带双椒', 'id': '27084010'}]
+海带 无豆瓣id数据，存入列表
+废柴影帝与卧底警花 未匹配到合适id []
+----------地址被限制,稍后重试----------
+致命皮卡 27602231 0保存成功[douban]
+兄弟 未匹配到合适id []
+兄弟 无豆瓣id数据，存入列表
+命在谁手 未匹配到合适id []
+命在谁手 无豆瓣id数据，存入列表
+Magic Hour 未匹配到合适id []
+----------地址被限制,稍后重试----------
+会痛的十七岁 26757951 3.2保存成功[douban]
+疯狂之家 26462378 5.4保存成功[douban]
+记忆暗线 27304754 0保存成功[douban]
+古镇异缘 未匹配到合适id []
+古镇异缘 无豆瓣id数据，存入列表
+大明锦衣卫2 27061496 4.5保存成功[douban]
+陕囧 未匹配到合适id []
+----------地址被限制,稍后重试----------
+康熙罐子 27602229 0保存成功[douban]
+废柴少年之次元危机 27195107 0保存成功[douban]
+蓝色的眼泪 27597262 0保存成功[douban]
+光芒渐逝的年代 26952538 7.1保存成功[douban]
+剩余的爱 27203604 6.5保存成功[douban]
+逆谋 - 叛乱的时代 26577175 4.8保存成功[douban]
+超次元学院1 27316109 0保存成功[douban]
+星灵传说之轮回 27591684 0保存成功[douban]
+留夏 27205168 7.6保存成功[douban]
+再见偏执狂 27195010 0保存成功[douban]
+少年英雄之人小鬼大 未匹配到合适id []
+----------地址被限制,稍后重试----------
+[pid: 11746|app: 0|req: 206/278] 14.18.182.223 () {36 vars in 576 bytes} [Sat May 16 19:21:45 2020] GET /video/play/51726/ => generated 15542 bytes in 7 msecs (HTTP/1.1 200) 6 headers in 320 bytes (1 switches on core 0)
+丛林探险 27203168 0保存成功[douban]
+仙魔越光之战 27203144 0保存成功[douban]
+读心师 27107753 0保存成功[douban]
+铁血拳皇 27203146 0保存成功[douban]
+我的要命女友 27203145 0保存成功[douban]
+笔仙大战贞子2 27195090 4.8保存成功[douban]
+长腿校花与热血教师 未匹配到合适id []
+----------地址被限制,稍后重试----------
+超能赌神4 27203147 0保存成功[douban]
+迷情N小时 26816524 0保存成功[douban]
+倾听者 26857996 0保存成功[douban]
+神偷大师 27104373 0保存成功[douban]
+喜神之赶尸风云 27199905 0保存成功[douban]
+破里拳Polimar 26914701 4.7保存成功[douban]
+神偷联盟 26723165 7.1保存成功[douban]
+末日生机 未匹配到合适id []
+----------地址被限制,稍后重试----------
+[pid: 11746|app: 0|req: 207/279] 101.89.19.140 () {36 vars in 578 bytes} [Sat May 16 19:36:21 2020] GET /user/soapCaller.bs => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+[pid: 11746|app: 0|req: 208/280] 162.243.135.241 () {34 vars in 423 bytes} [Sat May 16 19:40:45 2020] GET /portal/redlion => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+诱罪师 未匹配到合适id []
+诱罪师 无豆瓣id数据，存入列表
+刀剑笑新传之决战 27180895 0保存成功[douban]
+清醒梦2之疯狂快递 27203013 0保存成功[douban]
+夺宝五福星 27592602 0保存成功[douban]
+拯救校花计划 27594286 0保存成功[douban]
+下凡哒 27597259 0保存成功[douban]
+一曲成名 27597261 0保存成功[douban]
+从未在此 未匹配到合适id [{'episode': '', 'img': 'https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2501462422.jpg', 'title': '从未在此', 'url': 'https://movie.douban.com/subject/10546728/?suggest=%E4%BB%8E%E6%9C%AA%E5%9C%A8%E6%AD%A4', 'type': 'movie', 'year': '2017', 'sub_title': 'Never Here', 'id': '10546728'}, {'episode': '', 'img': 'https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2518558081.jpg', 'title': '你从未在此', 'url': 'https://movie.douban.com/subject/26791455/?suggest=%E4%BB%8E%E6%9C%AA%E5%9C%A8%E6%AD%A4', 'type': 'movie', 'year': '2017', 'sub_title': 'You Were Never Really Here', 'id': '26791455'}]
+----------地址被限制,稍后重试----------
+博格对战麦肯罗 26793860 7.1保存成功[douban]
+迷失天堂2 26985864 5.5保存成功[douban]
+我的老婆未成年3 27591770 0保存成功[douban]
+宫之极品皇子 27157753 0保存成功[douban]
+我的机器女友未成年 27166626 0保存成功[douban]
+时间浪人之爱你一大跳 26999816 2.7保存成功[douban]
+神将少女保镖 27168895 0保存成功[douban]
+我的网红女友 27168799 0保存成功[douban]
+摸金 未匹配到合适id []
+----------地址被限制,稍后重试----------
+六盘山之恋 25972485 0保存成功[douban]
+导演不让说 26697693 0保存成功[douban]
+禁锢 26974698 0保存成功[douban]
+无字天书 27186922 0保存成功[douban]
+欲望都市 未匹配到合适id []
+欲望都市 无豆瓣id数据，存入列表
+娜美的使命 27186923 0保存成功[douban]
+午夜凶铃3[美版] 1584991 4.9保存成功[douban]
+私人会所 未匹配到合适id []
+----------地址被限制,稍后重试----------
+杜丽娘 27107265 2.7保存成功[douban]
+Hello！千金女优 27148225 0保存成功[douban]
+活死人游戏 27160734 0保存成功[douban]
+有言在仙 27069818 5.1保存成功[douban]
+许愿 未匹配到合适id [{'episode': '', 'img': 'https://img1.doubanio.com/view/photo/s_ratio_poster/public/p2460025207.jpg', 'title': '许愿', 'url': 'https://movie.douban.com/subject/26686502/?suggest=%E8%AE%B8%E6%84%BF', 'type': 'movie', 'year': '2017', 'sub_title': 'Wish Upon', 'id': '26686502'}, {'episode': '', 'img': 'https://img9.doubanio.com/view/photo/s_ratio_poster/public/p2547646626.jpg', 'title': '许愿盒', 'url': 'https://movie.douban.com/subject/30365451/?suggest=%E8%AE%B8%E6%84%BF', 'type': 'movie', 'year': '2017', 'sub_title': 'Wishing Box', 'id': '30365451'}]
+许愿 无豆瓣id数据，存入列表
+魔法王座之超能宅男 27006102 0保存成功[douban]
+寻根 27185789 0保存成功[douban]
+青春合伙人 未匹配到合适id []
+----------地址被限制,稍后重试----------
+我的极品闺蜜 27188332 0保存成功[douban]
+霸道少女团 27186066 0保存成功[douban]
+幸运女神与倒霉蛋 27191641 0保存成功[douban]
+庄家 27148731 0保存成功[douban]
+狙击精英：巅峰对决 26957177 5.5保存成功[douban]
+颤栗汪洋3 26892964 3.9保存成功[douban]
+末陨回声 26981173 3.8保存成功[douban]
+撕裂人 未匹配到合适id []
+撕裂人 无豆瓣id数据，存入列表
+末路恐慌 未匹配到合适id []
+----------地址被限制,稍后重试----------
+僵尸集团 26673397 3.5保存成功[douban]
+隐隐惊马槽之决战女僵尸 27103880 2.2保存成功[douban]
+猎凶风河谷 26389601 7.8保存成功[douban]
+[pid: 11746|app: 0|req: 209/281] 182.254.52.17 () {36 vars in 594 bytes} [Sat May 16 20:15:50 2020] GET /video/play/51726/1-11.html => generated 15552 bytes in 7 msecs (HTTP/1.1 200) 6 headers in 320 bytes (1 switches on core 0)
+大明幻世录之恋羽奇缘 27197558 0保存成功[douban]
+小丑莫非 27197559 0保存成功[douban]
+空洞房 27197560 0保存成功[douban]
+岁月是把杀猪刀 27191815 0保存成功[douban]
+最后一个恶魔 27197561 0保存成功[douban]
+好鬼两个半2鬼王争霸 27092453 0保存成功[douban]
+我妻子的谎言 未匹配到合适id []
+----------地址被限制,稍后重试----------
+今天的吉良同学 26817018 6.8保存成功[douban]
+卷帘君下凡那些羞羞事儿 27192286 0保存成功[douban]
+豹棚兄弟 27197570 0保存成功[douban]
+刀剑笑新传之花魁 27180894 0保存成功[douban]
+梦在家乡绽放 未匹配到合适id []
+梦在家乡绽放 无豆瓣id数据，存入列表
+狐闹干探2 27187178 0保存成功[douban]
+疯狂相亲 未匹配到合适id []
+----------地址被限制,稍后重试----------
+攻守道 未匹配到合适id []
+攻守道 无豆瓣id数据，存入列表
+亡命24小时 27191638 0保存成功[douban]
+重返.狼群 26920269 8.3保存成功[douban]
+女王的爱情 27191643 0保存成功[douban]
+why星人 未匹配到合适id []
+----------地址被限制,稍后重试----------
+刀剑笑新传之宝鉴 27178955 0保存成功[douban]
+二妮的山村梦 27191642 0保存成功[douban]
+我的心机闺蜜 27191645 0保存成功[douban]
+年轻的卡尔·马克思 5330387 6.7保存成功[douban]
+寂静的王国 26912451 0保存成功[douban]
+特别有种：特警使命 未匹配到合适id []
+----------地址被限制,稍后重试----------
+微商 未匹配到合适id [{'episode': '', 'img': 'https://img1.doubanio.com/f/movie/b6dc761f5e4cf04032faa969826986efbecd54bb/pics/movie/movie_default_small.png', 'title': '微商', 'url': 'https://movie.douban.com/subject/27192135/?suggest=%E5%BE%AE%E5%95%86', 'type': 'movie', 'year': '2017', 'sub_title': '微商', 'id': '27192135'}, {'episode': '', 'img': 'https://img1.doubanio.com/f/movie/b6dc761f5e4cf04032faa969826986efbecd54bb/pics/movie/movie_default_small.png', 'title': '微商', 'url': 'https://movie.douban.com/subject/27591733/?suggest=%E5%BE%AE%E5%95%86', 'type': 'movie', 'year': '2017', 'sub_title': '微商', 'id': '27591733'}]
+微商 无豆瓣id数据，存入列表
+无耻神混 27316028 0保存成功[douban]
+东北俩兄弟 27316782 0保存成功[douban]
+绝境穿越 27591735 0保存成功[douban]
+极限特工X的献身 27591759 0保存成功[douban]
+海阔天空 27009656 0保存成功[douban]
+名侦探笑传 27199885 0保存成功[douban]
+恋爱合约 未匹配到合适id []
+----------地址被限制,稍后重试----------
+深漂之深圳湾恋人 27591763 0保存成功[douban]
+致命拯救 27320222 0保存成功[douban]
+我的老大是卧底 27319931 0保存成功[douban]
+这个大王我罩的：双王夺妃 27144872 0保存成功[douban]
+反转人生 25827741 5.1保存成功[douban]
+重返17岁 26887031 6.7保存成功[douban]
+京城双煞 27126395 0保存成功[douban]
+杀手快跑 未匹配到合适id []
+----------地址被限制,稍后重试----------
+废柴英雄联盟 26696993 2.7保存成功[douban]
+六天 26438227 6.3保存成功[douban]
+盗贼联盟 27197563 0保存成功[douban]
+王牌总裁霸王花 27197131 0保存成功[douban]
+罪 未匹配到合适id []
+罪 无豆瓣id数据，存入列表
+魔性深渊 未匹配到合适id []
+----------地址被限制,稍后重试----------
+古墓探秘 27197566 0保存成功[douban]
+一眉道长之引月宝灯 27197116 0保存成功[douban]
+昆仑道经 27197567 0保存成功[douban]
+车库男女 27089445 0保存成功[douban]
+有贼自远方来 27197572 0保存成功[douban]
+老千归来 27197573 0保存成功[douban]
+创业吧，骚年 27197205 0保存成功[douban]
+青天降妖录 27195091 4.4保存成功[douban]
+凯恩马戏团 27007263 4.3保存成功[douban]
+不死镇的秘密 未匹配到合适id []
+----------地址被限制,稍后重试----------
+痞子校花变身记 27173334 0保存成功[douban]
+大乱斗之少年觉醒 未匹配到合适id []
+大乱斗之少年觉醒 无豆瓣id数据，存入列表
+一场说走就走的旅行 27179078 0保存成功[douban]
+一路微光 27079342 0保存成功[douban]
+情醉金迷 27179076 0保存成功[douban]
+校花冒牌男友 27179077 0保存成功[douban]
+猎魔人之幽冥号角 27174478 0保存成功[douban]
+俘虏与逃兵 27173340 0保存成功[douban]
+我的青春路过你的锦年 未匹配到合适id []
+----------地址被限制,稍后重试----------
+007：幽灵党 未匹配到合适id []
+007：幽灵党 无豆瓣id数据，存入列表
+钱虫子之卧底计划 27179084 0保存成功[douban]
+毕业初体验 27112393 0保存成功[douban]
+绝命赌局 27178944 0保存成功[douban]
+疯狂东北人 27179085 0保存成功[douban]
+骗假不留 27179086 0保存成功[douban]
+王者归来黄飞鸿 27180899 3.4保存成功[douban]
+欲望赎金 未匹配到合适id []
+----------地址被限制,稍后重试----------
+单身女子公寓 27197575 0保存成功[douban]
+人魔生死恋 27203140 0保存成功[douban]
+龙吟虎啸 未匹配到合适id []
+龙吟虎啸 无豆瓣id数据，存入列表
+时空送货人 27124981 0保存成功[douban]
+一念之差 未匹配到合适id []
+一念之差 无豆瓣id数据，存入列表
+暮色之战：异能部队 未匹配到合适id []
+----------地址被限制,稍后重试----------
+短路 27191648 0保存成功[douban]
+扫毒风云之因货起的祸 27191647 0保存成功[douban]
+婚钱财礼 27191649 0保存成功[douban]
+镜头前的女人 27146634 0保存成功[douban]
+初恋日记 26969722 5.4保存成功[douban]
+福祸兄弟 未匹配到合适id []
+福祸兄弟 无豆瓣id数据，存入列表
+老爸是信长 27140043 0保存成功[douban]
+致我们终将逝去的初恋 27055704 0保存成功[douban]
+天亮了请睁眼 27081627 0保存成功[douban]
+热血杨家将 未匹配到合适id []
+----------地址被限制,稍后重试----------
+新聊斋之僵尸新娘 27079404 5.5保存成功[douban]
+长城大侠 27091195 0保存成功[douban]
+旗帜高校之三校争霸 27091184 0保存成功[douban]
+第七只眼之食狱 27085699 0保存成功[douban]
+火蝎特战队 27091185 0保存成功[douban]
+祸起高利贷 27160735 0保存成功[douban]
+开心鬼大战古惑仔 27160769 0保存成功[douban]
+疯狂的爱情 27160731 0保存成功[douban]
+迷情悬局 27160736 0保存成功[douban]
+男身女身 未匹配到合适id []
+----------地址被限制,稍后重试----------
+[pid: 11746|app: 0|req: 210/282] 113.69.32.185 () {46 vars in 1047 bytes} [Sat May 16 21:41:19 2020] GET /video/search/?wd=%E9%A9%AF%E9%BE%99%E9%AB%98%E6%89%8B&page=1 => generated 16998 bytes in 50 msecs (HTTP/1.1 200) 6 headers in 320 bytes (1 switches on core 0)
+[pid: 11747|app: 0|req: 43/283] 113.69.32.185 () {46 vars in 1047 bytes} [Sat May 16 21:41:19 2020] GET /video/search/?wd=%E9%A9%AF%E9%BE%99%E9%AB%98%E6%89%8B&page=1 => generated 16998 bytes in 55 msecs (HTTP/1.1 200) 6 headers in 320 bytes (1 switches on core 0)
+[pid: 11747|app: 0|req: 44/284] 113.69.32.185 () {46 vars in 994 bytes} [Sat May 16 21:41:21 2020] GET /video/play/1455/ => generated 13532 bytes in 5 msecs (HTTP/1.1 200) 6 headers in 320 bytes (1 switches on core 1)
+你是我兄弟之牌王 27133041 0保存成功[douban]
+校花的贴心学霸 27157706 0保存成功[douban]
+山海经破蛊师：食梦貘 27186612 0保存成功[douban]
+危急营救 未匹配到合适id []
+危急营救 无豆瓣id数据，存入列表
+我的任性老板 27160753 0保存成功[douban]
+淘宝女孩的好评爱情 27148702 0保存成功[douban]
+三缺一 未匹配到合适id []
+----------地址被限制,稍后重试----------
+盒子 30331596 8.6保存成功[douban]
+烈焰青春 27160732 0保存成功[douban]
+魔镜下的绣花鞋 27186926 0保存成功[douban]
+解救梦中人 27186925 0保存成功[douban]
+局部入侵计划 27175781 0保存成功[douban]
+王牌保镖 22266126 7.2保存成功[douban]
+演员18线 27186927 0保存成功[douban]
+草率死亡 27186930 0保存成功[douban]
+机器情人2之野蛮女管家 未匹配到合适id []
+----------地址被限制,稍后重试----------
+探案迷情 27186929 0保存成功[douban]
+山区小社 26579995 0保存成功[douban]
+死亡迷宫1 27096015 0保存成功[douban]
+我的魔法仙妻 27180946 0保存成功[douban]
+斑马逆行 27097788 0保存成功[douban]
+遇见董小姐 27186931 0保存成功[douban]
+BORDER：赎罪 27068887 8.4保存成功[douban]
+科搜研之女SP 未匹配到合适id []
+----------地址被限制,稍后重试----------
+二话西游 27186623 0保存成功[douban]
+没毛病之决战天机 27186933 0保存成功[douban]
+江湖凶猛 未匹配到合适id []
+江湖凶猛 无豆瓣id数据，存入列表
+填满 26879671 6.0保存成功[douban]
+民国大劫案2：盗贼先锋 27186932 0保存成功[douban]
+传销风云 未匹配到合适id []
+----------地址被限制,稍后重试----------
+大海与天使 未匹配到合适id []
+大海与天使 无豆瓣id数据，存入列表
+倩狐传 27168865 0保存成功[douban]
+风高夜黑 27186914 0保存成功[douban]
+人皮脸 25958867 5.5保存成功[douban]
+极寒之城 未匹配到合适id []
+----------地址被限制,稍后重试----------
+22年后的自白：我是杀人犯 26835911 7.3保存成功[douban]
+父子雄兵 26898747 4.7保存成功[douban]
+春与夏推理事件簿 未匹配到合适id []
+春与夏推理事件簿 无豆瓣id数据，存入列表
+大病 26884892 7.5保存成功[douban]
+双子起源 未匹配到合适id []
+----------地址被限制,稍后重试----------
+国家地理：伟大工程巡礼系列 未匹配到合适id []
+国家地理：伟大工程巡礼系列 无豆瓣id数据，存入列表
+蜜桃女孩 26761228 4.5保存成功[douban]
+异生探 26834719 0保存成功[douban]
+宠物校花 27173341 0保存成功[douban]
+谍战校园 26955972 0保存成功[douban]
+时光尽头遇到你 27176746 0保存成功[douban]
+密室惊魂 27179082 0保存成功[douban]
+死磕到底 27174396 0保存成功[douban]
+神迹之上古传奇 未匹配到合适id []
+----------地址被限制,稍后重试----------
+心灵救赎 27179081 0保存成功[douban]
+三生相遇白狐妖 27168914 0保存成功[douban]
+我的青春你来过 未匹配到合适id []
+我的青春你来过 无豆瓣id数据，存入列表
+挖掘机 未匹配到合适id []
+挖掘机 无豆瓣id数据，存入列表
+心理罪大电影 未匹配到合适id []
+----------地址被限制,稍后重试----------
+茶盗 27118146 2.4保存成功[douban]
+意外在场 27157814 7.2保存成功[douban]
+替身2017 未匹配到合适id []
+替身2017 无豆瓣id数据，存入列表
+诡影实录 未匹配到合适id []
+----------地址被限制,稍后重试----------
+半条命 20497370 3.6保存成功[douban]
+长官你别跑 27173364 0保存成功[douban]
+野蛮囧妃2：迷雾重重 27157504 0保存成功[douban]
+最后的疯狂 27007252 5.5保存成功[douban]
+小小爸爸 27173314 4.7保存成功[douban]
+亚瑟王：斗兽争霸 25864124 7.0保存成功[douban]
+上帝和四个杀手 27107779 0保存成功[douban]
+不结婚 未匹配到合适id []
+----------地址被限制,稍后重试----------
+[pid: 11746|app: 0|req: 211/285] 151.235.184.21 () {32 vars in 465 bytes} [Sat May 16 22:50:12 2020] GET / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+[pid: 11746|app: 0|req: 212/286] 117.157.15.27 () {34 vars in 500 bytes} [Sat May 16 22:53:47 2020] GET /TP/public/index.php => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+[pid: 11746|app: 0|req: 213/287] 117.157.15.27 () {34 vars in 464 bytes} [Sat May 16 22:53:52 2020] GET / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+目击者之追凶 11600078 8.2保存成功[douban]
+深山行 未匹配到合适id [{'episode': '', 'img': 'https://img1.doubanio.com/f/movie/b6dc761f5e4cf04032faa969826986efbecd54bb/pics/movie/movie_default_small.png', 'title': '深山行', 'url': 'https://movie.douban.com/subject/27112991/?suggest=%E6%B7%B1%E5%B1%B1%E8%A1%8C', 'type': 'movie', 'year': '2017', 'sub_title': '深山行', 'id': '27112991'}, {'episode': 'unknow', 'img': 'https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2541644491.jpg', 'title': '骑行日本，长野深山', 'url': 'https://movie.douban.com/subject/30394527/?suggest=%E6%B7%B1%E5%B1%B1%E8%A1%8C', 'type': 'movie', 'year': '2017', 'sub_title': 'Cycle Around Japan: Nagano Life Deep in the Mountains', 'id': '30394527'}]
+深山行 无豆瓣id数据，存入列表
+侠盗联盟 25858758 5.3保存成功[douban]
+单身骑士 26715549 7.1保存成功[douban]
+斯皮尔伯格 27087656 8.2保存成功[douban]
+大内特工队 未匹配到合适id []
+----------地址被限制,稍后重试----------
+[pid: 11746|app: 0|req: 214/288] 196.52.43.60 () {30 vars in 431 bytes} [Sat May 16 22:54:59 2020] GET / => generated 179 bytes in 2 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+刺杀盖世太保 26383923 6.6保存成功[douban]
+嗜爱 27168915 0保存成功[douban]
+继承高校 27168933 0保存成功[douban]
+情侣的烦恼 27173445 0保存成功[douban]
+岩合光昭猫步走世界 未匹配到合适id []
+岩合光昭猫步走世界 无豆瓣id数据，存入列表
+小恶魔 26941837 5.4保存成功[douban]
+黑暗塔 4943938 5.2保存成功[douban]
+疯狂修道院 未匹配到合适id []
+----------地址被限制,稍后重试----------
+古墓诡事 27179075 0保存成功[douban]
+决战江湖之乞丐与古惑 未匹配到合适id []
+决战江湖之乞丐与古惑 无豆瓣id数据，存入列表
+天使在人间 未匹配到合适id []
+天使在人间 无豆瓣id数据，存入列表
+女性本色 未匹配到合适id []
+----------地址被限制,稍后重试----------
+魔方笔仙2 27160739 0保存成功[douban]
+魔方笔仙 未匹配到合适id [{'episode': '', 'img': 'https://img1.doubanio.com/f/movie/b6dc761f5e4cf04032faa969826986efbecd54bb/pics/movie/movie_default_small.png', 'title': '魔方笔仙2', 'url': 'https://movie.douban.com/subject/27160739/?suggest=%E9%AD%94%E6%96%B9%E7%AC%94%E4%BB%99', 'type': 'movie', 'year': '2017', 'sub_title': '魔方笔仙2', 'id': '27160739'}, {'episode': '', 'img': 'https://img1.doubanio.com/f/movie/b6dc761f5e4cf04032faa969826986efbecd54bb/pics/movie/movie_default_small.png', 'title': '魔方笔仙', 'url': 'https://movie.douban.com/subject/27013253/?suggest=%E9%AD%94%E6%96%B9%E7%AC%94%E4%BB%99', 'type': 'movie', 'year': '2017', 'sub_title': '魔方笔仙', 'id': '27013253'}]
+魔方笔仙 无豆瓣id数据，存入列表
+第69届艾美奖颁奖典礼 27109223 6.8保存成功[douban]
+眩：北斋之女 27065129 8.6保存成功[douban]
+主播2017 未匹配到合适id []
+----------地址被限制,稍后重试----------
+野人族女王 27160779 0保存成功[douban]
+西河口秘闻 27148200 4.2保存成功[douban]
+灵异钥匙 27160813 0保存成功[douban]
+疯人夜 未匹配到合适id [{'episode': '', 'img': 'https://img1.doubanio.com/view/photo/s_ratio_poster/public/p2499525498.jpg', 'title': '疯人夜', 'url': 'https://movie.douban.com/subject/27144963/?suggest=%E7%96%AF%E4%BA%BA%E5%A4%9C', 'type': 'movie', 'year': '2017', 'sub_title': '疯人夜', 'id': '27144963'}, {'episode': '', 'img': 'https://img9.doubanio.com/view/photo/s_ratio_poster/public/p2501854094.jpg', 'title': '精变者', 'url': 'https://movie.douban.com/subject/26962640/?suggest=%E7%96%AF%E4%BA%BA%E5%A4%9C', 'type': 'movie', 'year': '2017', 'sub_title': 'Psychopaths', 'id': '26962640'}]
+疯人夜 无豆瓣id数据，存入列表
+阴阳小子 27149644 0保存成功[douban]
+地下室 27166108 5.2保存成功[douban]
+微光湖 3569906 6.3保存成功[douban]
+热血少女 未匹配到合适id []
+----------地址被限制,稍后重试----------
+温柔的谎言2 27091192 0保存成功[douban]
+超能恋爱学院 27089017 0保存成功[douban]
+拯救青春系女友 27091189 0保存成功[douban]
+爱在午夜时 未匹配到合适id []
+爱在午夜时 无豆瓣id数据，存入列表
+爱爱囧事2 27085694 2.4保存成功[douban]
+我的同桌是极品2变身无敌 27081839 0保存成功[douban]
+附灵发卡 未匹配到合适id []
+----------地址被限制,稍后重试----------
+人生典当行之三世乾坤 27047890 0保存成功[douban]
+东北往事之人在江湖 27073148 0保存成功[douban]
+网灵 未匹配到合适id []
+网灵 无豆瓣id数据，存入列表
+阴阳天师之麒麟腿 27086163 0保存成功[douban]
+黑钻 未匹配到合适id []
+----------地址被限制,稍后重试----------
+学渣保卫战 27086164 0保存成功[douban]
+极致追击 26426099 3.4保存成功[douban]
+牡丹花下 26761325 6.0保存成功[douban]
+废物之火 未匹配到合适id []
+废物之火 无豆瓣id数据，存入列表
+一路逆风 未匹配到合适id []
+----------地址被限制,稍后重试----------
+机甲前线 27157702 0保存成功[douban]
+极盗车神 25933890 7.0保存成功[douban]
+相棒剧场版4 26797712 6.5保存成功[douban]
+我是谁的宝贝 26955948 5.4保存成功[douban]
+我是马布里 25903033 6.2保存成功[douban]
+奇葩男女之前任归来 27135472 0保存成功[douban]
+截拳战将 27146840 0保存成功[douban]
+把妹攻略 未匹配到合适id []
+----------地址被限制,稍后重试----------
+碰瓷儿遇到贼 27146839 0保存成功[douban]
+麻辣学院 27036467 2.5保存成功[douban]
+暗黑女子 未匹配到合适id [{'episode': '', 'img': 'https://img9.doubanio.com/view/photo/s_ratio_poster/public/p2496283606.jpg', 'title': '暗黑女子', 'url': 'https://movie.douban.com/subject/26870765/?suggest=%E6%9A%97%E9%BB%91%E5%A5%B3%E5%AD%90', 'type': 'movie', 'year': '2017', 'sub_title': '暗黒女子', 'id': '26870765'}, {'episode': '', 'img': 'https://img1.doubanio.com/f/movie/b6dc761f5e4cf04032faa969826986efbecd54bb/pics/movie/movie_default_small.png', 'title': '暗黑女子', 'url': 'https://movie.douban.com/subject/27130028/?suggest=%E6%9A%97%E9%BB%91%E5%A5%B3%E5%AD%90', 'type': 'movie', 'year': '2017', 'sub_title': 'Dark Maiden', 'id': '27130028'}]
+暗黑女子 无豆瓣id数据，存入列表
+惊天解密 22266475 5.8保存成功[douban]
+猎魂师 27056315 0保存成功[douban]
+鬼屋 未匹配到合适id []
+----------地址被限制,稍后重试----------
+[1589644802] logsize: 104063, triggering log-reopen...

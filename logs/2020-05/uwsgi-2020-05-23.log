@@ -1,0 +1,1375 @@
+[1590163202] ./uwsgi.log reopened.
+美国黑帮 1578503 7.9保存成功[douban]
+基因决定我爱你 2052973 5.7保存成功[douban]
+龙过鼠年 2377147 5.9保存成功[douban]
+C+侦探 2263112 6.6保存成功[douban]
+明明 未匹配到合适id []
+----------地址被限制,稍后重试----------
+门 1890784 7.7保存成功[douban]
+心想事成 1966105 5.5保存成功[douban]
+醒狮 2053618 5.3保存成功[douban]
+神枪手与智多星 2255999 5.6保存成功[douban]
+野·良犬 2064441 7.3保存成功[douban]
+铁三角 1866131 6.4保存成功[douban]
+沉默的较量 2228239 5.6保存成功[douban]
+金碧辉煌 2326220 7.3保存成功[douban]
+吸血莱恩2：解脱 2042932 4.3保存成功[douban]
+谍影重重3 未匹配到合适id []
+----------地址被限制,稍后重试----------
+异冢 2035125 3.4保存成功[douban]
+暗物质 1864199 6.8保存成功[douban]
+米尼 1778993 6.0保存成功[douban]
+错爱 2361528 5.9保存成功[douban]
+第三个人 3025814 5.5保存成功[douban]
+麻雀要革命 2277010 4.1保存成功[douban]
+冒牌天神2 1867332 6.6保存成功[douban]
+人皮客栈2 1793571 6.8保存成功[douban]
+森冤 未匹配到合适id []
+----------地址被限制,稍后重试----------
+十品 3763247 6.6保存成功[douban]
+[pid: 11746|app: 0|req: 779/1733] 183.27.47.4 () {42 vars in 898 bytes} [Sat May 23 00:32:44 2020] GET /admin/view_log/?page=5 => generated 0 bytes in 2 msecs (HTTP/1.1 302) 6 headers in 184 bytes (1 switches on core 0)
+[pid: 11747|app: 0|req: 351/1734] 183.27.47.4 () {42 vars in 895 bytes} [Sat May 23 00:32:44 2020] GET /view_log/2020-05-23/ => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+上海红美丽 1499153 5.2保存成功[douban]
+[pid: 11747|app: 0|req: 352/1735] 183.27.47.4 () {42 vars in 898 bytes} [Sat May 23 00:32:51 2020] GET /admin/view_log/?page=5 => generated 0 bytes in 2 msecs (HTTP/1.1 302) 6 headers in 184 bytes (1 switches on core 1)
+[pid: 11748|app: 0|req: 332/1736] 183.27.47.4 () {42 vars in 895 bytes} [Sat May 23 00:32:51 2020] GET /view_log/2020-05-23/ => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+[pid: 11748|app: 0|req: 333/1737] 183.27.47.4 () {42 vars in 895 bytes} [Sat May 23 00:32:53 2020] GET /view_log/2020-05-23/ => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 1)
+江北好人 2255998 5.8保存成功[douban]
+[pid: 11746|app: 0|req: 780/1738] 183.27.47.4 () {46 vars in 951 bytes} [Sat May 23 00:32:58 2020] GET /admin/view_log/?page=1 => generated 16204 bytes in 2 msecs (HTTP/1.1 200) 5 headers in 152 bytes (1 switches on core 0)
+陆小凤传奇之幽灵山庄 2136208 7.4保存成功[douban]
+陆小凤传奇之银钩赌坊 未匹配到合适id []
+陆小凤传奇之银钩赌坊 无豆瓣id数据，存入列表
+陆小凤传奇之血衣之谜 2136210 7.5保存成功[douban]
+陆小凤传奇之绣花大盗 未匹配到合适id []
+----------地址被限制,稍后重试----------
+[pid: 11746|app: 0|req: 781/1739] 183.27.47.4 () {44 vars in 964 bytes} [Sat May 23 00:33:52 2020] GET /admin/view_log/2020-05-22 => generated 0 bytes in 0 msecs (HTTP/1.1 301) 4 headers in 165 bytes (1 switches on core 0)
+[pid: 11746|app: 0|req: 782/1740] 183.27.47.4 () {44 vars in 966 bytes} [Sat May 23 00:33:52 2020] GET /admin/view_log/2020-05-22/ => generated 20982 bytes in 144 msecs (HTTP/1.1 200) 5 headers in 152 bytes (1 switches on core 0)
+[pid: 11746|app: 0|req: 783/1741] 183.27.47.4 () {44 vars in 983 bytes} [Sat May 23 00:34:27 2020] GET /admin/view_log/2020-05-22/?page=2 => generated 21925 bytes in 125 msecs (HTTP/1.1 200) 5 headers in 152 bytes (1 switches on core 0)
+[pid: 11746|app: 0|req: 784/1742] 183.27.47.4 () {44 vars in 992 bytes} [Sat May 23 00:34:41 2020] GET /admin/view_log/2020-05-22/?page=11 => generated 24719 bytes in 134 msecs (HTTP/1.1 200) 5 headers in 152 bytes (1 switches on core 0)
+[pid: 11746|app: 0|req: 785/1743] 183.27.47.4 () {42 vars in 905 bytes} [Sat May 23 00:34:48 2020] GET /video/play/81467/1-3.html => generated 13774 bytes in 5 msecs (HTTP/1.1 200) 6 headers in 320 bytes (1 switches on core 0)
+[pid: 11746|app: 0|req: 786/1744] 183.27.47.4 () {44 vars in 943 bytes} [Sat May 23 00:34:56 2020] GET /video/type/1/ => generated 37379 bytes in 272 msecs (HTTP/1.1 200) 6 headers in 320 bytes (1 switches on core 0)
+[pid: 11746|app: 0|req: 787/1745] 183.27.47.4 () {44 vars in 976 bytes} [Sat May 23 00:34:58 2020] GET /video/type/1/?year=&area=&rating=9.0 => generated 37081 bytes in 116 msecs (HTTP/1.1 200) 6 headers in 320 bytes (1 switches on core 0)
+[pid: 11746|app: 0|req: 788/1746] 183.27.47.4 () {44 vars in 999 bytes} [Sat May 23 00:35:00 2020] GET /video/type/1/?year=&area=&rating=8.0 => generated 41705 bytes in 128 msecs (HTTP/1.1 200) 6 headers in 320 bytes (1 switches on core 0)
+[pid: 11746|app: 0|req: 789/1747] 183.27.47.4 () {44 vars in 999 bytes} [Sat May 23 00:35:01 2020] GET /video/type/1/?year=&area=&rating=7.0 => generated 42812 bytes in 138 msecs (HTTP/1.1 200) 6 headers in 320 bytes (1 switches on core 0)
+[pid: 11746|app: 0|req: 790/1748] 183.27.47.4 () {44 vars in 999 bytes} [Sat May 23 00:35:03 2020] GET /video/type/1/?year=&area=&rating=6.0 => generated 41522 bytes in 144 msecs (HTTP/1.1 200) 6 headers in 320 bytes (1 switches on core 0)
+[pid: 11746|app: 0|req: 791/1749] 183.27.47.4 () {44 vars in 999 bytes} [Sat May 23 00:35:05 2020] GET /video/type/1/?year=&area=&rating=5.0 => generated 44831 bytes in 123 msecs (HTTP/1.1 200) 6 headers in 320 bytes (1 switches on core 0)
+[pid: 11746|app: 0|req: 792/1750] 183.27.47.4 () {44 vars in 1035 bytes} [Sat May 23 00:35:07 2020] GET /video/type/1/?year=&area=&rating=5.0%E4%BB%A5%E4%B8%8B => generated 37866 bytes in 162 msecs (HTTP/1.1 200) 6 headers in 320 bytes (1 switches on core 0)
+[pid: 11746|app: 0|req: 793/1751] 183.27.47.4 () {44 vars in 972 bytes} [Sat May 23 00:35:11 2020] GET /video/type/1/ => generated 37379 bytes in 254 msecs (HTTP/1.1 200) 6 headers in 320 bytes (1 switches on core 0)
+[pid: 11746|app: 0|req: 794/1752] 183.27.47.4 () {44 vars in 1012 bytes} [Sat May 23 00:35:14 2020] GET /video/type/1/?year=&area=&rating=5.0%E4%BB%A5%E4%B8%8B => generated 37866 bytes in 151 msecs (HTTP/1.1 200) 6 headers in 320 bytes (1 switches on core 0)
+[pid: 11746|app: 0|req: 795/1753] 183.27.47.4 () {44 vars in 987 bytes} [Sat May 23 00:35:55 2020] GET /video/type/1/?&page=2 => generated 37316 bytes in 254 msecs (HTTP/1.1 200) 6 headers in 320 bytes (1 switches on core 0)
+[pid: 11746|app: 0|req: 796/1754] 183.27.47.4 () {44 vars in 984 bytes} [Sat May 23 00:36:07 2020] GET /video/type/1/?year=&area=&rating=9.0 => generated 37081 bytes in 112 msecs (HTTP/1.1 200) 6 headers in 320 bytes (1 switches on core 0)
+[pid: 11746|app: 0|req: 797/1755] 183.27.47.4 () {44 vars in 962 bytes} [Sat May 23 00:36:13 2020] GET /video/play/55565/ => generated 12981 bytes in 5 msecs (HTTP/1.1 200) 6 headers in 320 bytes (1 switches on core 0)
+[pid: 11746|app: 0|req: 798/1756] 183.27.47.4 () {44 vars in 969 bytes} [Sat May 23 00:36:38 2020] GET /video/type/1/?&page=2 => generated 37316 bytes in 244 msecs (HTTP/1.1 200) 6 headers in 320 bytes (1 switches on core 0)
+[pid: 11746|app: 0|req: 799/1757] 183.27.47.4 () {44 vars in 984 bytes} [Sat May 23 00:36:41 2020] GET /video/type/1/?year=&area=&rating=9.0 => generated 37081 bytes in 106 msecs (HTTP/1.1 200) 6 headers in 320 bytes (1 switches on core 0)
+[pid: 11746|app: 0|req: 800/1758] 183.27.47.4 () {44 vars in 969 bytes} [Sat May 23 00:36:44 2020] GET /video/type/1/?&page=2 => generated 37316 bytes in 249 msecs (HTTP/1.1 200) 6 headers in 320 bytes (1 switches on core 0)
+[pid: 11746|app: 0|req: 801/1759] 183.27.47.4 () {44 vars in 984 bytes} [Sat May 23 00:36:47 2020] GET /video/type/1/?year=&area=&rating=8.0 => generated 41705 bytes in 127 msecs (HTTP/1.1 200) 6 headers in 320 bytes (1 switches on core 0)
+[pid: 11746|app: 0|req: 802/1760] 183.27.47.4 () {44 vars in 969 bytes} [Sat May 23 00:36:52 2020] GET /video/type/1/?&page=2 => generated 37316 bytes in 250 msecs (HTTP/1.1 200) 6 headers in 320 bytes (1 switches on core 0)
+[pid: 11746|app: 0|req: 803/1761] 183.27.47.4 () {44 vars in 986 bytes} [Sat May 23 00:36:56 2020] GET /video/type/1/?year=2020&area=&rating= => generated 37861 bytes in 111 msecs (HTTP/1.1 200) 6 headers in 320 bytes (1 switches on core 0)
+[pid: 11746|app: 0|req: 804/1762] 183.27.47.4 () {44 vars in 990 bytes} [Sat May 23 00:36:58 2020] GET /video/type/1/?&year=2020&page=2 => generated 37418 bytes in 115 msecs (HTTP/1.1 200) 6 headers in 320 bytes (1 switches on core 0)
+陆小凤传奇之铁鞋传奇 2136201 7.8保存成功[douban]
+陆小凤传奇之陆小凤前传 2136204 7.8保存成功[douban]
+陆小凤传奇之决战前后 2136213 7.4保存成功[douban]
+陆小凤传奇之剑神一笑 2136209 7.4保存成功[douban]
+陆小凤传奇之大金鹏王 1968502 7.6保存成功[douban]
+遗愿清单 1867345 8.6保存成功[douban]
+双龙记 2153604 4.8保存成功[douban]
+青苹果 2147611 4.5保存成功[douban]
+女人本色 未匹配到合适id [{'episode': '', 'img': 'https://img9.doubanio.com/view/photo/s_ratio_poster/public/p481782495.jpg', 'title': '女人本色', 'url': 'https://movie.douban.com/subject/2136071/?suggest=%E5%A5%B3%E4%BA%BA%E6%9C%AC%E8%89%B2', 'type': 'movie', 'year': '2007', 'sub_title': '女人本色', 'id': '2136071'}, {'episode': '32', 'img': 'https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2504294361.jpg', 'title': '女人本色', 'url': 'https://movie.douban.com/subject/4888347/?suggest=%E5%A5%B3%E4%BA%BA%E6%9C%AC%E8%89%B2', 'type': 'movie', 'year': '2007', 'sub_title': '女人本色', 'id': '4888347'}]
+女人本色 无豆瓣id数据，存入列表
+木瓜姐妹 未匹配到合适id []
+----------地址被限制,稍后重试----------
+暮鼓晨钟 3101922 8.3保存成功[douban]
+合约情人 2214140 5.4保存成功[douban]
+花美男连锁恐怖事件 2245683 6.2保存成功[douban]
+秋之舞 未匹配到合适id []
+秋之舞 无豆瓣id数据，存入列表
+侠侣探案系列之古刹怪佛 未匹配到合适id []
+----------地址被限制,稍后重试----------
+[pid: 11746|app: 0|req: 805/1763] 92.86.188.35 () {32 vars in 463 bytes} [Sat May 23 01:01:08 2020] GET / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+守望平安 未匹配到合适id []
+----------地址被限制,稍后重试----------
+罪孽2007 未匹配到合适id []
+----------地址被限制,稍后重试----------
+穿越苍穹 未匹配到合适id []
+----------地址被限制,稍后重试----------
+侠侣探案系列之杜鹃啼血 未匹配到合适id []
+----------地址被限制,稍后重试----------
+连续五次失败，等待30分钟
+[pid: 11746|app: 0|req: 806/1764] 182.254.52.17 () {36 vars in 605 bytes} [Sat May 23 02:07:06 2020] GET /?XDEBUG_SESSION_START%3Dphpstorm => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+----------重新启动查找------------
+本·普拉特：无线电城现场秀 未匹配到合适id []
+----------地址被限制,稍后重试----------
+[pid: 11746|app: 0|req: 807/1765] 51.159.71.63 () {40 vars in 627 bytes} [Sat May 23 02:10:44 2020] GET / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+[pid: 11746|app: 0|req: 808/1766] 59.36.132.240 () {36 vars in 589 bytes} [Sat May 23 02:15:01 2020] GET /admin/view_log/?page%3D5 => generated 0 bytes in 1 msecs (HTTP/1.1 302) 6 headers in 180 bytes (1 switches on core 0)
+[pid: 11748|app: 0|req: 334/1767] 59.36.132.240 () {38 vars in 635 bytes} [Sat May 23 02:15:01 2020] GET /admin/login.html => generated 5348 bytes in 1 msecs (HTTP/1.1 200) 6 headers in 319 bytes (1 switches on core 0)
+爱情鸟的自救 未匹配到合适id []
+----------地址被限制,稍后重试----------
+仙书奇谭 未匹配到合适id []
+----------地址被限制,稍后重试----------
+孙悟空大战盘丝洞 未匹配到合适id []
+----------地址被限制,稍后重试----------
+主持人的风暴 未匹配到合适id []
+----------地址被限制,稍后重试----------
+连续五次失败，等待30分钟
+----------重新启动查找------------
+本·普拉特：无线电城现场秀 未匹配到合适id []
+----------地址被限制,稍后重试----------
+爱情鸟的自救 未匹配到合适id []
+----------地址被限制,稍后重试----------
+仙书奇谭 未匹配到合适id []
+----------地址被限制,稍后重试----------
+[pid: 11748|app: 0|req: 335/1768] 116.128.128.41 () {36 vars in 553 bytes} [Sat May 23 03:47:02 2020] GET /solr/ => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 1)
+孙悟空大战盘丝洞 未匹配到合适id []
+----------地址被限制,稍后重试----------
+主持人的风暴 未匹配到合适id []
+----------地址被限制,稍后重试----------
+连续五次失败，等待30分钟
+----------重新启动查找------------
+本·普拉特：无线电城现场秀 未匹配到合适id []
+----------地址被限制,稍后重试----------
+爱情鸟的自救 未匹配到合适id []
+----------地址被限制,稍后重试----------
+[pid: 11746|app: 0|req: 809/1769] 182.254.52.17 () {36 vars in 592 bytes} [Sat May 23 04:55:10 2020] GET /video/play/81467/1-3.html => generated 13774 bytes in 5 msecs (HTTP/1.1 200) 6 headers in 320 bytes (1 switches on core 0)
+仙书奇谭 未匹配到合适id []
+----------地址被限制,稍后重试----------
+孙悟空大战盘丝洞 未匹配到合适id []
+----------地址被限制,稍后重试----------
+主持人的风暴 未匹配到合适id []
+----------地址被限制,稍后重试----------
+[pid: 11746|app: 0|req: 810/1770] 116.128.128.41 () {36 vars in 606 bytes} [Sat May 23 05:22:22 2020] GET /solr/admin/info/system?wt%3Djson => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+连续五次失败，等待30分钟
+[pid: 11746|app: 0|req: 811/1771] 45.159.148.60 () {32 vars in 464 bytes} [Sat May 23 05:38:44 2020] GET / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+[pid: 11746|app: 0|req: 812/1772] 5.182.210.16 () {34 vars in 457 bytes} [Sat May 23 05:39:49 2020] GET /api.php => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+----------重新启动查找------------
+本·普拉特：无线电城现场秀 未匹配到合适id []
+----------地址被限制,稍后重试----------
+爱情鸟的自救 30435840 6.2保存成功[douban]
+仙书奇谭 33446684 0保存成功[douban]
+孙悟空大战盘丝洞 35051282 0保存成功[douban]
+主持人的风暴 未匹配到合适id []
+主持人的风暴 无豆瓣id数据，存入列表
+爱情保镖 未匹配到合适id []
+----------地址被限制,稍后重试----------
+好人难寻 30244174 6.2保存成功[douban]
+惊涛迷局 26970964 6.0保存成功[douban]
+童军手册之僵尸启示录 6874140 6.7保存成功[douban]
+女演员今天也 26365554 6.9保存成功[douban]
+男孩唱诗班 25787208 7.1保存成功[douban]
+熊猫人之神探李奥 未匹配到合适id []
+熊猫人之神探李奥 无豆瓣id数据，存入列表
+帕克 未匹配到合适id []
+----------地址被限制,稍后重试----------
+启示之路：是结束也是开始 22860945 4.1保存成功[douban]
+26个特殊劫匪 20388674 7.3保存成功[douban]
+她爱上了我的谎 未匹配到合适id [{'episode': '', 'img': 'https://img1.doubanio.com/view/photo/s_ratio_poster/public/p2136834419.jpg', 'title': '她爱上了我的谎', 'url': 'https://movie.douban.com/subject/10521712/?suggest=%E5%A5%B9%E7%88%B1%E4%B8%8A%E4%BA%86%E6%88%91%E7%9A%84%E8%B0%8E', 'type': 'movie', 'year': '2013', 'sub_title': 'カノジョは嘘を愛しすぎてる', 'id': '10521712'}, {'episode': '10', 'img': 'https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2536669363.jpg', 'title': '她爱上了我的谎：我和她相遇前的故事', 'url': 'https://movie.douban.com/subject/25768250/?suggest=%E5%A5%B9%E7%88%B1%E4%B8%8A%E4%BA%86%E6%88%91%E7%9A%84%E8%B0%8E', 'type': 'movie', 'year': '2013', 'sub_title': 'カノジョは嘘を愛しすぎてる サイドストーリー ～ボクとカノジョが出会う前の物語～', 'id': '25768250'}]
+她爱上了我的谎 无豆瓣id数据，存入列表
+夺宝联盟 未匹配到合适id []
+----------地址被限制,稍后重试----------
+[pid: 11746|app: 0|req: 813/1773] 5.101.0.209 () {34 vars in 553 bytes} [Sat May 23 06:31:47 2020] GET /solr/admin/info/system?wt=json => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+小混混们的战争 未匹配到合适id []
+小混混们的战争 无豆瓣id数据，存入列表
+鼠胆杀手 未匹配到合适id []
+鼠胆杀手 无豆瓣id数据，存入列表
+双煞 11636423 3.8保存成功[douban]
+[pid: 11746|app: 0|req: 814/1774] 5.101.0.209 () {34 vars in 553 bytes} [Sat May 23 06:32:09 2020] GET /?XDEBUG_SESSION_START=phpstorm => generated 179 bytes in 11 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+死亡迷局 未匹配到合适id []
+----------地址被限制,稍后重试----------
+[pid: 11746|app: 0|req: 815/1775] 5.101.0.209 () {36 vars in 650 bytes} [Sat May 23 06:32:10 2020] GET /?a=fetch&content=<php>die(@md5(HelloThinkCMF))</php> => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+[pid: 11746|app: 0|req: 816/1776] 5.101.0.209 () {34 vars in 713 bytes} [Sat May 23 06:32:23 2020] GET /index.php?s=/Index/\think\app/invokefunction&function=call_user_func_array&vars[0]=md5&vars[1][]=HelloThinkPHP => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+特工维诺德 3600769 5.9保存成功[douban]
+屠龙者的黎明 未匹配到合适id []
+屠龙者的黎明 无豆瓣id数据，存入列表
+望风 6875438 4.7保存成功[douban]
+扭曲的规则 10528433 4.7保存成功[douban]
+热血无赖 未匹配到合适id []
+----------地址被限制,稍后重试----------
+少林杀手：血钱 6872253 3.3保存成功[douban]
+密室死斗 10441405 5.0保存成功[douban]
+全面回忆2012 未匹配到合适id []
+全面回忆2012 无豆瓣id数据，存入列表
+鹭语 未匹配到合适id []
+----------地址被限制,稍后重试----------
+小屁孩日记3 10428476 6.9保存成功[douban]
+三个火枪手 未匹配到合适id []
+三个火枪手 无豆瓣id数据，存入列表
+时钟 4067246 5.9保存成功[douban]
+[pid: 11746|app: 0|req: 817/1777] 5.101.0.209 () {38 vars in 607 bytes} [Sat May 23 07:00:15 2020] POST /api/jsonws/invoke => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+送信者 未匹配到合适id []
+----------地址被限制,稍后重试----------
+突击中央银行 5158123 5.5保存成功[douban]
+青春暴力史 未匹配到合适id []
+青春暴力史 无豆瓣id数据，存入列表
+热血新仔2僵尸危机 未匹配到合适id []
+热血新仔2僵尸危机 无豆瓣id数据，存入列表
+肉体创伤 未匹配到合适id []
+----------地址被限制,稍后重试----------
+超级英雄必死 6885021 3.4保存成功[douban]
+碟中谍4 3068206 8.3保存成功[douban]
+伴雨行 未匹配到合适id []
+伴雨行 无豆瓣id数据，存入列表
+青蜂侠 2147836 5.7保存成功[douban]
+蔡李佛 未匹配到合适id [{'episode': '', 'img': 'https://img9.doubanio.com/view/photo/s_ratio_poster/public/p980935884.jpg', 'title': '蔡李佛拳', 'url': 'https://movie.douban.com/subject/4892342/?suggest=%E8%94%A1%E6%9D%8E%E4%BD%9B', 'type': 'movie', 'year': '2011', 'sub_title': '蔡李佛拳', 'id': '4892342'}, {'episode': '', 'img': 'https://img3.doubanio.com/view/photo/s_ratio_poster/public/p894596893.jpg', 'title': '蔡李佛', 'url': 'https://movie.douban.com/subject/6013880/?suggest=%E8%94%A1%E6%9D%8E%E4%BD%9B', 'type': 'movie', 'year': '2011', 'sub_title': '蔡李佛', 'id': '6013880'}]
+蔡李佛 无豆瓣id数据，存入列表
+红色行动队：药库惊魂 26546791 0保存成功[douban]
+终极快递 未匹配到合适id []
+----------地址被限制,稍后重试----------
+浮生一日 未匹配到合适id [{'episode': '', 'img': 'https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2114961370.jpg', 'title': '浮生一日', 'url': 'https://movie.douban.com/subject/5387041/?suggest=%E6%B5%AE%E7%94%9F%E4%B8%80%E6%97%A5', 'type': 'movie', 'year': '2011', 'sub_title': 'Life in a Day', 'id': '5387041'}, {'episode': '6', 'img': 'https://img3.doubanio.com/view/subject/s/public/s9040360.jpg', 'title': '浮生一日 第一季', 'url': 'https://movie.douban.com/subject/10544682/?suggest=%E6%B5%AE%E7%94%9F%E4%B8%80%E6%97%A5', 'type': 'movie', 'year': '2011', 'sub_title': 'A Day in the Life', 'id': '10544682'}]
+浮生一日 无豆瓣id数据，存入列表
+魔鬼的替身 未匹配到合适id []
+魔鬼的替身 无豆瓣id数据，存入列表
+热血新仔 5152536 7.0保存成功[douban]
+死亡医生 未匹配到合适id []
+----------地址被限制,稍后重试----------
+大明嫔妃之反攻 10831911 8.1保存成功[douban]
+赵氏孤儿 3546019 6.0保存成功[douban]
+无人驾驶 未匹配到合适id [{'episode': '', 'img': 'https://img1.doubanio.com/view/photo/s_ratio_poster/public/p524956088.jpg', 'title': '无人驾驶', 'url': 'https://movie.douban.com/subject/4111416/?suggest=%E6%97%A0%E4%BA%BA%E9%A9%BE%E9%A9%B6', 'type': 'movie', 'year': '2010', 'sub_title': '无人驾驶', 'id': '4111416'}, {'episode': '', 'img': 'https://img9.doubanio.com/view/photo/s_ratio_poster/public/p2555778385.jpg', 'title': '无人驾驶飞机', 'url': 'https://movie.douban.com/subject/5183544/?suggest=%E6%97%A0%E4%BA%BA%E9%A9%BE%E9%A9%B6', 'type': 'movie', 'year': '2010', 'sub_title': 'Drones', 'id': '5183544'}]
+无人驾驶 无豆瓣id数据，存入列表
+铠甲勇士之帝皇侠 4217526 6.9保存成功[douban]
+无畏警官 5154575 6.2保存成功[douban]
+夺命手机 未匹配到合适id []
+夺命手机 无豆瓣id数据，存入列表
+良医妙药 3114117 7.4保存成功[douban]
+127小时 4164444 8.1保存成功[douban]
+别让我走 未匹配到合适id []
+----------地址被限制,稍后重试----------
+强袭猛攻 5158906 5.2保存成功[douban]
+吸血鬼助手 1950454 6.1保存成功[douban]
+同门 3395460 5.9保存成功[douban]
+第四类接触 3041261 6.7保存成功[douban]
+剑指同门 3395460 5.9保存成功[douban]
+眩晕2009 未匹配到合适id []
+眩晕2009 无豆瓣id数据，存入列表
+狼灾记 3231724 4.3保存成功[douban]
+多襄丸 3406365 5.6保存成功[douban]
+守望者 未匹配到合适id [{'episode': '', 'img': 'https://img1.doubanio.com/view/photo/s_ratio_poster/public/p1663601927.jpg', 'title': '守望者', 'url': 'https://movie.douban.com/subject/1972698/?suggest=%E5%AE%88%E6%9C%9B%E8%80%85', 'type': 'movie', 'year': '2009', 'sub_title': 'Watchmen', 'id': '1972698'}, {'episode': '', 'img': 'https://img3.doubanio.com/view/photo/s_ratio_poster/public/p1138147242.jpg', 'title': '守望者：黑船传奇', 'url': 'https://movie.douban.com/subject/3236361/?suggest=%E5%AE%88%E6%9C%9B%E8%80%85', 'type': 'movie', 'year': '2009', 'sub_title': 'Watchmen: Tales of the Black Freighter', 'id': '3236361'}]
+----------地址被限制,稍后重试----------
+[pid: 11746|app: 0|req: 818/1778] 183.27.47.4 () {44 vars in 956 bytes} [Sat May 23 07:53:23 2020] GET /admin/view_log/ => generated 20964 bytes in 25 msecs (HTTP/1.1 200) 5 headers in 152 bytes (1 switches on core 0)
+[pid: 11746|app: 0|req: 819/1779] 183.27.47.4 () {44 vars in 950 bytes} [Sat May 23 07:53:27 2020] GET /admin/view_log/?page=3 => generated 20044 bytes in 23 msecs (HTTP/1.1 200) 5 headers in 152 bytes (1 switches on core 0)
+听说 3824672 8.1保存成功[douban]
+忠犬八公的故事 3011091 9.4保存成功[douban]
+和莎莫的500天 未匹配到合适id [{'episode': '', 'img': 'https://img3.doubanio.com/view/photo/s_ratio_poster/public/p455251312.jpg', 'title': '和莎莫的500天', 'url': 'https://movie.douban.com/subject/3072086/?suggest=%E5%92%8C%E8%8E%8E%E8%8E%AB%E7%9A%84500%E5%A4%A9', 'type': 'movie', 'year': '2009', 'sub_title': '(500) Days of Summer', 'id': '3072086'}, {'episode': '', 'img': 'https://img1.doubanio.com/view/photo/s_ratio_poster/public/p926136217.jpg', 'title': '银行舞蹈', 'url': 'https://movie.douban.com/subject/4293962/?suggest=%E5%92%8C%E8%8E%8E%E8%8E%AB%E7%9A%84500%E5%A4%A9', 'type': 'movie', 'year': '2009', 'sub_title': 'Bank Dance', 'id': '4293962'}]
+和莎莫的500天 无豆瓣id数据，存入列表
+失踪 未匹配到合适id []
+----------地址被限制,稍后重试----------
+恐怖游轮 3011051 8.5保存成功[douban]
+人体蜈蚣1 未匹配到合适id []
+人体蜈蚣1 无豆瓣id数据，存入列表
+新乌龙女校2 3073071 6.4保存成功[douban]
+大明嫔妃之选秀 4724729 7.7保存成功[douban]
+可爱的骨头 1892531 7.2保存成功[douban]
+哈里布朗 未匹配到合适id []
+----------地址被限制,稍后重试----------
+[pid: 11746|app: 0|req: 820/1780] 5.101.0.209 () {36 vars in 621 bytes} [Sat May 23 08:07:31 2020] GET /vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+超级女特工 未匹配到合适id []
+超级女特工 无豆瓣id数据，存入列表
+黑色闪电(2009) 未匹配到合适id []
+黑色闪电(2009) 无豆瓣id数据，存入列表
+神枪手 未匹配到合适id [{'episode': '', 'img': 'https://img1.doubanio.com/view/photo/s_ratio_poster/public/p2212582547.jpg', 'title': '神枪手', 'url': 'https://movie.douban.com/subject/3002820/?suggest=%E7%A5%9E%E6%9E%AA%E6%89%8B', 'type': 'movie', 'year': '2009', 'sub_title': '神槍手', 'id': '3002820'}, {'episode': '28', 'img': 'https://img9.doubanio.com/view/subject/s/public/s4010945.jpg', 'title': '神枪手', 'url': 'https://movie.douban.com/subject/4074024/?suggest=%E7%A5%9E%E6%9E%AA%E6%89%8B', 'type': 'movie', 'year': '2009', 'sub_title': '神枪手', 'id': '4074024'}]
+----------地址被限制,稍后重试----------
+[pid: 11746|app: 0|req: 821/1781] 5.101.0.209 () {38 vars in 709 bytes} [Sat May 23 08:21:34 2020] POST /vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+[pid: 11746|app: 0|req: 822/1782] 182.254.52.17 () {36 vars in 542 bytes} [Sat May 23 08:23:58 2020] GET / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+刺陵 未匹配到合适id [{'episode': '', 'img': 'https://img3.doubanio.com/view/photo/s_ratio_poster/public/p1505302123.jpg', 'title': '刺陵', 'url': 'https://movie.douban.com/subject/3305722/?suggest=%E5%88%BA%E9%99%B5', 'type': 'movie', 'year': '2009', 'sub_title': '刺陵', 'id': '3305722'}, {'episode': '', 'img': 'https://img1.doubanio.com/view/photo/s_ratio_poster/public/p2574680949.jpg', 'title': '刺陵的春天', 'url': 'https://movie.douban.com/subject/4207631/?suggest=%E5%88%BA%E9%99%B5', 'type': 'movie', 'year': '2009', 'sub_title': '刺陵的春天', 'id': '4207631'}]
+刺陵 无豆瓣id数据，存入列表
+公众之敌 未匹配到合适id [{'episode': '', 'img': 'https://img1.doubanio.com/view/photo/s_ratio_poster/public/p825100239.jpg', 'title': '公众之敌', 'url': 'https://movie.douban.com/subject/2369549/?suggest=%E5%85%AC%E4%BC%97%E4%B9%8B%E6%95%8C', 'type': 'movie', 'year': '2009', 'sub_title': 'Public Enemies', 'id': '2369549'}, {'episode': '', 'img': 'https://img9.doubanio.com/view/photo/s_ratio_poster/public/p1819586144.jpg', 'title': '超人与蝙蝠侠：公众之敌', 'url': 'https://movie.douban.com/subject/3749172/?suggest=%E5%85%AC%E4%BC%97%E4%B9%8B%E6%95%8C', 'type': 'movie', 'year': '2009', 'sub_title': 'Superman/Batman: Public Enemies', 'id': '3749172'}]
+公众之敌 无豆瓣id数据，存入列表
+秘岸 未匹配到合适id []
+----------地址被限制,稍后重试----------
+亲密 2338069 6.1保存成功[douban]
+走着瞧 未匹配到合适id []
+走着瞧 无豆瓣id数据，存入列表
+火线追凶之绝命狙击 3838283 7.7保存成功[douban]
+矮仔多情 3826526 6.3保存成功[douban]
+北魏传奇之风雨飘落都是爱 21266943 0保存成功[douban]
+艾米莉亚 3010407 6.3保存成功[douban]
+天安门 未匹配到合适id []
+天安门 无豆瓣id数据，存入列表
+皆大欢喜 未匹配到合适id []
+----------地址被限制,稍后重试----------
+[pid: 11746|app: 0|req: 823/1783] 182.254.52.17 () {36 vars in 542 bytes} [Sat May 23 08:44:28 2020] GET / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+天佑鲍比 3154003 8.9保存成功[douban]
+太空堡垒卡拉狄加：计划 3231881 6.9保存成功[douban]
+逃亡鳄鱼岛 未匹配到合适id []
+逃亡鳄鱼岛 无豆瓣id数据，存入列表
+死亡幻觉2 3072156 5.4保存成功[douban]
+恐惧 未匹配到合适id []
+----------地址被限制,稍后重试----------
+真爱之吻 未匹配到合适id []
+真爱之吻 无豆瓣id数据，存入列表
+不能没有你 3805953 8.3保存成功[douban]
+信使2稻草人 未匹配到合适id []
+信使2稻草人 无豆瓣id数据，存入列表
+夺命之爱 未匹配到合适id []
+----------地址被限制,稍后重试----------
+没有耳朵的兔子2 3402174 7.1保存成功[douban]
+芦苇地 3291933 4.9保存成功[douban]
+情人眼里出西施 韩版 未匹配到合适id []
+情人眼里出西施 韩版 无豆瓣id数据，存入列表
+年轻的维多利亚 2133340 7.3保存成功[douban]
+图书馆员：圣杯的诅咒 未匹配到合适id []
+----------地址被限制,稍后重试----------
+菠萝快车 2074035 7.0保存成功[douban]
+五十活死人 2996608 6.8保存成功[douban]
+穿条纹睡衣的男孩 3008247 9.1保存成功[douban]
+魔幻时刻 2157507 8.3保存成功[douban]
+通缉令 1945336 7.4保存成功[douban]
+中尉 3403115 7.9保存成功[douban]
+这不是斯巴达 2353665 6.0保存成功[douban]
+龙门驿站之蝴蝶飞 未匹配到合适id []
+----------地址被限制,稍后重试----------
+龙门驿站之太阳花 未匹配到合适id []
+龙门驿站之太阳花 无豆瓣id数据，存入列表
+龙门驿站之狼武士 未匹配到合适id []
+龙门驿站之狼武士 无豆瓣id数据，存入列表
+龙门驿站之奇缘 未匹配到合适id []
+----------地址被限制,稍后重试----------
+兽餐2 3011979 6.1保存成功[douban]
+狼牙 未匹配到合适id [{'episode': '', 'img': 'https://img3.doubanio.com/view/photo/s_ratio_poster/public/p668656862.jpg', 'title': '狼牙', 'url': 'https://movie.douban.com/subject/3082452/?suggest=%E7%8B%BC%E7%89%99', 'type': 'movie', 'year': '2008', 'sub_title': '狼牙', 'id': '3082452'}, {'episode': '', 'img': 'https://img1.doubanio.com/view/photo/s_ratio_poster/public/p1992987357.jpg', 'title': '狼牙脩皇后', 'url': 'https://movie.douban.com/subject/3177859/?suggest=%E7%8B%BC%E7%89%99', 'type': 'movie', 'year': '2008', 'sub_title': 'ปืนใหญ่จอมสลัด', 'id': '3177859'}]
+狼牙 无豆瓣id数据，存入列表
+我的老婆是赌圣 3017836 4.7保存成功[douban]
+银行抢劫案 未匹配到合适id []
+----------地址被限制,稍后重试----------
+剑蝶 3280079 4.9保存成功[douban]
+双食记 2052978 7.0保存成功[douban]
+伊甸湖 3011997 7.7保存成功[douban]
+火线追凶之狂魔再现 未匹配到合适id []
+火线追凶之狂魔再现 无豆瓣id数据，存入列表
+大四喜 未匹配到合适id []
+----------地址被限制,稍后重试----------
+黄金罗盘 未匹配到合适id []
+黄金罗盘 无豆瓣id数据，存入列表
+欢迎来北方 2988103 8.1保存成功[douban]
+快乐飞行 3073912 7.2保存成功[douban]
+驴子潘趣 2972958 5.5保存成功[douban]
+睡眠经销商 未匹配到合适id []
+----------地址被限制,稍后重试----------
+无野之城 3006599 6.4保存成功[douban]
+巴德尔和迈因霍夫 2298609 7.8保存成功[douban]
+圣安娜奇迹 2140558 7.5保存成功[douban]
+恐怖休息站2 2059312 5.2保存成功[douban]
+绅士大盗 未匹配到合适id []
+绅士大盗 无豆瓣id数据，存入列表
+非法制裁 1895119 7.2保存成功[douban]
+镖行天下之瞒天过海 2347261 6.9保存成功[douban]
+女神捕之心鬼难防 3025228 6.5保存成功[douban]
+热血高校 未匹配到合适id []
+----------地址被限制,稍后重试----------
+异形大战铁血战士2 1578502 5.9保存成功[douban]
+虎胆龙威4 1401535 7.7保存成功[douban]
+致命弯道2 2032339 6.6保存成功[douban]
+不能说的秘密 未匹配到合适id [{'episode': '', 'img': 'https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2568025412.jpg', 'title': '不能说的秘密', 'url': 'https://movie.douban.com/subject/2124724/?suggest=%E4%B8%8D%E8%83%BD%E8%AF%B4%E7%9A%84%E7%A7%98%E5%AF%86', 'type': 'movie', 'year': '2007', 'sub_title': '不能說的·祕密', 'id': '2124724'}, {'episode': '', 'img': 'https://img1.doubanio.com/view/photo/s_ratio_poster/public/p2511840479.jpg', 'title': '脚下', 'url': 'https://movie.douban.com/subject/1840881/?suggest=%E4%B8%8D%E8%83%BD%E8%AF%B4%E7%9A%84%E7%A7%98%E5%AF%86', 'type': 'movie', 'year': '2007', 'sub_title': 'Beneath', 'id': '1840881'}]
+不能说的秘密 无豆瓣id数据，存入列表
+变形金刚1 未匹配到合适id []
+变形金刚1 无豆瓣id数据，存入列表
+报到日 1937330 5.9保存成功[douban]
+新活死人之夜 未匹配到合适id []
+----------地址被限制,稍后重试----------
+老无所依 1857099 8.2保存成功[douban]
+明明 未匹配到合适id []
+明明 无豆瓣id数据，存入列表
+谍影重重3 1578507 8.8保存成功[douban]
+森冤 2030560 4.5保存成功[douban]
+陆小凤传奇之绣花大盗 未匹配到合适id []
+----------地址被限制,稍后重试----------
+木瓜姐妹 未匹配到合适id []
+木瓜姐妹 无豆瓣id数据，存入列表
+侠侣探案系列之古刹怪佛 4265404 5.8保存成功[douban]
+守望平安 未匹配到合适id []
+守望平安 无豆瓣id数据，存入列表
+罪孽2007 未匹配到合适id []
+----------地址被限制,稍后重试----------
+[pid: 11746|app: 0|req: 824/1784] 45.76.144.219 () {36 vars in 432 bytes} [Sat May 23 10:33:57 2020] GET / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+穿越苍穹 1945797 7.7保存成功[douban]
+侠侣探案系列之杜鹃啼血 5341827 5.2保存成功[douban]
+侠侣探案系列之绝命黄历 5341829 5.8保存成功[douban]
+侠侣探案系列之商女梦断 5341831 5.1保存成功[douban]
+侠侣探案系列之寿筵丧钟 5343605 5.8保存成功[douban]
+侠侣探案系列之特使失踪 未匹配到合适id []
+----------地址被限制,稍后重试----------
+侠侣探案系列之天阳迷案 5341833 6.1保存成功[douban]
+侠侣探案系列之晓风残月 5351249 5.6保存成功[douban]
+侠侣探案系列之书生之死 5341830 5.5保存成功[douban]
+侠侣探案系列之名苑斜阳 5341828 5.5保存成功[douban]
+神选者 1919905 4.3保存成功[douban]
+消失在远空中 未匹配到合适id []
+----------地址被限制,稍后重试----------
+吴清源 未匹配到合适id []
+吴清源 无豆瓣id数据，存入列表
+棒子老虎鸡 2279587 4.6保存成功[douban]
+战·鼓 未匹配到合适id [{'episode': '', 'img': 'https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2362366383.jpg', 'title': '战·鼓', 'url': 'https://movie.douban.com/subject/1941257/?suggest=%E6%88%98%C2%B7%E9%BC%93', 'type': 'movie', 'year': '2007', 'sub_title': '戰·鼓', 'id': '1941257'}, {'episode': '', 'img': 'https://img1.doubanio.com/view/photo/s_ratio_poster/public/p2512582097.jpg', 'title': '战鼓', 'url': 'https://movie.douban.com/subject/2156296/?suggest=%E6%88%98%C2%B7%E9%BC%93', 'type': 'movie', 'year': '2007', 'sub_title': 'Ex Drummer', 'id': '2156296'}]
+战·鼓 无豆瓣id数据，存入列表
+女神捕之迷局 未匹配到合适id []
+----------地址被限制,稍后重试----------
+[pid: 11746|app: 0|req: 825/1785] 162.243.136.182 () {34 vars in 395 bytes} [Sat May 23 11:00:45 2020] GET / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+[pid: 11746|app: 0|req: 826/1786] 101.251.242.238 () {38 vars in 597 bytes} [Sat May 23 11:02:38 2020] GET / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+恭贺新禧 3118227 5.3保存成功[douban]
+冯志远 2246605 7.5保存成功[douban]
+功夫无敌 2068109 3.3保存成功[douban]
+哈迪塞镇之战 2263156 7.5保存成功[douban]
+一球成名2：梦想成真 1951105 6.2保存成功[douban]
+小说 未匹配到合适id []
+----------地址被限制,稍后重试----------
+幸福牌电冰箱 未匹配到合适id []
+幸福牌电冰箱 无豆瓣id数据，存入列表
+最后的兵团 1887110 5.8保存成功[douban]
+荒野生存 1905462 8.6保存成功[douban]
+这个男人来自地球 2300586 8.5保存成功[douban]
+天下第二 2271640 5.9保存成功[douban]
+迷夜惨遇 2030114 5.5保存成功[douban]
+危险的停车场 1983621 0保存成功[douban]
+精英部队/精锐部队 未匹配到合适id []
+----------地址被限制,稍后重试----------
+反恐疑云 2039711 7.1保存成功[douban]
+伊丽莎白2：黄金时代 1827042 7.3保存成功[douban]
+美国派6：兄弟会 2343491 6.4保存成功[douban]
+太空堡垒卡拉狄加：利刃 2299238 7.6保存成功[douban]
+1号杀手 未匹配到合适id []
+1号杀手 无豆瓣id数据，存入列表
+本X 未匹配到合适id []
+----------地址被限制,稍后重试----------
+搭车人 未匹配到合适id [{'episode': '', 'img': 'https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2165258440.jpg', 'title': '搭车人', 'url': 'https://movie.douban.com/subject/1819460/?suggest=%E6%90%AD%E8%BD%A6%E4%BA%BA', 'type': 'movie', 'year': '2007', 'sub_title': 'The Hitcher', 'id': '1819460'}, {'episode': '', 'img': 'https://img1.doubanio.com/view/photo/s_ratio_poster/public/p2518202107.jpg', 'title': '搭车人', 'url': 'https://movie.douban.com/subject/2568302/?suggest=%E6%90%AD%E8%BD%A6%E4%BA%BA', 'type': 'movie', 'year': '2007', 'sub_title': 'The Hitchhiker', 'id': '2568302'}]
+搭车人 无豆瓣id数据，存入列表
+风暴突击者 未匹配到合适id []
+风暴突击者 无豆瓣id数据，存入列表
+灵数23 1578643 6.5保存成功[douban]
+斯图尔特：倒带人生 未匹配到合适id []
+----------地址被限制,稍后重试----------
+[pid: 11746|app: 0|req: 827/1787] 195.54.160.123 () {34 vars in 556 bytes} [Sat May 23 11:46:56 2020] GET /solr/admin/info/system?wt=json => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+女人领地 1482067 6.7保存成功[douban]
+足迹 1887455 7.5保存成功[douban]
+坚强的心 1867342 7.4保存成功[douban]
+荒野大飚客 1902105 7.1保存成功[douban]
+我们拥有夜晚 2002725 6.6保存成功[douban]
+爱情手册2 2039403 6.9保存成功[douban]
+车库惊魂 未匹配到合适id []
+----------地址被限制,稍后重试----------
+[pid: 11746|app: 0|req: 828/1788] 195.54.160.123 () {36 vars in 653 bytes} [Sat May 23 11:56:49 2020] GET /?a=fetch&content=<php>die(@md5(HelloThinkCMF))</php> => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+[pid: 11747|app: 0|req: 353/1789] 195.54.160.123 () {34 vars in 556 bytes} [Sat May 23 11:56:50 2020] GET /?XDEBUG_SESSION_START=phpstorm => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+亡灵召唤2 未匹配到合适id []
+亡灵召唤2 无豆瓣id数据，存入列表
+狩猎聚会 1793923 6.8保存成功[douban]
+自由作家 1945253 8.5保存成功[douban]
+穿越大吉岭 未匹配到合适id [{'episode': '', 'img': 'https://img9.doubanio.com/view/photo/s_ratio_poster/public/p1545143046.jpg', 'title': '穿越大吉岭', 'url': 'https://movie.douban.com/subject/1968438/?suggest=%E7%A9%BF%E8%B6%8A%E5%A4%A7%E5%90%89%E5%B2%AD', 'type': 'movie', 'year': '2007', 'sub_title': 'The Darjeeling Limited', 'id': '1968438'}, {'episode': '', 'img': 'https://img1.doubanio.com/view/photo/s_ratio_poster/public/p2188405288.jpg', 'title': '骑士酒店', 'url': 'https://movie.douban.com/subject/2264404/?suggest=%E7%A9%BF%E8%B6%8A%E5%A4%A7%E5%90%89%E5%B2%AD', 'type': 'movie', 'year': '2007', 'sub_title': 'Hotel Chevalier', 'id': '2264404'}]
+穿越大吉岭 无豆瓣id数据，存入列表
+后窗惊魂 1946877 6.5保存成功[douban]
+朱诺 2132495 7.9保存成功[douban]
+那家伙的声音 未匹配到合适id []
+----------地址被限制,稍后重试----------
+鼠来宝 未匹配到合适id [{'episode': '', 'img': 'https://img3.doubanio.com/view/photo/s_ratio_poster/public/p456298793.jpg', 'title': '鼠来宝', 'url': 'https://movie.douban.com/subject/2139553/?suggest=%E9%BC%A0%E6%9D%A5%E5%AE%9D', 'type': 'movie', 'year': '2007', 'sub_title': 'Alvin and the Chipmunks', 'id': '2139553'}, {'episode': '', 'img': 'https://img1.doubanio.com/f/movie/b6dc761f5e4cf04032faa969826986efbecd54bb/pics/movie/movie_default_small.png', 'title': '马文鼠来宝', 'url': 'https://movie.douban.com/subject/35059060/?suggest=%E9%BC%A0%E6%9D%A5%E5%AE%9D', 'type': 'movie', 'year': '2007', 'sub_title': 'Rats With Nigel Marven', 'id': '35059060'}]
+鼠来宝 无豆瓣id数据，存入列表
+不公平剧场版 未匹配到合适id []
+不公平剧场版 无豆瓣id数据，存入列表
+河童之夏 2982823 8.7保存成功[douban]
+人类之城 未匹配到合适id []
+----------地址被限制,稍后重试----------
+[pid: 11747|app: 0|req: 354/1790] 195.54.160.123 () {34 vars in 716 bytes} [Sat May 23 12:14:29 2020] GET /index.php?s=/Index/\think\app/invokefunction&function=call_user_func_array&vars[0]=md5&vars[1][]=HelloThinkPHP => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 1)
+拉尔斯和真实女孩 1855834 7.6保存成功[douban]
+甜蜜幼儿园 2297262 7.2保存成功[douban]
+蜘蛛人与神犬 未匹配到合适id []
+蜘蛛人与神犬 无豆瓣id数据，存入列表
+再见巴法纳 1865433 7.8保存成功[douban]
+噪音 未匹配到合适id []
+----------地址被限制,稍后重试----------
+[pid: 11746|app: 0|req: 829/1791] 223.71.167.163 () {34 vars in 459 bytes} [Sat May 23 12:25:22 2020] GET / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+星尘 1867335 7.6保存成功[douban]
+生化危机3：灭绝 1482911 7.3保存成功[douban]
+迷雾2007 未匹配到合适id []
+迷雾2007 无豆瓣id数据，存入列表
+生死格斗 1858270 5.2保存成功[douban]
+图书馆员：寻找所罗门王的宝藏 未匹配到合适id []
+----------地址被限制,稍后重试----------
+管纱组合 1945260 6.2保存成功[douban]
+吸血刑警罗道烈 1767952 5.6保存成功[douban]
+扈三娘与矮脚虎王英 3400766 5.0保存成功[douban]
+一级戒备 1482063 6.2保存成功[douban]
+超人集中营 1811755 5.5保存成功[douban]
+持续惊恐 未匹配到合适id []
+----------地址被限制,稍后重试----------
+山林喋血 3115176 5.3保存成功[douban]
+玉战士 1851480 4.3保存成功[douban]
+终极忍者 1875312 4.7保存成功[douban]
+天狗 1947270 8.7保存成功[douban]
+青面兽杨志 3092178 5.1保存成功[douban]
+印度超人 1861401 6.5保存成功[douban]
+硫磺岛的来信 未匹配到合适id []
+----------地址被限制,稍后重试----------
+黑白道 1865108 6.8保存成功[douban]
+恋恋师情 1777619 6.9保存成功[douban]
+堕落天使 2016 未匹配到合适id []
+堕落天使 2016 无豆瓣id数据，存入列表
+当幸福来敲门 1849031 9.1保存成功[douban]
+老师的恩惠 2054070 6.8保存成功[douban]
+丑女大翻身 未匹配到合适id []
+----------地址被限制,稍后重试----------
+雏菊 未匹配到合适id [{'episode': '', 'img': 'https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2200540002.jpg', 'title': '雏菊', 'url': 'https://movie.douban.com/subject/1433360/?suggest=%E9%9B%8F%E8%8F%8A', 'type': 'movie', 'year': '2006', 'sub_title': '데이지', 'id': '1433360'}, {'episode': '', 'img': 'https://img9.doubanio.com/view/subject/s/public/s4468744.jpg', 'title': '雏菊花环', 'url': 'https://movie.douban.com/subject/5202976/?suggest=%E9%9B%8F%E8%8F%8A', 'type': 'movie', 'year': '2006', 'sub_title': 'Daisy Chain', 'id': '5202976'}]
+雏菊 无豆瓣id数据，存入列表
+人狗奇缘 1970437 8.4保存成功[douban]
+云水谣 1949811 6.9保存成功[douban]
+一诺千金 2006926 7.2保存成功[douban]
+小火车 未匹配到合适id []
+----------地址被限制,稍后重试----------
+时空线索 1789283 7.7保存成功[douban]
+碟中谍3 1401533 7.5保存成功[douban]
+终极斗士2 1759849 7.4保存成功[douban]
+怒火攻心 1849959 7.4保存成功[douban]
+鬼伎回忆录 未匹配到合适id []
+----------地址被限制,稍后重试----------
+父子 1727557 6.8保存成功[douban]
+珍爱泉源 1438337 7.0保存成功[douban]
+歌舞青春 1765009 7.7保存成功[douban]
+非礼勿视 未匹配到合适id [{'episode': '', 'img': 'https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2204598171.jpg', 'title': '非礼勿视', 'url': 'https://movie.douban.com/subject/1578663/?suggest=%E9%9D%9E%E7%A4%BC%E5%8B%BF%E8%A7%86', 'type': 'movie', 'year': '2006', 'sub_title': 'See No Evil', 'id': '1578663'}, {'episode': '', 'img': 'https://img1.doubanio.com/view/photo/s_ratio_poster/public/p2554540727.jpg', 'title': '非礼勿视之沼泽谋杀', 'url': 'https://movie.douban.com/subject/3026303/?suggest=%E9%9D%9E%E7%A4%BC%E5%8B%BF%E8%A7%86', 'type': 'movie', 'year': '2006', 'sub_title': 'See No Evil: The Moors Murders', 'id': '3026303'}]
+非礼勿视 无豆瓣id数据，存入列表
+夜宴 1418605 5.9保存成功[douban]
+隔山有眼 未匹配到合适id []
+----------地址被限制,稍后重试----------
+盛夏的时光 2031310 6.9保存成功[douban]
+寂静岭 1466007 7.6保存成功[douban]
+神犬小巴迪 1941581 7.7保存成功[douban]
+启示·阿波卡猎逃 未匹配到合适id []
+启示·阿波卡猎逃 无豆瓣id数据，存入列表
+本能2 未匹配到合适id [{'episode': '', 'img': 'https://img3.doubanio.com/view/photo/s_ratio_poster/public/p753742550.jpg', 'title': '本能2', 'url': 'https://movie.douban.com/subject/1418270/?suggest=%E6%9C%AC%E8%83%BD2', 'type': 'movie', 'year': '2006', 'sub_title': 'Basic Instinct 2', 'id': '1418270'}, {'episode': '', 'img': 'https://img1.doubanio.com/f/movie/b6dc761f5e4cf04032faa969826986efbecd54bb/pics/movie/movie_default_small.png', 'title': '本能2：删减片段', 'url': 'https://movie.douban.com/subject/30257457/?suggest=%E6%9C%AC%E8%83%BD2', 'type': 'movie', 'year': '2006', 'sub_title': 'Basic Instinct 2: Deleted Scenes', 'id': '30257457'}]
+本能2 无豆瓣id数据，存入列表
+香水 1760622 8.5保存成功[douban]
+007：大战皇家赌场 未匹配到合适id []
+----------地址被限制,稍后重试----------
+电锯惊魂3 1474189 8.0保存成功[douban]
+死神来了3 1436870 7.1保存成功[douban]
+防火墙 1474762 6.0保存成功[douban]
+加勒比海盗2：聚魂棺 1315574 8.3保存成功[douban]
+新街口 1823357 6.5保存成功[douban]
+提防老千 未匹配到合适id []
+----------地址被限制,稍后重试----------
+[pid: 11746|app: 0|req: 830/1792] 182.254.52.17 () {36 vars in 642 bytes} [Sat May 23 13:44:59 2020] GET /vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+芳心谋杀案 1428053 6.8保存成功[douban]
+黑蛇呻吟 1441236 6.6保存成功[douban]
+宝贝计划 1859036 7.4保存成功[douban]
+生死拳 1897368 6.8保存成功[douban]
+得闲饮茶 1777200 6.5保存成功[douban]
+龙虎门 未匹配到合适id []
+----------地址被限制,稍后重试----------
+[pid: 11746|app: 0|req: 831/1793] 112.96.112.179 () {42 vars in 902 bytes} [Sat May 23 13:54:19 2020] GET /admin/view_log/?page=3 => generated 26858 bytes in 61 msecs (HTTP/1.1 200) 5 headers in 152 bytes (1 switches on core 0)
+[pid: 11746|app: 0|req: 832/1794] 112.96.112.179 () {44 vars in 961 bytes} [Sat May 23 13:54:57 2020] GET /admin/view_log/?page=4 => generated 22486 bytes in 60 msecs (HTTP/1.1 200) 5 headers in 152 bytes (1 switches on core 0)
+[pid: 11746|app: 0|req: 833/1795] 112.96.112.179 () {44 vars in 961 bytes} [Sat May 23 13:55:01 2020] GET /admin/view_log/?page=6 => generated 17294 bytes in 65 msecs (HTTP/1.1 200) 5 headers in 152 bytes (1 switches on core 0)
+[pid: 11746|app: 0|req: 834/1796] 112.96.112.179 () {42 vars in 920 bytes} [Sat May 23 13:55:05 2020] GET /video/type/1/?&year=2020&page=2 => generated 37418 bytes in 144 msecs (HTTP/1.1 200) 6 headers in 320 bytes (1 switches on core 0)
+[pid: 11746|app: 0|req: 835/1797] 112.96.112.179 () {44 vars in 961 bytes} [Sat May 23 13:55:35 2020] GET /video/play/85387/ => generated 12502 bytes in 5 msecs (HTTP/1.1 200) 6 headers in 320 bytes (1 switches on core 0)
+[pid: 11746|app: 0|req: 836/1798] 112.96.112.179 () {44 vars in 953 bytes} [Sat May 23 13:55:55 2020] GET /video/type/2/ => generated 35290 bytes in 206 msecs (HTTP/1.1 200) 6 headers in 320 bytes (1 switches on core 0)
+[pid: 11746|app: 0|req: 837/1799] 112.96.112.179 () {44 vars in 935 bytes} [Sat May 23 13:56:12 2020] GET /video/type/1/ => generated 37564 bytes in 256 msecs (HTTP/1.1 200) 6 headers in 320 bytes (1 switches on core 0)
+[pid: 11746|app: 0|req: 838/1800] 112.96.112.179 () {44 vars in 980 bytes} [Sat May 23 13:56:14 2020] GET /video/type/1/?year=&area=&rating=8.0 => generated 41705 bytes in 115 msecs (HTTP/1.1 200) 6 headers in 320 bytes (1 switches on core 0)
+[pid: 11746|app: 0|req: 839/1801] 112.96.112.179 () {44 vars in 1003 bytes} [Sat May 23 13:56:15 2020] GET /video/type/1/?year=&area=&rating=7.0 => generated 42812 bytes in 140 msecs (HTTP/1.1 200) 6 headers in 320 bytes (1 switches on core 0)
+[pid: 11746|app: 0|req: 840/1802] 112.96.112.179 () {44 vars in 1003 bytes} [Sat May 23 13:56:16 2020] GET /video/type/1/?year=&area=&rating=6.0 => generated 42249 bytes in 135 msecs (HTTP/1.1 200) 6 headers in 320 bytes (1 switches on core 0)
+[pid: 11746|app: 0|req: 841/1803] 112.96.112.179 () {44 vars in 930 bytes} [Sat May 23 13:56:21 2020] GET /admin/ => generated 27873 bytes in 2 msecs (HTTP/1.1 200) 6 headers in 320 bytes (1 switches on core 0)
+共有80s视频：1275
+已读取80s数据:50
+详情页列表已更新
+[pid: 11747|app: 0|req: 355/1804] 112.96.112.179 () {44 vars in 932 bytes} [Sat May 23 13:56:27 2020] GET /admin/view_log/ => generated 21165 bytes in 123 msecs (HTTP/1.1 200) 5 headers in 152 bytes (1 switches on core 0)
+已读取80s数据:100
+详情页列表已更新
+[pid: 11747|app: 0|req: 356/1805] 112.96.112.179 () {44 vars in 954 bytes} [Sat May 23 13:56:30 2020] GET /admin/view_log/?page=6 => generated 18009 bytes in 122 msecs (HTTP/1.1 200) 5 headers in 152 bytes (1 switches on core 1)
+./video/func/GetPageData.py:522: FutureWarning: The behavior of this method will change in future versions. Use specific 'len(elem)' or 'elem is not None' test instead.
+  if not html:
+无豆瓣id数据: ['\n                ', '\n                                    ', '7.5                            '] [] /ju/21099
+已读取80s数据:150
+详情页列表已更新
+无豆瓣id数据: ['\n                ', '\n                                    ', '6.5                            '] [] /ju/20418
+已读取80s数据:200
+详情页列表已更新
+无豆瓣id数据: ['\n                ', '\n                                    ', '5.2                            '] [] /ju/20101
+已读取80s数据:250
+详情页列表已更新
+已读取80s数据:300
+详情页列表已更新
+时间管理局第二季 26742289 8.8 保存成功[80s]
+无豆瓣id数据: ['\n                ', '\n                                    ', '8.2                            '] [] /ju/19325
+已读取80s数据:350
+详情页列表已更新
+无豆瓣id数据: ['\n                ', '\n                                    ', '5.3                            '] [] /ju/18373
+无豆瓣id数据: ['\n                ', '\n                                    ', '5.8                            '] [] /ju/18138
+已读取80s数据:400
+详情页列表已更新
+已读取80s数据:450
+详情页列表已更新
+已读取80s数据:500
+详情页列表已更新
+已读取80s数据:550
+详情页列表已更新
+[pid: 11747|app: 0|req: 357/1806] 112.96.112.179 () {44 vars in 961 bytes} [Sat May 23 13:57:05 2020] GET /admin/view_log/?page=6 => generated 19729 bytes in 141 msecs (HTTP/1.1 200) 5 headers in 152 bytes (1 switches on core 0)
+已读取80s数据:600
+详情页列表已更新
+楼奴粤语 25963332 6.4 保存成功[80s]
+已读取80s数据:650
+详情页列表已更新
+[pid: 11747|app: 0|req: 358/1807] 112.96.112.179 () {44 vars in 961 bytes} [Sat May 23 13:57:09 2020] GET /admin/view_log/?page=6 => generated 19925 bytes in 134 msecs (HTTP/1.1 200) 5 headers in 152 bytes (1 switches on core 1)
+已读取80s数据:700
+详情页列表已更新
+终极教师 26304193 5.0 保存成功[80s]
+[pid: 11747|app: 0|req: 359/1808] 112.96.112.179 () {44 vars in 961 bytes} [Sat May 23 13:57:16 2020] GET /admin/view_log/?page=6 => generated 20073 bytes in 134 msecs (HTTP/1.1 200) 5 headers in 152 bytes (1 switches on core 0)
+已读取80s数据:750
+详情页列表已更新
+已读取80s数据:800
+详情页列表已更新
+已读取80s数据:850
+详情页列表已更新
+已读取80s数据:900
+详情页列表已更新
+Doctor异乡人 25792670 7.0 保存成功[80s]
+已读取80s数据:950
+详情页列表已更新
+大丈夫 24705156 7.0 保存成功[80s]
+已读取80s数据:1000
+详情页列表已更新
+无豆瓣id数据: ['\n                ', '\n                                    ', '6.8                            '] [] /ju/18900
+已读取80s数据:1050
+详情页列表已更新
+天狼星行动 19997890 4.9 保存成功[80s]
+已读取80s数据:1100
+详情页列表已更新
+[pid: 11747|app: 0|req: 360/1809] 112.96.112.179 () {44 vars in 944 bytes} [Sat May 23 13:57:40 2020] GET /video/ => generated 58470 bytes in 931 msecs (HTTP/1.1 200) 6 headers in 320 bytes (1 switches on core 1)
+已读取80s数据:1150
+详情页列表已更新
+已读取80s数据:1200
+详情页列表已更新
+已读取80s数据:1250
+详情页列表已更新
+------80s获取完毕-----
+错误列表： []
+详情页列表保存成功
+[pid: 11746|app: 0|req: 842/1810] 112.96.112.179 () {44 vars in 931 bytes} [Sat May 23 13:56:25 2020] GET /admin/get_80s_rating/ => generated 3 bytes in 83322 msecs (HTTP/1.1 200) 5 headers in 148 bytes (1 switches on core 0)
+阿宝的故事 2271607 7.0保存成功[douban]
+春田花花同学会 1468154 6.2保存成功[douban]
+墨攻 1455979 6.1保存成功[douban]
+放·逐 1790577 8.1保存成功[douban]
+黑社会2：以和为贵 1484760 8.0保存成功[douban]
+满城尽带黄金甲 未匹配到合适id []
+----------地址被限制,稍后重试----------
+[pid: 11746|app: 0|req: 843/1811] 112.96.112.179 () {42 vars in 893 bytes} [Sat May 23 14:09:03 2020] GET /video/play/86484/ => generated 12374 bytes in 4 msecs (HTTP/1.1 200) 6 headers in 320 bytes (1 switches on core 0)
+南国风云 未匹配到合适id []
+南国风云 无豆瓣id数据，存入列表
+好奇害死猫 1861411 6.3保存成功[douban]
+大汉风之霸王别姬 未匹配到合适id []
+大汉风之霸王别姬 无豆瓣id数据，存入列表
+第601个电话 未匹配到合适id []
+----------地址被限制,稍后重试----------
+理发师 1875311 6.3保存成功[douban]
+致命魔术 1780330 8.9保存成功[douban]
+蝴蝶效应2 1578509 6.1保存成功[douban]
+卧虎 1915729 6.0保存成功[douban]
+伤城 1867408 6.8保存成功[douban]
+血钻 1428175 8.7保存成功[douban]
+四大天王 1779509 7.0保存成功[douban]
+茉莉花开 未匹配到合适id []
+----------地址被限制,稍后重试----------
+舞动天地 1762492 7.7保存成功[douban]
+伊莎贝拉 1468155 7.6保存成功[douban]
+至尊无赖 1922648 5.4保存成功[douban]
+咒怨2(美版) 1482102 6.3保存成功[douban]
+天行者 1917313 6.3保存成功[douban]
+打雀英雄传 1890567 5.3保存成功[douban]
+大丈夫2 1890558 6.2保存成功[douban]
+陆小凤传奇之凤舞九天 未匹配到合适id []
+----------地址被限制,稍后重试----------
+方便面时代 未匹配到合适id []
+方便面时代 无豆瓣id数据，存入列表
+一石二鸟Ⅱ 未匹配到合适id []
+一石二鸟Ⅱ 无豆瓣id数据，存入列表
+篮球宝贝 未匹配到合适id []
+----------地址被限制,稍后重试----------
+太阳花 未匹配到合适id []
+太阳花 无豆瓣id数据，存入列表
+上海伦巴 1873751 6.3保存成功[douban]
+在黑暗中等待相遇 1908318 7.4保存成功[douban]
+神遊情人 1840465 5.5保存成功[douban]
+诡丝 未匹配到合适id []
+----------地址被限制,稍后重试----------
+北魏传奇 未匹配到合适id []
+北魏传奇 无豆瓣id数据，存入列表
+芳香之旅 1463961 7.0保存成功[douban]
+天下第一宴 1863093 3.5保存成功[douban]
+飞刀 2182604 2.7保存成功[douban]
+死心不息 1872003 6.3保存成功[douban]
+唐布拉之恋 3254257 0保存成功[douban]
+被嫌弃的松子的一生 1787291 8.9保存成功[douban]
+情暖万家 1819882 5.6保存成功[douban]
+黑灵芝 未匹配到合适id []
+----------地址被限制,稍后重试----------
+痴情浪子 未匹配到合适id []
+痴情浪子 无豆瓣id数据，存入列表
+左麟右李 3040754 4.7保存成功[douban]
+犀照 1479110 6.0保存成功[douban]
+租期 1875310 6.7保存成功[douban]
+坠入 1890572 8.8保存成功[douban]
+一球成名 未匹配到合适id []
+一球成名 无豆瓣id数据，存入列表
+剃头匠 未匹配到合适id []
+----------地址被限制,稍后重试----------
+我们俩 未匹配到合适id []
+我们俩 无豆瓣id数据，存入列表
+迅雷之旅 2157075 5.3保存成功[douban]
+第三种温暖 2009887 5.5保存成功[douban]
+花之武者 1757807 6.6保存成功[douban]
+谈谈心恋恋爱 未匹配到合适id [{'episode': '20', 'img': 'https://img1.doubanio.com/view/photo/s_ratio_poster/public/p2455413749.jpg', 'title': '谈谈心恋恋爱', 'url': 'https://movie.douban.com/subject/2245506/?suggest=%E8%B0%88%E8%B0%88%E5%BF%83%E6%81%8B%E6%81%8B%E7%88%B1', 'type': 'movie', 'year': '2006', 'sub_title': '谈谈心恋恋爱', 'id': '2245506'}, {'episode': '', 'img': 'https://img9.doubanio.com/view/photo/s_ratio_poster/public/p2457248855.jpg', 'title': '谈谈心恋恋爱', 'url': 'https://movie.douban.com/subject/2208883/?suggest=%E8%B0%88%E8%B0%88%E5%BF%83%E6%81%8B%E6%81%8B%E7%88%B1', 'type': 'movie', 'year': '2006', 'sub_title': '谈谈心恋恋爱', 'id': '2208883'}]
+谈谈心恋恋爱 无豆瓣id数据，存入列表
+光荣岁月 1786231 7.7保存成功[douban]
+怪医杜立德3 1578627 6.0保存成功[douban]
+惊声尖笑4 1428054 6.7保存成功[douban]
+鲍比/博比 未匹配到合适id []
+----------地址被限制,稍后重试----------
+[pid: 11746|app: 0|req: 844/1812] 183.27.44.160 () {46 vars in 1010 bytes} [Sat May 23 15:27:29 2020] GET /video/search/?wd=%E9%97%A8%E9%94%81&page=1 => generated 14294 bytes in 66 msecs (HTTP/1.1 200) 6 headers in 320 bytes (1 switches on core 0)
+[pid: 11747|app: 0|req: 361/1813] 183.27.44.160 () {46 vars in 1010 bytes} [Sat May 23 15:27:29 2020] GET /video/search/?wd=%E9%97%A8%E9%94%81&page=1 => generated 14294 bytes in 71 msecs (HTTP/1.1 200) 6 headers in 320 bytes (1 switches on core 0)
+[pid: 11747|app: 0|req: 362/1814] 183.27.44.160 () {46 vars in 978 bytes} [Sat May 23 15:27:35 2020] GET /video/play/55428/ => generated 12860 bytes in 5 msecs (HTTP/1.1 200) 6 headers in 320 bytes (1 switches on core 1)
+死亡契约 1428107 5.9保存成功[douban]
+决战帝国 未匹配到合适id []
+决战帝国 无豆瓣id数据，存入列表
+特务风云 1477206 7.3保存成功[douban]
+中天 未匹配到合适id [{'episode': '', 'img': 'https://img3.doubanio.com/view/photo/s_ratio_poster/public/p744739541.jpg', 'title': '中天', 'url': 'https://movie.douban.com/subject/1950427/?suggest=%E4%B8%AD%E5%A4%A9', 'type': 'movie', 'year': '2006', 'sub_title': '중천', 'id': '1950427'}, {'episode': '52', 'img': 'https://img9.doubanio.com/view/photo/s_ratio_poster/public/p2325181884.jpg', 'title': '易中天品三国', 'url': 'https://movie.douban.com/subject/26727974/?suggest=%E4%B8%AD%E5%A4%A9', 'type': 'movie', 'year': '2006', 'sub_title': '易中天品三国', 'id': '26727974'}]
+中天 无豆瓣id数据，存入列表
+美国派5：裸体狂奔 1937400 6.5保存成功[douban]
+五路追杀令 1865012 6.9保存成功[douban]
+守日人 1475572 7.4保存成功[douban]
+我的超人女友 未匹配到合适id []
+----------地址被限制,稍后重试----------
+微不足道 1937257 8.2保存成功[douban]
+断绝 1863449 6.3保存成功[douban]
+冲突 未匹配到合适id []
+冲突 无豆瓣id数据，存入列表
+阿尔法狗 1484218 6.8保存成功[douban]
+金刚 未匹配到合适id []
+金刚 无豆瓣id数据，存入列表
+透明人2 1779689 5.6保存成功[douban]
+我一直知道你去年夏天干了什么 1485255 5.2保存成功[douban]
+绝地奶霸2 1433676 6.8保存成功[douban]
+空战英豪 未匹配到合适id []
+----------地址被限制,稍后重试----------
+内陆帝国 1438734 7.5保存成功[douban]
+女巫 俄罗斯版 未匹配到合适id []
+女巫 俄罗斯版 无豆瓣id数据，存入列表
+人类之子 1478064 7.6保存成功[douban]
+风吹稻浪 1780122 8.0保存成功[douban]
+疯狂店员2 1793671 7.3保存成功[douban]
+三分钟先生 未匹配到合适id []
+三分钟先生 无豆瓣id数据，存入列表
+加油！马歇尔 1857082 7.7保存成功[douban]
+侠盗魅影 未匹配到合适id []
+----------地址被限制,稍后重试----------
+[pid: 11746|app: 0|req: 845/1815] 195.54.160.123 () {38 vars in 610 bytes} [Sat May 23 15:53:56 2020] POST /api/jsonws/invoke => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+来电惊魂 1461348 6.1保存成功[douban]
+重见天日 1785166 7.6保存成功[douban]
+粉红豹 美国版 未匹配到合适id []
+粉红豹 美国版 无豆瓣id数据，存入列表
+女男变错身 1929497 6.9保存成功[douban]
+海防最前线 1507158 7.5保存成功[douban]
+绝命休息站 1902534 5.2保存成功[douban]
+[pid: 11746|app: 0|req: 846/1816] 14.18.182.223 () {36 vars in 592 bytes} [Sat May 23 16:02:14 2020] GET /video/play/10049/1-2.html => generated 13768 bytes in 5 msecs (HTTP/1.1 200) 6 headers in 320 bytes (1 switches on core 0)
+颤栗汪洋2 1905634 6.3保存成功[douban]
+碧海追踪 1410557 6.7保存成功[douban]
+撒哈拉奇兵 1309031 6.5保存成功[douban]
+红粉保镖2005 未匹配到合适id []
+----------地址被限制,稍后重试----------
+黑社会 1309220 8.2保存成功[douban]
+暴力史 1422917 7.4保存成功[douban]
+足球流氓 1422948 8.1保存成功[douban]
+绝地威龙 1438282 7.0保存成功[douban]
+爱的艺术 1827338 6.3保存成功[douban]
+绅士的启示联盟 1876972 8.3保存成功[douban]
+甲贺忍法帖 未匹配到合适id []
+----------地址被限制,稍后重试----------
+晨曦中的女孩 1794360 8.3保存成功[douban]
+北京童话 1763015 6.1保存成功[douban]
+巴林石传奇 3223635 4.5保存成功[douban]
+刑警队 3113753 0保存成功[douban]
+锅盖头 1424218 7.5保存成功[douban]
+活死人之地 未匹配到合适id []
+----------地址被限制,稍后重试----------
+玩命快递2 1419974 7.3保存成功[douban]
+美国怪谈 1507144 6.1保存成功[douban]
+人皮客栈 1456197 6.8保存成功[douban]
+战争之王 1419936 8.6保存成功[douban]
+七剑 1401205 5.9保存成功[douban]
+星球大战前传3：西斯的复仇 1309078 8.4保存成功[douban]
+绝密飞行 未匹配到合适id []
+----------地址被限制,稍后重试----------
+[pid: 11746|app: 0|req: 847/1817] 173.206.70.214 () {32 vars in 465 bytes} [Sat May 23 16:38:25 2020] GET / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+艺伎回忆录 1309059 7.5保存成功[douban]
+兽餐 1853181 6.3保存成功[douban]
+黑暗侵袭 1437109 7.6保存成功[douban]
+电锯惊魂2 1309045 8.3保存成功[douban]
+罪恶之城 未匹配到合适id [{'episode': '', 'img': 'https://img1.doubanio.com/view/photo/s_ratio_poster/public/p2173716829.jpg', 'title': '罪恶之城', 'url': 'https://movie.douban.com/subject/1309027/?suggest=%E7%BD%AA%E6%81%B6%E4%B9%8B%E5%9F%8E', 'type': 'movie', 'year': '2005', 'sub_title': 'Sin City', 'id': '1309027'}, {'episode': '', 'img': 'https://img1.doubanio.com/view/photo/s_ratio_poster/public/p2505315217.jpg', 'title': '埃迪森', 'url': 'https://movie.douban.com/subject/1437015/?suggest=%E7%BD%AA%E6%81%B6%E4%B9%8B%E5%9F%8E', 'type': 'movie', 'year': '2005', 'sub_title': 'Edison', 'id': '1437015'}]
+罪恶之城 无豆瓣id数据，存入列表
+恶魔的艺术2：邪降 未匹配到合适id []
+----------地址被限制,稍后重试----------
+死水 未匹配到合适id [{'episode': '', 'img': 'https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2507904371.jpg', 'title': '死水', 'url': 'https://movie.douban.com/subject/1459102/?suggest=%E6%AD%BB%E6%B0%B4', 'type': 'movie', 'year': '2005', 'sub_title': 'Venom', 'id': '1459102'}, {'episode': '', 'img': 'https://img1.doubanio.com/view/subject/s/public/s2636898.jpg', 'title': '死水', 'url': 'https://movie.douban.com/subject/2174489/?suggest=%E6%AD%BB%E6%B0%B4', 'type': 'movie', 'year': '2005', 'sub_title': 'Still Water', 'id': '2174489'}]
+死水 无豆瓣id数据，存入列表
+韩城攻略 1393479 6.1保存成功[douban]
+情人结 1316506 6.7保存成功[douban]
+诅咒 未匹配到合适id [{'episode': '', 'img': 'https://img1.doubanio.com/view/photo/s_ratio_poster/public/p1245064129.jpg', 'title': '诅咒', 'url': 'https://movie.douban.com/subject/1308984/?suggest=%E8%AF%85%E5%92%92', 'type': 'movie', 'year': '2005', 'sub_title': 'Cursed', 'id': '1308984'}, {'episode': '', 'img': 'https://img3.doubanio.com/view/photo/s_ratio_poster/public/p916247842.jpg', 'title': '诅咒', 'url': 'https://movie.douban.com/subject/1459323/?suggest=%E8%AF%85%E5%92%92', 'type': 'movie', 'year': '2005', 'sub_title': '诅咒', 'id': '1459323'}]
+诅咒 无豆瓣id数据，存入列表
+翻译风波 1291823 6.6保存成功[douban]
+灭顶之灾 下 未匹配到合适id []
+灭顶之灾 下 无豆瓣id数据，存入列表
+灭顶之灾 上 未匹配到合适id []
+----------地址被限制,稍后重试----------
+鬼哭神嚎 1309032 6.5保存成功[douban]
+辛瑞那 1439286 7.3保存成功[douban]
+非关命运 1440874 7.6保存成功[douban]
+深海潜龙 1420018 5.9保存成功[douban]
+神话 1307023 6.7保存成功[douban]
+杀破狼 1428602 7.4保存成功[douban]
+再说一次我爱你 1433232 6.2保存成功[douban]
+童梦奇缘 1427834 6.5保存成功[douban]
+如果·爱 1418070 7.7保存成功[douban]
+龙威父子 1920116 4.0保存成功[douban]
+鸳鸯蝴蝶 未匹配到合适id []
+----------地址被限制,稍后重试----------
+头文字D 1329562 7.5保存成功[douban]
+神经侠侣 1309297 7.1保存成功[douban]
+铁拳男人 1418519 8.7保存成功[douban]
+龙咁威2之皇母娘子军呢？ 未匹配到合适id []
+龙咁威2之皇母娘子军呢？ 无豆瓣id数据，存入列表
+长恨歌 未匹配到合适id []
+----------地址被限制,稍后重试----------
+[pid: 11746|app: 0|req: 848/1818] 183.27.44.160 () {46 vars in 931 bytes} [Sat May 23 17:13:25 2020] GET /video/ => generated 58624 bytes in 423 msecs (HTTP/1.1 200) 6 headers in 320 bytes (1 switches on core 0)
+大汉风之谋士范增 6003085 0保存成功[douban]
+[pid: 11746|app: 0|req: 849/1819] 183.27.44.160 () {48 vars in 1001 bytes} [Sat May 23 17:21:43 2020] GET /admin/view_log/?page=12 => generated 0 bytes in 78 msecs (HTTP/1.1 302) 6 headers in 184 bytes (1 switches on core 0)
+[pid: 11747|app: 0|req: 363/1820] 183.27.44.160 () {48 vars in 996 bytes} [Sat May 23 17:21:43 2020] GET /view_log/2020-05-23/ => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+[pid: 11748|app: 0|req: 336/1821] 183.27.44.160 () {44 vars in 824 bytes} [Sat May 23 17:21:43 2020] GET /favicon.ico => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+[pid: 11747|app: 0|req: 364/1822] 183.27.44.160 () {48 vars in 987 bytes} [Sat May 23 17:21:48 2020] GET /admin/view_log/ => generated 21232 bytes in 77 msecs (HTTP/1.1 200) 5 headers in 152 bytes (1 switches on core 1)
+大汉风之吕后篡汉 25803256 0保存成功[douban]
+大汉风之胯下之辱 22278283 0保存成功[douban]
+[pid: 11748|app: 0|req: 337/1823] 183.27.44.160 () {46 vars in 960 bytes} [Sat May 23 17:22:02 2020] GET /admin/view_log/?page=9 => generated 15531 bytes in 83 msecs (HTTP/1.1 200) 5 headers in 152 bytes (1 switches on core 1)
+疑神疑鬼 1875321 5.2保存成功[douban]
+情义我心知 1456690 6.8保存成功[douban]
+三岔口 1310185 6.5保存成功[douban]
+怒江魂 3092182 5.6保存成功[douban]
+千杯不醉 1419581 6.3保存成功[douban]
+情癫大圣 未匹配到合适id []
+----------地址被限制,稍后重试----------
+[pid: 11746|app: 0|req: 850/1824] 37.49.226.190 () {32 vars in 355 bytes} [Sat May 23 17:28:18 2020] GET / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+*** Starting uWSGI 2.0.18 (64bit) on [Sat May 23 17:28:36 2020] ***
+compiled with version: 7.4.0 on 31 January 2020 10:32:09
+os: Linux-4.15.0-54-generic #58-Ubuntu SMP Mon Jun 24 10:55:24 UTC 2019
+nodename: VM-32-8-ubuntu
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 1
+current working directory: /home/ubuntu/git/django_project
+writing pidfile to ./uwsgi.pid
+detected binary path: /home/ubuntu/.local/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+chdir() to /home/ubuntu/git/django_project
+your processes number limit is 7079
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address 127.0.0.1:8001 fd 6
+Python version: 3.6.8 (default, Oct  7 2019, 12:59:55)  [GCC 8.3.0]
+Python main interpreter initialized at 0x55b59b1d2540
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 416720 bytes (406 KB) for 8 cores
+*** Operational MODE: preforking+threaded ***
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x55b59b1d2540 pid: 18402 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 18402)
+spawned uWSGI worker 1 (pid: 18405, cores: 2)
+spawned uWSGI worker 2 (pid: 18406, cores: 2)
+spawned uWSGI worker 3 (pid: 18407, cores: 2)
+spawned uWSGI worker 4 (pid: 18408, cores: 2)
+[pid: 18406|app: 0|req: 1/1] 183.27.44.160 () {48 vars in 991 bytes} [Sat May 23 17:28:41 2020] GET /admin/view_log/?page=9 => generated 16143 bytes in 350 msecs (HTTP/1.1 200) 5 headers in 152 bytes (1 switches on core 0)
+[pid: 18406|app: 0|req: 2/2] 183.27.44.160 () {46 vars in 936 bytes} [Sat May 23 17:28:46 2020] GET /admin/ => generated 27873 bytes in 7 msecs (HTTP/1.1 200) 6 headers in 320 bytes (1 switches on core 1)
+[pid: 18405|app: 0|req: 2/3] 183.27.44.160 () {46 vars in 938 bytes} [Sat May 23 17:28:50 2020] GET /admin/view_log/ => generated 21232 bytes in 102 msecs (HTTP/1.1 200) 5 headers in 152 bytes (1 switches on core 1)
+[pid: 18405|app: 0|req: 3/4] 183.27.44.160 () {46 vars in 960 bytes} [Sat May 23 17:28:53 2020] GET /admin/view_log/?page=9 => generated 16285 bytes in 78 msecs (HTTP/1.1 200) 5 headers in 152 bytes (1 switches on core 1)
+[pid: 18405|app: 0|req: 4/5] 183.27.44.160 () {44 vars in 891 bytes} [Sat May 23 17:28:57 2020] GET /video/type/1/ => generated 37668 bytes in 281 msecs (HTTP/1.1 200) 6 headers in 320 bytes (1 switches on core 1)
+[pid: 18405|app: 0|req: 5/6] 183.27.44.160 () {46 vars in 986 bytes} [Sat May 23 17:28:59 2020] GET /video/type/1/?year=&area=&rating=8.0 => generated 41859 bytes in 122 msecs (HTTP/1.1 200) 6 headers in 320 bytes (1 switches on core 1)
+[pid: 18405|app: 0|req: 6/7] 183.27.44.160 () {46 vars in 1001 bytes} [Sat May 23 17:29:04 2020] GET /video/type/1/?&rating=8.0&page=2 => generated 42492 bytes in 128 msecs (HTTP/1.1 200) 6 headers in 320 bytes (1 switches on core 1)
+[pid: 18405|app: 0|req: 7/8] 183.27.44.160 () {46 vars in 997 bytes} [Sat May 23 17:29:08 2020] GET /video/type/1/?&rating=8.0&page=3 => generated 39471 bytes in 115 msecs (HTTP/1.1 200) 6 headers in 320 bytes (1 switches on core 1)
+[pid: 18405|app: 0|req: 8/9] 183.27.44.160 () {46 vars in 1041 bytes} [Sat May 23 17:29:19 2020] GET /video/type/1/?year=&area=&rating=5.0%E4%BB%A5%E4%B8%8B => generated 38163 bytes in 147 msecs (HTTP/1.1 200) 6 headers in 320 bytes (1 switches on core 1)
+[pid: 18405|app: 0|req: 9/10] 183.27.44.160 () {46 vars in 967 bytes} [Sat May 23 17:29:29 2020] GET /admin/view_log/?page=8 => generated 22938 bytes in 81 msecs (HTTP/1.1 200) 5 headers in 152 bytes (1 switches on core 1)
+[pid: 18405|app: 0|req: 10/11] 183.27.44.160 () {46 vars in 967 bytes} [Sat May 23 17:29:31 2020] GET /admin/view_log/?page=9 => generated 16759 bytes in 80 msecs (HTTP/1.1 200) 5 headers in 152 bytes (1 switches on core 1)
+[pid: 18405|app: 0|req: 11/12] 183.27.44.160 () {46 vars in 967 bytes} [Sat May 23 17:29:35 2020] GET /admin/view_log/?page=9 => generated 16814 bytes in 79 msecs (HTTP/1.1 200) 5 headers in 152 bytes (1 switches on core 1)
+[pid: 18405|app: 0|req: 12/13] 183.27.44.160 () {46 vars in 967 bytes} [Sat May 23 17:30:42 2020] GET /admin/view_log/?page=9 => generated 16869 bytes in 84 msecs (HTTP/1.1 200) 5 headers in 152 bytes (1 switches on core 1)
+[pid: 18405|app: 0|req: 13/14] 183.27.44.160 () {46 vars in 936 bytes} [Sat May 23 17:30:46 2020] GET /admin/ => generated 27873 bytes in 3 msecs (HTTP/1.1 200) 6 headers in 320 bytes (1 switches on core 1)
+[pid: 18406|app: 0|req: 3/15] 183.27.44.160 () {46 vars in 938 bytes} [Sat May 23 17:30:51 2020] GET /admin/view_log/ => generated 21232 bytes in 78 msecs (HTTP/1.1 200) 5 headers in 152 bytes (1 switches on core 0)
+[pid: 18406|app: 0|req: 4/16] 183.27.44.160 () {46 vars in 960 bytes} [Sat May 23 17:30:53 2020] GET /admin/view_log/?page=9 => generated 17011 bytes in 78 msecs (HTTP/1.1 200) 5 headers in 152 bytes (1 switches on core 1)
+[pid: 18406|app: 0|req: 5/17] 183.27.44.160 () {46 vars in 967 bytes} [Sat May 23 17:32:59 2020] GET /admin/view_log/?page=9 => generated 17066 bytes in 79 msecs (HTTP/1.1 200) 5 headers in 152 bytes (1 switches on core 0)
+[pid: 18406|app: 0|req: 6/18] 183.27.44.160 () {46 vars in 936 bytes} [Sat May 23 17:33:06 2020] GET /admin/ => generated 27873 bytes in 2 msecs (HTTP/1.1 200) 6 headers in 320 bytes (1 switches on core 1)
+共有80s视频：1269
+[pid: 18406|app: 0|req: 8/19] 183.27.44.160 () {46 vars in 938 bytes} [Sat May 23 17:33:09 2020] GET /admin/view_log/ => generated 21232 bytes in 119 msecs (HTTP/1.1 200) 5 headers in 152 bytes (1 switches on core 1)
+已读取80s数据:50
+详情页列表已更新
+[pid: 18406|app: 0|req: 9/20] 183.27.44.160 () {46 vars in 960 bytes} [Sat May 23 17:33:13 2020] GET /admin/view_log/?page=9 => generated 17278 bytes in 100 msecs (HTTP/1.1 200) 5 headers in 152 bytes (1 switches on core 1)
+已读取80s数据:100
+详情页列表已更新
+./video/func/GetPageData.py:522: FutureWarning: The behavior of this method will change in future versions. Use specific 'len(elem)' or 'elem is not None' test instead.
+  if not html:
+无豆瓣id数据: ['\n                ', '\n                                    ', '7.5                            '] [] /ju/21099
+已读取80s数据:150
+详情页列表已更新
+https://www.80s.tw/ju/20418请求超时，重试1次
+无豆瓣id数据: ['\n                ', '\n                                    ', '6.5                            '] [] /ju/20418
+已读取80s数据:200
+详情页列表已更新
+无豆瓣id数据: ['\n                ', '\n                                    ', '5.2                            '] [] /ju/20101
+已读取80s数据:250
+详情页列表已更新
+已读取80s数据:300
+详情页列表已更新
+无豆瓣id数据: ['\n                ', '\n                                    ', '8.2                            '] [] /ju/19325
+已读取80s数据:350
+详情页列表已更新
+无豆瓣id数据: ['\n                ', '\n                                    ', '5.3                            '] [] /ju/18373
+无豆瓣id数据: ['\n                ', '\n                                    ', '5.8                            '] [] /ju/18138
+已读取80s数据:400
+详情页列表已更新
+已读取80s数据:450
+详情页列表已更新
+已读取80s数据:500
+详情页列表已更新
+已读取80s数据:550
+详情页列表已更新
+已读取80s数据:600
+详情页列表已更新
+已读取80s数据:650
+详情页列表已更新
+已读取80s数据:700
+详情页列表已更新
+已读取80s数据:750
+详情页列表已更新
+已读取80s数据:800
+详情页列表已更新
+已读取80s数据:850
+详情页列表已更新
+已读取80s数据:900
+详情页列表已更新
+已读取80s数据:950
+详情页列表已更新
+已读取80s数据:1000
+详情页列表已更新
+无豆瓣id数据: ['\n                ', '\n                                    ', '6.8                            '] [] /ju/18900
+已读取80s数据:1050
+详情页列表已更新
+已读取80s数据:1100
+详情页列表已更新
+已读取80s数据:1150
+详情页列表已更新
+已读取80s数据:1200
+详情页列表已更新
+已读取80s数据:1250
+详情页列表已更新
+------80s获取完毕-----
+错误列表： []
+详情页列表保存成功
+[pid: 18406|app: 0|req: 9/21] 183.27.44.160 () {46 vars in 876 bytes} [Sat May 23 17:33:08 2020] GET /admin/get_80s_rating/ => generated 3 bytes in 87273 msecs (HTTP/1.1 200) 5 headers in 148 bytes (1 switches on core 0)
+[pid: 18406|app: 0|req: 10/22] 183.27.44.160 () {46 vars in 967 bytes} [Sat May 23 17:35:51 2020] GET /admin/view_log/?page=9 => generated 19758 bytes in 96 msecs (HTTP/1.1 200) 5 headers in 152 bytes (1 switches on core 1)
+[pid: 18406|app: 0|req: 11/23] 177.39.131.173 () {32 vars in 464 bytes} [Sat May 23 17:36:47 2020] GET / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+*** Starting uWSGI 2.0.18 (64bit) on [Sat May 23 17:42:25 2020] ***
+compiled with version: 7.4.0 on 31 January 2020 10:32:09
+os: Linux-4.15.0-54-generic #58-Ubuntu SMP Mon Jun 24 10:55:24 UTC 2019
+nodename: VM-32-8-ubuntu
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 1
+current working directory: /home/ubuntu/git/django_project
+writing pidfile to ./uwsgi.pid
+detected binary path: /home/ubuntu/.local/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+chdir() to /home/ubuntu/git/django_project
+your processes number limit is 7079
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+probably another instance of uWSGI is running on the same address (127.0.0.1:8001).
+bind(): Address already in use [core/socket.c line 769]
+*** Starting uWSGI 2.0.18 (64bit) on [Sat May 23 19:19:50 2020] ***
+compiled with version: 7.4.0 on 31 January 2020 10:32:09
+os: Linux-4.15.0-54-generic #58-Ubuntu SMP Mon Jun 24 10:55:24 UTC 2019
+nodename: VM-32-8-ubuntu
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 1
+current working directory: /home/ubuntu/git/django_project
+writing pidfile to ./uwsgi.pid
+detected binary path: /home/ubuntu/.local/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+chdir() to /home/ubuntu/git/django_project
+your processes number limit is 7079
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address 127.0.0.1:8001 fd 6
+Python version: 3.6.8 (default, Oct  7 2019, 12:59:55)  [GCC 8.3.0]
+Python main interpreter initialized at 0x5620ab00b540
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 416720 bytes (406 KB) for 8 cores
+*** Operational MODE: preforking+threaded ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x5620ab00b540 pid: 20800 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 20800)
+spawned uWSGI worker 1 (pid: 20802, cores: 2)
+spawned uWSGI worker 2 (pid: 20803, cores: 2)
+spawned uWSGI worker 3 (pid: 20804, cores: 2)
+spawned uWSGI worker 4 (pid: 20805, cores: 2)
+[pid: 20805|app: 0|req: 1/1] 183.27.44.160 () {46 vars in 906 bytes} [Sat May 23 19:19:53 2020] GET /admin => generated 0 bytes in 144 msecs (HTTP/1.1 301) 4 headers in 145 bytes (1 switches on core 0)
+[pid: 20805|app: 0|req: 2/2] 183.27.44.160 () {46 vars in 908 bytes} [Sat May 23 19:19:53 2020] GET /admin/ => generated 27873 bytes in 17 msecs (HTTP/1.1 200) 6 headers in 320 bytes (1 switches on core 1)
+[pid: 20802|app: 0|req: 1/3] 183.27.44.160 () {46 vars in 938 bytes} [Sat May 23 19:19:55 2020] GET /admin/view_log/ => generated 21234 bytes in 238 msecs (HTTP/1.1 200) 5 headers in 152 bytes (1 switches on core 0)
+[pid: 20802|app: 0|req: 2/4] 183.27.44.160 () {46 vars in 962 bytes} [Sat May 23 19:19:58 2020] GET /admin/view_log/?page=10 => generated 15561 bytes in 82 msecs (HTTP/1.1 200) 5 headers in 152 bytes (1 switches on core 1)
+[pid: 20802|app: 0|req: 3/5] 183.27.44.160 () {46 vars in 968 bytes} [Sat May 23 19:20:02 2020] GET /admin/view_log/?page=9 => generated 19758 bytes in 82 msecs (HTTP/1.1 200) 5 headers in 152 bytes (1 switches on core 0)
+[pid: 20802|app: 0|req: 4/6] 183.27.44.160 () {46 vars in 969 bytes} [Sat May 23 19:20:05 2020] GET /admin/view_log/?page=10 => generated 15672 bytes in 80 msecs (HTTP/1.1 200) 5 headers in 152 bytes (1 switches on core 1)
+[pid: 20802|app: 0|req: 5/7] 183.27.44.160 () {46 vars in 970 bytes} [Sat May 23 19:28:57 2020] GET /admin/view_log/?page=10 => generated 15728 bytes in 80 msecs (HTTP/1.1 200) 5 headers in 152 bytes (1 switches on core 0)
+[pid: 20802|app: 0|req: 6/8] 183.27.44.160 () {46 vars in 937 bytes} [Sat May 23 19:29:22 2020] GET /admin/ => generated 27873 bytes in 6 msecs (HTTP/1.1 200) 6 headers in 320 bytes (1 switches on core 1)
+[pid: 20802|app: 0|req: 7/9] 182.254.52.17 () {36 vars in 554 bytes} [Sat May 23 19:45:20 2020] GET /99.php => generated 179 bytes in 2 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+[pid: 20802|app: 0|req: 8/10] 182.254.52.17 () {36 vars in 596 bytes} [Sat May 23 19:46:42 2020] GET /admin/phpmyadmin2/index.php => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 1)
+[pid: 20802|app: 0|req: 9/11] 59.36.132.240 () {36 vars in 574 bytes} [Sat May 23 19:49:03 2020] GET /websql/index.php => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+[pid: 20802|app: 0|req: 10/12] 182.254.52.17 () {36 vars in 564 bytes} [Sat May 23 19:52:57 2020] GET /s/index.php => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 1)
+[pid: 20802|app: 0|req: 11/13] 182.254.52.17 () {36 vars in 568 bytes} [Sat May 23 19:53:14 2020] GET /pwd/index.php => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+[pid: 20802|app: 0|req: 12/14] 182.254.52.17 () {36 vars in 558 bytes} [Sat May 23 19:56:41 2020] GET /undx.php => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 1)
+[pid: 20802|app: 0|req: 13/15] 182.254.52.17 () {36 vars in 589 bytes} [Sat May 23 19:57:18 2020] GET /admin/view_log/?page%3D5 => generated 0 bytes in 10 msecs (HTTP/1.1 302) 6 headers in 180 bytes (1 switches on core 0)
+[pid: 20802|app: 0|req: 14/16] 182.254.52.17 () {38 vars in 635 bytes} [Sat May 23 19:57:18 2020] GET /admin/login.html => generated 5348 bytes in 3 msecs (HTTP/1.1 200) 6 headers in 319 bytes (1 switches on core 1)
+[pid: 20802|app: 0|req: 15/17] 183.192.179.16 () {36 vars in 583 bytes} [Sat May 23 19:57:31 2020] GET /phpNyAdmin/index.php => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+[pid: 20802|app: 0|req: 16/18] 182.254.52.17 () {36 vars in 554 bytes} [Sat May 23 20:01:21 2020] GET /yu.php => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 1)
+[pid: 20802|app: 0|req: 17/19] 182.254.52.17 () {36 vars in 572 bytes} [Sat May 23 20:04:35 2020] GET /pmamy/index.php => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+[pid: 20802|app: 0|req: 18/20] 182.254.52.17 () {36 vars in 554 bytes} [Sat May 23 20:04:56 2020] GET /up.php => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 1)
+[pid: 20802|app: 0|req: 19/21] 116.128.128.41 () {36 vars in 509 bytes} [Sat May 23 20:08:28 2020] GET /hhhhhh.php => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+[pid: 20802|app: 0|req: 20/22] 182.254.52.17 () {36 vars in 558 bytes} [Sat May 23 20:08:31 2020] GET /root.php => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 1)
+[pid: 20802|app: 0|req: 21/23] 182.254.52.17 () {36 vars in 554 bytes} [Sat May 23 20:12:07 2020] GET /d7.php => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+[pid: 20802|app: 0|req: 22/24] 182.254.52.17 () {36 vars in 584 bytes} [Sat May 23 20:12:15 2020] GET /PMA/scripts/setup.php => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 1)
+[pid: 20802|app: 0|req: 23/25] 14.18.182.223 () {36 vars in 594 bytes} [Sat May 23 20:12:20 2020] GET /mysql/sqlmanager/index.php => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+[pid: 20802|app: 0|req: 24/26] 182.254.52.17 () {36 vars in 604 bytes} [Sat May 23 20:16:02 2020] GET /phpmyadmin/phpmyadmin/index.php => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 1)
+[pid: 20802|app: 0|req: 25/27] 182.254.52.17 () {36 vars in 556 bytes} [Sat May 23 20:16:18 2020] GET /zzz.php => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+[pid: 20802|app: 0|req: 26/28] 183.192.179.16 () {36 vars in 559 bytes} [Sat May 23 20:20:46 2020] GET /izom.php => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 1)
+[pid: 20802|app: 0|req: 27/29] 182.254.52.17 () {36 vars in 564 bytes} [Sat May 23 20:20:49 2020] GET /laravel.php => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+[pid: 20802|app: 0|req: 28/30] 182.254.52.17 () {36 vars in 556 bytes} [Sat May 23 20:24:11 2020] GET /cmv.php => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 1)
+[pid: 20802|app: 0|req: 29/31] 14.18.182.223 () {36 vars in 558 bytes} [Sat May 23 20:27:51 2020] GET /text.php => generated 179 bytes in 2 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+[pid: 20802|app: 0|req: 30/32] 182.254.52.17 () {36 vars in 566 bytes} [Sat May 23 20:28:17 2020] GET /muhstik2.php => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 1)
+[pid: 20802|app: 0|req: 31/33] 182.254.52.17 () {36 vars in 570 bytes} [Sat May 23 20:28:32 2020] GET /meijianxue.php => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+[pid: 20802|app: 0|req: 32/34] 183.192.179.16 () {36 vars in 575 bytes} [Sat May 23 20:36:09 2020] GET /phppma/index.php => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 1)
+[pid: 20802|app: 0|req: 33/35] 182.254.52.17 () {36 vars in 564 bytes} [Sat May 23 20:39:24 2020] GET /phpinfo.php => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+[pid: 20802|app: 0|req: 34/36] 162.243.138.188 () {34 vars in 423 bytes} [Sat May 23 20:40:07 2020] GET /portal/redlion => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 1)
+[pid: 20802|app: 0|req: 35/37] 182.254.52.17 () {36 vars in 592 bytes} [Sat May 23 20:47:16 2020] GET /myadmin/scripts/setup.php => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+[pid: 20802|app: 0|req: 36/38] 182.254.52.17 () {36 vars in 584 bytes} [Sat May 23 20:47:23 2020] GET /phpmyadmin0/index.php => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 1)
+[pid: 20802|app: 0|req: 37/39] 182.254.52.17 () {36 vars in 558 bytes} [Sat May 23 20:47:28 2020] GET /cacti/plugins/weathermap/editor.php => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+[pid: 20802|app: 0|req: 38/40] 182.254.52.17 () {36 vars in 660 bytes} [Sat May 23 20:51:55 2020] GET /wp-content/plugins/portable-phpmyadmin/wp-pma-mod/index.php => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 1)
+[pid: 20802|app: 0|req: 39/41] 182.254.52.17 () {36 vars in 562 bytes} [Sat May 23 20:55:10 2020] GET /xiaxia.php => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+[pid: 20802|app: 0|req: 40/42] 182.254.52.17 () {36 vars in 562 bytes} [Sat May 23 20:58:50 2020] GET /htdocs.php => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 1)
+[pid: 20802|app: 0|req: 41/43] 182.254.52.17 () {36 vars in 572 bytes} [Sat May 23 21:02:26 2020] GET /desktop.ini.php => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+[pid: 20802|app: 0|req: 42/44] 182.254.52.17 () {36 vars in 556 bytes} [Sat May 23 21:02:32 2020] GET /webdav/ => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 1)
+[pid: 20802|app: 0|req: 43/45] 182.254.52.17 () {36 vars in 594 bytes} [Sat May 23 21:02:45 2020] GET /admin/phpmyadmin/index.php => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+[pid: 20802|app: 0|req: 44/46] 61.241.50.63 () {36 vars in 561 bytes} [Sat May 23 21:06:24 2020] GET /db_pma.php => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 1)
+[pid: 20802|app: 0|req: 45/47] 14.18.182.223 () {36 vars in 584 bytes} [Sat May 23 21:06:42 2020] GET /mysql-admin/index.php => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+[pid: 20802|app: 0|req: 46/48] 182.254.52.17 () {36 vars in 556 bytes} [Sat May 23 21:10:44 2020] GET /wpo.php => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 1)
+[pid: 20802|app: 0|req: 47/49] 182.254.52.17 () {36 vars in 570 bytes} [Sat May 23 21:14:16 2020] GET /pmd_online.php => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+[pid: 20802|app: 0|req: 48/50] 182.254.52.17 () {36 vars in 590 bytes} [Sat May 23 21:14:18 2020] GET /phpMyadmin_bak/index.php => generated 179 bytes in 3 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 1)
+[pid: 20802|app: 0|req: 49/51] 182.254.52.17 () {36 vars in 554 bytes} [Sat May 23 21:14:29 2020] GET /hs.php => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+[pid: 20802|app: 0|req: 50/52] 182.254.52.17 () {36 vars in 576 bytes} [Sat May 23 21:14:34 2020] GET /pma-old/index.php => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 1)
+[pid: 20802|app: 0|req: 51/53] 182.254.52.17 () {36 vars in 566 bytes} [Sat May 23 21:18:16 2020] GET /uploader.php => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+[pid: 20802|app: 0|req: 52/54] 183.27.44.160 () {48 vars in 968 bytes} [Sat May 23 21:19:22 2020] GET /admin/ => generated 27873 bytes in 2 msecs (HTTP/1.1 200) 6 headers in 320 bytes (1 switches on core 1)
+[pid: 20802|app: 0|req: 54/55] 183.27.44.160 () {46 vars in 938 bytes} [Sat May 23 21:19:30 2020] GET /admin/view_log/ => generated 21234 bytes in 81 msecs (HTTP/1.1 200) 5 headers in 152 bytes (1 switches on core 1)
+[pid: 20802|app: 0|req: 55/56] 183.27.44.160 () {46 vars in 962 bytes} [Sat May 23 21:19:33 2020] GET /admin/view_log/?page=10 => generated 16090 bytes in 93 msecs (HTTP/1.1 200) 5 headers in 152 bytes (1 switches on core 1)
+[pid: 20802|app: 0|req: 56/57] 183.27.44.160 () {46 vars in 970 bytes} [Sat May 23 21:19:36 2020] GET /admin/view_log/?page=10 => generated 16146 bytes in 92 msecs (HTTP/1.1 200) 5 headers in 152 bytes (1 switches on core 1)
+[pid: 20802|app: 0|req: 57/58] 183.27.44.160 () {46 vars in 970 bytes} [Sat May 23 21:22:26 2020] GET /admin/view_log/?page=10 => generated 16202 bytes in 91 msecs (HTTP/1.1 200) 5 headers in 152 bytes (1 switches on core 1)
+[pid: 20802|app: 0|req: 58/59] 183.27.44.160 () {46 vars in 970 bytes} [Sat May 23 21:22:53 2020] GET /admin/view_log/?page=10 => generated 16258 bytes in 91 msecs (HTTP/1.1 200) 5 headers in 152 bytes (1 switches on core 1)
+*** Starting uWSGI 2.0.18 (64bit) on [Sat May 23 21:23:13 2020] ***
+compiled with version: 7.4.0 on 31 January 2020 10:32:09
+os: Linux-4.15.0-54-generic #58-Ubuntu SMP Mon Jun 24 10:55:24 UTC 2019
+nodename: VM-32-8-ubuntu
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 1
+current working directory: /home/ubuntu/git/django_project
+writing pidfile to ./uwsgi.pid
+detected binary path: /home/ubuntu/.local/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+chdir() to /home/ubuntu/git/django_project
+your processes number limit is 7079
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address 127.0.0.1:8001 fd 6
+Python version: 3.6.8 (default, Oct  7 2019, 12:59:55)  [GCC 8.3.0]
+Python main interpreter initialized at 0x55b4e8c9c540
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 416720 bytes (406 KB) for 8 cores
+*** Operational MODE: preforking+threaded ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x55b4e8c9c540 pid: 23268 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 23268)
+spawned uWSGI worker 1 (pid: 23270, cores: 2)
+spawned uWSGI worker 2 (pid: 23271, cores: 2)
+spawned uWSGI worker 3 (pid: 23272, cores: 2)
+spawned uWSGI worker 4 (pid: 23273, cores: 2)
+[pid: 23271|app: 0|req: 1/1] 183.27.44.160 () {46 vars in 970 bytes} [Sat May 23 21:23:18 2020] GET /admin/view_log/?page=10 => generated 16563 bytes in 245 msecs (HTTP/1.1 200) 5 headers in 152 bytes (1 switches on core 0)
+[pid: 23271|app: 0|req: 2/2] 182.254.52.17 () {36 vars in 558 bytes} [Sat May 23 21:25:55 2020] GET /lala.php => generated 179 bytes in 3 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 1)
+[pid: 23273|app: 0|req: 1/3] 183.192.179.16 () {36 vars in 581 bytes} [Sat May 23 21:29:44 2020] GET /admin/PMA/index.php => generated 179 bytes in 167 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+[pid: 23273|app: 0|req: 2/4] 182.254.52.17 () {36 vars in 580 bytes} [Sat May 23 21:29:48 2020] GET /phpmadmin/index.php => generated 179 bytes in 2 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 1)
+[pid: 23270|app: 0|req: 1/5] 116.128.128.41 () {36 vars in 565 bytes} [Sat May 23 21:29:50 2020] GET /muhstik.php => generated 179 bytes in 160 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+[pid: 23273|app: 0|req: 3/6] 58.247.212.239 () {36 vars in 555 bytes} [Sat May 23 21:33:42 2020] GET /zz.php => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 1)
+[pid: 23270|app: 0|req: 2/7] 182.254.52.17 () {36 vars in 572 bytes} [Sat May 23 21:37:53 2020] GET /mysql/index.php => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 1)
+[pid: 23273|app: 0|req: 4/8] 182.254.52.17 () {36 vars in 564 bytes} [Sat May 23 21:42:08 2020] GET /huoshan.php => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+[pid: 23273|app: 0|req: 5/9] 182.254.52.17 () {36 vars in 554 bytes} [Sat May 23 21:56:50 2020] GET /kk.php => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 1)
+[pid: 23273|app: 0|req: 6/10] 182.254.52.17 () {36 vars in 510 bytes} [Sat May 23 21:56:54 2020] GET /1/index.php => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+[pid: 23273|app: 0|req: 7/11] 182.254.52.17 () {36 vars in 574 bytes} [Sat May 23 22:04:58 2020] GET /woshimengmei.php => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 1)
+[pid: 23273|app: 0|req: 8/12] 182.254.52.17 () {36 vars in 602 bytes} [Sat May 23 22:12:28 2020] GET /myadmin/scripts/db___.init.php => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+[pid: 23273|app: 0|req: 9/13] 183.192.179.16 () {36 vars in 539 bytes} [Sat May 23 22:12:29 2020] GET /MyAdmin/scripts/setup.php => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 1)
+[pid: 23273|app: 0|req: 10/14] 182.254.52.17 () {36 vars in 558 bytes} [Sat May 23 22:12:40 2020] GET /hue2.php => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+[pid: 23273|app: 0|req: 11/15] 58.247.212.239 () {36 vars in 590 bytes} [Sat May 23 22:15:05 2020] GET /admin/view_log/?page%3D1 => generated 0 bytes in 10 msecs (HTTP/1.1 302) 6 headers in 180 bytes (1 switches on core 1)
+[pid: 23273|app: 0|req: 12/16] 58.247.212.239 () {38 vars in 636 bytes} [Sat May 23 22:15:05 2020] GET /admin/login.html => generated 5348 bytes in 2 msecs (HTTP/1.1 200) 6 headers in 319 bytes (1 switches on core 0)
+[pid: 23273|app: 0|req: 13/17] 182.254.52.17 () {36 vars in 584 bytes} [Sat May 23 22:20:23 2020] GET /phpmyadmin2/index.php => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+[pid: 23273|app: 0|req: 14/18] 182.254.52.17 () {36 vars in 556 bytes} [Sat May 23 22:20:49 2020] GET /wpc.php => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 1)
+[pid: 23273|app: 0|req: 15/19] 182.254.52.17 () {36 vars in 572 bytes} [Sat May 23 22:24:09 2020] GET /phpma/index.php => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+[pid: 23273|app: 0|req: 16/20] 182.254.52.17 () {36 vars in 600 bytes} [Sat May 23 22:24:11 2020] GET /plugins/weathermap/editor.php => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 1)
+[pid: 23273|app: 0|req: 17/21] 182.254.52.17 () {36 vars in 582 bytes} [Sat May 23 22:27:57 2020] GET /phpmyadm1n/index.php => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+[pid: 23273|app: 0|req: 18/22] 182.254.52.17 () {36 vars in 582 bytes} [Sat May 23 22:28:12 2020] GET /mysqladmin/index.php => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 1)
+[pid: 23273|app: 0|req: 19/23] 59.36.132.240 () {36 vars in 576 bytes} [Sat May 23 22:28:18 2020] GET /scripts/setup.php => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+[pid: 23273|app: 0|req: 20/24] 58.247.212.239 () {36 vars in 553 bytes} [Sat May 23 22:28:19 2020] GET /l.php => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 1)
+*** Starting uWSGI 2.0.18 (64bit) on [Sat May 23 22:35:13 2020] ***
+compiled with version: 7.4.0 on 31 January 2020 10:32:09
+os: Linux-4.15.0-54-generic #58-Ubuntu SMP Mon Jun 24 10:55:24 UTC 2019
+nodename: VM-32-8-ubuntu
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 1
+current working directory: /home/ubuntu/git/django_project
+writing pidfile to ./uwsgi.pid
+detected binary path: /home/ubuntu/.local/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+chdir() to /home/ubuntu/git/django_project
+your processes number limit is 7079
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address 127.0.0.1:8001 fd 6
+Python version: 3.6.8 (default, Oct  7 2019, 12:59:55)  [GCC 8.3.0]
+Python main interpreter initialized at 0x5616bc0ae540
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 416720 bytes (406 KB) for 8 cores
+*** Operational MODE: preforking+threaded ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x5616bc0ae540 pid: 24403 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 24403)
+spawned uWSGI worker 1 (pid: 24405, cores: 2)
+spawned uWSGI worker 2 (pid: 24406, cores: 2)
+spawned uWSGI worker 3 (pid: 24407, cores: 2)
+spawned uWSGI worker 4 (pid: 24408, cores: 2)
+[pid: 24405|app: 0|req: 1/1] 182.254.52.17 () {36 vars in 590 bytes} [Sat May 23 22:36:02 2020] GET /phpmyadmin3333/index.php => generated 179 bytes in 167 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+*** Starting uWSGI 2.0.18 (64bit) on [Sat May 23 22:36:34 2020] ***
+compiled with version: 7.4.0 on 31 January 2020 10:32:09
+os: Linux-4.15.0-54-generic #58-Ubuntu SMP Mon Jun 24 10:55:24 UTC 2019
+nodename: VM-32-8-ubuntu
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 1
+current working directory: /home/ubuntu/git/django_project
+writing pidfile to ./uwsgi.pid
+detected binary path: /home/ubuntu/.local/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+chdir() to /home/ubuntu/git/django_project
+your processes number limit is 7079
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address 127.0.0.1:8001 fd 6
+Python version: 3.6.8 (default, Oct  7 2019, 12:59:55)  [GCC 8.3.0]
+Python main interpreter initialized at 0x561ad4c94540
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 416720 bytes (406 KB) for 8 cores
+*** Operational MODE: preforking+threaded ***
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x561ad4c94540 pid: 24443 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 24443)
+spawned uWSGI worker 1 (pid: 24445, cores: 2)
+spawned uWSGI worker 2 (pid: 24446, cores: 2)
+spawned uWSGI worker 3 (pid: 24447, cores: 2)
+spawned uWSGI worker 4 (pid: 24448, cores: 2)
+[pid: 24445|app: 0|req: 1/1] 183.27.44.160 () {46 vars in 937 bytes} [Sat May 23 22:40:14 2020] GET /admin/ => generated 27873 bytes in 164 msecs (HTTP/1.1 200) 6 headers in 320 bytes (1 switches on core 0)
+————————开始获取豆瓣id数据————————
+无豆瓣id的视频总数：4269
+无匹配视频总数：2284
+伤口 未匹配到合适id []
+----------地址被限制,稍后重试----------
+redis_dump exception: wrong number of arguments for 'rpush' command
+[pid: 24445|app: 0|req: 3/2] 183.27.44.160 () {46 vars in 938 bytes} [Sat May 23 22:40:19 2020] GET /admin/view_log/ => generated 21234 bytes in 87 msecs (HTTP/1.1 200) 5 headers in 152 bytes (1 switches on core 0)
+[pid: 24446|app: 0|req: 1/3] 183.27.44.160 () {46 vars in 962 bytes} [Sat May 23 22:40:22 2020] GET /admin/view_log/?page=10 => generated 17550 bytes in 238 msecs (HTTP/1.1 200) 5 headers in 152 bytes (1 switches on core 0)
+[pid: 24446|app: 0|req: 2/4] 183.27.44.160 () {46 vars in 970 bytes} [Sat May 23 22:41:54 2020] GET /admin/view_log/?page=10 => generated 17606 bytes in 83 msecs (HTTP/1.1 200) 5 headers in 152 bytes (1 switches on core 1)
+[pid: 24445|app: 0|req: 4/5] 183.27.44.160 () {46 vars in 970 bytes} [Sat May 23 22:42:02 2020] GET /admin/view_log/?page=10 => generated 17662 bytes in 82 msecs (HTTP/1.1 200) 5 headers in 152 bytes (1 switches on core 0)
+超能电竞：传奇一代 未匹配到合适id []
+超能电竞：传奇一代 无豆瓣id数据，存入列表
+小天使与流浪汉 34995667 0保存成功[douban]
+神刀御厨娘 未匹配到合适id []
+神刀御厨娘 无豆瓣id数据，存入列表
+隐市奇闻录 未匹配到合适id []
+----------地址被限制,稍后重试----------
+*** Starting uWSGI 2.0.18 (64bit) on [Sat May 23 22:43:53 2020] ***
+compiled with version: 7.4.0 on 31 January 2020 10:32:09
+os: Linux-4.15.0-54-generic #58-Ubuntu SMP Mon Jun 24 10:55:24 UTC 2019
+nodename: VM-32-8-ubuntu
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 1
+current working directory: /home/ubuntu/git/django_project
+writing pidfile to ./uwsgi.pid
+detected binary path: /home/ubuntu/.local/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+chdir() to /home/ubuntu/git/django_project
+your processes number limit is 7079
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address 127.0.0.1:8001 fd 6
+Python version: 3.6.8 (default, Oct  7 2019, 12:59:55)  [GCC 8.3.0]
+Python main interpreter initialized at 0x55f344315540
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 416720 bytes (406 KB) for 8 cores
+*** Operational MODE: preforking+threaded ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x55f344315540 pid: 24694 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 24694)
+spawned uWSGI worker 1 (pid: 24696, cores: 2)
+spawned uWSGI worker 2 (pid: 24697, cores: 2)
+spawned uWSGI worker 3 (pid: 24698, cores: 2)
+spawned uWSGI worker 4 (pid: 24699, cores: 2)
+[pid: 24697|app: 0|req: 1/1] 183.27.44.160 () {46 vars in 937 bytes} [Sat May 23 22:43:58 2020] GET /admin/ => generated 27873 bytes in 163 msecs (HTTP/1.1 200) 6 headers in 320 bytes (1 switches on core 0)
+————————开始获取豆瓣id数据————————
+无豆瓣id的视频总数：4268
+无匹配视频总数：2286
+伤口 未匹配到合适id []
+伤口 无豆瓣id数据，存入列表
+超能电竞：传奇一代 未匹配到合适id []
+----------地址被限制,稍后重试----------
+[pid: 24696|app: 0|req: 1/2] 183.27.44.160 () {46 vars in 938 bytes} [Sat May 23 22:44:03 2020] GET /admin/view_log/ => generated 21234 bytes in 246 msecs (HTTP/1.1 200) 5 headers in 152 bytes (1 switches on core 0)
+[pid: 24696|app: 0|req: 2/3] 183.27.44.160 () {46 vars in 962 bytes} [Sat May 23 22:44:06 2020] GET /admin/view_log/?page=10 => generated 18708 bytes in 84 msecs (HTTP/1.1 200) 5 headers in 152 bytes (1 switches on core 1)
+[pid: 24696|app: 0|req: 3/4] 182.254.52.17 () {36 vars in 671 bytes} [Sat May 23 22:44:27 2020] GET /web/cgi-bin/hi3510/param.cgi?cmd%3Dgetp2pattr%26cmd%3Dgetuserattr => generated 179 bytes in 2 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+[pid: 24696|app: 0|req: 4/5] 183.27.44.160 () {46 vars in 970 bytes} [Sat May 23 22:44:28 2020] GET /admin/view_log/?page=10 => generated 18883 bytes in 84 msecs (HTTP/1.1 200) 5 headers in 152 bytes (1 switches on core 1)
+[pid: 24696|app: 0|req: 5/6] 183.27.44.160 () {46 vars in 970 bytes} [Sat May 23 22:45:48 2020] GET /admin/view_log/?page=10 => generated 18939 bytes in 84 msecs (HTTP/1.1 200) 5 headers in 152 bytes (1 switches on core 0)
+神刀御厨娘 34996371 0保存成功[douban]
+隐市奇闻录 未匹配到合适id [{'episode': '', 'img': 'https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2603419341.jpg', 'title': '隐市奇闻录', 'url': 'https://movie.douban.com/subject/30264017/?suggest=%E9%9A%90%E5%B8%82%E5%A5%87%E9%97%BB%E5%BD%95', 'type': 'movie', 'year': '2020', 'sub_title': '隐市奇闻录', 'id': '30264017'}, {'episode': '', 'img': 'https://img1.doubanio.com/f/movie/b6dc761f5e4cf04032faa969826986efbecd54bb/pics/movie/movie_default_small.png', 'title': '隐市奇闻录2', 'url': 'https://movie.douban.com/subject/30473796/?suggest=%E9%9A%90%E5%B8%82%E5%A5%87%E9%97%BB%E5%BD%95', 'type': 'movie', 'year': '2020', 'sub_title': '隐市奇闻录2', 'id': '30473796'}]
+隐市奇闻录 无豆瓣id数据，存入列表
+本·普拉特：无线电城现场秀 35050634 0保存成功[douban]
+主持人的风暴 未匹配到合适id []
+----------地址被限制,稍后重试----------
+[pid: 24696|app: 0|req: 6/7] 183.27.44.160 () {46 vars in 970 bytes} [Sat May 23 22:47:21 2020] GET /admin/view_log/?page=10 => generated 20288 bytes in 84 msecs (HTTP/1.1 200) 5 headers in 152 bytes (1 switches on core 1)
+爱情保镖 未匹配到合适id []
+爱情保镖 无豆瓣id数据，存入列表
+八卦掌之暗战 未匹配到合适id []
+----------地址被限制,稍后重试----------
+[pid: 24696|app: 0|req: 7/8] 183.27.44.160 () {46 vars in 970 bytes} [Sat May 23 22:50:44 2020] GET /admin/view_log/?page=10 => generated 20449 bytes in 85 msecs (HTTP/1.1 200) 5 headers in 152 bytes (1 switches on core 0)
+[pid: 24696|app: 0|req: 8/9] 183.27.44.160 () {46 vars in 970 bytes} [Sat May 23 22:50:49 2020] GET /admin/view_log/?page=11 => generated 15044 bytes in 86 msecs (HTTP/1.1 200) 5 headers in 152 bytes (1 switches on core 1)
+[pid: 24696|app: 0|req: 9/10] 183.27.44.160 () {46 vars in 970 bytes} [Sat May 23 22:50:52 2020] GET /admin/view_log/?page=10 => generated 20449 bytes in 84 msecs (HTTP/1.1 200) 5 headers in 152 bytes (1 switches on core 0)
+[pid: 24696|app: 0|req: 10/11] 182.254.52.17 () {36 vars in 580 bytes} [Sat May 23 22:51:07 2020] GET /phpMyadmi/index.php => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 1)
+春潮 未匹配到合适id []
+春潮 无豆瓣id数据，存入列表
+叹别离 35073744 0保存成功[douban]
+继承2020 未匹配到合适id []
+继承2020 无豆瓣id数据，存入列表
+丛林少女之重启 未匹配到合适id []
+----------地址被限制,稍后重试----------
+牛皮纸袋 未匹配到合适id []
+牛皮纸袋 无豆瓣id数据，存入列表
+非常计划 35073672 0保存成功[douban]
+锦衣卫之暮光之下 35073677 0保存成功[douban]
+两情一路 35071212 0保存成功[douban]
+生死夜2020 未匹配到合适id []
+----------地址被限制,稍后重试----------
+[pid: 24696|app: 0|req: 11/12] 183.27.44.160 () {46 vars in 970 bytes} [Sat May 23 22:57:47 2020] GET /admin/view_log/?page=11 => generated 15756 bytes in 84 msecs (HTTP/1.1 200) 5 headers in 152 bytes (1 switches on core 0)
+[pid: 24696|app: 0|req: 12/13] 183.27.44.160 () {46 vars in 970 bytes} [Sat May 23 22:57:54 2020] GET /admin/view_log/?page=10 => generated 20449 bytes in 87 msecs (HTTP/1.1 200) 5 headers in 152 bytes (1 switches on core 1)
+[pid: 24696|app: 0|req: 13/14] 116.128.128.41 () {36 vars in 573 bytes} [Sat May 23 22:58:52 2020] GET /new_license.php => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+[pid: 24696|app: 0|req: 14/15] 182.254.52.17 () {36 vars in 594 bytes} [Sat May 23 22:59:01 2020] GET /typo3/phpmyadmin/index.php => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 1)
+超能力同学 未匹配到合适id []
+超能力同学 无豆瓣id数据，存入列表
+烈火营救 35059008 0保存成功[douban]
+咫尺天涯一念间 未匹配到合适id []
+咫尺天涯一念间 无豆瓣id数据，存入列表
+镇妖宝塔 未匹配到合适id []
+----------地址被限制,稍后重试----------
+[pid: 24696|app: 0|req: 15/16] 183.27.44.160 () {46 vars in 970 bytes} [Sat May 23 23:01:53 2020] GET /admin/view_log/?page=11 => generated 16188 bytes in 86 msecs (HTTP/1.1 200) 5 headers in 152 bytes (1 switches on core 0)
+欲望商店 未匹配到合适id []
+欲望商店 无豆瓣id数据，存入列表
+蒙眼缉凶 未匹配到合适id []
+蒙眼缉凶 无豆瓣id数据，存入列表
+我们都不满意 未匹配到合适id []
+----------地址被限制,稍后重试----------
+永生之战 35057976 0保存成功[douban]
+荒野巨兽 35061928 0保存成功[douban]
+女房客2020 未匹配到合适id []
+----------地址被限制,稍后重试----------
+[pid: 24696|app: 0|req: 16/17] 183.27.44.160 () {46 vars in 970 bytes} [Sat May 23 23:06:18 2020] GET /admin/view_log/?page=11 => generated 16677 bytes in 85 msecs (HTTP/1.1 200) 5 headers in 152 bytes (1 switches on core 1)
+[pid: 24696|app: 0|req: 17/18] 182.254.52.17 () {36 vars in 582 bytes} [Sat May 23 23:06:46 2020] GET /images/jsspwneed.php => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+[pid: 24696|app: 0|req: 18/19] 183.56.207.3 () {36 vars in 483 bytes} [Sat May 23 23:07:11 2020] HEAD //runtime/log/202005/22.log => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 1)
+势不可挡2020 未匹配到合适id []
+势不可挡2020 无豆瓣id数据，存入列表
+平行宇宙之恋 未匹配到合适id []
+平行宇宙之恋 无豆瓣id数据，存入列表
+继续前行 35062400 0保存成功[douban]
+冬年2020 未匹配到合适id []
+----------地址被限制,稍后重试----------
+[pid: 24696|app: 0|req: 19/20] 183.27.44.160 () {46 vars in 1027 bytes} [Sat May 23 23:09:34 2020] GET /video/type/1/?year=&area=&rating=9.0 => generated 37202 bytes in 118 msecs (HTTP/1.1 200) 6 headers in 320 bytes (1 switches on core 0)
+[pid: 24696|app: 0|req: 20/21] 183.27.44.160 () {46 vars in 1009 bytes} [Sat May 23 23:09:37 2020] GET /video/type/1/?year=&area=&rating=8.0 => generated 41859 bytes in 116 msecs (HTTP/1.1 200) 6 headers in 320 bytes (1 switches on core 1)
+[pid: 24696|app: 0|req: 21/22] 183.27.44.160 () {46 vars in 1009 bytes} [Sat May 23 23:09:40 2020] GET /video/type/1/?year=&area=&rating=7.0 => generated 42966 bytes in 120 msecs (HTTP/1.1 200) 6 headers in 320 bytes (1 switches on core 0)
+[pid: 24696|app: 0|req: 22/23] 183.27.44.160 () {46 vars in 1009 bytes} [Sat May 23 23:09:43 2020] GET /video/type/1/?year=&area=&rating=6.0 => generated 42403 bytes in 128 msecs (HTTP/1.1 200) 6 headers in 320 bytes (1 switches on core 1)
+[pid: 24696|app: 0|req: 23/24] 183.27.44.160 () {46 vars in 1009 bytes} [Sat May 23 23:09:44 2020] GET /video/type/1/?year=&area=&rating=5.0 => generated 44985 bytes in 121 msecs (HTTP/1.1 200) 6 headers in 320 bytes (1 switches on core 0)
+[pid: 24696|app: 0|req: 24/25] 183.27.44.160 () {46 vars in 1045 bytes} [Sat May 23 23:09:46 2020] GET /video/type/1/?year=&area=&rating=5.0%E4%BB%A5%E4%B8%8B => generated 38116 bytes in 138 msecs (HTTP/1.1 200) 6 headers in 320 bytes (1 switches on core 1)
+[pid: 24696|app: 0|req: 25/26] 183.27.44.160 () {46 vars in 993 bytes} [Sat May 23 23:09:47 2020] GET /video/type/1/?area= => generated 37912 bytes in 264 msecs (HTTP/1.1 200) 6 headers in 320 bytes (1 switches on core 0)
+[pid: 24696|app: 0|req: 26/27] 182.254.52.17 () {36 vars in 574 bytes} [Sat May 23 23:10:52 2020] GET /shopdb/index.php => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 1)
+[pid: 24696|app: 0|req: 27/28] 182.254.52.17 () {36 vars in 580 bytes} [Sat May 23 23:11:03 2020] GET /phpMydmin/index.php => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+[pid: 24696|app: 0|req: 28/29] 182.254.52.17 () {36 vars in 594 bytes} [Sat May 23 23:11:26 2020] GET /PMA/scripts/db___.init.php => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 1)
+赌神之神 未匹配到合适id [{'episode': '', 'img': 'https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2589308820.jpg', 'title': '赌神之神', 'url': 'https://movie.douban.com/subject/34984533/?suggest=%E8%B5%8C%E7%A5%9E%E4%B9%8B%E7%A5%9E', 'type': 'movie', 'year': '2020', 'sub_title': '赌神之神', 'id': '34984533'}, {'episode': '', 'img': 'https://img1.doubanio.com/view/photo/s_ratio_poster/public/p2525918549.jpg', 'title': '青年赌神之反赌人生路', 'url': 'https://movie.douban.com/subject/30255086/?suggest=%E8%B5%8C%E7%A5%9E%E4%B9%8B%E7%A5%9E', 'type': 'movie', 'year': '2020', 'sub_title': '青年赌神之反赌人生路', 'id': '30255086'}]
+赌神之神 无豆瓣id数据，存入列表
+毒战[2020] 未匹配到合适id []
+毒战[2020] 无豆瓣id数据，存入列表
+云端美人 35062399 0保存成功[douban]
+虫族2020 未匹配到合适id []
+----------地址被限制,稍后重试----------
+[pid: 24696|app: 0|req: 29/30] 182.254.52.17 () {36 vars in 566 bytes} [Sat May 23 23:15:15 2020] GET /images/!.php => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+玛雅2020 未匹配到合适id []
+玛雅2020 无豆瓣id数据，存入列表
+少年忍师—司徒家2 35030673 0保存成功[douban]
+新包青天南侠迷案 未匹配到合适id []
+新包青天南侠迷案 无豆瓣id数据，存入列表
+还在相爱吗？ 未匹配到合适id []
+----------地址被限制,稍后重试----------
+[pid: 24696|app: 0|req: 30/31] 182.254.52.17 () {36 vars in 502 bytes} [Sat May 23 23:18:19 2020] GET /Joomla/ => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 1)
+[pid: 24696|app: 0|req: 31/32] 182.254.52.17 () {36 vars in 570 bytes} [Sat May 23 23:18:27 2020] GET /PMA2/index.php => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+灵兽2020 未匹配到合适id []
+灵兽2020 无豆瓣id数据，存入列表
+鬼吹灯之龙岭迷窟 未匹配到合适id [{'episode': '', 'img': 'https://img1.doubanio.com/view/photo/s_ratio_poster/public/p2594050148.jpg', 'title': '鬼吹灯之龙岭迷窟', 'url': 'https://movie.douban.com/subject/33392524/?suggest=%E9%AC%BC%E5%90%B9%E7%81%AF%E4%B9%8B%E9%BE%99%E5%B2%AD%E8%BF%B7%E7%AA%9F', 'type': 'movie', 'year': '2020', 'sub_title': '鬼吹灯之龙岭迷窟', 'id': '33392524'}, {'episode': '18', 'img': 'https://img1.doubanio.com/view/photo/s_ratio_poster/public/p2593664928.jpg', 'title': '龙岭迷窟', 'url': 'https://movie.douban.com/subject/30488569/?suggest=%E9%AC%BC%E5%90%B9%E7%81%AF%E4%B9%8B%E9%BE%99%E5%B2%AD%E8%BF%B7%E7%AA%9F', 'type': 'movie', 'year': '2020', 'sub_title': '龙岭迷窟', 'id': '30488569'}]
+鬼吹灯之龙岭迷窟 无豆瓣id数据，存入列表
+我爱你2020 未匹配到合适id []
+----------地址被限制,稍后重试----------
+回归之路 未匹配到合适id [{'episode': '', 'img': 'https://img3.doubanio.com/view/photo/s_ratio_poster/public/p2580473992.jpg', 'title': '回归之路', 'url': 'https://movie.douban.com/subject/30345227/?suggest=%E5%9B%9E%E5%BD%92%E4%B9%8B%E8%B7%AF', 'type': 'movie', 'year': '2020', 'sub_title': 'The Way Back', 'id': '30345227'}, {'episode': '', 'img': 'https://img9.doubanio.com/view/photo/s_ratio_poster/public/p2573943336.jpg', 'title': '回归之路', 'url': 'https://movie.douban.com/subject/27146766/?suggest=%E5%9B%9E%E5%BD%92%E4%B9%8B%E8%B7%AF', 'type': 'movie', 'year': '2020', 'sub_title': 'The Comeback Trail', 'id': '27146766'}]
+回归之路 无豆瓣id数据，存入列表
+返航迷途2020 未匹配到合适id []
+返航迷途2020 无豆瓣id数据，存入列表
+我当摸金校尉的那些年 未匹配到合适id []
+----------地址被限制,稍后重试----------
+[pid: 24696|app: 0|req: 32/33] 183.27.44.160 () {46 vars in 947 bytes} [Sat May 23 23:21:54 2020] GET /video/type/2/ => generated 34512 bytes in 162 msecs (HTTP/1.1 200) 6 headers in 320 bytes (1 switches on core 1)
+[pid: 24696|app: 0|req: 33/34] 183.27.44.160 () {46 vars in 1016 bytes} [Sat May 23 23:21:57 2020] GET /video/type/2/?area=%E9%A6%99%E6%B8%AF&year=&rating= => generated 53372 bytes in 94 msecs (HTTP/1.1 200) 6 headers in 320 bytes (1 switches on core 0)
+干将莫邪 未匹配到合适id []
+----------地址被限制,稍后重试----------
+[pid: 24696|app: 0|req: 34/35] 183.27.44.160 () {46 vars in 970 bytes} [Sat May 23 23:26:56 2020] GET /admin/view_log/?page=10 => generated 20449 bytes in 95 msecs (HTTP/1.1 200) 5 headers in 152 bytes (1 switches on core 1)
+唯一2020 未匹配到合适id []
+唯一2020 无豆瓣id数据，存入列表
+等待安雅 未匹配到合适id []
+等待安雅 无豆瓣id数据，存入列表
+分手前要做的十件事 未匹配到合适id []
+----------地址被限制,稍后重试----------
+连续五次失败，等待30分钟
+[pid: 24696|app: 0|req: 35/36] 182.254.52.17 () {36 vars in 578 bytes} [Sat May 23 23:34:13 2020] GET /download/index.php => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+[pid: 24696|app: 0|req: 36/37] 182.254.52.17 () {36 vars in 562 bytes} [Sat May 23 23:41:52 2020] GET /taisui.php => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 1)
+[pid: 24696|app: 0|req: 37/38] 182.254.52.17 () {36 vars in 552 bytes} [Sat May 23 23:42:07 2020] GET /solr/ => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+[pid: 24696|app: 0|req: 38/39] 182.254.52.17 () {36 vars in 586 bytes} [Sat May 23 23:45:56 2020] GET /scripts/db___.init.php => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 1)
+[pid: 24696|app: 0|req: 39/40] 182.254.52.17 () {36 vars in 564 bytes} [Sat May 23 23:53:21 2020] GET /payload.php => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+[pid: 24696|app: 0|req: 40/41] 14.18.182.223 () {36 vars in 566 bytes} [Sat May 23 23:57:25 2020] GET /lala-dpr.php => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 1)
+[1590249601] logsize: 122965, triggering log-reopen...
