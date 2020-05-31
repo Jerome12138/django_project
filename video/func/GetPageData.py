@@ -491,7 +491,7 @@ class Get80sScore(object):
                 flag1 = self.save_score(video_data)
                 video_data2['vod_name'] = video_data2['vod_name']+'粤语'
                 flag2 = self.save_score(video_data2)
-                if flag1 and flag2:
+                if flag2:
                     return True
                 else:
                     return False
