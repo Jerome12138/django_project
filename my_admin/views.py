@@ -476,7 +476,7 @@ def get_douban_rating(request):
                     if type(douban_id)==list:
                         print(item['vod_name'], '匹配到多个豆瓣id数据，存入列表2',douban_id)
                         if b_id not in none_list2:
-                            none_list2.append({'vod_id':b_id,'id_list':douban_id})
+                            none_list2.append(b_id)
                     else:
                         rating = GetPageData.getRating(douban_id)
                         print(item['vod_name'], douban_id, rating, end='')

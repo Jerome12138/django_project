@@ -229,18 +229,14 @@ def redis_dumplist(skey, data_list):
         data_list = list(set(data_list)-set(exist_list))    # 差集，已存在则不添加
         if len(data_list)>0:
             result = SR.rpush(skey, *data_list)
-        # s2 = SR.keys()
-        # print(s2)
         return True
     except Exception as e:
-        print('redis_dump exception:', e)
+        print('redis_dumplist exception:', e)
         return False
 
 
 def redis_loadlist(skey):
     try:
-        # 添加键name，值为itheima
-        # result=SR.set('name','itheima')
         result = SR.lrange(skey, 0, -1)
         # result = SR.get(skey)
         # result = [item.decode() for item in result]
@@ -266,15 +262,6 @@ def db_test():
                 # SR.rpush('douban_none_list', i)
                 j+=1
                 print(j)
-        # j=0
-        # while l_len-j>50:
-        #     none_list = SR.lrange('douban_none_list', 0, 100)
-        #     # print(none_list)
-        #     for item in set(none_list):
-        #         SR.lrem('douban_none_list', 0, item)
-        #         SR.rpush('douban_none_list', item)
-        #         j+=1
-        #         print(j)
         result = True
     except Exception as e:
         print('db_test exception:', e)

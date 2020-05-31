@@ -1,89 +1,17 @@
-import json
-import re
-import time
+import json, re, time
 import random
 import logging
 import traceback
-import requests
-from lxml import etree
 from queue import Queue, LifoQueue
 import threading
 from . import DBHandler
+from . import getRequest
 
 logger = logging.getLogger('log')
 
-user_agent = [
-    "Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; AcooBrowser; .NET CLR 1.1.4322; .NET CLR 2.0.50727)",
-    "Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 6.0; Acoo Browser; SLCC1; .NET CLR 2.0.50727; Media Center PC 5.0; .NET CLR 3.0.04506)",
-    "Mozilla/4.0 (compatible; MSIE 7.0; AOL 9.5; AOLBuild 4337.35; Windows NT 5.1; .NET CLR 1.1.4322; .NET CLR 2.0.50727)",
-    "Mozilla/5.0 (Windows; U; MSIE 9.0; Windows NT 9.0; en-US)",
-    "Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; Win64; x64; Trident/5.0; .NET CLR 3.5.30729; .NET CLR 3.0.30729; .NET CLR 2.0.50727; Media Center PC 6.0)",
-    "Mozilla/5.0 (compatible; MSIE 8.0; Windows NT 6.0; Trident/4.0; WOW64; Trident/4.0; SLCC2; .NET CLR 2.0.50727; .NET CLR 3.5.30729; .NET CLR 3.0.30729; .NET CLR 1.0.3705; .NET CLR 1.1.4322)",
-    "Mozilla/4.0 (compatible; MSIE 7.0b; Windows NT 5.2; .NET CLR 1.1.4322; .NET CLR 2.0.50727; InfoPath.2; .NET CLR 3.0.04506.30)",
-    "Mozilla/5.0 (Windows; U; Windows NT 5.1; zh-CN) AppleWebKit/523.15 (KHTML, like Gecko, Safari/419.3) Arora/0.3 (Change: 287 c9dfb30)",
-    "Mozilla/5.0 (X11; U; Linux; en-US) AppleWebKit/527+ (KHTML, like Gecko, Safari/419.3) Arora/0.6",
-    "Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.8.1.2pre) Gecko/20070215 K-Ninja/2.1.1",
-    "Mozilla/5.0 (Windows; U; Windows NT 5.1; zh-CN; rv:1.9) Gecko/20080705 Firefox/3.0 Kapiko/3.0",
-    "Mozilla/5.0 (X11; Linux i686; U;) Gecko/20070322 Kazehakase/0.4.5",
-    "Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.9.0.8) Gecko Fedora/1.9.0.8-1.fc10 Kazehakase/0.5.6",
-    "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.149 Safari/537.36",
-    "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_7_3) AppleWebKit/535.20 (KHTML, like Gecko) Chrome/19.0.1036.7 Safari/535.20",
-    "Opera/9.80 (Macintosh; Intel Mac OS X 10.6.8; U; fr) Presto/2.9.168 Version/11.52",
-]
-HEADERS = {
-    "User-Agent": random.choice(user_agent)
-}
-
-
-class GetWebData(object):  # 爬取网页数据，返回html数据
-    def get_html(self, url, is_debug=0, *args, **kwargs): 
-        i = 0
-        while i < 3:
-            try:
-                if kwargs.get('referer'):
-                    self.headers['Referer'] = kwargs['referer']
-                res = requests.get(url, headers=HEADERS, timeout=(3, 15))
-                if res.status_code == 200:
-                    html_str = res.content.decode()
-                else:
-                    print('爬虫网站%s返回状态码错误：%s' % (url, res.status_code))
-                    return False
-                if is_debug:
-                    with open('abc.html', 'w', encoding="utf-8") as f:
-                        f.write(html_str)
-                html = etree.HTML(html_str)
-                if html is None:
-                    return False
-                return html
-            except requests.exceptions.RequestException:
-                i += 1
-                print('%s请求超时，重试%s次' % (url, i))
-        return False
-
-    def get_json(self, url):
-        i = 0
-        while i < 3:
-            try:
-                response = requests.get(
-                    url, headers=HEADERS, timeout=(3, 15))
-                if response.status_code != 200:
-                    print('Status Code：', response.status_code)
-                    return False
-                res_json = json.loads(response.content.decode())
-                return res_json
-            except requests.exceptions.RequestException:
-                i += 1
-                print('page%s请求超时，重试%s次' % (url.split('?p=')[1], i))
-            except json.decoder.JSONDecodeError:
-                i += 1
-                print('page%s jSON解析错误，重试%s次' % (url.split('?p=')[1], i))
-        return False
-
-
 def get_vod_data(vod_id):   # 根据vod_id爬取数据，返回数据字典
     # 1.获取数据
-    get_web_data = GetWebData()
-    html = get_web_data.get_html(
+    html = getRequest.get_html(
         "http://www.zuidazy4.com/?m=vod-detail-id-%s.html" % vod_id)
     if not html:
         return False
@@ -124,8 +52,7 @@ def get_vod_data(vod_id):   # 根据vod_id爬取数据，返回数据字典
 
 
 def get_data_list(wd, page_index=1):    # 获取搜索列表
-    get_web_data = GetWebData()
-    html = get_web_data.get_html(
+    html = getRequest.get_html(
         "http://zuidazy4.com/index.php?m=vod-search-pg-%s-wd-%s.html" % (page_index, wd))
     if not html:
         return False
@@ -172,13 +99,12 @@ class getAllData(object):   # 获取所有数据
         self.url_index = url_index
         self.updated = 0
         self.page_size = 40
-        self.get_web_data = GetWebData()
         self.url_queue = LifoQueue()    # 先进后出
         self.page_queue = Queue()    # 先进先出
         self.error_pages = []
 
     def parse_url(self, url):  # 发送请求，获取响应
-        return self.get_web_data.get_json(url)
+        return getRequest.get_json(url)
 
     def get_update_count(self, url_index):   # 获取今日更新数量
         try:
@@ -190,8 +116,7 @@ class getAllData(object):   # 获取所有数据
                 url = "http://www.bajiezy.cc/"
                 x_match = "//a[contains(string(),'今日更新：')]/font[2]/text()"
             # 2.获取数据
-            get_web_data = GetWebData()
-            html = get_web_data.get_html(url)
+            html = getRequest.get_html(url)
             if not html:
                 update_count = 480
             # 3.转化数据
@@ -292,11 +217,8 @@ class getAllData(object):   # 获取所有数据
 
 
 class IQiyi(object):  # 爱奇艺视频搜索及解析
-    def __init__(self):  # 初始化
-        self.get_web_data = GetWebData()
-
     def i_search(self, wd):  # 搜索视频
-        html = self.get_web_data.get_html('https://so.iqiyi.com/so/q_'+wd)
+        html = getRequest.get_html('https://so.iqiyi.com/so/q_'+wd)
         if not html:
             return False
         x_vod_list = html.xpath(
@@ -326,10 +248,10 @@ class IQiyi(object):  # 爱奇艺视频搜索及解析
         return vod_list
 
     def i_album(self, vod_detail_url):  # 获取剧集列表
-        html = self.get_web_data.get_html(vod_detail_url)
+        html = getRequest.get_html(vod_detail_url)
         album_id = html.xpath(
             '//div[contains(@class,"album-head-info")]//div[contains(@class,"intro-effect")]/@data-score-tvid')[0]
-        res_json = self.get_web_data.get_json(
+        res_json = getRequest.get_json(
             'https://pcw-api.iqiyi.com/albums/album/avlistinfo?aid=%s&page=1&size=1000' % album_id)
         vod_list = res_json['data']['epsodelist']
         return vod_list
@@ -340,13 +262,13 @@ class IQiyi(object):  # 爱奇艺视频搜索及解析
         # https://www.xn--eqr49pmpixzv.com/index.php?url=
         # http://okxj.cc/?url=
         # https://okjx.cc/jiexi/?url=
-        # self.get_web_data.get_html(jiexi_url)
+        # getRequest.get_html(jiexi_url)
         return jiexi_url
 
     def i_jeixi(self, vod_url):
         base_url = "https://www.administratorm.com/WANG.WANG/index.php?url="+vod_url
         referer = "https://www.administratorm.com/index.php?url="+vod_url
-        html = self.get_web_data.get_html(base_url, referer=referer)
+        html = getRequest.get_html(base_url, referer=referer)
         if not html:
             return False
         x_script = html.xpath('//script[contains(text(),"var vkey =")]/text()')
@@ -361,8 +283,7 @@ class IQiyi(object):  # 爱奇艺视频搜索及解析
 
 def getDoubanInfo(wd):  # 爬虫
     url = "https://search.douban.com/movie/subject_search?search_text=%s&cat=1002" % wd
-    get_web_data = GetWebData()
-    html = get_web_data.get_html(url)
+    html = getRequest.get_html(url)
     if not html:
         return False
     data_list = html.xpath('//div[@class="root"]//text()')
@@ -372,11 +293,7 @@ def getDoubanInfo(wd):  # 爬虫
 
 def getRating(douban_id):   # 根据豆瓣id获取评分
     url = "http://api.douban.com/v2/movie/subject/%s?apikey=0df993c66c0c636e29ecbb5344252a4a" % douban_id
-    response = requests.get(url, headers=HEADERS)
-    if response.status_code != 200:
-        print('Status Code: ', response.status_code)
-        return False
-    vod_info = json.loads(response.content.decode())
+    vod_info = getRequest.get_json(url)
     # print(vod_info['rating']['average'])
     return vod_info['rating']['average']
 
@@ -384,10 +301,7 @@ def getRating(douban_id):   # 根据豆瓣id获取评分
 def findID(name, vod_year):  # name即剧名
     try:
         url = 'https://movie.douban.com/j/subject_suggest?q=%s' % name
-        response = requests.get(url, headers=HEADERS)
-        if response.status_code != 200:
-            raise Exception('Status Code:', response.status_code)
-        item_list = json.loads(response.content.decode())
+        item_list = getRequest.get_json(url)
         # 从item_list中的每个item中提取对应的ID值
         id_list = []  # ID存放列表
         for item in item_list:
@@ -413,7 +327,6 @@ class Get80sScore(object):
         # https://www.80s.tw/ju/list/---2019-0--p/2
         # 'https://www.80s.tw/movie/list/-%s----p/%s'
         self.data_queue = Queue()    # 先进先出
-        self.get_web_data = GetWebData()
         self.error_list = []
         self.detail_list = []
         self.timeout = 0
@@ -423,7 +336,7 @@ class Get80sScore(object):
         try:
             page_list = []
             for year in range(2020, 2007, -1):
-                html = self.get_web_data.get_html(self.url_temp % (year, 1))
+                html = getRequest.get_html(self.url_temp % (year, 1))
                 last_pager = html.xpath('//div[@class="pager"]/a[contains(text(),"尾页")]/@href')
                 if last_pager != []:
                     page_count = int(last_pager[0].split('/')[-1])
@@ -446,7 +359,7 @@ class Get80sScore(object):
         try:
             # if page_index == 1 : # 第一页时输出
             print('开始获取',year,page_index)
-            html = self.get_web_data.get_html(self.url_temp % (year,page_index))
+            html = getRequest.get_html(self.url_temp % (year,page_index))
             if len(html) == 0:
                 self.error_list.append((year,page_index))
                 raise Exception('html%s无数据返回' % self.url_temp % (year,page_index))
@@ -537,7 +450,7 @@ class Get80sScore(object):
 
     def get_detail(self,url):    # 获取豆瓣id
         try:
-            html = self.get_web_data.get_html('https://www.80s.tw%s'%url)
+            html = getRequest.get_html('https://www.80s.tw%s'%url)
             if not html:
                 print('https://www.80s.tw%s'%url,'无数据返回')
                 self.error_list.append(page)
