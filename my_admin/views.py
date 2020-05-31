@@ -406,7 +406,7 @@ def carousel_add(request):
         carousel_data['vod_pic'] = request.POST.get('vod_pic')
         carousel_data['vod_url'] = request.POST.get('vod_url')
         carousel_data['vod_index'] = request.POST.get('vod_index')
-        print(carousel_data)
+        # print(carousel_data)
         # 转换为本地链接
         vod_pic = request.POST.get('vod_pic')
         if vod_pic and vod_pic.endswith('.webp'):
@@ -461,6 +461,7 @@ def get_douban_rating(request):
         none_list2 = DBHandler.redis_loadlist('douban_none_list2')
         print('无豆瓣id的视频总数：%s' % len(data_list))
         print('无匹配视频总数：%s' % len(none_list))
+        print('重复数据的视频总数：%s' % len(none_list2))
         # while flag:
         # print(bytes('75519',encoding='utf-8') not in none_list and bytes('75519',encoding='utf-8') not in none_list2)
         # return HttpResponse(none_list)
@@ -475,7 +476,7 @@ def get_douban_rating(request):
                     if type(douban_id)==list:
                         print(item['vod_name'], '匹配到多个豆瓣id数据，存入列表2',douban_id)
                         if b_id not in none_list2:
-                            none_list2.append(b_id)
+                            none_list2.append({'vod_id':b_id,'id_list':douban_id})
                     else:
                         rating = GetPageData.getRating(douban_id)
                         print(item['vod_name'], douban_id, rating, end='')

@@ -486,7 +486,7 @@ class Get80sScore(object):
                     video_data['vod_name'] = re.sub(re_str3.group(),'',video_data['vod_name'])
                     return self.save_score(video_data)
             if len(vod_info_list) == 2:   # 如果匹配到多项
-                video_data2 = video_data
+                video_data2 = list(video_data)
                 video_data['vod_name'] = video_data['vod_name']+'国语'
                 flag1 = self.save_score(video_data)
                 video_data2['vod_name'] = video_data2['vod_name']+'粤语'
