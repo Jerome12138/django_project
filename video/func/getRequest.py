@@ -64,6 +64,7 @@ def get_json(url, *args, **kwargs):
                 url, headers=HEADERS, proxies={"http": "http://{}".format(proxy)}, timeout=(3, 15))
             if response.status_code != 200:
                 print('proxy:',proxy,'Status Code：', response.status_code, '重试')
+                i+=1
                 continue
             res_json = json.loads(response.content.decode())
             return res_json
