@@ -480,16 +480,21 @@ def get_douban_rating(request):
                             if b_id not in none_list2:
                                 none_list2.append(b_id)
                         else:
-                            rating = GetPageData.getRating(douban_id)
-                            print(item['vod_name'], douban_id, rating, end='')
                             DBHandler.dump_douban_id(item['vod_id'], douban_id)
-                            DBHandler.dump_rating(item['vod_id'], rating)
+                            print(item['vod_name'], douban_id, end='')
+                            # rating = GetPageData.getRating(douban_id)
+                            # if rating:
+                            #     print(rating, end='')
+                            #     DBHandler.dump_rating(item['vod_id'], rating)
                             print('保存成功[douban]')
                         # 防止账号被封，随机延迟
-                        time.sleep(5 + float(random.randint(40, 100)) / 20)
+                        # time.sleep(1 + float(random.randint(40, 100)) / 20)
+                        # time.sleep(1)
                         break
                     else:   # 未查找到豆瓣id
                         i+=1
+                        if i ==1:
+                            print(item['vod_name'])
                         continue
                         # test_net = GetPageData.findID('爱情公寓2', '2011')
                         # if test_net is None:    # 网络异常
