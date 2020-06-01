@@ -32,11 +32,12 @@ def get_html(url, is_debug=0, *args, **kwargs):
             if kwargs.get('referer'):
                 HEADERS['Referer'] = kwargs['referer']
             proxy = requests.get("http://49.234.78.157:5010/get/").json().get('proxy')
+            # print(proxy)
             res = requests.get(url, headers=HEADERS, proxies={"http": "http://{}".format(proxy)}, timeout=(3, 15))
             if res.status_code == 200:
                 html_str = res.content.decode()
             else:
-                print('爬虫网站%s返回状态码错误：%s' % (url, res.status_code))
+                print('爬虫网站%s返回状态码错误：%s' % (url, res.status_code),'proxy:',proxy)
                 return False
             if is_debug:
                 with open('htmlres.html', 'w', encoding="utf-8") as f:
@@ -57,18 +58,21 @@ def get_json(url, *args, **kwargs):
         try:
             if kwargs.get('referer'):
                 HEADERS['Referer'] = kwargs['referer']
-            proxy = requests.get("http://49.234.78.157:5010/get/")
+            proxy = requests.get("http://49.234.78.157:5010/get/").json().get('proxy')
+            # print(proxy)
             response = requests.get(
                 url, headers=HEADERS, proxies={"http": "http://{}".format(proxy)}, timeout=(3, 15))
             if response.status_code != 200:
-                print('Status Code：', response.status_code)
-                return False
+                print('proxy:',proxy,'Status Code：', response.status_code, '重试')
+                continue
             res_json = json.loads(response.content.decode())
             return res_json
         except requests.exceptions.RequestException:
             i += 1
-            print('page%s请求超时，重试%s次' % (url.split('?p=')[1], i))
+            # print('page%s请求超时，重试%s次' % (url.split('?p=')[1], i))
+            print('page请求超时，重试%s次' % i)
         except json.decoder.JSONDecodeError:
             i += 1
-            print('page%s jSON解析错误，重试%s次' % (url.split('?p=')[1], i))
+            print('page jSON解析错误，重试%s次' % i)
+            # print('page%s jSON解析错误，重试%s次' % (url.split('?p=')[1], i))
     return False

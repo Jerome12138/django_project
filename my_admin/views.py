@@ -2,7 +2,7 @@ import json
 import time
 import os
 import random
-
+import traceback
 from django.shortcuts import render, HttpResponse, redirect
 from django.http.response import JsonResponse
 from django.views import View
@@ -499,26 +499,27 @@ def get_douban_rating(request):
                                 'douban_none_list2', none_list2)
                             none_list2 = []
                             print('none_list2 暂存')
-                        time.sleep(180)
+                        # time.sleep(180)
                         timeout += 1
-                        if timeout == 5:
-                            print('连续五次失败，等待30分钟')
-                            time.sleep(1800)
-                            print('----------重新启动查找------------')
-                            continue
-                        elif timeout >= 10:
-                            print('-----连续十次失败，等待1小时-----')
-                            time.sleep(3600)
-                            timeout = 0
-                            continue
+                        # if timeout == 5:
+                        #     print('连续五次失败，等待30分钟')
+                        #     time.sleep(1800)
+                        #     print('----------重新启动查找------------')
+                        #     continue
+                        # elif timeout >= 10:
+                        #     print('-----连续十次失败，等待1小时-----')
+                        #     time.sleep(3600)
+                        #     timeout = 0
+                        #     continue
                     else:
                         print(item['vod_name'], '无豆瓣id数据，存入列表')
                         if b_id not in none_list:
                             none_list.append(b_id)
         res_status = True
     except Exception as e:
-        print('redis_dump exception:', e)
-        res_status = 'redis_dump exception:%s' % e
+        print('get_douban_rating exception:', e)
+        print(traceback.print_exc())
+        res_status = 'get_douban_rating exception:%s' % e
     finally:
         if none_list:
             DBHandler.redis_dumplist('douban_none_list', none_list)

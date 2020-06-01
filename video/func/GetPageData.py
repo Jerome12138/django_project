@@ -292,10 +292,18 @@ def getDoubanInfo(wd):  # 爬虫
 
 
 def getRating(douban_id):   # 根据豆瓣id获取评分
-    url = "http://api.douban.com/v2/movie/subject/%s?apikey=0df993c66c0c636e29ecbb5344252a4a" % douban_id
-    vod_info = getRequest.get_json(url)
-    # print(vod_info['rating']['average'])
-    return vod_info['rating']['average']
+    try:
+        url = "http://api.douban.com/v2/movie/subject/%s?apikey=0df993c66c0c636e29ecbb5344252a4a" % douban_id
+        vod_info = getRequest.get_json(url)
+        if vod_info:
+            # print(vod_info['rating']['average'])
+            return vod_info['rating']['average']
+        else:
+            return False
+    except Exception as e:
+        print('get_80s Exception: ',e)
+        print(traceback.print_exc())
+        return False
 
 
 def findID(name, vod_year):  # name即剧名
