@@ -487,6 +487,7 @@ def get_douban_rating(request):
                             print('保存成功[douban]')
                         # 防止账号被封，随机延迟
                         time.sleep(5 + float(random.randint(40, 100)) / 20)
+                        break
                     else:   # 未查找到豆瓣id
                         i+=1
                         continue

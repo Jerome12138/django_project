@@ -319,8 +319,8 @@ def findID(name, vod_year):  # name即剧名
         if len(id_list) == 1:   # 只有一条数据
             return id_list[0]['id']
         elif len(id_list) == 0:   # 无数据
-            if name != '爱情公寓2':
-                print(name, '未匹配到合适id')
+            # if name != '爱情公寓2':
+            #     print(name, '未匹配到合适id')
             return None
         else:   # 匹配到了多个ID（可能是同名不同剧）
             return [item['id'] for item in id_list]
