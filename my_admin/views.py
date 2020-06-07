@@ -471,8 +471,8 @@ def update_rating(request):
             rating = GetPageData.getRating(douban_id)
             if rating:
                 DBHandler.dump_rating(item['vod_id'], rating)
-                print(item['vod_name'], item['vod_douban_id'],
-                      rating, '保存成功[douban]')
+                print(item['vod_name'], 
+                      rating, '保存成功[rating]')
         res_status = True
     except Exception as e:
         print('update_rating exception:', e)
@@ -489,9 +489,9 @@ def get_douban_rating(request):
     timeout = 0
     try:
         print('————————开始获取豆瓣id数据————————')
-        data_list = DBHandler.load_type_data(
-            **{'vod_cid': '1', 'no_douban_id': True})    # 获取所有电影
-        # data_list.extend(DBHandler.load_type_data(**{'vod_cid': '2'}))  # 获取所有电视剧
+        # data_list = DBHandler.load_type_data(
+        #     **{'vod_cid': '1', 'no_douban_id': True})    # 获取所有电影
+        data_list.extend(DBHandler.load_type_data(**{'vod_cid': '2', 'no_douban_id': True}))  # 获取所有电视剧
         none_list = DBHandler.redis_loadlist('douban_none_list')
         none_list2 = DBHandler.redis_loadlist('douban_none_list2')
         print('无豆瓣id的视频总数：%s' % len(data_list))
@@ -530,7 +530,7 @@ def get_douban_rating(request):
                             print('保存成功[douban]')
                         # 防止账号被封，随机延迟
                         # time.sleep(1 + float(random.randint(40, 100)) / 20)
-                        # time.sleep(1)
+                        time.sleep(0.5)
                         break
                     else:   # 未查找到豆瓣id
                         i += 1
