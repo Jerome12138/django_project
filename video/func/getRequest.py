@@ -63,7 +63,7 @@ def get_html(url, is_debug=0, is_proxy=0, *args, **kwargs):
             return html
         except requests.exceptions.ConnectTimeout:
             i += 1
-            print('爬虫网站%s请求超时，重试%s次' % (url, i))
+            # print('爬虫网站%s请求超时，重试%s次' % (url, i))
         except requests.exceptions.RequestException:
             print('爬虫网站%s请求错误' % (url), e)
             return False
@@ -73,7 +73,7 @@ def get_html(url, is_debug=0, is_proxy=0, *args, **kwargs):
     return False
 
 
-def get_json(url, is_proxy=0, *args, **kwargs):
+def get_json(url, is_debug=0, is_proxy=0, *args, **kwargs):
     i = 0
     while i < 3:
         try:
@@ -100,7 +100,7 @@ def get_json(url, is_proxy=0, *args, **kwargs):
             return res_json
         except requests.exceptions.ConnectTimeout:
             i += 1
-            print('爬虫网站%s请求超时，重试%s次' % (url, i))
+            # print('爬虫网站%s请求超时，重试%s次' % (url, i))
         except requests.exceptions.RequestException as e:
             # print('page%s请求超时，重试%s次' % (url.split('?p=')[1], i))
             print('爬虫网站%s请求错误' % (url))

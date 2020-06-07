@@ -491,7 +491,7 @@ def get_douban_rating(request):
                                 none_list2.append(b_id)
                         else:
                             DBHandler.dump_douban_id(item['vod_id'], douban_id)
-                            print(item['vod_name'], douban_id, end='')
+                            print(item['vod_name'], douban_id, end=' ')
                             rating = GetPageData.getRating(douban_id)
                             if rating:
                                 print(rating, end='')
@@ -503,8 +503,8 @@ def get_douban_rating(request):
                         break
                     else:   # 未查找到豆瓣id
                         i+=1
-                        if i ==1:
-                            print(item['vod_name'])
+                        # if i ==1:
+                        #     print(item['vod_name'])
                         continue
                         # test_net = GetPageData.findID('爱情公寓2', '2011')
                         # if test_net is None:    # 网络异常
