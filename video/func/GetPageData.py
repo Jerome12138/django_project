@@ -311,6 +311,8 @@ def findID(name, vod_year):  # name即剧名
     try:
         url = 'https://movie.douban.com/j/subject_suggest?q=%s' % name
         item_list = getRequest.get_json(url,is_proxy=1)
+        if not item_list:
+            return None
         # 从item_list中的每个item中提取对应的ID值
         id_list = []  # ID存放列表
         for item in item_list:
@@ -326,7 +328,7 @@ def findID(name, vod_year):  # name即剧名
         else:   # 匹配到了多个ID（可能是同名不同剧）
             return [item['id'] for item in id_list]
     except Exception as e:  # 如果不能正常运行上述代码（不能访问网页等），输出未成功的剧名name。
-        print('ERROR:', name, e)
+        print('findID ERROR:', name, e)
         return None
 
 

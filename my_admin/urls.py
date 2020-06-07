@@ -31,6 +31,7 @@ urlpatterns = [
     path('get_80s_rating/', views.get_80s_rating),
     path('get_rating_by_name/', views.get_rating_by_name),
     path('set_rating/', views.set_rating),
+    path('set_admin_flag/', views.admin_flag),
 
     # 其他
     path('url2_clear/', views.url2_clear),

@@ -340,7 +340,7 @@ def update(request):    # 更新视频数据 最大资源网
         elif up_type == 'count':
             up_count = request.GET.get('count', None)
             if up_count is None or not up_count.isdigit():
-                up_count = 1000
+                up_count = 3000
             else:
                 up_count = int(up_count)
             update_count = get_all_data.run(up_count=up_count)
@@ -446,6 +446,12 @@ def test(request):
     rep = DBHandler.db_test()
     return HttpResponse(rep)
 
+@auth
+def admin_flag(request):
+    admin_flag = request.GET.get('flag')
+    rep = DBHandler.redis_dump('admin_flag',admin_flag)
+    print('管理员设置：%s'%admin_flag)
+    return HttpResponse(rep)
 
 @auth
 def get_douban_rating(request):
@@ -466,11 +472,15 @@ def get_douban_rating(request):
         # print(bytes('75519',encoding='utf-8') not in none_list and bytes('75519',encoding='utf-8') not in none_list2)
         # return HttpResponse(none_list)
         for item in data_list:
+            admin_flag = DBHandler.redis_load('admin_flag')
+            if admin_flag == b'0':
+                print('管理员终止')
+                break
             b_id = bytes(item['vod_id'],encoding='utf-8')
             if item['vod_douban_id'] is None and (b_id not in none_list and b_id not in none_list2):  # 不存在豆瓣id，则查找id
                 # print(item['vod_douban_id'],item['vod_rating'])
                 i=0
-                while i<10:
+                while i<1:
                     douban_id = GetPageData.findID(
                         item['vod_name'], item['vod_year'])
                     if douban_id:   # 如果查找到豆瓣id
@@ -535,6 +545,7 @@ def get_douban_rating(request):
             DBHandler.redis_dumplist('douban_none_list', none_list)
         if none_list2:
             DBHandler.redis_dumplist('douban_none_list2', none_list2)
+        DBHandler.redis_dump('admin_flag','1')
         return HttpResponse(res_status)
 
 

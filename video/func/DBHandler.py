@@ -223,6 +223,23 @@ def dump_rating(vod_id, rating):
     models.VideoData.objects.filter(vod_id=vod_id).update(vod_rating=rating)
 
 
+def redis_dump(skey, sdata):
+    try:
+        SR.set(skey, sdata)
+        return True
+    except Exception as e:
+        print('redis_dump exception:', e)
+        return False
+
+
+def redis_load(skey):
+    try:
+        result = SR.get(skey)
+        return result
+    except Exception as e:
+        print('redis_load exception:', e)
+        return None
+
 def redis_dumplist(skey, data_list):
     try:
         exist_list = SR.lrange(skey, 0, -1)
