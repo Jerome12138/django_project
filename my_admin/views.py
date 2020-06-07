@@ -510,7 +510,7 @@ def get_douban_rating(request):
             if item['vod_douban_id'] is None and (b_id not in none_list and b_id not in none_list2):
                 # print(item['vod_douban_id'],item['vod_rating'])
                 i = 0
-                while i < 1:
+                while i < 2:
                     douban_id = GetPageData.findID(
                         item['vod_name'], item['vod_year'])
                     if douban_id:   # 如果查找到豆瓣id

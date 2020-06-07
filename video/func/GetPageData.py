@@ -294,7 +294,7 @@ def getDoubanInfo(wd):  # 爬虫
 
 def getRating(douban_id):   # 根据豆瓣id获取评分
     try:
-        url = "http://api.douban.com/v2/movie/subject/%s?apikey=0df993c66c0c636e29ecbb5344252a4a" % douban_id
+        url = "https://api.douban.com/v2/movie/subject/%s?apikey=0df993c66c0c636e29ecbb5344252a4a" % douban_id
         vod_info = getRequest.get_json(url,is_proxy=1)
         if vod_info:
             # print(vod_info['rating']['average'])
