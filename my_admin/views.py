@@ -446,12 +446,41 @@ def test(request):
     rep = DBHandler.db_test()
     return HttpResponse(rep)
 
+
 @auth
 def admin_flag(request):
     admin_flag = request.GET.get('flag')
-    rep = DBHandler.redis_dump('admin_flag',admin_flag)
-    print('管理员设置：%s'%admin_flag)
+    rep = DBHandler.redis_dump('admin_flag', admin_flag)
+    print('管理员设置：%s' % admin_flag)
     return HttpResponse(rep)
+
+
+@auth
+def update_rating(request):
+    res_status = False
+    try:
+        print('————————开始更新豆瓣评分数据————————')
+        data_list = DBHandler.get_none_rating()    # 获取所有电影
+        for item in data_list:
+            # 判断管理员指令
+            admin_flag = DBHandler.redis_load('admin_flag')
+            if admin_flag == b'0':
+                print('管理员终止')
+                break
+            douban_id = item['vod_douban_id']
+            rating = GetPageData.getRating(douban_id)
+            if rating:
+                DBHandler.dump_rating(item['vod_id'], rating)
+                print(item['vod_name'], item['vod_douban_id'],
+                      rating, '保存成功[douban]')
+        res_status = True
+    except Exception as e:
+        print('update_rating exception:', e)
+        print(traceback.print_exc())
+        res_status = 'update_rating exception:%s' % e
+    finally:
+        return HttpResponse(res_status)
+
 
 @auth
 def get_douban_rating(request):
@@ -461,7 +490,7 @@ def get_douban_rating(request):
     try:
         print('————————开始获取豆瓣id数据————————')
         data_list = DBHandler.load_type_data(
-            **{'vod_cid': '1', 'no_rating': True})    # 获取所有电影
+            **{'vod_cid': '1', 'no_douban_id': True})    # 获取所有电影
         # data_list.extend(DBHandler.load_type_data(**{'vod_cid': '2'}))  # 获取所有电视剧
         none_list = DBHandler.redis_loadlist('douban_none_list')
         none_list2 = DBHandler.redis_loadlist('douban_none_list2')
@@ -476,17 +505,19 @@ def get_douban_rating(request):
             if admin_flag == b'0':
                 print('管理员终止')
                 break
-            b_id = bytes(item['vod_id'],encoding='utf-8')
-            if item['vod_douban_id'] is None and (b_id not in none_list and b_id not in none_list2):  # 不存在豆瓣id，则查找id
+            b_id = bytes(item['vod_id'], encoding='utf-8')
+            # 不存在豆瓣id，则查找id
+            if item['vod_douban_id'] is None and (b_id not in none_list and b_id not in none_list2):
                 # print(item['vod_douban_id'],item['vod_rating'])
-                i=0
-                while i<1:
+                i = 0
+                while i < 1:
                     douban_id = GetPageData.findID(
                         item['vod_name'], item['vod_year'])
                     if douban_id:   # 如果查找到豆瓣id
                         timeout = 0
-                        if type(douban_id)==list:
-                            print(item['vod_name'], '匹配到多个豆瓣id数据，存入列表2',douban_id)
+                        if type(douban_id) == list:
+                            print(item['vod_name'],
+                                  '匹配到多个豆瓣id数据，存入列表2', douban_id)
                             if b_id not in none_list2:
                                 none_list2.append(b_id)
                         else:
@@ -502,13 +533,13 @@ def get_douban_rating(request):
                         # time.sleep(1)
                         break
                     else:   # 未查找到豆瓣id
-                        i+=1
+                        i += 1
                         # if i ==1:
                         #     print(item['vod_name'])
                         continue
                         # test_net = GetPageData.findID('爱情公寓2', '2011')
                         # if test_net is None:    # 网络异常
-                            # print('----------地址被限制,稍后重试----------')
+                        # print('----------地址被限制,稍后重试----------')
                         #     if none_list:
                         #         DBHandler.redis_dumplist(
                         #             'douban_none_list', none_list)
@@ -545,7 +576,7 @@ def get_douban_rating(request):
             DBHandler.redis_dumplist('douban_none_list', none_list)
         if none_list2:
             DBHandler.redis_dumplist('douban_none_list2', none_list2)
-        DBHandler.redis_dump('admin_flag','1')
+        DBHandler.redis_dump('admin_flag', '1')
         return HttpResponse(res_status)
 
 
@@ -555,6 +586,7 @@ def get_80s_rating(request):
     get_80s_score.run()
     return HttpResponse('res')
 
+
 @auth
 def get_rating_by_name(request):
     ret = {'status': True, 'error': None, 'data': None}
@@ -562,10 +594,10 @@ def get_rating_by_name(request):
         vod_id = request.POST.get('vod_id')
         vod_name = request.POST.get('vod_name')
         vod_year = request.POST.get('vod_year')
-        douban_id = GetPageData.findID(vod_name,vod_year)
+        douban_id = GetPageData.findID(vod_name, vod_year)
         if douban_id:   # 如果查找到豆瓣id
             ret['data'] = douban_id
-            if type(douban_id)==list:
+            if type(douban_id) == list:
                 ret['status'] = False
                 ret['error'] = '存在多个数据'
             else:
@@ -588,6 +620,7 @@ def get_rating_by_name(request):
     finally:
         return HttpResponse(json.dumps(ret))
 
+
 @auth
 def set_rating(request):
     ret = {'status': True, 'error': None, 'data': None}
@@ -596,7 +629,7 @@ def set_rating(request):
         douban_id = request.GET.get('douban_id')
         if douban_id:   # 如果查找到豆瓣id
             ret['data'] = douban_id
-            if type(douban_id)==list:
+            if type(douban_id) == list:
                 ret['status'] = False
                 ret['error'] = '存在多个数据'
             else:

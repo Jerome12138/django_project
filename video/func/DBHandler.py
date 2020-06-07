@@ -99,6 +99,9 @@ def load_type_data(**filter_param):  # 从数据库查询视频分类数据
     if filter_param.get('no_rating'):
         filter_param.pop('no_rating')
         filter_param['vod_rating'] = None
+    if filter_param.get('no_douban_id'):
+        filter_param.pop('no_douban_id')
+        filter_param['vod_douban_id'] = None
     result = models.VideoData.objects.filter(**filter_param).all().values(
         'vod_id', 'vod_pic', 'vod_name', 'vod_continu', 'vod_actor', 'vod_rating', 'vod_douban_id', 'vod_year'
         ).order_by('-vod_year','-ctime')
@@ -186,6 +189,12 @@ def clear_url():
     # models.VideoData.objects.filter(vod_url=None).delete()
     pass
 
+
+def get_none_rating():
+    result = models.VideoData.objects.exclude(vod_douban_id=None).filter(vod_rating=None).all().values(
+        'vod_id', 'vod_pic', 'vod_name', 'vod_continu', 'vod_actor', 'vod_rating', 'vod_douban_id', 'vod_year'
+        ).order_by('-vod_year','-ctime')
+    return result
 
 def dump_carousel_data(carousel_data):  # 将视频数据保存至请求数据库
     try:
