@@ -491,7 +491,7 @@ def get_douban_rating(request):
         print('————————开始获取豆瓣id数据————————')
         # data_list = DBHandler.load_type_data(
         #     **{'vod_cid': '1', 'no_douban_id': True})    # 获取所有电影
-        data_list.extend(DBHandler.load_type_data(**{'vod_cid': '2', 'no_douban_id': True}))  # 获取所有电视剧
+        data_list = DBHandler.load_type_data(**{'vod_cid': '2', 'no_douban_id': True})  # 获取所有电视剧
         none_list = DBHandler.redis_loadlist('douban_none_list')
         none_list2 = DBHandler.redis_loadlist('douban_none_list2')
         print('无豆瓣id的视频总数：%s' % len(data_list))
