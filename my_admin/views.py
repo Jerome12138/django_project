@@ -492,10 +492,10 @@ def get_douban_rating(request):
                         else:
                             DBHandler.dump_douban_id(item['vod_id'], douban_id)
                             print(item['vod_name'], douban_id, end='')
-                            # rating = GetPageData.getRating(douban_id)
-                            # if rating:
-                            #     print(rating, end='')
-                            #     DBHandler.dump_rating(item['vod_id'], rating)
+                            rating = GetPageData.getRating(douban_id)
+                            if rating:
+                                print(rating, end='')
+                                DBHandler.dump_rating(item['vod_id'], rating)
                             print('保存成功[douban]')
                         # 防止账号被封，随机延迟
                         # time.sleep(1 + float(random.randint(40, 100)) / 20)
