@@ -119,6 +119,7 @@ class getAllData(object):   # 获取所有数据
             html = getRequest.get_html(url)
             if not html:
                 update_count = 480
+                return update_count
             # 3.转化数据
             x_update = html.xpath(x_match)
             update_count = int(x_update[0]) if x_update != [] else 480
@@ -283,7 +284,7 @@ class IQiyi(object):  # 爱奇艺视频搜索及解析
 
 def getDoubanInfo(wd):  # 爬虫
     url = "https://search.douban.com/movie/subject_search?search_text=%s&cat=1002" % wd
-    html = getRequest.get_html(url)
+    html = getRequest.get_html(url,is_proxy=1)
     if not html:
         return False
     data_list = html.xpath('//div[@class="root"]//text()')
@@ -294,7 +295,7 @@ def getDoubanInfo(wd):  # 爬虫
 def getRating(douban_id):   # 根据豆瓣id获取评分
     try:
         url = "http://api.douban.com/v2/movie/subject/%s?apikey=0df993c66c0c636e29ecbb5344252a4a" % douban_id
-        vod_info = getRequest.get_json(url)
+        vod_info = getRequest.get_json(url,is_proxy=1)
         if vod_info:
             # print(vod_info['rating']['average'])
             return vod_info['rating']['average']
@@ -309,7 +310,7 @@ def getRating(douban_id):   # 根据豆瓣id获取评分
 def findID(name, vod_year):  # name即剧名
     try:
         url = 'https://movie.douban.com/j/subject_suggest?q=%s' % name
-        item_list = getRequest.get_json(url)
+        item_list = getRequest.get_json(url,is_proxy=1)
         # 从item_list中的每个item中提取对应的ID值
         id_list = []  # ID存放列表
         for item in item_list:

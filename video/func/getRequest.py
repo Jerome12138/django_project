@@ -25,15 +25,19 @@ user_agents = [
 
 HEADERS = {"User-Agent": random.choice(user_agents)}
 
-def get_html(url, is_debug=0, *args, **kwargs): 
+def get_html(url, is_debug=0, is_proxy=0, *args, **kwargs): 
     i = 0
     while i < 3:
         try:
             if kwargs.get('referer'):
                 HEADERS['Referer'] = kwargs['referer']
-            proxy = requests.get("http://49.234.78.157:5010/get/").json().get('proxy')
-            # print(proxy)
-            res = requests.get(url, headers=HEADERS, proxies={"http": "http://{}".format(proxy)}, timeout=(3, 15))
+            if is_proxy:
+                proxy = requests.get("http://49.234.78.157:5010/get/").json().get('proxy')
+                proxies={"http": "http://{}".format(proxy),"https": "http://{}".format(proxy)}
+            else:
+                proxies = {}
+            # print(proxy) , proxies=
+            res = requests.get(url, headers=HEADERS,proxies=proxies, timeout=(3, 15))
             if res.status_code == 200:
                 html_str = res.content.decode()
             else:
@@ -52,16 +56,20 @@ def get_html(url, is_debug=0, *args, **kwargs):
             print('爬虫网站%s请求超时，重试%s次' % (url, i))
     return False
 
-def get_json(url, *args, **kwargs):
+def get_json(url, is_proxy=0, *args, **kwargs):
     i = 0
     while i < 3:
         try:
             if kwargs.get('referer'):
                 HEADERS['Referer'] = kwargs['referer']
-            proxy = requests.get("http://49.234.78.157:5010/get/").json().get('proxy')
+            if is_proxy:
+                proxy = requests.get("http://49.234.78.157:5010/get/").json().get('proxy')
+                proxies={"http": "http://{}".format(proxy),"https": "http://{}".format(proxy)}
+            else:
+                proxies = {}
             # print(proxy)
             response = requests.get(
-                url, headers=HEADERS, proxies={"http": "http://{}".format(proxy)}, timeout=(3, 15))
+                url, headers=HEADERS,proxies=proxies, timeout=(3, 15))
             if response.status_code != 200:
                 print('proxy:',proxy,'Status Code：', response.status_code, '重试')
                 i+=1
