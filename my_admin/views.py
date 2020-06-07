@@ -479,6 +479,7 @@ def update_rating(request):
         print(traceback.print_exc())
         res_status = 'update_rating exception:%s' % e
     finally:
+        print('————————豆瓣评分数据更新完毕————————')
         return HttpResponse(res_status)
 
 
@@ -577,6 +578,7 @@ def get_douban_rating(request):
         if none_list2:
             DBHandler.redis_dumplist('douban_none_list2', none_list2)
         DBHandler.redis_dump('admin_flag', '1')
+        print('————————豆瓣id获取完毕————————')
         return HttpResponse(res_status)
 
 
@@ -601,10 +603,12 @@ def get_rating_by_name(request):
                 ret['status'] = False
                 ret['error'] = '存在多个数据'
             else:
-                rating = GetPageData.getRating(douban_id)
-                print(vod_name, douban_id, rating, end='')
                 DBHandler.dump_douban_id(vod_id, douban_id)
-                DBHandler.dump_rating(vod_id, rating)
+                print(vod_name, douban_id, end=' ')
+                rating = GetPageData.getRating(douban_id)
+                if rating:
+                    print(rating, end='')
+                    DBHandler.dump_rating(vod_id, rating)
                 print('保存成功[douban]')
         else:   # 未查找到豆瓣id
             ret['status'] = False

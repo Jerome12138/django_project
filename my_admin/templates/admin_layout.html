@@ -51,9 +51,9 @@
             </ul>
 
             <!-- SEARCH FORM -->
-            <form class="form-inline ml-3">
+            <form class="form-inline ml-3 ff-search" data-action="/video/search/?wd=FFWD&page=1">
                 <div class="input-group input-group-sm">
-                    <input class="form-control form-control-navbar" type="search" placeholder="Search"
+                    <input class="form-control form-control-navbar ff-wd" type="search" placeholder="Search"
                         aria-label="Search">
                     <div class="input-group-append">
                         <button class="btn btn-navbar" type="submit">
@@ -229,9 +229,39 @@
     <!-- AdminLTE App -->
     <script src="/static/plugins/AdminLTE/adminlte.min.js"></script>
     <script>
-        
+        $(".ff-search input").keyup(function (event) {
+            if (event.keyCode == 13) {
+                $form = $(this).parent('.ff-search');
+                $wd = $form.find('.ff-wd').val();
+                $action = $form.attr('data-action');
+                if (!$wd) {
+                    $form.find('.ff-wd').focus();
+                    $form.find('.ff-wd').attr('data-toggle', 'tooltip').attr('data-placement', 'bottom').attr('title', '请输入关键字').tooltip('show');
+                    return false;
+                    // <div class="tooltip fade bottom in" role="tooltip" id="tooltip55938" style="top: 35px; left: 96px; display: block;"><div class="tooltip-arrow" style="left: 50%;"></div><div class="tooltip-inner">请输入关键字</div></div>
+                }
+                if ($action) {
+                    location.href = $action.replace('FFWD', encodeURIComponent($wd));
+                    return false;
+                }
+            }
+        });
+        $(".ff-search").on("submit", function () {
+            $wd = $(this).find('.ff-wd').val();
+            $action = $(this).attr('data-action');
+            if ($wd == "") {
+                $(this).find('.ff-wd').focus();
+                $(this).find('.ff-wd').attr('data-toggle', 'tooltip').attr('data-placement', 'bottom').attr('title', '请输入关键字').tooltip('show');
+                return false;
+            }
+            if ($action) {
+                location.href = $action.replace('FFWD', encodeURIComponent($wd));
+                return false;
+            }
+        });
     </script>
-    {% block js %}{% endblock %}
+    {% block js %}
+    {% endblock %}
 </body>
 
 </html>

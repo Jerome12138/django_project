@@ -1,6 +1,6 @@
 from video import models
 import json
-
+from django.db.models import Q
 import redis
 
 # 创建StrictRedis对象，与redis服务器建⽴连接
@@ -190,8 +190,8 @@ def clear_url():
     pass
 
 
-def get_none_rating():
-    result = models.VideoData.objects.exclude(vod_douban_id=None).filter(vod_rating=None).all().values(
+def get_none_rating():  # 获取有豆瓣id，但是豆瓣评分为None，False或者为0
+    result = models.VideoData.objects.exclude(vod_douban_id=None).filter(Q(vod_rating=None)|Q(vod_rating=False)|Q(vod_rating=0)).all().values(
         'vod_id', 'vod_pic', 'vod_name', 'vod_continu', 'vod_actor', 'vod_rating', 'vod_douban_id', 'vod_year'
         ).order_by('-vod_year','-ctime')
     return result
