@@ -26,9 +26,7 @@ user_agents = [
 ]
 
 HEADERS = {"User-Agent": random.choice(user_agents)}
-proxy_str = "150.138.253.71:808 60.191.11.249:3128 58.220.95.78:9401 111.222.141.127:8118 47.106.59.75:3128 61.240.222.27:3128 1.196.161.10:9999 58.220.95.86:9401 58.220.95.79:10000 58.240.232.122:808 58.220.95.80:9401 58.220.95.79:10000 150.138.253.71:808 58.220.95.78:9401 58.220.95.54:9400 58.220.95.86:9401 1.119.166.180:8080 119.178.101.18:8888"
-proxy2 = proxy_str.split(' ')
-
+proxy_list = getProxies.get_proxy()
 
 def get_html(url, is_debug=0, is_proxy=0, *args, **kwargs):
     i = 0
@@ -37,11 +35,13 @@ def get_html(url, is_debug=0, is_proxy=0, *args, **kwargs):
             if kwargs.get('referer'):
                 HEADERS['Referer'] = kwargs['referer']
             if is_proxy:
-                proxy1 = requests.get(
-                    "http://49.234.78.157:5010/get/").json().get('proxy')
-                proxy = random.choice(proxy2)
-                proxies = {"http": "http://%s" % proxy,
+                if proxy_list is not None:
+                    proxy = random.choice(proxy_list)
+                    proxies = {"http": "http://%s" % proxy,
                            "https": "http://%s" % proxy}
+                else:
+                    proxies = {}
+                    proxy_list = getProxies.get_proxy() # 列表为空则重新获取
             else:
                 proxies = {}
             # print(proxy) , proxies=
@@ -75,26 +75,28 @@ def get_html(url, is_debug=0, is_proxy=0, *args, **kwargs):
 
 def get_json(url, is_debug=0, is_proxy=0, *args, **kwargs):
     i = 0
+    proxy = ''
     while i < 3:
         try:
             if kwargs.get('referer'):
                 HEADERS['Referer'] = kwargs['referer']
             if is_proxy:
-                proxy1 = requests.get(
-                    "http://49.234.78.157:5010/get/").json().get('proxy')
-                proxy = random.choice(proxy2)
-                proxies = {"http": "http://%s" % proxy,
+                if proxy_list is not None:
+                    proxy = random.choice(proxy_list)
+                    proxies = {"http": "http://%s" % proxy,
                            "https": "http://%s" % proxy}
+                else:
+                    proxies = {}
+                    proxy_list = getProxies.get_proxy() # 列表为空则重新获取
             else:
                 proxies = {}
-            # print(proxy)
             response = requests.get(
                 url, headers=HEADERS, proxies=proxies, timeout=(5, 15))
             if response.status_code != 200:
                 print('proxy:', proxy, 'Status Code：',
                       response.status_code, '重试')
                 i += 1
-                proxy2.remove(proxy)
+                proxy_list.remove(proxy)
                 continue
             res_json = json.loads(response.content.decode())
             return res_json

@@ -4,7 +4,12 @@ from . import DBHandler
 import requests
 
 def get_proxy():
-    return requests.get("http://49.234.78.157:5010/get/").json()
+    res = requests.get("http://www.xiladaili.com/api/?uuid=7a00f05db31f42cb9eed55da31cffbbf&num=500&place=中国&category=1&protocol=0&sortby=0&repeat=1&format=3&position=1")
+    if res.status_code == 200:
+        proxy_str = res.content.decode()
+        return proxy_str.split(' ')
+    else:
+        return None
 
 def delete_proxy(proxy):
     requests.get("http://49.234.78.157:5010/delete/?proxy={}".format(proxy))
