@@ -3254,3 +3254,74 @@ Traceback (most recent call last):
   File "/home/ubuntu/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 126, in _get_response
     "returned None instead." % (callback.__module__, view_name)
 ValueError: The view my_admin.views.inner didn't return an HttpResponse object. It returned None instead.
+[2020-05-31 15:58:05] [ERROR] 首页请求无数据
+[2020-06-01 11:58:02] [ERROR] 首页请求无数据
+[2020-06-01 11:58:02] [ERROR] 首页请求无数据
+[2020-06-01 15:58:01] [ERROR] 首页请求无数据
+[2020-06-01 15:58:01] [ERROR] 首页请求无数据
+[2020-06-01 21:58:02] [ERROR] 首页请求无数据
+[2020-06-01 21:58:02] [ERROR] 首页请求无数据
+[2020-06-02 15:58:01] [ERROR] 首页请求无数据
+[2020-06-02 15:58:02] [ERROR] 首页请求无数据
+[2020-06-02 21:58:01] [ERROR] 首页请求无数据
+[2020-06-02 21:58:01] [ERROR] 首页请求无数据
+[2020-06-02 23:58:02] [ERROR] 首页请求无数据
+[2020-06-02 23:58:02] [ERROR] 首页请求无数据
+[2020-06-03 11:58:02] [ERROR] 首页请求无数据
+[2020-06-03 11:58:03] [ERROR] 首页请求无数据
+[2020-06-03 15:58:12] [ERROR] 首页请求无数据
+[2020-06-03 21:58:01] [ERROR] 首页请求无数据
+[2020-06-03 21:58:29] [ERROR] 首页请求无数据
+[2020-06-03 23:58:02] [ERROR] 首页请求无数据
+[2020-06-03 23:58:02] [ERROR] 首页请求无数据
+[2020-06-04 15:59:09] [ERROR] 首页请求无数据
+[2020-06-04 21:58:24] [ERROR] 首页请求无数据
+[2020-06-04 23:58:01] [ERROR] 首页请求无数据
+[2020-06-04 23:58:20] [ERROR] 首页请求无数据
+[2020-06-05 11:58:02] [ERROR] 首页请求无数据
+[2020-06-05 11:58:02] [ERROR] 首页请求无数据
+[2020-06-05 21:58:10] [ERROR] 首页请求无数据
+[2020-06-05 23:58:13] [ERROR] 首页请求无数据
+[2020-06-06 11:58:02] [ERROR] 首页请求无数据
+[2020-06-06 11:58:02] [ERROR] 首页请求无数据
+[2020-06-06 21:58:01] [ERROR] 首页请求无数据
+[2020-06-06 21:58:01] [ERROR] 首页请求无数据
+[2020-06-06 23:58:02] [ERROR] 首页请求无数据
+[2020-06-06 23:58:02] [ERROR] 首页请求无数据
+[2020-06-07 00:43:12] [ERROR] Internal Server Error: /admin/add_vod/
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/ubuntu/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/ubuntu/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "./my_admin/views.py", line 107, in inner
+    return func(request, *args, **kwargs)
+  File "./my_admin/views.py", line 193, in add_vod
+    return HttpResponse(json.dumps(ret))
+  File "/usr/lib/python3.6/json/__init__.py", line 231, in dumps
+    return _default_encoder.encode(obj)
+  File "/usr/lib/python3.6/json/encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "/usr/lib/python3.6/json/encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "/usr/lib/python3.6/json/encoder.py", line 180, in default
+    o.__class__.__name__)
+TypeError: Object of type 'IndexError' is not JSON serializable
+[2020-06-07 11:59:18] [ERROR] 首页请求无数据
+[2020-06-07 12:14:26] [ERROR] 首页请求无数据
+[2020-06-07 16:13:44] [ERROR] 首页请求无数据
+[2020-06-07 21:51:12] [ERROR] Internal Server Error: /admin/get_rating/
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/ubuntu/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/ubuntu/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "./my_admin/views.py", line 107, in inner
+    return func(request, *args, **kwargs)
+  File "./my_admin/views.py", line 575, in get_douban_rating
+    if none_list:
+UnboundLocalError: local variable 'none_list' referenced before assignment
