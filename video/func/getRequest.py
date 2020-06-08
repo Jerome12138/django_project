@@ -26,22 +26,24 @@ user_agents = [
 ]
 
 HEADERS = {"User-Agent": random.choice(user_agents)}
-proxy_list = getProxies.get_proxy()
+PROXYLIST = []
 
 def get_html(url, is_debug=0, is_proxy=0, *args, **kwargs):
+    global PROXYLIST
+    proxy = ''
     i = 0
     while i < 3:
         try:
             if kwargs.get('referer'):
                 HEADERS['Referer'] = kwargs['referer']
             if is_proxy:
-                if proxy_list is not None:
-                    proxy = random.choice(proxy_list)
+                if len(PROXYLIST):
+                    proxy = random.choice(PROXYLIST)
                     proxies = {"http": "http://%s" % proxy,
                            "https": "http://%s" % proxy}
                 else:
                     proxies = {}
-                    proxy_list = getProxies.get_proxy() # 列表为空则重新获取
+                    PROXYLIST = getProxies.get_proxy() # 列表为空则重新获取
             else:
                 proxies = {}
             # print(proxy) , proxies=
@@ -74,6 +76,7 @@ def get_html(url, is_debug=0, is_proxy=0, *args, **kwargs):
 
 
 def get_json(url, is_debug=0, is_proxy=0, *args, **kwargs):
+    global PROXYLIST
     i = 0
     proxy = ''
     while i < 3:
@@ -81,13 +84,13 @@ def get_json(url, is_debug=0, is_proxy=0, *args, **kwargs):
             if kwargs.get('referer'):
                 HEADERS['Referer'] = kwargs['referer']
             if is_proxy:
-                if proxy_list is not None:
-                    proxy = random.choice(proxy_list)
+                if len(PROXYLIST):
+                    proxy = random.choice(PROXYLIST)
                     proxies = {"http": "http://%s" % proxy,
                            "https": "http://%s" % proxy}
                 else:
                     proxies = {}
-                    proxy_list = getProxies.get_proxy() # 列表为空则重新获取
+                    PROXYLIST = getProxies.get_proxy() # 列表为空则重新获取
             else:
                 proxies = {}
             response = requests.get(
@@ -96,7 +99,7 @@ def get_json(url, is_debug=0, is_proxy=0, *args, **kwargs):
                 print('proxy:', proxy, 'Status Code：',
                       response.status_code, '重试')
                 i += 1
-                proxy_list.remove(proxy)
+                PROXYLIST.remove(proxy)
                 continue
             res_json = json.loads(response.content.decode())
             return res_json
@@ -106,13 +109,14 @@ def get_json(url, is_debug=0, is_proxy=0, *args, **kwargs):
         except requests.exceptions.RequestException as e:
             # print('page%s请求超时，重试%s次' % (url.split('?p=')[1], i))
             # print('爬虫网站%s 请求错误' % (url))
-            # print(traceback.print_exc())
+            
             return False
         except json.decoder.JSONDecodeError:
             i += 1
             print('page jSON解析错误，重试%s次' % i)
             # print('page%s jSON解析错误，重试%s次' % (url.split('?p=')[1], i))
         except Exception as e: 
-            print('get_html ERROR:', e)
+            print('get_json ERROR:', e)
+            print(traceback.print_exc())
             return False
     return False
