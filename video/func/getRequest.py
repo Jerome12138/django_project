@@ -37,7 +37,7 @@ def get_html(url, is_debug=0, is_proxy=0, *args, **kwargs):
             if kwargs.get('referer'):
                 HEADERS['Referer'] = kwargs['referer']
             if is_proxy:
-                if len(PROXYLIST)<5:
+                if len(PROXYLIST)>5:
                     proxy = random.choice(PROXYLIST)
                     proxies = {"http": "http://%s" % proxy,
                            "https": "http://%s" % proxy}
@@ -84,13 +84,13 @@ def get_json(url, is_debug=0, is_proxy=0, *args, **kwargs):
             if kwargs.get('referer'):
                 HEADERS['Referer'] = kwargs['referer']
             if is_proxy:
-                if len(PROXYLIST)<5:
+                if len(PROXYLIST)>=5:
                     proxy = random.choice(PROXYLIST)
                     proxies = {"http": "http://%s" % proxy,
                            "https": "http://%s" % proxy}
                 else:
                     proxies = {}
-                    PROXYLIST = getProxies.get_proxy() # 列表为空则重新获取
+                    PROXYLIST = getProxies.get_proxy() # 列表小于5则重新获取
             else:
                 proxies = {}
             response = requests.get(
