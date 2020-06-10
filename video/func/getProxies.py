@@ -1,3 +1,4 @@
+import time
 from . import getRequest
 from . import DBHandler
 
@@ -10,6 +11,7 @@ def get_proxy():
         if proxy_str != '调用频率过快':
             print('获取到新的代理：',proxy_str)
             return proxy_str.split(' ')
+        time.sleep('600')
     return []
 
 def delete_proxy(proxy):
