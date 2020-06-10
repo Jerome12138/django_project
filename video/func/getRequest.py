@@ -37,7 +37,7 @@ def get_html(url, is_debug=0, is_proxy=0, *args, **kwargs):
             if kwargs.get('referer'):
                 HEADERS['Referer'] = kwargs['referer']
             if is_proxy:
-                if len(PROXYLIST):
+                if len(PROXYLIST)<5:
                     proxy = random.choice(PROXYLIST)
                     proxies = {"http": "http://%s" % proxy,
                            "https": "http://%s" % proxy}
@@ -84,7 +84,7 @@ def get_json(url, is_debug=0, is_proxy=0, *args, **kwargs):
             if kwargs.get('referer'):
                 HEADERS['Referer'] = kwargs['referer']
             if is_proxy:
-                if len(PROXYLIST):
+                if len(PROXYLIST)<5:
                     proxy = random.choice(PROXYLIST)
                     proxies = {"http": "http://%s" % proxy,
                            "https": "http://%s" % proxy}
@@ -105,6 +105,8 @@ def get_json(url, is_debug=0, is_proxy=0, *args, **kwargs):
             return res_json
         except requests.exceptions.ConnectTimeout:
             i += 1
+            if i ==3:
+                PROXYLIST.remove(proxy)
             # print('爬虫网站%s请求超时，重试%s次' % (url, i))
         except requests.exceptions.RequestException as e:
             # print('page%s请求超时，重试%s次' % (url.split('?p=')[1], i))
