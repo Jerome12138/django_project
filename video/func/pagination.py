@@ -65,19 +65,21 @@ class Page(object):
         # 尾页
         last_page = '<li><a href="%s%s">尾页</a></li>' % (self.base_url,self.page_count)
         page_list.append(last_page)
-        # JS
+        # JS  .focus()
         page_js = '''
         <script>
             $(".page-num").click(function () {
-                $(".page-num").removeClass("visible-xs").css("display","none!important");
-                $(".page-input").css("display");
-                $(".page-go-li").css("display");
-                $("#page-id").css("display").focus();
+                $(".page-num").removeClass("visible-xs");
+                $(".page-num").css("display","none");
+                $(".page-input").css("display","");
+                $(".page-go-li").css("display","");
+                $("#page-id").css("display","");
+                $("#page-id").focus();
             });
             function func1(){
                 $(".page-num").addClass("visible-xs");
-                $(".page-input").css("display","none!important");
-                $(".page-go-li").css("display","none!important");
+                $(".page-input").css("display","none");
+                $(".page-go-li").css("display","none");
             };
             $("#page-id").blur(function(){
                 setTimeout('func1()',2000);
