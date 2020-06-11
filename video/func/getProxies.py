@@ -13,7 +13,7 @@ def get_proxy():
             return proxy_str.split(' ')
         else:
             print('调用频率过快')
-    time.sleep('600')
+    time.sleep(600)
     return []
 
 def delete_proxy(proxy):
