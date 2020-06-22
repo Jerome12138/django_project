@@ -5925,3 +5925,1026 @@
 2020/06/10 22:31:40 [info] 23475#23475: *121165 client 45.76.144.219 closed keepalive connection
 2020/06/10 22:56:01 [info] 23475#23475: *121167 client 113.69.35.228 closed keepalive connection
 2020/06/10 23:19:56 [info] 23475#23475: *121171 epoll_wait() reported that client prematurely closed connection, so upstream connection is closed too while sending request to upstream, client: 113.69.35.228, server: 49.234.78.157, request: "GET /admin/get_rating/ HTTP/1.1", upstream: "uwsgi://127.0.0.1:8001", host: "49.234.78.157", referrer: "http://49.234.78.157/admin/"
+2020/06/10 23:27:04 [info] 23475#23475: *121187 epoll_wait() reported that client prematurely closed connection, so upstream connection is closed too while sending request to upstream, client: 113.69.35.228, server: 49.234.78.157, request: "GET /admin/get_rating/ HTTP/1.1", upstream: "uwsgi://127.0.0.1:8001", host: "49.234.78.157", referrer: "http://49.234.78.157/admin/"
+2020/06/10 23:31:04 [info] 23475#23475: *121202 epoll_wait() reported that client prematurely closed connection, so upstream connection is closed too while sending request to upstream, client: 113.69.35.228, server: 49.234.78.157, request: "GET /admin/get_rating/ HTTP/1.1", upstream: "uwsgi://127.0.0.1:8001", host: "49.234.78.157", referrer: "http://49.234.78.157/admin/"
+2020/06/10 23:34:47 [info] 23475#23475: *121221 epoll_wait() reported that client prematurely closed connection, so upstream connection is closed too while sending request to upstream, client: 113.69.35.228, server: 49.234.78.157, request: "GET /admin/get_rating/ HTTP/1.1", upstream: "uwsgi://127.0.0.1:8001", host: "49.234.78.157", referrer: "http://49.234.78.157/admin/"
+2020/06/10 23:35:13 [info] 23475#23475: *121228 client 113.69.35.228 closed keepalive connection
+2020/06/11 00:03:47 [info] 23475#23475: *121238 client 113.69.35.228 closed keepalive connection
+2020/06/11 00:12:56 [info] 23475#23475: *121249 client 113.69.35.228 closed keepalive connection
+2020/06/11 00:13:40 [info] 23475#23475: *121256 client 113.69.35.228 closed keepalive connection
+2020/06/11 03:02:44 [info] 23475#23475: *121264 client 41.75.123.51 closed keepalive connection
+2020/06/11 05:02:34 [info] 23475#23475: *121277 client 128.14.209.250 closed keepalive connection
+2020/06/11 05:04:02 [info] 23475#23475: *121279 client 94.182.17.116 closed keepalive connection
+2020/06/11 05:17:45 [info] 23475#23475: *121281 epoll_wait() reported that client prematurely closed connection, so upstream connection is closed too while sending request to upstream, client: 113.69.35.228, server: 49.234.78.157, request: "GET /admin/get_rating/ HTTP/1.1", upstream: "uwsgi://127.0.0.1:8001", host: "49.234.78.157", referrer: "http://49.234.78.157/admin/"
+2020/06/11 05:18:21 [info] 23475#23475: *121286 client 113.69.35.228 closed keepalive connection
+2020/06/11 05:24:00 [info] 23475#23475: *121289 client 162.216.17.227 closed keepalive connection
+2020/06/11 05:29:36 [info] 23475#23475: *121291 client 113.69.35.228 closed keepalive connection
+2020/06/11 05:38:41 [info] 23475#23475: *121294 client 103.149.192.140 closed keepalive connection
+2020/06/11 07:11:06 [info] 23475#23475: *121307 epoll_wait() reported that client prematurely closed connection, so upstream connection is closed too while connecting to upstream, client: 200.76.4.130, server: 49.234.78.157, request: "GET / HTTP/1.1", upstream: "uwsgi://127.0.0.1:8001", host: "49.234.78.157"
+2020/06/11 09:38:58 [info] 23475#23475: *121320 client 94.233.9.10 closed keepalive connection
+2020/06/11 10:06:48 [info] 23475#23475: *121324 client 112.96.199.149 closed keepalive connection
+2020/06/11 10:06:52 [info] 23475#23475: *121326 client 112.96.199.149 closed keepalive connection
+2020/06/11 10:06:55 [info] 23475#23475: *121328 client 112.96.199.149 closed keepalive connection
+2020/06/11 10:07:03 [info] 23475#23475: *121330 client 112.96.199.149 closed keepalive connection
+2020/06/11 10:07:12 [info] 23475#23475: *121332 epoll_wait() reported that client prematurely closed connection, so upstream connection is closed too while sending request to upstream, client: 112.96.199.149, server: 49.234.78.157, request: "GET /admin/get_rating/ HTTP/1.1", upstream: "uwsgi://127.0.0.1:8001", host: "49.234.78.157", referrer: "http://49.234.78.157/admin/"
+2020/06/11 10:07:14 [info] 23475#23475: *121335 client 112.96.199.149 closed keepalive connection
+2020/06/11 10:07:17 [info] 23475#23475: *121337 client 112.96.199.149 closed keepalive connection
+2020/06/11 10:53:24 [info] 23475#23475: *121354 client 128.14.134.134 closed keepalive connection
+2020/06/11 11:10:42 [info] 23475#23475: *121356 client 190.214.50.158 closed keepalive connection
+2020/06/11 11:59:50 [info] 23475#23475: *121364 client 189.113.100.216 closed keepalive connection
+2020/06/11 12:05:13 [info] 23475#23475: *121370 client 112.96.199.149 closed keepalive connection
+2020/06/11 12:05:13 [info] 23475#23475: *121366 client 112.96.199.149 closed keepalive connection
+2020/06/11 12:05:13 [info] 23475#23475: *121367 client 112.96.199.149 closed keepalive connection
+2020/06/11 12:05:15 [info] 23475#23475: *121369 client 112.96.199.149 closed keepalive connection
+2020/06/11 12:05:24 [info] 23475#23475: *121371 client 112.96.199.149 closed keepalive connection
+2020/06/11 12:05:29 [info] 23475#23475: *121373 client 112.96.199.149 closed keepalive connection
+2020/06/11 12:05:39 [info] 23475#23475: *121375 client 112.96.199.149 closed keepalive connection
+2020/06/11 12:14:10 [info] 23475#23475: *121378 client 112.96.199.149 closed keepalive connection
+2020/06/11 12:14:22 [info] 23475#23475: *121380 client 112.96.199.149 closed keepalive connection
+2020/06/11 12:14:25 [info] 23475#23475: *121382 client 112.96.199.149 closed keepalive connection
+2020/06/11 12:14:29 [info] 23475#23475: *121384 client 112.96.199.149 closed keepalive connection
+2020/06/11 12:14:32 [info] 23475#23475: *121386 client 112.96.199.149 closed keepalive connection
+2020/06/11 12:14:36 [info] 23475#23475: *121388 client 112.96.199.149 closed keepalive connection
+2020/06/11 12:18:03 [info] 23475#23475: *121390 client 112.96.199.149 closed keepalive connection
+2020/06/11 12:23:56 [info] 23475#23475: *121392 client 112.96.199.149 closed keepalive connection
+2020/06/11 12:24:27 [info] 23475#23475: *121394 client 112.96.199.149 closed keepalive connection
+2020/06/11 12:24:35 [info] 23475#23475: *121396 client 112.96.199.149 closed keepalive connection
+2020/06/11 12:24:42 [info] 23475#23475: *121398 epoll_wait() reported that client prematurely closed connection, so upstream connection is closed too while sending request to upstream, client: 112.96.199.149, server: 49.234.78.157, request: "GET /admin/update_rating/ HTTP/1.1", upstream: "uwsgi://127.0.0.1:8001", host: "49.234.78.157", referrer: "http://49.234.78.157/admin/"
+2020/06/11 12:24:49 [info] 23475#23475: *121400 client 112.96.199.149 closed keepalive connection
+2020/06/11 12:26:05 [info] 23475#23475: *121402 client 112.96.199.149 closed keepalive connection
+2020/06/11 12:26:11 [info] 23475#23475: *121406 client 112.96.199.149 closed keepalive connection
+2020/06/11 12:26:11 [info] 23475#23475: *121408 client 112.96.199.149 closed keepalive connection
+2020/06/11 12:26:11 [info] 23475#23475: *121404 client 112.96.199.149 closed keepalive connection
+2020/06/11 12:26:13 [info] 23475#23475: *121409 client 112.96.199.149 closed keepalive connection
+2020/06/11 12:26:13 [info] 23475#23475: *121407 client 112.96.199.149 closed keepalive connection
+2020/06/11 12:26:13 [info] 23475#23475: *121410 client 112.96.199.149 closed keepalive connection
+2020/06/11 12:26:14 [info] 23475#23475: *121411 client 112.96.199.149 closed keepalive connection
+2020/06/11 12:26:20 [info] 23475#23475: *121412 client 112.96.199.149 closed keepalive connection
+2020/06/11 12:26:25 [info] 23475#23475: *121413 client 112.96.199.149 closed keepalive connection
+2020/06/11 12:26:43 [info] 23475#23475: *121414 client 112.96.199.149 closed keepalive connection
+2020/06/11 12:26:46 [info] 23475#23475: *121416 client 112.96.199.149 closed keepalive connection
+2020/06/11 12:26:48 [info] 23475#23475: *121418 client 112.96.199.149 closed keepalive connection
+2020/06/11 12:27:11 [info] 23475#23475: *121420 client 112.96.199.149 closed keepalive connection
+2020/06/11 12:27:20 [info] 23475#23475: *121423 client 112.96.199.149 closed keepalive connection
+2020/06/11 12:27:37 [info] 23475#23475: *121426 client 112.96.199.149 closed keepalive connection
+2020/06/11 12:27:52 [info] 23475#23475: *121429 client prematurely closed connection (32: Broken pipe) while sending response to client, client: 112.96.199.149, server: 49.234.78.157, request: "GET /static/plugins/DPlayer/hls.min.js HTTP/1.1", host: "49.234.78.157", referrer: "http://49.234.78.157/video/play/66251/"
+2020/06/11 12:27:52 [info] 23475#23475: *121431 client 112.96.199.149 closed keepalive connection
+2020/06/11 12:27:58 [info] 23475#23475: *121434 client 112.96.199.149 closed keepalive connection
+2020/06/11 12:27:59 [info] 23475#23475: *121432 client 112.96.199.149 closed keepalive connection
+2020/06/11 12:28:01 [info] 23475#23475: *121435 client 112.96.199.149 closed keepalive connection
+2020/06/11 12:28:02 [info] 23475#23475: *121437 client 112.96.199.149 closed keepalive connection
+2020/06/11 12:28:08 [info] 23475#23475: *121439 client 112.96.199.149 closed keepalive connection
+2020/06/11 12:28:20 [info] 23475#23475: *121441 client 112.96.199.149 closed keepalive connection
+2020/06/11 12:28:46 [info] 23475#23475: *121443 client 112.96.199.149 closed keepalive connection
+2020/06/11 12:28:54 [info] 23475#23475: *121446 client 112.96.199.149 closed keepalive connection
+2020/06/11 12:28:57 [info] 23475#23475: *121448 client 112.96.199.149 closed keepalive connection
+2020/06/11 12:28:59 [info] 23475#23475: *121450 client 112.96.199.149 closed keepalive connection
+2020/06/11 12:29:15 [info] 23475#23475: *121452 client 112.96.199.149 closed keepalive connection
+2020/06/11 12:29:22 [info] 23475#23475: *121454 client 112.96.199.149 closed keepalive connection
+2020/06/11 12:29:28 [info] 23475#23475: *121456 client 112.96.199.149 closed keepalive connection
+2020/06/11 12:29:34 [info] 23475#23475: *121458 client 112.96.199.149 closed keepalive connection
+2020/06/11 12:29:40 [info] 23475#23475: *121460 client 112.96.199.149 closed keepalive connection
+2020/06/11 12:29:53 [info] 23475#23475: *121462 client 112.96.199.149 closed keepalive connection
+2020/06/11 12:29:59 [info] 23475#23475: *121464 client 112.96.199.149 closed keepalive connection
+2020/06/11 12:30:04 [info] 23475#23475: *121466 client 112.96.199.149 closed keepalive connection
+2020/06/11 12:30:09 [info] 23475#23475: *121468 client 112.96.199.149 closed keepalive connection
+2020/06/11 12:30:35 [info] 23475#23475: *121470 client 112.96.199.149 closed keepalive connection
+2020/06/11 12:30:38 [info] 23475#23475: *121472 client 112.96.199.149 closed keepalive connection
+2020/06/11 12:30:51 [info] 23475#23475: *121474 client 112.96.199.149 closed keepalive connection
+2020/06/11 12:31:05 [info] 23475#23475: *121477 client 112.96.199.149 closed keepalive connection
+2020/06/11 12:31:35 [info] 23475#23475: *121479 client 112.96.199.149 closed keepalive connection
+2020/06/11 12:31:53 [info] 23475#23475: *121482 client 112.96.199.149 closed keepalive connection
+2020/06/11 12:32:22 [info] 23475#23475: *121484 client 112.96.199.149 closed keepalive connection
+2020/06/11 12:32:32 [info] 23475#23475: *121486 client 112.96.199.149 closed keepalive connection
+2020/06/11 12:32:43 [info] 23475#23475: *121488 client 112.96.199.149 closed keepalive connection
+2020/06/11 12:32:58 [info] 23475#23475: *121490 client 112.96.199.149 closed keepalive connection
+2020/06/11 12:33:07 [info] 23475#23475: *121492 client 112.96.199.149 closed keepalive connection
+2020/06/11 12:33:27 [info] 23475#23475: *121494 client 112.96.199.149 closed keepalive connection
+2020/06/11 12:33:33 [info] 23475#23475: *121496 client 112.96.199.149 closed keepalive connection
+2020/06/11 12:33:43 [info] 23475#23475: *121498 client 112.96.199.149 closed keepalive connection
+2020/06/11 12:33:51 [info] 23475#23475: *121500 client 112.96.199.149 closed keepalive connection
+2020/06/11 12:34:01 [info] 23475#23475: *121502 client 112.96.199.149 closed keepalive connection
+2020/06/11 12:34:08 [info] 23475#23475: *121504 client 112.96.199.149 closed keepalive connection
+2020/06/11 12:34:13 [info] 23475#23475: *121506 client 112.96.199.149 closed keepalive connection
+2020/06/11 12:34:24 [info] 23475#23475: *121508 client 112.96.199.149 closed keepalive connection
+2020/06/11 12:34:33 [info] 23475#23475: *121510 client 112.96.199.149 closed keepalive connection
+2020/06/11 12:34:39 [info] 23475#23475: *121512 client 112.96.199.149 closed keepalive connection
+2020/06/11 12:34:55 [info] 23475#23475: *121514 client 112.96.199.149 closed keepalive connection
+2020/06/11 12:35:15 [info] 23475#23475: *121516 client 112.96.199.149 closed keepalive connection
+2020/06/11 12:35:31 [info] 23475#23475: *121518 client 112.96.199.149 closed keepalive connection
+2020/06/11 12:36:20 [info] 23475#23475: *121520 client 112.96.199.149 closed keepalive connection
+2020/06/11 12:37:02 [info] 23475#23475: *121522 client 112.96.199.149 closed keepalive connection
+2020/06/11 12:37:11 [info] 23475#23475: *121524 client 112.96.199.149 closed keepalive connection
+2020/06/11 12:37:28 [info] 23475#23475: *121526 client 112.96.199.149 closed keepalive connection
+2020/06/11 12:37:31 [info] 23475#23475: *121529 client 112.96.199.149 closed keepalive connection
+2020/06/11 12:37:54 [info] 23475#23475: *121531 client 112.96.199.149 closed keepalive connection
+2020/06/11 12:38:36 [info] 23475#23475: *121533 client 112.96.199.149 closed keepalive connection
+2020/06/11 12:38:51 [info] 23475#23475: *121535 client 112.96.199.149 closed keepalive connection
+2020/06/11 12:39:00 [info] 23475#23475: *121537 client 112.96.199.149 closed keepalive connection
+2020/06/11 12:39:06 [info] 23475#23475: *121539 client 112.96.199.149 closed keepalive connection
+2020/06/11 12:40:00 [info] 23475#23475: *121541 client 112.96.199.149 closed keepalive connection
+2020/06/11 12:40:42 [info] 23475#23475: *121543 client 112.96.199.149 closed keepalive connection
+2020/06/11 12:41:11 [info] 23475#23475: *121545 client 112.96.199.149 closed keepalive connection
+2020/06/11 12:41:27 [info] 23475#23475: *121547 client 112.96.199.149 closed keepalive connection
+2020/06/11 12:41:39 [info] 23475#23475: *121549 client 112.96.199.149 closed keepalive connection
+2020/06/11 12:41:57 [info] 23475#23475: *121551 client 112.96.199.149 closed keepalive connection
+2020/06/11 12:43:02 [info] 23475#23475: *121553 client 112.96.199.149 closed keepalive connection
+2020/06/11 12:45:05 [info] 23475#23475: *121555 client 112.96.199.149 closed keepalive connection
+2020/06/11 12:45:34 [info] 23475#23475: *121557 client 112.96.199.149 closed keepalive connection
+2020/06/11 12:45:48 [info] 23475#23475: *121559 client 112.96.199.149 closed keepalive connection
+2020/06/11 12:46:01 [info] 23475#23475: *121561 client 112.96.199.149 closed keepalive connection
+2020/06/11 12:46:04 [info] 23475#23475: *121563 client 112.96.199.149 closed keepalive connection
+2020/06/11 12:46:07 [info] 23475#23475: *121565 client 112.96.199.149 closed keepalive connection
+2020/06/11 12:46:13 [info] 23475#23475: *121567 client 112.96.199.149 closed keepalive connection
+2020/06/11 12:46:17 [info] 23475#23475: *121569 client 112.96.199.149 closed keepalive connection
+2020/06/11 12:46:35 [info] 23475#23475: *121571 client 112.96.199.149 closed keepalive connection
+2020/06/11 12:46:47 [info] 23475#23475: *121573 client 112.96.199.149 closed keepalive connection
+2020/06/11 12:46:50 [info] 23475#23475: *121575 client 112.96.199.149 closed keepalive connection
+2020/06/11 12:47:13 [info] 23475#23475: *121577 client 112.96.199.149 closed keepalive connection
+2020/06/11 12:47:16 [info] 23475#23475: *121580 client 112.96.199.149 closed keepalive connection
+2020/06/11 12:47:21 [info] 23475#23475: *121583 client 112.96.199.149 closed keepalive connection
+2020/06/11 12:47:26 [info] 23475#23475: *121587 client 112.96.199.149 closed keepalive connection
+2020/06/11 12:47:30 [info] 23475#23475: *121590 client 112.96.199.149 closed keepalive connection
+2020/06/11 12:47:34 [info] 23475#23475: *121592 client 112.96.199.149 closed keepalive connection
+2020/06/11 12:47:40 [info] 23475#23475: *121595 client 112.96.199.149 closed keepalive connection
+2020/06/11 12:47:44 [info] 23475#23475: *121597 client 112.96.199.149 closed keepalive connection
+2020/06/11 12:48:04 [info] 23475#23475: *121599 client 112.96.199.149 closed keepalive connection
+2020/06/11 12:48:09 [info] 23475#23475: *121601 client 112.96.199.149 closed keepalive connection
+2020/06/11 12:48:58 [info] 23475#23475: *121603 client 112.96.199.149 closed keepalive connection
+2020/06/11 13:00:07 [info] 23475#23475: *121608 client 162.243.141.37 closed keepalive connection
+2020/06/11 13:23:06 [info] 23475#23475: *121613 client 151.234.8.240 closed keepalive connection
+2020/06/11 14:47:41 [info] 23475#23475: *121622 client 104.248.33.135 closed keepalive connection
+2020/06/11 14:52:03 [info] 23475#23475: *121624 client 185.107.80.34 closed keepalive connection
+2020/06/11 15:00:46 [info] 23475#23475: *121626 client 61.241.50.63 closed keepalive connection (104: Connection reset by peer)
+2020/06/11 15:15:07 [info] 23475#23475: *121630 client 5.233.51.249 closed keepalive connection
+2020/06/11 16:05:48 [info] 23475#23475: *121641 client 180.167.210.6 closed keepalive connection (104: Connection reset by peer)
+2020/06/11 16:05:48 [info] 23475#23475: *121645 client 180.167.210.6 closed keepalive connection (104: Connection reset by peer)
+2020/06/11 16:05:48 [info] 23475#23475: *121647 client 180.167.210.6 closed keepalive connection
+2020/06/11 16:05:48 [info] 23475#23475: *121649 client 180.167.210.6 closed keepalive connection (104: Connection reset by peer)
+2020/06/11 16:05:50 [info] 23475#23475: *121651 client 180.167.210.6 closed keepalive connection (104: Connection reset by peer)
+2020/06/11 16:05:50 [info] 23475#23475: *121653 client 180.167.210.6 closed keepalive connection (104: Connection reset by peer)
+2020/06/11 16:05:51 [info] 23475#23475: *121655 client 180.167.210.6 closed keepalive connection (104: Connection reset by peer)
+2020/06/11 16:05:51 [info] 23475#23475: *121658 client 180.167.210.6 closed keepalive connection (104: Connection reset by peer)
+2020/06/11 16:05:51 [info] 23475#23475: *121657 client 180.167.210.6 closed keepalive connection (104: Connection reset by peer)
+2020/06/11 16:05:53 [info] 23475#23475: *121663 client 180.167.210.6 closed keepalive connection
+2020/06/11 16:05:53 [info] 23475#23475: *121661 client 180.167.210.6 closed keepalive connection
+2020/06/11 21:01:43 [info] 23475#23475: *121684 client 115.186.137.95 closed keepalive connection
+2020/06/11 21:44:00 [info] 23475#23475: *121691 client 162.243.138.188 closed keepalive connection
+2020/06/11 22:06:38 [info] 23475#23475: *121693 client 113.69.35.228 closed keepalive connection
+2020/06/11 22:06:38 [info] 23475#23475: *121694 client 113.69.35.228 closed keepalive connection
+2020/06/11 22:06:38 [info] 23475#23475: *121695 client 113.69.35.228 closed keepalive connection
+2020/06/11 22:18:01 [info] 23475#23475: *121696 client 83.14.66.26 closed keepalive connection
+2020/06/11 22:56:06 [info] 23475#23475: *121712 epoll_wait() reported that client prematurely closed connection, so upstream connection is closed too while sending request to upstream, client: 113.69.35.228, server: 49.234.78.157, request: "GET /admin/update_rating/ HTTP/1.1", upstream: "uwsgi://127.0.0.1:8001", host: "49.234.78.157", referrer: "http://49.234.78.157/admin/"
+2020/06/11 22:56:06 [info] 23475#23475: *121708 epoll_wait() reported that client prematurely closed connection, so upstream connection is closed too while sending request to upstream, client: 113.69.35.228, server: 49.234.78.157, request: "GET /admin/get_rating/ HTTP/1.1", upstream: "uwsgi://127.0.0.1:8001", host: "49.234.78.157", referrer: "http://49.234.78.157/admin/"
+2020/06/11 22:56:30 [error] 23475#23475: *121714 open() "/home/ubuntu/git/django_project/collected_static//plugins/hammer/hammer.min.js.map" failed (2: No such file or directory), client: 113.69.35.228, server: 49.234.78.157, request: "GET /static/plugins/hammer/hammer.min.js.map HTTP/1.1", host: "49.234.78.157"
+2020/06/11 22:56:37 [error] 23475#23475: *121714 open() "/home/ubuntu/git/django_project/collected_static//plugins/hammer/hammer.min.js.map" failed (2: No such file or directory), client: 113.69.35.228, server: 49.234.78.157, request: "GET /static/plugins/hammer/hammer.min.js.map HTTP/1.1", host: "49.234.78.157"
+2020/06/11 22:57:37 [error] 23475#23475: *121714 open() "/home/ubuntu/git/django_project/collected_static//plugins/hammer/hammer.min.js.map" failed (2: No such file or directory), client: 113.69.35.228, server: 49.234.78.157, request: "GET /static/plugins/hammer/hammer.min.js.map HTTP/1.1", host: "49.234.78.157"
+2020/06/11 22:57:46 [error] 23475#23475: *121714 open() "/home/ubuntu/git/django_project/collected_static//plugins/hammer/hammer.min.js.map" failed (2: No such file or directory), client: 113.69.35.228, server: 49.234.78.157, request: "GET /static/plugins/hammer/hammer.min.js.map HTTP/1.1", host: "49.234.78.157"
+2020/06/11 23:00:52 [error] 23475#23475: *121722 open() "/home/ubuntu/git/django_project/collected_static//plugins/hammer/hammer.min.js.map" failed (2: No such file or directory), client: 113.69.35.228, server: 49.234.78.157, request: "GET /static/plugins/hammer/hammer.min.js.map HTTP/1.1", host: "49.234.78.157"
+2020/06/11 23:03:14 [error] 23475#23475: *121725 open() "/home/ubuntu/git/django_project/collected_static//plugins/hammer/hammer.min.js.map" failed (2: No such file or directory), client: 113.69.35.228, server: 49.234.78.157, request: "GET /static/plugins/hammer/hammer.min.js.map HTTP/1.1", host: "49.234.78.157"
+2020/06/11 23:07:45 [error] 23475#23475: *121729 open() "/home/ubuntu/git/django_project/collected_static//plugins/hammer/hammer.min.js.map" failed (2: No such file or directory), client: 113.69.35.228, server: 49.234.78.157, request: "GET /static/plugins/hammer/hammer.min.js.map HTTP/1.1", host: "49.234.78.157"
+2020/06/11 23:40:21 [info] 23475#23475: *121731 epoll_wait() reported that client prematurely closed connection, so upstream connection is closed too while sending request to upstream, client: 113.69.35.228, server: 49.234.78.157, request: "GET /admin/get_rating/ HTTP/1.1", upstream: "uwsgi://127.0.0.1:8001", host: "49.234.78.157", referrer: "http://49.234.78.157/admin/"
+2020/06/11 23:40:21 [info] 23475#23475: *121743 epoll_wait() reported that client prematurely closed connection, so upstream connection is closed too while sending request to upstream, client: 113.69.35.228, server: 49.234.78.157, request: "GET /admin/update_rating/ HTTP/1.1", upstream: "uwsgi://127.0.0.1:8001", host: "49.234.78.157", referrer: "http://49.234.78.157/admin/"
+2020/06/12 00:21:03 [info] 23475#23475: *121783 client 113.69.35.228 closed keepalive connection
+2020/06/12 00:21:06 [info] 23475#23475: *121782 client 113.69.35.228 closed keepalive connection
+2020/06/12 00:21:08 [info] 23475#23475: *121785 client 113.69.35.228 closed keepalive connection
+2020/06/12 00:21:14 [info] 23475#23475: *121786 client 113.69.35.228 closed keepalive connection
+2020/06/12 00:21:15 [info] 23475#23475: *121789 client prematurely closed connection while sending response to client, client: 113.69.35.228, server: 49.234.78.157, request: "GET /static/jquery/jquery-1.12.4.js HTTP/1.1", host: "49.234.78.157", referrer: "http://49.234.78.157/admin/login.html"
+2020/06/12 00:21:15 [info] 23475#23475: *121793 client prematurely closed connection while sending response to client, client: 113.69.35.228, server: 49.234.78.157, request: "GET /static/plugins/bootstrap-4.4.1/bootstrap.bundle.min.js HTTP/1.1", host: "49.234.78.157", referrer: "http://49.234.78.157/admin/login.html"
+2020/06/12 00:21:15 [info] 23475#23475: *121791 client prematurely closed connection while sending response to client, client: 113.69.35.228, server: 49.234.78.157, request: "GET /static/plugins/AdminLTE/adminlte.min.css HTTP/1.1", host: "49.234.78.157", referrer: "http://49.234.78.157/admin/login.html"
+2020/06/12 00:21:15 [info] 23475#23475: *121792 client prematurely closed connection while sending response to client, client: 113.69.35.228, server: 49.234.78.157, request: "GET /static/plugins/bootstrap-4.4.1/bootstrap.min.css HTTP/1.1", host: "49.234.78.157", referrer: "http://49.234.78.157/admin/login.html"
+2020/06/12 00:21:17 [info] 23475#23475: *121794 client prematurely closed connection while sending response to client, client: 113.69.35.228, server: 49.234.78.157, request: "GET /static/plugins/bootstrap-4.4.1/bootstrap.min.css HTTP/1.1", host: "49.234.78.157", referrer: "http://49.234.78.157/admin/login.html"
+2020/06/12 00:21:17 [info] 23475#23475: *121797 client prematurely closed connection while sending response to client, client: 113.69.35.228, server: 49.234.78.157, request: "GET /static/plugins/AdminLTE/adminlte.min.css HTTP/1.1", host: "49.234.78.157", referrer: "http://49.234.78.157/admin/login.html"
+2020/06/12 00:21:17 [info] 23475#23475: *121799 client prematurely closed connection while sending response to client, client: 113.69.35.228, server: 49.234.78.157, request: "GET /static/plugins/bootstrap-4.4.1/bootstrap.bundle.min.js HTTP/1.1", host: "49.234.78.157", referrer: "http://49.234.78.157/admin/login.html"
+2020/06/12 00:21:17 [info] 23475#23475: *121798 client prematurely closed connection while sending response to client, client: 113.69.35.228, server: 49.234.78.157, request: "GET /static/jquery/jquery-1.12.4.js HTTP/1.1", host: "49.234.78.157", referrer: "http://49.234.78.157/admin/login.html"
+2020/06/12 00:21:18 [info] 23475#23475: *121803 client prematurely closed connection while sending response to client, client: 113.69.35.228, server: 49.234.78.157, request: "GET /static/plugins/AdminLTE/adminlte.min.css HTTP/1.1", host: "49.234.78.157", referrer: "http://49.234.78.157/admin/login.html"
+2020/06/12 00:21:18 [info] 23475#23475: *121804 client prematurely closed connection while sending response to client, client: 113.69.35.228, server: 49.234.78.157, request: "GET /static/plugins/bootstrap-4.4.1/bootstrap.bundle.min.js HTTP/1.1", host: "49.234.78.157", referrer: "http://49.234.78.157/admin/login.html"
+2020/06/12 00:21:18 [info] 23475#23475: *121800 client prematurely closed connection while sending response to client, client: 113.69.35.228, server: 49.234.78.157, request: "GET /static/plugins/bootstrap-4.4.1/bootstrap.min.css HTTP/1.1", host: "49.234.78.157", referrer: "http://49.234.78.157/admin/login.html"
+2020/06/12 00:21:18 [info] 23475#23475: *121805 client prematurely closed connection while sending response to client, client: 113.69.35.228, server: 49.234.78.157, request: "GET /static/jquery/jquery-1.12.4.js HTTP/1.1", host: "49.234.78.157", referrer: "http://49.234.78.157/admin/login.html"
+2020/06/12 00:21:22 [info] 23475#23475: *121810 client prematurely closed connection (32: Broken pipe) while sending response to client, client: 113.69.35.228, server: 49.234.78.157, request: "GET /static/jquery/jquery-1.12.4.js HTTP/1.1", host: "49.234.78.157", referrer: "http://49.234.78.157/admin/login.html"
+2020/06/12 00:21:22 [info] 23475#23475: *121806 client 113.69.35.228 closed keepalive connection
+2020/06/12 00:21:22 [info] 23475#23475: *121809 client prematurely closed connection (32: Broken pipe) while sending response to client, client: 113.69.35.228, server: 49.234.78.157, request: "GET /static/plugins/AdminLTE/adminlte.min.css HTTP/1.1", host: "49.234.78.157", referrer: "http://49.234.78.157/admin/login.html"
+2020/06/12 00:22:15 [info] 23475#23475: *121815 client 113.69.35.228 closed keepalive connection
+2020/06/12 00:23:05 [info] 23475#23475: *121811 client 113.69.35.228 closed keepalive connection
+2020/06/12 00:30:41 [info] 23475#23475: *121823 client 223.71.167.163 closed keepalive connection
+2020/06/12 01:47:23 [info] 23475#23475: *121834 client 182.254.52.17 closed keepalive connection (104: Connection reset by peer)
+2020/06/12 01:47:37 [info] 23475#23475: *121836 client 182.254.52.17 closed keepalive connection (104: Connection reset by peer)
+2020/06/12 01:47:37 [info] 23475#23475: *121838 client 182.254.52.17 closed keepalive connection (104: Connection reset by peer)
+2020/06/12 02:07:28 [info] 23475#23475: *121843 client 182.254.52.17 closed keepalive connection (104: Connection reset by peer)
+2020/06/12 02:14:39 [info] 23475#23475: *121845 client 182.254.52.17 closed keepalive connection (104: Connection reset by peer)
+2020/06/12 02:14:39 [info] 23475#23475: *121847 client 182.254.52.17 closed keepalive connection (104: Connection reset by peer)
+2020/06/12 02:18:15 [info] 23475#23475: *121849 client 182.254.52.17 closed keepalive connection (104: Connection reset by peer)
+2020/06/12 02:18:15 [info] 23475#23475: *121851 client 182.254.52.17 closed keepalive connection (104: Connection reset by peer)
+2020/06/12 02:24:06 [info] 23475#23475: *121853 client 45.148.10.74 closed keepalive connection
+2020/06/12 02:25:57 [info] 23475#23475: *121855 client 59.36.132.240 closed keepalive connection (104: Connection reset by peer)
+2020/06/12 02:25:57 [info] 23475#23475: *121857 client 59.36.132.240 closed keepalive connection (104: Connection reset by peer)
+2020/06/12 02:27:03 [info] 23475#23475: *121859 client 182.254.52.17 closed keepalive connection (104: Connection reset by peer)
+2020/06/12 02:28:46 [info] 23475#23475: *121861 client 128.14.134.134 closed keepalive connection
+2020/06/12 02:33:40 [info] 23475#23475: *121864 client 182.254.52.17 closed keepalive connection (104: Connection reset by peer)
+2020/06/12 02:33:40 [info] 23475#23475: *121866 client 182.254.52.17 closed keepalive connection (104: Connection reset by peer)
+2020/06/12 02:33:40 [info] 23475#23475: *121868 client 182.254.52.17 closed keepalive connection (104: Connection reset by peer)
+2020/06/12 02:41:05 [info] 23475#23475: *121870 client 113.96.198.101 closed keepalive connection
+2020/06/12 03:01:33 [info] 23475#23475: *121873 client 58.247.212.239 closed keepalive connection (104: Connection reset by peer)
+2020/06/12 03:01:47 [info] 23475#23475: *121875 client 113.96.198.54 closed keepalive connection
+2020/06/12 03:08:07 [info] 23475#23475: *121876 client 182.254.52.17 closed keepalive connection (104: Connection reset by peer)
+2020/06/12 03:08:27 [info] 23475#23475: *121878 client 14.215.156.103 closed keepalive connection
+2020/06/12 03:10:46 [info] 23475#23475: *121879 client 95.165.218.102 closed keepalive connection
+2020/06/12 03:14:49 [info] 23475#23475: *121881 client 59.36.132.240 closed keepalive connection (104: Connection reset by peer)
+2020/06/12 03:14:53 [info] 23475#23475: *121883 client 14.215.156.109 closed keepalive connection
+2020/06/12 03:21:10 [info] 23475#23475: *121884 client 182.254.52.17 closed keepalive connection (104: Connection reset by peer)
+2020/06/12 03:27:56 [info] 23475#23475: *121886 client 182.254.52.17 closed keepalive connection (104: Connection reset by peer)
+2020/06/12 03:28:06 [info] 23475#23475: *121890 client 182.254.52.17 closed keepalive connection (104: Connection reset by peer)
+2020/06/12 03:54:37 [info] 23475#23475: *121893 client 182.254.52.17 closed keepalive connection (104: Connection reset by peer)
+2020/06/12 03:54:47 [info] 23475#23475: *121895 client 101.89.19.140 closed keepalive connection (104: Connection reset by peer)
+2020/06/12 03:57:51 [info] 23475#23475: *121897 client 128.14.209.178 closed keepalive connection
+2020/06/12 04:01:04 [info] 23475#23475: *121900 client 182.254.52.17 closed keepalive connection (104: Connection reset by peer)
+2020/06/12 04:07:53 [info] 23475#23475: *121902 client 14.18.182.223 closed keepalive connection (104: Connection reset by peer)
+2020/06/12 04:14:32 [info] 23475#23475: *121904 client 182.254.52.17 closed keepalive connection (104: Connection reset by peer)
+2020/06/12 04:17:01 [info] 23475#23475: *121906 client 37.156.126.138 closed keepalive connection
+2020/06/12 04:41:29 [info] 23475#23475: *121914 client 116.128.128.41 closed keepalive connection (104: Connection reset by peer)
+2020/06/12 04:54:12 [info] 23475#23475: *121916 client 61.241.50.63 closed keepalive connection (104: Connection reset by peer)
+2020/06/12 05:01:06 [info] 23475#23475: *121918 client 162.243.139.170 closed keepalive connection
+2020/06/12 05:27:33 [info] 23475#23475: *121921 client 61.241.50.63 closed keepalive connection (104: Connection reset by peer)
+2020/06/12 05:27:37 [info] 23475#23475: *121923 client 61.241.50.63 closed keepalive connection (104: Connection reset by peer)
+2020/06/12 05:34:43 [info] 23475#23475: *121925 client 182.254.52.17 closed keepalive connection (104: Connection reset by peer)
+2020/06/12 05:47:23 [info] 23475#23475: *121927 client 182.254.52.17 closed keepalive connection (104: Connection reset by peer)
+2020/06/12 06:00:56 [info] 23475#23475: *121929 client 14.18.173.125 closed keepalive connection
+2020/06/12 06:01:01 [info] 23475#23475: *121930 client 182.254.52.17 closed keepalive connection (104: Connection reset by peer)
+2020/06/12 06:01:01 [info] 23475#23475: *121932 client 182.254.52.17 closed keepalive connection (104: Connection reset by peer)
+2020/06/12 06:01:18 [info] 23475#23475: *121934 client 182.254.52.17 closed keepalive connection (104: Connection reset by peer)
+2020/06/12 06:14:32 [info] 23475#23475: *121938 client 182.254.52.17 closed keepalive connection (104: Connection reset by peer)
+2020/06/12 06:14:32 [info] 23475#23475: *121940 client 182.254.52.17 closed keepalive connection (104: Connection reset by peer)
+2020/06/12 06:28:02 [info] 23475#23475: *121942 client 182.254.52.17 closed keepalive connection (104: Connection reset by peer)
+2020/06/12 06:28:02 [info] 23475#23475: *121944 client 182.254.52.17 closed keepalive connection (104: Connection reset by peer)
+2020/06/12 06:42:10 [info] 23475#23475: *121948 client 59.36.132.240 closed keepalive connection (104: Connection reset by peer)
+2020/06/12 07:15:39 [info] 23475#23475: *121953 client 193.118.53.194 closed keepalive connection
+2020/06/12 07:50:45 [info] 23475#23475: *121962 client 80.181.173.205 closed keepalive connection
+2020/06/12 07:58:06 [info] 23475#23475: *121968 client 113.69.35.228 closed keepalive connection
+2020/06/12 07:58:17 [info] 23475#23475: *121966 epoll_wait() reported that client prematurely closed connection, so upstream connection is closed too while sending request to upstream, client: 113.69.35.228, server: 49.234.78.157, request: "GET /admin/get_rating/ HTTP/1.1", upstream: "uwsgi://127.0.0.1:8001", host: "49.234.78.157", referrer: "http://49.234.78.157/admin/"
+2020/06/12 07:58:28 [info] 23475#23475: *121969 client 113.69.35.228 closed keepalive connection
+2020/06/12 07:58:46 [info] 23475#23475: *121975 client 88.224.66.242 closed keepalive connection
+2020/06/12 07:58:52 [info] 23475#23475: *121965 client 113.69.35.228 closed keepalive connection
+2020/06/12 08:07:20 [info] 23475#23475: *121977 client 168.232.15.162 closed keepalive connection
+2020/06/12 09:26:39 [info] 23475#23475: *121989 client 183.136.225.57 closed keepalive connection
+2020/06/12 10:14:17 [info] 23475#23475: *121998 client 112.96.199.149 closed keepalive connection
+2020/06/12 10:14:25 [info] 23475#23475: *122000 client 112.96.199.149 closed keepalive connection
+2020/06/12 10:14:41 [info] 23475#23475: *122002 client 112.96.199.149 closed keepalive connection
+2020/06/12 10:14:48 [info] 23475#23475: *122005 client 112.96.199.149 closed keepalive connection
+2020/06/12 10:14:48 [info] 23475#23475: *122004 client 112.96.199.149 closed keepalive connection
+2020/06/12 10:14:48 [info] 23475#23475: *122008 client 112.96.199.149 closed keepalive connection
+2020/06/12 10:14:50 [info] 23475#23475: *122009 client 112.96.199.149 closed keepalive connection
+2020/06/12 10:14:50 [info] 23475#23475: *122010 client 112.96.199.149 closed keepalive connection
+2020/06/12 10:14:50 [info] 23475#23475: *122007 client 112.96.199.149 closed keepalive connection
+2020/06/12 10:15:46 [info] 23475#23475: *122013 client 112.96.199.149 closed keepalive connection
+2020/06/12 10:15:47 [info] 23475#23475: *122011 client 112.96.199.149 closed keepalive connection
+2020/06/12 10:16:12 [info] 23475#23475: *122014 client 112.96.199.149 closed keepalive connection
+2020/06/12 10:16:39 [info] 23475#23475: *122016 client 112.96.199.149 closed keepalive connection
+2020/06/12 10:17:11 [info] 23475#23475: *122018 client 112.96.199.149 closed keepalive connection
+2020/06/12 10:17:21 [info] 23475#23475: *122020 client 112.96.199.149 closed keepalive connection
+2020/06/12 10:17:38 [info] 23475#23475: *122022 client 112.96.199.149 closed keepalive connection
+2020/06/12 10:19:09 [info] 23475#23475: *122024 client 112.96.199.149 closed keepalive connection
+2020/06/12 10:19:24 [info] 23475#23475: *122026 client 112.96.199.149 closed keepalive connection
+2020/06/12 10:19:57 [info] 23475#23475: *122028 client 112.96.199.149 closed keepalive connection
+2020/06/12 10:22:57 [info] 23475#23475: *122030 client 112.96.199.149 closed keepalive connection
+2020/06/12 10:23:45 [info] 23475#23475: *122032 client 112.96.199.149 closed keepalive connection
+2020/06/12 10:27:41 [info] 23475#23475: *122034 client 112.96.199.149 closed keepalive connection
+2020/06/12 10:28:04 [info] 23475#23475: *122036 client 112.96.199.149 closed keepalive connection
+2020/06/12 11:55:40 [info] 23475#23475: *122055 client 112.96.199.149 closed keepalive connection
+2020/06/12 11:55:41 [info] 23475#23475: *122052 client 14.24.26.101 closed keepalive connection
+2020/06/12 11:56:00 [info] 23475#23475: *122065 client 112.96.199.149 closed keepalive connection
+2020/06/12 11:56:27 [info] 23475#23475: *122071 client 112.96.199.149 closed keepalive connection
+2020/06/12 11:57:17 [info] 23475#23475: *122074 client 112.96.199.149 closed keepalive connection
+2020/06/12 11:57:26 [info] 23475#23475: *122077 client 112.96.199.149 closed keepalive connection
+2020/06/12 11:58:01 [info] 23475#23475: *122080 client 112.96.199.149 closed keepalive connection
+2020/06/12 11:58:03 [info] 23475#23475: *122053 client 14.24.26.101 closed keepalive connection
+2020/06/12 11:58:04 [info] 23475#23475: *122082 client 112.96.199.149 closed keepalive connection
+2020/06/12 11:58:09 [info] 23475#23475: *122085 client 112.96.199.149 closed keepalive connection
+2020/06/12 11:58:26 [info] 23475#23475: *122087 client 61.151.206.26 closed keepalive connection
+2020/06/12 11:58:51 [info] 23475#23475: *122089 client 112.96.199.149 closed keepalive connection
+2020/06/12 11:58:55 [info] 23475#23475: *122091 client 112.96.199.149 closed keepalive connection
+2020/06/12 11:59:36 [info] 23475#23475: *122092 client 14.24.26.101 closed keepalive connection
+2020/06/12 11:59:52 [info] 23475#23475: *122094 client 112.96.199.149 closed keepalive connection
+2020/06/12 12:00:44 [info] 23475#23475: *122102 client 112.96.199.149 closed keepalive connection
+2020/06/12 12:00:51 [info] 23475#23475: *122108 epoll_wait() reported that client prematurely closed connection, so upstream connection is closed too while sending request to upstream, client: 123.147.246.162, server: 49.234.78.157, request: "GET /video/type/1/ HTTP/1.1", upstream: "uwsgi://127.0.0.1:8001", host: "49.234.78.157"
+2020/06/12 12:01:19 [info] 23475#23475: *122104 client 123.147.246.162 closed keepalive connection
+2020/06/12 12:01:19 [info] 23475#23475: *122107 client 123.147.246.162 closed keepalive connection
+2020/06/12 12:01:19 [info] 23475#23475: *122109 client 123.147.246.162 closed keepalive connection
+2020/06/12 12:01:19 [info] 23475#23475: *122106 client 123.147.246.162 closed keepalive connection
+2020/06/12 12:01:28 [info] 23475#23475: *122118 client 112.96.199.149 closed keepalive connection
+2020/06/12 12:01:28 [info] 23475#23475: *122116 client 112.96.199.149 closed keepalive connection
+2020/06/12 12:01:28 [info] 23475#23475: *122119 client 112.96.199.149 closed keepalive connection
+2020/06/12 12:01:29 [info] 23475#23475: *122120 client 112.96.199.149 closed keepalive connection
+2020/06/12 12:01:34 [info] 23475#23475: *122098 client 14.24.26.101 closed keepalive connection (104: Connection reset by peer)
+2020/06/12 12:01:34 [info] 23475#23475: *122096 client 14.24.26.101 closed keepalive connection (104: Connection reset by peer)
+2020/06/12 12:01:34 [info] 23475#23475: *122101 client 14.24.26.101 closed keepalive connection (104: Connection reset by peer)
+2020/06/12 12:01:47 [info] 23475#23475: *122122 client 112.96.199.149 closed keepalive connection
+2020/06/12 12:01:51 [info] 23475#23475: *122126 client 112.96.199.149 closed keepalive connection
+2020/06/12 12:01:51 [info] 23475#23475: *122124 client 112.96.199.149 closed keepalive connection
+2020/06/12 12:01:55 [info] 23475#23475: *122127 client 112.96.199.149 closed keepalive connection
+2020/06/12 12:02:05 [info] 23475#23475: *122129 client 112.96.199.149 closed keepalive connection
+2020/06/12 12:02:08 [info] 23475#23475: *122132 client 112.96.199.149 closed keepalive connection
+2020/06/12 12:03:15 [info] 23475#23475: *122137 client 106.85.211.28 closed keepalive connection
+2020/06/12 12:03:15 [info] 23475#23475: *122134 client 106.85.211.28 closed keepalive connection
+2020/06/12 12:03:15 [info] 23475#23475: *122136 client 106.85.211.28 closed keepalive connection
+2020/06/12 12:03:15 [info] 23475#23475: *122139 client 106.85.211.28 closed keepalive connection
+2020/06/12 12:03:15 [info] 23475#23475: *122138 client 106.85.211.28 closed keepalive connection
+2020/06/12 12:09:58 [info] 23475#23475: *122142 client 101.89.239.245 closed keepalive connection
+2020/06/12 12:10:59 [info] 23475#23475: *122143 client 101.89.239.245 closed keepalive connection
+2020/06/12 12:11:50 [info] 23475#23475: *122150 client 14.24.26.101 closed keepalive connection (104: Connection reset by peer)
+2020/06/12 12:11:50 [info] 23475#23475: *122147 client 14.24.26.101 closed keepalive connection (104: Connection reset by peer)
+2020/06/12 12:11:50 [info] 23475#23475: *122148 client 14.24.26.101 closed keepalive connection (104: Connection reset by peer)
+2020/06/12 12:11:50 [info] 23475#23475: *122149 client 14.24.26.101 closed keepalive connection (104: Connection reset by peer)
+2020/06/12 12:11:50 [info] 23475#23475: *122151 client 14.24.26.101 closed keepalive connection (104: Connection reset by peer)
+2020/06/12 12:11:50 [info] 23475#23475: *122145 client 14.24.26.101 closed keepalive connection (104: Connection reset by peer)
+2020/06/12 12:22:59 [info] 23475#23475: *122158 client 101.89.239.245 closed keepalive connection
+2020/06/12 12:59:14 [info] 23475#23475: *122168 client prematurely closed connection while sending response to client, client: 103.27.25.148, server: 49.234.78.157, request: "GET /static/plugins/DPlayer/hls.min.js HTTP/1.1", host: "49.234.78.157", referrer: "http://49.234.78.157/video/play/87747/"
+2020/06/12 12:59:14 [info] 23475#23475: *122171 client prematurely closed connection while sending response to client, client: 103.27.25.148, server: 49.234.78.157, request: "GET /static/plugins/DPlayer/DPlayer.min.js HTTP/1.1", host: "49.234.78.157", referrer: "http://49.234.78.157/video/play/87747/"
+2020/06/12 13:20:52 [info] 23475#23475: *122175 client 112.96.199.149 closed keepalive connection
+2020/06/12 13:20:56 [info] 23475#23475: *122177 client 112.96.199.149 closed keepalive connection
+2020/06/12 13:21:13 [info] 23475#23475: *122179 client 112.96.199.149 closed keepalive connection
+2020/06/12 13:21:21 [info] 23475#23475: *122181 epoll_wait() reported that client prematurely closed connection, so upstream connection is closed too while sending request to upstream, client: 112.96.199.149, server: 49.234.78.157, request: "GET /admin/get_rating/ HTTP/1.1", upstream: "uwsgi://127.0.0.1:8001", host: "49.234.78.157", referrer: "http://49.234.78.157/admin/"
+2020/06/12 13:21:23 [info] 23475#23475: *122184 client 112.96.199.149 closed keepalive connection
+2020/06/12 13:21:28 [info] 23475#23475: *122186 client 112.96.199.149 closed keepalive connection
+2020/06/12 13:24:24 [info] 23475#23475: *122190 client 117.136.30.213 closed keepalive connection
+2020/06/12 13:24:24 [info] 23475#23475: *122193 client 117.136.30.213 closed keepalive connection
+2020/06/12 13:24:24 [info] 23475#23475: *122188 client 117.136.30.213 closed keepalive connection
+2020/06/12 13:24:24 [info] 23475#23475: *122191 client 117.136.30.213 closed keepalive connection
+2020/06/12 13:24:24 [info] 23475#23475: *122192 client 117.136.30.213 closed keepalive connection
+2020/06/12 13:50:49 [info] 23475#23475: *122200 client 103.27.25.148 closed keepalive connection
+2020/06/12 14:01:29 [info] 23475#23475: *122203 client 162.243.144.96 closed keepalive connection
+2020/06/12 16:16:41 [info] 23475#23475: *122234 client 95.65.120.165 closed keepalive connection
+2020/06/12 17:09:36 [info] 23475#23475: *122257 client 183.230.30.249 closed keepalive connection
+2020/06/12 17:57:44 [info] 23475#23475: *122273 client 45.9.148.91 closed keepalive connection
+2020/06/12 19:29:03 [info] 23475#23475: *122286 client 121.231.49.131 closed keepalive connection
+2020/06/12 19:50:14 [info] 23475#23475: *122307 client 112.96.199.149 closed keepalive connection
+2020/06/12 19:50:18 [info] 23475#23475: *122309 client 112.96.199.149 closed keepalive connection
+2020/06/12 19:50:34 [info] 23475#23475: *122311 epoll_wait() reported that client prematurely closed connection, so upstream connection is closed too while sending request to upstream, client: 112.96.199.149, server: 49.234.78.157, request: "GET /admin/get_rating/ HTTP/1.1", upstream: "uwsgi://127.0.0.1:8001", host: "49.234.78.157", referrer: "http://49.234.78.157/admin/"
+2020/06/12 19:50:36 [info] 23475#23475: *122314 client 112.96.199.149 closed keepalive connection
+2020/06/12 19:50:41 [info] 23475#23475: *122316 client 112.96.199.149 closed keepalive connection
+2020/06/12 19:50:54 [info] 23475#23475: *122318 client 112.96.199.149 closed keepalive connection
+2020/06/12 19:51:20 [info] 23475#23475: *122320 client 112.96.199.149 closed keepalive connection
+2020/06/12 19:51:46 [info] 23475#23475: *122322 client 112.96.199.149 closed keepalive connection
+2020/06/12 19:51:48 [info] 23475#23475: *122324 client 112.96.199.149 closed keepalive connection
+2020/06/12 22:13:50 [info] 23475#23475: *122337 client 113.69.35.100 closed keepalive connection
+2020/06/12 23:35:54 [info] 23475#23475: *122346 client 112.96.112.189 closed keepalive connection
+2020/06/12 23:35:54 [info] 23475#23475: *122344 client 112.96.112.189 closed keepalive connection
+2020/06/12 23:36:00 [info] 23475#23475: *122351 client 112.96.112.189 closed keepalive connection
+2020/06/12 23:36:01 [info] 23475#23475: *122347 client 112.96.112.189 closed keepalive connection
+2020/06/12 23:36:04 [info] 23475#23475: *122348 client 112.96.112.189 closed keepalive connection
+2020/06/12 23:36:07 [info] 23475#23475: *122349 client 112.96.112.189 closed keepalive connection
+2020/06/12 23:36:10 [info] 23475#23475: *122352 client 112.96.112.189 closed keepalive connection
+2020/06/12 23:36:14 [info] 23475#23475: *122354 client 112.96.112.189 closed keepalive connection
+2020/06/12 23:36:23 [info] 23475#23475: *122356 epoll_wait() reported that client prematurely closed connection, so upstream connection is closed too while sending request to upstream, client: 112.96.112.189, server: 49.234.78.157, request: "GET /admin/get_rating/ HTTP/1.1", upstream: "uwsgi://127.0.0.1:8001", host: "49.234.78.157", referrer: "http://49.234.78.157/admin/"
+2020/06/12 23:36:24 [info] 23475#23475: *122359 client 112.96.112.189 closed keepalive connection
+2020/06/12 23:36:28 [info] 23475#23475: *122361 client 112.96.112.189 closed keepalive connection
+2020/06/12 23:36:32 [info] 23475#23475: *122363 client 112.96.112.189 closed keepalive connection
+2020/06/12 23:36:46 [info] 23475#23475: *122365 client 112.96.112.189 closed keepalive connection
+2020/06/12 23:54:33 [info] 23475#23475: *122368 client 112.96.112.189 closed keepalive connection
+2020/06/12 23:54:36 [info] 23475#23475: *122370 client 112.96.112.189 closed keepalive connection
+2020/06/12 23:54:41 [info] 23475#23475: *122372 client 112.96.112.189 closed keepalive connection
+2020/06/12 23:55:03 [info] 23475#23475: *122374 client 112.96.112.189 closed keepalive connection
+2020/06/12 23:55:05 [info] 23475#23475: *122376 epoll_wait() reported that client prematurely closed connection, so upstream connection is closed too while sending request to upstream, client: 112.96.112.189, server: 49.234.78.157, request: "GET /admin/update_rating/ HTTP/1.1", upstream: "uwsgi://127.0.0.1:8001", host: "49.234.78.157", referrer: "http://49.234.78.157/admin/"
+2020/06/12 23:55:06 [info] 23475#23475: *122378 client 112.96.112.189 closed keepalive connection
+2020/06/12 23:55:10 [info] 23475#23475: *122380 client 112.96.112.189 closed keepalive connection
+2020/06/12 23:55:13 [info] 23475#23475: *122382 client 112.96.112.189 closed keepalive connection
+2020/06/12 23:55:43 [info] 23475#23475: *122384 client 112.96.112.189 closed keepalive connection
+2020/06/12 23:55:53 [info] 23475#23475: *122386 client 112.96.112.189 closed keepalive connection
+2020/06/12 23:55:53 [info] 23475#23475: *122387 client 112.96.112.189 closed keepalive connection
+2020/06/12 23:56:08 [info] 23475#23475: *122390 client 112.96.112.189 closed keepalive connection
+2020/06/12 23:56:13 [info] 23475#23475: *122392 client 112.96.112.189 closed keepalive connection
+2020/06/12 23:56:24 [info] 23475#23475: *122394 client 112.96.112.189 closed keepalive connection
+2020/06/12 23:56:28 [info] 23475#23475: *122396 client 112.96.112.189 closed keepalive connection
+2020/06/12 23:56:40 [info] 23475#23475: *122398 client 112.96.112.189 closed keepalive connection
+2020/06/12 23:56:55 [info] 23475#23475: *122402 client 112.96.112.189 closed keepalive connection
+2020/06/12 23:57:29 [info] 23475#23475: *122404 client 112.96.112.189 closed keepalive connection
+2020/06/12 23:57:42 [error] 23475#23475: *122400 upstream timed out (110: Connection timed out) while reading response header from upstream, client: 112.96.112.189, server: 49.234.78.157, request: "GET /admin/update/?url_index=2&type=count HTTP/1.1", upstream: "uwsgi://127.0.0.1:8001", host: "49.234.78.157", referrer: "http://49.234.78.157/admin/"
+2020/06/12 23:57:43 [info] 23475#23475: *122400 client 112.96.112.189 closed keepalive connection
+2020/06/13 00:06:47 [info] 23475#23475: *122409 client 113.69.35.100 closed keepalive connection
+2020/06/13 00:39:03 [info] 23475#23475: *122430 client 103.79.35.154 closed keepalive connection
+2020/06/13 00:55:47 [info] 23475#23475: *122433 client 184.155.192.227 closed keepalive connection (104: Connection reset by peer)
+2020/06/13 01:22:19 [info] 23475#23475: *122435 client 58.247.212.239 closed keepalive connection (104: Connection reset by peer)
+2020/06/13 01:51:44 [info] 23475#23475: *122437 client 182.254.52.17 closed keepalive connection (104: Connection reset by peer)
+2020/06/13 02:24:22 [info] 23475#23475: *122441 client 14.18.173.92 closed keepalive connection
+2020/06/13 02:27:30 [info] 23475#23475: *122442 client 14.215.156.94 closed keepalive connection
+2020/06/13 03:02:37 [info] 23475#23475: *122449 client 182.254.52.17 closed keepalive connection (104: Connection reset by peer)
+2020/06/13 03:03:08 [info] 23475#23475: *122451 client 59.36.132.105 closed keepalive connection
+2020/06/13 03:27:51 [info] 23475#23475: *122453 client 193.118.53.194 closed keepalive connection
+2020/06/13 04:05:42 [info] 23475#23475: *122456 client 182.254.52.17 closed keepalive connection (104: Connection reset by peer)
+2020/06/13 04:05:42 [info] 23475#23475: *122458 client 182.254.52.17 closed keepalive connection (104: Connection reset by peer)
+2020/06/13 04:06:02 [info] 23475#23475: *122460 client 14.215.156.98 closed keepalive connection
+2020/06/13 04:27:00 [info] 23475#23475: *122463 client 59.36.132.106 closed keepalive connection
+2020/06/13 04:40:18 [info] 23475#23475: *122467 client 14.18.182.223 closed keepalive connection (104: Connection reset by peer)
+2020/06/13 04:51:26 [info] 23475#23475: *122470 client 192.35.168.199 closed keepalive connection (104: Connection reset by peer)
+2020/06/13 04:51:27 [info] 23475#23475: *122472 client 192.35.168.199 closed keepalive connection
+2020/06/13 05:03:34 [info] 23475#23475: *122474 client 103.75.32.13 closed keepalive connection
+2020/06/13 05:13:58 [info] 23475#23475: *122476 client 179.97.155.157 closed keepalive connection
+2020/06/13 05:57:13 [info] 23475#23475: *122485 client 14.215.156.13 closed keepalive connection
+2020/06/13 06:03:44 [info] 23475#23475: *122486 client 183.3.255.20 closed keepalive connection
+2020/06/13 06:14:04 [info] 23475#23475: *122487 client 80.104.89.247 closed keepalive connection
+2020/06/13 06:29:49 [info] 23475#23475: *122489 client 80.245.115.153 closed keepalive connection
+2020/06/13 06:31:53 [info] 23475#23475: *122491 client 182.254.52.17 closed keepalive connection (104: Connection reset by peer)
+2020/06/13 07:14:42 [info] 23475#23475: *122498 client 182.254.52.17 closed keepalive connection (104: Connection reset by peer)
+2020/06/13 07:18:45 [info] 23475#23475: *122501 client 59.36.132.106 closed keepalive connection
+2020/06/13 07:52:38 [info] 23475#23475: *122508 client 182.254.52.17 closed keepalive connection (104: Connection reset by peer)
+2020/06/13 08:27:49 [info] 23475#23475: *122520 client 112.96.112.189 closed keepalive connection
+2020/06/13 08:27:51 [info] 23475#23475: *122522 client 112.96.112.189 closed keepalive connection
+2020/06/13 08:28:04 [info] 23475#23475: *122524 epoll_wait() reported that client prematurely closed connection, so upstream connection is closed too while sending request to upstream, client: 112.96.112.189, server: 49.234.78.157, request: "GET /admin/get_rating/ HTTP/1.1", upstream: "uwsgi://127.0.0.1:8001", host: "49.234.78.157", referrer: "http://49.234.78.157/admin/"
+2020/06/13 08:28:06 [info] 23475#23475: *122527 client 112.96.112.189 closed keepalive connection
+2020/06/13 08:28:29 [info] 23475#23475: *122529 client 112.96.112.189 closed keepalive connection
+2020/06/13 09:36:59 [info] 23475#23475: *122534 client 112.96.112.189 closed keepalive connection
+2020/06/13 09:40:32 [info] 23475#23475: *122537 epoll_wait() reported that client prematurely closed connection, so upstream connection is closed too (104: Connection reset by peer) while sending request to upstream, client: 112.96.112.189, server: 49.234.78.157, request: "GET /admin/get_rating/ HTTP/1.1", upstream: "uwsgi://127.0.0.1:8001", host: "49.234.78.157", referrer: "http://49.234.78.157/admin/"
+2020/06/13 09:43:26 [info] 23475#23475: *122540 epoll_wait() reported that client prematurely closed connection, so upstream connection is closed too while sending request to upstream, client: 112.96.112.189, server: 49.234.78.157, request: "GET /admin/get_rating/ HTTP/1.1", upstream: "uwsgi://127.0.0.1:8001", host: "49.234.78.157", referrer: "http://49.234.78.157/admin/"
+2020/06/13 09:43:28 [info] 23475#23475: *122542 client 112.96.112.189 closed keepalive connection
+2020/06/13 09:43:50 [info] 23475#23475: *122546 epoll_wait() reported that client prematurely closed connection, so upstream connection is closed too while sending request to upstream, client: 112.96.112.189, server: 49.234.78.157, request: "GET /admin/update_rating/ HTTP/1.1", upstream: "uwsgi://127.0.0.1:8001", host: "49.234.78.157", referrer: "http://49.234.78.157/admin/"
+2020/06/13 09:43:50 [info] 23475#23475: *122544 epoll_wait() reported that client prematurely closed connection, so upstream connection is closed too while sending request to upstream, client: 112.96.112.189, server: 49.234.78.157, request: "GET /admin/get_rating/ HTTP/1.1", upstream: "uwsgi://127.0.0.1:8001", host: "49.234.78.157", referrer: "http://49.234.78.157/admin/"
+2020/06/13 09:43:52 [info] 23475#23475: *122548 client 112.96.112.189 closed keepalive connection
+2020/06/13 09:44:32 [info] 23475#23475: *122550 client 112.96.112.189 closed keepalive connection
+2020/06/13 09:44:36 [info] 23475#23475: *122553 client 112.96.112.189 closed keepalive connection
+2020/06/13 09:44:52 [info] 23475#23475: *122556 client 112.96.112.189 closed keepalive connection
+2020/06/13 09:44:54 [info] 23475#23475: *122559 client 112.96.112.189 closed keepalive connection
+2020/06/13 09:45:02 [info] 23475#23475: *122561 client 112.96.112.189 closed keepalive connection
+2020/06/13 10:06:09 [info] 23475#23475: *122563 client 196.52.43.86 closed keepalive connection
+2020/06/13 10:10:52 [info] 23475#23475: *122565 client 58.247.212.239 closed keepalive connection (104: Connection reset by peer)
+2020/06/13 10:22:02 [info] 23475#23475: *122569 client 182.254.52.17 closed keepalive connection (104: Connection reset by peer)
+2020/06/13 10:42:53 [info] 23475#23475: *122571 client 182.254.52.17 closed keepalive connection (104: Connection reset by peer)
+2020/06/13 10:45:32 [info] 23475#23475: *122573 client 182.254.52.17 closed keepalive connection (104: Connection reset by peer)
+2020/06/13 12:08:15 [info] 23475#23475: *122586 client 61.241.50.63 closed keepalive connection (104: Connection reset by peer)
+2020/06/13 12:30:42 [info] 23475#23475: *122589 client 182.254.52.17 closed keepalive connection (104: Connection reset by peer)
+2020/06/13 12:30:58 [info] 23475#23475: *122591 client 59.36.132.112 closed keepalive connection
+2020/06/13 12:31:50 [info] 23475#23475: *122593 client 112.96.138.15 closed keepalive connection
+2020/06/13 12:31:50 [info] 23475#23475: *122592 client 112.96.138.15 closed keepalive connection
+2020/06/13 12:31:55 [info] 23475#23475: *122595 client 112.96.138.15 closed keepalive connection
+2020/06/13 12:31:57 [info] 23475#23475: *122596 client 112.96.138.15 closed keepalive connection
+2020/06/13 12:31:58 [info] 23475#23475: *122597 client 112.96.138.15 closed keepalive connection
+2020/06/13 12:32:02 [info] 23475#23475: *122599 client 112.96.138.15 closed keepalive connection
+2020/06/13 12:32:05 [info] 23475#23475: *122601 client 112.96.138.15 closed keepalive connection
+2020/06/13 12:32:07 [info] 23475#23475: *122603 client 112.96.138.15 closed keepalive connection
+2020/06/13 12:32:12 [info] 23475#23475: *122605 epoll_wait() reported that client prematurely closed connection, so upstream connection is closed too while sending request to upstream, client: 112.96.138.15, server: 49.234.78.157, request: "GET /admin/get_rating/ HTTP/1.1", upstream: "uwsgi://127.0.0.1:8001", host: "49.234.78.157", referrer: "http://49.234.78.157/admin/"
+2020/06/13 12:32:14 [info] 23475#23475: *122608 client 112.96.138.15 closed keepalive connection
+2020/06/13 12:32:19 [info] 23475#23475: *122610 client 112.96.138.15 closed keepalive connection
+2020/06/13 12:32:25 [info] 23475#23475: *122613 client 112.96.138.15 closed keepalive connection
+2020/06/13 12:32:25 [info] 23475#23475: *122612 client 112.96.138.15 closed keepalive connection
+2020/06/13 12:32:28 [info] 23475#23475: *122615 client 112.96.138.15 closed keepalive connection
+2020/06/13 12:32:28 [info] 23475#23475: *122616 client 112.96.138.15 closed keepalive connection
+2020/06/13 12:32:28 [info] 23475#23475: *122617 client 112.96.138.15 closed keepalive connection
+2020/06/13 12:32:37 [info] 23475#23475: *122618 client 112.96.138.15 closed keepalive connection
+2020/06/13 12:32:48 [info] 23475#23475: *122620 client 112.96.138.15 closed keepalive connection
+2020/06/13 12:33:17 [info] 23475#23475: *122622 client 112.96.138.15 closed keepalive connection
+2020/06/13 12:33:41 [info] 23475#23475: *122624 client 112.96.138.15 closed keepalive connection
+2020/06/13 12:33:48 [info] 23475#23475: *122626 client 112.96.138.15 closed keepalive connection
+2020/06/13 12:34:05 [info] 23475#23475: *122628 client 112.96.138.15 closed keepalive connection
+2020/06/13 12:34:10 [info] 23475#23475: *122630 client 112.96.138.15 closed keepalive connection
+2020/06/13 12:34:12 [info] 23475#23475: *122632 client 112.96.138.15 closed keepalive connection
+2020/06/13 12:35:02 [info] 23475#23475: *122634 client 112.96.138.15 closed keepalive connection
+2020/06/13 12:35:09 [info] 23475#23475: *122636 client 112.96.138.15 closed keepalive connection
+2020/06/13 12:35:12 [info] 23475#23475: *122638 client 112.96.138.15 closed keepalive connection
+2020/06/13 12:35:16 [info] 23475#23475: *122640 client 112.96.138.15 closed keepalive connection
+2020/06/13 12:35:48 [info] 23475#23475: *122642 client 112.96.138.15 closed keepalive connection
+2020/06/13 12:36:07 [info] 23475#23475: *122644 client 112.96.138.15 closed keepalive connection
+2020/06/13 12:36:25 [info] 23475#23475: *122646 client 112.96.138.15 closed keepalive connection
+2020/06/13 12:36:33 [info] 23475#23475: *122648 client 112.96.138.15 closed keepalive connection
+2020/06/13 12:37:26 [info] 23475#23475: *122650 client 112.96.138.15 closed keepalive connection
+2020/06/13 12:50:31 [info] 23475#23475: *122652 client 182.254.52.17 closed keepalive connection (104: Connection reset by peer)
+2020/06/13 12:53:51 [info] 23475#23475: *122654 client 46.166.151.231 closed keepalive connection
+2020/06/13 13:05:44 [info] 23475#23475: *122658 client 45.164.199.3 closed keepalive connection
+2020/06/13 13:40:40 [info] 23475#23475: *122665 client 101.89.19.140 closed keepalive connection (104: Connection reset by peer)
+2020/06/13 17:04:53 [info] 23475#23475: *122681 client 158.140.185.49 closed keepalive connection
+2020/06/13 18:10:25 [info] 23475#23475: *122690 epoll_wait() reported that client prematurely closed connection, so upstream connection is closed too while connecting to upstream, client: 62.171.152.36, server: 49.234.78.157, request: "GET /logs HTTP/1.0", upstream: "uwsgi://127.0.0.1:8001", host: "49.234.78.157"
+2020/06/13 18:37:49 [info] 23475#23475: *122694 client 112.96.112.16 closed keepalive connection
+2020/06/13 18:59:02 [info] 23475#23475: *122696 client 223.71.167.163 closed keepalive connection
+2020/06/13 19:17:01 [info] 23475#23475: *122698 client 101.251.242.238 closed keepalive connection (104: Connection reset by peer)
+2020/06/13 19:29:38 [info] 23475#23475: *122701 client 112.96.112.16 closed keepalive connection
+2020/06/13 19:29:44 [info] 23475#23475: *122703 epoll_wait() reported that client prematurely closed connection, so upstream connection is closed too while sending request to upstream, client: 112.96.112.16, server: 49.234.78.157, request: "GET /admin/get_rating/ HTTP/1.1", upstream: "uwsgi://127.0.0.1:8001", host: "49.234.78.157", referrer: "http://49.234.78.157/admin/"
+2020/06/13 19:29:46 [info] 23475#23475: *122706 client 112.96.112.16 closed keepalive connection
+2020/06/13 19:29:49 [info] 23475#23475: *122708 client 112.96.112.16 closed keepalive connection
+2020/06/13 19:30:40 [info] 23475#23475: *122710 client 112.96.112.16 closed keepalive connection
+2020/06/13 19:32:55 [info] 23475#23475: *122712 client 112.96.112.16 closed keepalive connection
+2020/06/13 19:46:48 [info] 23475#23475: *122714 client 112.96.112.16 closed keepalive connection
+2020/06/13 19:47:00 [info] 23475#23475: *122716 client 112.96.112.16 closed keepalive connection
+2020/06/13 20:22:32 [info] 23475#23475: *122738 client 113.69.35.100 closed keepalive connection
+2020/06/13 20:57:39 [info] 23475#23475: *122745 client 113.69.35.100 closed keepalive connection
+2020/06/13 20:57:40 [info] 23475#23475: *122748 client 113.69.35.100 closed keepalive connection
+2020/06/13 20:57:44 [info] 23475#23475: *122747 client 113.69.35.100 closed keepalive connection
+2020/06/13 20:57:52 [info] 23475#23475: *122744 client prematurely closed connection while sending response to client, client: 113.69.35.100, server: 49.234.78.157, request: "GET /static/jquery/jquery-1.12.4.js HTTP/1.1", host: "49.234.78.157", referrer: "http://49.234.78.157/admin/view_log/?page=5"
+2020/06/13 20:58:23 [info] 23475#23475: *122752 client 113.69.35.100 closed keepalive connection
+2020/06/13 20:58:27 [info] 23475#23475: *122753 client 113.69.35.100 closed keepalive connection
+2020/06/13 20:58:31 [info] 23475#23475: *122754 client 113.69.35.100 closed keepalive connection
+2020/06/13 20:58:38 [info] 23475#23475: *122750 client 113.69.35.100 closed keepalive connection (104: Connection reset by peer)
+2020/06/14 01:09:42 [info] 23475#23475: *122775 client 170.244.142.2 closed keepalive connection
+2020/06/14 01:30:21 [info] 23475#23475: *122777 client 182.254.52.17 closed keepalive connection (104: Connection reset by peer)
+2020/06/14 01:30:21 [info] 23475#23475: *122779 client 182.254.52.17 closed keepalive connection (104: Connection reset by peer)
+2020/06/14 01:41:38 [info] 23475#23475: *122781 client 183.136.225.44 closed keepalive connection
+2020/06/14 01:42:30 [info] 23475#23475: *122783 client 101.89.19.140 closed keepalive connection (104: Connection reset by peer)
+2020/06/14 01:42:30 [info] 23475#23475: *122785 client 101.89.19.140 closed keepalive connection (104: Connection reset by peer)
+2020/06/14 01:42:30 [info] 23475#23475: *122787 client 101.89.19.140 closed keepalive connection (104: Connection reset by peer)
+2020/06/14 02:19:25 [info] 23475#23475: *122793 client 182.254.52.17 closed keepalive connection (104: Connection reset by peer)
+2020/06/14 02:26:23 [info] 23475#23475: *122795 client 193.118.53.202 closed keepalive connection
+2020/06/14 02:31:16 [info] 23475#23475: *122797 client 185.224.103.1 closed keepalive connection
+2020/06/14 03:09:39 [info] 23475#23475: *122800 client 182.254.52.17 closed keepalive connection (104: Connection reset by peer)
+2020/06/14 03:21:18 [info] 23475#23475: *122802 client 162.243.135.237 closed keepalive connection
+2020/06/14 03:21:27 [info] 23475#23475: *122804 client 182.254.52.17 closed keepalive connection (104: Connection reset by peer)
+2020/06/14 03:21:27 [info] 23475#23475: *122806 client 182.254.52.17 closed keepalive connection (104: Connection reset by peer)
+2020/06/14 03:23:36 [info] 23475#23475: *122808 client 183.192.179.16 closed keepalive connection (104: Connection reset by peer)
+2020/06/14 03:25:38 [info] 23475#23475: *122810 client 59.36.132.240 closed keepalive connection (104: Connection reset by peer)
+2020/06/14 04:08:17 [info] 23475#23475: *122812 client 61.241.50.63 closed keepalive connection (104: Connection reset by peer)
+2020/06/14 05:16:38 [info] 23475#23475: *122820 client 45.79.175.18 closed keepalive connection
+2020/06/14 05:49:26 [info] 23475#23475: *122823 client 182.254.52.17 closed keepalive connection (104: Connection reset by peer)
+2020/06/14 06:21:19 [info] 23475#23475: *122826 client 109.72.192.207 closed keepalive connection (104: Connection reset by peer)
+2020/06/14 06:27:40 [info] 23475#23475: *122828 client 185.107.80.34 closed keepalive connection
+2020/06/14 07:10:32 [info] 23475#23475: *122834 client 103.113.104.248 closed keepalive connection
+2020/06/14 07:11:36 [info] 23475#23475: *122836 client 182.254.52.17 closed keepalive connection (104: Connection reset by peer)
+2020/06/14 07:11:36 [info] 23475#23475: *122838 client 182.254.52.17 closed keepalive connection (104: Connection reset by peer)
+2020/06/14 08:05:41 [info] 23475#23475: *122843 client 83.66.165.227 closed keepalive connection
+2020/06/14 09:31:33 [info] 23475#23475: *122851 client 183.192.179.16 closed keepalive connection (104: Connection reset by peer)
+2020/06/14 09:31:33 [info] 23475#23475: *122853 client 183.192.179.16 closed keepalive connection (104: Connection reset by peer)
+2020/06/14 09:54:50 [info] 23475#23475: *122855 client 59.36.132.11 closed keepalive connection
+2020/06/14 10:46:40 [info] 23475#23475: *122861 client 113.69.35.100 closed keepalive connection
+2020/06/14 10:47:14 [info] 23475#23475: *122871 client 113.69.35.100 closed keepalive connection
+2020/06/14 11:12:20 [info] 23475#23475: *122875 client 183.136.225.57 closed keepalive connection
+2020/06/14 11:29:08 [info] 23475#23475: *122877 client 192.35.168.247 closed keepalive connection (104: Connection reset by peer)
+2020/06/14 11:29:09 [info] 23475#23475: *122879 client 192.35.168.247 closed keepalive connection
+2020/06/14 11:30:46 [info] 23475#23475: *122881 client 182.254.52.17 closed keepalive connection (104: Connection reset by peer)
+2020/06/14 11:30:48 [info] 23475#23475: *122883 client 113.96.246.207 closed keepalive connection
+2020/06/14 12:14:53 [info] 23475#23475: *122886 client 113.96.198.44 closed keepalive connection
+2020/06/14 12:29:55 [info] 23475#23475: *122889 client 113.69.35.141 closed keepalive connection
+2020/06/14 12:29:55 [info] 23475#23475: *122887 client 113.69.35.141 closed keepalive connection
+2020/06/14 12:48:16 [info] 23475#23475: *122893 client 113.69.35.141 closed keepalive connection
+2020/06/14 13:04:46 [info] 23475#23475: *122895 client 113.69.35.141 closed keepalive connection
+2020/06/14 13:19:39 [info] 23475#23475: *122897 client 202.79.34.199 closed keepalive connection
+2020/06/14 15:34:24 [info] 23475#23475: *122917 client 154.204.32.27 closed keepalive connection
+2020/06/14 15:45:16 [info] 23475#23475: *122919 client 185.216.140.6 closed keepalive connection
+2020/06/14 15:46:10 [info] 23475#23475: *122922 client 45.76.144.219 closed keepalive connection
+2020/06/14 15:49:46 [info] 23475#23475: *122924 client 90.182.174.18 closed keepalive connection
+2020/06/14 16:31:55 [info] 23475#23475: *122926 client 151.234.136.35 closed keepalive connection
+2020/06/14 16:48:04 [info] 23475#23475: *122928 client 134.122.109.151 closed keepalive connection
+2020/06/14 17:23:13 [info] 23475#23475: *122951 client 61.241.50.63 closed keepalive connection (104: Connection reset by peer)
+2020/06/14 18:21:19 [info] 23475#23475: *122954 client 183.27.44.99 closed keepalive connection
+2020/06/14 18:21:19 [info] 23475#23475: *122955 client 183.27.44.99 closed keepalive connection
+2020/06/14 18:21:19 [info] 23475#23475: *122957 client 183.27.44.99 closed keepalive connection
+2020/06/14 18:21:19 [info] 23475#23475: *122958 client 183.27.44.99 closed keepalive connection
+2020/06/14 18:23:37 [info] 23475#23475: *122961 client 58.19.100.63 closed keepalive connection
+2020/06/14 18:23:37 [info] 23475#23475: *122959 client 58.19.100.63 closed keepalive connection
+2020/06/14 18:23:37 [info] 23475#23475: *122963 client 58.19.100.63 closed keepalive connection
+2020/06/14 18:23:37 [info] 23475#23475: *122962 client 58.19.100.63 closed keepalive connection
+2020/06/14 18:29:35 [info] 23475#23475: *122964 client 124.95.178.58 closed keepalive connection (104: Connection reset by peer)
+2020/06/14 18:29:39 [info] 23475#23475: *122975 client 124.95.178.58 closed keepalive connection (104: Connection reset by peer)
+2020/06/14 19:02:43 [info] 23475#23475: *122989 client 103.107.58.234 closed keepalive connection
+2020/06/14 19:38:25 [info] 23475#23475: *122991 epoll_wait() reported that client prematurely closed connection, so upstream connection is closed too while sending request to upstream, client: 113.69.35.141, server: 49.234.78.157, request: "GET /admin/get_rating/ HTTP/1.1", upstream: "uwsgi://127.0.0.1:8001", host: "49.234.78.157", referrer: "http://49.234.78.157/admin/"
+2020/06/14 19:38:25 [info] 23475#23475: *122994 epoll_wait() reported that client prematurely closed connection, so upstream connection is closed too while sending request to upstream, client: 113.69.35.141, server: 49.234.78.157, request: "GET /admin/update_rating/ HTTP/1.1", upstream: "uwsgi://127.0.0.1:8001", host: "49.234.78.157", referrer: "http://49.234.78.157/admin/"
+2020/06/14 19:39:12 [info] 23475#23475: *122996 client 113.69.35.141 closed keepalive connection
+2020/06/14 20:28:04 [info] 23475#23475: *123008 client 112.96.181.80 closed keepalive connection
+2020/06/14 20:28:08 [info] 23475#23475: *123009 client 112.96.181.80 closed keepalive connection
+2020/06/14 20:28:10 [info] 23475#23475: *123011 client 112.96.181.80 closed keepalive connection
+2020/06/14 20:28:10 [info] 23475#23475: *123012 client 112.96.181.80 closed keepalive connection
+2020/06/14 20:28:10 [info] 23475#23475: *123014 client 112.96.181.80 closed keepalive connection
+2020/06/14 20:28:10 [info] 23475#23475: *123013 client 112.96.181.80 closed keepalive connection
+2020/06/14 20:28:15 [info] 23475#23475: *123015 epoll_wait() reported that client prematurely closed connection, so upstream connection is closed too while sending request to upstream, client: 112.96.181.80, server: 49.234.78.157, request: "GET /video/search/?wd=SCI&page=1 HTTP/1.1", upstream: "uwsgi://127.0.0.1:8001", host: "49.234.78.157", referrer: "http://49.234.78.157/video/play/84919/1-13.html"
+2020/06/14 20:28:18 [info] 23475#23475: *123017 client 112.96.181.80 closed keepalive connection
+2020/06/14 20:28:24 [info] 23475#23475: *123019 client 112.96.181.80 closed keepalive connection
+2020/06/14 20:28:29 [info] 23475#23475: *123021 client 112.96.181.80 closed keepalive connection
+2020/06/14 20:28:39 [info] 23475#23475: *123023 client 112.96.181.80 closed keepalive connection
+2020/06/14 20:28:41 [info] 23475#23475: *123025 client 112.96.181.80 closed keepalive connection
+2020/06/14 20:28:49 [info] 23475#23475: *123027 client 112.96.181.80 closed keepalive connection
+2020/06/14 20:40:16 [info] 23475#23475: *123029 client 112.96.181.80 closed keepalive connection
+2020/06/14 20:40:19 [info] 23475#23475: *123031 client 112.96.181.80 closed keepalive connection
+2020/06/14 20:40:44 [info] 23475#23475: *123033 client 112.96.181.80 closed keepalive connection
+2020/06/14 20:40:46 [info] 23475#23475: *123035 client 112.96.181.80 closed keepalive connection
+2020/06/14 20:40:53 [info] 23475#23475: *123037 client 112.96.181.80 closed keepalive connection
+2020/06/14 20:43:25 [info] 23475#23475: *123039 client 112.96.181.80 closed keepalive connection
+2020/06/14 20:43:33 [info] 23475#23475: *123041 client 112.96.181.80 closed keepalive connection
+2020/06/14 23:50:42 [info] 23475#23475: *123053 client 185.76.80.228 closed keepalive connection
+2020/06/15 00:34:55 [info] 23475#23475: *123056 client 162.243.138.62 closed keepalive connection
+2020/06/15 02:45:00 [info] 23475#23475: *123108 client 14.215.156.58 closed keepalive connection
+2020/06/15 03:36:38 [info] 23475#23475: *123111 client 59.36.132.240 closed keepalive connection (104: Connection reset by peer)
+2020/06/15 05:32:59 [info] 23475#23475: *123124 client 167.249.78.15 closed keepalive connection
+2020/06/15 12:12:35 [info] 23475#23475: *123152 client 112.96.181.80 closed keepalive connection
+2020/06/15 12:12:53 [info] 23475#23475: *123155 client 112.96.181.80 closed keepalive connection
+2020/06/15 12:12:55 [info] 23475#23475: *123150 client 112.96.181.80 closed keepalive connection
+2020/06/15 12:12:57 [info] 23475#23475: *123154 client 112.96.181.80 closed keepalive connection
+2020/06/15 12:12:57 [info] 23475#23475: *123153 client 112.96.181.80 closed keepalive connection
+2020/06/15 12:13:06 [info] 23475#23475: *123157 epoll_wait() reported that client prematurely closed connection, so upstream connection is closed too while sending request to upstream, client: 112.96.181.80, server: 49.234.78.157, request: "GET /admin/get_rating/ HTTP/1.1", upstream: "uwsgi://127.0.0.1:8001", host: "49.234.78.157", referrer: "http://49.234.78.157/admin/"
+2020/06/15 12:13:08 [info] 23475#23475: *123160 client 112.96.181.80 closed keepalive connection
+2020/06/15 12:13:12 [info] 23475#23475: *123162 client 112.96.181.80 closed keepalive connection
+2020/06/15 12:13:20 [info] 23475#23475: *123164 client 182.254.52.17 closed keepalive connection (104: Connection reset by peer)
+2020/06/15 12:13:25 [info] 23475#23475: *123166 client 112.96.181.80 closed keepalive connection
+2020/06/15 12:13:30 [info] 23475#23475: *123168 client 112.96.181.80 closed keepalive connection
+2020/06/15 12:14:00 [info] 23475#23475: *123170 client 112.96.181.80 closed keepalive connection
+2020/06/15 12:14:04 [info] 23475#23475: *123173 client 112.96.181.80 closed keepalive connection
+2020/06/15 12:14:09 [info] 23475#23475: *123176 client 112.96.181.80 closed keepalive connection
+2020/06/15 12:14:12 [info] 23475#23475: *123180 client 112.96.181.80 closed keepalive connection
+2020/06/15 12:14:48 [info] 23475#23475: *123183 client 112.96.181.80 closed keepalive connection
+2020/06/15 12:15:10 [info] 23475#23475: *123185 client 112.96.181.80 closed keepalive connection
+2020/06/15 12:15:50 [info] 23475#23475: *123188 client 112.96.181.80 closed keepalive connection
+2020/06/15 12:37:28 [info] 23475#23475: *123192 client 162.243.139.140 closed keepalive connection
+2020/06/15 12:43:44 [info] 23475#23475: *123196 client 182.254.52.17 closed keepalive connection (104: Connection reset by peer)
+2020/06/15 13:20:46 [info] 23475#23475: *123204 client 182.254.52.17 closed keepalive connection (104: Connection reset by peer)
+2020/06/15 13:20:46 [info] 23475#23475: *123206 client 182.254.52.17 closed keepalive connection (104: Connection reset by peer)
+2020/06/15 14:21:46 [info] 23475#23475: *123208 client 61.241.50.63 closed keepalive connection (104: Connection reset by peer)
+2020/06/15 15:01:23 [info] 23475#23475: *123210 client 182.254.52.17 closed keepalive connection (104: Connection reset by peer)
+2020/06/15 16:53:39 [info] 23475#23475: *123222 client 89.252.24.121 closed keepalive connection
+2020/06/15 19:25:51 [info] 23475#23475: *123250 client 193.118.53.202 closed keepalive connection
+2020/06/15 19:37:55 [info] 23475#23475: *123252 client 45.180.251.208 closed keepalive connection
+2020/06/15 20:12:36 [info] 23475#23475: *123254 client 183.27.44.99 closed keepalive connection
+2020/06/15 20:13:08 [info] 23475#23475: *123260 client 183.27.44.99 closed keepalive connection
+2020/06/15 21:27:04 [info] 23475#23475: *123272 client 192.35.168.204 closed keepalive connection (104: Connection reset by peer)
+2020/06/15 21:27:04 [info] 23475#23475: *123274 client 192.35.168.204 closed keepalive connection
+2020/06/15 21:36:41 [info] 23475#23475: *123276 client 77.79.153.145 closed keepalive connection
+2020/06/15 22:37:33 [info] 23475#23475: *123278 client 180.243.131.23 closed keepalive connection
+2020/06/16 02:01:53 [info] 23475#23475: *123295 client 196.52.43.124 closed keepalive connection
+2020/06/16 02:22:59 [info] 23475#23475: *123298 client 162.243.142.143 closed keepalive connection
+2020/06/16 03:00:42 [info] 23475#23475: *123302 client 177.128.95.244 closed keepalive connection
+2020/06/16 03:59:15 [info] 23475#23475: *123314 client 182.254.52.17 closed keepalive connection (104: Connection reset by peer)
+2020/06/16 04:05:59 [info] 23475#23475: *123316 client 182.254.52.17 closed keepalive connection (104: Connection reset by peer)
+2020/06/16 04:10:04 [info] 23475#23475: *123318 client 84.195.55.107 closed keepalive connection
+2020/06/16 04:12:39 [info] 23475#23475: *123320 client 182.254.52.17 closed keepalive connection (104: Connection reset by peer)
+2020/06/16 04:19:42 [info] 23475#23475: *123323 client 182.254.52.17 closed keepalive connection (104: Connection reset by peer)
+2020/06/16 04:19:42 [info] 23475#23475: *123325 client 182.254.52.17 closed keepalive connection (104: Connection reset by peer)
+2020/06/16 04:47:12 [info] 23475#23475: *123331 client 182.254.52.17 closed keepalive connection (104: Connection reset by peer)
+2020/06/16 05:05:00 [info] 23475#23475: *123337 client 210.52.224.211 closed keepalive connection
+2020/06/16 05:51:58 [info] 23475#23475: *123348 client 182.254.52.17 closed keepalive connection (104: Connection reset by peer)
+2020/06/16 06:06:13 [info] 23475#23475: *123350 client 182.254.52.17 closed keepalive connection (104: Connection reset by peer)
+2020/06/16 06:19:57 [info] 23475#23475: *123352 client 116.128.128.41 closed keepalive connection (104: Connection reset by peer)
+2020/06/16 06:20:00 [info] 23475#23475: *123354 client 58.247.212.239 closed keepalive connection (104: Connection reset by peer)
+2020/06/16 06:26:21 [info] 23475#23475: *123356 client 182.254.52.17 closed keepalive connection (104: Connection reset by peer)
+2020/06/16 06:26:21 [info] 23475#23475: *123358 client 182.254.52.17 closed keepalive connection (104: Connection reset by peer)
+2020/06/16 06:55:52 [info] 23475#23475: *123360 client 14.215.156.57 closed keepalive connection
+2020/06/16 07:51:56 [info] 23475#23475: *123376 client 193.118.53.210 closed keepalive connection
+2020/06/16 08:12:40 [info] 23475#23475: *123380 client 5.202.150.204 closed keepalive connection
+2020/06/16 08:33:17 [info] 23475#23475: *123384 client 45.76.144.219 closed keepalive connection
+2020/06/16 08:38:49 [info] 23475#23475: *123388 client 183.136.225.57 closed keepalive connection
+2020/06/16 09:18:40 [info] 23475#23475: *123395 client 189.159.36.242 closed keepalive connection
+2020/06/16 09:43:39 [info] 23475#23475: *123397 client 47.108.25.227 closed keepalive connection
+2020/06/16 10:31:05 [info] 23475#23475: *123403 client 80.82.68.71 closed keepalive connection
+2020/06/16 12:33:39 [info] 23475#23475: *123426 client 112.96.181.80 closed keepalive connection
+2020/06/16 12:33:40 [info] 23475#23475: *123423 client 112.96.181.80 closed keepalive connection
+2020/06/16 12:33:40 [info] 23475#23475: *123424 client 112.96.181.80 closed keepalive connection
+2020/06/16 12:33:40 [info] 23475#23475: *123427 client 112.96.181.80 closed keepalive connection
+2020/06/16 13:02:33 [info] 23475#23475: *123437 client 112.96.181.80 closed keepalive connection
+2020/06/16 13:02:33 [info] 23475#23475: *123433 client 112.96.181.80 closed keepalive connection
+2020/06/16 13:02:38 [info] 23475#23475: *123436 client 112.96.181.80 closed keepalive connection
+2020/06/16 13:02:40 [info] 23475#23475: *123435 client 112.96.181.80 closed keepalive connection
+2020/06/16 13:59:26 [info] 23475#23475: *123467 client 112.96.181.80 closed keepalive connection
+2020/06/16 13:59:33 [info] 23475#23475: *123469 client 112.96.181.80 closed keepalive connection
+2020/06/16 13:59:42 [info] 23475#23475: *123471 client 112.96.181.80 closed keepalive connection
+2020/06/16 13:59:55 [info] 23475#23475: *123473 client 112.96.181.80 closed keepalive connection
+2020/06/16 15:31:00 [info] 23475#23475: *123486 client 46.209.57.143 closed keepalive connection
+2020/06/16 16:39:24 [info] 23475#23475: *123504 client 192.35.168.64 closed keepalive connection
+2020/06/16 17:47:40 [info] 23475#23475: *123518 client 185.216.140.6 closed keepalive connection
+2020/06/16 18:20:27 [info] 23475#23475: *123530 client 112.96.181.80 closed keepalive connection
+2020/06/16 18:20:31 [info] 23475#23475: *123533 client 112.96.181.80 closed keepalive connection
+2020/06/16 18:20:32 [info] 23475#23475: *123531 client 112.96.181.80 closed keepalive connection
+2020/06/16 18:22:11 [info] 23475#23475: *123535 client 112.96.181.80 closed keepalive connection
+2020/06/16 19:04:03 [info] 23475#23475: *123543 client 162.243.141.131 closed keepalive connection
+2020/06/16 20:46:35 [info] 23475#23475: *123569 client 58.19.100.251 closed keepalive connection
+2020/06/16 21:29:35 [info] 23475#23475: *123573 client 58.19.100.251 closed keepalive connection
+2020/06/16 21:31:59 [info] 23475#23475: *123575 client 79.23.19.87 closed keepalive connection
+2020/06/16 22:04:55 [info] 23475#23475: *123588 client 113.69.35.20 closed keepalive connection
+2020/06/16 22:04:57 [info] 23475#23475: *123590 client 113.69.35.20 closed keepalive connection
+2020/06/16 22:04:58 [info] 23475#23475: *123587 client 113.69.35.20 closed keepalive connection
+2020/06/16 22:23:43 [info] 23475#23475: *123598 client 58.19.100.251 closed keepalive connection
+2020/06/16 23:02:23 [info] 23475#23475: *123600 client 113.69.35.20 closed keepalive connection (104: Connection reset by peer)
+2020/06/16 23:07:04 [info] 23475#23475: *123601 client 58.19.100.251 closed keepalive connection
+2020/06/17 00:56:51 [info] 23475#23475: *123606 client 101.251.242.238 closed keepalive connection (104: Connection reset by peer)
+2020/06/17 02:46:39 [info] 23475#23475: *123640 client 14.215.156.60 closed keepalive connection
+2020/06/17 03:09:22 [info] 23475#23475: *123642 client 113.96.198.48 closed keepalive connection
+2020/06/17 03:28:49 [info] 23475#23475: *123643 client 80.82.68.67 closed keepalive connection
+2020/06/17 04:07:54 [info] 23475#23475: *123653 client 59.36.132.105 closed keepalive connection
+2020/06/17 06:23:41 [info] 23475#23475: *123660 client 190.104.46.113 closed keepalive connection
+2020/06/17 07:01:22 [info] 23475#23475: *123671 client 193.118.53.138 closed keepalive connection
+2020/06/17 08:20:48 [info] 23475#23475: *123690 client 182.254.52.17 closed keepalive connection (104: Connection reset by peer)
+2020/06/17 10:09:34 [info] 23475#23475: *123704 client 103.24.107.230 closed keepalive connection
+2020/06/17 10:09:34 [info] 23475#23475: *123706 client 103.24.107.230 closed keepalive connection
+2020/06/17 10:39:06 [info] 23475#23475: *123708 client 46.242.49.44 closed keepalive connection
+2020/06/17 11:14:19 [info] 23475#23475: *123715 client 178.220.228.169 closed keepalive connection
+2020/06/17 11:37:56 [info] 23475#23475: *123718 client 112.96.181.80 closed keepalive connection
+2020/06/17 11:37:56 [info] 23475#23475: *123720 client 112.96.181.80 closed keepalive connection
+2020/06/17 11:37:58 [info] 23475#23475: *123721 client 112.96.181.80 closed keepalive connection
+2020/06/17 11:38:00 [info] 23475#23475: *123723 client 112.96.181.80 closed keepalive connection
+2020/06/17 11:38:29 [info] 23475#23475: *123724 client 112.96.181.80 closed keepalive connection
+2020/06/17 11:38:29 [info] 23475#23475: *123725 client 112.96.181.80 closed keepalive connection
+2020/06/17 11:38:31 [info] 23475#23475: *123728 client 112.96.181.80 closed keepalive connection
+2020/06/17 11:38:31 [info] 23475#23475: *123729 client 112.96.181.80 closed keepalive connection
+2020/06/17 11:38:32 [info] 23475#23475: *123727 client 112.96.181.80 closed keepalive connection
+2020/06/17 12:28:37 [info] 23475#23475: *123731 client 112.96.181.80 closed keepalive connection
+2020/06/17 12:28:37 [info] 23475#23475: *123734 client prematurely closed connection (32: Broken pipe) while sending response to client, client: 112.96.181.80, server: 49.234.78.157, request: "GET /static/plugins/DPlayer/DPlayer.min.js HTTP/1.1", host: "49.234.78.157", referrer: "http://49.234.78.157/video/play/53532/"
+2020/06/17 12:28:41 [info] 23475#23475: *123735 client 112.96.181.80 closed keepalive connection
+2020/06/17 12:28:41 [info] 23475#23475: *123737 client 112.96.181.80 closed keepalive connection
+2020/06/17 13:15:13 [info] 23475#23475: *123744 client 95.70.173.243 closed keepalive connection
+2020/06/17 14:48:05 [info] 23475#23475: *123770 client 43.249.192.227 closed keepalive connection (104: Connection reset by peer)
+2020/06/17 15:16:13 [info] 23475#23475: *123775 epoll_wait() reported that client prematurely closed connection, so upstream connection is closed too while connecting to upstream, client: 222.67.184.153, server: 49.234.78.157, request: "GET / HTTP/1.1", upstream: "uwsgi://127.0.0.1:8001", host: "49.234.78.157:80"
+2020/06/17 17:03:04 [info] 23475#23475: *123787 client 101.89.19.140 closed keepalive connection (104: Connection reset by peer)
+2020/06/17 17:33:53 [info] 23475#23475: *123795 client 71.6.232.4 closed keepalive connection
+2020/06/17 17:34:35 [info] 23475#23475: *123797 client 182.254.52.17 closed keepalive connection (104: Connection reset by peer)
+2020/06/17 19:06:47 [info] 23475#23475: *123813 client 58.19.100.251 closed keepalive connection
+2020/06/17 19:51:17 [info] 23475#23475: *123817 client 58.19.100.251 closed keepalive connection
+2020/06/17 19:55:44 [info] 23475#23475: *123819 client 36.82.97.177 closed keepalive connection (104: Connection reset by peer)
+2020/06/17 20:37:13 [info] 23475#23475: *123822 client 58.19.100.251 closed keepalive connection
+2020/06/17 21:19:39 [info] 23475#23475: *123829 client 58.19.100.251 closed keepalive connection
+2020/06/17 21:35:18 [info] 23475#23475: *123839 client 162.250.112.176 closed keepalive connection
+2020/06/17 22:18:34 [info] 23475#23475: *123841 client 190.237.218.135 closed keepalive connection (104: Connection reset by peer)
+2020/06/17 22:25:30 [info] 23475#23475: *123843 client 41.60.239.43 closed keepalive connection
+2020/06/17 22:28:06 [info] 23475#23475: *123845 client 113.69.35.20 closed keepalive connection
+2020/06/17 23:54:24 [info] 23475#23475: *123856 client 113.69.35.20 closed keepalive connection
+2020/06/17 23:54:27 [info] 23475#23475: *123853 client 113.69.35.20 closed keepalive connection
+2020/06/17 23:54:29 [info] 23475#23475: *123852 client 113.69.35.20 closed keepalive connection (104: Connection reset by peer)
+2020/06/17 23:54:29 [info] 23475#23475: *123855 client 113.69.35.20 closed keepalive connection (104: Connection reset by peer)
+2020/06/17 23:58:48 [info] 23475#23475: *123858 client 103.78.183.111 closed keepalive connection
+2020/06/18 02:53:50 [info] 23475#23475: *123864 client 168.232.14.86 closed keepalive connection
+2020/06/18 04:37:53 [info] 23475#23475: *123872 client 41.192.223.198 closed keepalive connection (104: Connection reset by peer)
+2020/06/18 05:10:16 [info] 23475#23475: *123874 client 45.124.147.34 closed keepalive connection
+2020/06/18 05:47:57 [info] 23475#23475: *123878 client 5.153.180.250 closed keepalive connection
+2020/06/18 06:01:11 [info] 23475#23475: *123880 client 182.254.52.17 closed keepalive connection (104: Connection reset by peer)
+2020/06/18 06:17:40 [info] 23475#23475: *123883 client 151.75.129.12 closed keepalive connection (104: Connection reset by peer)
+2020/06/18 06:36:41 [info] 23475#23475: *123885 client 128.14.133.58 closed keepalive connection
+2020/06/18 06:46:06 [info] 23475#23475: *123887 client 59.36.132.240 closed keepalive connection (104: Connection reset by peer)
+2020/06/18 08:54:49 [info] 23475#23475: *123923 client 182.254.52.17 closed keepalive connection (104: Connection reset by peer)
+2020/06/18 09:06:34 [info] 23475#23475: *123925 client 182.254.52.17 closed keepalive connection (104: Connection reset by peer)
+2020/06/18 09:58:23 [info] 23475#23475: *123976 client 182.254.52.17 closed keepalive connection (104: Connection reset by peer)
+2020/06/18 10:02:46 [info] 23475#23475: *123978 client 183.136.225.57 closed keepalive connection
+2020/06/18 11:32:07 [info] 23475#23475: *123992 client 112.96.181.80 closed keepalive connection
+2020/06/18 11:32:07 [info] 23475#23475: *123991 client 112.96.181.80 closed keepalive connection
+2020/06/18 11:32:11 [info] 23475#23475: *123994 client 112.96.181.80 closed keepalive connection
+2020/06/18 11:33:21 [info] 23475#23475: *123997 client 112.96.181.80 closed keepalive connection
+2020/06/18 11:34:38 [info] 23475#23475: *123999 client 112.96.181.80 closed keepalive connection
+2020/06/18 11:47:08 [info] 23475#23475: *124001 client 112.96.181.80 closed keepalive connection
+2020/06/18 12:11:57 [info] 23475#23475: *124003 client 112.96.181.80 closed keepalive connection
+2020/06/18 12:18:37 [info] 23475#23475: *124007 client 192.35.168.203 closed keepalive connection (104: Connection reset by peer)
+2020/06/18 12:18:38 [info] 23475#23475: *124009 client 192.35.168.203 closed keepalive connection
+2020/06/18 12:32:29 [info] 23475#23475: *124011 client 112.96.181.80 closed keepalive connection
+2020/06/18 12:58:18 [info] 23475#23475: *124020 client 103.220.29.226 closed keepalive connection
+2020/06/18 14:52:21 [info] 23475#23475: *124029 client 77.242.128.69 closed keepalive connection
+2020/06/18 15:08:29 [info] 23475#23475: *124032 client 103.119.164.23 closed keepalive connection
+2020/06/18 16:38:49 [info] 23475#23475: *124042 client 112.96.181.80 closed keepalive connection
+2020/06/18 16:38:50 [info] 23475#23475: *124041 client 112.96.181.80 closed keepalive connection
+2020/06/18 16:38:53 [info] 23475#23475: *124045 client 112.96.181.80 closed keepalive connection
+2020/06/18 16:38:55 [info] 23475#23475: *124046 client 112.96.181.80 closed keepalive connection
+2020/06/18 16:38:55 [info] 23475#23475: *124047 client 112.96.181.80 closed keepalive connection
+2020/06/18 16:38:55 [info] 23475#23475: *124044 client 112.96.181.80 closed keepalive connection
+2020/06/18 16:54:11 [info] 23475#23475: *124048 client 60.211.253.218 closed keepalive connection
+2020/06/18 17:42:13 [info] 23475#23475: *124054 client 212.100.154.74 closed keepalive connection
+2020/06/18 18:55:43 [info] 23475#23475: *124057 client 162.243.136.27 closed keepalive connection
+2020/06/18 19:45:56 [info] 23475#23475: *124062 client 61.241.50.63 closed keepalive connection (104: Connection reset by peer)
+2020/06/18 20:26:24 [info] 23475#23475: *124069 client 58.19.100.251 closed keepalive connection
+2020/06/18 21:44:50 [info] 23475#23475: *124071 client 162.243.138.45 closed keepalive connection
+2020/06/18 22:29:55 [info] 23475#23475: *124083 client 78.173.221.58 closed keepalive connection
+2020/06/18 23:13:30 [info] 23475#23475: *124087 client 58.19.100.251 closed keepalive connection
+2020/06/18 23:41:27 [info] 23475#23475: *124093 client 218.94.29.60 closed keepalive connection
+2020/06/18 23:45:44 [info] 23475#23475: *124098 client 77.78.200.56 closed keepalive connection
+2020/06/19 00:18:20 [info] 23475#23475: *124100 client 182.254.52.17 closed keepalive connection (104: Connection reset by peer)
+2020/06/19 00:24:04 [info] 23475#23475: *124102 client 14.215.156.115 closed keepalive connection
+2020/06/19 00:25:38 [info] 23475#23475: *124103 client 198.217.126.1 closed keepalive connection
+2020/06/19 00:35:05 [info] 23475#23475: *124105 client 113.96.246.184 closed keepalive connection
+2020/06/19 00:50:09 [info] 23475#23475: *124106 client 45.76.144.219 closed keepalive connection
+2020/06/19 02:20:09 [info] 23475#23475: *124112 client 107.6.150.242 closed keepalive connection
+2020/06/19 02:28:00 [info] 23475#23475: *124114 client 45.182.136.241 closed keepalive connection
+2020/06/19 02:58:54 [info] 23475#23475: *124117 client 128.14.134.170 closed keepalive connection
+2020/06/19 03:57:21 [info] 23475#23475: *124119 client 182.254.52.17 closed keepalive connection (104: Connection reset by peer)
+2020/06/19 04:59:01 [info] 23475#23475: *124125 client 180.247.53.141 closed keepalive connection
+2020/06/19 05:35:54 [info] 23475#23475: *124133 client 82.61.131.40 closed keepalive connection
+2020/06/19 06:47:34 [info] 23475#23475: *124141 client 182.254.52.17 closed keepalive connection (104: Connection reset by peer)
+2020/06/19 08:47:59 [info] 23475#23475: *124154 client 103.42.255.111 closed keepalive connection
+2020/06/19 09:20:08 [info] 23475#23475: *124159 client 210.52.224.199 closed keepalive connection
+2020/06/19 10:28:41 [info] 23475#23475: *124169 client 182.254.52.17 closed keepalive connection (104: Connection reset by peer)
+2020/06/19 10:51:08 [info] 23475#23475: *124175 client 71.6.146.130 closed keepalive connection (104: Connection reset by peer)
+2020/06/19 10:51:14 [info] 23475#23475: *124179 client 71.6.146.130 closed keepalive connection
+2020/06/19 10:51:37 [info] 23475#23475: *124171 client 71.6.146.130 closed keepalive connection
+2020/06/19 11:14:03 [info] 23475#23475: *124181 client 61.241.50.63 closed keepalive connection (104: Connection reset by peer)
+2020/06/19 11:41:15 [info] 23475#23475: *124183 client 183.136.225.44 closed keepalive connection
+2020/06/19 12:12:58 [info] 23475#23475: *124214 client 112.96.176.74 closed keepalive connection
+2020/06/19 12:13:02 [info] 23475#23475: *124217 client 112.96.176.74 closed keepalive connection
+2020/06/19 12:13:10 [info] 23475#23475: *124221 client 112.96.176.74 closed keepalive connection
+2020/06/19 12:13:10 [info] 23475#23475: *124218 client 112.96.176.74 closed keepalive connection
+2020/06/19 12:13:12 [info] 23475#23475: *124215 client 112.96.176.74 closed keepalive connection
+2020/06/19 12:13:18 [info] 23475#23475: *124220 client 112.96.176.74 closed keepalive connection
+2020/06/19 12:26:49 [info] 23475#23475: *124226 client 14.18.182.223 closed keepalive connection (104: Connection reset by peer)
+2020/06/19 12:56:30 [info] 23475#23475: *124232 client 83.58.242.242 closed keepalive connection
+2020/06/19 13:13:32 [info] 23475#23475: *124234 client 197.250.7.20 closed keepalive connection
+2020/06/19 13:16:51 [info] 23475#23475: *124236 client 182.254.52.17 closed keepalive connection (104: Connection reset by peer)
+2020/06/19 13:40:43 [info] 23475#23475: *124238 client 128.14.134.134 closed keepalive connection
+2020/06/19 15:47:38 [info] 23475#23475: *124254 client 61.241.50.63 closed keepalive connection (104: Connection reset by peer)
+2020/06/19 15:59:14 [info] 23475#23475: *124256 client 92.118.161.41 closed keepalive connection
+2020/06/19 16:06:35 [info] 23475#23475: *124258 client 58.247.212.239 closed keepalive connection (104: Connection reset by peer)
+2020/06/19 16:08:32 [info] 23475#23475: *124260 client 182.254.52.17 closed keepalive connection (104: Connection reset by peer)
+2020/06/19 16:29:00 [info] 23475#23475: *124267 client 116.128.128.41 closed keepalive connection (104: Connection reset by peer)
+2020/06/19 16:56:00 [info] 23475#23475: *124269 client 182.254.52.17 closed keepalive connection (104: Connection reset by peer)
+2020/06/19 17:19:59 [info] 23475#23475: *124273 client 182.254.52.17 closed keepalive connection (104: Connection reset by peer)
+2020/06/19 17:25:04 [info] 23475#23475: *124275 client 182.254.52.17 closed keepalive connection (104: Connection reset by peer)
+2020/06/19 18:01:20 [info] 23475#23475: *124279 client 182.254.52.17 closed keepalive connection (104: Connection reset by peer)
+2020/06/19 18:04:56 [info] 23475#23475: *124281 client 182.254.52.17 closed keepalive connection (104: Connection reset by peer)
+2020/06/19 18:10:01 [info] 23475#23475: *124284 client 182.254.52.17 closed keepalive connection (104: Connection reset by peer)
+2020/06/19 18:34:23 [info] 23475#23475: *124286 client 43.229.72.90 closed keepalive connection (104: Connection reset by peer)
+2020/06/19 19:31:04 [info] 23475#23475: *124289 client 195.54.43.185 closed keepalive connection
+2020/06/19 20:23:29 [info] 23475#23475: *124293 client 182.254.52.17 closed keepalive connection (104: Connection reset by peer)
+2020/06/19 20:59:35 [info] 23475#23475: *124295 client 182.254.52.17 closed keepalive connection (104: Connection reset by peer)
+2020/06/19 21:07:52 [info] 23475#23475: *124297 client 45.9.148.91 closed keepalive connection
+2020/06/19 21:12:26 [info] 23475#23475: *124299 client 162.243.136.135 closed keepalive connection
+2020/06/19 21:15:53 [info] 23475#23475: *124301 client 222.84.65.21 closed keepalive connection
+2020/06/19 22:12:50 [info] 23475#23475: *124303 client 182.254.52.17 closed keepalive connection (104: Connection reset by peer)
+2020/06/19 22:37:41 [info] 23475#23475: *124306 client 168.232.13.38 closed keepalive connection
+2020/06/19 22:47:53 [info] 23475#23475: *124308 client 182.254.52.17 closed keepalive connection (104: Connection reset by peer)
+2020/06/19 23:13:18 [info] 23475#23475: *124310 client 89.99.122.111 closed keepalive connection
+2020/06/19 23:54:48 [info] 23475#23475: *124313 client 117.88.223.204 closed keepalive connection
+2020/06/20 01:11:36 [info] 23475#23475: *124329 client 193.118.53.138 closed keepalive connection
+2020/06/20 02:09:26 [info] 23475#23475: *124332 client 162.243.137.66 closed keepalive connection
+2020/06/20 02:28:35 [info] 23475#23475: *124338 client 101.251.242.238 closed keepalive connection (104: Connection reset by peer)
+2020/06/20 02:51:36 [info] 23475#23475: *124342 client 14.18.173.125 closed keepalive connection
+2020/06/20 04:01:03 [info] 23475#23475: *124347 client 182.254.52.17 closed keepalive connection (104: Connection reset by peer)
+2020/06/20 04:08:22 [info] 23475#23475: *124349 client 182.254.52.17 closed keepalive connection (104: Connection reset by peer)
+2020/06/20 04:43:27 [info] 23475#23475: *124353 client 80.82.68.17 closed keepalive connection
+2020/06/20 04:46:14 [info] 23475#23475: *124357 client 182.254.52.17 closed keepalive connection (104: Connection reset by peer)
+2020/06/20 06:42:58 [info] 23475#23475: *124362 client 182.254.52.17 closed keepalive connection (104: Connection reset by peer)
+2020/06/20 07:05:12 [info] 23475#23475: *124366 client 94.102.49.193 closed keepalive connection
+2020/06/20 07:05:13 [info] 23475#23475: *124368 client 94.102.49.193 closed keepalive connection (104: Connection reset by peer)
+2020/06/20 07:05:13 [info] 23475#23475: *124370 client 94.102.49.193 closed keepalive connection (104: Connection reset by peer)
+2020/06/20 07:05:14 [info] 23475#23475: *124372 client 94.102.49.193 closed keepalive connection (104: Connection reset by peer)
+2020/06/20 07:05:15 [info] 23475#23475: *124374 client 94.102.49.193 closed keepalive connection
+2020/06/20 07:27:44 [info] 23475#23475: *124378 client 182.254.52.17 closed keepalive connection (104: Connection reset by peer)
+2020/06/20 08:52:17 [info] 23475#23475: *124383 client 182.254.52.17 closed keepalive connection (104: Connection reset by peer)
+2020/06/20 10:06:43 [info] 23475#23475: *124391 client 61.241.50.63 closed keepalive connection (104: Connection reset by peer)
+2020/06/20 10:21:56 [info] 23475#23475: *124393 client 164.163.217.138 closed keepalive connection
+2020/06/20 11:18:22 [info] 23475#23475: *124397 client 103.84.4.79 closed keepalive connection
+2020/06/20 11:48:16 [info] 23475#23475: *124400 client 112.96.180.83 closed keepalive connection
+2020/06/20 11:48:20 [info] 23475#23475: *124401 client 112.96.180.83 closed keepalive connection
+2020/06/20 11:48:22 [info] 23475#23475: *124404 client 112.96.180.83 closed keepalive connection
+2020/06/20 11:48:24 [info] 23475#23475: *124405 client 112.96.180.83 closed keepalive connection
+2020/06/20 11:48:49 [info] 23475#23475: *124403 client 112.96.180.83 closed keepalive connection (104: Connection reset by peer)
+2020/06/20 12:13:06 [info] 23475#23475: *124407 client 183.136.225.57 closed keepalive connection
+2020/06/20 12:26:53 [info] 23475#23475: *124409 client 197.245.79.126 closed keepalive connection
+2020/06/20 12:39:43 [info] 23475#23475: *124411 client 185.153.196.226 closed keepalive connection
+2020/06/20 13:04:22 [info] 23475#23475: *124413 client 91.204.250.45 closed keepalive connection
+2020/06/20 13:44:16 [info] 23475#23475: *124419 client 112.96.180.83 closed keepalive connection
+2020/06/20 13:44:16 [info] 23475#23475: *124420 client 112.96.180.83 closed keepalive connection
+2020/06/20 13:44:16 [info] 23475#23475: *124422 client 112.96.180.83 closed keepalive connection
+2020/06/20 13:44:30 [info] 23475#23475: *124427 client 112.96.180.83 closed keepalive connection
+2020/06/20 13:44:31 [info] 23475#23475: *124425 client 112.96.180.83 closed keepalive connection
+2020/06/20 13:44:39 [info] 23475#23475: *124428 client 112.96.180.83 closed keepalive connection
+2020/06/20 13:44:42 [info] 23475#23475: *124430 client 112.96.180.83 closed keepalive connection
+2020/06/20 14:02:22 [info] 23475#23475: *124432 client 104.218.49.98 closed keepalive connection
+2020/06/20 14:02:22 [info] 23475#23475: *124434 client 104.218.49.98 closed keepalive connection
+2020/06/20 14:10:11 [info] 23475#23475: *124436 client 190.112.184.45 closed keepalive connection
+2020/06/20 14:21:51 [info] 23475#23475: *124438 client 58.19.100.251 closed keepalive connection
+2020/06/20 14:43:33 [info] 23475#23475: *124440 client 182.254.52.17 closed keepalive connection (104: Connection reset by peer)
+2020/06/20 15:04:32 [info] 23475#23475: *124442 client 58.19.100.251 closed keepalive connection
+2020/06/20 15:58:31 [info] 23475#23475: *124445 client 112.96.180.83 closed keepalive connection
+2020/06/20 15:58:42 [info] 23475#23475: *124446 client 182.254.52.17 closed keepalive connection (104: Connection reset by peer)
+2020/06/20 16:27:51 [info] 23475#23475: *124448 client 58.19.100.251 closed keepalive connection
+2020/06/20 16:33:39 [info] 23475#23475: *124453 client 112.96.180.83 closed keepalive connection
+2020/06/20 16:36:21 [info] 23475#23475: *124457 client 182.254.52.17 closed keepalive connection (104: Connection reset by peer)
+2020/06/20 17:43:59 [info] 23475#23475: *124473 client 58.19.100.251 closed keepalive connection
+2020/06/20 19:04:43 [info] 23475#23475: *124477 client 45.76.144.219 closed keepalive connection
+2020/06/20 19:12:01 [info] 23475#23475: *124480 client 162.243.137.202 closed keepalive connection
+2020/06/20 19:16:27 [info] 23475#23475: *124482 client 201.159.54.252 closed keepalive connection
+2020/06/20 19:48:21 [info] 23475#23475: *124486 client 58.19.100.251 closed keepalive connection
+2020/06/20 20:50:18 [info] 23475#23475: *124489 client 58.19.100.251 closed keepalive connection
+2020/06/20 22:32:33 [info] 23475#23475: *124497 client 89.169.32.162 closed keepalive connection
+2020/06/20 22:38:19 [info] 23475#23475: *124501 client 190.133.232.253 closed keepalive connection
+2020/06/20 23:52:36 [info] 23475#23475: *124507 client 89.248.174.215 closed keepalive connection
+2020/06/20 23:56:11 [info] 23475#23475: *124509 client 89.248.174.215 closed keepalive connection
+2020/06/20 23:59:46 [info] 23475#23475: *124511 client 89.248.174.215 closed keepalive connection
+2020/06/21 00:05:15 [info] 23475#23475: *124515 client 89.248.174.215 closed keepalive connection
+2020/06/21 00:13:50 [info] 23475#23475: *124517 client 89.248.174.215 closed keepalive connection
+2020/06/21 00:20:39 [info] 23475#23475: *124519 client prematurely closed connection, client: 103.84.4.191, server: 49.234.78.157, request: "POST /HNAP1/ HTTP/1.0", host: "49.234.78.157:80"
+2020/06/21 00:22:19 [info] 23475#23475: *124520 client 89.248.174.215 closed keepalive connection
+2020/06/21 00:30:38 [info] 23475#23475: *124522 client 89.248.174.215 closed keepalive connection
+2020/06/21 00:34:39 [info] 23475#23475: *124524 client 89.248.174.215 closed keepalive connection
+2020/06/21 00:38:21 [info] 23475#23475: *124526 client 89.248.174.215 closed keepalive connection
+2020/06/21 00:42:02 [info] 23475#23475: *124528 client 89.248.174.215 closed keepalive connection
+2020/06/21 00:49:14 [info] 23475#23475: *124530 client 89.248.174.215 closed keepalive connection
+2020/06/21 00:57:30 [info] 23475#23475: *124532 client 89.248.174.215 closed keepalive connection
+2020/06/21 01:05:46 [info] 23475#23475: *124534 client 89.248.174.215 closed keepalive connection
+2020/06/21 01:13:03 [info] 23475#23475: *124536 client 89.248.174.215 closed keepalive connection
+2020/06/21 01:16:39 [info] 23475#23475: *124538 client 89.248.174.215 closed keepalive connection
+2020/06/21 01:20:15 [info] 23475#23475: *124540 client 89.248.174.215 closed keepalive connection
+2020/06/21 01:24:04 [info] 23475#23475: *124542 client 89.248.174.215 closed keepalive connection
+2020/06/21 01:32:24 [info] 23475#23475: *124544 client 89.248.174.215 closed keepalive connection
+2020/06/21 01:40:51 [info] 23475#23475: *124546 client 89.248.174.215 closed keepalive connection
+2020/06/21 01:49:10 [info] 23475#23475: *124548 client 89.248.174.215 closed keepalive connection
+2020/06/21 01:55:14 [info] 23475#23475: *124550 client 89.248.174.215 closed keepalive connection
+2020/06/21 01:58:55 [info] 23475#23475: *124553 client 89.248.174.215 closed keepalive connection
+2020/06/21 02:02:35 [info] 23475#23475: *124555 client 89.248.174.215 closed keepalive connection
+2020/06/21 02:07:36 [info] 23475#23475: *124557 client 89.248.174.215 closed keepalive connection
+2020/06/21 02:19:20 [info] 23475#23475: *124559 client 182.254.52.17 closed keepalive connection (104: Connection reset by peer)
+2020/06/21 02:19:20 [info] 23475#23475: *124561 client 182.254.52.17 closed keepalive connection (104: Connection reset by peer)
+2020/06/21 02:21:51 [info] 23475#23475: *124563 client 182.254.52.17 closed keepalive connection (104: Connection reset by peer)
+2020/06/21 04:18:47 [info] 23475#23475: *124567 client 184.154.74.66 closed keepalive connection
+2020/06/21 04:20:37 [info] 23475#23475: *124569 client 179.106.102.160 closed keepalive connection
+2020/06/21 06:03:53 [info] 23475#23475: *124574 client 182.254.52.17 closed keepalive connection (104: Connection reset by peer)
+2020/06/21 06:15:00 [info] 23475#23475: *124577 client 182.254.52.17 closed keepalive connection (104: Connection reset by peer)
+2020/06/21 07:02:20 [info] 23475#23475: *125035 client 182.254.52.17 closed keepalive connection (104: Connection reset by peer)
+2020/06/21 07:40:22 [info] 23475#23475: *125037 client 202.51.71.196 closed keepalive connection
+2020/06/21 07:43:09 [info] 23475#23475: *125039 client 182.254.52.17 closed keepalive connection (104: Connection reset by peer)
+2020/06/21 08:00:21 [info] 23475#23475: *125041 client 218.214.219.120 closed keepalive connection
+2020/06/21 08:24:15 [info] 23475#23475: *125044 client 162.243.138.178 closed keepalive connection
+2020/06/21 09:26:04 [info] 23475#23475: *125051 client 182.254.52.17 closed keepalive connection (104: Connection reset by peer)
+2020/06/21 09:54:52 [info] 23475#23475: *125055 client 113.69.35.21 closed keepalive connection
+2020/06/21 09:54:52 [info] 23475#23475: *125054 client 113.69.35.21 closed keepalive connection
+2020/06/21 09:54:52 [info] 23475#23475: *125058 client 113.69.35.21 closed keepalive connection
+2020/06/21 09:54:52 [info] 23475#23475: *125057 client 113.69.35.21 closed keepalive connection
+2020/06/21 10:30:32 [info] 23475#23475: *125063 client 113.69.35.21 closed keepalive connection
+2020/06/21 10:30:34 [info] 23475#23475: *125061 client 113.69.35.21 closed keepalive connection
+2020/06/21 10:30:37 [info] 23475#23475: *125062 client 113.69.35.21 closed keepalive connection
+2020/06/21 10:30:38 [info] 23475#23475: *125059 client 113.69.35.21 closed keepalive connection
+2020/06/21 10:49:00 [info] 23475#23475: *125072 client 180.167.210.6 closed keepalive connection (104: Connection reset by peer)
+2020/06/21 10:49:00 [info] 23475#23475: *125078 client 180.167.210.6 closed keepalive connection (104: Connection reset by peer)
+2020/06/21 10:49:00 [info] 23475#23475: *125080 client 180.167.210.6 closed keepalive connection (104: Connection reset by peer)
+2020/06/21 10:49:00 [info] 23475#23475: *125076 client 180.167.210.6 closed keepalive connection
+2020/06/21 10:49:00 [info] 23475#23475: *125074 client 180.167.210.6 closed keepalive connection (104: Connection reset by peer)
+2020/06/21 10:49:01 [info] 23475#23475: *125088 client 180.167.210.6 closed keepalive connection (104: Connection reset by peer)
+2020/06/21 10:49:01 [info] 23475#23475: *125086 client 180.167.210.6 closed keepalive connection (104: Connection reset by peer)
+2020/06/21 10:49:01 [info] 23475#23475: *125092 client 180.167.210.6 closed keepalive connection
+2020/06/21 10:49:01 [info] 23475#23475: *125090 client 180.167.210.6 closed keepalive connection
+2020/06/21 10:49:01 [info] 23475#23475: *125082 client 180.167.210.6 closed keepalive connection (104: Connection reset by peer)
+2020/06/21 10:49:01 [info] 23475#23475: *125084 client 180.167.210.6 closed keepalive connection (104: Connection reset by peer)
+2020/06/21 10:55:31 [info] 23475#23475: *125094 client 125.164.141.171 closed keepalive connection (104: Connection reset by peer)
+2020/06/21 11:27:51 [info] 23475#23475: *125102 client 113.69.35.21 closed keepalive connection
+2020/06/21 11:27:51 [info] 23475#23475: *125103 client 113.69.35.21 closed keepalive connection
+2020/06/21 11:27:51 [info] 23475#23475: *125100 client 113.69.35.21 closed keepalive connection
+2020/06/21 12:07:17 [info] 23475#23475: *125105 client 62.29.105.239 closed keepalive connection
+2020/06/21 13:13:27 [info] 23475#23475: *125111 client 182.254.52.17 closed keepalive connection (104: Connection reset by peer)
+2020/06/21 13:37:13 [info] 23475#23475: *125113 client 183.3.255.16 closed keepalive connection
+2020/06/21 14:39:05 [info] 23475#23475: *125114 client 58.19.100.251 closed keepalive connection
+2020/06/21 14:46:54 [info] 23475#23475: *125118 client 182.254.52.17 closed keepalive connection (104: Connection reset by peer)
+2020/06/21 16:33:39 [info] 23475#23475: *125128 client 58.19.100.251 closed keepalive connection
+2020/06/21 16:51:26 [info] 23475#23475: *125130 client 196.207.173.248 closed keepalive connection
+2020/06/21 17:27:34 [info] 23475#23475: *125136 client 112.96.173.16 closed keepalive connection
+2020/06/21 17:27:35 [info] 23475#23475: *125137 client 112.96.173.16 closed keepalive connection
+2020/06/21 17:27:38 [info] 23475#23475: *125141 client 112.96.173.16 closed keepalive connection
+2020/06/21 17:27:38 [info] 23475#23475: *125139 client 112.96.173.16 closed keepalive connection
+2020/06/21 17:27:39 [info] 23475#23475: *125140 client 112.96.173.16 closed keepalive connection
+2020/06/21 17:38:12 [info] 23475#23475: *125142 client 58.19.100.251 closed keepalive connection
+2020/06/21 18:08:19 [info] 23475#23475: *125144 client 151.235.200.194 closed keepalive connection
+2020/06/21 18:27:46 [info] 23475#23475: *125150 client 81.30.182.203 closed keepalive connection
+2020/06/21 18:32:07 [info] 23475#23475: *125154 client 58.19.100.251 closed keepalive connection
+2020/06/21 18:32:07 [info] 23475#23475: *125155 client 58.19.100.251 closed keepalive connection
+2020/06/21 18:32:07 [info] 23475#23475: *125152 client 58.19.100.251 closed keepalive connection
+2020/06/21 18:32:07 [info] 23475#23475: *125156 client 58.19.100.251 closed keepalive connection
+2020/06/21 19:34:30 [info] 23475#23475: *125159 client 162.243.139.93 closed keepalive connection
+2020/06/21 20:36:00 [info] 23475#23475: *125163 client 88.205.135.204 closed keepalive connection
+2020/06/21 22:24:59 [info] 23475#23475: *125178 client 192.35.168.204 closed keepalive connection (104: Connection reset by peer)
+2020/06/21 22:25:02 [info] 23475#23475: *125180 client 192.35.168.204 closed keepalive connection
+2020/06/21 22:48:51 [info] 23475#23475: *125182 client 58.19.100.251 closed keepalive connection
+2020/06/22 00:38:42 [info] 23475#23475: *125237 client 162.243.140.180 closed keepalive connection
+2020/06/22 01:31:41 [info] 23475#23475: *125291 client 174.96.14.245 closed keepalive connection
+2020/06/22 01:33:53 [info] 23475#23475: *125295 client 182.254.52.17 closed keepalive connection (104: Connection reset by peer)
+2020/06/22 03:15:48 [info] 23475#23475: *125403 client 61.241.50.63 closed keepalive connection (104: Connection reset by peer)
+2020/06/22 04:20:24 [info] 23475#23475: *125472 client 174.96.14.245 closed keepalive connection
+2020/06/22 05:24:37 [info] 23475#23475: *125539 client 174.96.14.245 closed keepalive connection
+2020/06/22 05:44:41 [info] 23475#23475: *125561 client 174.96.14.245 closed keepalive connection
+2020/06/22 06:22:41 [info] 23475#23475: *125573 client 182.254.52.17 closed keepalive connection (104: Connection reset by peer)
+2020/06/22 07:17:28 [info] 23475#23475: *125575 client 182.254.52.17 closed keepalive connection (104: Connection reset by peer)
+2020/06/22 07:33:47 [info] 23475#23475: *125577 client 182.254.52.17 closed keepalive connection (104: Connection reset by peer)
+2020/06/22 08:15:32 [info] 23475#23475: *125582 client 185.107.80.62 closed keepalive connection
+2020/06/22 08:17:11 [info] 23475#23475: *125584 client 177.87.12.66 closed keepalive connection
+2020/06/22 10:02:49 [info] 23475#23475: *125588 client 183.136.225.57 closed keepalive connection
+2020/06/22 10:27:32 [info] 23475#23475: *125595 client 182.254.52.17 closed keepalive connection (104: Connection reset by peer)
+2020/06/22 10:49:19 [info] 23475#23475: *125599 client 182.254.52.17 closed keepalive connection (104: Connection reset by peer)
+2020/06/22 11:10:15 [info] 23475#23475: *125606 client 59.36.132.153 closed keepalive connection
+2020/06/22 11:19:49 [info] 23475#23475: *125607 client 223.71.167.163 closed keepalive connection
+2020/06/22 12:38:04 [info] 23475#23475: *125610 client 162.243.137.90 closed keepalive connection
+2020/06/22 12:45:35 [info] 23475#23475: *125612 client 182.254.52.17 closed keepalive connection (104: Connection reset by peer)
+2020/06/22 13:26:50 [info] 23475#23475: *125614 client 182.254.52.17 closed keepalive connection (104: Connection reset by peer)
+2020/06/22 13:47:20 [info] 23475#23475: *125616 client 103.69.45.194 closed keepalive connection
+2020/06/22 14:34:46 [info] 23475#23475: *125619 client 61.241.50.63 closed keepalive connection (104: Connection reset by peer)
+2020/06/22 14:57:49 [info] 23475#23475: *125621 client 101.89.19.140 closed keepalive connection (104: Connection reset by peer)
+2020/06/22 15:11:31 [info] 23475#23475: *125623 client 88.135.114.74 closed keepalive connection
+2020/06/22 17:02:47 [info] 23475#23475: *125631 client 182.254.52.17 closed keepalive connection (104: Connection reset by peer)
+2020/06/22 17:25:29 [info] 23475#23475: *125633 client 95.107.57.198 closed keepalive connection
+2020/06/22 17:40:24 [info] 23475#23475: *125635 client 14.18.182.223 closed keepalive connection (104: Connection reset by peer)
+2020/06/22 18:10:33 [info] 23475#23475: *125637 client 182.254.52.17 closed keepalive connection (104: Connection reset by peer)
+2020/06/22 18:15:26 [info] 23475#23475: *125639 client 138.97.192.242 closed keepalive connection
+2020/06/22 18:47:36 [info] 23475#23475: *125643 client 182.254.52.17 closed keepalive connection (104: Connection reset by peer)
+2020/06/22 18:50:25 [info] 23475#23475: *125645 client 58.19.100.251 closed keepalive connection
+2020/06/22 19:45:13 [info] 23475#23475: *125649 client 182.254.52.17 closed keepalive connection (104: Connection reset by peer)
+2020/06/22 19:58:10 [info] 23475#23475: *125651 client 182.254.52.17 closed keepalive connection (104: Connection reset by peer)
+2020/06/22 19:59:05 [info] 23475#23475: *125653 client 182.254.52.17 closed keepalive connection (104: Connection reset by peer)
+2020/06/22 20:05:32 [info] 23475#23475: *125655 client 182.254.52.17 closed keepalive connection (104: Connection reset by peer)
+2020/06/22 20:15:34 [info] 23475#23475: *125657 client 182.254.52.17 closed keepalive connection (104: Connection reset by peer)
+2020/06/22 20:37:16 [info] 23475#23475: *125659 client 14.215.156.63 closed keepalive connection
+2020/06/22 21:56:39 [info] 23475#23475: *125664 client 103.139.11.187 closed keepalive connection
+2020/06/22 21:58:17 [error] 23475#23475: *125668 open() "/home/ubuntu/git/django_project/collected_static//plugins/hammer/hammer.min.js.map" failed (2: No such file or directory), client: 113.69.34.142, server: 49.234.78.157, request: "GET /static/plugins/hammer/hammer.min.js.map HTTP/1.1", host: "49.234.78.157"
+2020/06/22 21:58:23 [error] 23475#23475: *125668 open() "/home/ubuntu/git/django_project/collected_static//plugins/hammer/hammer.min.js.map" failed (2: No such file or directory), client: 113.69.34.142, server: 49.234.78.157, request: "GET /static/plugins/hammer/hammer.min.js.map HTTP/1.1", host: "49.234.78.157"
+2020/06/22 21:58:58 [error] 23475#23475: *125670 open() "/home/ubuntu/git/django_project/collected_static//plugins/hammer/hammer.min.js.map" failed (2: No such file or directory), client: 113.69.34.142, server: 49.234.78.157, request: "GET /static/plugins/hammer/hammer.min.js.map HTTP/1.1", host: "49.234.78.157"
+2020/06/22 21:59:38 [error] 23475#23475: *125672 open() "/home/ubuntu/git/django_project/collected_static//plugins/hammer/hammer.min.js.map" failed (2: No such file or directory), client: 113.69.34.142, server: 49.234.78.157, request: "GET /static/plugins/hammer/hammer.min.js.map HTTP/1.1", host: "49.234.78.157"
+2020/06/22 22:06:18 [info] 23475#23475: *125677 client 5.202.144.10 closed keepalive connection
+2020/06/22 22:50:27 [info] 23475#23475: *125680 client 182.254.52.17 closed keepalive connection (104: Connection reset by peer)
+2020/06/22 22:50:30 [info] 23475#23475: *125682 client 182.254.52.17 closed keepalive connection (104: Connection reset by peer)
+2020/06/22 22:50:37 [info] 23475#23475: *125684 client 182.254.52.17 closed keepalive connection (104: Connection reset by peer)
+2020/06/22 22:55:57 [info] 23475#23475: *125686 client 182.254.52.17 closed keepalive connection (104: Connection reset by peer)
+2020/06/22 23:05:51 [error] 892#892: *1 connect() failed (111: Connection refused) while connecting to upstream, client: 113.69.34.142, server: 49.234.78.157, request: "GET /video/ HTTP/1.1", upstream: "uwsgi://127.0.0.1:8001", host: "49.234.78.157"
+2020/06/22 23:05:52 [error] 892#892: *1 connect() failed (111: Connection refused) while connecting to upstream, client: 113.69.34.142, server: 49.234.78.157, request: "GET /favicon.ico HTTP/1.1", upstream: "uwsgi://127.0.0.1:8001", host: "49.234.78.157", referrer: "http://49.234.78.157/video/"
+2020/06/22 23:06:54 [error] 892#892: *4 connect() failed (111: Connection refused) while connecting to upstream, client: 182.254.52.17, server: 49.234.78.157, request: "GET http://49.234.78.157/sqlmanager/index.php?lang%3Den HTTP/1.1", upstream: "uwsgi://127.0.0.1:8001", host: "49.234.78.157"
+2020/06/22 23:06:54 [info] 892#892: *4 client 182.254.52.17 closed keepalive connection (104: Connection reset by peer)
+2020/06/22 23:07:00 [error] 892#892: *6 connect() failed (111: Connection refused) while connecting to upstream, client: 182.254.52.17, server: 49.234.78.157, request: "GET http://49.234.78.157/2phpmyadmin/index.php?lang%3Den HTTP/1.1", upstream: "uwsgi://127.0.0.1:8001", host: "49.234.78.157"
+2020/06/22 23:07:00 [info] 892#892: *6 client 182.254.52.17 closed keepalive connection (104: Connection reset by peer)
+2020/06/22 23:11:57 [error] 892#892: *8 connect() failed (111: Connection refused) while connecting to upstream, client: 182.254.52.17, server: 49.234.78.157, request: "GET http://49.234.78.157/db/index.php?lang%3Den HTTP/1.1", upstream: "uwsgi://127.0.0.1:8001", host: "49.234.78.157"
+2020/06/22 23:11:57 [info] 892#892: *8 client 182.254.52.17 closed keepalive connection (104: Connection reset by peer)
+2020/06/22 23:11:58 [error] 892#892: *10 connect() failed (111: Connection refused) while connecting to upstream, client: 182.254.52.17, server: 49.234.78.157, request: "GET http://49.234.78.157/db/phpmyadmin/index.php?lang%3Den HTTP/1.1", upstream: "uwsgi://127.0.0.1:8001", host: "49.234.78.157"
+2020/06/22 23:11:58 [info] 892#892: *10 client 182.254.52.17 closed keepalive connection (104: Connection reset by peer)
+2020/06/22 23:22:22 [error] 854#854: *1 connect() failed (111: Connection refused) while connecting to upstream, client: 59.36.132.240, server: 49.234.78.157, request: "GET http://49.234.78.157/sql/webadmin/index.php?lang%3Den HTTP/1.1", upstream: "uwsgi://127.0.0.1:8001", host: "49.234.78.157"
+2020/06/22 23:22:22 [info] 854#854: *1 client 59.36.132.240 closed keepalive connection (104: Connection reset by peer)
+2020/06/22 23:28:04 [error] 854#854: *3 connect() failed (111: Connection refused) while connecting to upstream, client: 182.254.52.17, server: 49.234.78.157, request: "GET http://49.234.78.157/sql/websql/index.php?lang%3Den HTTP/1.1", upstream: "uwsgi://127.0.0.1:8001", host: "49.234.78.157"
+2020/06/22 23:28:04 [info] 854#854: *3 client 182.254.52.17 closed keepalive connection (104: Connection reset by peer)
+2020/06/22 23:28:20 [error] 854#854: *5 connect() failed (111: Connection refused) while connecting to upstream, client: 59.36.132.240, server: 49.234.78.157, request: "GET http://49.234.78.157/database/index.php?lang%3Den HTTP/1.1", upstream: "uwsgi://127.0.0.1:8001", host: "49.234.78.157"
+2020/06/22 23:28:20 [info] 854#854: *5 client 59.36.132.240 closed keepalive connection (104: Connection reset by peer)
+2020/06/22 23:44:14 [error] 854#854: *7 connect() failed (111: Connection refused) while connecting to upstream, client: 182.254.52.17, server: 49.234.78.157, request: "GET http://49.234.78.157/mysql/mysqlmanager/index.php?lang%3Den HTTP/1.1", upstream: "uwsgi://127.0.0.1:8001", host: "49.234.78.157"
+2020/06/22 23:44:14 [info] 854#854: *7 client 182.254.52.17 closed keepalive connection (104: Connection reset by peer)

