@@ -153,7 +153,7 @@ class getAllData(object):   # 获取所有数据
         url = self.url_temp % self.url_queue.get()
         res_dict = self.parse_url(url)
         if not res_dict:
-            logger.error('page:', url.split('?p=')[1], '请求无数据，放入错误列表')
+            logger.error('page:%s%s'% (url.split('?p=')[1], '请求无数据，放入错误列表'))
             # self.url_queue.put(url)
             self.error_pages.append(url.split('?p=')[1])
         else:
