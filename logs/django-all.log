@@ -3325,3 +3325,172 @@ Traceback (most recent call last):
   File "./my_admin/views.py", line 575, in get_douban_rating
     if none_list:
 UnboundLocalError: local variable 'none_list' referenced before assignment
+[2020-06-23 22:50:09] [ERROR] Internal Server Error: /admin/login.html
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.6/site-packages/django_redis/cache.py", line 32, in _decorator
+    return method(self, *args, **kwargs)
+  File "/home/ubuntu/.local/lib/python3.6/site-packages/django_redis/cache.py", line 124, in has_key
+    return self.client.has_key(*args, **kwargs)
+  File "/home/ubuntu/.local/lib/python3.6/site-packages/django_redis/client/default.py", line 474, in has_key
+    raise ConnectionInterrupted(connection=client, parent=e)
+django_redis.exceptions.ConnectionInterrupted: Redis ConnectionError: Error 111 connecting to 49.234.78.157:6379. Connection refused.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/ubuntu/.local/lib/python3.6/site-packages/django/utils/deprecation.py", line 96, in __call__
+    response = self.process_response(request, response)
+  File "/home/ubuntu/.local/lib/python3.6/site-packages/django/contrib/sessions/middleware.py", line 58, in process_response
+    request.session.save()
+  File "/home/ubuntu/.local/lib/python3.6/site-packages/django/contrib/sessions/backends/cache.py", line 56, in save
+    return self.create()
+  File "/home/ubuntu/.local/lib/python3.6/site-packages/django/contrib/sessions/backends/cache.py", line 43, in create
+    self._session_key = self._get_new_session_key()
+  File "/home/ubuntu/.local/lib/python3.6/site-packages/django/contrib/sessions/backends/base.py", line 162, in _get_new_session_key
+    if not self.exists(session_key):
+  File "/home/ubuntu/.local/lib/python3.6/site-packages/django/contrib/sessions/backends/cache.py", line 70, in exists
+    return bool(session_key) and (self.cache_key_prefix + session_key) in self._cache
+  File "/home/ubuntu/.local/lib/python3.6/site-packages/django/core/cache/backends/base.py", line 207, in __contains__
+    return self.has_key(key)
+  File "/home/ubuntu/.local/lib/python3.6/site-packages/django_redis/cache.py", line 39, in _decorator
+    raise e.parent
+  File "/home/ubuntu/.local/lib/python3.6/site-packages/django_redis/client/default.py", line 472, in has_key
+    return client.exists(key) == 1
+  File "/home/ubuntu/.local/lib/python3.6/site-packages/redis/client.py", line 1554, in exists
+    return self.execute_command('EXISTS', *names)
+  File "/home/ubuntu/.local/lib/python3.6/site-packages/redis/client.py", line 875, in execute_command
+    conn = self.connection or pool.get_connection(command_name, **options)
+  File "/home/ubuntu/.local/lib/python3.6/site-packages/redis/connection.py", line 1185, in get_connection
+    connection.connect()
+  File "/home/ubuntu/.local/lib/python3.6/site-packages/redis/connection.py", line 557, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error 111 connecting to 49.234.78.157:6379. Connection refused.
+[2020-06-23 22:50:21] [ERROR] Internal Server Error: /admin/login.html
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.6/site-packages/django_redis/cache.py", line 32, in _decorator
+    return method(self, *args, **kwargs)
+  File "/home/ubuntu/.local/lib/python3.6/site-packages/django_redis/cache.py", line 124, in has_key
+    return self.client.has_key(*args, **kwargs)
+  File "/home/ubuntu/.local/lib/python3.6/site-packages/django_redis/client/default.py", line 474, in has_key
+    raise ConnectionInterrupted(connection=client, parent=e)
+django_redis.exceptions.ConnectionInterrupted: Redis ConnectionError: Error 111 connecting to 49.234.78.157:6379. Connection refused.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/ubuntu/.local/lib/python3.6/site-packages/django/utils/deprecation.py", line 96, in __call__
+    response = self.process_response(request, response)
+  File "/home/ubuntu/.local/lib/python3.6/site-packages/django/contrib/sessions/middleware.py", line 58, in process_response
+    request.session.save()
+  File "/home/ubuntu/.local/lib/python3.6/site-packages/django/contrib/sessions/backends/cache.py", line 56, in save
+    return self.create()
+  File "/home/ubuntu/.local/lib/python3.6/site-packages/django/contrib/sessions/backends/cache.py", line 43, in create
+    self._session_key = self._get_new_session_key()
+  File "/home/ubuntu/.local/lib/python3.6/site-packages/django/contrib/sessions/backends/base.py", line 162, in _get_new_session_key
+    if not self.exists(session_key):
+  File "/home/ubuntu/.local/lib/python3.6/site-packages/django/contrib/sessions/backends/cache.py", line 70, in exists
+    return bool(session_key) and (self.cache_key_prefix + session_key) in self._cache
+  File "/home/ubuntu/.local/lib/python3.6/site-packages/django/core/cache/backends/base.py", line 207, in __contains__
+    return self.has_key(key)
+  File "/home/ubuntu/.local/lib/python3.6/site-packages/django_redis/cache.py", line 39, in _decorator
+    raise e.parent
+  File "/home/ubuntu/.local/lib/python3.6/site-packages/django_redis/client/default.py", line 472, in has_key
+    return client.exists(key) == 1
+  File "/home/ubuntu/.local/lib/python3.6/site-packages/redis/client.py", line 1554, in exists
+    return self.execute_command('EXISTS', *names)
+  File "/home/ubuntu/.local/lib/python3.6/site-packages/redis/client.py", line 875, in execute_command
+    conn = self.connection or pool.get_connection(command_name, **options)
+  File "/home/ubuntu/.local/lib/python3.6/site-packages/redis/connection.py", line 1185, in get_connection
+    connection.connect()
+  File "/home/ubuntu/.local/lib/python3.6/site-packages/redis/connection.py", line 557, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error 111 connecting to 49.234.78.157:6379. Connection refused.
+[2020-06-23 22:50:50] [ERROR] Internal Server Error: /admin/login.html
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.6/site-packages/django_redis/cache.py", line 32, in _decorator
+    return method(self, *args, **kwargs)
+  File "/home/ubuntu/.local/lib/python3.6/site-packages/django_redis/cache.py", line 124, in has_key
+    return self.client.has_key(*args, **kwargs)
+  File "/home/ubuntu/.local/lib/python3.6/site-packages/django_redis/client/default.py", line 474, in has_key
+    raise ConnectionInterrupted(connection=client, parent=e)
+django_redis.exceptions.ConnectionInterrupted: Redis ConnectionError: Error 111 connecting to 49.234.78.157:6379. Connection refused.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/ubuntu/.local/lib/python3.6/site-packages/django/utils/deprecation.py", line 96, in __call__
+    response = self.process_response(request, response)
+  File "/home/ubuntu/.local/lib/python3.6/site-packages/django/contrib/sessions/middleware.py", line 58, in process_response
+    request.session.save()
+  File "/home/ubuntu/.local/lib/python3.6/site-packages/django/contrib/sessions/backends/cache.py", line 56, in save
+    return self.create()
+  File "/home/ubuntu/.local/lib/python3.6/site-packages/django/contrib/sessions/backends/cache.py", line 43, in create
+    self._session_key = self._get_new_session_key()
+  File "/home/ubuntu/.local/lib/python3.6/site-packages/django/contrib/sessions/backends/base.py", line 162, in _get_new_session_key
+    if not self.exists(session_key):
+  File "/home/ubuntu/.local/lib/python3.6/site-packages/django/contrib/sessions/backends/cache.py", line 70, in exists
+    return bool(session_key) and (self.cache_key_prefix + session_key) in self._cache
+  File "/home/ubuntu/.local/lib/python3.6/site-packages/django/core/cache/backends/base.py", line 207, in __contains__
+    return self.has_key(key)
+  File "/home/ubuntu/.local/lib/python3.6/site-packages/django_redis/cache.py", line 39, in _decorator
+    raise e.parent
+  File "/home/ubuntu/.local/lib/python3.6/site-packages/django_redis/client/default.py", line 472, in has_key
+    return client.exists(key) == 1
+  File "/home/ubuntu/.local/lib/python3.6/site-packages/redis/client.py", line 1554, in exists
+    return self.execute_command('EXISTS', *names)
+  File "/home/ubuntu/.local/lib/python3.6/site-packages/redis/client.py", line 875, in execute_command
+    conn = self.connection or pool.get_connection(command_name, **options)
+  File "/home/ubuntu/.local/lib/python3.6/site-packages/redis/connection.py", line 1185, in get_connection
+    connection.connect()
+  File "/home/ubuntu/.local/lib/python3.6/site-packages/redis/connection.py", line 557, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error 111 connecting to 49.234.78.157:6379. Connection refused.
+[2020-06-24 23:58:28] [ERROR] page:16请求无数据，放入错误列表
+[2020-06-24 23:58:38] [ERROR] page:10请求无数据，放入错误列表
+[2020-06-24 23:58:44] [ERROR] page:17请求无数据，放入错误列表
+[2020-06-25 15:58:19] [ERROR] 首页请求无数据
+[2020-06-28 15:58:38] [ERROR] page:14请求无数据，放入错误列表
+[2020-06-28 21:46:01] [ERROR] Internal Server Error: /video/search/
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/ubuntu/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/ubuntu/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "./video/views.py", line 162, in search
+    page_index = int(request.GET.get('page'))
+TypeError: int() argument must be a string, a bytes-like object or a number, not 'NoneType'
+[2020-06-28 21:55:49] [ERROR] Internal Server Error: /video/search/
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/ubuntu/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/ubuntu/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "./video/views.py", line 162, in search
+    page_index = int(request.GET.get('page'))
+TypeError: int() argument must be a string, a bytes-like object or a number, not 'NoneType'
+[2020-06-28 21:55:52] [ERROR] Internal Server Error: /video/search/
+Traceback (most recent call last):
+  File "/home/ubuntu/.local/lib/python3.6/site-packages/django/core/handlers/exception.py", line 34, in inner
+    response = get_response(request)
+  File "/home/ubuntu/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/ubuntu/.local/lib/python3.6/site-packages/django/core/handlers/base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "./video/views.py", line 162, in search
+    page_index = int(request.GET.get('page'))
+TypeError: int() argument must be a string, a bytes-like object or a number, not 'NoneType'
+[2020-06-28 21:59:04] [ERROR] page:13请求无数据，放入错误列表
+[2020-07-03 21:58:37] [ERROR] page:6请求无数据，放入错误列表
+[2020-07-03 23:58:25] [ERROR] page:4请求无数据，放入错误列表
+[2020-07-05 21:58:50] [ERROR] page:16请求无数据，放入错误列表
+[2020-07-05 23:58:28] [ERROR] page:21请求无数据，放入错误列表

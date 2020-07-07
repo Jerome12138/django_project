@@ -93,3 +93,13 @@ AttributeError: 'NoneType' object has no attribute 'endswith'
 [2020-06-07 11:59:18] [GetPageData:get_first_page] [ERROR] 首页请求无数据
 [2020-06-07 12:14:26] [GetPageData:get_first_page] [ERROR] 首页请求无数据
 [2020-06-07 16:13:44] [GetPageData:get_first_page] [ERROR] 首页请求无数据
+[2020-06-24 23:58:28] [GetPageData:add_page_to_queue] [ERROR] page:16请求无数据，放入错误列表
+[2020-06-24 23:58:38] [GetPageData:add_page_to_queue] [ERROR] page:10请求无数据，放入错误列表
+[2020-06-24 23:58:44] [GetPageData:add_page_to_queue] [ERROR] page:17请求无数据，放入错误列表
+[2020-06-25 15:58:19] [GetPageData:get_first_page] [ERROR] 首页请求无数据
+[2020-06-28 15:58:38] [GetPageData:add_page_to_queue] [ERROR] page:14请求无数据，放入错误列表
+[2020-06-28 21:59:04] [GetPageData:add_page_to_queue] [ERROR] page:13请求无数据，放入错误列表
+[2020-07-03 21:58:37] [GetPageData:add_page_to_queue] [ERROR] page:6请求无数据，放入错误列表
+[2020-07-03 23:58:25] [GetPageData:add_page_to_queue] [ERROR] page:4请求无数据，放入错误列表
+[2020-07-05 21:58:50] [GetPageData:add_page_to_queue] [ERROR] page:16请求无数据，放入错误列表
+[2020-07-05 23:58:28] [GetPageData:add_page_to_queue] [ERROR] page:21请求无数据，放入错误列表
