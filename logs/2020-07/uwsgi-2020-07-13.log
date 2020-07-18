@@ -1,0 +1,59 @@
+[1594569601] ./uwsgi.log reopened.
+美梦人生 匹配到多个豆瓣id数据，存入列表2 ['4233911', '2237987']
+无声的证言第十一季 10728481 保存成功[douban]
+墓道 3048085 保存成功[douban]
+因爱之名 4928703 保存成功[douban]
+明宫夕照 5318660 保存成功[douban]
+一路夫妻 3115172 保存成功[douban]
+神秘博士第三季 3691183 保存成功[douban]
+拉字至上第四季 3676719 8.9保存成功[douban]
+贞观之治 匹配到多个豆瓣id数据，存入列表2 ['2155164', '30451880']
+真爱一世情 4914634 保存成功[douban]
+————————豆瓣id获取完毕————————
+[pid: 4569|app: 0|req: 2135/4629] 112.96.106.190 () {44 vars in 923 bytes} [Sun Jul 12 22:47:45 2020] GET /admin/get_rating/ => generated 4 bytes in 6002996 msecs (HTTP/1.1 200) 5 headers in 148 bytes (1 switches on core 0)
+[pid: 4569|app: 0|req: 2136/4630] 213.128.88.99 () {34 vars in 508 bytes} [Mon Jul 13 00:39:19 2020] GET /manager/html => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 1)
+[pid: 4572|app: 0|req: 874/4631] 77.91.86.54 () {32 vars in 462 bytes} [Mon Jul 13 00:50:02 2020] GET / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 1)
+[pid: 4570|app: 0|req: 806/4632] 106.53.40.79 () {34 vars in 499 bytes} [Mon Jul 13 01:31:32 2020] GET /TP/public/index.php => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 1)
+[pid: 4569|app: 0|req: 2137/4633] 106.53.40.79 () {34 vars in 485 bytes} [Mon Jul 13 01:31:32 2020] GET /TP/index.php => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+[pid: 4570|app: 0|req: 807/4634] 106.53.40.79 () {34 vars in 521 bytes} [Mon Jul 13 01:31:32 2020] GET /thinkphp/html/public/index.php => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+[pid: 4569|app: 0|req: 2138/4635] 106.53.40.79 () {34 vars in 503 bytes} [Mon Jul 13 01:31:32 2020] GET /html/public/index.php => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 1)
+[pid: 4572|app: 0|req: 875/4636] 106.53.40.79 () {34 vars in 493 bytes} [Mon Jul 13 01:31:32 2020] GET /public/index.php => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+[pid: 4571|app: 0|req: 817/4637] 106.53.40.79 () {34 vars in 509 bytes} [Mon Jul 13 01:31:32 2020] GET /TP/html/public/index.php => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+[pid: 4572|app: 0|req: 876/4638] 106.53.40.79 () {34 vars in 481 bytes} [Mon Jul 13 01:31:32 2020] GET /elrekt.php => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 1)
+[pid: 4571|app: 0|req: 818/4639] 106.53.40.79 () {34 vars in 479 bytes} [Mon Jul 13 01:31:33 2020] GET /index.php => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 1)
+[pid: 4570|app: 0|req: 808/4640] 106.53.40.79 () {34 vars in 464 bytes} [Mon Jul 13 01:31:33 2020] GET / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 1)
+[pid: 4569|app: 0|req: 2139/4641] 200.37.217.94 () {32 vars in 464 bytes} [Mon Jul 13 04:25:02 2020] GET / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+[pid: 4569|app: 0|req: 2140/4642] 182.254.52.17 () {36 vars in 542 bytes} [Mon Jul 13 06:49:00 2020] GET / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 1)
+[pid: 4569|app: 0|req: 2141/4643] 49.77.56.174 () {32 vars in 485 bytes} [Mon Jul 13 06:59:06 2020] GET /phpmyadmin/ => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+[pid: 4569|app: 0|req: 2142/4644] 182.254.52.17 () {36 vars in 592 bytes} [Mon Jul 13 07:17:01 2020] GET /video/play/88406/1-5.html => generated 16943 bytes in 8 msecs (HTTP/1.1 200) 6 headers in 320 bytes (1 switches on core 1)
+[pid: 4569|app: 0|req: 2143/4645] 200.53.21.198 () {32 vars in 463 bytes} [Mon Jul 13 08:19:29 2020] GET / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+[pid: 4569|app: 0|req: 2144/4646] 182.254.52.17 () {36 vars in 542 bytes} [Mon Jul 13 10:13:41 2020] GET / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 1)
+[pid: 4569|app: 0|req: 2145/4647] 162.243.129.216 () {34 vars in 429 bytes} [Mon Jul 13 12:37:34 2020] GET /manager/text/list => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+[pid: 4569|app: 0|req: 2146/4648] 182.254.52.17 () {36 vars in 542 bytes} [Mon Jul 13 13:11:14 2020] GET / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 1)
+[pid: 4569|app: 0|req: 2147/4649] 91.236.61.244 () {32 vars in 464 bytes} [Mon Jul 13 13:31:28 2020] GET / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+[pid: 4569|app: 0|req: 2148/4650] 93.174.93.139 () {40 vars in 568 bytes} [Mon Jul 13 14:05:59 2020] GET / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 1)
+[pid: 4569|app: 0|req: 2149/4651] 192.241.230.237 () {34 vars in 395 bytes} [Mon Jul 13 15:15:23 2020] GET / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+[pid: 4569|app: 0|req: 2150/4652] 193.112.78.4 () {34 vars in 499 bytes} [Mon Jul 13 16:15:07 2020] GET /TP/public/index.php => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 1)
+[pid: 4569|app: 0|req: 2151/4653] 193.112.78.4 () {34 vars in 485 bytes} [Mon Jul 13 16:15:07 2020] GET /TP/index.php => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+[pid: 4570|app: 0|req: 809/4654] 193.112.78.4 () {34 vars in 521 bytes} [Mon Jul 13 16:15:07 2020] GET /thinkphp/html/public/index.php => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+[pid: 4570|app: 0|req: 810/4655] 193.112.78.4 () {34 vars in 503 bytes} [Mon Jul 13 16:15:08 2020] GET /html/public/index.php => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 1)
+[pid: 4572|app: 0|req: 877/4656] 193.112.78.4 () {34 vars in 493 bytes} [Mon Jul 13 16:15:08 2020] GET /public/index.php => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+[pid: 4572|app: 0|req: 878/4657] 193.112.78.4 () {34 vars in 509 bytes} [Mon Jul 13 16:15:08 2020] GET /TP/html/public/index.php => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 1)
+[pid: 4571|app: 0|req: 819/4658] 193.112.78.4 () {34 vars in 481 bytes} [Mon Jul 13 16:15:08 2020] GET /elrekt.php => generated 179 bytes in 2 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+[pid: 4571|app: 0|req: 820/4659] 193.112.78.4 () {34 vars in 479 bytes} [Mon Jul 13 16:15:08 2020] GET /index.php => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 1)
+[pid: 4569|app: 0|req: 2152/4660] 193.112.78.4 () {34 vars in 464 bytes} [Mon Jul 13 16:15:08 2020] GET / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+[pid: 4569|app: 0|req: 2153/4661] 182.160.32.225 () {32 vars in 465 bytes} [Mon Jul 13 16:33:48 2020] GET / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 1)
+[pid: 4571|app: 0|req: 821/4662] 104.248.112.159 () {34 vars in 480 bytes} [Mon Jul 13 17:42:06 2020] GET /wp-login.php => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 1)
+[pid: 4569|app: 0|req: 2154/4663] 195.54.160.21 () {34 vars in 555 bytes} [Mon Jul 13 18:48:28 2020] GET /solr/admin/info/system?wt=json => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+[pid: 4569|app: 0|req: 2155/4664] 195.54.160.21 () {34 vars in 555 bytes} [Mon Jul 13 18:49:09 2020] GET /?XDEBUG_SESSION_START=phpstorm => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 1)
+[pid: 4569|app: 0|req: 2156/4665] 195.54.160.21 () {34 vars in 715 bytes} [Mon Jul 13 18:49:57 2020] GET /index.php?s=/Index/\think\app/invokefunction&function=call_user_func_array&vars[0]=md5&vars[1][]=HelloThinkPHP => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+[pid: 4569|app: 0|req: 2157/4666] 195.54.160.21 () {36 vars in 652 bytes} [Mon Jul 13 18:50:01 2020] GET /?a=fetch&content=<php>die(@md5(HelloThinkCMF))</php> => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 1)
+[pid: 4569|app: 0|req: 2158/4667] 195.54.160.21 () {38 vars in 609 bytes} [Mon Jul 13 19:18:27 2020] POST /api/jsonws/invoke => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+[pid: 4569|app: 0|req: 2159/4668] 201.54.100.55 () {32 vars in 463 bytes} [Mon Jul 13 19:56:47 2020] GET / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 1)
+[pid: 4570|app: 0|req: 811/4669] 201.54.100.55 () {32 vars in 470 bytes} [Mon Jul 13 19:56:47 2020] GET / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+[pid: 4570|app: 0|req: 812/4670] 195.54.160.21 () {36 vars in 623 bytes} [Mon Jul 13 20:38:16 2020] GET /vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 1)
+[pid: 4569|app: 0|req: 2160/4671] 195.54.160.21 () {38 vars in 711 bytes} [Mon Jul 13 20:53:34 2020] POST /vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+[pid: 4569|app: 0|req: 2161/4672] 5.182.210.205 () {36 vars in 479 bytes} [Mon Jul 13 21:00:28 2020] GET / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 1)
+[pid: 4569|app: 0|req: 2162/4673] 128.14.209.226 () {34 vars in 488 bytes} [Mon Jul 13 22:56:44 2020] GET / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 0)
+[pid: 4569|app: 0|req: 2163/4674] 93.152.165.125 () {32 vars in 465 bytes} [Mon Jul 13 23:40:17 2020] GET / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 4 headers in 128 bytes (1 switches on core 1)
+[1594656002] logsize: 10626, triggering log-reopen...
