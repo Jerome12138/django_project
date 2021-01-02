@@ -8570,3 +8570,27 @@
 2021/01/02 15:54:32 [info] 6359#0: *10 client 223.73.88.126 closed keepalive connection (104: Connection reset by peer)
 2021/01/02 15:54:32 [info] 6359#0: *11 client 223.73.88.126 closed keepalive connection (104: Connection reset by peer)
 2021/01/02 15:55:41 [info] 6359#0: *12 client 223.73.88.126 closed keepalive connection
+2021/01/02 16:34:26 [info] 6359#0: *21 client 223.73.88.126 closed keepalive connection
+2021/01/02 16:34:36 [info] 6359#0: *24 client 223.73.88.126 closed keepalive connection
+2021/01/02 17:12:49 [info] 6359#0: *26 client 223.73.88.126 closed keepalive connection
+2021/01/02 17:13:09 [info] 6359#0: *28 client 223.73.88.126 closed keepalive connection
+2021/01/02 18:06:41 [info] 6359#0: *35 client 223.73.88.126 closed keepalive connection
+2021/01/02 18:09:41 [info] 6359#0: *37 client 223.73.88.126 closed keepalive connection
+2021/01/02 18:09:51 [info] 6359#0: *39 client 223.73.88.126 closed keepalive connection
+2021/01/02 18:14:31 [info] 6359#0: *41 client 223.73.88.126 closed keepalive connection
+2021/01/02 18:15:01 [info] 6359#0: *44 client 223.73.88.126 closed keepalive connection
+2021/01/02 18:29:23 [info] 6359#0: *47 client 192.241.221.103 closed keepalive connection
+2021/01/02 20:37:24 [info] 6359#0: *53 client 192.241.217.130 closed keepalive connection
+2021/01/02 21:35:50 [info] 6359#0: *56 client 223.73.88.126 closed keepalive connection
+2021/01/02 22:14:37 [info] 6359#0: *60 client 223.73.88.126 closed keepalive connection
+2021/01/02 22:14:47 [info] 6359#0: *64 client 223.73.88.126 closed keepalive connection
+2021/01/02 22:30:05 [info] 6359#0: *75 epoll_wait() reported that client prematurely closed connection, so upstream connection is closed too while sending request to upstream, client: 223.73.88.126, server: 42.193.179.124, request: "GET /admin/update/?url_index=2&type=count HTTP/1.1", upstream: "uwsgi://127.0.0.1:8001", host: "42.193.179.124", referrer: "http://42.193.179.124/admin/"
+2021/01/02 22:30:05 [info] 6359#0: *74 epoll_wait() reported that client prematurely closed connection, so upstream connection is closed too while sending request to upstream, client: 223.73.88.126, server: 42.193.179.124, request: "GET /admin/update/?url_index=1&type=count HTTP/1.1", upstream: "uwsgi://127.0.0.1:8001", host: "42.193.179.124", referrer: "http://42.193.179.124/admin/"
+2021/01/02 22:30:13 [info] 6359#0: *78 client 223.73.88.126 closed keepalive connection
+2021/01/02 22:30:33 [info] 6359#0: *81 client 223.73.88.126 closed keepalive connection
+2021/01/02 22:34:23 [info] 6359#0: *84 client 223.73.88.126 closed keepalive connection
+2021/01/02 22:37:03 [info] 6359#0: *90 client 223.73.88.126 closed keepalive connection
+2021/01/02 22:37:13 [info] 6359#0: *92 client 223.73.88.126 closed keepalive connection
+2021/01/02 22:37:23 [info] 6359#0: *96 client 223.73.88.126 closed keepalive connection
+2021/01/02 22:37:33 [info] 6359#0: *100 client 223.73.88.126 closed keepalive connection
+2021/01/02 22:37:43 [info] 6359#0: *103 client 223.73.88.126 closed keepalive connection
