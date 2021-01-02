@@ -223,23 +223,23 @@ LOGGING = {
     }
 }
 
-# redis缓存
-CACHES = {
-    "default": {
-        "BACKEND": "django_redis.cache.RedisCache",
-        "LOCATION": "redis://:3201862@49.234.78.157:6379/2",
-        "OPTIONS": {
-            "CLIENT_CLASS": "django_redis.client.DefaultClient",
-        }
-    }
-}
+# # redis缓存
+# CACHES = {
+#     "default": {
+#         "BACKEND": "django_redis.cache.RedisCache",
+#         "LOCATION": "redis://3201862:@42.193.179.124:6379/2",
+#         "OPTIONS": {
+#             "CLIENT_CLASS": "django_redis.client.DefaultClient",
+#         }
+#     }
+# }
 
-# redis存储session
-# SESSION_ENGINE = 'redis_sessions.session' # django-redis-sessions
-# SESSION_REDIS_HOST = '49.234.78.157'
-# SESSION_REDIS_PORT = 6372
-# SESSION_REDIS_DB = 2
-# SESSION_REDIS_PASSWORD = ''
-# SESSION_REDIS_PREFIX = 'session'
-SESSION_ENGINE = "django.contrib.sessions.backends.cache"   # django-redis
-SESSION_CACHE_ALIAS = "default"
+# # redis存储session
+# # SESSION_ENGINE = 'redis_sessions.session' # django-redis-sessions
+# # SESSION_REDIS_HOST = '42.193.179.124'
+# # SESSION_REDIS_PORT = 6372
+# # SESSION_REDIS_DB = 2
+# # SESSION_REDIS_PASSWORD = ''
+# # SESSION_REDIS_PREFIX = 'session'
+# SESSION_ENGINE = "django.contrib.sessions.backends.cache"   # django-redis
+# SESSION_CACHE_ALIAS = "default"
