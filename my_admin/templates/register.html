@@ -31,8 +31,8 @@
                 </div>
                 <img class="mb-4" src="/static/img/logo.png" alt="" width="86" height="86"
                     style="border-radius: 10px;margin: 0 auto;display: block">
-                <p class="login-box-msg">暂不支持注册，如有需要请联系管理员</p>
 
+                <span style="color: red;" class="error_msg"></span>
                 <form action="/admin/register.html" method="post">
                     {% csrf_token %}
                     {% for field in user_modelform %}
@@ -43,10 +43,10 @@
                     <div class="row">
                         <div class="col-8" style="line-height: 38px;">
                             <span>已有账号？</span>
-                            <a href="/admin/login.html" id="sign_up">直接登录</a>
+                            <a href="/admin/login.html" id="sign_in">直接登录</a>
                         </div>
                         <div class="col-4">
-                            <button type="submit" class="btn btn-primary btn-block" id="sign_up">注册</button>
+                            <button type="button" class="btn btn-primary btn-block" id="sign_up">注册</button>
                         </div>
                         <!-- /.col -->
                     </div>
@@ -66,6 +66,29 @@
         crossorigin="anonymous"></script>
     <!-- AdminLTE App -->
     <script src="https://cdn.bootcdn.net/ajax/libs/admin-lte/3.0.5/js/adminlte.min.js"></script>
+    <script>
+        $('#sign_up').click(function () {
+            $.ajax({
+                url: '/admin/register.html',
+                type: 'POST',
+                data: $('form').serialize(),
+                dataType: 'JSON',
+                success: function (obj) {
+                    if (obj.status) {
+                        console.log(obj.status);
+                        location.href = '/admin/login.html';
+                    } else {
+                        console.log(obj.error);
+                        $('.error_msg').text(obj.error);
+                    }
+                },
+                error: function (obj) {
+                    console.log(obj.error);
+                    $('.error_msg').text(obj.error);
+                }
+            })
+        })
+    </script>
 </body>
 
 </html>

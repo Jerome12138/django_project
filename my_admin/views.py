@@ -25,6 +25,20 @@ class UserInfoModelForm(ModelForm):
         widget=Fwidgets.PasswordInput(
             attrs={'placeholder': '请确认密码', 'class': "form-control form-control-sm"})
     )
+    invite_code = Ffields.CharField(
+        label='邀请码',
+        widget=Fwidgets.PasswordInput(
+            attrs={'placeholder': '联系管理员1030155707@qq.com获取邀请码', 'class': "form-control form-control-sm"})
+    )
+    def clean_confirm_pwd(self):
+        if self.cleaned_data['confirm_pwd'] != self.cleaned_data['password']:
+            raise forms.ValidationError('确认密码输入错误')
+        return self.cleaned_data['confirm_pwd']
+    
+    def clean_invite_code(self):
+        if self.cleaned_data['invite_code'] not in ['jerome001','jerome002','jerome003','jerome004']:
+            raise forms.ValidationError('邀请码无效')
+        return self.cleaned_data['invite_code']
 
     class Meta:
         model = models.UserInfo
@@ -45,14 +59,29 @@ class SignUp(View):
         return render(request, 'register.html', {'user_modelform': user_modelform})
 
     def post(self, request):
-        user_modelform = UserInfoModelForm(request.POST)
-        if user_modelform.is_valid():
-            # user_modelform.save()
-            print('添加用户：%s' % user_modelform.cleaned_data['username'])
-            return redirect('/admin/login.html')
-        else:
-            print(user_modelform.errors.as_json())
-            return render(request, 'register.html', {'user_modelform': user_modelform})
+        ret = {'status': False, 'error': None, 'data': None}
+        try:
+            
+            user_modelform = UserInfoModelForm(request.POST)
+            if user_modelform.is_valid():
+                ret['status'] = True
+                ret['data'] = {'username': username}
+                user_modelform.save()
+                print('添加用户：%s' % user_modelform.cleaned_data['username'])
+            else:
+                ret['status'] = False
+                ret['error'] = user_modelform.errors.as_text()
+                print(user_modelform.errors.as_json())
+                return render(request, 'register.html', {'user_modelform': user_modelform})
+        except Exception as e:
+            print(e)
+            ret['status'] = False
+            ret['error'] = '未知错误'
+        finally:
+            # print(ret)
+            return HttpResponse(json.dumps(ret))
+
+
 
 
 # 登录
@@ -67,6 +96,7 @@ class SignIn(View):
             username = request.POST.get('username', None)
             password = request.POST.get('password', None)
             remember_me = request.POST.get('remember-me', None)
+            # print(username+'登录')
             if not username or not password:
                 ret['error'] = '请输入用户名和密码'
             else:
@@ -89,7 +119,7 @@ class SignIn(View):
             ret['status'] = False
             ret['error'] = '未知错误'
         finally:
-            # print(ret)
+            print(ret)
             return HttpResponse(json.dumps(ret))
 
 
