@@ -65,7 +65,7 @@ class SignUp(View):
             user_modelform = UserInfoModelForm(request.POST)
             if user_modelform.is_valid():
                 ret['status'] = True
-                ret['data'] = {'username': username}
+                ret['data'] = {'username': user_modelform.cleaned_data['username']}
                 user_modelform.save()
                 print('添加用户：%s' % user_modelform.cleaned_data['username'])
             else:
@@ -119,7 +119,7 @@ class SignIn(View):
             ret['status'] = False
             ret['error'] = '未知错误'
         finally:
-            print(ret)
+            # print(ret)
             return HttpResponse(json.dumps(ret))
 
 
