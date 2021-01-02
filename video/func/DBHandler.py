@@ -4,7 +4,7 @@ from django.db.models import Q
 import redis
 
 # 创建StrictRedis对象，与redis服务器建⽴连接
-SR = redis.StrictRedis(host='49.234.78.157', port=6379, db=0, password='3201862')
+SR = redis.StrictRedis(host='42.193.179.124', port=6372, db=0, password='3201862')
 
 def dump_vod_data(vod_data):    # 将视频数据保存至数据库
     try:

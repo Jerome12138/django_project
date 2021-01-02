@@ -17,7 +17,7 @@ def get_proxy():
     return []
 
 def delete_proxy(proxy):
-    requests.get("http://49.234.78.157:5010/delete/?proxy={}".format(proxy))
+    requests.get("http://42.193.179.124:5010/delete/?proxy={}".format(proxy))
 
 def IPList_61():
     try:

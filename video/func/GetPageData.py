@@ -110,10 +110,10 @@ class getAllData(object):   # 获取所有数据
         try:
             # 1.匹配来源
             if url_index == 1:
-                url = "http://www.zuidazy4.com/"
+                url = "http://www.zuidazy4.net/"
                 x_match = "//li[contains(text(),'今日更新：')]/strong/text()"
             else:
-                url = "http://www.bajiezy.cc/"
+                url = "http://cj.bajiecaiji.com/"
                 x_match = "//a[contains(string(),'今日更新：')]/font[2]/text()"
             # 2.获取数据
             html = getRequest.get_html(url)
