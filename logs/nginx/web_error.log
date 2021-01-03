@@ -8594,3 +8594,34 @@
 2021/01/02 22:37:23 [info] 6359#0: *96 client 223.73.88.126 closed keepalive connection
 2021/01/02 22:37:33 [info] 6359#0: *100 client 223.73.88.126 closed keepalive connection
 2021/01/02 22:37:43 [info] 6359#0: *103 client 223.73.88.126 closed keepalive connection
+2021/01/04 01:25:57 [info] 51488#51488: *2 client 113.69.35.11 closed keepalive connection
+2021/01/04 01:35:20 [error] 51488#51488: *4 upstream prematurely closed connection while reading response header from upstream, client: 113.69.35.11, server: 42.193.179.124, request: "GET /video/ HTTP/1.1", upstream: "uwsgi://127.0.0.1:8001", host: "42.193.179.124"
+2021/01/04 01:35:28 [info] 51488#51488: *4 client 113.69.35.11 closed keepalive connection
+2021/01/04 01:37:28 [info] 51488#51488: *6 client 113.69.35.11 closed keepalive connection
+2021/01/04 01:37:38 [info] 51488#51488: *10 client 113.69.35.11 closed keepalive connection
+2021/01/04 01:37:48 [info] 51488#51488: *12 client 113.69.35.11 closed keepalive connection
+2021/01/04 01:38:18 [info] 51488#51488: *14 client 113.69.35.11 closed keepalive connection
+2021/01/04 01:38:28 [info] 51488#51488: *17 client 113.69.35.11 closed keepalive connection
+2021/01/04 01:38:34 [info] 51488#51488: *20 epoll_wait() reported that client prematurely closed connection, so upstream connection is closed too while sending request to upstream, client: 113.69.35.11, server: 42.193.179.124, request: "GET /admin/update/?url_index=1&type=today HTTP/1.1", upstream: "uwsgi://127.0.0.1:8001", host: "42.193.179.124", referrer: "http://42.193.179.124/admin/"
+2021/01/04 01:38:38 [info] 51488#51488: *22 client 113.69.35.11 closed keepalive connection
+2021/01/04 01:38:48 [info] 51488#51488: *24 client 113.69.35.11 closed keepalive connection
+2021/01/04 01:39:08 [info] 51488#51488: *27 client 113.69.35.11 closed keepalive connection
+2021/01/04 01:39:28 [info] 51488#51488: *31 client 113.69.35.11 closed keepalive connection
+2021/01/04 01:39:38 [info] 51488#51488: *34 client 113.69.35.11 closed keepalive connection
+2021/01/04 01:39:48 [info] 51488#51488: *37 client 113.69.35.11 closed keepalive connection
+2021/01/04 01:39:58 [info] 51488#51488: *40 client 113.69.35.11 closed keepalive connection
+2021/01/04 01:40:02 [info] 51488#51488: *43 epoll_wait() reported that client prematurely closed connection, so upstream connection is closed too while sending request to upstream, client: 113.69.35.11, server: 42.193.179.124, request: "GET /admin/update/?url_index=1&type=count HTTP/1.1", upstream: "uwsgi://127.0.0.1:8001", host: "42.193.179.124", referrer: "http://42.193.179.124/admin/update_video/"
+2021/01/04 01:40:18 [info] 51488#51488: *46 client 113.69.35.11 closed keepalive connection
+2021/01/04 01:40:28 [info] 51488#51488: *51 client 113.69.35.11 closed keepalive connection
+2021/01/04 01:41:48 [info] 51488#51488: *53 client 113.69.35.11 closed keepalive connection
+2021/01/04 01:41:53 [info] 51488#51488: *56 client 113.69.35.11 closed keepalive connection
+2021/01/04 01:42:08 [info] 51488#51488: *58 epoll_wait() reported that client prematurely closed connection, so upstream connection is closed too while sending request to upstream, client: 113.69.35.11, server: 42.193.179.124, request: "GET /admin/update/?url_index=2&type=count HTTP/1.1", upstream: "uwsgi://127.0.0.1:8001", host: "42.193.179.124", referrer: "http://42.193.179.124/admin/update_video/"
+2021/01/04 01:42:18 [info] 51488#51488: *64 client 113.69.35.11 closed keepalive connection
+2021/01/04 01:42:28 [info] 51488#51488: *68 client 113.69.35.11 closed keepalive connection
+2021/01/04 01:42:38 [info] 51488#51488: *71 client 113.69.35.11 closed keepalive connection
+2021/01/04 01:42:48 [info] 51488#51488: *75 client 113.69.35.11 closed keepalive connection
+2021/01/04 01:43:13 [info] 51488#51488: *77 client 113.69.35.11 closed keepalive connection
+2021/01/04 01:43:23 [info] 51488#51488: *82 client 113.69.35.11 closed keepalive connection
+2021/01/04 01:45:33 [info] 51488#51488: *84 client 113.69.35.11 closed keepalive connection
+2021/01/04 01:45:43 [info] 51488#51488: *86 client 113.69.35.11 closed keepalive connection
+2021/01/04 01:45:53 [info] 51488#51488: *90 client 113.69.35.11 closed keepalive connection

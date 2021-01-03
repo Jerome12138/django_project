@@ -17611,3 +17611,622 @@ redis_dump exception: Error 111 connecting to 49.234.78.157:6379. Connection ref
 [2021-01-02 22:38:34] [ERROR] 67保存出现错误
 保存出错：'Manager' object has no attribute 'bulk_update'
 [2021-01-02 22:38:34] [ERROR] 129保存出现错误
+*** Starting uWSGI 2.0.19.1 (64bit) on [Mon Jan  4 01:25:26 2021] ***
+compiled with version: 9.3.0 on 03 January 2021 16:54:23
+os: Linux-5.4.0-42-generic #46-Ubuntu SMP Fri Jul 10 00:24:02 UTC 2020
+nodename: VM-8-16-ubuntu
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 1
+current working directory: /home/ubuntu/git/django_project
+writing pidfile to ./uwsgi.pid
+detected binary path: /usr/local/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+chdir() to /home/ubuntu/git/django_project
+your processes number limit is 7582
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address 127.0.0.1:8001 fd 6
+Python version: 3.8.5 (default, Jul 28 2020, 12:59:40)  [GCC 9.3.0]
+Python main interpreter initialized at 0x559f38d3c230
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 416720 bytes (406 KB) for 8 cores
+*** Operational MODE: preforking+threaded ***
+Traceback (most recent call last):
+  File "./django_project/wsgi.py", line 16, in <module>
+    application = get_wsgi_application()
+  File "/usr/local/lib/python3.8/dist-packages/django/core/wsgi.py", line 12, in get_wsgi_application
+    django.setup(set_prefix=False)
+  File "/usr/local/lib/python3.8/dist-packages/django/__init__.py", line 24, in setup
+    apps.populate(settings.INSTALLED_APPS)
+  File "/usr/local/lib/python3.8/dist-packages/django/apps/registry.py", line 91, in populate
+    app_config = AppConfig.create(entry)
+  File "/usr/local/lib/python3.8/dist-packages/django/apps/config.py", line 90, in create
+    module = import_module(entry)
+  File "/usr/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+ModuleNotFoundError: No module named 'django_crontab'
+unable to load app 0 (mountpoint='') (callable not found or import error)
+*** no app loaded. going in full dynamic mode ***
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 51556)
+spawned uWSGI worker 1 (pid: 51558, cores: 2)
+spawned uWSGI worker 2 (pid: 51559, cores: 2)
+spawned uWSGI worker 3 (pid: 51560, cores: 2)
+spawned uWSGI worker 4 (pid: 51561, cores: 2)
+--- no python application found, check your startup logs for errors ---
+[pid: 51561|app: -1|req: -1/1] 113.69.35.11 () {44 vars in 888 bytes} [Mon Jan  4 01:25:47 2021] GET /video/ => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+*** Starting uWSGI 2.0.19.1 (64bit) on [Mon Jan  4 01:35:12 2021] ***
+compiled with version: 9.3.0 on 03 January 2021 16:54:23
+os: Linux-5.4.0-42-generic #46-Ubuntu SMP Fri Jul 10 00:24:02 UTC 2020
+nodename: VM-8-16-ubuntu
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 1
+current working directory: /home/ubuntu/git/django_project
+writing pidfile to ./uwsgi.pid
+detected binary path: /usr/local/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+chdir() to /home/ubuntu/git/django_project
+your processes number limit is 7582
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address 127.0.0.1:8001 fd 6
+Python version: 3.8.5 (default, Jul 28 2020, 12:59:40)  [GCC 9.3.0]
+Python main interpreter initialized at 0x56198d63a230
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 416720 bytes (406 KB) for 8 cores
+*** Operational MODE: preforking+threaded ***
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x56198d63a230 pid: 53288 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 53288)
+spawned uWSGI worker 1 (pid: 53290, cores: 2)
+spawned uWSGI worker 2 (pid: 53291, cores: 2)
+spawned uWSGI worker 3 (pid: 53292, cores: 2)
+spawned uWSGI worker 4 (pid: 53293, cores: 2)
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.8/dist-packages/django/core/handlers/base.py", line 165, in _get_response
+    callback, callback_args, callback_kwargs = self.resolve_request(request)
+  File "/usr/local/lib/python3.8/dist-packages/django/core/handlers/base.py", line 288, in resolve_request
+    resolver_match = resolver.resolve(request.path_info)
+  File "/usr/local/lib/python3.8/dist-packages/django/urls/resolvers.py", line 545, in resolve
+    for pattern in self.url_patterns:
+  File "/usr/local/lib/python3.8/dist-packages/django/utils/functional.py", line 48, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/local/lib/python3.8/dist-packages/django/urls/resolvers.py", line 589, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/usr/local/lib/python3.8/dist-packages/django/utils/functional.py", line 48, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/local/lib/python3.8/dist-packages/django/urls/resolvers.py", line 582, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/usr/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 783, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "./django_project/urls.py", line 23, in <module>
+    path('admin/', include('my_admin.urls')),
+  File "/usr/local/lib/python3.8/dist-packages/django/urls/conf.py", line 34, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/usr/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 783, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "./my_admin/urls.py", line 5, in <module>
+    from . import views
+  File "./my_admin/views.py", line 18, in <module>
+    from .func import webpToJPG
+  File "./my_admin/func/webpToJPG.py", line 2, in <module>
+    from PIL import Image
+ModuleNotFoundError: No module named 'PIL'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.8/dist-packages/django/utils/deprecation.py", line 114, in __call__
+    response = response or self.get_response(request)
+  File "/usr/local/lib/python3.8/dist-packages/django/core/handlers/exception.py", line 49, in inner
+    response = response_for_exception(request, exc)
+  File "/usr/local/lib/python3.8/dist-packages/django/core/handlers/exception.py", line 103, in response_for_exception
+    response = handle_uncaught_exception(request, get_resolver(get_urlconf()), sys.exc_info())
+  File "/usr/local/lib/python3.8/dist-packages/django/core/handlers/exception.py", line 141, in handle_uncaught_exception
+    callback, param_dict = resolver.resolve_error_handler(500)
+  File "/usr/local/lib/python3.8/dist-packages/django/urls/resolvers.py", line 602, in resolve_error_handler
+    callback = getattr(self.urlconf_module, 'handler%s' % view_type, None)
+  File "/usr/local/lib/python3.8/dist-packages/django/utils/functional.py", line 48, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/local/lib/python3.8/dist-packages/django/urls/resolvers.py", line 582, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/usr/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 783, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "./django_project/urls.py", line 23, in <module>
+    path('admin/', include('my_admin.urls')),
+  File "/usr/local/lib/python3.8/dist-packages/django/urls/conf.py", line 34, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/usr/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 783, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "./my_admin/urls.py", line 5, in <module>
+    from . import views
+  File "./my_admin/views.py", line 18, in <module>
+    from .func import webpToJPG
+  File "./my_admin/func/webpToJPG.py", line 2, in <module>
+    from PIL import Image
+ModuleNotFoundError: No module named 'PIL'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.8/dist-packages/django/utils/deprecation.py", line 114, in __call__
+    response = response or self.get_response(request)
+  File "/usr/local/lib/python3.8/dist-packages/django/core/handlers/exception.py", line 49, in inner
+    response = response_for_exception(request, exc)
+  File "/usr/local/lib/python3.8/dist-packages/django/core/handlers/exception.py", line 103, in response_for_exception
+    response = handle_uncaught_exception(request, get_resolver(get_urlconf()), sys.exc_info())
+  File "/usr/local/lib/python3.8/dist-packages/django/core/handlers/exception.py", line 141, in handle_uncaught_exception
+    callback, param_dict = resolver.resolve_error_handler(500)
+  File "/usr/local/lib/python3.8/dist-packages/django/urls/resolvers.py", line 602, in resolve_error_handler
+    callback = getattr(self.urlconf_module, 'handler%s' % view_type, None)
+  File "/usr/local/lib/python3.8/dist-packages/django/utils/functional.py", line 48, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/local/lib/python3.8/dist-packages/django/urls/resolvers.py", line 582, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/usr/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 783, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "./django_project/urls.py", line 23, in <module>
+    path('admin/', include('my_admin.urls')),
+  File "/usr/local/lib/python3.8/dist-packages/django/urls/conf.py", line 34, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/usr/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 783, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "./my_admin/urls.py", line 5, in <module>
+    from . import views
+  File "./my_admin/views.py", line 18, in <module>
+    from .func import webpToJPG
+  File "./my_admin/func/webpToJPG.py", line 2, in <module>
+    from PIL import Image
+ModuleNotFoundError: No module named 'PIL'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.8/dist-packages/django/utils/deprecation.py", line 114, in __call__
+    response = response or self.get_response(request)
+  File "/usr/local/lib/python3.8/dist-packages/django/core/handlers/exception.py", line 49, in inner
+    response = response_for_exception(request, exc)
+  File "/usr/local/lib/python3.8/dist-packages/django/core/handlers/exception.py", line 103, in response_for_exception
+    response = handle_uncaught_exception(request, get_resolver(get_urlconf()), sys.exc_info())
+  File "/usr/local/lib/python3.8/dist-packages/django/core/handlers/exception.py", line 141, in handle_uncaught_exception
+    callback, param_dict = resolver.resolve_error_handler(500)
+  File "/usr/local/lib/python3.8/dist-packages/django/urls/resolvers.py", line 602, in resolve_error_handler
+    callback = getattr(self.urlconf_module, 'handler%s' % view_type, None)
+  File "/usr/local/lib/python3.8/dist-packages/django/utils/functional.py", line 48, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/local/lib/python3.8/dist-packages/django/urls/resolvers.py", line 582, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/usr/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 783, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "./django_project/urls.py", line 23, in <module>
+    path('admin/', include('my_admin.urls')),
+  File "/usr/local/lib/python3.8/dist-packages/django/urls/conf.py", line 34, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/usr/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 783, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "./my_admin/urls.py", line 5, in <module>
+    from . import views
+  File "./my_admin/views.py", line 18, in <module>
+    from .func import webpToJPG
+  File "./my_admin/func/webpToJPG.py", line 2, in <module>
+    from PIL import Image
+ModuleNotFoundError: No module named 'PIL'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.8/dist-packages/django/utils/deprecation.py", line 114, in __call__
+    response = response or self.get_response(request)
+  File "/usr/local/lib/python3.8/dist-packages/django/core/handlers/exception.py", line 49, in inner
+    response = response_for_exception(request, exc)
+  File "/usr/local/lib/python3.8/dist-packages/django/core/handlers/exception.py", line 103, in response_for_exception
+    response = handle_uncaught_exception(request, get_resolver(get_urlconf()), sys.exc_info())
+  File "/usr/local/lib/python3.8/dist-packages/django/core/handlers/exception.py", line 141, in handle_uncaught_exception
+    callback, param_dict = resolver.resolve_error_handler(500)
+  File "/usr/local/lib/python3.8/dist-packages/django/urls/resolvers.py", line 602, in resolve_error_handler
+    callback = getattr(self.urlconf_module, 'handler%s' % view_type, None)
+  File "/usr/local/lib/python3.8/dist-packages/django/utils/functional.py", line 48, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/local/lib/python3.8/dist-packages/django/urls/resolvers.py", line 582, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/usr/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 783, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "./django_project/urls.py", line 23, in <module>
+    path('admin/', include('my_admin.urls')),
+  File "/usr/local/lib/python3.8/dist-packages/django/urls/conf.py", line 34, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/usr/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 783, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "./my_admin/urls.py", line 5, in <module>
+    from . import views
+  File "./my_admin/views.py", line 18, in <module>
+    from .func import webpToJPG
+  File "./my_admin/func/webpToJPG.py", line 2, in <module>
+    from PIL import Image
+ModuleNotFoundError: No module named 'PIL'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.8/dist-packages/django/utils/deprecation.py", line 114, in __call__
+    response = response or self.get_response(request)
+  File "/usr/local/lib/python3.8/dist-packages/django/core/handlers/exception.py", line 49, in inner
+    response = response_for_exception(request, exc)
+  File "/usr/local/lib/python3.8/dist-packages/django/core/handlers/exception.py", line 103, in response_for_exception
+    response = handle_uncaught_exception(request, get_resolver(get_urlconf()), sys.exc_info())
+  File "/usr/local/lib/python3.8/dist-packages/django/core/handlers/exception.py", line 141, in handle_uncaught_exception
+    callback, param_dict = resolver.resolve_error_handler(500)
+  File "/usr/local/lib/python3.8/dist-packages/django/urls/resolvers.py", line 602, in resolve_error_handler
+    callback = getattr(self.urlconf_module, 'handler%s' % view_type, None)
+  File "/usr/local/lib/python3.8/dist-packages/django/utils/functional.py", line 48, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/local/lib/python3.8/dist-packages/django/urls/resolvers.py", line 582, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/usr/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 783, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "./django_project/urls.py", line 23, in <module>
+    path('admin/', include('my_admin.urls')),
+  File "/usr/local/lib/python3.8/dist-packages/django/urls/conf.py", line 34, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/usr/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 783, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "./my_admin/urls.py", line 5, in <module>
+    from . import views
+  File "./my_admin/views.py", line 18, in <module>
+    from .func import webpToJPG
+  File "./my_admin/func/webpToJPG.py", line 2, in <module>
+    from PIL import Image
+ModuleNotFoundError: No module named 'PIL'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.8/dist-packages/django/utils/deprecation.py", line 114, in __call__
+    response = response or self.get_response(request)
+  File "/usr/local/lib/python3.8/dist-packages/django/core/handlers/exception.py", line 49, in inner
+    response = response_for_exception(request, exc)
+  File "/usr/local/lib/python3.8/dist-packages/django/core/handlers/exception.py", line 103, in response_for_exception
+    response = handle_uncaught_exception(request, get_resolver(get_urlconf()), sys.exc_info())
+  File "/usr/local/lib/python3.8/dist-packages/django/core/handlers/exception.py", line 141, in handle_uncaught_exception
+    callback, param_dict = resolver.resolve_error_handler(500)
+  File "/usr/local/lib/python3.8/dist-packages/django/urls/resolvers.py", line 602, in resolve_error_handler
+    callback = getattr(self.urlconf_module, 'handler%s' % view_type, None)
+  File "/usr/local/lib/python3.8/dist-packages/django/utils/functional.py", line 48, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/local/lib/python3.8/dist-packages/django/urls/resolvers.py", line 582, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/usr/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 783, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "./django_project/urls.py", line 23, in <module>
+    path('admin/', include('my_admin.urls')),
+  File "/usr/local/lib/python3.8/dist-packages/django/urls/conf.py", line 34, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/usr/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 783, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "./my_admin/urls.py", line 5, in <module>
+    from . import views
+  File "./my_admin/views.py", line 18, in <module>
+    from .func import webpToJPG
+  File "./my_admin/func/webpToJPG.py", line 2, in <module>
+    from PIL import Image
+ModuleNotFoundError: No module named 'PIL'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.8/dist-packages/django/utils/deprecation.py", line 114, in __call__
+    response = response or self.get_response(request)
+  File "/usr/local/lib/python3.8/dist-packages/django/core/handlers/exception.py", line 49, in inner
+    response = response_for_exception(request, exc)
+  File "/usr/local/lib/python3.8/dist-packages/django/core/handlers/exception.py", line 103, in response_for_exception
+    response = handle_uncaught_exception(request, get_resolver(get_urlconf()), sys.exc_info())
+  File "/usr/local/lib/python3.8/dist-packages/django/core/handlers/exception.py", line 141, in handle_uncaught_exception
+    callback, param_dict = resolver.resolve_error_handler(500)
+  File "/usr/local/lib/python3.8/dist-packages/django/urls/resolvers.py", line 602, in resolve_error_handler
+    callback = getattr(self.urlconf_module, 'handler%s' % view_type, None)
+  File "/usr/local/lib/python3.8/dist-packages/django/utils/functional.py", line 48, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/local/lib/python3.8/dist-packages/django/urls/resolvers.py", line 582, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/usr/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 783, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "./django_project/urls.py", line 23, in <module>
+    path('admin/', include('my_admin.urls')),
+  File "/usr/local/lib/python3.8/dist-packages/django/urls/conf.py", line 34, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/usr/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 783, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "./my_admin/urls.py", line 5, in <module>
+    from . import views
+  File "./my_admin/views.py", line 18, in <module>
+    from .func import webpToJPG
+  File "./my_admin/func/webpToJPG.py", line 2, in <module>
+    from PIL import Image
+ModuleNotFoundError: No module named 'PIL'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/django/core/handlers/wsgi.py", line 133, in __call__
+    response = self.get_response(request)
+  File "/usr/local/lib/python3.8/dist-packages/django/core/handlers/base.py", line 128, in get_response
+    response = self._middleware_chain(request)
+  File "/usr/local/lib/python3.8/dist-packages/django/core/handlers/exception.py", line 49, in inner
+    response = response_for_exception(request, exc)
+  File "/usr/local/lib/python3.8/dist-packages/django/core/handlers/exception.py", line 103, in response_for_exception
+    response = handle_uncaught_exception(request, get_resolver(get_urlconf()), sys.exc_info())
+  File "/usr/local/lib/python3.8/dist-packages/django/core/handlers/exception.py", line 141, in handle_uncaught_exception
+    callback, param_dict = resolver.resolve_error_handler(500)
+  File "/usr/local/lib/python3.8/dist-packages/django/urls/resolvers.py", line 602, in resolve_error_handler
+    callback = getattr(self.urlconf_module, 'handler%s' % view_type, None)
+  File "/usr/local/lib/python3.8/dist-packages/django/utils/functional.py", line 48, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/usr/local/lib/python3.8/dist-packages/django/urls/resolvers.py", line 582, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "/usr/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 783, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "./django_project/urls.py", line 23, in <module>
+    path('admin/', include('my_admin.urls')),
+  File "/usr/local/lib/python3.8/dist-packages/django/urls/conf.py", line 34, in include
+    urlconf_module = import_module(urlconf_module)
+  File "/usr/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 783, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "./my_admin/urls.py", line 5, in <module>
+    from . import views
+  File "./my_admin/views.py", line 18, in <module>
+    from .func import webpToJPG
+  File "./my_admin/func/webpToJPG.py", line 2, in <module>
+    from PIL import Image
+ModuleNotFoundError: No module named 'PIL'
+[pid: 53293|app: 0|req: 1/1] 113.69.35.11 () {44 vars in 888 bytes} [Mon Jan  4 01:35:20 2021] GET /video/ => generated 0 bytes in 183 msecs (HTTP/1.1 500) 0 headers in 0 bytes (0 switches on core 0)
+*** Starting uWSGI 2.0.19.1 (64bit) on [Mon Jan  4 01:37:15 2021] ***
+compiled with version: 9.3.0 on 03 January 2021 16:54:23
+os: Linux-5.4.0-42-generic #46-Ubuntu SMP Fri Jul 10 00:24:02 UTC 2020
+nodename: VM-8-16-ubuntu
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 1
+current working directory: /home/ubuntu/git/django_project
+writing pidfile to ./uwsgi.pid
+detected binary path: /usr/local/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+chdir() to /home/ubuntu/git/django_project
+your processes number limit is 7582
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to TCP address 127.0.0.1:8001 fd 6
+Python version: 3.8.5 (default, Jul 28 2020, 12:59:40)  [GCC 9.3.0]
+Python main interpreter initialized at 0x55addd403230
+python threads support enabled
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 416720 bytes (406 KB) for 8 cores
+*** Operational MODE: preforking+threaded ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x55addd403230 pid: 53621 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 53621)
+spawned uWSGI worker 1 (pid: 53623, cores: 2)
+spawned uWSGI worker 2 (pid: 53624, cores: 2)
+spawned uWSGI worker 3 (pid: 53625, cores: 2)
+spawned uWSGI worker 4 (pid: 53626, cores: 2)
+[pid: 53626|app: 0|req: 1/1] 113.69.35.11 () {46 vars in 919 bytes} [Mon Jan  4 01:37:22 2021] GET /video/ => generated 13502 bytes in 156 msecs (HTTP/1.1 200) 7 headers in 350 bytes (1 switches on core 0)
+[pid: 53623|app: 0|req: 1/2] 113.69.35.11 () {44 vars in 888 bytes} [Mon Jan  4 01:37:27 2021] GET /admin/ => generated 0 bytes in 177 msecs (HTTP/1.1 302) 8 headers in 309 bytes (1 switches on core 0)
+[pid: 53623|app: 0|req: 2/3] 113.69.35.11 () {44 vars in 864 bytes} [Mon Jan  4 01:37:27 2021] GET /admin/login.html => generated 5722 bytes in 9 msecs (HTTP/1.1 200) 7 headers in 349 bytes (1 switches on core 1)
+[pid: 53623|app: 0|req: 3/4] 113.69.35.11 () {52 vars in 1016 bytes} [Mon Jan  4 01:37:33 2021] POST /admin/login.html => generated 92 bytes in 4 msecs (HTTP/1.1 200) 5 headers in 165 bytes (1 switches on core 0)
+[pid: 53626|app: 0|req: 2/5] 113.69.35.11 () {46 vars in 924 bytes} [Mon Jan  4 01:37:41 2021] GET /admin/register.html => generated 5537 bytes in 7 msecs (HTTP/1.1 200) 7 headers in 349 bytes (1 switches on core 1)
+添加用户：Jerome
+[pid: 53623|app: 0|req: 4/6] 113.69.35.11 () {52 vars in 1025 bytes} [Mon Jan  4 01:38:16 2021] POST /admin/register.html => generated 63 bytes in 13 msecs (HTTP/1.1 200) 5 headers in 165 bytes (1 switches on core 1)
+[pid: 53623|app: 0|req: 5/7] 113.69.35.11 () {46 vars in 921 bytes} [Mon Jan  4 01:38:16 2021] GET /admin/login.html => generated 5722 bytes in 1 msecs (HTTP/1.1 200) 7 headers in 349 bytes (1 switches on core 0)
+[pid: 53626|app: 0|req: 3/8] 113.69.35.11 () {52 vars in 1016 bytes} [Mon Jan  4 01:38:24 2021] POST /admin/login.html => generated 63 bytes in 13 msecs (HTTP/1.1 200) 7 headers in 324 bytes (1 switches on core 0)
+[pid: 53623|app: 0|req: 6/9] 113.69.35.11 () {46 vars in 942 bytes} [Mon Jan  4 01:38:24 2021] GET /admin/ => generated 30384 bytes in 8 msecs (HTTP/1.1 200) 7 headers in 350 bytes (1 switches on core 0)
+--------2021-01-04 01:38:32 站点1开始更新--------
+./video/func/GetPageData.py:120: FutureWarning: The behavior of this method will change in future versions. Use specific 'len(elem)' or 'elem is not None' test instead.
+  if not html:
+站点1今日更新： 20
+[pid: 53623|app: 0|req: 8/10] 113.69.35.11 () {46 vars in 950 bytes} [Mon Jan  4 01:38:34 2021] GET /admin/view_log/ => generated 24291 bytes in 362 msecs (HTTP/1.1 200) 6 headers in 182 bytes (1 switches on core 0)
+已更新40条数据
+--------2021-01-04 01:38:35 站点1更新完成--------
+[pid: 53623|app: 0|req: 8/11] 113.69.35.11 () {46 vars in 906 bytes} [Mon Jan  4 01:38:32 2021] GET /admin/update/?url_index=1&type=today => generated 81 bytes in 2999 msecs (HTTP/1.1 200) 6 headers in 179 bytes (1 switches on core 1)
+[pid: 53623|app: 0|req: 9/12] 113.69.35.11 () {46 vars in 972 bytes} [Mon Jan  4 01:38:38 2021] GET /admin/view_log/?page=3 => generated 22746 bytes in 356 msecs (HTTP/1.1 200) 6 headers in 182 bytes (1 switches on core 0)
+[pid: 53623|app: 0|req: 10/13] 113.69.35.11 () {46 vars in 983 bytes} [Mon Jan  4 01:38:44 2021] GET /admin/view_log/?page=175 => generated 21367 bytes in 362 msecs (HTTP/1.1 200) 6 headers in 182 bytes (1 switches on core 1)
+[pid: 53623|app: 0|req: 11/14] 113.69.35.11 () {46 vars in 950 bytes} [Mon Jan  4 01:39:03 2021] GET /video/ => generated 28546 bytes in 14 msecs (HTTP/1.1 200) 7 headers in 350 bytes (1 switches on core 0)
+[pid: 53623|app: 0|req: 12/15] 113.69.35.11 () {46 vars in 976 bytes} [Mon Jan  4 01:39:08 2021] GET /admin/update_video/ => generated 17560 bytes in 4 msecs (HTTP/1.1 200) 6 headers in 182 bytes (1 switches on core 1)
+[pid: 53626|app: 0|req: 4/16] 113.69.35.11 () {46 vars in 967 bytes} [Mon Jan  4 01:39:21 2021] GET /admin/update_log/ => generated 16627 bytes in 5 msecs (HTTP/1.1 200) 6 headers in 182 bytes (1 switches on core 1)
+[pid: 53623|app: 0|req: 13/17] 113.69.35.11 () {46 vars in 965 bytes} [Mon Jan  4 01:39:24 2021] GET /admin/access_log/ => generated 39136 bytes in 17 msecs (HTTP/1.1 200) 6 headers in 182 bytes (1 switches on core 0)
+[pid: 53623|app: 0|req: 14/18] 113.69.35.11 () {46 vars in 982 bytes} [Mon Jan  4 01:39:29 2021] GET /admin/access_log/?page=298 => generated 27039 bytes in 16 msecs (HTTP/1.1 200) 6 headers in 182 bytes (1 switches on core 1)
+[pid: 53623|app: 0|req: 15/19] 113.69.35.11 () {46 vars in 972 bytes} [Mon Jan  4 01:39:36 2021] GET /admin/error_log/ => generated 145 bytes in 7 msecs (HTTP/1.1 500) 6 headers in 184 bytes (1 switches on core 0)
+[pid: 53623|app: 0|req: 16/20] 113.69.35.11 () {46 vars in 970 bytes} [Mon Jan  4 01:39:40 2021] GET /admin/view_log/ => generated 24291 bytes in 356 msecs (HTTP/1.1 200) 6 headers in 182 bytes (1 switches on core 1)
+[pid: 53623|app: 0|req: 17/21] 113.69.35.11 () {46 vars in 976 bytes} [Mon Jan  4 01:39:43 2021] GET /admin/view_log/?page=175 => generated 21880 bytes in 364 msecs (HTTP/1.1 200) 6 headers in 182 bytes (1 switches on core 0)
+[pid: 53623|app: 0|req: 18/22] 113.69.35.11 () {46 vars in 985 bytes} [Mon Jan  4 01:39:50 2021] GET /admin/view_log/?page=175 => generated 21948 bytes in 360 msecs (HTTP/1.1 200) 6 headers in 182 bytes (1 switches on core 1)
+[pid: 53623|app: 0|req: 19/23] 113.69.35.11 () {46 vars in 972 bytes} [Mon Jan  4 01:39:57 2021] GET /admin/update_log/ => generated 16627 bytes in 3 msecs (HTTP/1.1 200) 6 headers in 182 bytes (1 switches on core 0)
+[pid: 53624|app: 0|req: 1/24] 113.69.35.11 () {46 vars in 969 bytes} [Mon Jan  4 01:39:58 2021] GET /admin/update_video/ => generated 17560 bytes in 153 msecs (HTTP/1.1 200) 6 headers in 182 bytes (1 switches on core 0)
+--------2021-01-04 01:40:00 站点1开始更新--------
+[pid: 53624|app: 0|req: 2/25] 113.69.35.11 () {46 vars in 963 bytes} [Mon Jan  4 01:40:02 2021] GET /admin/view_log/ => generated 24291 bytes in 392 msecs (HTTP/1.1 200) 6 headers in 182 bytes (1 switches on core 1)
+[pid: 53623|app: 0|req: 21/26] 113.69.35.11 () {46 vars in 976 bytes} [Mon Jan  4 01:40:05 2021] GET /admin/view_log/?page=175 => generated 22255 bytes in 390 msecs (HTTP/1.1 200) 6 headers in 182 bytes (1 switches on core 0)
+[pid: 53623|app: 0|req: 22/27] 113.69.35.11 () {46 vars in 985 bytes} [Mon Jan  4 01:40:08 2021] GET /admin/view_log/?page=175 => generated 22323 bytes in 366 msecs (HTTP/1.1 200) 6 headers in 182 bytes (1 switches on core 0)
+[pid: 53623|app: 0|req: 23/28] 113.69.35.11 () {46 vars in 985 bytes} [Mon Jan  4 01:40:17 2021] GET /admin/view_log/?page=175 => generated 22391 bytes in 378 msecs (HTTP/1.1 200) 6 headers in 182 bytes (1 switches on core 0)
+[pid: 53623|app: 0|req: 24/29] 113.69.35.11 () {46 vars in 950 bytes} [Mon Jan  4 01:40:24 2021] GET /video/ => generated 58786 bytes in 25 msecs (HTTP/1.1 200) 7 headers in 350 bytes (1 switches on core 0)
+已更新3000条数据
+--------2021-01-04 01:40:37 站点1更新完成--------
+[pid: 53623|app: 0|req: 24/30] 113.69.35.11 () {46 vars in 919 bytes} [Mon Jan  4 01:40:00 2021] GET /admin/update/?url_index=1&type=count => generated 83 bytes in 37062 msecs (HTTP/1.1 200) 6 headers in 179 bytes (1 switches on core 1)
+[pid: 53623|app: 0|req: 25/31] 113.69.35.11 () {44 vars in 888 bytes} [Mon Jan  4 01:41:44 2021] GET /admin/ => generated 30384 bytes in 4 msecs (HTTP/1.1 200) 7 headers in 350 bytes (1 switches on core 0)
+[pid: 53623|app: 0|req: 26/32] 113.69.35.11 () {46 vars in 950 bytes} [Mon Jan  4 01:41:47 2021] GET /admin/view_log/ => generated 24291 bytes in 355 msecs (HTTP/1.1 200) 6 headers in 182 bytes (1 switches on core 1)
+[pid: 53623|app: 0|req: 27/33] 113.69.35.11 () {46 vars in 976 bytes} [Mon Jan  4 01:41:50 2021] GET /admin/view_log/?page=175 => generated 22781 bytes in 352 msecs (HTTP/1.1 200) 6 headers in 182 bytes (1 switches on core 0)
+[pid: 53623|app: 0|req: 28/34] 113.69.35.11 () {46 vars in 988 bytes} [Mon Jan  4 01:41:58 2021] GET /admin/view_log/2021-01-03 => generated 0 bytes in 0 msecs (HTTP/1.1 301) 5 headers in 195 bytes (1 switches on core 1)
+[pid: 53624|app: 0|req: 3/35] 113.69.35.11 () {46 vars in 990 bytes} [Mon Jan  4 01:41:58 2021] GET /admin/view_log/2021-01-03/ => generated 14926 bytes in 3 msecs (HTTP/1.1 200) 6 headers in 182 bytes (1 switches on core 0)
+[pid: 53624|app: 0|req: 4/36] 113.69.35.11 () {46 vars in 970 bytes} [Mon Jan  4 01:42:00 2021] GET /admin/view_log/ => generated 24291 bytes in 356 msecs (HTTP/1.1 200) 6 headers in 182 bytes (1 switches on core 1)
+[pid: 53623|app: 0|req: 29/37] 113.69.35.11 () {46 vars in 967 bytes} [Mon Jan  4 01:42:02 2021] GET /admin/update_video/ => generated 17560 bytes in 3 msecs (HTTP/1.1 200) 6 headers in 182 bytes (1 switches on core 1)
+--------2021-01-04 01:42:05 站点2开始更新--------
+[pid: 53623|app: 0|req: 31/38] 113.69.35.11 () {46 vars in 963 bytes} [Mon Jan  4 01:42:08 2021] GET /admin/view_log/ => generated 24291 bytes in 355 msecs (HTTP/1.1 200) 6 headers in 182 bytes (1 switches on core 1)
+[pid: 53623|app: 0|req: 32/39] 113.69.35.11 () {46 vars in 976 bytes} [Mon Jan  4 01:42:10 2021] GET /admin/view_log/?page=175 => generated 23156 bytes in 397 msecs (HTTP/1.1 200) 6 headers in 182 bytes (1 switches on core 1)
+[pid: 53623|app: 0|req: 33/40] 113.69.35.11 () {46 vars in 985 bytes} [Mon Jan  4 01:42:15 2021] GET /admin/view_log/?page=175 => generated 23224 bytes in 399 msecs (HTTP/1.1 200) 6 headers in 182 bytes (1 switches on core 1)
+[pid: 53623|app: 0|req: 34/41] 113.69.35.11 () {46 vars in 976 bytes} [Mon Jan  4 01:42:20 2021] GET /admin/update_video/ => generated 17560 bytes in 3 msecs (HTTP/1.1 200) 6 headers in 182 bytes (1 switches on core 1)
+--------2021-01-04 01:42:24 站点1开始更新--------
+Exception in thread Thread-19:
+Traceback (most recent call last):
+  File "/usr/lib/python3.8/threading.py", line 932, in _bootstrap_inner
+    self.run()
+  File "/usr/lib/python3.8/threading.py", line 870, in run
+    self._target(*self._args, **self._kwargs)
+  File "./video/func/GetPageData.py", line 87, in wrapper
+    func(obj)
+  File "./video/func/GetPageData.py", line 161, in add_page_to_queue
+    logger.console('获取到page:', url.split('?p=')[1])
+AttributeError: 'Logger' object has no attribute 'console'
+Exception: name 'page_count' is not defined
+[pid: 53623|app: 0|req: 35/42] 113.69.35.11 () {46 vars in 915 bytes} [Mon Jan  4 01:42:24 2021] GET /admin/update/?url_index=1&type=all => generated 87 bytes in 2881 msecs (HTTP/1.1 200) 6 headers in 179 bytes (1 switches on core 1)
+[pid: 53623|app: 0|req: 36/43] 113.69.35.11 () {46 vars in 971 bytes} [Mon Jan  4 01:42:35 2021] GET /admin/update_video/ => generated 17560 bytes in 3 msecs (HTTP/1.1 200) 6 headers in 182 bytes (1 switches on core 1)
+[pid: 53623|app: 0|req: 37/44] 113.69.35.11 () {46 vars in 967 bytes} [Mon Jan  4 01:42:36 2021] GET /admin/update_log/ => generated 16627 bytes in 6 msecs (HTTP/1.1 200) 6 headers in 182 bytes (1 switches on core 1)
+[pid: 53623|app: 0|req: 38/45] 113.69.35.11 () {46 vars in 963 bytes} [Mon Jan  4 01:42:37 2021] GET /admin/error_log/ => generated 145 bytes in 4 msecs (HTTP/1.1 500) 6 headers in 184 bytes (1 switches on core 1)
+[pid: 53623|app: 0|req: 39/46] 113.69.35.11 () {46 vars in 963 bytes} [Mon Jan  4 01:42:40 2021] GET /admin/error_log/ => generated 145 bytes in 5 msecs (HTTP/1.1 500) 6 headers in 184 bytes (1 switches on core 1)
+[pid: 53623|app: 0|req: 40/47] 113.69.35.11 () {46 vars in 965 bytes} [Mon Jan  4 01:43:04 2021] GET /admin/access_log/ => generated 39136 bytes in 15 msecs (HTTP/1.1 200) 6 headers in 182 bytes (1 switches on core 1)
+[pid: 53623|app: 0|req: 41/48] 113.69.35.11 () {46 vars in 961 bytes} [Mon Jan  4 01:43:05 2021] GET /admin/view_log/ => generated 24291 bytes in 399 msecs (HTTP/1.1 200) 6 headers in 182 bytes (1 switches on core 1)
+[pid: 53623|app: 0|req: 42/49] 113.69.35.11 () {46 vars in 976 bytes} [Mon Jan  4 01:43:07 2021] GET /admin/view_log/?page=176 => generated 17875 bytes in 364 msecs (HTTP/1.1 200) 6 headers in 182 bytes (1 switches on core 1)
+[pid: 53624|app: 0|req: 5/50] 113.69.35.11 () {46 vars in 985 bytes} [Mon Jan  4 01:43:11 2021] GET /admin/view_log/?page=175 => generated 23629 bytes in 360 msecs (HTTP/1.1 200) 6 headers in 182 bytes (1 switches on core 0)
+[pid: 53623|app: 0|req: 43/51] 113.69.35.11 () {46 vars in 985 bytes} [Mon Jan  4 01:43:18 2021] GET /admin/view_log/?page=176 => generated 18011 bytes in 360 msecs (HTTP/1.1 200) 6 headers in 182 bytes (1 switches on core 1)
+[pid: 53623|app: 0|req: 44/52] 113.69.35.11 () {46 vars in 976 bytes} [Mon Jan  4 01:45:32 2021] GET /admin/update_video/ => generated 17560 bytes in 3 msecs (HTTP/1.1 200) 6 headers in 182 bytes (1 switches on core 1)
+--------2021-01-04 01:45:34 站点1开始更新--------
+Exception: name 'page_count' is not defined
+[pid: 53624|app: 0|req: 6/53] 113.69.35.11 () {46 vars in 915 bytes} [Mon Jan  4 01:45:34 2021] GET /admin/update/?url_index=1&type=all => generated 87 bytes in 975 msecs (HTTP/1.1 200) 6 headers in 179 bytes (1 switches on core 1)
+--------2021-01-04 01:45:38 站点2开始更新--------
+Exception: name 'page_count' is not defined
+[pid: 53623|app: 0|req: 45/54] 113.69.35.11 () {46 vars in 915 bytes} [Mon Jan  4 01:45:38 2021] GET /admin/update/?url_index=2&type=all => generated 87 bytes in 355 msecs (HTTP/1.1 200) 6 headers in 179 bytes (1 switches on core 1)
+[pid: 53624|app: 0|req: 7/55] 113.69.35.11 () {46 vars in 963 bytes} [Mon Jan  4 01:45:42 2021] GET /admin/view_log/ => generated 24291 bytes in 357 msecs (HTTP/1.1 200) 6 headers in 182 bytes (1 switches on core 0)
+[pid: 53623|app: 0|req: 46/56] 113.69.35.11 () {46 vars in 976 bytes} [Mon Jan  4 01:45:45 2021] GET /admin/view_log/?page=176 => generated 18585 bytes in 355 msecs (HTTP/1.1 200) 6 headers in 182 bytes (1 switches on core 1)
+[pid: 53624|app: 0|req: 8/57] 113.69.35.11 () {46 vars in 985 bytes} [Mon Jan  4 01:45:49 2021] GET /admin/view_log/?page=176 => generated 18653 bytes in 366 msecs (HTTP/1.1 200) 6 headers in 182 bytes (1 switches on core 1)

@@ -8,3 +8,51 @@
 [2021-01-03 16:53:52] [WARNING] "GET /static/img/AdminLTELogo.png HTTP/1.1" 404 179
 [2021-01-03 16:53:52] [WARNING] "GET /static/img/user2-160x160.jpg HTTP/1.1" 404 179
 [2021-01-03 16:53:52] [WARNING] "GET /static/jquery/jquery.cookie.min.js HTTP/1.1" 404 179
+[2021-01-04 01:35:45] [INFO] Watching for file changes with StatReloader
+[2021-01-04 01:36:42] [INFO] Watching for file changes with StatReloader
+[2021-01-04 01:37:06] [INFO] Watching for file changes with StatReloader
+[2021-01-04 01:39:36] [ERROR] Internal Server Error: /admin/error_log/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.8/dist-packages/django/core/handlers/base.py", line 179, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "./my_admin/views.py", line 137, in inner
+    return func(request, *args, **kwargs)
+  File "./my_admin/views.py", line 269, in error_log
+    log_str = DBHandler.load_log(log_path)
+  File "./video/func/DBHandler.py", line 113, in load_log
+    log = f.read()
+  File "/usr/lib/python3.8/codecs.py", line 322, in decode
+    (result, consumed) = self._buffer_decode(data, self.errors, final)
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0xfd in position 1082857: invalid start byte
+[2021-01-04 01:42:37] [ERROR] Internal Server Error: /admin/error_log/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.8/dist-packages/django/core/handlers/base.py", line 179, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "./my_admin/views.py", line 137, in inner
+    return func(request, *args, **kwargs)
+  File "./my_admin/views.py", line 269, in error_log
+    log_str = DBHandler.load_log(log_path)
+  File "./video/func/DBHandler.py", line 113, in load_log
+    log = f.read()
+  File "/usr/lib/python3.8/codecs.py", line 322, in decode
+    (result, consumed) = self._buffer_decode(data, self.errors, final)
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0xfd in position 1082857: invalid start byte
+[2021-01-04 01:42:40] [ERROR] Internal Server Error: /admin/error_log/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.8/dist-packages/django/core/handlers/base.py", line 179, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "./my_admin/views.py", line 137, in inner
+    return func(request, *args, **kwargs)
+  File "./my_admin/views.py", line 269, in error_log
+    log_str = DBHandler.load_log(log_path)
+  File "./video/func/DBHandler.py", line 113, in load_log
+    log = f.read()
+  File "/usr/lib/python3.8/codecs.py", line 322, in decode
+    (result, consumed) = self._buffer_decode(data, self.errors, final)
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0xfd in position 1082857: invalid start byte
