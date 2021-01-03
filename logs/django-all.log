@@ -1,0 +1,10 @@
+[2021-01-03 16:53:14] [INFO] Watching for file changes with StatReloader
+[2021-01-03 16:53:47] [WARNING] "GET /static/jquery/jquery.cookie.min.js HTTP/1.1" 404 179
+[2021-01-03 16:53:48] [INFO] "GET /admin/get_carousel/ HTTP/1.1" 200 24496
+[2021-01-03 16:53:49] [WARNING] "GET /static/jquery/jquery.cookie.min.js HTTP/1.1" 404 179
+[2021-01-03 16:53:49] [WARNING] "GET /static/img/AdminLTELogo.png HTTP/1.1" 404 179
+[2021-01-03 16:53:49] [WARNING] "GET /static/img/user2-160x160.jpg HTTP/1.1" 404 179
+[2021-01-03 16:53:52] [INFO] "GET /admin/ HTTP/1.1" 200 30384
+[2021-01-03 16:53:52] [WARNING] "GET /static/img/AdminLTELogo.png HTTP/1.1" 404 179
+[2021-01-03 16:53:52] [WARNING] "GET /static/img/user2-160x160.jpg HTTP/1.1" 404 179
+[2021-01-03 16:53:52] [WARNING] "GET /static/jquery/jquery.cookie.min.js HTTP/1.1" 404 179
