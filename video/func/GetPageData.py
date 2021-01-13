@@ -530,3 +530,37 @@ class Get80sScore(object):
                     json.dump(self.detail_list,f,ensure_ascii=False, indent=4)
                     print('详情页列表保存成功')
             return return_flag
+
+def get_douban_data():
+    try:
+        type_list = ['movie','tv']
+        tag_list = {
+            'movie': ['热门','最新','经典','可播放','豆瓣高分','冷门佳片','华语','欧美','韩国','日本','动作','喜剧','爱情','科幻','悬疑','恐怖','治愈'],
+            'tv': ['热门','美剧','英剧','日剧','国产剧','港剧','日本动画','综艺','纪录片']
+        }
+        for video_type in type_list:
+            for tag in tag_list[video_type]:
+                with open('douban_list.json','r',encoding='utf-8') as f:
+                    detail_list = json.load(f)
+                # if detail_list[video_type][tag]:
+                #     pass
+                print('%s %s 开始获取'%(video_type, tag))
+                url = 'https://movie.douban.com/j/search_subjects?type=%s&tag=%s&sort=%s&page_limit=%s&page_start=%s' % (video_type, tag, 'time', 1000, 0)
+                item_list = getRequest.get_json(url,is_proxy=1)
+                print('%s %s 获取成功'%(video_type, tag))
+                # print(item_list)
+                if not item_list or not item_list['subjects']:
+                    print(item_list)
+                    return None
+                # print(item_list['subjects'])
+                print('%s %s 数据总数：%s'%(video_type, tag, len(item_list['subjects'])))
+                detail_list[video_type].extend(item_list['subjects'])
+
+                if len(detail_list)!=0:
+                    with open('douban_list.json','w',encoding='utf-8') as f:
+                        json.dump(detail_list,f,ensure_ascii=False, indent=4)
+                        print('%s %s 保存成功'%(video_type, tag))
+                time.sleep(10)
+    except Exception as e:
+        print('get_douban_data ERROR:', e)
+        return None

@@ -685,3 +685,8 @@ def set_rating(request):
         ret['error'] = e
     finally:
         return HttpResponse(json.dumps(ret))
+
+@auth
+def get_douban_data(request):
+    GetPageData.get_douban_data()
+    return HttpResponse('res')
