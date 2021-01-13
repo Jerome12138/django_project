@@ -158,7 +158,7 @@ class getAllData(object):   # 获取所有数据
             self.error_pages.append(url.split('?p=')[1])
         else:
             if int(url.split('?p=')[1]) % 100 == 0:
-                logger.console('获取到page:', url.split('?p=')[1])
+                print('获取到page:', url.split('?p=')[1])
             self.page_queue.put(res_dict)
         self.url_queue.task_done()
 
@@ -178,7 +178,7 @@ class getAllData(object):   # 获取所有数据
         else:
             self.updated += len(res_dict['data'])
             if int(res_dict['page']['pageindex']) % 100 == 0:
-                logger.console('page%s保存成功' % res_dict['page']['pageindex'])
+                print('page%s保存成功' % res_dict['page']['pageindex'])
         self.page_queue.task_done()
 
     def run(self, flag=0, up_count=-1):  # 实现主要逻辑
@@ -198,7 +198,7 @@ class getAllData(object):   # 获取所有数据
                 update_count = up_count if up_count < 10000 else 10000
             update_page = (update_count-1)//self.page_size + 1
         else:   # 更新所有数据
-            print('一共%s页数据' % page_count)
+            print('一共%s页数据' % update_page)
             page_thread = 30
             save_thread = 10
         if update_page:

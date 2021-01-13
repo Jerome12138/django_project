@@ -223,16 +223,16 @@ LOGGING = {
     }
 }
 
-# # redis缓存
-# CACHES = {
-#     "default": {
-#         "BACKEND": "django_redis.cache.RedisCache",
-#         "LOCATION": "redis://3201862:@42.193.179.124:6379/2",
-#         "OPTIONS": {
-#             "CLIENT_CLASS": "django_redis.client.DefaultClient",
-#         }
-#     }
-# }
+# redis缓存
+CACHES = {
+    "default": {
+        "BACKEND": "django_redis.cache.RedisCache",
+        "LOCATION": "redis://3201862:@42.193.179.124:6372/2",
+        "OPTIONS": {
+            "CLIENT_CLASS": "django_redis.client.DefaultClient",
+        }
+    }
+}
 
 # # redis存储session
 # # SESSION_ENGINE = 'redis_sessions.session' # django-redis-sessions
