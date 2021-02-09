@@ -233,6 +233,7 @@ def dump_rating(vod_id, rating):
 
 
 def redis_dump(skey, sdata):
+    return True
     try:
         SR.set(skey, sdata)
         return True
@@ -242,14 +243,16 @@ def redis_dump(skey, sdata):
 
 
 def redis_load(skey):
+    return []
     try:
         result = SR.get(skey)
         return result
     except Exception as e:
         print('redis_load exception:', e)
-        return None
+        return []
 
 def redis_dumplist(skey, data_list):
+    return True
     try:
         exist_list = SR.lrange(skey, 0, -1)
         data_list = list(set(data_list)-set(exist_list))    # 差集，已存在则不添加
@@ -262,6 +265,7 @@ def redis_dumplist(skey, data_list):
 
 
 def redis_loadlist(skey):
+    return []
     try:
         result = SR.lrange(skey, 0, -1)
         # result = SR.get(skey)
