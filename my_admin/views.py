@@ -690,3 +690,34 @@ def set_rating(request):
 def get_douban_data(request):
     GetPageData.get_douban_data()
     return HttpResponse('res')
+
+# 匹配豆瓣json数据
+def match_douban_data(request):
+    ret = {'status': True, 'error': None, 'data': None}
+    try:
+        type_list = ['movie','tv']
+        tag_list = {
+            'movie': ['热门','最新','经典','华语','欧美','韩国','日本','动作','喜剧','爱情','科幻','悬疑','恐怖','治愈'],
+            'tv': ['热门','美剧','英剧','日剧','国产剧','港剧','日本动画','综艺','纪录片']
+        }
+        for video_type in type_list:
+            admin_flag = DBHandler.redis_load('admin_flag')
+            if admin_flag == b'0':
+                print('管理员终止')
+                break
+            for tag in tag_list[video_type]:
+                admin_flag = DBHandler.redis_load('admin_flag')
+                if admin_flag == b'0':
+                    print('管理员终止')
+                    break
+                filename = 'douban/%s_%s.json' % (video_type, tag)
+                with open(filename,'r',encoding='utf-8') as f:
+                    detail_list = json.load(f)
+                for item in detail_list['subjects']:
+                    GetPageData.match_score_by_name(item)
+    except Exception as e:
+        print(e)
+        ret['status'] = False
+        ret['error'] = e
+    finally:
+        return HttpResponse(json.dumps(ret))

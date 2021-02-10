@@ -550,7 +550,7 @@ def get_douban_data():
                 print('%s %s 获取成功'%(video_type, tag))
                 # print(item_list)
                 if not item_list or not item_list['subjects']:
-                    print(item_list)
+                    print('item_list:', item_list)
                     return None
                 # print(item_list['subjects'])
                 print('%s %s 数据总数：%s'%(video_type, tag, len(item_list['subjects'])))
@@ -564,3 +564,50 @@ def get_douban_data():
     except Exception as e:
         print('get_douban_data ERROR:', e)
         return None
+
+
+
+def match_score_by_name(video_data):   # 匹配视频信息并储存评分数据
+    try:
+        # video_data = dict(video_data)
+        vod_info_list = DBHandler.search_data(video_data['title'].replace(' ',''))
+        # print(vod_info_list)
+        if len(vod_info_list) == 0: # 如果无结果
+            re_str = re.search(r'(\[第[一二三四五六七八九十]季\])',video_data['title'])
+            if re_str is not None:
+                sub_str = re_str.group().lstrip('[').rstrip(']')
+                video_data['title'] = re.sub(r'\[%s\]'%sub_str,sub_str,video_data['title'])
+                return match_score_by_name(video_data)
+            re_str2 = re.search(r'(\/)',video_data['title'])
+            if re_str2 is not None:
+                video_data['title'] = video_data['title'].split('/')[0]
+                return match_score_by_name(video_data)
+            re_str3 = re.search(r'(第[一二三四五六七八九十]季)',video_data['title'])
+            if re_str3 is not None:
+                video_data['title'] = re.sub(re_str3.group(),'',video_data['title'])
+                return match_score_by_name(video_data)
+        if len(vod_info_list) == 2:   # 如果匹配到多项
+            # video_data1 = list(video_data)
+            video_data2 = dict(video_data)
+            # video_data1['title'] = video_data1['title']+'国语'
+            # flag1 = match_score_by_name(video_data1)
+            video_data2['title'] = video_data2['title']+'粤语'
+            flag2 = match_score_by_name(video_data2)
+            if flag2:
+                return True
+            else:
+                return False
+        elif len(vod_info_list) == 1:   # 如果只有一项
+            # print(vod_info_list[0]['vod_douban_id'])
+            if vod_info_list[0]['vod_douban_id']: # 如果已存在豆瓣id,则返回
+                return True
+            else:
+                print(vod_info_list[0]['vod_name'], video_data['id'], video_data['rate'],end='')
+                DBHandler.dump_douban_id(vod_info_list[0]['vod_id'], video_data['id'])
+                DBHandler.dump_rating(vod_info_list[0]['vod_id'], video_data['rate'])
+                print(' 保存成功[douban]')
+                return True
+    except Exception as e:
+        print('match_score_by_name Exception:',video_data['title'],e)
+        # print(traceback.print_exc())
+        return False
