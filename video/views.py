@@ -13,10 +13,10 @@ import os
 
 
 def home(request):  # 主页
-    movie_list = DBHandler.load_type_data(**{'vod_cid':'1','vod_year':'2020'})
-    ju_list = DBHandler.load_type_data(**{'vod_cid':'2','vod_year':'2020'})
-    show_list = DBHandler.load_type_data(**{'vod_cid':'3','vod_year':'2020'})
-    animation_list = DBHandler.load_type_data(**{'vod_cid':'4','vod_year':'2020'})
+    movie_list = DBHandler.load_type_data(**{'vod_cid':'1','vod_year':'2020','vod_rating':'7.0'})
+    ju_list = DBHandler.load_type_data(**{'vod_cid':'2','vod_year':'2020','vod_rating':'7.0'})
+    show_list = DBHandler.load_type_data(**{'vod_cid':'3','vod_year':'2020','vod_rating':'7.0'})
+    animation_list = DBHandler.load_type_data(**{'vod_cid':'4','vod_year':'2020','vod_rating':'7.0'})
     # 轮播图
     carousel_list = DBHandler.load_carousel_data()
     return render(request, 'video_home.html', {
