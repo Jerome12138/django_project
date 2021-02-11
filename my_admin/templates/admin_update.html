@@ -70,11 +70,18 @@
                                 <a href="javascript:;" class="update" action-url="/admin/update/?url_index=2&type=all">更新所有</a>
                             </p>
                             <p>
-                                <a href="http://bajieziyuan.com/">豆瓣数据</a>
+                                <a href="javascript:;">豆瓣数据</a>
                                 >>>>>>
                                 <a href="javascript:;" class="update" action-url="/admin/get_douban_data/">更新</a>
                                 <a href="javascript:;" class="update" action-url="/admin/match_douban_data/">匹配豆瓣数据</a>
                                 <a href="javascript:;" class="update" action-url="/admin/match_douban_json_data/">匹配豆瓣数据集</a>
+                            </p>
+                            <p>
+                                <a href="javascript:;">数据修正</a>
+                                >>>>>>
+                                <label for="remove_id">视频id：</label>
+                                <input type="text" id="remove_id">
+                                <a href="javascript:;" class="remove" action-url="/admin/remove_douban_data/?vod_id=">删除豆瓣id及评分</a>
                             </p>
                         </div>
                     </div>
@@ -108,6 +115,32 @@
                 },
                 error: function () {
                     $('.error-msg').text("update请求出现未知错误")
+                    //后台未接收到请求或未返回数据等未知错误
+                }
+            })
+        };
+    });
+    $('.remove').click(function () {
+        let remove_id = $('#remove_id').val()
+        if (!remove_id) {
+            return
+        }
+        $(this).css('color', 'grey')
+        $(this).css('border-bottom', 'grey 1px solid')
+        if (true) {
+            $.ajax({
+                url: $(this).attr('action-url')+$('#remove_id').val(),
+                type: "GET",
+                dataType: 'JSON',                 // 自动将接收到的data反序列化成obj返回
+                success: function (obj) {
+                    if (obj.status) {
+                        alert(obj.data)
+                    } else {
+                        alert(obj.error)
+                    }
+                },
+                error: function () {
+                    $('.error-msg').text("remove请求出现未知错误")
                     //后台未接收到请求或未返回数据等未知错误
                 }
             })

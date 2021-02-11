@@ -731,11 +731,26 @@ def match_douban_json_data(request):
         with open('douban/douban_data.json','r',encoding='utf-8') as f:
             douban_list = json.load(f)
         for item in douban_list:
-            admin_flag = DBHandler.redis_load('admin_flag')
-            if admin_flag == b'0':
-                print('管理员终止')
-                break
             GetPageData.match_score_from_jsondata(item)
+    except Exception as e:
+        print(e)
+        ret['status'] = False
+        ret['error'] = e
+    finally:
+        return HttpResponse(json.dumps(ret))
+
+# 删除错误的豆瓣数据
+@auth
+def remove_douban_data(request):
+    ret = {'status': True, 'error': None, 'data': None}
+    try:
+        vod_id = request.GET.get('vod_id', None)
+        if not vod_id:
+            ret['status'] = False
+            return
+        DBHandler.dump_douban_id(vod_id, None)
+        DBHandler.dump_rating(vod_id, None)
+        ret['data'] = "已成功删除豆瓣数据"
     except Exception as e:
         print(e)
         ret['status'] = False

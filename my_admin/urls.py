@@ -37,6 +37,7 @@ urlpatterns = [
     path('get_douban_data/', views.get_douban_data),
     path('match_douban_data/', views.match_douban_data),
     path('match_douban_json_data/', views.match_douban_json_data),
+    path('remove_douban_data/', views.remove_douban_data),
 
     # 其他
     path('url2_clear/', views.url2_clear),
