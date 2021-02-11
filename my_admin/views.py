@@ -691,6 +691,7 @@ def get_douban_data(request):
     GetPageData.get_douban_data()
     return HttpResponse('res')
 
+@auth
 # 匹配豆瓣json数据
 def match_douban_data(request):
     ret = {'status': True, 'error': None, 'data': None}
@@ -715,6 +716,26 @@ def match_douban_data(request):
                     detail_list = json.load(f)
                 for item in detail_list['subjects']:
                     GetPageData.match_score_by_name(item)
+    except Exception as e:
+        print(e)
+        ret['status'] = False
+        ret['error'] = e
+    finally:
+        return HttpResponse(json.dumps(ret))
+
+# 匹配豆瓣json数据，从网络搜集到的豆瓣数据集
+@auth
+def match_douban_json_data(request):
+    ret = {'status': True, 'error': None, 'data': None}
+    try:
+        with open('douban/douban_data.json','r',encoding='utf-8') as f:
+            douban_list = json.load(f)
+        for item in douban_list:
+            admin_flag = DBHandler.redis_load('admin_flag')
+            if admin_flag == b'0':
+                print('管理员终止')
+                break
+            GetPageData.match_score_from_jsondata(item)
     except Exception as e:
         print(e)
         ret['status'] = False
