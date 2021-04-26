@@ -131,10 +131,14 @@ def play(request, vod_id, url_index=1, index=1):  # 播放页面
     else:
         url2_list = []
     video2_list = [item.split('$') for item in url2_list]
-    if url_index == 1:
+    if url_index == 1 and len(video_list) > 0:
         video_url = video_list[index-1]
-    elif url_index == 2:
+    elif url_index == 1  and len(video2_list) > 0:
         video_url = video2_list[index-1]
+    elif url_index == 2  and len(video2_list) > 0:
+        video_url = video2_list[index-1]
+    else:
+        video_url = ""
     return render(request, 'video_play.html', {
         'vod_data': vod_data,
         "video_list": video_list,

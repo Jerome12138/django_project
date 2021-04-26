@@ -172,13 +172,13 @@ def dump_bulk_data_url2(data_list):    # 将视频数据保存至数据库url2
             #     # if new_item['vod_cid'] =
             #     pass
             #     obj_list.append(models.VideoData(**new_item))
-            # else:   # url1不存在，更新url2及相关信息
-            #     update_list.append(models.VideoData(**new_item))
+            else:   # url1不存在，更新url2及相关信息
+                new_item['vod_id'] = "bajie" + new_item['vod_id']
+                update_list.append(models.VideoData(**new_item))
         # if obj_list != []:
         #     models.VideoData.objects.bulk_create(obj_list)
-        # if update_list != []:
-        #     models.VideoData.objects.bulk_update(
-        #         update_list, fields=["vod_addtime", 'vod_url2', 'vod_continu'], batch_size=100)
+        if update_list != []:
+            models.VideoData.objects.bulk_create(update_list)
         if update_url2_list != []:
             models.VideoData.objects.bulk_update(
                 update_url2_list, fields=['vod_url2'], batch_size=100)
