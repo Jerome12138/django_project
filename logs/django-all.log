@@ -209,3 +209,173 @@ UnicodeDecodeError: 'utf-8' codec can't decode byte 0xfd in position 1082857: in
 [2021-02-07 23:59:03] [ERROR] page:8请求无数据，放入错误列表
 [2021-02-08 23:58:47] [ERROR] 首页请求无数据
 [2021-02-09 21:58:06] [ERROR] page:4请求无数据，放入错误列表
+[2021-02-10 21:58:36] [ERROR] page:8请求无数据，放入错误列表
+[2021-02-10 23:58:40] [ERROR] page:23请求无数据，放入错误列表
+[2021-02-11 02:29:11] [ERROR] Internal Server Error: /admin/match_douban_data/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.8/dist-packages/django/core/handlers/base.py", line 179, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "./my_admin/views.py", line 723, in match_douban_data
+    return HttpResponse(json.dumps(ret))
+  File "/usr/lib/python3.8/json/__init__.py", line 231, in dumps
+    return _default_encoder.encode(obj)
+  File "/usr/lib/python3.8/json/encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "/usr/lib/python3.8/json/encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "/usr/lib/python3.8/json/encoder.py", line 179, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type FileNotFoundError is not JSON serializable
+[2021-02-13 21:58:02] [ERROR] 首页请求无数据
+[2021-02-14 21:58:02] [ERROR] 首页请求无数据
+[2021-02-14 23:58:26] [ERROR] page:23请求无数据，放入错误列表
+[2021-02-14 23:58:26] [ERROR] page:24请求无数据，放入错误列表
+[2021-02-16 21:58:01] [ERROR] 首页请求无数据
+[2021-02-17 21:58:08] [ERROR] page:4请求无数据，放入错误列表
+[2021-02-17 21:58:11] [ERROR] page:1请求无数据，放入错误列表
+[2021-02-19 21:58:02] [ERROR] 首页请求无数据
+[2021-02-20 21:58:08] [ERROR] page:4请求无数据，放入错误列表
+[2021-02-26 21:58:02] [ERROR] 首页请求无数据
+[2021-02-27 21:58:07] [ERROR] page:1请求无数据，放入错误列表
+[2021-02-27 21:58:07] [ERROR] page:3请求无数据，放入错误列表
+[2021-02-27 21:58:08] [ERROR] page:4请求无数据，放入错误列表
+[2021-02-27 21:58:09] [ERROR] page:2请求无数据，放入错误列表
+[2021-02-28 13:14:30] [ERROR] Internal Server Error: /video/search/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.8/dist-packages/django/core/handlers/base.py", line 179, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "./video/views.py", line 162, in search
+    page_index = int(request.GET.get('page'))
+TypeError: int() argument must be a string, a bytes-like object or a number, not 'NoneType'
+[2021-02-28 13:14:53] [ERROR] Internal Server Error: /video/search/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.8/dist-packages/django/core/handlers/base.py", line 179, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "./video/views.py", line 162, in search
+    page_index = int(request.GET.get('page'))
+TypeError: int() argument must be a string, a bytes-like object or a number, not 'NoneType'
+[2021-03-05 22:34:21] [ERROR] Internal Server Error: /video/search/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.8/dist-packages/django/core/handlers/base.py", line 179, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "./video/views.py", line 162, in search
+    page_index = int(request.GET.get('page'))
+TypeError: int() argument must be a string, a bytes-like object or a number, not 'NoneType'
+[2021-03-05 22:34:39] [ERROR] Internal Server Error: /video/search/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.8/dist-packages/django/core/handlers/base.py", line 179, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "./video/views.py", line 162, in search
+    page_index = int(request.GET.get('page'))
+TypeError: int() argument must be a string, a bytes-like object or a number, not 'NoneType'
+[2021-03-06 21:58:04] [ERROR] page:2请求无数据，放入错误列表
+[2021-03-09 21:58:09] [ERROR] page:1请求无数据，放入错误列表
+[2021-03-09 21:58:10] [ERROR] page:3请求无数据，放入错误列表
+[2021-03-10 21:58:06] [ERROR] page:4请求无数据，放入错误列表
+[2021-03-12 21:58:05] [ERROR] page:12请求无数据，放入错误列表
+[2021-03-12 21:58:05] [ERROR] page:11请求无数据，放入错误列表
+[2021-03-12 21:58:05] [ERROR] page:8请求无数据，放入错误列表
+[2021-03-12 21:58:06] [ERROR] page:5请求无数据，放入错误列表
+[2021-03-12 21:58:06] [ERROR] page:6请求无数据，放入错误列表
+[2021-03-12 21:58:06] [ERROR] page:9请求无数据，放入错误列表
+[2021-03-13 21:58:03] [ERROR] 首页请求无数据
+[2021-03-15 21:58:03] [ERROR] 首页请求无数据
+[2021-03-17 21:58:02] [ERROR] 首页请求无数据
+[2021-03-18 21:58:02] [ERROR] 首页请求无数据
+[2021-03-19 21:58:02] [ERROR] 首页请求无数据
+[2021-03-21 21:58:13] [ERROR] page:3请求无数据，放入错误列表
+[2021-03-21 21:58:14] [ERROR] page:4请求无数据，放入错误列表
+[2021-03-21 21:58:14] [ERROR] page:1请求无数据，放入错误列表
+[2021-03-21 21:58:14] [ERROR] page:2请求无数据，放入错误列表
+[2021-03-30 21:58:08] [ERROR] 首页请求无数据
+[2021-03-31 11:58:05] [ERROR] 首页请求无数据
+[2021-03-31 15:58:05] [ERROR] 首页请求无数据
+[2021-03-31 21:58:04] [ERROR] 首页请求无数据
+[2021-03-31 23:58:06] [ERROR] 首页请求无数据
+[2021-04-01 11:58:04] [ERROR] 首页请求无数据
+[2021-04-01 15:58:04] [ERROR] 首页请求无数据
+[2021-04-01 21:58:07] [ERROR] 首页请求无数据
+[2021-04-01 23:58:06] [ERROR] 首页请求无数据
+[2021-04-02 11:58:04] [ERROR] 首页请求无数据
+[2021-04-02 15:58:05] [ERROR] 首页请求无数据
+[2021-04-02 21:58:03] [ERROR] 首页请求无数据
+[2021-04-02 23:58:09] [ERROR] 首页请求无数据
+[2021-04-06 22:16:22] [ERROR] Internal Server Error: /admin/add_vod/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/dist-packages/django/core/handlers/exception.py", line 47, in inner
+    response = get_response(request)
+  File "/usr/local/lib/python3.8/dist-packages/django/core/handlers/base.py", line 179, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "./my_admin/views.py", line 137, in inner
+    return func(request, *args, **kwargs)
+  File "./my_admin/views.py", line 223, in add_vod
+    return HttpResponse(json.dumps(ret))
+  File "/usr/lib/python3.8/json/__init__.py", line 231, in dumps
+    return _default_encoder.encode(obj)
+  File "/usr/lib/python3.8/json/encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "/usr/lib/python3.8/json/encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "/usr/lib/python3.8/json/encoder.py", line 179, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type UnboundLocalError is not JSON serializable
+[2021-04-06 23:58:04] [ERROR] 首页请求无数据
+[2021-04-07 11:58:05] [ERROR] 首页请求无数据
+[2021-04-07 15:58:04] [ERROR] 首页请求无数据
+[2021-04-07 21:58:07] [ERROR] 首页请求无数据
+[2021-04-07 23:58:05] [ERROR] 首页请求无数据
+[2021-04-08 11:58:04] [ERROR] 首页请求无数据
+[2021-04-08 15:58:04] [ERROR] 首页请求无数据
+[2021-04-08 21:58:05] [ERROR] 首页请求无数据
+[2021-04-08 21:58:25] [ERROR] page:9请求无数据，放入错误列表
+[2021-04-08 23:58:05] [ERROR] 首页请求无数据
+[2021-04-09 11:58:04] [ERROR] 首页请求无数据
+[2021-04-09 15:58:03] [ERROR] 首页请求无数据
+[2021-04-09 21:58:07] [ERROR] 首页请求无数据
+[2021-04-09 21:58:08] [ERROR] 首页请求无数据
+[2021-04-09 23:58:04] [ERROR] 首页请求无数据
+[2021-04-10 11:58:04] [ERROR] 首页请求无数据
+[2021-04-10 15:58:03] [ERROR] 首页请求无数据
+[2021-04-10 21:58:05] [ERROR] 首页请求无数据
+[2021-04-10 21:58:07] [ERROR] 首页请求无数据
+[2021-04-10 23:58:06] [ERROR] 首页请求无数据
+[2021-04-10 23:58:30] [ERROR] page:9请求无数据，放入错误列表
+[2021-04-10 23:58:31] [ERROR] page:4请求无数据，放入错误列表
+[2021-04-11 11:58:04] [ERROR] 首页请求无数据
+[2021-04-11 15:58:03] [ERROR] 首页请求无数据
+[2021-04-11 21:58:04] [ERROR] 首页请求无数据
+[2021-04-11 21:58:13] [ERROR] page:20请求无数据，放入错误列表
+[2021-04-11 21:58:28] [ERROR] page:10请求无数据，放入错误列表
+[2021-04-11 21:58:28] [ERROR] page:9请求无数据，放入错误列表
+[2021-04-11 21:58:28] [ERROR] page:8请求无数据，放入错误列表
+[2021-04-11 21:58:28] [ERROR] page:7请求无数据，放入错误列表
+[2021-04-11 21:58:33] [ERROR] page:3请求无数据，放入错误列表
+[2021-04-11 21:58:33] [ERROR] page:2请求无数据，放入错误列表
+[2021-04-11 23:58:04] [ERROR] 首页请求无数据
+[2021-04-12 15:58:03] [ERROR] 首页请求无数据
+[2021-04-12 23:58:03] [ERROR] 首页请求无数据
+[2021-04-13 11:58:04] [ERROR] 首页请求无数据
+[2021-04-13 15:58:03] [ERROR] 首页请求无数据
+[2021-04-13 21:58:11] [ERROR] 首页请求无数据
+[2021-04-13 23:58:03] [ERROR] 首页请求无数据
+[2021-04-14 11:58:04] [ERROR] 首页请求无数据
+[2021-04-14 15:58:04] [ERROR] 首页请求无数据
+[2021-04-14 21:58:08] [ERROR] 首页请求无数据
+[2021-04-14 23:58:04] [ERROR] 首页请求无数据
+[2021-04-15 11:58:04] [ERROR] 首页请求无数据
+[2021-04-15 15:58:04] [ERROR] 首页请求无数据
+[2021-04-15 21:58:05] [ERROR] 首页请求无数据
+[2021-04-15 23:58:04] [ERROR] 首页请求无数据
+[2021-04-16 11:58:02] [ERROR] 首页请求无数据
+[2021-04-16 15:58:02] [ERROR] 首页请求无数据
+[2021-04-26 15:58:15] [ERROR] 首页请求无数据
