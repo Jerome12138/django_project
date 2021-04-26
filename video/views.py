@@ -96,7 +96,7 @@ def vod_type(request, vod_cid):  # 视频分类页
     })
 
 
-def play(request, vod_id, url_index=1, index=1):  # 播放页面
+def play(request, vod_id, url_index=2, index=1):  # 播放页面
     vod_data = DBHandler.load_vod_data(vod_id)
     if not vod_data:
         return render(request, 'video_nonepage.html', {'msg': "影片尚未收录,有需要请联系管理员"})

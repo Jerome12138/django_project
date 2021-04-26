@@ -181,7 +181,7 @@ def dump_bulk_data_url2(data_list):    # 将视频数据保存至数据库url2
             models.VideoData.objects.bulk_create(update_list)
         if update_url2_list != []:
             models.VideoData.objects.bulk_update(
-                update_url2_list, fields=['vod_url2'], batch_size=100)
+                update_url2_list, fields=['vod_url2', 'vod_pic', 'vod_addtime'], batch_size=100)
         return True
     except Exception as e:
         print("保存出错：%s" % e)
