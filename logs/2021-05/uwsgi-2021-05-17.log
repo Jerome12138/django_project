@@ -1,0 +1,502 @@
+[1621180802] ./uwsgi.log reopened.
+[pid: 239510|app: 0|req: 327/521] 113.69.32.162 () {44 vars in 939 bytes} [Mon May 17 00:05:06 2021] GET /video/play/bajie273216/2-13.html => generated 15627 bytes in 5 msecs (HTTP/1.1 200) 7 headers in 350 bytes (1 switches on core 1)
+[pid: 239511|app: 0|req: 95/522] 113.69.32.162 () {44 vars in 1003 bytes} [Mon May 17 00:07:00 2021] GET /video/search/?wd=%E5%90%91%E5%BE%80%E7%9A%84%E7%94%9F%E6%B4%BB&page=1 => generated 31288 bytes in 69 msecs (HTTP/1.1 200) 7 headers in 350 bytes (1 switches on core 1)
+[pid: 239511|app: 0|req: 96/523] 192.241.215.161 () {34 vars in 397 bytes} [Mon May 17 01:33:52 2021] GET / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 5 headers in 158 bytes (1 switches on core 1)
+[pid: 239511|app: 0|req: 97/524] 143.198.74.32 () {40 vars in 632 bytes} [Mon May 17 03:08:40 2021] POST /_ignition/execute-solution => generated 179 bytes in 1 msecs (HTTP/1.1 404) 5 headers in 158 bytes (1 switches on core 1)
+[pid: 239510|app: 0|req: 328/525] 143.198.74.32 () {40 vars in 712 bytes} [Mon May 17 03:08:40 2021] POST /vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php => generated 179 bytes in 1 msecs (HTTP/1.1 404) 5 headers in 158 bytes (1 switches on core 0)
+[pid: 239510|app: 0|req: 329/526] 143.198.74.32 () {38 vars in 532 bytes} [Mon May 17 03:08:41 2021] GET /login => generated 179 bytes in 1 msecs (HTTP/1.1 404) 5 headers in 158 bytes (1 switches on core 1)
+[pid: 239513|app: 0|req: 56/527] 143.198.74.32 () {38 vars in 548 bytes} [Mon May 17 03:08:41 2021] GET /jenkins/login => generated 179 bytes in 1 msecs (HTTP/1.1 404) 5 headers in 158 bytes (1 switches on core 1)
+[pid: 239512|app: 0|req: 47/528] 143.198.74.32 () {40 vars in 598 bytes} [Mon May 17 03:08:41 2021] GET /manager/html => generated 179 bytes in 1 msecs (HTTP/1.1 404) 5 headers in 158 bytes (1 switches on core 0)
+[pid: 239512|app: 0|req: 48/529] 143.198.74.32 () {38 vars in 546 bytes} [Mon May 17 03:08:41 2021] GET /wp-login.php => generated 179 bytes in 1 msecs (HTTP/1.1 404) 5 headers in 158 bytes (1 switches on core 1)
+[pid: 239511|app: 0|req: 98/530] 143.198.74.32 () {38 vars in 727 bytes} [Mon May 17 03:08:42 2021] GET /?s=/Index/\think\app/invokefunction&function=call_user_func_array&vars[0]=md5&vars[1][]=__HelloThinkPHP => generated 179 bytes in 1 msecs (HTTP/1.1 404) 5 headers in 158 bytes (1 switches on core 1)
+[pid: 239510|app: 0|req: 330/531] 186.33.126.170 () {32 vars in 467 bytes} [Mon May 17 03:17:02 2021] GET / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 5 headers in 158 bytes (1 switches on core 1)
+[pid: 239510|app: 0|req: 331/532] 183.27.198.8 () {34 vars in 472 bytes} [Mon May 17 03:26:15 2021] GET /favicon.ico => generated 179 bytes in 1 msecs (HTTP/1.1 404) 5 headers in 158 bytes (1 switches on core 1)
+[pid: 239511|app: 0|req: 99/533] 183.27.198.8 () {34 vars in 472 bytes} [Mon May 17 03:26:15 2021] GET /favicon.ico => generated 179 bytes in 1 msecs (HTTP/1.1 404) 5 headers in 158 bytes (1 switches on core 1)
+[pid: 239510|app: 0|req: 332/534] 121.196.158.30 () {34 vars in 503 bytes} [Mon May 17 04:15:10 2021] GET /TP/public/index.php => generated 179 bytes in 1 msecs (HTTP/1.1 404) 5 headers in 158 bytes (1 switches on core 1)
+[pid: 239511|app: 0|req: 100/535] 121.196.158.30 () {34 vars in 489 bytes} [Mon May 17 04:15:10 2021] GET /TP/index.php => generated 179 bytes in 1 msecs (HTTP/1.1 404) 5 headers in 158 bytes (1 switches on core 1)
+[pid: 239512|app: 0|req: 49/536] 121.196.158.30 () {34 vars in 525 bytes} [Mon May 17 04:15:10 2021] GET /thinkphp/html/public/index.php => generated 179 bytes in 1 msecs (HTTP/1.1 404) 5 headers in 158 bytes (1 switches on core 1)
+[pid: 239513|app: 0|req: 57/537] 121.196.158.30 () {34 vars in 507 bytes} [Mon May 17 04:15:11 2021] GET /html/public/index.php => generated 179 bytes in 1 msecs (HTTP/1.1 404) 5 headers in 158 bytes (1 switches on core 1)
+[pid: 239513|app: 0|req: 58/538] 121.196.158.30 () {34 vars in 497 bytes} [Mon May 17 04:15:11 2021] GET /public/index.php => generated 179 bytes in 1 msecs (HTTP/1.1 404) 5 headers in 158 bytes (1 switches on core 0)
+[pid: 239512|app: 0|req: 50/539] 121.196.158.30 () {34 vars in 513 bytes} [Mon May 17 04:15:11 2021] GET /TP/html/public/index.php => generated 179 bytes in 1 msecs (HTTP/1.1 404) 5 headers in 158 bytes (1 switches on core 1)
+[pid: 239512|app: 0|req: 51/540] 121.196.158.30 () {34 vars in 485 bytes} [Mon May 17 04:15:11 2021] GET /elrekt.php => generated 179 bytes in 1 msecs (HTTP/1.1 404) 5 headers in 158 bytes (1 switches on core 0)
+[pid: 239513|app: 0|req: 59/541] 121.196.158.30 () {34 vars in 483 bytes} [Mon May 17 04:15:11 2021] GET /index.php => generated 179 bytes in 1 msecs (HTTP/1.1 404) 5 headers in 158 bytes (1 switches on core 0)
+[pid: 239513|app: 0|req: 60/542] 121.196.158.30 () {34 vars in 468 bytes} [Mon May 17 04:15:11 2021] GET / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 5 headers in 158 bytes (1 switches on core 1)
+[pid: 239510|app: 0|req: 333/543] 103.11.217.168 () {32 vars in 466 bytes} [Mon May 17 04:55:24 2021] GET / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 5 headers in 158 bytes (1 switches on core 1)
+[pid: 239511|app: 0|req: 101/544] 45.155.126.222 () {34 vars in 434 bytes} [Mon May 17 05:04:59 2021] GET / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 5 headers in 158 bytes (1 switches on core 1)
+[pid: 239511|app: 0|req: 102/545] 103.203.36.204 () {32 vars in 467 bytes} [Mon May 17 05:55:45 2021] GET / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 5 headers in 158 bytes (1 switches on core 1)
+[pid: 239511|app: 0|req: 103/546] 45.87.2.245 () {40 vars in 671 bytes} [Mon May 17 07:39:55 2021] GET /config/getuser?index=0 => generated 179 bytes in 1 msecs (HTTP/1.1 404) 5 headers in 158 bytes (1 switches on core 1)
+[pid: 239511|app: 0|req: 104/547] 186.33.96.176 () {32 vars in 465 bytes} [Mon May 17 08:37:05 2021] GET / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 5 headers in 158 bytes (1 switches on core 1)
+[pid: 239511|app: 0|req: 105/548] 44.235.91.30 () {34 vars in 500 bytes} [Mon May 17 09:45:58 2021] GET / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 5 headers in 158 bytes (1 switches on core 1)
+[pid: 239511|app: 0|req: 106/549] 54.158.153.14 () {36 vars in 525 bytes} [Mon May 17 10:49:01 2021] HEAD / => generated 179 bytes in 2 msecs (HTTP/1.1 404) 5 headers in 158 bytes (1 switches on core 1)
+[pid: 239511|app: 0|req: 107/550] 81.23.183.66 () {32 vars in 463 bytes} [Mon May 17 11:19:34 2021] GET / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 5 headers in 158 bytes (1 switches on core 1)
+[pid: 239511|app: 0|req: 108/551] 121.89.203.163 () {28 vars in 310 bytes} [Mon May 17 11:22:56 2021] GET / => generated 179 bytes in 1 msecs (HTTP/1.0 404) 5 headers in 158 bytes (1 switches on core 1)
+[pid: 239510|app: 0|req: 334/552] 121.89.203.163 () {38 vars in 682 bytes} [Mon May 17 11:22:56 2021] GET / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 5 headers in 158 bytes (1 switches on core 0)
+[pid: 239511|app: 0|req: 109/553] 112.96.106.229 () {42 vars in 944 bytes} [Mon May 17 11:46:38 2021] GET /video/search/?wd=%E5%90%91%E5%BE%80%E7%9A%84%E7%94%9F%E6%B4%BB&page=1 => generated 31288 bytes in 70 msecs (HTTP/1.1 200) 7 headers in 350 bytes (1 switches on core 1)
+[pid: 239511|app: 0|req: 110/554] 118.126.124.7 () {38 vars in 546 bytes} [Mon May 17 12:26:15 2021] GET / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 5 headers in 158 bytes (1 switches on core 1)
+[pid: 239511|app: 0|req: 111/555] 218.13.14.210 () {42 vars in 1067 bytes} [Mon May 17 12:42:15 2021] GET /video/jx-play/?url_temp=https%3A%2F%2Fwww.administrator5.com%2Fadmin.php%3Furl%3D&url=%E5%90%91%E5%BE%80%E7%9A%84%E7%94%9F%E6%B4%BB => generated 9920 bytes in 2 msecs (HTTP/1.1 200) 7 headers in 349 bytes (1 switches on core 1)
+[pid: 239510|app: 0|req: 335/556] 218.13.14.210 () {42 vars in 1067 bytes} [Mon May 17 12:42:18 2021] GET /video/jx-play/?url_temp=https%3A%2F%2Fwww.administrator5.com%2Fadmin.php%3Furl%3D&url=%E5%90%91%E5%BE%80%E7%9A%84%E7%94%9F%E6%B4%BB => generated 9920 bytes in 1 msecs (HTTP/1.1 200) 7 headers in 349 bytes (1 switches on core 0)
+[pid: 239510|app: 0|req: 336/557] 218.13.14.210 () {42 vars in 818 bytes} [Mon May 17 12:42:19 2021] GET /admin/ => generated 30384 bytes in 3 msecs (HTTP/1.1 200) 7 headers in 350 bytes (1 switches on core 1)
+--------2021-05-17 12:42:22 站点2开始更新--------
+[pid: 239512|app: 0|req: 52/558] 218.13.14.210 () {44 vars in 880 bytes} [Mon May 17 12:42:24 2021] GET /admin/view_log/ => generated 18150 bytes in 4 msecs (HTTP/1.1 200) 6 headers in 182 bytes (1 switches on core 0)
+爬虫网站http://cj.bajiecaiji.com/返回状态码错误：403 proxy: 
+[pid: 239511|app: 0|req: 112/559] 218.13.14.210 () {44 vars in 902 bytes} [Mon May 17 12:42:26 2021] GET /admin/view_log/?page=1 => generated 18271 bytes in 5 msecs (HTTP/1.1 200) 6 headers in 182 bytes (1 switches on core 1)
+[pid: 239511|app: 0|req: 113/560] 218.13.14.210 () {44 vars in 909 bytes} [Mon May 17 12:42:31 2021] GET /admin/view_log/?page=1 => generated 18326 bytes in 6 msecs (HTTP/1.1 200) 6 headers in 182 bytes (1 switches on core 1)
+已更新480条数据
+--------2021-05-17 12:43:10 站点2更新完成--------
+[pid: 239513|app: 0|req: 61/561] 218.13.14.210 () {44 vars in 908 bytes} [Mon May 17 12:42:22 2021] GET /admin/update/?url_index=2&type=today => generated 82 bytes in 48049 msecs (HTTP/1.1 200) 6 headers in 179 bytes (1 switches on core 1)
+[pid: 239511|app: 0|req: 114/562] 218.13.14.210 () {46 vars in 902 bytes} [Mon May 17 12:43:12 2021] GET /admin/view_log/?page=1 => generated 18532 bytes in 3 msecs (HTTP/1.1 200) 6 headers in 182 bytes (1 switches on core 1)
+[pid: 239510|app: 0|req: 337/563] 218.13.14.210 () {44 vars in 896 bytes} [Mon May 17 12:43:21 2021] GET /admin/view_log/ => generated 18587 bytes in 3 msecs (HTTP/1.1 200) 6 headers in 182 bytes (1 switches on core 0)
+[pid: 239510|app: 0|req: 338/564] 218.13.14.210 () {44 vars in 871 bytes} [Mon May 17 12:43:23 2021] GET /admin/ => generated 30384 bytes in 2 msecs (HTTP/1.1 200) 7 headers in 350 bytes (1 switches on core 1)
+--------2021-05-17 12:43:24 站点2开始更新--------
+[pid: 239511|app: 0|req: 115/565] 218.13.14.210 () {44 vars in 880 bytes} [Mon May 17 12:43:27 2021] GET /admin/view_log/ => generated 18730 bytes in 3 msecs (HTTP/1.1 200) 6 headers in 182 bytes (1 switches on core 1)
+[pid: 239511|app: 0|req: 116/566] 218.13.14.210 () {44 vars in 902 bytes} [Mon May 17 12:43:30 2021] GET /admin/view_log/?page=1 => generated 18778 bytes in 6 msecs (HTTP/1.1 200) 6 headers in 182 bytes (1 switches on core 1)
+[pid: 239511|app: 0|req: 117/567] 218.13.14.210 () {44 vars in 909 bytes} [Mon May 17 12:43:35 2021] GET /admin/view_log/?page=1 => generated 18833 bytes in 8 msecs (HTTP/1.1 200) 6 headers in 182 bytes (1 switches on core 1)
+[pid: 239511|app: 0|req: 118/568] 218.13.14.210 () {44 vars in 909 bytes} [Mon May 17 12:43:38 2021] GET /admin/view_log/?page=1 => generated 18888 bytes in 6 msecs (HTTP/1.1 200) 6 headers in 182 bytes (1 switches on core 1)
+[pid: 239511|app: 0|req: 119/569] 218.13.14.210 () {42 vars in 943 bytes} [Mon May 17 12:43:45 2021] GET /video/search/?wd=%E5%90%91%E5%BE%80%E7%9A%84%E7%94%9F%E6%B4%BB&page=1 => generated 31288 bytes in 305 msecs (HTTP/1.1 200) 7 headers in 350 bytes (1 switches on core 1)
+[pid: 239511|app: 0|req: 120/570] 218.13.14.210 () {44 vars in 909 bytes} [Mon May 17 12:43:54 2021] GET /admin/view_log/?page=1 => generated 19049 bytes in 7 msecs (HTTP/1.1 200) 6 headers in 182 bytes (1 switches on core 1)
+获取到page: 100
+[pid: 239511|app: 0|req: 121/571] 218.13.14.210 () {44 vars in 909 bytes} [Mon May 17 12:44:03 2021] GET /admin/view_log/?page=1 => generated 19123 bytes in 5 msecs (HTTP/1.1 200) 6 headers in 182 bytes (1 switches on core 1)
+[pid: 239511|app: 0|req: 122/572] 218.13.14.210 () {44 vars in 909 bytes} [Mon May 17 12:44:12 2021] GET /admin/view_log/?page=1 => generated 19178 bytes in 13 msecs (HTTP/1.1 200) 6 headers in 182 bytes (1 switches on core 1)
+[pid: 239511|app: 0|req: 123/573] 218.13.14.210 () {42 vars in 943 bytes} [Mon May 17 12:44:17 2021] GET /video/search/?wd=%E5%90%91%E5%BE%80%E7%9A%84%E7%94%9F%E6%B4%BB&page=1 => generated 31288 bytes in 263 msecs (HTTP/1.1 200) 7 headers in 350 bytes (1 switches on core 1)
+[pid: 239511|app: 0|req: 124/574] 218.13.14.210 () {44 vars in 939 bytes} [Mon May 17 12:44:21 2021] GET /video/type/1/ => generated 33348 bytes in 898 msecs (HTTP/1.1 200) 7 headers in 350 bytes (1 switches on core 1)
+[pid: 239511|app: 0|req: 125/575] 218.13.14.210 () {44 vars in 883 bytes} [Mon May 17 12:44:23 2021] GET /video/type/1/ => generated 33348 bytes in 1652 msecs (HTTP/1.1 200) 7 headers in 350 bytes (1 switches on core 1)
+[pid: 239511|app: 0|req: 126/576] 218.13.14.210 () {44 vars in 883 bytes} [Mon May 17 12:44:31 2021] GET /video/type/2/ => generated 32455 bytes in 357 msecs (HTTP/1.1 200) 7 headers in 350 bytes (1 switches on core 1)
+[pid: 239511|app: 0|req: 127/577] 218.13.14.210 () {44 vars in 883 bytes} [Mon May 17 12:44:34 2021] GET /video/type/1/ => generated 33348 bytes in 1384 msecs (HTTP/1.1 200) 7 headers in 350 bytes (1 switches on core 1)
+[pid: 239511|app: 0|req: 128/578] 218.13.14.210 () {44 vars in 883 bytes} [Mon May 17 12:44:39 2021] GET /video/type/2/ => generated 32455 bytes in 727 msecs (HTTP/1.1 200) 7 headers in 350 bytes (1 switches on core 1)
+[pid: 239511|app: 0|req: 129/579] 218.13.14.210 () {44 vars in 909 bytes} [Mon May 17 12:44:44 2021] GET /admin/view_log/?page=1 => generated 19569 bytes in 12 msecs (HTTP/1.1 200) 6 headers in 182 bytes (1 switches on core 1)
+page100保存成功
+[pid: 239511|app: 0|req: 130/580] 218.13.14.210 () {44 vars in 883 bytes} [Mon May 17 12:44:55 2021] GET /video/type/2/ => generated 32455 bytes in 708 msecs (HTTP/1.1 200) 7 headers in 350 bytes (1 switches on core 1)
+[pid: 239511|app: 0|req: 131/581] 218.13.14.210 () {44 vars in 883 bytes} [Mon May 17 12:44:59 2021] GET /video/type/1/ => generated 33348 bytes in 1048 msecs (HTTP/1.1 200) 7 headers in 350 bytes (1 switches on core 1)
+[pid: 239511|app: 0|req: 132/582] 218.13.14.210 () {44 vars in 903 bytes} [Mon May 17 12:45:03 2021] GET /video/play/bajie167201/ => generated 13893 bytes in 7 msecs (HTTP/1.1 200) 7 headers in 350 bytes (1 switches on core 1)
+[pid: 239511|app: 0|req: 133/583] 218.13.14.210 () {44 vars in 903 bytes} [Mon May 17 12:45:07 2021] GET /video/play/bajie281577/ => generated 13812 bytes in 6 msecs (HTTP/1.1 200) 7 headers in 350 bytes (1 switches on core 1)
+[pid: 239511|app: 0|req: 134/584] 218.13.14.210 () {44 vars in 903 bytes} [Mon May 17 12:45:11 2021] GET /video/play/bajie150944/ => generated 13767 bytes in 8 msecs (HTTP/1.1 200) 7 headers in 350 bytes (1 switches on core 1)
+[pid: 239511|app: 0|req: 135/585] 218.13.14.210 () {44 vars in 893 bytes} [Mon May 17 12:45:13 2021] GET /video/play/102814/ => generated 13988 bytes in 12 msecs (HTTP/1.1 200) 7 headers in 350 bytes (1 switches on core 1)
+[pid: 239511|app: 0|req: 136/586] 218.13.14.210 () {44 vars in 903 bytes} [Mon May 17 12:45:15 2021] GET /video/play/bajie281692/ => generated 14035 bytes in 13 msecs (HTTP/1.1 200) 7 headers in 350 bytes (1 switches on core 1)
+[pid: 239511|app: 0|req: 137/587] 218.13.14.210 () {44 vars in 883 bytes} [Mon May 17 12:45:18 2021] GET /video/type/1/ => generated 33348 bytes in 724 msecs (HTTP/1.1 200) 7 headers in 350 bytes (1 switches on core 1)
+[pid: 239511|app: 0|req: 138/588] 218.13.14.210 () {44 vars in 909 bytes} [Mon May 17 12:45:25 2021] GET /admin/view_log/?page=1 => generated 20057 bytes in 18 msecs (HTTP/1.1 200) 6 headers in 182 bytes (1 switches on core 1)
+[pid: 239511|app: 0|req: 139/589] 218.13.14.210 () {44 vars in 903 bytes} [Mon May 17 12:45:34 2021] GET /video/play/bajie150944/ => generated 13767 bytes in 6 msecs (HTTP/1.1 200) 7 headers in 350 bytes (1 switches on core 1)
+[pid: 239511|app: 0|req: 140/590] 218.13.14.210 () {44 vars in 883 bytes} [Mon May 17 12:45:38 2021] GET /video/type/2/ => generated 32455 bytes in 701 msecs (HTTP/1.1 200) 7 headers in 350 bytes (1 switches on core 1)
+[pid: 239511|app: 0|req: 141/591] 218.13.14.210 () {44 vars in 903 bytes} [Mon May 17 12:45:41 2021] GET /video/play/bajie281537/ => generated 14219 bytes in 10 msecs (HTTP/1.1 200) 7 headers in 350 bytes (1 switches on core 1)
+[pid: 239511|app: 0|req: 142/592] 218.13.14.210 () {44 vars in 883 bytes} [Mon May 17 12:45:48 2021] GET /video/type/1/ => generated 33348 bytes in 1464 msecs (HTTP/1.1 200) 7 headers in 350 bytes (1 switches on core 1)
+[pid: 239511|app: 0|req: 143/593] 218.13.14.210 () {44 vars in 959 bytes} [Mon May 17 12:46:11 2021] GET /video/play/bajie280118/ => generated 14153 bytes in 9 msecs (HTTP/1.1 200) 7 headers in 350 bytes (1 switches on core 1)
+[pid: 239511|app: 0|req: 144/594] 218.13.14.210 () {42 vars in 943 bytes} [Mon May 17 12:46:19 2021] GET /video/search/?wd=%E5%90%91%E5%BE%80%E7%9A%84%E7%94%9F%E6%B4%BB&page=1 => generated 31288 bytes in 290 msecs (HTTP/1.1 200) 7 headers in 350 bytes (1 switches on core 1)
+[pid: 239511|app: 0|req: 145/595] 218.13.14.210 () {44 vars in 909 bytes} [Mon May 17 12:46:23 2021] GET /admin/view_log/?page=1 => generated 20478 bytes in 13 msecs (HTTP/1.1 200) 6 headers in 182 bytes (1 switches on core 1)
+[pid: 239511|app: 0|req: 146/596] 218.13.14.210 () {44 vars in 909 bytes} [Mon May 17 12:46:35 2021] GET /admin/view_log/?page=1 => generated 20533 bytes in 16 msecs (HTTP/1.1 200) 6 headers in 182 bytes (1 switches on core 1)
+[pid: 239511|app: 0|req: 147/597] 218.13.14.210 () {44 vars in 909 bytes} [Mon May 17 12:46:52 2021] GET /admin/view_log/?page=1 => generated 20588 bytes in 14 msecs (HTTP/1.1 200) 6 headers in 182 bytes (1 switches on core 1)
+[pid: 239511|app: 0|req: 148/598] 218.13.14.210 () {42 vars in 943 bytes} [Mon May 17 12:47:16 2021] GET /video/search/?wd=%E5%90%91%E5%BE%80%E7%9A%84%E7%94%9F%E6%B4%BB&page=1 => generated 31288 bytes in 294 msecs (HTTP/1.1 200) 7 headers in 350 bytes (1 switches on core 1)
+[pid: 239511|app: 0|req: 149/599] 218.13.14.210 () {44 vars in 909 bytes} [Mon May 17 12:47:23 2021] GET /admin/view_log/?page=1 => generated 20749 bytes in 12 msecs (HTTP/1.1 200) 6 headers in 182 bytes (1 switches on core 1)
+[pid: 239511|app: 0|req: 150/600] 218.13.14.210 () {42 vars in 870 bytes} [Mon May 17 12:47:28 2021] GET /video/play/bajie273216/2-13.html => generated 15627 bytes in 18 msecs (HTTP/1.1 200) 7 headers in 350 bytes (1 switches on core 1)
+[pid: 239511|app: 0|req: 151/601] 218.13.14.210 () {42 vars in 943 bytes} [Mon May 17 12:47:32 2021] GET /video/search/?wd=%E5%90%91%E5%BE%80%E7%9A%84%E7%94%9F%E6%B4%BB&page=1 => generated 31288 bytes in 318 msecs (HTTP/1.1 200) 7 headers in 350 bytes (1 switches on core 1)
+已更新3000条数据
+--------2021-05-17 12:47:41 站点2更新完成--------
+[pid: 239513|app: 0|req: 62/602] 218.13.14.210 () {44 vars in 908 bytes} [Mon May 17 12:43:24 2021] GET /admin/update/?url_index=2&type=count => generated 83 bytes in 257002 msecs (HTTP/1.1 200) 6 headers in 179 bytes (1 switches on core 0)
+[pid: 239511|app: 0|req: 152/603] 218.13.14.210 () {42 vars in 943 bytes} [Mon May 17 12:48:08 2021] GET /video/search/?wd=%E5%90%91%E5%BE%80%E7%9A%84%E7%94%9F%E6%B4%BB&page=1 => generated 31288 bytes in 71 msecs (HTTP/1.1 200) 7 headers in 350 bytes (1 switches on core 1)
+[pid: 239510|app: 0|req: 339/604] 218.13.14.210 () {44 vars in 909 bytes} [Mon May 17 12:48:13 2021] GET /admin/view_log/?page=1 => generated 21233 bytes in 7 msecs (HTTP/1.1 200) 6 headers in 182 bytes (1 switches on core 0)
+[pid: 239510|app: 0|req: 340/605] 218.13.14.210 () {44 vars in 939 bytes} [Mon May 17 12:48:22 2021] GET /video/type/1/ => generated 33348 bytes in 371 msecs (HTTP/1.1 200) 7 headers in 350 bytes (1 switches on core 1)
+[pid: 239511|app: 0|req: 153/606] 218.13.14.210 () {44 vars in 878 bytes} [Mon May 17 12:48:37 2021] GET /admin/ => generated 30384 bytes in 3 msecs (HTTP/1.1 200) 7 headers in 350 bytes (1 switches on core 1)
+--------2021-05-17 12:48:39 站点2开始更新--------
+[pid: 239510|app: 0|req: 341/607] 218.13.14.210 () {44 vars in 880 bytes} [Mon May 17 12:48:42 2021] GET /admin/view_log/ => generated 21429 bytes in 7 msecs (HTTP/1.1 200) 6 headers in 182 bytes (1 switches on core 0)
+一共2314页数据
+获取到page: 2300
+[pid: 239510|app: 0|req: 342/608] 218.13.14.210 () {42 vars in 943 bytes} [Mon May 17 12:48:52 2021] GET /video/search/?wd=%E5%90%91%E5%BE%80%E7%9A%84%E7%94%9F%E6%B4%BB&page=1 => generated 31288 bytes in 900 msecs (HTTP/1.1 200) 7 headers in 350 bytes (1 switches on core 1)
+获取到page: 2200
+[pid: 239511|app: 0|req: 154/609] 218.13.14.210 () {44 vars in 959 bytes} [Mon May 17 12:48:58 2021] GET /video/play/bajie280118/ => generated 14153 bytes in 29 msecs (HTTP/1.1 200) 7 headers in 350 bytes (1 switches on core 1)
+获取到page: 2100
+page2300保存成功
+获取到page: 2000
+获取到page: 1900
+获取到page: 1800
+获取到page: 1700
+获取到page: 1600
+proxy:  Status Code： 502 重试
+get_json ERROR: list.remove(x): x not in list
+Traceback (most recent call last):
+  File "./video/func/getRequest.py", line 102, in get_json
+    PROXYLIST.remove(proxy)
+ValueError: list.remove(x): x not in list
+None
+[2021-05-17 12:50:13] [ERROR] page:1485请求无数据，放入错误列表
+proxy:  Status Code： 502 重试
+get_json ERROR: list.remove(x): x not in list
+Traceback (most recent call last):
+  File "./video/func/getRequest.py", line 102, in get_json
+    PROXYLIST.remove(proxy)
+ValueError: list.remove(x): x not in list
+None
+[2021-05-17 12:50:13] [ERROR] page:1484请求无数据，放入错误列表
+proxy:  Status Code： 502 重试
+get_json ERROR: list.remove(x): x not in list
+Traceback (most recent call last):
+  File "./video/func/getRequest.py", line 102, in get_json
+    PROXYLIST.remove(proxy)
+ValueError: list.remove(x): x not in list
+None
+[2021-05-17 12:50:13] [ERROR] page:1487请求无数据，放入错误列表
+proxy:  Status Code： 502 重试
+get_json ERROR: list.remove(x): x not in list
+Traceback (most recent call last):
+  File "./video/func/getRequest.py", line 102, in get_json
+    PROXYLIST.remove(proxy)
+ValueError: list.remove(x): x not in list
+None
+[2021-05-17 12:50:14] [ERROR] page:1479请求无数据，放入错误列表
+proxy:  Status Code： 502 重试
+get_json ERROR: list.remove(x): x not in list
+Traceback (most recent call last):
+  File "./video/func/getRequest.py", line 102, in get_json
+    PROXYLIST.remove(proxy)
+ValueError: list.remove(x): x not in list
+None
+[2021-05-17 12:50:14] [ERROR] page:1476请求无数据，放入错误列表
+proxy:  Status Code： 502 重试
+get_json ERROR: list.remove(x): x not in list
+Traceback (most recent call last):
+  File "./video/func/getRequest.py", line 102, in get_json
+    PROXYLIST.remove(proxy)
+ValueError: list.remove(x): x not in list
+None
+[2021-05-17 12:50:15] [ERROR] page:1475请求无数据，放入错误列表
+proxy:  Status Code： 502 重试
+get_json ERROR: list.remove(x): x not in list
+Traceback (most recent call last):
+  File "./video/func/getRequest.py", line 102, in get_json
+    PROXYLIST.remove(proxy)
+ValueError: list.remove(x): x not in list
+None
+[2021-05-17 12:50:15] [ERROR] page:1473请求无数据，放入错误列表
+proxy:  Status Code： 502 重试
+get_json ERROR: list.remove(x): x not in list
+Traceback (most recent call last):
+  File "./video/func/getRequest.py", line 102, in get_json
+    PROXYLIST.remove(proxy)
+ValueError: list.remove(x): x not in list
+None
+[2021-05-17 12:50:15] [ERROR] page:1471请求无数据，放入错误列表
+proxy:  Status Code： 502 重试
+get_json ERROR: list.remove(x): x not in list
+Traceback (most recent call last):
+  File "./video/func/getRequest.py", line 102, in get_json
+    PROXYLIST.remove(proxy)
+ValueError: list.remove(x): x not in list
+None
+[2021-05-17 12:50:16] [ERROR] page:1470请求无数据，放入错误列表
+proxy:  Status Code： 502 重试
+get_json ERROR: list.remove(x): x not in list
+Traceback (most recent call last):
+  File "./video/func/getRequest.py", line 102, in get_json
+    PROXYLIST.remove(proxy)
+ValueError: list.remove(x): x not in list
+None
+[2021-05-17 12:50:16] [ERROR] page:1472请求无数据，放入错误列表
+proxy:  Status Code： 502 重试
+get_json ERROR: list.remove(x): x not in list
+Traceback (most recent call last):
+  File "./video/func/getRequest.py", line 102, in get_json
+    PROXYLIST.remove(proxy)
+ValueError: list.remove(x): x not in list
+None
+[2021-05-17 12:50:16] [ERROR] page:1468请求无数据，放入错误列表
+proxy:  Status Code： 502 重试
+get_json ERROR: list.remove(x): x not in list
+Traceback (most recent call last):
+  File "./video/func/getRequest.py", line 102, in get_json
+    PROXYLIST.remove(proxy)
+ValueError: list.remove(x): x not in list
+None
+[2021-05-17 12:50:16] [ERROR] page:1465请求无数据，放入错误列表
+获取到page: 1500
+proxy:  Status Code： 502 重试
+get_json ERROR: list.remove(x): x not in list
+Traceback (most recent call last):
+  File "./video/func/getRequest.py", line 102, in get_json
+    PROXYLIST.remove(proxy)
+ValueError: list.remove(x): x not in list
+None
+[2021-05-17 12:50:28] [ERROR] page:1423请求无数据，放入错误列表
+proxy:  Status Code： 502 重试
+get_json ERROR: list.remove(x): x not in list
+Traceback (most recent call last):
+  File "./video/func/getRequest.py", line 102, in get_json
+    PROXYLIST.remove(proxy)
+ValueError: list.remove(x): x not in list
+None
+[2021-05-17 12:50:32] [ERROR] page:1402请求无数据，放入错误列表
+获取到page: 1400
+proxy:  Status Code： 502 重试
+get_json ERROR: list.remove(x): x not in list
+Traceback (most recent call last):
+  File "./video/func/getRequest.py", line 102, in get_json
+    PROXYLIST.remove(proxy)
+ValueError: list.remove(x): x not in list
+None
+[2021-05-17 12:50:52] [ERROR] page:1326请求无数据，放入错误列表
+proxy:  Status Code： 502 重试
+get_json ERROR: list.remove(x): x not in list
+Traceback (most recent call last):
+  File "./video/func/getRequest.py", line 102, in get_json
+    PROXYLIST.remove(proxy)
+ValueError: list.remove(x): x not in list
+None
+[2021-05-17 12:50:52] [ERROR] page:1324请求无数据，放入错误列表
+proxy:  Status Code： 502 重试
+get_json ERROR: list.remove(x): x not in list
+Traceback (most recent call last):
+  File "./video/func/getRequest.py", line 102, in get_json
+    PROXYLIST.remove(proxy)
+ValueError: list.remove(x): x not in list
+None
+[2021-05-17 12:50:54] [ERROR] page:1313请求无数据，放入错误列表
+proxy:  Status Code： 502 重试
+get_json ERROR: list.remove(x): x not in list
+Traceback (most recent call last):
+  File "./video/func/getRequest.py", line 102, in get_json
+    PROXYLIST.remove(proxy)
+ValueError: list.remove(x): x not in list
+None
+[2021-05-17 12:50:54] [ERROR] page:1312请求无数据，放入错误列表
+proxy:  Status Code： 502 重试
+get_json ERROR: list.remove(x): x not in list
+Traceback (most recent call last):
+  File "./video/func/getRequest.py", line 102, in get_json
+    PROXYLIST.remove(proxy)
+ValueError: list.remove(x): x not in list
+None
+[2021-05-17 12:50:54] [ERROR] page:1311请求无数据，放入错误列表
+proxy:  Status Code： 502 重试
+get_json ERROR: list.remove(x): x not in list
+Traceback (most recent call last):
+  File "./video/func/getRequest.py", line 102, in get_json
+    PROXYLIST.remove(proxy)
+ValueError: list.remove(x): x not in list
+None
+[2021-05-17 12:50:55] [ERROR] page:1306请求无数据，放入错误列表
+获取到page: 1300
+proxy:  Status Code： 502 重试
+get_json ERROR: list.remove(x): x not in list
+Traceback (most recent call last):
+  File "./video/func/getRequest.py", line 102, in get_json
+    PROXYLIST.remove(proxy)
+ValueError: list.remove(x): x not in list
+None
+[2021-05-17 12:51:09] [ERROR] page:1250请求无数据，放入错误列表
+[pid: 239511|app: 0|req: 155/610] 218.13.14.210 () {44 vars in 902 bytes} [Mon May 17 12:51:09 2021] GET /admin/view_log/?page=1 => generated 22423 bytes in 80 msecs (HTTP/1.1 200) 6 headers in 182 bytes (1 switches on core 1)
+proxy:  Status Code： 502 重试
+get_json ERROR: list.remove(x): x not in list
+Traceback (most recent call last):
+  File "./video/func/getRequest.py", line 102, in get_json
+    PROXYLIST.remove(proxy)
+ValueError: list.remove(x): x not in list
+None
+[2021-05-17 12:51:09] [ERROR] page:1244请求无数据，放入错误列表
+proxy:  Status Code： 502 重试
+get_json ERROR: list.remove(x): x not in list
+Traceback (most recent call last):
+  File "./video/func/getRequest.py", line 102, in get_json
+    PROXYLIST.remove(proxy)
+ValueError: list.remove(x): x not in list
+None
+[2021-05-17 12:51:09] [ERROR] page:1243请求无数据，放入错误列表
+proxy:  Status Code： 502 重试
+get_json ERROR: list.remove(x): x not in list
+Traceback (most recent call last):
+  File "./video/func/getRequest.py", line 102, in get_json
+    PROXYLIST.remove(proxy)
+ValueError: list.remove(x): x not in list
+None
+[2021-05-17 12:51:10] [ERROR] page:1239请求无数据，放入错误列表
+proxy:  Status Code： 502 重试
+get_json ERROR: list.remove(x): x not in list
+Traceback (most recent call last):
+  File "./video/func/getRequest.py", line 102, in get_json
+    PROXYLIST.remove(proxy)
+ValueError: list.remove(x): x not in list
+None
+[2021-05-17 12:51:10] [ERROR] page:1241请求无数据，放入错误列表
+[pid: 239511|app: 0|req: 156/611] 218.13.14.210 () {44 vars in 909 bytes} [Mon May 17 12:51:20 2021] GET /admin/view_log/?page=2 => generated 20964 bytes in 75 msecs (HTTP/1.1 200) 6 headers in 182 bytes (1 switches on core 1)
+[pid: 239511|app: 0|req: 157/612] 218.13.14.210 () {44 vars in 909 bytes} [Mon May 17 12:51:24 2021] GET /admin/view_log/?page=3 => generated 20702 bytes in 77 msecs (HTTP/1.1 200) 6 headers in 182 bytes (1 switches on core 1)
+获取到page: 1200
+proxy:  Status Code： 502 重试
+get_json ERROR: list.remove(x): x not in list
+Traceback (most recent call last):
+  File "./video/func/getRequest.py", line 102, in get_json
+    PROXYLIST.remove(proxy)
+ValueError: list.remove(x): x not in list
+None
+[2021-05-17 12:51:30] [ERROR] page:1167请求无数据，放入错误列表
+proxy:  Status Code： 502 重试
+get_json ERROR: list.remove(x): x not in list
+Traceback (most recent call last):
+  File "./video/func/getRequest.py", line 102, in get_json
+    PROXYLIST.remove(proxy)
+ValueError: list.remove(x): x not in list
+None
+[2021-05-17 12:51:32] [ERROR] page:1158请求无数据，放入错误列表
+[pid: 239511|app: 0|req: 158/613] 218.13.14.210 () {42 vars in 870 bytes} [Mon May 17 12:51:32 2021] GET /video/play/bajie273216/2-13.html => generated 15627 bytes in 28 msecs (HTTP/1.1 200) 7 headers in 350 bytes (1 switches on core 1)
+proxy:  Status Code： 502 重试
+get_json ERROR: list.remove(x): x not in list
+Traceback (most recent call last):
+  File "./video/func/getRequest.py", line 102, in get_json
+    PROXYLIST.remove(proxy)
+ValueError: list.remove(x): x not in list
+None
+[2021-05-17 12:51:33] [ERROR] page:1157请求无数据，放入错误列表
+proxy:  Status Code： 502 重试
+get_json ERROR: list.remove(x): x not in list
+Traceback (most recent call last):
+  File "./video/func/getRequest.py", line 102, in get_json
+    PROXYLIST.remove(proxy)
+ValueError: list.remove(x): x not in list
+None
+[2021-05-17 12:51:33] [ERROR] page:1153请求无数据，放入错误列表
+proxy:  Status Code： 502 重试
+get_json ERROR: list.remove(x): x not in list
+Traceback (most recent call last):
+  File "./video/func/getRequest.py", line 102, in get_json
+    PROXYLIST.remove(proxy)
+ValueError: list.remove(x): x not in list
+None
+[2021-05-17 12:51:34] [ERROR] page:1152请求无数据，放入错误列表
+proxy:  Status Code： 502 重试
+get_json ERROR: list.remove(x): x not in list
+Traceback (most recent call last):
+  File "./video/func/getRequest.py", line 102, in get_json
+    PROXYLIST.remove(proxy)
+ValueError: list.remove(x): x not in list
+None
+[2021-05-17 12:51:34] [ERROR] page:1151请求无数据，放入错误列表
+[pid: 239511|app: 0|req: 159/614] 218.13.14.210 () {42 vars in 943 bytes} [Mon May 17 12:51:36 2021] GET /video/search/?wd=%E5%90%91%E5%BE%80%E7%9A%84%E7%94%9F%E6%B4%BB&page=1 => generated 31288 bytes in 1174 msecs (HTTP/1.1 200) 7 headers in 350 bytes (1 switches on core 1)
+获取到page: 1100
+[pid: 239511|app: 0|req: 160/615] 218.13.14.210 () {44 vars in 909 bytes} [Mon May 17 12:51:49 2021] GET /admin/view_log/?page=3 => generated 21027 bytes in 63 msecs (HTTP/1.1 200) 6 headers in 182 bytes (1 switches on core 1)
+proxy:  Status Code： 502 重试
+get_json ERROR: list.remove(x): x not in list
+Traceback (most recent call last):
+  File "./video/func/getRequest.py", line 102, in get_json
+    PROXYLIST.remove(proxy)
+ValueError: list.remove(x): x not in list
+None
+[2021-05-17 12:51:51] [ERROR] page:1069请求无数据，放入错误列表
+proxy:  Status Code： 502 重试
+get_json ERROR: list.remove(x): x not in list
+Traceback (most recent call last):
+  File "./video/func/getRequest.py", line 102, in get_json
+    PROXYLIST.remove(proxy)
+ValueError: list.remove(x): x not in list
+None
+[2021-05-17 12:51:52] [ERROR] page:1066请求无数据，放入错误列表
+[pid: 239511|app: 0|req: 161/616] 218.13.14.210 () {44 vars in 909 bytes} [Mon May 17 12:51:54 2021] GET /admin/view_log/?page=4 => generated 19595 bytes in 59 msecs (HTTP/1.1 200) 6 headers in 182 bytes (1 switches on core 1)
+获取到page: 1000
+获取到page: 900
+page2200保存成功
+获取到page: 800
+获取到page: 700
+proxy:  Status Code： 502 重试
+get_json ERROR: list.remove(x): x not in list
+Traceback (most recent call last):
+  File "./video/func/getRequest.py", line 102, in get_json
+    PROXYLIST.remove(proxy)
+ValueError: list.remove(x): x not in list
+None
+[2021-05-17 12:53:26] [ERROR] page:620请求无数据，放入错误列表
+proxy:  Status Code： 502 重试
+get_json ERROR: list.remove(x): x not in list
+Traceback (most recent call last):
+  File "./video/func/getRequest.py", line 102, in get_json
+    PROXYLIST.remove(proxy)
+ValueError: list.remove(x): x not in list
+None
+[2021-05-17 12:53:26] [ERROR] page:619请求无数据，放入错误列表
+proxy:  Status Code： 502 重试
+get_json ERROR: list.remove(x): x not in list
+Traceback (most recent call last):
+  File "./video/func/getRequest.py", line 102, in get_json
+    PROXYLIST.remove(proxy)
+ValueError: list.remove(x): x not in list
+None
+[2021-05-17 12:53:26] [ERROR] page:622请求无数据，放入错误列表
+获取到page: 600
+获取到page: 500
+获取到page: 400
+获取到page: 300
+获取到page: 200
+获取到page: 100
+page2100保存成功
+page2000保存成功
+page1900保存成功
+page1800保存成功
+page1700保存成功
+page1600保存成功
+page1500保存成功
+page1400保存成功
+page1300保存成功
+page1200保存成功
+[pid: 239511|app: 0|req: 162/617] 218.13.14.210 () {42 vars in 943 bytes} [Mon May 17 13:19:33 2021] GET /video/search/?wd=%E5%90%91%E5%BE%80%E7%9A%84%E7%94%9F%E6%B4%BB&page=1 => generated 31288 bytes in 601 msecs (HTTP/1.1 200) 7 headers in 350 bytes (1 switches on core 1)
+[pid: 239511|app: 0|req: 163/618] 218.13.14.210 () {44 vars in 909 bytes} [Mon May 17 13:19:41 2021] GET /admin/view_log/?page=4 => generated 20930 bytes in 59 msecs (HTTP/1.1 200) 6 headers in 182 bytes (1 switches on core 1)
+[pid: 239511|app: 0|req: 164/619] 218.13.14.210 () {44 vars in 909 bytes} [Mon May 17 13:19:47 2021] GET /admin/view_log/?page=5 => generated 17291 bytes in 91 msecs (HTTP/1.1 200) 6 headers in 182 bytes (1 switches on core 1)
+[pid: 239511|app: 0|req: 165/620] 218.13.14.210 () {44 vars in 909 bytes} [Mon May 17 13:19:50 2021] GET /admin/view_log/?page=4 => generated 20930 bytes in 81 msecs (HTTP/1.1 200) 6 headers in 182 bytes (1 switches on core 1)
+[pid: 239511|app: 0|req: 166/621] 218.13.14.210 () {44 vars in 939 bytes} [Mon May 17 13:19:58 2021] GET /video/type/1/ => generated 33348 bytes in 1899 msecs (HTTP/1.1 200) 7 headers in 350 bytes (1 switches on core 1)
+[pid: 239511|app: 0|req: 167/622] 218.13.14.210 () {44 vars in 939 bytes} [Mon May 17 13:20:05 2021] GET /video/type/2/ => generated 32455 bytes in 2001 msecs (HTTP/1.1 200) 7 headers in 350 bytes (1 switches on core 1)
+[pid: 239511|app: 0|req: 168/623] 218.13.14.210 () {44 vars in 883 bytes} [Mon May 17 13:20:12 2021] GET /video/type/3/ => generated 32459 bytes in 941 msecs (HTTP/1.1 200) 7 headers in 350 bytes (1 switches on core 1)
+[pid: 239511|app: 0|req: 169/624] 218.13.14.210 () {44 vars in 883 bytes} [Mon May 17 13:20:37 2021] GET /video/type/3/ => generated 32459 bytes in 913 msecs (HTTP/1.1 200) 7 headers in 350 bytes (1 switches on core 1)
+[pid: 239511|app: 0|req: 170/625] 218.13.14.210 () {44 vars in 898 bytes} [Mon May 17 13:20:44 2021] GET /video/type/3/?&page=2 => generated 31391 bytes in 919 msecs (HTTP/1.1 200) 7 headers in 350 bytes (1 switches on core 1)
+[pid: 239511|app: 0|req: 171/626] 218.13.14.210 () {44 vars in 906 bytes} [Mon May 17 13:20:51 2021] GET /video/type/3/?&page=3 => generated 35294 bytes in 916 msecs (HTTP/1.1 200) 7 headers in 350 bytes (1 switches on core 1)
+[pid: 239511|app: 0|req: 172/627] 218.13.14.210 () {44 vars in 906 bytes} [Mon May 17 13:20:58 2021] GET /video/type/3/?&page=4 => generated 33033 bytes in 1591 msecs (HTTP/1.1 200) 7 headers in 350 bytes (1 switches on core 1)
+[pid: 239511|app: 0|req: 173/628] 218.13.14.210 () {44 vars in 906 bytes} [Mon May 17 13:21:05 2021] GET /video/type/3/?&page=5 => generated 30729 bytes in 846 msecs (HTTP/1.1 200) 7 headers in 350 bytes (1 switches on core 1)
+[pid: 239511|app: 0|req: 174/629] 218.13.14.210 () {44 vars in 906 bytes} [Mon May 17 13:21:10 2021] GET /video/type/3/?&page=6 => generated 31306 bytes in 859 msecs (HTTP/1.1 200) 7 headers in 350 bytes (1 switches on core 1)
+page1100保存成功
+[pid: 239511|app: 0|req: 175/630] 218.13.14.210 () {44 vars in 906 bytes} [Mon May 17 13:21:16 2021] GET /video/type/3/?&page=7 => generated 32796 bytes in 569 msecs (HTTP/1.1 200) 7 headers in 350 bytes (1 switches on core 1)
+[pid: 239511|app: 0|req: 176/631] 218.13.14.210 () {44 vars in 906 bytes} [Mon May 17 13:21:22 2021] GET /video/type/3/?&page=8 => generated 33383 bytes in 1013 msecs (HTTP/1.1 200) 7 headers in 350 bytes (1 switches on core 1)
+[pid: 239511|app: 0|req: 177/632] 218.13.14.210 () {44 vars in 906 bytes} [Mon May 17 13:21:31 2021] GET /video/type/3/?&page=9 => generated 33500 bytes in 664 msecs (HTTP/1.1 200) 7 headers in 350 bytes (1 switches on core 1)
+[pid: 239511|app: 0|req: 178/633] 218.13.14.210 () {44 vars in 909 bytes} [Mon May 17 13:21:46 2021] GET /admin/view_log/?page=5 => generated 18070 bytes in 58 msecs (HTTP/1.1 200) 6 headers in 182 bytes (1 switches on core 1)
+[pid: 239511|app: 0|req: 179/634] 218.13.14.210 () {44 vars in 909 bytes} [Mon May 17 13:21:55 2021] GET /admin/view_log/?page=5 => generated 18125 bytes in 87 msecs (HTTP/1.1 200) 6 headers in 182 bytes (1 switches on core 1)
+[pid: 239511|app: 0|req: 180/635] 218.13.14.210 () {44 vars in 909 bytes} [Mon May 17 13:22:05 2021] GET /admin/view_log/?page=5 => generated 18180 bytes in 104 msecs (HTTP/1.1 200) 6 headers in 182 bytes (1 switches on core 1)
+[pid: 239511|app: 0|req: 181/636] 218.13.14.210 () {44 vars in 891 bytes} [Mon May 17 13:22:14 2021] GET /video/type/2/ => generated 32455 bytes in 1992 msecs (HTTP/1.1 200) 7 headers in 350 bytes (1 switches on core 1)
+[pid: 239511|app: 0|req: 182/637] 218.13.14.210 () {44 vars in 903 bytes} [Mon May 17 13:22:22 2021] GET /video/play/bajie280011/ => generated 17445 bytes in 587 msecs (HTTP/1.1 200) 7 headers in 350 bytes (1 switches on core 1)
+[pid: 239511|app: 0|req: 183/638] 218.13.14.210 () {44 vars in 883 bytes} [Mon May 17 13:22:27 2021] GET /video/type/4/ => generated 33976 bytes in 1139 msecs (HTTP/1.1 200) 7 headers in 350 bytes (1 switches on core 1)
+[pid: 239511|app: 0|req: 184/639] 218.13.14.210 () {44 vars in 909 bytes} [Mon May 17 13:22:48 2021] GET /admin/view_log/?page=5 => generated 18383 bytes in 101 msecs (HTTP/1.1 200) 6 headers in 182 bytes (1 switches on core 1)
+[pid: 239511|app: 0|req: 185/640] 139.59.79.18 () {34 vars in 483 bytes} [Mon May 17 13:23:05 2021] GET / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 5 headers in 158 bytes (1 switches on core 1)
+[pid: 239511|app: 0|req: 186/641] 218.13.14.210 () {44 vars in 909 bytes} [Mon May 17 13:23:21 2021] GET /admin/view_log/?page=5 => generated 18438 bytes in 67 msecs (HTTP/1.1 200) 6 headers in 182 bytes (1 switches on core 1)
+page1000保存成功
+[pid: 239511|app: 0|req: 187/642] 118.126.124.198 () {38 vars in 581 bytes} [Mon May 17 13:24:30 2021] GET /manager/text/list => generated 179 bytes in 1 msecs (HTTP/1.1 404) 5 headers in 158 bytes (1 switches on core 1)
+page900保存成功
+page800保存成功
+page700保存成功
+page600保存成功
+page500保存成功
+page400保存成功
+page300保存成功
+page200保存成功
+page100保存成功
+已更新45542条数据
+出现错误页面： ['1485', '1484', '1487', '1479', '1476', '1475', '1473', '1471', '1470', '1472', '1468', '1465', '1423', '1402', '1326', '1324', '1313', '1312', '1311', '1306', '1250', '1244', '1243', '1239', '1241', '1167', '1158', '1157', '1153', '1152', '1151', '1069', '1066', '620', '619', '622']
+--------2021-05-17 13:50:14 站点2更新完成--------
+[pid: 239512|app: 0|req: 53/643] 218.13.14.210 () {44 vars in 904 bytes} [Mon May 17 12:48:39 2021] GET /admin/update/?url_index=2&type=all => generated 84 bytes in 3694517 msecs (HTTP/1.1 200) 6 headers in 179 bytes (1 switches on core 1)
+[pid: 239511|app: 0|req: 188/644] 118.126.124.141 () {38 vars in 650 bytes} [Mon May 17 13:59:40 2021] GET /vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php => generated 179 bytes in 1 msecs (HTTP/1.1 404) 5 headers in 158 bytes (1 switches on core 1)
+[pid: 239511|app: 0|req: 189/645] 118.126.124.7 () {38 vars in 593 bytes} [Mon May 17 14:30:05 2021] GET /video/play/101098/2-11.html => generated 17428 bytes in 6 msecs (HTTP/1.1 200) 7 headers in 350 bytes (1 switches on core 1)
+[pid: 239511|app: 0|req: 190/646] 180.244.171.19 () {38 vars in 568 bytes} [Mon May 17 14:45:03 2021] GET / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 5 headers in 158 bytes (1 switches on core 1)
+[pid: 239511|app: 0|req: 191/647] 157.230.143.29 () {34 vars in 457 bytes} [Mon May 17 15:38:35 2021] GET / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 5 headers in 158 bytes (1 switches on core 1)
+[pid: 239511|app: 0|req: 192/648] 39.96.140.32 () {34 vars in 400 bytes} [Mon May 17 16:32:00 2021] GET / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 5 headers in 158 bytes (1 switches on core 1)
+[pid: 239511|app: 0|req: 193/649] 81.88.196.183 () {32 vars in 465 bytes} [Mon May 17 16:36:54 2021] GET / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 5 headers in 158 bytes (1 switches on core 1)
+[pid: 239511|app: 0|req: 194/650] 77.79.150.218 () {32 vars in 466 bytes} [Mon May 17 17:22:13 2021] GET / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 5 headers in 158 bytes (1 switches on core 1)
+[pid: 239511|app: 0|req: 195/651] 118.126.124.141 () {38 vars in 598 bytes} [Mon May 17 17:44:27 2021] GET /_ignition/execute-solution => generated 179 bytes in 1 msecs (HTTP/1.1 404) 5 headers in 158 bytes (1 switches on core 1)
+[pid: 239511|app: 0|req: 196/652] 46.249.32.208 () {48 vars in 880 bytes} [Mon May 17 17:56:40 2021] POST /boaform/admin/formLogin => generated 179 bytes in 1 msecs (HTTP/1.1 404) 5 headers in 158 bytes (1 switches on core 1)
+[pid: 239511|app: 0|req: 197/653] 51.254.59.113 () {32 vars in 451 bytes} [Mon May 17 18:06:02 2021] GET / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 5 headers in 158 bytes (1 switches on core 1)
+[pid: 239511|app: 0|req: 198/654] 120.0.8.174 () {34 vars in 431 bytes} [Mon May 17 18:34:16 2021] GET / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 5 headers in 158 bytes (1 switches on core 1)
+[pid: 239511|app: 0|req: 199/655] 110.77.156.87 () {32 vars in 472 bytes} [Mon May 17 18:58:05 2021] GET / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 5 headers in 158 bytes (1 switches on core 1)
+[pid: 239511|app: 0|req: 200/656] 64.62.197.2 () {28 vars in 307 bytes} [Mon May 17 19:13:40 2021] GET / => generated 179 bytes in 1 msecs (HTTP/1.1 404) 5 headers in 158 bytes (1 switches on core 1)
+[pid: 239511|app: 0|req: 201/657] 118.126.124.172 () {38 vars in 607 bytes} [Mon May 17 20:02:30 2021] GET /solr/admin/info/system?wt%3Djson => generated 179 bytes in 1 msecs (HTTP/1.1 404) 5 headers in 158 bytes (1 switches on core 1)
+[pid: 239511|app: 0|req: 202/658] 112.96.106.229 () {42 vars in 850 bytes} [Mon May 17 20:06:05 2021] GET /admin/view_log/?page=5 => generated 19894 bytes in 14 msecs (HTTP/1.1 200) 6 headers in 182 bytes (1 switches on core 1)
+[pid: 239510|app: 0|req: 343/659] 112.96.106.229 () {42 vars in 833 bytes} [Mon May 17 20:06:11 2021] GET /video/type/2/ => generated 32455 bytes in 189 msecs (HTTP/1.1 200) 7 headers in 350 bytes (1 switches on core 0)
+[pid: 239510|app: 0|req: 344/660] 112.96.106.229 () {42 vars in 833 bytes} [Mon May 17 20:06:13 2021] GET /video/type/2/ => generated 32455 bytes in 167 msecs (HTTP/1.1 200) 7 headers in 350 bytes (1 switches on core 1)
+[pid: 239511|app: 0|req: 203/661] 112.96.106.229 () {42 vars in 848 bytes} [Mon May 17 20:06:14 2021] GET /video/type/3/?&page=9 => generated 33500 bytes in 77 msecs (HTTP/1.1 200) 7 headers in 350 bytes (1 switches on core 1)
+[pid: 239510|app: 0|req: 345/662] 112.96.106.229 () {42 vars in 848 bytes} [Mon May 17 20:06:16 2021] GET /video/type/3/?&page=8 => generated 33383 bytes in 78 msecs (HTTP/1.1 200) 7 headers in 350 bytes (1 switches on core 0)
+[pid: 239510|app: 0|req: 346/663] 112.96.106.229 () {42 vars in 848 bytes} [Mon May 17 20:06:18 2021] GET /video/type/3/?&page=7 => generated 32796 bytes in 79 msecs (HTTP/1.1 200) 7 headers in 350 bytes (1 switches on core 1)
+[pid: 239511|app: 0|req: 204/664] 112.96.106.229 () {42 vars in 848 bytes} [Mon May 17 20:06:18 2021] GET /video/type/3/?&page=6 => generated 31306 bytes in 78 msecs (HTTP/1.1 200) 7 headers in 350 bytes (1 switches on core 1)
+[pid: 239510|app: 0|req: 347/665] 112.96.106.229 () {42 vars in 848 bytes} [Mon May 17 20:06:19 2021] GET /video/type/3/?&page=5 => generated 30729 bytes in 79 msecs (HTTP/1.1 200) 7 headers in 350 bytes (1 switches on core 0)
+[pid: 239510|app: 0|req: 348/666] 112.96.106.229 () {42 vars in 848 bytes} [Mon May 17 20:06:20 2021] GET /video/type/3/?&page=4 => generated 33033 bytes in 79 msecs (HTTP/1.1 200) 7 headers in 350 bytes (1 switches on core 1)
+[pid: 239511|app: 0|req: 205/667] 112.96.106.229 () {44 vars in 1003 bytes} [Mon May 17 20:06:26 2021] GET /video/search/?wd=%E5%90%91%E5%BE%80%E7%9A%84%E7%94%9F%E6%B4%BB&page=1 => generated 31288 bytes in 72 msecs (HTTP/1.1 200) 7 headers in 350 bytes (1 switches on core 1)
+[pid: 239510|app: 0|req: 349/668] 112.96.106.229 () {44 vars in 910 bytes} [Mon May 17 20:06:39 2021] GET /admin/view_log/?page=5 => generated 20505 bytes in 14 msecs (HTTP/1.1 200) 6 headers in 182 bytes (1 switches on core 0)
+[pid: 239510|app: 0|req: 350/669] 113.57.27.112 () {42 vars in 873 bytes} [Mon May 17 21:21:03 2021] GET /video/search/?wd=%E7%A7%A6%E6%97%B6%E6%98%8E%E6%9C%88&page=1 => generated 20481 bytes in 69 msecs (HTTP/1.1 200) 7 headers in 350 bytes (1 switches on core 1)
+[pid: 239511|app: 0|req: 206/670] 113.57.27.112 () {44 vars in 898 bytes} [Mon May 17 21:21:06 2021] GET /video/play/bajie257918/ => generated 17026 bytes in 6 msecs (HTTP/1.1 200) 7 headers in 350 bytes (1 switches on core 1)
+[pid: 239510|app: 0|req: 351/671] 113.57.27.112 () {44 vars in 877 bytes} [Mon May 17 21:21:12 2021] GET /video/play/bajie257918/2-2.html => generated 17026 bytes in 6 msecs (HTTP/1.1 200) 7 headers in 350 bytes (1 switches on core 0)
+[pid: 239510|app: 0|req: 352/672] 113.57.27.112 () {44 vars in 885 bytes} [Mon May 17 21:21:51 2021] GET /video/play/bajie257918/2-3.html => generated 17026 bytes in 6 msecs (HTTP/1.1 200) 7 headers in 350 bytes (1 switches on core 1)
+[1621267202] logsize: 48106, triggering log-reopen...
