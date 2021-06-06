@@ -137,7 +137,7 @@ class getAllData(object):   # 获取所有数据
         # 2.发送请求，获取响应
         res_dict = self.parse_url(start_url)
         if not res_dict:
-            logger.error('首页请求无数据')
+            # logger.error('首页请求无数据')
             return False
         # 4.保存数据
         page_count = int(res_dict['page']['pagecount'])
@@ -193,7 +193,8 @@ class getAllData(object):   # 获取所有数据
             page_thread = 5
             save_thread = 3
             if up_count == -1:
-                update_count = self.get_update_count(self.url_index)
+                update_count = 480
+                # update_count = self.get_update_count(self.url_index)
             else:
                 update_count = up_count if up_count < 10000 else 10000
             update_page = (update_count-1)//self.page_size + 1
@@ -455,7 +456,7 @@ class Get80sScore(object):
                         print('----------80s重新启动查找------------')
         except Exception as e:
             print('save_score Exception:',video_data['vod_name'],e)
-            # print(traceback.print_exc())
+            print(traceback.print_exc())
             return False
 
 

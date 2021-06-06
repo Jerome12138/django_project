@@ -99,7 +99,8 @@ def get_json(url, is_debug=0, is_proxy=0, *args, **kwargs):
                 print('proxy:', proxy, 'Status Code：',
                       response.status_code, '重试')
                 i += 1
-                PROXYLIST.remove(proxy)
+                if proxy in PROXYLIST :
+                    PROXYLIST.remove(proxy)
                 continue
             res_json = json.loads(response.content.decode())
             return res_json
@@ -110,7 +111,7 @@ def get_json(url, is_debug=0, is_proxy=0, *args, **kwargs):
             # print('爬虫网站%s请求超时，重试%s次' % (url, i))
         except requests.exceptions.RequestException as e:
             # print('page%s请求超时，重试%s次' % (url.split('?p=')[1], i))
-            print('爬虫网站%s 请求错误%s' % (url))
+            print('爬虫网站%s 请求错误' % (url))
             
             return False
         except json.decoder.JSONDecodeError:

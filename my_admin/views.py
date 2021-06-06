@@ -378,7 +378,8 @@ def update(request):    # 更新视频数据 最大资源网
             raise Exception('type参数错误')
         ret['data'] = '已更新%s条数据' % update_count
     except Exception as e:
-        print('Exception:', e)
+        print('my_admin update Exception:', e)
+        print(traceback.print_exc())
         ret['status'] = False
         ret['error'] = 'Exception: %s' % e
     finally:
