@@ -13,10 +13,10 @@ import os
 
 
 def home(request):  # 主页
-    movie_list = DBHandler.load_type_data(**{'vod_cid':'1','vod_year':'2020','vod_rating':'7.0'})
-    ju_list = DBHandler.load_type_data(**{'vod_cid':'2','vod_year':'2020','vod_rating':'7.0'})
-    show_list = DBHandler.load_type_data(**{'vod_cid':'3','vod_year':'2020','vod_rating':'7.0'})
-    animation_list = DBHandler.load_type_data(**{'vod_cid':'4','vod_year':'2020','vod_rating':'7.0'})
+    movie_list = DBHandler.load_type_data(**{'vod_cid':'1','vod_year':'2021','vod_rating':'7.0'})
+    ju_list = DBHandler.load_type_data(**{'vod_cid':'2','vod_year':'2021','vod_rating':'7.0'})
+    show_list = DBHandler.load_type_data(**{'vod_cid':'3','vod_year':'2021','vod_rating':'7.0'})
+    animation_list = DBHandler.load_type_data(**{'vod_cid':'4','vod_year':'2021','vod_rating':'7.0'})
     # 轮播图
     carousel_list = DBHandler.load_carousel_data()
     return render(request, 'video_home.html', {
@@ -49,7 +49,7 @@ def vod_type(request, vod_cid):  # 视频分类页
     # filter_dict 筛选参数，用于前端筛选
     filter_dict = {
         'type': [], 'area': [],
-        'year': ['2020', '2019', '2018', '2017', '2016', '2015', '2014', '2013', '2012', '2011', '2010', '更早'],
+        'year': ['2021','2020', '2019', '2018', '2017', '2016', '2015', '2014', '2013', '2012', '2011', '2010', '更早'],
         'rating':['9.0','8.0','7.0','6.0','5.0','5.0以下']}
     if vod_cid in ['1', '5', '6', '7', '8', '9', '10', '11']:
         all_type_id = '1'
