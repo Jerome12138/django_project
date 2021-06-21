@@ -1,0 +1,497 @@
+.html {
+    -webkit-text-size-adjust: none;
+    outline: 0;
+    zoom: 1;
+}
+
+p,
+ul,
+li {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.clear_both {
+    clear: both;
+}
+
+i {
+    font-style: normal;
+}
+
+p {
+    -webkit-margin-before: 0rem;
+    -webkit-margin-after: 0rem;
+    -webkit-margin-start: 0rem;
+    -webkit-margin-end: 0rem;
+    word-break: break-all;
+    max-height: 999px;
+}
+
+ul,
+li {
+    list-style: none;
+}
+
+img {
+    border: 0;
+    -webkit-tap-highlight-color: transparent;
+}
+
+a:hover {
+    -webkit-tap-highlight-color: transparent;
+}
+
+input,
+textarea,
+button {
+    -webkit-appearance: none;
+    font-family: Microsoft YaHei, Arial, Helvetica, sans-serif;
+    -webkit-appearance: none;
+    margin: 0;
+    padding: 0;
+    outline: none;
+    border: none;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-size: cover;
+    background: #fff;
+    font-family: Microsoft YaHei, Arial, Helvetica, sans-serif;
+    -webkit-touch-callout: none;
+    /* iOS Safari */
+    -webkit-user-select: none;
+    /* Chrome/Safari/Opera */
+    -khtml-user-select: none;
+    /* Konqueror */
+    -moz-user-select: none;
+    /* Firefox */
+    -ms-user-select: none;
+    /* Internet Explorer/Edge */
+    user-select: none;
+    /* Non-prefixed version, currently not supported by any browser */
+}
+
+html,
+body {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.mar69{
+    width: 6.9rem;
+    margin: 0 auto;
+}
+
+
+/*common*/
+.about_problems{
+    padding: 1rem 0;
+    margin: 0.6rem auto 0.4rem;
+    position: relative;
+}
+.pro{
+    width: 0.5rem;
+    font-size: 0.24rem;
+    color: #666666;
+    position: absolute;
+}
+.problems_head{
+    width: 3rem;
+}
+.p1{
+    left: 0;
+    right: 0;
+    margin: auto;
+    top: 0;
+}
+.p2{
+    right: 0.8rem;
+    bottom: 50%;
+}
+.p3{
+    right: 1.2rem;
+    bottom: 0.3rem;
+}
+.p4{
+    left: 1.2rem;
+    bottom: 0.3rem;
+}
+.p5{
+    left: 0.8rem;
+    bottom: 50%;
+}
+.pro:nth-child(4),.pro:nth-child(5){
+    width: 0.8rem;
+}
+
+
+.content_wrapper {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+}
+
+.toButton_container {
+    width: 6.2rem;
+    padding: 1px;
+    height: 1rem;
+    margin: 0 auto;
+    padding: 1px;
+    border-radius: 0.5rem;
+    position: relative;
+    /* background: linear-gradient(180deg, #ffffff, #e8b170); */
+}
+
+.toButton {
+    width: 100%;
+    height: 1rem;
+    color: #c9a063;
+    margin: 0 auto;
+    font-size: 0.36rem;
+    letter-spacing: 0.05rem;
+    border-radius: 0.5rem;
+    text-align: center;
+    line-height: 1rem;
+    position: relative;
+    background: #F6BA19;    
+    /* background: linear-gradient(180deg, #fff9e6, #ffe4aa); */
+}
+
+
+/*专属护肤方案*/
+
+.personal_desc {
+    width: 100%;
+    color: #fff;
+    font-size: 0.3rem;
+    margin: 0.3rem auto 0;
+}
+
+.personal_desc_title {
+    font-size: 0.3rem;
+    justify-content: flex-start;
+}
+
+.personal_desc_title img {
+    width: 0.4rem;
+    margin-right: 0.2rem;
+}
+
+.personal_img {
+    width: 100%;
+    margin: 0 auto;
+}
+
+
+/**/
+
+.flexCon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* 头部样式 */
+
+.top_header {
+    top: 0.9rem;
+    left: 0;
+    z-index: 999;
+    width: 100%;
+    color: #fff;
+    position: fixed;
+    font-size: 0.32rem;
+    text-align: center;
+    background: transparent;
+}
+
+.top_header view {
+    width: 100%;
+    text-align: center;
+}
+
+.sure_hover {
+    color: #fff;
+    background: transparent;
+}
+
+.fadein {
+    animation: fadeIn 1.8s ease 0.2s 1 both;
+    -webkit-animation: fadeIn 1.8s ease 0.2s 1 both;
+}
+
+.scaledraw {
+    animation: scaleDraw 3.4s ease-in-out infinite;
+    -webkit-animation: scaleDraw 3.4s ease-in-out infinite;
+}
+
+.fadeinout {
+    -webkit-animation: fadeIn 2.6s ease infinite;
+    -moz-animation: fadeIn 2.6s ease infinite;
+    -o-animation: fadeIn 2.6s ease infinite;
+    animation: fadeIn 2.6s ease infinite;
+}
+
+.fadetoup {
+    animation: fadeToUp 0.8s ease 0.2s 1 both;
+    -webkit-animation: fadeToUp 0.8s ease 0.2s 1 both;
+}
+
+.fadeinup {
+    animation: fadeInUp 0.8s ease 0.2s 1 both;
+    -webkit-animation: fadeInUp 0.8s ease 0.2s 1 both;
+}
+
+.fadeinleft {
+    animation: fadeInLeft 0.6s ease 0.2s 1 both;
+    -webkit-animation: fadeInLeft 0.6s ease 0.2s 1 both;
+}
+
+.fadeout {
+    animation: fadeOut 0.6s ease 0.2s 1 both;
+    -webkit-animation: fadeOut 0.6s ease 0.2s 1 both;
+}
+
+.rotate {
+    -webkit-animation: rotating 3.6s linear infinite;
+    -moz-animation: rotating 3.6s linear infinite;
+    -o-animation: rotating 3.6s linear infinite;
+    animation: rotating 3.6s linear infinite;
+}
+
+.rotate2 {
+    -webkit-animation: rotating2 3s linear infinite;
+    -moz-animation: rotating2 3s linear infinite;
+    -o-animation: rotating2 3s linear infinite;
+    animation: rotating2 3s linear infinite;
+}
+
+@keyframes scaleDraw {
+    0% {
+        transform: scale(1);
+    }
+    25% {
+        transform: scale(1.2);
+    }
+    50% {
+        transform: scale(1);
+    }
+    75% {
+        transform: scale(1.2);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        -webkit-transform: translate3d(0, 100%, 0);
+        transform: translate3d(0, 100%, 0);
+    }
+    to {
+        opacity: 1;
+        -webkit-transform: none;
+        transform: none;
+    }
+}
+
+@keyframes fadeInLeft {
+    from {
+        opacity: 0;
+        -webkit-transform: translate3d(100%, 0, 0);
+        transform: translate3d(100%, 0, 0);
+    }
+    to {
+        opacity: 1;
+        -webkit-transform: none;
+        transform: none;
+    }
+}
+
+@keyframes fadeToUp {
+    from {
+        opacity: 0;
+        -webkit-transform: none;
+        transform: none;
+    }
+    to {
+        opacity: 1;
+        -webkit-transform: translate3d(0rpx, -350rpx, 0);
+        transform: translate3d(0rpx, -350rpx, 0);
+    }
+}
+
+@keyframes fadeToUp2 {
+    from {
+        opacity: 0;
+        -webkit-transform: none;
+        transform: none;
+    }
+    to {
+        opacity: 1;
+        -webkit-transform: translate3d(0rpx, -450rpx, 0);
+        transform: translate3d(0rpx, -450rpx, 0);
+    }
+}
+
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes rotating {
+    from {
+        -webkit-transform: rotate(0)
+    }
+    to {
+        -webkit-transform: rotate(360deg)
+    }
+}
+
+@keyframes rotating {
+    from {
+        transform: rotate(0)
+    }
+    to {
+        transform: rotate(360deg)
+    }
+}
+
+@-webkit-keyframes rotating {
+    from {
+        -webkit-transform: rotate(0)
+    }
+    to {
+        -webkit-transform: rotate(360deg)
+    }
+}
+
+@keyframes rotating2 {
+    from {
+        transform: rotate(0)
+    }
+    to {
+        transform: rotate(-360deg)
+    }
+}
+
+@-webkit-keyframes rotating2 {
+    from {
+        -webkit-transform: rotate(0)
+    }
+    to {
+        -webkit-transform: rotate(-360deg)
+    }
+}
+
+
+/**/
+
+.dotting {
+    display: inline-block;
+    width: 10px;
+    min-height: 2px;
+    padding-right: 2px;
+    border-left: 2px solid currentColor;
+    border-right: 2px solid currentColor;
+    background-color: currentColor;
+    background-clip: content-box;
+    box-sizing: border-box;
+    -webkit-animation: dot 3s infinite step-start both;
+    animation: dot 3s infinite step-start both;
+}
+
+.dotting:before {
+    content: '...';
+}
+
+
+/* IE8 */
+
+.dotting::before {
+    content: '';
+}
+
+:root .dotting {
+    margin-left: 2px;
+    padding-left: 2px;
+}
+
+
+/* IE9+ */
+
+@-webkit-keyframes dot {
+    25% {
+        border-color: transparent;
+        background-color: transparent;
+    }
+    50% {
+        border-right-color: transparent;
+        background-color: transparent;
+    }
+    75% {
+        border-right-color: transparent;
+    }
+}
+
+@keyframes dot {
+    25% {
+        border-color: transparent;
+        background-color: transparent;
+    }
+    50% {
+        border-right-color: transparent;
+        background-color: transparent;
+    }
+    75% {
+        border-right-color: transparent;
+    }
+}
+
+
+/*logo same position*/
+
+.top_area_fixed {
+    top: 0.8rem;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 100%;
+    flex-direction: column;
+    position: absolute;
+}
+
+.begin_button{
+    width: 6.2rem;
+    margin:0 auto;
+    height: 0.92rem;
+    color: #fff;
+    font-size: 0.28rem;
+    border-radius: 0.45rem;
+    background: #F6BA19;
+}

@@ -1,0 +1,240 @@
+body{
+    background: #fff;
+}
+
+.test_again{
+    width: 6.9rem;
+    height: 1.4rem;
+    margin: 0.3rem auto;
+    border-radius: 0.2rem;
+    justify-content: space-around;
+    box-shadow: 0 0 0.2rem rgba(0,0,0,0.2);
+}
+.test_person{
+    width: 4rem;
+    justify-content: flex-start;
+}
+.person_pic{
+    width: 0.8rem;
+    height: 0.8rem;
+    border-radius: 0.4rem;
+    overflow: hidden;
+    background: #C8DCF9;
+    margin-right: 0.3rem;
+}
+.person_pic img{
+    width: 100%;
+}
+
+.person_det{
+    width: auto;
+    height: 0.8rem;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.det_name{
+    color: #333333;
+    font-size:0.24rem;
+}
+.det_time{
+    font-size: 0.24rem;
+    color: #B3B3B3;
+}
+.to_test{
+    width: 1.43rem;
+    height: 0.44rem;
+    color: #333333;
+    font-size: 0.24rem;
+    border-radius: 0.22rem;
+    background: #F7F7FA;
+}
+.history_enter{
+    width:6.9rem;
+    height: 0.8rem;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+.enter_title{
+    color: #333333;
+    font-size: 0.32rem;
+}
+.icon-jieguo{
+    font-size: 0.36rem;
+    color: #729EEB;
+}
+.enter_to{
+    color: #1F91F1;
+    font-size: 0.24rem;
+}
+.icon-gengduo{
+    font-size: 0.28rem;
+    color: #333333;
+}
+.result_sumup{
+    margin-top: 0.2rem;
+    justify-content: space-around;
+}
+.sumup{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.sumup_title{
+    color: #808080;
+    font-size: 0.24rem;
+    padding-bottom: 0.15rem;
+}
+.sumup_score{
+    font-size: 0.28rem;
+    
+}
+.sumup_score span{
+    font-size: 0.4rem;
+    color: #333333;
+    font-weight: 600;
+}
+.middleSize span{
+    font-size: 0.36rem;
+}
+
+
+
+.radar_title{
+    width: 2rem;
+    height: 0.6rem;
+    margin: 0 auto;
+    font-size: 0.28rem;
+    color: #333333;
+    font-weight: 600;
+    position: relative;
+}
+.radar_title::before{
+    left: -0.2rem;
+    content: "";
+    width: 0.12rem;
+    height: 0.12rem;
+    position: absolute;
+    background: #F6BA19;
+    border-radius: 0.06rem;
+}
+.radar_title::after{
+    right: -0.2rem;
+    content: "";
+    width: 0.12rem;
+    height: 0.12rem;
+    position: absolute;
+    background: #F6BA19;
+    border-radius: 0.06rem;
+}
+
+
+.dims_area{
+    overflow: hidden;
+}
+.dims_title{
+    color: #333333;
+    font-size: 0.32rem;
+    justify-content: flex-start;
+}
+.icon-fangan{
+    color: #F6BA19;
+    font-size: 0.38rem;
+    padding-right: 0.1rem;
+}
+.icon-zhuangtai{
+    color: #19BD6E;
+    font-size: 0.36rem;
+    padding-right: 0.1rem;
+}
+    
+
+.recm_pro{
+    width: 6.5rem;
+    margin: 0 auto;
+}
+.recm_title{
+    width: 100%;
+    color: #666;
+    text-align: left;
+    margin: 0.3rem auto;
+    font-size: 0.24rem;
+}
+.recm_list{
+    width: 100%;
+    justify-content: space-between;
+}
+.recm_pic{
+    width: 2.8rem;
+    height: 2.8rem;
+    background: #F7F7FA;
+}
+.recm_pic img{
+    width: 100%;
+}
+.recm_det{
+    width: 3.5rem;
+    height: 1.8rem;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+.recm_det_buy{
+    height: 0.4rem;
+    font-size: 0.24rem;
+    color: #F6BA19;
+    padding: 0.05rem 0.3rem;
+    border-radius: 0.25rem;
+    border: 1px solid #F6BA19;
+}
+.recm_det_name{
+    width: 100%;
+    overflow: hidden;
+    color: #333333;
+    font-weight: 600;
+    font-size: 0.28rem;
+    text-overflow: ellipsis;
+}
+.recm_det_tag{
+    color: #666;
+    font-size: 0.24rem;
+}
+.recm_det_tag span{
+    padding-right: 0.2rem;
+}
+
+.more_detail{
+    width: 6.5rem;
+    height: 0.92rem;
+    color: #333333;
+    font-size: 0.32rem;
+    font-weight: 600;
+    margin: 0.6rem auto;
+    background: #F7F7FA;
+    box-sizing: border-box;
+    letter-spacing: 1px;
+    border: 1px solid #e5e5e5;
+    border-radius: 0.47rem;
+    position: relative;
+}
+
+
+.bigger_title{
+    font-size: 0.32rem;
+}
+
+.around_fixed{
+    top:0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+    width: 100%;
+    height: auto;
+    margin: auto;
+    overflow: hidden;
+    background: #fff;
+    position: fixed;
+    padding-bottom: 0.2rem;
+}
+.pad30{
+    padding-bottom: 0.36rem;
+}

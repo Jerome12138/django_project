@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>注意事项</title>
+    <meta name="viewport" content="width=device-width,user-scalable=no,viewport-fit=cover">
+    <meta name="format-detection" content="telephone=no,address=no,email=no">
+    <meta name="mobileOptimized" content="width">
+    <meta name="handheldFriendly" content="true">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="stylesheet" href="css/all.css" />
+    <link rel="stylesheet" href="css/tips.css" />
+    <link rel="stylesheet" href="css/loading.css" />
+    <script type="text/javascript" src="js/jquery-2.1.3.min.js"></script>
+    <script type="text/javascript" src="js/apng-canvas.min.js"></script>
+    <script type="text/javascript" src="js/flexible.js"></script>
+    <script type="text/javascript" src="js/md5.js"></script>
+    <script type="text/javascript" src="js/rolldate.min.js"></script>
+</head>
+
+<body>
+    <div class="user_container flexCon">
+        <div class="tips_list flexCon">
+            <div class="tips_list_con">
+                <div class="tips_no">1.</div>
+                <div class="tips_area">
+                    <div class="tips_txt flexCon">
+                        <img src="images/picBacklight-1.png">
+                        <span>摘下眼镜，撩起刘海， 保证五官无遮挡;</span>
+                    </div>
+                </div>
+            </div>
+            <div class="tips_list_con">
+                <div class="tips_no">2.</div>
+                <div class="tips_area">
+                    <div class="tips_txt flexCon">
+                        <img src="images/picBacklight-2.png">
+                        <span>摘下眼镜，撩起刘海， 保证五官无遮挡;</span>
+                    </div>
+                </div>
+            </div>
+            <div class="tips_list_con">
+                <div class="tips_no">3.</div>
+                <div class="tips_area">
+                    <div class="tips_txt flexCon">
+                        <img src="images/picBacklight-3.png">
+                        <span>摘下眼镜，撩起刘海， 保证五官无遮挡;</span>
+                    </div>
+                </div>
+            </div>
+            <div class="tips_list_con">
+                <div class="tips_no">4.</div>
+                <div class="tips_area">
+                    <div class="tips_txt flexCon">
+                        <img src="images/picBacklight-4.png">
+                        <span>摘下眼镜，撩起刘海， 保证五官无遮挡;</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="begin_test flexCon toButton_container">
+            <div class="begin_button flexCon posi_bottom">开始拍摄</div>
+            <input type="file" class="iosP" id="ios11" accept="image/*" capture="camera" style="opacity: 0;" />
+        </div>
+    </div>
+    <div class="take_photo" style="display:none;">
+        <div class="getPicImg">
+            <img class="getPic">
+        </div>
+        <div class="if_not flexCon" style="display:none;">
+            <div class="begin_test flexCon toButton_container">
+                <div class="if_img reShot toButton "> 重拍</div>
+            </div>
+            <div class="begin_test flexCon toButton_container">
+                <div class="if_img to_a toButton"> 确定</div>
+            </div>
+        </div>
+    </div>
+    <div class="loding_container flexCon ana_container" style="display:none;">
+        <div class="head flexCon">
+            <img class="ani_back" src="images/head.png">
+            <div class="line_ani">
+                <img class="zoom_ani" id="ball" src="images/zoom.png">  
+            </div>
+        </div>
+        <div class="loading_word">检测中...</div>
+        <div class="loading_progress">
+            <div class="progress_bar"></div>
+            <div class="progress_bar_now" style="width:0%;"></div>
+            <div class="progress_percent">0%</div>
+        </div>
+
+        <div class="error_con pink_div" style="opacity:0;">
+            <div class="tishi1">
+                <image src="images/tishi.png"></image>
+            </div>
+            <div class="tishi2">提示</div>
+            <div class="tishi3">无法识别人脸</div>
+            <div class="tishi4">请返回重新拍照</div>
+            <a class="returnShot">确定</a>
+        </div>
+    </div>
+    <script type="text/javascript" src="js/tips.js"></script>
+</body>
+
+</html>

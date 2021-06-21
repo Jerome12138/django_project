@@ -28,6 +28,7 @@ urlpatterns = [
     path('sign_in/', views.SignIn.as_view()),
     path('sign_up/', views.SignUp.as_view()),
     path('log_out/', views.log_out),
+    path('work_test/', views.work_test),
     # path('check_code/', views.check_code),
     path('backend/', include(backend_patterns)),
     path('<str:username>/', include(user_patterns)),

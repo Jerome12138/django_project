@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>历史记录</title>
+    <meta name="viewport" content="width=device-width,user-scalable=no,viewport-fit=cover">
+    <meta name="format-detection" content="telephone=no,address=no,email=no">
+    <meta name="mobileOptimized" content="width">
+    <meta name="handheldFriendly" content="true">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="stylesheet" href="css/all.css" />
+    <link rel="stylesheet" href="css/iconfont.css">
+    <link rel="stylesheet" href="css/loading.css" />
+    <script type="text/javascript" src="js/jquery-2.1.3.min.js"></script>
+    <script type="text/javascript" src="js/flexible.js"></script>
+    <style> html, body { height: auto; } </style>
+</head>
+
+<body>
+    <div class="timer_filter flexCon mar69">
+        <div class="time_picker">
+            <input id="startTime" type="text" readonly="readonly" value="2021-06-01" name="birthday"><span class="iconfont icon-gengduo time_down"></span>
+        </div>
+        <div class="time_picker">
+            <input id="endTime" type="text" readonly="readonly" value="全部" name="birthday"><span class="iconfont icon-gengduo time_down"></span>
+        </div>
+    </div>
+    <div class="his_list mar69"> </div>
+    <div class="his_test_con flexCon">
+        <div class="his_test_again flexCon">再测一次</div>
+    </div>
+    <script type="text/javascript" src="js/his.js"></script>
+    <script>
+        $(".his_test_again").click(function(){
+            window.location.href="tips2.html";
+        })
+    </script>
+</body>
+</html>

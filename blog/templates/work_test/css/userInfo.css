@@ -1,0 +1,219 @@
+page{
+  background: #000;
+}
+.userinfo{
+  left:0;
+  right:0;
+  width: 100%;
+  margin: auto;
+  color: #fff;
+  height: 100%;
+  position: fixed;
+  flex-direction: column;
+  align-items: center;
+  background: #000;
+  justify-content: space-around;
+}
+.logo{
+  margin: 0 auto;
+  flex-direction: column;
+}
+.loco_title{
+  font-size: 0.3rem;
+  text-align: center;
+}
+.logo_icon{
+  width: 2.60rem;
+}
+.numFont{
+  font-family: 'DINPro';
+}
+.info_edit_contain{
+  height: 5.5rem;
+}
+.info_edit{
+  width: 100%;
+  margin: 0 auto 0.20rem;
+}
+.info_in{
+  width: 4.82rem;
+  height: 0.75rem;
+  font-size: 0.30rem;
+  color: #e0aead;
+  background-image: url('https://skinrun-face-public.oss-cn-shanghai.aliyuncs.com/mini/inputBg.png');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+.info_in input{
+  border: none;
+  outline: none;
+  width: 4.82rem;
+  height: 0.75rem;
+  color: #e0aead;
+  font-size: 0.30rem;
+  margin: 0;padding: 0;
+  text-align: center;
+  background: transparent;
+}
+.info_in input::after,.codeGet::after{
+  border: none;
+  outline: none;
+}
+.info_in.codeIn{
+  justify-content: space-between;
+}
+.info_in.codeIn input{
+  width: 2.82rem;
+  height: 0.75rem;
+}
+.codeGet{
+  color: #fff;
+  font-size: 0.24rem;
+  width: 1.65rem;
+  height: 0.46rem;
+  border: none;
+  outline: none;
+  line-height: 0.46rem;
+  text-align: center;
+  background: transparent;
+  margin-right: 0.32rem;
+  -webkit-tap-highlight-color: transparent;
+}
+.codeIn{
+  background-image: url('https://skinrun-face-public.oss-cn-shanghai.aliyuncs.com/mini/yanzhengma.png');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+button.codeGet[disabled] {
+    color: #ccc !important;
+    background: transparent !important;
+    border-color: transparent !important;
+}
+.info_title{
+  color: #fff;
+  font-size: 0.32rem;
+  height: 0.80rem;
+  text-align: center;
+}
+.sex_icon{
+  background-image: url('https://skinrun-face-public.oss-cn-shanghai.aliyuncs.com/mini/selectBg.png');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+.next_step{
+  width: 4.82rem;
+  height: 0.89rem;
+  color: #e0aead;
+  /*line-height: 0.89rem;*/
+  font-size: 0.36rem;
+  position: relative;
+}
+.next_step:hover{
+  color: #fff;
+  background: transparent;
+}
+
+.next_step img{
+  top:0;
+  left:0;
+  z-index: -1;
+  width: 100%;
+  position: absolute;
+}
+/**/
+.show_date{
+  left:0;
+  bottom:0;
+  z-index:-1;
+  opacity: 0;
+  width: 100%;
+  height: 2.20rem;
+  position: fixed;
+  background: #fff;
+  justify-content: space-around;
+}
+.dateBg{
+  top:0;
+  left:0;
+  opacity: 0;
+  z-index:-1;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.show_date div{
+  width: 3.00rem;
+  height: 0.80rem;
+  font-size: 0.28rem;
+  color: #e0aead;
+  background: #fff;
+  border: 1px solid #e0aead;
+}
+.show_date div.selected{
+  color: #fff;
+  background: #e0aead;
+}
+.to_last_tan{
+  width:100%;
+  height: 100%;
+  opacity: 0;
+  z-index:-1;
+  position: fixed;
+  align-items: center;
+  flex-direction: column;
+  background: rgba(0, 0, 0, 0.94);
+}
+.to_last_title{
+  flex-direction: column;
+  margin-bottom: 0.60rem;
+}
+.to_last_title img{
+  width: 1.70rem;
+}
+.tlt1,.tlt2{
+  color: #fff;
+  font-size: 0.36rem;
+}
+.tlt1{
+  margin: 0.20rem auto;
+}
+.tlt2{
+  margin: 0 auto 0.20rem;
+}
+
+.to_last{
+  width: 5.08rem;
+  height: 0.94rem;
+  margin: 0 auto;
+  color: #e0aead;
+  font-size: 0.36rem;
+  position: relative;
+}
+.to_last:hover{
+  /* color: #fff; */
+  background: transparent;
+}
+.to_last img{
+  top:0;
+  left:0;
+  width: 100%;
+  position: absolute;
+}
+
+.fadeinup2{
+  z-index:111;
+  animation: fadeIn 0.8s ease 0.2s 1 both;
+  -webkit-animation: fadeIn 0.8s ease 0.2s 1 both;
+}
+
+.fadeinup{
+  z-index:111;
+  animation: fadeInUp 0.3s ease 0.1s 1 both;
+  -webkit-animation: fadeInUp 0.3s ease 0.1s 1 both;
+}

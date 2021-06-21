@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>您的肌肤检测报告</title>
+    <meta name="viewport" content="width=device-width,user-scalable=no,viewport-fit=cover">
+    <meta name="format-detection" content="telephone=no,address=no,email=no">
+    <meta name="mobileOptimized" content="width">
+    <meta name="handheldFriendly" content="true">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="stylesheet" href="css/all.css" />
+    <link rel="stylesheet" href="css/iconfont.css">
+    <link rel="stylesheet" href="css/ani.css">
+    <link rel="stylesheet" href="css/report.css" />
+    <link rel="stylesheet" href="css/swiper.css">
+    <link rel="stylesheet" href="css/layer.css?v=1">
+    <link rel="stylesheet" href="css/result.css">
+    <script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript" src="js/hidpi-canvas.min.js"></script>
+    <script type="text/javascript" src="js/flexible.js"></script>
+    <script type="text/javascript" src="js/swiper.min.js"></script>
+    <script type="text/javascript" src="js/md5.js"></script>
+</head>
+<body>
+    <div class="test_again flexCon">
+        <div class="test_person flexCon">
+            <div class="person_pic">
+                <img id="gender" src="">
+            </div>
+            <div class="person_det flexCon">
+                <p class="det_name">**</p>
+                <P class="det_time">2021-02-02 10:11</P>
+            </div>
+        </div>
+        <div class="to_test flexCon">再次测试</div>
+    </div>
+    <div class="history_enter flexCon">
+        <div class="enter_title flexCon">
+            <span class="iconfont icon-jieguo"></span>
+            <span>肤质检测结果</span>
+        </div>
+        <div class="enter_to flexCon">
+            <span>历史报告</span><span class="iconfont icon-gengduo"></span>
+        </div>
+    </div>
+    <div class="result_sumup mar69 flexCon">
+        <div class="sumup">
+            <div class="sumup_title">肌肤得分</div>
+            <div class="sumup_score score_now"><span>68</span>分</div>
+        </div>
+        <div class="sumup">
+            <div class="sumup_title">肤质问题</div>
+            <div class="sumup_score middleSize pro_now"><span>油性</span></div>
+        </div>
+        <div class="sumup">
+            <div class="sumup_title">肌肤年龄</div>
+            <div class="sumup_score age_now"><span>28</span>岁</div>
+        </div>
+    </div>
+    <div class="about_problems mar69 flexCon">
+        <div class="pro p1">黑头 <span></span></div>
+        <div class="pro p2">毛孔 <span></span></div>
+        <div class="pro p3">皱纹 <span></span></div>
+        <div class="pro p4">黑眼圈 <span></span></div>
+        <div class="pro p5">法令纹 <span></span></div>
+        <img class="problems_head" src="images/problems_head.png">
+    </div>
+    <div class="radar_area mar69">
+        <div class="radar_title flexCon">肤质问题分析</div>
+        <div class="radar_div" id='radarCanvas' style="width:6.6rem;height:6.6rem"></div>
+    </div>
+    <div class="dims_area mar69">
+        <div class="dims_title flexCon">
+            <span class="iconfont icon-fangan"></span><span>专属改善方案</span>
+        </div>
+        <div class="level_status">
+            <div class="status_top_left">黑头状态</div>
+            <div class="status_top flexCon">
+                <div class="level_intro">
+                    <div class="level_where">
+                        <div class="now" style="left: 16.65%;"></div>
+                        <div class="lc level_color1"></div>
+                        <div class="lc level_color2"></div>
+                        <div class="lc level_color3"></div>
+                    </div>
+                    <div class="level_name">
+                        <div class="ln">轻度</div>
+                        <div class="ln">中度</div>
+                        <div class="ln">重度</div>
+                    </div>
+                </div>
+            </div>
+            <div class="status_pic">
+                <div class="status_pic_v">
+                    <img class="pic_v zoom_bgp" src="images/posi0.png">
+                    <img class="zoom_bg" src="">
+                </div>
+                <div class="status_pro pro_desc">脸部出现少量黑头，集中在鼻翼两侧。有可能是清洁不彻底所致，清除过剩油脂和控油是关键，一定要卸妆干净，定期去角质。</div>
+                <div class="radar_title flexCon" style="width: 1.6rem;">解决方案</div>
+                <div class="status_pro pro_adv">脸部出现少量黑头，集中在鼻翼两侧。可能是清洁不彻底所致，清除过剩油脂和控油是关键，一定要卸干净，定期去角质。</div>
+                <div class="recm_pro">
+                    <div class="recm_title">以上问题，配合使用，推荐使用美的XXX效果更好</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="more_detail flexCon"> 查看详细报告 </div>
+    <div style="width:100%;height:0.1rem;"></div>
+
+    <script type="text/javascript" src="js/report.js"></script>
+    <script type="text/javascript" src="js/radar.js"></script>
+    <script>
+        $(".more_detail").click(function(){
+            window.location.href="result_more.html";
+        })
+        $(".enter_to").click(function(){
+            window.location.href="history.html";
+        })
+        $(".to_test").click(function(){
+            window.location.href="tips2.html";
+        })
+    </script>
+</body>
+</html>

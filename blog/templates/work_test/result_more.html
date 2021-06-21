@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>您的肌肤检测报告</title>
+    <meta name="viewport" content="width=device-width,user-scalable=no,viewport-fit=cover">
+    <meta name="format-detection" content="telephone=no,address=no,email=no">
+    <meta name="mobileOptimized" content="width">
+    <meta name="handheldFriendly" content="true">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="stylesheet" href="css/all.css" />
+    <link rel="stylesheet" href="css/iconfont.css">
+    <link rel="stylesheet" href="css/ani.css">
+    <link rel="stylesheet" href="css/report.css" />
+    <link rel="stylesheet" href="css/swiper.css">
+    <link rel="stylesheet" href="css/layer.css?v=1">
+    <link rel="stylesheet" href="css/result.css">
+    <script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript" src="js/hidpi-canvas.min.js"></script>
+    <script type="text/javascript" src="js/flexible.js"></script>
+    <script type="text/javascript" src="js/swiper.min.js"></script>
+    <script type="text/javascript" src="js/md5.js"></script>
+</head>
+<body>
+    <div class="around_fixed">
+        <div class="test_again flexCon">
+            <div class="test_person flexCon">
+                <div class="person_pic">
+                    <img src="images/female.png">
+                </div>
+                <div class="person_det flexCon">
+                    <p class="det_name">小美</p>
+                    <P class="det_time">2021-02-02 10:11</P>
+                </div>
+            </div>
+            <div class="to_test flexCon">再次测试</div>
+        </div>
+        <div class="title tab-title">
+            <ul id="tabs">
+                <li class="tabA active flexCon" id="wt0">
+                    <a href="javascript:void(0);"> 黑头 </a>
+                </li>
+                <li class="tabA flexCon" id="wt1">
+                    <a href="javascript:void(0);"> 毛孔 </a>
+                </li>
+                <li class="tabA flexCon" id="wt2">
+                    <a href="javascript:void(0);"> 痤疮 </a>
+                </li>
+                <li class="tabA flexCon" id="wt3">
+                    <a href="javascript:void(0);"> 皱纹 </a>
+                </li>
+                <li class="tabA flexCon" id="wt4">
+                    <a href="javascript:void(0);"> 色斑 </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div id="tab-detail" class="swiper-container">
+        <div class="swiper-wrapper" id="swang">
+            <div class="swiper-slide" id="tab-d1"></div>
+            <div class="swiper-slide" id="tab-d2"></div>
+            <div class="swiper-slide" id="tab-d3"></div>
+            <div class="swiper-slide" id="tab-d4"></div>
+            <div class="swiper-slide" id="tab-d5"></div>
+        </div>
+    </div>
+    <script type="text/javascript" src="js/tabs.js"></script>
+    <script type="text/javascript" src="js/report2.js"></script>
+<script>
+    $(".enter_to").click(function(){
+        window.location.href="history.html";
+    })
+    $(".to_test").click(function(){
+        window.location.href="tips2.html";
+    })
+</script>
+</body>
+
+</html>

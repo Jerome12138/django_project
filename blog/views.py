@@ -154,3 +154,7 @@ def filter(request, username, condition, var):
         'article_objs': article_objs,
         'date_list': get_date_list()
     })
+
+    
+def work_test(request):
+    return render(request, 'work_test/index.html')

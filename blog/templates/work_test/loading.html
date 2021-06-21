@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>分析中</title>
+    <meta name="viewport" content="width=device-width,user-scalable=no,viewport-fit=cover">
+    <meta name="format-detection" content="telephone=no,address=no,email=no">
+    <meta name="mobileOptimized" content="width">
+    <meta name="handheldFriendly" content="true">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="stylesheet" href="css/all.css" />
+    <link rel="stylesheet" href="css/loading.css" />
+    <script type="text/javascript" src="js/jquery-2.1.3.min.js"></script>
+    <script type="text/javascript" src="js/apng-canvas.min.js"></script>
+    <script type="text/javascript" src="js/flexible.js"></script>
+    <script type="text/javascript" src="js/rolldate.min.js"></script>
+    <script type="text/javascript" src="js/md5.js"></script>
+    <style>
+        html, body { height: auto; }
+    </style>
+</head>
+
+<body>
+    <div class="loding_container flexCon">
+        <div class="head flexCon">
+            <img class="ani_back" src="images/head.png">
+            <div class="line_ani">
+                <img class="zoom_ani" id="ball" src="images/zoom.png">  
+            </div>
+        </div>
+        <div class="loading_word">检测中...</div>
+        <div class="loading_progress">
+            <div class="progress_bar"></div>
+            <div class="progress_bar_now" style="width:50%;"></div>
+            <div class="progress_percent">0%</div>
+        </div>
+    </div>
+</body>
+<script>
+    var per_now =0; var per_score=0;
+    var timer1 = setInterval(function(){
+        if(per_now<100){
+            per_now+=2;
+            $(".progress_bar_now").css("width",per_now+"%");
+        }
+    },100);
+    var timer2 = setInterval(function(){
+        if(per_score<99){
+            per_score += 20;
+            if(per_score==100){
+                $(".progress_percent").html(per_score-2+"%");
+            }else{
+                $(".progress_percent").html(per_score+"%");
+            }
+        }
+    },1000);
+    setTimeout(function(){
+         clearInterval(timer1)
+         clearInterval(timer2);
+        window.location.href="result.html";
+    },6000)
+    
+</script>
+
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>新增用户</title>
+    <meta name="viewport" content="width=device-width,user-scalable=no,viewport-fit=cover">
+    <meta name="format-detection" content="telephone=no,address=no,email=no">
+    <meta name="mobileOptimized" content="width">
+    <meta name="handheldFriendly" content="true">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="stylesheet" href="css/all.css" />
+    <link rel="stylesheet" href="css/iconfont.css">
+    <link rel="stylesheet" href="css/loading.css" />
+    <script type="text/javascript" src="js/jquery-2.1.3.min.js"></script>
+    <script type="text/javascript" src="js/flexible.js"></script>
+    <script type="text/javascript" src="js/rolldate.min.js"></script>
+    <script type="text/javascript" src="js/md5.js"></script>
+    <style>
+        html, body { height: auto; }
+    </style>
+</head>
+
+<body>
+    <div class="customer_container flexCon">
+        <div style="width:100%;height: 1.56rem;"></div>
+        <div class="customer_info mar69">
+            <div class="cus_nfo_head flexCon">
+                <img class="now_gender" src="images/gender2.png">
+            </div>
+            <div class="cus_info_gender flexCon">
+                <div class="info_gender_con gder1" onclick="gender_chose(1)">
+                    <span class="iconfont icon-nan"></span>男生
+                </div>
+                <div class="info_gender_con gder2 slide_now" onclick="gender_chose(2)">
+                    <span class="iconfont icon-nv"></span>女生
+                </div>
+            </div>
+            <div class="cus_info_inp flexCon">
+                <div class="info_inp_title">昵称</div>
+                <input class="info_inp_enter" id="nickName" value="" placeholder="请输入姓名" >
+            </div>
+            <div class="cus_info_inp flexCon">
+                <div class="info_inp_title" >年龄</div>
+                <input class="info_inp_enter" id="age" value="" placeholder="请输入年龄">
+            </div>
+        </div>
+        <div class="info_operate">
+
+            <div class="op_sub one_step flexCon" onclick="sub_info()">确认无误，下一步</div>
+        </div>
+    </div>
+    <script type="text/javascript" src="js/userInfo_add.js"></script>
+</body>
+
+</html>
