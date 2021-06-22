@@ -16,6 +16,7 @@
     <script type="text/javascript" src="js/apng-canvas.min.js"></script>
     <script type="text/javascript" src="js/flexible.js"></script>
     <script type="text/javascript" src="js/md5.js"></script>
+    <script type="text/javascript" src="./iosbridge.js"></script>
 </head>
 
 <body>
@@ -56,9 +57,10 @@
                 for (var i = 0; i < images.length; i++) APNG.animateImage(images[i]);
             });
         });
-	console.log("test");
-	import test from "./test.js"
-	console.log(test)
+        window.mdSmartios.bridge.showAlert("123")
+	// console.log("test");
+	// import test from "./test.js"
+	// console.log(test)
     </script>
 </body>
 
