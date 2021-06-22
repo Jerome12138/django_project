@@ -31,7 +31,7 @@
             <div class="begin_tips flexCon"><img class="agree_radio" src="images/gou.png">我已阅读AI肌肤测试的<a href="">用户协议</a>和<a href="">隐私政策</a></div>
         </div>
     </div>
-    <script>
+    <script type="module">
         function begin(){
             window.location.href="info2.html";
         }
@@ -49,13 +49,16 @@
             uid = getQueryVariable("uid");
             console.log("uid",uid);
         }
-        window.localStorage.setItem("uid",uid);
+        // window.localStorage.setItem("uid",uid);
         $(function(){
             APNG.ifNeeded().then(function(){
                 var images = document.querySelectorAll("img");
                 for (var i = 0; i < images.length; i++) APNG.animateImage(images[i]);
             });
         });
+	console.log("test");
+	import test from "./test.js"
+	console.log(test)
     </script>
 </body>
 

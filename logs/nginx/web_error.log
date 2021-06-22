@@ -18093,3 +18093,719 @@
 2021/06/06 17:30:16 [info] 883#883: *12719 client 183.27.46.8 closed keepalive connection
 2021/06/06 17:30:26 [info] 883#883: *12722 client 183.27.46.8 closed keepalive connection
 2021/06/06 17:30:46 [info] 883#883: *12726 client 183.27.46.8 closed keepalive connection
+2021/06/06 17:38:06 [info] 883#883: *12729 client 183.27.46.8 closed keepalive connection
+2021/06/06 17:38:11 [info] 883#883: *12731 epoll_wait() reported that client prematurely closed connection, so upstream connection is closed too while sending request to upstream, client: 183.27.46.8, server: 42.193.179.124, request: "GET /admin/update/?url_index=2&type=today HTTP/1.1", upstream: "uwsgi://127.0.0.1:8001", host: "42.193.179.124", referrer: "http://42.193.179.124/admin/"
+2021/06/06 17:38:16 [info] 883#883: *12733 client 183.27.46.8 closed keepalive connection
+2021/06/06 17:38:26 [info] 883#883: *12735 client 183.27.46.8 closed keepalive connection
+2021/06/06 17:41:07 [info] 883#883: *12737 client 183.27.46.8 closed keepalive connection
+2021/06/06 17:41:37 [info] 883#883: *12739 client 183.27.46.8 closed keepalive connection
+2021/06/06 18:01:09 [info] 883#883: *12741 epoll_wait() reported that client prematurely closed connection, so upstream connection is closed too while sending request to upstream, client: 183.27.46.8, server: 42.193.179.124, request: "GET /admin/update/?url_index=2&type=count HTTP/1.1", upstream: "uwsgi://127.0.0.1:8001", host: "42.193.179.124", referrer: "http://42.193.179.124/admin/"
+2021/06/06 18:01:18 [info] 883#883: *12744 client 183.27.46.8 closed keepalive connection
+2021/06/06 18:02:08 [info] 883#883: *12747 client 183.27.46.8 closed keepalive connection
+2021/06/06 18:02:18 [info] 883#883: *12749 client 183.27.46.8 closed keepalive connection
+2021/06/06 18:02:28 [info] 883#883: *12751 client 183.27.46.8 closed keepalive connection
+2021/06/06 18:02:38 [info] 883#883: *12753 client 183.27.46.8 closed keepalive connection
+2021/06/06 18:03:49 [info] 883#883: *12755 client 183.27.46.8 closed keepalive connection
+2021/06/06 18:03:59 [info] 883#883: *12758 client 183.27.46.8 closed keepalive connection
+2021/06/06 18:04:09 [info] 883#883: *12762 client 183.27.46.8 closed keepalive connection
+2021/06/06 18:04:29 [info] 883#883: *12768 client 183.27.46.8 closed keepalive connection
+2021/06/06 18:05:13 [error] 883#883: *12765 upstream timed out (110: Connection timed out) while reading response header from upstream, client: 183.27.46.8, server: 42.193.179.124, request: "GET /admin/update/?url_index=2&type=all HTTP/1.1", upstream: "uwsgi://127.0.0.1:8001", host: "42.193.179.124", referrer: "http://42.193.179.124/admin/"
+2021/06/06 18:05:14 [info] 883#883: *12765 client 183.27.46.8 closed keepalive connection
+2021/06/06 18:05:44 [info] 883#883: *12770 client 183.27.46.8 closed keepalive connection
+2021/06/06 18:05:54 [info] 883#883: *12772 client 183.27.46.8 closed keepalive connection
+2021/06/06 18:06:04 [info] 883#883: *12776 client 183.27.46.8 closed keepalive connection
+2021/06/06 18:06:24 [info] 883#883: *12779 client 183.27.46.8 closed keepalive connection
+2021/06/06 18:06:34 [info] 883#883: *12782 client 183.27.46.8 closed keepalive connection
+2021/06/06 18:06:44 [error] 883#883: *12788 connect() failed (111: Connection refused) while connecting to upstream, client: 45.146.164.125, server: 42.193.179.124, request: "GET /wp-content/plugins/wp-file-manager/readme.txt HTTP/1.1", upstream: "uwsgi://127.0.0.1:8001", host: "42.193.179.124:80"
+2021/06/06 18:06:44 [error] 883#883: *12787 connect() failed (111: Connection refused) while connecting to upstream, client: 45.146.164.125, server: 42.193.179.124, request: "POST /api/jsonws/invoke HTTP/1.1", upstream: "uwsgi://127.0.0.1:8001", host: "42.193.179.124:80"
+2021/06/06 18:06:45 [error] 883#883: *12791 connect() failed (111: Connection refused) while connecting to upstream, client: 45.146.164.125, server: 42.193.179.124, request: "GET /?a=fetch&content=<php>die(@md5(HelloThinkCMF))</php> HTTP/1.1", upstream: "uwsgi://127.0.0.1:8001", host: "42.193.179.124:80"
+2021/06/06 18:06:46 [error] 883#883: *12793 connect() failed (111: Connection refused) while connecting to upstream, client: 45.146.164.125, server: 42.193.179.124, request: "GET /_ignition/execute-solution HTTP/1.1", upstream: "uwsgi://127.0.0.1:8001", host: "42.193.179.124:80"
+2021/06/06 18:06:47 [error] 883#883: *12795 connect() failed (111: Connection refused) while connecting to upstream, client: 45.146.164.125, server: 42.193.179.124, request: "GET /?XDEBUG_SESSION_START=phpstorm HTTP/1.1", upstream: "uwsgi://127.0.0.1:8001", host: "42.193.179.124:80"
+2021/06/06 18:06:48 [error] 883#883: *12797 connect() failed (111: Connection refused) while connecting to upstream, client: 45.146.164.125, server: 42.193.179.124, request: "POST /Autodiscover/Autodiscover.xml HTTP/1.1", upstream: "uwsgi://127.0.0.1:8001", host: "42.193.179.124:80"
+2021/06/06 18:06:49 [error] 883#883: *12799 connect() failed (111: Connection refused) while connecting to upstream, client: 45.146.164.125, server: 42.193.179.124, request: "GET /solr/admin/info/system?wt=json HTTP/1.1", upstream: "uwsgi://127.0.0.1:8001", host: "42.193.179.124:80"
+2021/06/06 18:06:50 [error] 883#883: *12802 connect() failed (111: Connection refused) while connecting to upstream, client: 45.146.164.125, server: 42.193.179.124, request: "POST /vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.1", upstream: "uwsgi://127.0.0.1:8001", host: "42.193.179.124:80"
+2021/06/06 18:06:50 [error] 883#883: *12804 connect() failed (111: Connection refused) while connecting to upstream, client: 45.146.164.125, server: 42.193.179.124, request: "GET /console/ HTTP/1.1", upstream: "uwsgi://127.0.0.1:8001", host: "42.193.179.124:80"
+2021/06/06 18:07:04 [info] 883#883: *12807 client 183.27.46.8 closed keepalive connection
+2021/06/06 18:07:06 [info] 883#883: *12810 epoll_wait() reported that client prematurely closed connection, so upstream connection is closed too while sending request to upstream, client: 183.27.46.8, server: 42.193.179.124, request: "GET /admin/update/?url_index=2&type=all HTTP/1.1", upstream: "uwsgi://127.0.0.1:8001", host: "42.193.179.124", referrer: "http://42.193.179.124/admin/"
+2021/06/06 18:07:14 [info] 883#883: *12812 client 183.27.46.8 closed keepalive connection
+2021/06/06 18:10:59 [info] 883#883: *12814 client 183.27.46.8 closed keepalive connection
+2021/06/06 18:12:29 [info] 883#883: *12822 client 183.27.46.8 closed keepalive connection
+2021/06/06 18:13:09 [info] 883#883: *12824 client 183.27.46.8 closed keepalive connection
+2021/06/06 18:13:19 [info] 883#883: *12829 client 183.27.46.8 closed keepalive connection
+2021/06/06 18:13:39 [info] 883#883: *12834 client 183.27.46.8 closed keepalive connection
+2021/06/06 18:13:59 [info] 883#883: *12836 client 183.27.46.8 closed keepalive connection
+2021/06/06 18:14:26 [info] 883#883: *12838 epoll_wait() reported that client prematurely closed connection, so upstream connection is closed too while sending request to upstream, client: 183.27.46.8, server: 42.193.179.124, request: "GET /video/search/?wd=%E5%90%91%E5%BE%80%E7%9A%84%E7%94%9F%E6%B4%BB&page=1 HTTP/1.1", upstream: "uwsgi://127.0.0.1:8001", host: "42.193.179.124", referrer: "http://42.193.179.124/video/type/1/"
+2021/06/06 18:14:29 [info] 883#883: *12840 client 183.27.46.8 closed keepalive connection
+2021/06/06 18:15:09 [info] 883#883: *12842 client 183.27.46.8 closed keepalive connection
+2021/06/06 18:15:19 [info] 883#883: *12846 client 183.27.46.8 closed keepalive connection
+2021/06/06 18:17:43 [info] 883#883: *12852 client 183.27.46.8 closed keepalive connection
+2021/06/06 18:25:01 [info] 883#883: *12859 client 112.96.43.13 closed keepalive connection
+2021/06/06 18:25:01 [info] 883#883: *12854 client 112.96.43.13 closed keepalive connection
+2021/06/06 18:25:01 [info] 883#883: *12858 client 112.96.43.13 closed keepalive connection
+2021/06/06 18:25:01 [info] 883#883: *12857 client 112.96.43.13 closed keepalive connection
+2021/06/06 18:25:04 [info] 883#883: *12860 client 112.96.43.13 closed keepalive connection
+2021/06/06 18:25:28 [info] 883#883: *12861 client 112.96.43.13 closed keepalive connection
+2021/06/06 18:25:55 [info] 883#883: *12864 client 112.96.43.13 closed keepalive connection
+2021/06/06 18:25:55 [info] 883#883: *12866 client 112.96.43.13 closed keepalive connection
+2021/06/06 18:25:55 [info] 883#883: *12868 client 112.96.43.13 closed keepalive connection
+2021/06/06 18:25:55 [info] 883#883: *12867 client 112.96.43.13 closed keepalive connection
+2021/06/06 18:26:23 [info] 883#883: *12869 client 112.96.43.13 closed keepalive connection
+2021/06/06 18:26:28 [info] 883#883: *12871 client 112.96.43.13 closed keepalive connection
+2021/06/06 18:27:08 [info] 883#883: *12873 client 112.96.43.13 closed keepalive connection
+2021/06/06 18:28:17 [info] 883#883: *12875 client 112.96.43.13 closed keepalive connection
+2021/06/06 18:28:24 [info] 883#883: *12877 client 112.96.43.13 closed keepalive connection
+2021/06/06 18:28:56 [info] 883#883: *12879 client 112.96.43.13 closed keepalive connection
+2021/06/06 18:29:04 [info] 883#883: *12881 client 112.96.43.13 closed keepalive connection
+2021/06/06 18:29:11 [info] 883#883: *12883 client 112.96.43.13 closed keepalive connection
+2021/06/06 18:29:35 [info] 883#883: *12885 client 112.96.43.13 closed keepalive connection
+2021/06/06 18:30:29 [info] 883#883: *12887 client 112.96.43.13 closed keepalive connection
+2021/06/06 18:30:31 [info] 883#883: *12890 client 112.96.43.13 closed keepalive connection
+2021/06/06 18:30:40 [info] 883#883: *12892 client 112.96.43.13 closed keepalive connection
+2021/06/06 18:30:56 [info] 883#883: *12894 client 112.96.43.13 closed keepalive connection
+2021/06/06 18:43:49 [info] 883#883: *12899 client 112.96.43.13 closed keepalive connection
+2021/06/06 18:44:02 [info] 883#883: *12901 client 112.96.43.13 closed keepalive connection
+2021/06/06 18:44:07 [info] 883#883: *12903 client 112.96.43.13 closed keepalive connection
+2021/06/06 18:44:11 [info] 883#883: *12905 epoll_wait() reported that client prematurely closed connection, so upstream connection is closed too while sending request to upstream, client: 112.96.43.13, server: 42.193.179.124, request: "GET /video/type/1/ HTTP/1.1", upstream: "uwsgi://127.0.0.1:8001", host: "42.193.179.124", referrer: "http://42.193.179.124/video/type/3/"
+2021/06/06 18:44:12 [info] 883#883: *12907 epoll_wait() reported that client prematurely closed connection, so upstream connection is closed too while sending request to upstream, client: 112.96.43.13, server: 42.193.179.124, request: "GET /video/type/4/ HTTP/1.1", upstream: "uwsgi://127.0.0.1:8001", host: "42.193.179.124", referrer: "http://42.193.179.124/video/type/3/"
+2021/06/06 18:44:16 [info] 883#883: *12909 client 112.96.43.13 closed keepalive connection
+2021/06/06 18:44:25 [info] 883#883: *12911 client 112.96.43.13 closed keepalive connection
+2021/06/06 18:45:16 [info] 883#883: *12913 client 112.96.43.13 closed keepalive connection
+2021/06/06 18:45:28 [info] 883#883: *12915 client 112.96.43.13 closed keepalive connection
+2021/06/06 20:23:46 [info] 883#883: *12923 client 112.96.43.13 closed keepalive connection
+2021/06/06 20:23:47 [info] 883#883: *12921 client 112.96.43.13 closed keepalive connection
+2021/06/06 20:23:47 [info] 883#883: *12920 client 112.96.43.13 closed keepalive connection
+2021/06/06 20:23:47 [info] 883#883: *12922 client 112.96.43.13 closed keepalive connection
+2021/06/06 20:23:47 [info] 883#883: *12918 client 112.96.43.13 closed keepalive connection
+2021/06/06 20:23:53 [info] 883#883: *12929 client 112.96.43.13 closed keepalive connection
+2021/06/06 20:23:53 [info] 883#883: *12928 client 112.96.43.13 closed keepalive connection
+2021/06/06 20:23:53 [info] 883#883: *12927 client 112.96.43.13 closed keepalive connection
+2021/06/06 20:23:53 [info] 883#883: *12925 client 112.96.43.13 closed keepalive connection
+2021/06/06 20:23:56 [info] 883#883: *12930 client 112.96.43.13 closed keepalive connection
+2021/06/06 20:24:12 [info] 883#883: *12932 client 112.96.43.13 closed keepalive connection
+2021/06/06 20:24:15 [info] 883#883: *12934 client 112.96.43.13 closed keepalive connection
+2021/06/06 20:24:23 [info] 883#883: *12936 client 112.96.43.13 closed keepalive connection
+2021/06/06 20:24:45 [info] 883#883: *12938 client 112.96.43.13 closed keepalive connection
+2021/06/06 20:24:54 [info] 883#883: *12940 client 112.96.43.13 closed keepalive connection
+2021/06/06 20:25:07 [info] 883#883: *12942 client 112.96.43.13 closed keepalive connection
+2021/06/06 20:25:08 [info] 883#883: *12944 client 112.96.43.13 closed keepalive connection
+2021/06/06 20:25:10 [info] 883#883: *12946 client 112.96.43.13 closed keepalive connection
+2021/06/06 20:25:12 [info] 883#883: *12948 client 112.96.43.13 closed keepalive connection
+2021/06/06 20:25:15 [info] 883#883: *12950 client 112.96.43.13 closed keepalive connection
+2021/06/06 20:25:16 [info] 883#883: *12952 client 112.96.43.13 closed keepalive connection
+2021/06/06 20:25:18 [info] 883#883: *12954 client 112.96.43.13 closed keepalive connection
+2021/06/06 20:25:22 [info] 883#883: *12956 client 112.96.43.13 closed keepalive connection
+2021/06/06 20:25:27 [info] 883#883: *12958 client 112.96.43.13 closed keepalive connection
+2021/06/06 20:25:34 [info] 883#883: *12960 client 112.96.43.13 closed keepalive connection
+2021/06/06 20:25:44 [info] 883#883: *12962 client 112.96.43.13 closed keepalive connection
+2021/06/06 20:29:31 [info] 883#883: *12964 client 112.96.43.13 closed keepalive connection
+2021/06/06 20:31:53 [info] 883#883: *12965 client 112.96.43.13 closed keepalive connection
+2021/06/06 20:37:52 [info] 883#883: *12969 client 172.89.190.229 closed keepalive connection
+2021/06/06 21:15:42 [info] 883#883: *12974 client 58.19.100.208 closed keepalive connection
+2021/06/06 21:15:42 [info] 883#883: *12975 client 58.19.100.208 closed keepalive connection
+2021/06/06 21:15:43 [info] 883#883: *12973 client 58.19.100.208 closed keepalive connection
+2021/06/06 21:16:09 [info] 883#883: *12971 client 58.19.100.208 closed keepalive connection
+2021/06/06 23:22:19 [info] 883#883: *12980 client 216.218.206.67 closed keepalive connection
+2021/06/07 00:27:01 [info] 883#883: *12984 client 134.209.202.23 closed keepalive connection
+2021/06/07 04:10:54 [info] 883#883: *12988 client 80.191.182.42 closed keepalive connection
+2021/06/07 04:17:54 [info] 883#883: *12990 client 192.241.205.123 closed keepalive connection
+2021/06/07 04:22:12 [info] 883#883: *12992 client 186.225.189.138 closed keepalive connection
+2021/06/07 06:49:56 [info] 883#883: *12997 client 223.244.127.86 closed keepalive connection (104: Connection reset by peer)
+2021/06/07 06:51:46 [info] 883#883: *12999 client 192.241.209.227 closed keepalive connection
+2021/06/07 08:33:34 [info] 883#883: *13023 client 20.188.33.229 closed keepalive connection
+2021/06/07 08:33:35 [info] 883#883: *13025 client 20.188.33.229 closed keepalive connection
+2021/06/07 11:17:30 [info] 883#883: *13028 client 185.202.189.157 closed keepalive connection
+2021/06/07 13:06:21 [info] 883#883: *13059 client 143.244.152.48 closed keepalive connection
+2021/06/07 13:07:44 [info] 883#883: *13065 client 101.251.242.238 closed keepalive connection (104: Connection reset by peer)
+2021/06/07 14:02:44 [info] 883#883: *13069 client 186.33.112.200 closed keepalive connection
+2021/06/07 14:26:38 [info] 883#883: *13071 client 5.142.166.20 closed keepalive connection
+2021/06/07 17:19:44 [info] 883#883: *13077 client 35.195.57.216 closed keepalive connection
+2021/06/07 19:16:43 [info] 883#883: *13081 client 13.82.3.205 closed keepalive connection
+2021/06/07 19:16:44 [info] 883#883: *13083 client 13.82.3.205 closed keepalive connection
+2021/06/07 20:51:31 [info] 883#883: *13087 client 13.82.3.205 closed keepalive connection
+2021/06/07 20:51:32 [info] 883#883: *13089 client 13.82.3.205 closed keepalive connection
+2021/06/07 20:59:26 [info] 883#883: *13091 client 58.248.154.23 closed keepalive connection
+2021/06/07 21:04:35 [info] 883#883: *13093 client 13.82.3.205 closed keepalive connection
+2021/06/07 21:04:37 [info] 883#883: *13095 client 13.82.3.205 closed keepalive connection
+2021/06/07 21:40:50 [info] 883#883: *13097 client 83.41.123.192 closed keepalive connection
+2021/06/07 22:54:05 [info] 883#883: *13119 client 52.225.194.48 closed keepalive connection
+2021/06/07 22:54:05 [info] 883#883: *13121 client 52.225.194.48 closed keepalive connection
+2021/06/08 02:05:31 [info] 883#883: *13129 epoll_wait() reported that client prematurely closed connection, so upstream connection is closed too while connecting to upstream, client: 186.208.109.253, server: 42.193.179.124, request: "GET / HTTP/1.1", upstream: "uwsgi://127.0.0.1:8001", host: "42.193.179.124:80"
+2021/06/08 02:26:37 [info] 883#883: *13134 client 20.68.241.118 closed keepalive connection
+2021/06/08 02:26:42 [info] 883#883: *13136 client 20.68.241.118 closed keepalive connection
+2021/06/08 02:34:59 [info] 883#883: *13138 client 128.1.248.26 closed keepalive connection
+2021/06/08 03:22:29 [info] 883#883: *13159 client 87.107.60.39 closed keepalive connection
+2021/06/08 03:32:36 [info] 883#883: *13161 client 36.24.166.109 closed keepalive connection
+2021/06/08 03:56:33 [info] 883#883: *13174 client 116.233.90.225 closed keepalive connection
+2021/06/08 03:56:33 [info] 883#883: *13170 client 116.233.90.225 closed keepalive connection (104: Connection reset by peer)
+2021/06/08 03:56:34 [info] 883#883: *13171 client 116.233.90.225 closed keepalive connection
+2021/06/08 03:56:34 [info] 883#883: *13168 client 116.233.90.225 closed keepalive connection (104: Connection reset by peer)
+2021/06/08 03:56:34 [info] 883#883: *13166 client 116.233.90.225 closed keepalive connection
+2021/06/08 03:56:35 [info] 883#883: *13178 client 116.233.90.225 closed keepalive connection (104: Connection reset by peer)
+2021/06/08 03:56:35 [info] 883#883: *13176 client 116.233.90.225 closed keepalive connection (104: Connection reset by peer)
+2021/06/08 03:56:35 [info] 883#883: *13180 client 116.233.90.225 closed keepalive connection (104: Connection reset by peer)
+2021/06/08 03:56:36 [info] 883#883: *13186 client 116.233.90.225 closed keepalive connection (104: Connection reset by peer)
+2021/06/08 03:56:38 [info] 883#883: *13184 client 116.233.90.225 closed keepalive connection (104: Connection reset by peer)
+2021/06/08 03:56:38 [info] 883#883: *13182 client 116.233.90.225 closed keepalive connection (104: Connection reset by peer)
+2021/06/08 04:52:47 [info] 883#883: *13211 client 179.43.169.179 closed keepalive connection
+2021/06/08 04:54:02 [info] 883#883: *13213 client 120.35.41.118 closed keepalive connection
+2021/06/08 07:38:00 [info] 883#883: *13224 client 162.142.125.37 closed keepalive connection (104: Connection reset by peer)
+2021/06/08 07:38:00 [info] 883#883: *13226 client 162.142.125.37 closed keepalive connection
+2021/06/08 07:42:06 [info] 883#883: *13228 client 13.82.3.205 closed keepalive connection
+2021/06/08 07:42:07 [info] 883#883: *13230 client 13.82.3.205 closed keepalive connection
+2021/06/08 08:47:19 [info] 883#883: *13232 client 186.33.127.240 closed keepalive connection
+2021/06/08 11:17:06 [info] 883#883: *13245 client 80.82.77.192 closed keepalive connection
+2021/06/08 12:23:48 [info] 883#883: *13248 client 165.232.145.133 closed keepalive connection
+2021/06/08 12:44:34 [info] 883#883: *13250 client 13.82.3.205 closed keepalive connection
+2021/06/08 12:44:34 [info] 883#883: *13252 client 13.82.3.205 closed keepalive connection
+2021/06/08 13:15:32 [info] 883#883: *13258 client 125.209.121.195 closed keepalive connection
+2021/06/08 13:22:47 [info] 883#883: *13261 client 74.120.14.38 closed keepalive connection (104: Connection reset by peer)
+2021/06/08 13:22:47 [info] 883#883: *13263 client 74.120.14.38 closed keepalive connection
+2021/06/08 14:49:35 [info] 883#883: *13275 client 157.230.143.29 closed keepalive connection
+2021/06/08 15:00:06 [info] 883#883: *13278 client 93.57.241.87 closed keepalive connection
+2021/06/08 15:03:03 [info] 883#883: *13280 client 183.87.50.162 closed keepalive connection
+2021/06/08 15:04:29 [info] 883#883: *13282 client 128.1.248.26 closed keepalive connection
+2021/06/08 15:05:59 [info] 883#883: *13284 client prematurely closed connection, client: 113.246.30.70, server: 42.193.179.124, request: "POST /HNAP1/ HTTP/1.0", host: "42.193.179.124:80"
+2021/06/08 15:25:29 [info] 883#883: *13285 client 200.252.99.210 closed keepalive connection
+2021/06/08 15:43:25 [info] 883#883: *13289 client 186.33.118.42 closed keepalive connection
+2021/06/08 18:50:54 [info] 883#883: *13325 client 112.96.112.248 closed keepalive connection
+2021/06/08 18:50:54 [info] 883#883: *13327 client 112.96.112.248 closed keepalive connection
+2021/06/08 18:50:54 [info] 883#883: *13328 client 112.96.112.248 closed keepalive connection
+2021/06/08 18:51:06 [info] 883#883: *13333 client 112.96.112.248 closed keepalive connection
+2021/06/08 18:51:06 [info] 883#883: *13330 client 112.96.112.248 closed keepalive connection
+2021/06/08 18:51:11 [info] 883#883: *13337 client 112.96.112.248 closed keepalive connection
+2021/06/08 18:51:11 [info] 883#883: *13335 client 112.96.112.248 closed keepalive connection
+2021/06/08 18:51:11 [info] 883#883: *13338 client 112.96.112.248 closed keepalive connection
+2021/06/08 18:51:11 [info] 883#883: *13339 client 112.96.112.248 closed keepalive connection
+2021/06/08 18:51:16 [info] 883#883: *13340 client 112.96.112.248 closed keepalive connection
+2021/06/08 18:52:03 [info] 883#883: *13342 client 112.96.112.248 closed keepalive connection
+2021/06/08 19:01:10 [info] 883#883: *13348 epoll_wait() reported that client prematurely closed connection, so upstream connection is closed too while sending request to upstream, client: 223.104.64.177, server: 42.193.179.124, request: "GET /video/search/?wd=%E5%AF%86%E5%AE%A4%E5%A4%A7%E9%80%83%E8%84%B1&page=1 HTTP/1.1", upstream: "uwsgi://127.0.0.1:8001", host: "42.193.179.124"
+2021/06/08 19:01:14 [info] 883#883: *13354 client 49.4.43.20 closed keepalive connection
+2021/06/08 19:05:40 [info] 883#883: *13363 client 112.96.112.248 closed keepalive connection
+2021/06/08 20:07:46 [info] 883#883: *13374 client 27.115.124.38 closed keepalive connection
+2021/06/08 20:07:49 [info] 883#883: *13376 client 27.115.124.38 closed keepalive connection
+2021/06/08 20:07:54 [info] 883#883: *13378 client 27.115.124.6 closed keepalive connection
+2021/06/08 20:07:55 [info] 883#883: *13381 client 27.115.124.6 closed keepalive connection
+2021/06/08 20:07:55 [info] 883#883: *13382 client 27.115.124.38 closed keepalive connection
+2021/06/08 20:07:55 [info] 883#883: *13380 client 27.115.124.38 closed keepalive connection
+2021/06/08 20:07:57 [info] 883#883: *13384 client 27.115.124.38 closed keepalive connection
+2021/06/08 20:07:57 [info] 883#883: *13383 client 27.115.124.6 closed keepalive connection
+2021/06/08 20:07:57 [info] 883#883: *13385 client 27.115.124.6 closed keepalive connection
+2021/06/08 20:08:05 [info] 883#883: *13386 client 42.236.10.84 closed keepalive connection
+2021/06/08 20:08:05 [info] 883#883: *13390 client 42.236.10.93 closed keepalive connection
+2021/06/08 20:08:05 [info] 883#883: *13393 client 27.115.124.6 closed keepalive connection
+2021/06/08 20:08:06 [info] 883#883: *13392 client 42.236.10.78 closed keepalive connection
+2021/06/08 20:08:06 [info] 883#883: *13391 client 42.236.10.125 closed keepalive connection
+2021/06/08 20:08:09 [info] 883#883: *13394 client 42.236.10.84 closed keepalive connection
+2021/06/08 20:08:09 [info] 883#883: *13395 client 42.236.10.114 closed keepalive connection
+2021/06/08 20:08:10 [info] 883#883: *13396 client 42.236.10.114 closed keepalive connection
+2021/06/08 20:08:10 [info] 883#883: *13398 client 42.236.10.84 closed keepalive connection
+2021/06/08 20:08:11 [info] 883#883: *13397 client 42.236.10.106 closed keepalive connection
+2021/06/08 20:08:17 [info] 883#883: *13399 client 42.236.10.75 closed keepalive connection
+2021/06/08 20:08:37 [info] 883#883: *13404 client 180.163.220.4 closed keepalive connection
+2021/06/08 20:08:54 [info] 883#883: *13400 client 42.236.10.84 closed keepalive connection
+2021/06/08 20:09:17 [info] 883#883: *13409 client 180.163.220.66 closed keepalive connection
+2021/06/08 20:09:20 [info] 883#883: *13411 client 180.163.220.67 closed keepalive connection
+2021/06/08 20:09:20 [info] 883#883: *13413 client 180.163.220.67 closed keepalive connection
+2021/06/08 20:09:20 [info] 883#883: *13414 client 180.163.220.5 closed keepalive connection
+2021/06/08 20:09:25 [info] 883#883: *13415 client 180.163.220.5 closed keepalive connection
+2021/06/08 20:09:25 [info] 883#883: *13416 client 180.163.220.68 closed keepalive connection
+2021/06/08 20:09:25 [info] 883#883: *13417 client 180.163.220.68 closed keepalive connection
+2021/06/08 20:09:34 [info] 883#883: *13418 client 180.163.220.66 closed keepalive connection
+2021/06/08 20:21:35 [info] 883#883: *13419 client 45.148.10.50 closed keepalive connection
+2021/06/08 20:51:53 [info] 883#883: *13421 client 168.194.152.133 closed keepalive connection
+2021/06/08 21:28:04 [info] 883#883: *13428 epoll_wait() reported that client prematurely closed connection, so upstream connection is closed too while connecting to upstream, client: 123.25.239.10, server: 42.193.179.124, request: "GET /TP/index.php HTTP/1.1", upstream: "uwsgi://127.0.0.1:8001", host: "42.193.179.124"
+2021/06/08 21:37:33 [info] 883#883: *13433 client 216.49.17.25 closed keepalive connection (104: Connection reset by peer)
+2021/06/08 21:53:30 [info] 883#883: *13435 client 213.160.168.23 closed keepalive connection
+2021/06/09 02:21:39 [info] 883#883: *13455 client 128.14.209.162 closed keepalive connection
+2021/06/09 03:01:25 [info] 883#883: *13458 client 95.38.203.109 closed keepalive connection
+2021/06/09 06:15:16 [info] 883#883: *13501 client 45.76.144.219 closed keepalive connection
+2021/06/09 07:20:08 [info] 883#883: *13508 client 45.155.126.222 closed keepalive connection
+2021/06/09 08:02:28 [info] 883#883: *13512 client 42.236.10.93 closed keepalive connection
+2021/06/09 08:02:36 [info] 883#883: *13515 client 27.115.124.38 closed keepalive connection
+2021/06/09 08:52:03 [info] 883#883: *13536 client 20.68.241.118 closed keepalive connection
+2021/06/09 08:52:03 [info] 883#883: *13538 client 20.68.241.118 closed keepalive connection
+2021/06/09 09:38:54 [info] 883#883: *13540 client 128.14.209.250 closed keepalive connection
+2021/06/09 10:49:53 [info] 883#883: *13542 client 183.136.225.12 closed keepalive connection
+2021/06/09 12:07:47 [info] 883#883: *13572 client 139.59.117.135 closed keepalive connection
+2021/06/09 14:28:34 [info] 883#883: *13600 client 34.125.83.75 closed keepalive connection
+2021/06/09 14:28:34 [info] 883#883: *13602 client 34.125.83.75 closed keepalive connection
+2021/06/09 14:38:33 [info] 883#883: *13605 client 167.172.165.210 closed keepalive connection
+2021/06/09 17:59:12 [info] 883#883: *13607 client 128.14.209.162 closed keepalive connection
+2021/06/09 18:16:28 [info] 883#883: *13609 client 216.218.206.66 closed keepalive connection
+2021/06/09 18:42:52 [info] 883#883: *13616 client 212.182.90.196 closed keepalive connection
+2021/06/09 20:17:44 [info] 883#883: *13622 client 167.248.133.53 closed keepalive connection (104: Connection reset by peer)
+2021/06/09 20:17:45 [info] 883#883: *13624 client 167.248.133.53 closed keepalive connection
+2021/06/09 23:19:21 [info] 883#883: *13628 client 71.6.232.4 closed keepalive connection
+2021/06/09 23:44:49 [info] 883#883: *13630 client 104.140.188.18 closed keepalive connection
+2021/06/10 03:55:47 [info] 883#883: *13687 client 203.109.114.249 closed keepalive connection
+2021/06/10 09:43:44 [info] 883#883: *13695 client 192.241.221.148 closed keepalive connection
+2021/06/10 10:23:24 [info] 883#883: *13697 client 192.241.218.166 closed keepalive connection
+2021/06/10 10:48:23 [info] 883#883: *13701 client 179.43.169.179 closed keepalive connection
+2021/06/10 11:34:55 [info] 883#883: *13703 client 23.251.102.74 closed keepalive connection
+2021/06/10 11:55:17 [info] 883#883: *13706 client 64.225.53.249 closed keepalive connection
+2021/06/10 12:12:19 [info] 883#883: *13710 client 14.102.188.188 closed keepalive connection
+2021/06/10 13:46:28 [info] 883#883: *13716 client 139.162.247.102 closed keepalive connection
+2021/06/10 14:00:00 [info] 883#883: *13723 client 41.221.74.140 closed keepalive connection
+2021/06/10 15:17:26 [info] 883#883: *13728 client 91.243.39.73 closed keepalive connection
+2021/06/10 15:46:32 [info] 883#883: *13732 client 212.91.178.46 closed keepalive connection
+2021/06/10 17:59:00 [info] 883#883: *13734 client prematurely closed connection, client: 120.85.115.220, server: 42.193.179.124, request: "POST /HNAP1/ HTTP/1.0", host: "42.193.179.124:80"
+2021/06/10 20:04:34 [info] 883#883: *13760 client 45.76.144.219 closed keepalive connection
+2021/06/10 20:34:57 [info] 883#883: *13764 client 115.148.154.79 closed keepalive connection
+2021/06/10 20:41:08 [info] 883#883: *13776 client 183.27.198.15 closed keepalive connection
+2021/06/10 20:41:08 [info] 883#883: *13777 client 183.27.198.15 closed keepalive connection
+2021/06/10 22:24:19 [info] 883#883: *13787 client 50.31.21.8 closed keepalive connection
+2021/06/10 22:27:30 [info] 883#883: *13799 client 190.94.140.137 closed keepalive connection
+2021/06/10 22:35:09 [info] 883#883: *13802 client 193.17.5.226 closed keepalive connection
+2021/06/10 22:35:09 [info] 883#883: *13804 client 193.17.5.226 closed keepalive connection
+2021/06/10 22:42:57 [info] 883#883: *13806 client 76.98.82.31 closed keepalive connection
+2021/06/10 22:42:58 [info] 883#883: *13808 client 76.98.82.31 closed keepalive connection
+2021/06/10 23:34:32 [info] 883#883: *13810 client 192.241.213.65 closed keepalive connection
+2021/06/10 23:50:39 [info] 883#883: *13814 client 192.241.218.140 closed keepalive connection
+2021/06/11 00:07:27 [info] 883#883: *13816 client 143.255.2.147 closed keepalive connection
+2021/06/11 00:11:42 [info] 883#883: *13818 client 192.241.221.130 closed keepalive connection
+2021/06/11 00:43:01 [info] 883#883: *13820 client 176.46.150.65 closed keepalive connection
+2021/06/11 00:49:35 [info] 883#883: *13822 client 184.105.247.252 closed keepalive connection
+2021/06/11 02:16:13 [info] 883#883: *13827 client 68.183.207.231 closed keepalive connection
+2021/06/11 02:16:13 [info] 883#883: *13829 client 68.183.207.231 closed keepalive connection
+2021/06/11 02:16:14 [info] 883#883: *13831 client 68.183.207.231 closed keepalive connection
+2021/06/11 02:16:14 [info] 883#883: *13833 client 68.183.207.231 closed keepalive connection
+2021/06/11 02:16:15 [info] 883#883: *13835 client 68.183.207.231 closed keepalive connection
+2021/06/11 02:16:15 [info] 883#883: *13837 client 68.183.207.231 closed keepalive connection
+2021/06/11 02:16:16 [info] 883#883: *13839 client 68.183.207.231 closed keepalive connection
+2021/06/11 02:16:16 [info] 883#883: *13841 client 68.183.207.231 closed keepalive connection
+2021/06/11 03:16:51 [info] 883#883: *13849 client 172.104.216.74 closed keepalive connection
+2021/06/11 04:17:00 [info] 883#883: *13856 client 165.22.43.187 closed keepalive connection
+2021/06/11 04:17:00 [info] 883#883: *13858 client 165.22.43.187 closed keepalive connection
+2021/06/11 04:17:01 [info] 883#883: *13860 client 165.22.43.187 closed keepalive connection
+2021/06/11 04:17:01 [info] 883#883: *13862 client 165.22.43.187 closed keepalive connection
+2021/06/11 04:17:01 [info] 883#883: *13864 client 165.22.43.187 closed keepalive connection
+2021/06/11 05:48:46 [info] 883#883: *13866 client 165.22.217.189 closed keepalive connection
+2021/06/11 06:18:20 [info] 883#883: *13868 client 61.7.141.142 closed keepalive connection
+2021/06/11 09:45:11 [info] 883#883: *13888 client 192.241.222.33 closed keepalive connection
+2021/06/11 10:22:25 [info] 883#883: *13890 client 177.190.66.103 closed keepalive connection
+2021/06/11 12:21:00 [info] 883#883: *13911 client 128.1.248.42 closed keepalive connection
+2021/06/11 13:50:08 [info] 883#883: *13914 client 103.254.57.123 closed keepalive connection
+2021/06/11 14:02:16 [info] 883#883: *13916 client 143.198.140.191 closed keepalive connection
+2021/06/11 14:34:02 [info] 883#883: *13920 client 178.175.24.218 closed keepalive connection
+2021/06/11 14:49:32 [info] 883#883: *13922 client 104.140.188.30 closed keepalive connection
+2021/06/11 15:06:44 [info] 883#883: *13924 client 178.72.71.135 closed keepalive connection
+2021/06/11 16:21:54 [info] 883#883: *13957 client 197.210.130.58 closed keepalive connection
+2021/06/11 17:31:57 [info] 883#883: *13959 client 185.128.41.50 closed keepalive connection
+2021/06/11 17:33:37 [info] 883#883: *13961 client 74.82.47.5 closed keepalive connection
+2021/06/11 17:37:22 [info] 883#883: *13963 client 213.61.59.66 closed keepalive connection
+2021/06/11 19:30:28 [info] 883#883: *13968 client 186.219.56.12 closed keepalive connection
+2021/06/11 20:51:43 [info] 883#883: *13970 client 128.14.134.170 closed keepalive connection
+2021/06/11 21:35:37 [info] 883#883: *13973 client 167.248.133.38 closed keepalive connection (104: Connection reset by peer)
+2021/06/11 21:35:37 [info] 883#883: *13975 client 167.248.133.38 closed keepalive connection
+2021/06/11 21:41:34 [info] 883#883: *13986 client 221.231.169.189 closed keepalive connection
+2021/06/11 21:42:01 [info] 883#883: *13984 client 221.231.169.189 closed keepalive connection
+2021/06/11 21:42:01 [info] 883#883: *13982 client 221.231.169.189 closed keepalive connection
+2021/06/11 21:42:01 [info] 883#883: *13978 client 221.231.169.189 closed keepalive connection
+2021/06/11 21:42:01 [info] 883#883: *13980 client 221.231.169.189 closed keepalive connection
+2021/06/11 21:42:01 [info] 883#883: *13983 client 221.231.169.189 closed keepalive connection
+2021/06/11 21:42:01 [info] 883#883: *13985 client 221.231.169.189 closed keepalive connection
+2021/06/11 21:42:03 [info] 883#883: *13987 client 221.231.169.189 closed keepalive connection
+2021/06/11 21:44:07 [info] 883#883: *13992 client 61.147.15.67 closed keepalive connection
+2021/06/11 21:46:08 [info] 883#883: *13994 client 61.147.15.67 closed keepalive connection
+2021/06/11 21:56:35 [info] 883#883: *13996 client 221.231.169.189 closed keepalive connection
+2021/06/11 23:11:25 [info] 883#883: *13999 client 175.100.89.132 closed keepalive connection
+2021/06/12 00:12:45 [info] 883#883: *14002 client 193.118.53.202 closed keepalive connection
+2021/06/12 02:20:48 [info] 883#883: *14008 client 69.162.231.50 closed keepalive connection
+2021/06/12 02:20:48 [info] 883#883: *14010 client 69.162.231.50 closed keepalive connection
+2021/06/12 02:50:37 [info] 883#883: *14015 client 162.142.125.56 closed keepalive connection (104: Connection reset by peer)
+2021/06/12 02:50:38 [info] 883#883: *14017 client 162.142.125.56 closed keepalive connection
+2021/06/12 02:57:05 [info] 883#883: *14019 client 80.82.77.192 closed keepalive connection
+2021/06/12 05:36:19 [info] 883#883: *14022 client 128.14.141.34 closed keepalive connection
+2021/06/12 05:57:31 [info] 883#883: *14025 client 2.92.126.196 closed keepalive connection (104: Connection reset by peer)
+2021/06/12 06:19:58 [info] 883#883: *14031 client 101.251.242.238 closed keepalive connection (104: Connection reset by peer)
+2021/06/12 06:26:24 [info] 883#883: *14034 client 80.82.77.62 closed keepalive connection
+2021/06/12 06:27:02 [info] 883#883: *14036 client 80.82.77.62 closed keepalive connection
+2021/06/12 07:47:46 [info] 883#883: *14040 client 45.234.5.165 closed keepalive connection
+2021/06/12 09:46:51 [info] 883#883: *14067 client 192.241.208.189 closed keepalive connection
+2021/06/12 12:35:58 [info] 883#883: *14075 client 157.245.102.187 closed keepalive connection
+2021/06/12 13:05:13 [info] 883#883: *14078 client 91.222.197.98 closed keepalive connection
+2021/06/12 14:02:58 [info] 883#883: *14082 client 1.169.224.32 closed keepalive connection
+2021/06/12 14:30:58 [info] 883#883: *14086 client 59.52.100.211 closed keepalive connection
+2021/06/12 14:48:12 [info] 883#883: *14088 client 45.76.144.219 closed keepalive connection
+2021/06/12 14:48:52 [info] 883#883: *14090 client 193.118.53.210 closed keepalive connection
+2021/06/12 16:39:32 [info] 883#883: *14100 client 128.14.133.58 closed keepalive connection
+2021/06/12 17:38:49 [info] 883#883: *14105 client 5.8.10.202 closed keepalive connection
+2021/06/12 21:22:04 [info] 883#883: *14129 client 180.149.125.175 closed keepalive connection
+2021/06/13 01:23:14 [info] 883#883: *14133 client 78.38.89.122 closed keepalive connection
+2021/06/13 01:47:04 [info] 883#883: *14135 client 180.149.125.175 closed keepalive connection
+2021/06/13 02:55:28 [info] 883#883: *14159 client 183.136.225.14 closed keepalive connection
+2021/06/13 07:07:59 [info] 883#883: *14166 client 186.33.76.52 closed keepalive connection
+2021/06/13 08:24:51 [info] 883#883: *14168 client 186.33.113.80 closed keepalive connection
+2021/06/13 09:01:39 [info] 883#883: *14174 client 50.202.28.74 closed keepalive connection
+2021/06/13 09:01:40 [info] 883#883: *14176 client 50.202.28.74 closed keepalive connection
+2021/06/13 09:26:51 [info] 883#883: *14178 client 68.79.5.160 closed keepalive connection
+2021/06/13 09:49:02 [info] 883#883: *14180 client 192.241.215.161 closed keepalive connection
+2021/06/13 12:06:50 [info] 883#883: *14206 client 178.128.23.197 closed keepalive connection
+2021/06/13 12:10:55 [info] 883#883: *14208 client 52.23.220.54 closed keepalive connection
+2021/06/13 12:22:59 [info] 883#883: *14215 client 14.215.156.146 closed keepalive connection
+2021/06/13 12:22:59 [info] 883#883: *14214 client 113.96.221.209 closed keepalive connection
+2021/06/13 13:19:59 [info] 883#883: *14216 client 180.149.125.175 closed keepalive connection
+2021/06/13 14:05:06 [info] 883#883: *14223 client 117.208.134.100 closed keepalive connection
+2021/06/13 14:29:47 [info] 883#883: *14225 client 186.33.127.34 closed keepalive connection
+2021/06/13 16:39:31 [info] 883#883: *14234 client 65.49.20.67 closed keepalive connection
+2021/06/13 20:07:46 [info] 883#883: *14265 epoll_wait() reported that client prematurely closed connection, so upstream connection is closed too while connecting to upstream, client: 83.142.194.65, server: 42.193.179.124, request: "GET / HTTP/1.1", upstream: "uwsgi://127.0.0.1:8001", host: "42.193.179.124"
+2021/06/13 20:42:22 [info] 883#883: *14267 client 97.94.125.197 closed keepalive connection
+2021/06/13 22:16:25 [info] 883#883: *14290 client 167.248.133.39 closed keepalive connection
+2021/06/13 22:55:22 [info] 883#883: *14294 client 46.209.140.219 closed keepalive connection
+2021/06/13 23:22:13 [info] 883#883: *14296 client 79.126.82.11 closed keepalive connection
+2021/06/13 23:56:11 [info] 883#883: *14302 client 120.89.74.119 closed keepalive connection
+2021/06/14 00:28:15 [info] 883#883: *14305 client 74.120.14.53 closed keepalive connection (104: Connection reset by peer)
+2021/06/14 00:28:16 [info] 883#883: *14307 client 74.120.14.53 closed keepalive connection
+2021/06/14 00:35:52 [info] 883#883: *14311 client 198.20.69.98 closed keepalive connection
+2021/06/14 00:35:52 [info] 883#883: *14313 client 198.20.69.98 closed keepalive connection (104: Connection reset by peer)
+2021/06/14 00:35:53 [info] 883#883: *14315 client 198.20.69.98 closed keepalive connection (104: Connection reset by peer)
+2021/06/14 00:35:54 [info] 883#883: *14317 client 198.20.69.98 closed keepalive connection (104: Connection reset by peer)
+2021/06/14 00:35:55 [info] 883#883: *14319 client 198.20.69.98 closed keepalive connection
+2021/06/14 00:35:55 [info] 883#883: *14322 client 104.155.101.3 closed keepalive connection
+2021/06/14 00:35:56 [info] 883#883: *14324 client 34.78.249.119 closed keepalive connection
+2021/06/14 00:50:17 [info] 883#883: *14326 client 192.241.214.146 closed keepalive connection
+2021/06/14 00:58:20 [info] 883#883: *14330 client 94.25.176.96 closed keepalive connection
+2021/06/14 01:05:03 [info] 883#883: *14332 client 186.33.110.72 closed keepalive connection
+2021/06/14 01:36:05 [info] 883#883: *14336 client 192.241.217.59 closed keepalive connection
+2021/06/14 04:06:39 [info] 883#883: *14347 client 192.241.222.33 closed keepalive connection
+2021/06/14 06:45:24 [info] 883#883: *14352 client 192.241.218.135 closed keepalive connection
+2021/06/14 07:11:23 [info] 883#883: *14354 epoll_wait() reported that client prematurely closed connection, so upstream connection is closed too while connecting to upstream, client: 190.94.151.98, server: 42.193.179.124, request: "GET / HTTP/1.1", upstream: "uwsgi://127.0.0.1:8001", host: "42.193.179.124"
+2021/06/14 09:55:29 [info] 883#883: *14366 client 139.162.145.250 closed keepalive connection
+2021/06/14 11:48:57 [info] 883#883: *14392 client 45.76.144.219 closed keepalive connection
+2021/06/14 11:52:37 [info] 883#883: *14394 client 192.241.222.102 closed keepalive connection
+2021/06/14 12:03:49 [info] 883#883: *14396 client 13.90.74.142 closed keepalive connection
+2021/06/14 12:03:50 [info] 883#883: *14398 client 13.90.74.142 closed keepalive connection
+2021/06/14 12:57:27 [info] 883#883: *14401 client 167.248.133.39 closed keepalive connection (104: Connection reset by peer)
+2021/06/14 12:57:28 [info] 883#883: *14403 client 167.248.133.39 closed keepalive connection
+2021/06/14 13:11:09 [info] 883#883: *14407 client 128.14.134.170 closed keepalive connection
+2021/06/14 13:19:03 [info] 883#883: *14410 client 162.142.125.55 closed keepalive connection (104: Connection reset by peer)
+2021/06/14 13:19:04 [info] 883#883: *14412 client 162.142.125.55 closed keepalive connection
+2021/06/14 14:30:09 [info] 883#883: *14417 client 34.78.249.119 closed keepalive connection
+2021/06/14 15:10:14 [info] 883#883: *14419 client 92.11.216.94 closed keepalive connection
+2021/06/14 15:11:16 [info] 883#883: *14421 client 114.175.35.149 closed keepalive connection
+2021/06/14 18:01:04 [info] 883#883: *14436 client 52.140.113.128 closed keepalive connection
+2021/06/14 18:01:05 [info] 883#883: *14438 client 52.140.113.128 closed keepalive connection
+2021/06/14 18:03:34 [info] 883#883: *14440 client 185.117.2.115 closed keepalive connection
+2021/06/14 18:03:34 [info] 883#883: *14442 client 185.117.2.115 closed keepalive connection
+2021/06/14 20:20:13 [info] 883#883: *14447 client 212.251.17.107 closed keepalive connection
+2021/06/14 20:22:59 [info] 883#883: *14449 client 175.111.183.174 closed keepalive connection
+2021/06/14 22:19:28 [info] 883#883: *14458 client 23.251.102.74 closed keepalive connection
+2021/06/14 22:38:19 [info] 883#883: *14460 client 183.136.225.12 closed keepalive connection
+2021/06/14 23:23:25 [info] 883#883: *14468 client 186.33.107.68 closed keepalive connection
+2021/06/14 23:27:02 [info] 883#883: *14470 client 134.122.80.63 closed keepalive connection
+2021/06/15 00:51:32 [info] 883#883: *14474 client 2.57.122.53 closed keepalive connection
+2021/06/15 00:51:32 [info] 883#883: *14476 client 2.57.122.53 closed keepalive connection
+2021/06/15 00:54:19 [info] 883#883: *14478 client 184.105.247.195 closed keepalive connection
+2021/06/15 02:20:25 [info] 883#883: *14490 client 177.47.203.181 closed keepalive connection
+2021/06/15 02:22:26 [info] 883#883: *14492 client 185.76.80.240 closed keepalive connection
+2021/06/15 03:19:40 [info] 883#883: *14515 client 20.68.241.118 closed keepalive connection
+2021/06/15 06:17:40 [info] 883#883: *14520 client 162.221.192.26 closed keepalive connection
+2021/06/15 06:29:49 [info] 883#883: *14522 client 43.239.152.251 closed keepalive connection
+2021/06/15 07:36:31 [info] 883#883: *14526 client 172.104.147.96 closed keepalive connection
+2021/06/15 08:06:48 [info] 883#883: *14529 client 183.136.225.14 closed keepalive connection
+2021/06/15 10:56:58 [info] 883#883: *14579 client 52.140.113.128 closed keepalive connection
+2021/06/15 10:56:59 [info] 883#883: *14581 client 52.140.113.128 closed keepalive connection
+2021/06/15 11:52:35 [info] 883#883: *14583 client 192.241.220.174 closed keepalive connection
+2021/06/15 12:00:26 [info] 883#883: *14585 client 167.71.19.194 closed keepalive connection
+2021/06/15 12:33:19 [info] 883#883: *14587 client 142.93.146.198 closed keepalive connection
+2021/06/15 13:56:02 [info] 883#883: *14590 client 128.1.248.42 closed keepalive connection
+2021/06/15 13:56:50 [info] 883#883: *14592 client 64.62.197.32 closed keepalive connection
+2021/06/15 14:49:06 [info] 883#883: *14609 client 174.99.46.84 closed keepalive connection (104: Connection reset by peer)
+2021/06/15 15:26:06 [info] 883#883: *14617 client 162.246.13.51 closed keepalive connection
+2021/06/15 15:37:06 [info] 883#883: *14619 client prematurely closed connection, client: 178.175.108.166, server: 42.193.179.124, request: "POST /HNAP1/ HTTP/1.0", host: "42.193.179.124:80"
+2021/06/15 17:32:16 [info] 883#883: *14621 client 80.82.77.192 closed keepalive connection
+2021/06/15 18:04:07 [info] 883#883: *14623 client 2.183.121.83 closed keepalive connection
+2021/06/15 18:13:52 [info] 883#883: *14625 client 157.230.143.29 closed keepalive connection
+2021/06/15 18:30:41 [info] 883#883: *14628 epoll_wait() reported that client prematurely closed connection, so upstream connection is closed too while connecting to upstream, client: 176.122.210.185, server: 42.193.179.124, request: "GET / HTTP/1.1", upstream: "uwsgi://127.0.0.1:8001", host: "42.193.179.124:80"
+2021/06/15 19:43:36 [info] 883#883: *14637 client 61.147.15.67 closed keepalive connection
+2021/06/15 19:44:56 [info] 883#883: *14639 client 61.147.15.67 closed keepalive connection
+2021/06/15 22:11:49 [info] 883#883: *14646 epoll_wait() reported that client prematurely closed connection, so upstream connection is closed too while connecting to upstream, client: 46.39.229.22, server: 42.193.179.124, request: "GET / HTTP/1.1", upstream: "uwsgi://127.0.0.1:8001", host: "42.193.179.124:80"
+2021/06/15 22:49:57 [info] 883#883: *14648 client 167.248.133.37 closed keepalive connection
+2021/06/15 23:57:32 [info] 883#883: *14651 client 45.79.204.46 closed keepalive connection
+2021/06/16 01:33:47 [info] 883#883: *14666 client 52.140.113.128 closed keepalive connection
+2021/06/16 01:33:47 [info] 883#883: *14668 client 52.140.113.128 closed keepalive connection
+2021/06/16 01:36:13 [info] 883#883: *14670 client 69.194.182.218 closed keepalive connection
+2021/06/16 01:36:14 [info] 883#883: *14672 client 69.194.182.218 closed keepalive connection
+2021/06/16 01:40:40 [info] 883#883: *14674 client 185.173.35.49 closed keepalive connection
+2021/06/16 01:47:55 [info] 883#883: *14676 client 183.27.197.227 closed keepalive connection
+2021/06/16 01:47:55 [info] 883#883: *14678 client 183.27.197.227 closed keepalive connection
+2021/06/16 02:24:02 [info] 883#883: *14681 client 171.88.104.147 closed keepalive connection
+2021/06/16 02:38:45 [info] 883#883: *14685 client 128.199.255.164 closed keepalive connection
+2021/06/16 02:46:02 [info] 883#883: *14687 client 103.54.31.133 closed keepalive connection
+2021/06/16 03:53:32 [info] 883#883: *14693 client 128.1.248.42 closed keepalive connection
+2021/06/16 04:31:38 [info] 883#883: *14695 client prematurely closed connection, client: 178.72.75.13, server: 42.193.179.124, request: "POST /HNAP1/ HTTP/1.0", host: "42.193.179.124:80"
+2021/06/16 04:55:59 [info] 883#883: *14696 client 104.197.128.73 closed keepalive connection
+2021/06/16 04:55:59 [info] 883#883: *14698 client 104.197.128.73 closed keepalive connection
+2021/06/16 05:05:57 [info] 883#883: *14700 client 69.162.230.243 closed keepalive connection
+2021/06/16 05:05:57 [info] 883#883: *14702 client 69.162.230.243 closed keepalive connection
+2021/06/16 05:17:58 [info] 883#883: *14708 client 193.118.53.194 closed keepalive connection
+2021/06/16 06:29:00 [info] 883#883: *14712 client 118.97.53.118 closed keepalive connection
+2021/06/16 08:13:31 [info] 883#883: *14718 client 183.136.225.14 closed keepalive connection
+2021/06/16 12:43:07 [info] 883#883: *14747 client 143.198.113.206 closed keepalive connection
+2021/06/16 13:06:37 [info] 883#883: *14751 client 192.241.218.92 closed keepalive connection
+2021/06/16 16:48:14 [info] 883#883: *14754 client 81.30.217.172 closed keepalive connection
+2021/06/16 21:43:31 [info] 883#883: *14786 client 101.251.242.238 closed keepalive connection (104: Connection reset by peer)
+2021/06/16 22:15:43 [info] 883#883: *14788 client 193.118.53.210 closed keepalive connection
+2021/06/17 00:04:30 [info] 883#883: *14792 client 74.82.47.5 closed keepalive connection
+2021/06/17 00:51:21 [info] 883#883: *14795 client 192.241.214.92 closed keepalive connection
+2021/06/17 01:12:42 [info] 883#883: *14797 client 192.241.219.185 closed keepalive connection
+2021/06/17 01:49:20 [info] 883#883: *14799 client 192.241.216.218 closed keepalive connection
+2021/06/17 05:55:23 [info] 883#883: *14805 client prematurely closed connection, client: 180.91.159.60, server: 42.193.179.124, request: "POST /HNAP1/ HTTP/1.0", host: "42.193.179.124:80"
+2021/06/17 06:08:54 [info] 883#883: *14806 client 45.180.225.1 closed keepalive connection
+2021/06/17 07:20:49 [info] 883#883: *14808 client 5.79.147.91 closed keepalive connection
+2021/06/17 08:14:21 [info] 883#883: *14810 client 190.146.192.39 closed keepalive connection
+2021/06/17 09:28:39 [info] 883#883: *14816 client 175.24.232.28 closed keepalive connection
+2021/06/17 09:28:48 [info] 883#883: *14818 client 175.24.232.28 closed keepalive connection
+2021/06/17 10:24:42 [info] 883#883: *14822 client 192.241.213.160 closed keepalive connection
+2021/06/17 11:06:54 [info] 883#883: *14849 client 128.14.133.58 closed keepalive connection
+2021/06/17 11:37:09 [info] 883#883: *14852 client 188.4.211.32 closed keepalive connection
+2021/06/17 12:30:46 [info] 883#883: *14857 client 77.42.242.174 closed keepalive connection
+2021/06/17 14:06:03 [info] 883#883: *14864 client sent invalid header line: "COM_InterProt: 80" while reading client request headers, client: 142.93.146.198, server: 42.193.179.124, request: "GET / HTTP/1.1", host: "42.193.179.124"
+2021/06/17 14:06:03 [info] 883#883: *14864 client 142.93.146.198 closed keepalive connection
+2021/06/17 14:34:43 [info] 883#883: *14866 client 216.218.206.66 closed keepalive connection
+2021/06/17 15:25:21 [info] 883#883: *14868 client 128.14.136.78 closed keepalive connection
+2021/06/17 17:26:36 [info] 883#883: *14873 client 95.154.174.137 closed keepalive connection
+2021/06/17 18:14:54 [info] 883#883: *14875 client 205.185.209.234 closed keepalive connection
+2021/06/17 18:14:56 [info] 883#883: *14877 client 205.185.209.234 closed keepalive connection
+2021/06/17 18:48:44 [info] 883#883: *14879 client 23.236.6.197 closed keepalive connection
+2021/06/17 19:40:02 [info] 883#883: *14881 client 198.20.69.98 closed keepalive connection
+2021/06/17 19:40:03 [info] 883#883: *14883 client 198.20.69.98 closed keepalive connection (104: Connection reset by peer)
+2021/06/17 19:40:06 [info] 883#883: *14885 client 198.20.69.98 closed keepalive connection (104: Connection reset by peer)
+2021/06/17 19:40:07 [info] 883#883: *14889 client 198.20.69.98 closed keepalive connection
+2021/06/17 19:40:08 [info] 883#883: *14887 client 198.20.69.98 closed keepalive connection (104: Connection reset by peer)
+2021/06/17 19:40:53 [info] 883#883: *14892 client 35.195.57.216 closed keepalive connection
+2021/06/17 20:33:16 [info] 883#883: *14896 client 173.255.226.254 closed keepalive connection
+2021/06/17 20:37:49 [info] 883#883: *14898 client 113.70.131.148 closed keepalive connection
+2021/06/17 20:37:49 [info] 883#883: *14900 client 113.70.131.148 closed keepalive connection
+2021/06/17 20:39:22 [info] 883#883: *14905 client 128.199.163.130 closed keepalive connection
+2021/06/17 20:40:00 [info] 883#883: *14902 client 128.199.163.130 closed keepalive connection
+2021/06/17 21:44:37 [info] 883#883: *14908 client 23.251.102.74 closed keepalive connection
+2021/06/17 23:09:40 [info] 883#883: *14912 client 190.143.125.13 closed keepalive connection
+2021/06/18 00:04:48 [info] 883#883: *14916 client 45.76.144.219 closed keepalive connection
+2021/06/18 00:30:37 [info] 883#883: *14918 client 220.250.11.31 closed keepalive connection
+2021/06/18 01:21:19 [info] 883#883: *14920 client 85.214.85.206 closed keepalive connection
+2021/06/18 01:21:20 [info] 883#883: *14922 client 85.214.85.206 closed keepalive connection
+2021/06/18 02:15:45 [info] 883#883: *14925 client 37.193.113.91 closed keepalive connection
+2021/06/18 03:09:52 [info] 883#883: *14936 client 198.232.118.99 closed keepalive connection
+2021/06/18 03:09:52 [info] 883#883: *14938 client 198.232.118.99 closed keepalive connection
+2021/06/18 03:20:56 [info] 883#883: *14940 client 93.242.139.91 closed keepalive connection (104: Connection reset by peer)
+2021/06/18 03:28:12 [info] 883#883: *14942 client 128.1.248.42 closed keepalive connection
+2021/06/18 05:09:12 [info] 883#883: *14946 client 205.185.209.233 closed keepalive connection
+2021/06/18 05:09:16 [info] 883#883: *14948 client 205.185.209.233 closed keepalive connection
+2021/06/18 05:10:47 [info] 883#883: *14950 client 71.6.146.186 closed keepalive connection
+2021/06/18 05:10:48 [info] 883#883: *14952 client 71.6.146.186 closed keepalive connection (104: Connection reset by peer)
+2021/06/18 05:10:51 [info] 883#883: *14954 client 71.6.146.186 closed keepalive connection (104: Connection reset by peer)
+2021/06/18 05:10:52 [info] 883#883: *14956 client 71.6.146.186 closed keepalive connection (104: Connection reset by peer)
+2021/06/18 05:10:53 [info] 883#883: *14958 client 71.6.146.186 closed keepalive connection
+2021/06/18 05:10:54 [info] 883#883: *14961 client 35.195.57.216 closed keepalive connection
+2021/06/18 05:26:17 [info] 883#883: *14963 client 78.87.53.97 closed keepalive connection
+2021/06/18 06:09:10 [info] 883#883: *14965 client 52.140.113.128 closed keepalive connection
+2021/06/18 06:28:40 [info] 883#883: *14967 client 83.41.123.192 closed keepalive connection
+2021/06/18 08:22:35 [info] 883#883: *15005 client 162.142.125.54 closed keepalive connection
+2021/06/18 08:32:35 [info] 883#883: *15007 client 54.171.233.11 closed keepalive connection
+2021/06/18 08:32:36 [info] 883#883: *15009 client 54.171.233.11 closed keepalive connection
+2021/06/18 09:43:01 [info] 883#883: *15013 client 161.97.180.107 closed keepalive connection
+2021/06/18 09:43:10 [info] 883#883: *15015 client 161.97.180.107 closed keepalive connection
+2021/06/18 10:00:52 [info] 883#883: *15017 client 128.14.133.58 closed keepalive connection
+2021/06/18 10:37:24 [info] 883#883: *15025 client 151.106.113.220 closed keepalive connection
+2021/06/18 11:08:39 [info] 883#883: *15029 client 93.117.16.249 closed keepalive connection
+2021/06/18 11:08:39 [info] 883#883: *15031 client 93.117.16.249 closed keepalive connection
+2021/06/18 13:17:12 [info] 883#883: *15035 client 192.241.213.58 closed keepalive connection
+2021/06/18 14:12:03 [info] 883#883: *15038 client 143.198.149.167 closed keepalive connection
+2021/06/18 14:12:03 [info] 883#883: *15040 client 143.198.149.167 closed keepalive connection
+2021/06/18 14:12:04 [info] 883#883: *15042 client 143.198.149.167 closed keepalive connection
+2021/06/18 14:12:04 [info] 883#883: *15044 client 143.198.149.167 closed keepalive connection
+2021/06/18 14:12:05 [info] 883#883: *15046 client 143.198.149.167 closed keepalive connection
+2021/06/18 14:53:19 [info] 883#883: *15048 client 45.148.10.50 closed keepalive connection
+2021/06/18 16:21:53 [info] 883#883: *15053 client 65.49.20.69 closed keepalive connection
+2021/06/18 17:56:45 [info] 883#883: *15057 client 142.93.146.198 closed keepalive connection
+2021/06/18 18:30:28 [info] 883#883: *15063 client 198.20.70.114 closed keepalive connection (104: Connection reset by peer)
+2021/06/18 18:30:28 [info] 883#883: *15059 client 198.20.70.114 closed keepalive connection
+2021/06/18 18:30:29 [info] 883#883: *15061 client 198.20.70.114 closed keepalive connection (104: Connection reset by peer)
+2021/06/18 18:30:30 [info] 883#883: *15065 client 198.20.70.114 closed keepalive connection (104: Connection reset by peer)
+2021/06/18 18:30:35 [info] 883#883: *15067 client 198.20.70.114 closed keepalive connection
+2021/06/18 18:31:53 [info] 883#883: *15070 client 34.78.249.119 closed keepalive connection
+2021/06/18 19:27:50 [info] 883#883: *15074 client 167.248.133.56 closed keepalive connection (104: Connection reset by peer)
+2021/06/18 19:27:50 [info] 883#883: *15076 client 167.248.133.56 closed keepalive connection
+2021/06/18 19:33:26 [info] 883#883: *15078 client 212.79.110.118 closed keepalive connection
+2021/06/18 20:00:53 [info] 883#883: *15083 client 193.118.53.202 closed keepalive connection
+2021/06/18 22:43:44 [info] 883#883: *15092 client 186.33.96.51 closed keepalive connection
+2021/06/18 22:51:57 [info] 883#883: *15096 client 189.178.51.206 closed keepalive connection
+2021/06/18 23:17:17 [info] 883#883: *15098 client 193.118.53.194 closed keepalive connection
+2021/06/18 23:20:49 [info] 883#883: *15100 client 86.109.33.82 closed keepalive connection
+2021/06/19 00:24:08 [info] 883#883: *15106 client 64.121.165.246 closed keepalive connection (104: Connection reset by peer)
+2021/06/19 01:37:58 [info] 883#883: *15153 client 74.120.14.56 closed keepalive connection
+2021/06/19 02:41:12 [info] 883#883: *15163 client prematurely closed connection, client: 101.233.38.159, server: 42.193.179.124, request: "POST /HNAP1/ HTTP/1.0", host: "42.193.179.124:80"
+2021/06/19 03:50:11 [info] 883#883: *15164 client 107.130.226.92 closed keepalive connection
+2021/06/19 03:50:11 [info] 883#883: *15166 client 107.130.226.92 closed keepalive connection
+2021/06/19 03:59:14 [info] 883#883: *15168 client 221.201.251.184 closed keepalive connection
+2021/06/19 04:23:03 [info] 883#883: *15172 client 80.216.144.58 closed keepalive connection
+2021/06/19 05:34:02 [info] 883#883: *15183 client 167.248.133.37 closed keepalive connection (104: Connection reset by peer)
+2021/06/19 05:34:02 [info] 883#883: *15185 client 167.248.133.37 closed keepalive connection
+2021/06/19 05:37:37 [info] 883#883: *15187 client 185.173.35.5 closed keepalive connection
+2021/06/19 05:46:29 [info] 883#883: *15189 client 183.136.225.12 closed keepalive connection
+2021/06/19 06:52:25 [info] 883#883: *15196 client 186.33.118.232 closed keepalive connection
+2021/06/19 07:49:21 [info] 883#883: *15200 client 162.221.192.93 closed keepalive connection (104: Connection reset by peer)
+2021/06/19 07:49:33 [info] 883#883: *15202 client 162.221.192.90 closed keepalive connection
+2021/06/19 08:09:05 [info] 883#883: *15204 client 80.82.77.192 closed keepalive connection
+2021/06/19 09:36:04 [info] 883#883: *15209 client 36.69.0.245 closed keepalive connection
+2021/06/19 11:21:52 [info] 883#883: *15216 client 45.76.144.219 closed keepalive connection
+2021/06/19 14:46:02 [info] 883#883: *15243 client 173.209.56.170 closed keepalive connection
+2021/06/19 15:16:56 [info] 883#883: *15245 client prematurely closed connection, client: 78.66.209.192, server: 42.193.179.124, request: "POST /HNAP1/ HTTP/1.0", host: "42.193.179.124:80"
+2021/06/19 15:40:45 [info] 883#883: *15254 client 128.14.134.134 closed keepalive connection
+2021/06/19 15:40:55 [info] 883#883: *15256 client 192.241.217.17 closed keepalive connection
+2021/06/19 16:20:53 [info] 883#883: *15258 client 216.218.206.66 closed keepalive connection
+2021/06/19 18:24:18 [info] 883#883: *15263 client 45.249.252.33 closed keepalive connection
+2021/06/19 21:31:54 [info] 883#883: *15313 client 91.210.151.61 closed keepalive connection
+2021/06/20 01:16:25 [info] 883#883: *15332 client 192.241.210.67 closed keepalive connection
+2021/06/20 01:42:13 [info] 883#883: *15334 client 192.241.208.242 closed keepalive connection
+2021/06/20 02:25:59 [info] 883#883: *15336 client 192.241.215.174 closed keepalive connection
+2021/06/20 02:48:20 [info] 883#883: *15338 client 185.217.161.210 closed keepalive connection
+2021/06/20 03:13:49 [info] 883#883: *15340 client 109.162.199.231 closed keepalive connection
+2021/06/20 03:41:10 [info] 883#883: *15343 client 178.148.32.36 closed keepalive connection
+2021/06/20 04:15:55 [info] 883#883: *15358 client 128.14.209.162 closed keepalive connection
+2021/06/20 04:45:21 [info] 883#883: *15362 client 32.140.239.70 closed keepalive connection
+2021/06/20 04:45:21 [info] 883#883: *15364 client 32.140.239.70 closed keepalive connection
+2021/06/20 04:58:40 [info] 883#883: *15366 client 186.33.125.143 closed keepalive connection
+2021/06/20 05:47:05 [info] 883#883: *15370 client 45.83.64.107 closed keepalive connection
+2021/06/20 06:16:15 [info] 883#883: *15376 client 18.208.215.232 closed keepalive connection
+2021/06/20 06:50:26 [info] 883#883: *15382 client prematurely closed connection, client: 124.118.73.150, server: 42.193.179.124, request: "POST /HNAP1/ HTTP/1.0", host: "42.193.179.124:80"
+2021/06/20 08:20:16 [info] 883#883: *15387 client 128.1.248.26 closed keepalive connection
+2021/06/20 08:30:21 [info] 883#883: *15389 client 178.236.122.86 closed keepalive connection
+2021/06/20 10:29:06 [info] 883#883: *15401 client 176.241.192.90 closed keepalive connection
+2021/06/20 12:24:37 [info] 883#883: *15427 client 102.223.228.1 closed keepalive connection
+2021/06/20 16:11:28 [info] 883#883: *15433 client 136.24.69.6 closed keepalive connection
+2021/06/20 16:11:29 [info] 883#883: *15435 client 136.24.69.6 closed keepalive connection
+2021/06/20 17:28:55 [info] 883#883: *15437 client 23.251.102.74 closed keepalive connection
+2021/06/20 17:30:00 [info] 883#883: *15439 client 103.88.242.143 closed keepalive connection
+2021/06/20 20:01:32 [info] 883#883: *15449 client 88.130.157.88 closed keepalive connection (104: Connection reset by peer)
+2021/06/20 21:03:31 [info] 883#883: *15451 client 23.251.102.90 closed keepalive connection
+2021/06/20 22:30:58 [info] 883#883: *15454 client 192.241.217.17 closed keepalive connection
+2021/06/20 23:28:23 [info] 883#883: *15458 client 184.105.247.252 closed keepalive connection
+2021/06/20 23:30:58 [info] 883#883: *15460 client 128.14.134.170 closed keepalive connection
+2021/06/21 02:51:39 [info] 883#883: *15464 client 95.106.123.83 closed keepalive connection
+2021/06/21 04:08:01 [info] 883#883: *15468 client 192.241.217.227 closed keepalive connection
+2021/06/21 06:42:32 [info] 883#883: *15500 client 212.114.52.182 closed keepalive connection (104: Connection reset by peer)
+2021/06/21 06:49:38 [info] 883#883: *15503 client 192.241.204.225 closed keepalive connection
+2021/06/21 09:10:12 [info] 883#883: *15509 client 103.149.192.151 closed keepalive connection
+2021/06/21 09:15:57 [info] 883#883: *15511 client 128.1.248.26 closed keepalive connection
+2021/06/21 09:36:25 [info] 883#883: *15513 client 162.142.125.38 closed keepalive connection
+2021/06/21 10:24:53 [info] 883#883: *15516 client 74.120.14.56 closed keepalive connection (104: Connection reset by peer)
+2021/06/21 10:24:53 [info] 883#883: *15518 client 74.120.14.56 closed keepalive connection
+2021/06/21 12:45:45 [info] 883#883: *15523 client 45.76.144.219 closed keepalive connection
+2021/06/21 13:02:51 [info] 883#883: *15525 client 162.221.192.26 closed keepalive connection
+2021/06/21 13:22:17 [info] 883#883: *15527 client 35.195.57.216 closed keepalive connection
+2021/06/21 16:18:53 [info] 883#883: *15539 client 209.159.154.178 closed keepalive connection
+2021/06/21 16:40:18 [info] 883#883: *15542 client 212.114.52.182 closed keepalive connection (104: Connection reset by peer)
+2021/06/21 17:06:18 [info] 883#883: *15545 client 186.33.126.59 closed keepalive connection
+2021/06/21 17:57:05 [info] 883#883: *15551 client 101.251.242.238 closed keepalive connection (104: Connection reset by peer)
+2021/06/21 18:43:59 [info] 883#883: *15553 client 182.114.84.37 closed keepalive connection
+2021/06/21 19:18:12 [info] 883#883: *15555 client 193.118.53.194 closed keepalive connection
+2021/06/21 20:15:22 [info] 883#883: *15559 client 189.152.146.129 closed keepalive connection
+2021/06/21 20:56:00 [info] 883#883: *15569 client 42.145.134.123 closed keepalive connection
+2021/06/21 20:59:23 [info] 883#883: *15571 client 64.62.197.152 closed keepalive connection
+2021/06/21 21:37:23 [info] 883#883: *15595 client 161.35.27.244 closed keepalive connection
+2021/06/21 21:44:35 [info] 883#883: *15607 epoll_wait() reported that client prematurely closed connection, so upstream connection is closed too (104: Connection reset by peer) while sending request to upstream, client: 218.13.14.216, server: 42.193.179.124, request: "GET /video/ HTTP/1.1", upstream: "uwsgi://127.0.0.1:8001", host: "42.193.179.124"
+2021/06/21 21:44:41 [info] 883#883: *15604 client 218.13.14.216 closed keepalive connection (104: Connection reset by peer)
+2021/06/21 21:44:41 [info] 883#883: *15602 client 218.13.14.216 closed keepalive connection (104: Connection reset by peer)
+2021/06/21 21:44:41 [info] 883#883: *15606 client 218.13.14.216 closed keepalive connection (104: Connection reset by peer)
+2021/06/21 21:44:41 [info] 883#883: *15605 client 218.13.14.216 closed keepalive connection (104: Connection reset by peer)
+2021/06/21 21:53:53 [info] 883#883: *15613 client 218.13.14.197 closed keepalive connection (104: Connection reset by peer)
+2021/06/21 22:07:28 [error] 1700996#1700996: *1 open() "/home/ubuntu/git/django_project/collected_static//plugins/hammer/hammer.min.js.map" failed (2: No such file or directory), client: 218.13.14.197, server: 42.193.179.124, request: "GET /static/plugins/hammer/hammer.min.js.map HTTP/1.1", host: "42.193.179.124"
+2021/06/21 22:11:49 [error] 1701803#1701803: *4 "/home/ubuntu/git/django_project/blog/templates/work_test/work_test/index.html" is not found (2: No such file or directory), client: 218.13.14.197, server: 42.193.179.124, request: "GET /work_test/ HTTP/1.1", host: "42.193.179.124"
+2021/06/21 22:11:50 [error] 1701803#1701803: *4 "/home/ubuntu/git/django_project/blog/templates/work_test/work_test/index.html" is not found (2: No such file or directory), client: 218.13.14.197, server: 42.193.179.124, request: "GET /work_test/ HTTP/1.1", host: "42.193.179.124"
+2021/06/21 22:11:55 [error] 1701803#1701803: *4 open() "/home/ubuntu/git/django_project/collected_static//plugins/hammer/hammer.min.js.map" failed (2: No such file or directory), client: 218.13.14.197, server: 42.193.179.124, request: "GET /static/plugins/hammer/hammer.min.js.map HTTP/1.1", host: "42.193.179.124"
+2021/06/21 22:14:43 [error] 1702299#1702299: *1 open() "/home/ubuntu/git/django_project/collected_static//plugins/hammer/hammer.min.js.map" failed (2: No such file or directory), client: 218.13.14.197, server: 42.193.179.124, request: "GET /static/plugins/hammer/hammer.min.js.map HTTP/1.1", host: "42.193.179.124"
+2021/06/21 22:14:47 [error] 1702299#1702299: *1 "/home/ubuntu/git/django_project/blog/templates/work_test/work_test/index.html" is not found (2: No such file or directory), client: 218.13.14.197, server: 42.193.179.124, request: "GET /work_test/ HTTP/1.1", host: "42.193.179.124"
+2021/06/21 22:14:48 [error] 1702299#1702299: *1 "/home/ubuntu/git/django_project/blog/templates/work_test/work_test/index.html" is not found (2: No such file or directory), client: 218.13.14.197, server: 42.193.179.124, request: "GET /work_test/ HTTP/1.1", host: "42.193.179.124"
+2021/06/21 22:14:49 [error] 1702299#1702299: *1 "/home/ubuntu/git/django_project/blog/templates/work_test/work_test/index.html" is not found (2: No such file or directory), client: 218.13.14.197, server: 42.193.179.124, request: "GET /work_test/ HTTP/1.1", host: "42.193.179.124"
+2021/06/21 22:14:49 [error] 1702299#1702299: *1 "/home/ubuntu/git/django_project/blog/templates/work_test/work_test/index.html" is not found (2: No such file or directory), client: 218.13.14.197, server: 42.193.179.124, request: "GET /work_test/ HTTP/1.1", host: "42.193.179.124"
+2021/06/21 22:14:50 [error] 1702299#1702299: *1 "/home/ubuntu/git/django_project/blog/templates/work_test/work_test/index.html" is not found (2: No such file or directory), client: 218.13.14.197, server: 42.193.179.124, request: "GET /work_test/ HTTP/1.1", host: "42.193.179.124"
+2021/06/21 22:14:50 [error] 1702299#1702299: *1 "/home/ubuntu/git/django_project/blog/templates/work_test/work_test/index.html" is not found (2: No such file or directory), client: 218.13.14.197, server: 42.193.179.124, request: "GET /work_test/ HTTP/1.1", host: "42.193.179.124"
+2021/06/21 22:14:51 [error] 1702299#1702299: *1 "/home/ubuntu/git/django_project/blog/templates/work_test/work_test/index.html" is not found (2: No such file or directory), client: 218.13.14.197, server: 42.193.179.124, request: "GET /work_test/ HTTP/1.1", host: "42.193.179.124"
+2021/06/21 22:14:52 [error] 1702299#1702299: *1 "/home/ubuntu/git/django_project/blog/templates/work_test/work_test/index.html" is not found (2: No such file or directory), client: 218.13.14.197, server: 42.193.179.124, request: "GET /work_test/ HTTP/1.1", host: "42.193.179.124"
+2021/06/21 22:14:52 [error] 1702299#1702299: *1 "/home/ubuntu/git/django_project/blog/templates/work_test/work_test/index.html" is not found (2: No such file or directory), client: 218.13.14.197, server: 42.193.179.124, request: "GET /work_test/ HTTP/1.1", host: "42.193.179.124"
+2021/06/21 22:14:52 [error] 1702299#1702299: *1 "/home/ubuntu/git/django_project/blog/templates/work_test/work_test/index.html" is not found (2: No such file or directory), client: 218.13.14.197, server: 42.193.179.124, request: "GET /work_test/ HTTP/1.1", host: "42.193.179.124"
+2021/06/21 22:14:52 [error] 1702299#1702299: *1 "/home/ubuntu/git/django_project/blog/templates/work_test/work_test/index.html" is not found (2: No such file or directory), client: 218.13.14.197, server: 42.193.179.124, request: "GET /work_test/ HTTP/1.1", host: "42.193.179.124"
+2021/06/21 22:14:53 [error] 1702299#1702299: *1 "/home/ubuntu/git/django_project/blog/templates/work_test/work_test/index.html" is not found (2: No such file or directory), client: 218.13.14.197, server: 42.193.179.124, request: "GET /work_test/ HTTP/1.1", host: "42.193.179.124"
+2021/06/21 22:14:53 [error] 1702299#1702299: *1 "/home/ubuntu/git/django_project/blog/templates/work_test/work_test/index.html" is not found (2: No such file or directory), client: 218.13.14.197, server: 42.193.179.124, request: "GET /work_test/ HTTP/1.1", host: "42.193.179.124"
+2021/06/21 22:14:53 [error] 1702299#1702299: *1 "/home/ubuntu/git/django_project/blog/templates/work_test/work_test/index.html" is not found (2: No such file or directory), client: 218.13.14.197, server: 42.193.179.124, request: "GET /work_test/ HTTP/1.1", host: "42.193.179.124"
+2021/06/21 22:14:53 [error] 1702299#1702299: *1 "/home/ubuntu/git/django_project/blog/templates/work_test/work_test/index.html" is not found (2: No such file or directory), client: 218.13.14.197, server: 42.193.179.124, request: "GET /work_test/ HTTP/1.1", host: "42.193.179.124"
+2021/06/21 22:14:54 [error] 1702299#1702299: *1 "/home/ubuntu/git/django_project/blog/templates/work_test/work_test/index.html" is not found (2: No such file or directory), client: 218.13.14.197, server: 42.193.179.124, request: "GET /work_test/ HTTP/1.1", host: "42.193.179.124"
+2021/06/21 22:14:54 [error] 1702299#1702299: *1 "/home/ubuntu/git/django_project/blog/templates/work_test/work_test/index.html" is not found (2: No such file or directory), client: 218.13.14.197, server: 42.193.179.124, request: "GET /work_test/ HTTP/1.1", host: "42.193.179.124"
+2021/06/21 22:14:55 [error] 1702299#1702299: *1 "/home/ubuntu/git/django_project/blog/templates/work_test/work_test/index.html" is not found (2: No such file or directory), client: 218.13.14.197, server: 42.193.179.124, request: "GET /work_test/ HTTP/1.1", host: "42.193.179.124"
+2021/06/21 22:17:24 [error] 1702746#1702746: *3 "/home/ubuntu/git/django_project/blog/templates/work_test/work_test/index22.html" is not found (2: No such file or directory), client: 218.13.14.197, server: 42.193.179.124, request: "GET /work_test/ HTTP/1.1", host: "42.193.179.124"
+2021/06/21 22:17:25 [error] 1702746#1702746: *3 "/home/ubuntu/git/django_project/blog/templates/work_test/work_test/index22.html" is not found (2: No such file or directory), client: 218.13.14.197, server: 42.193.179.124, request: "GET /work_test/ HTTP/1.1", host: "42.193.179.124"
+2021/06/21 22:17:25 [error] 1702746#1702746: *3 "/home/ubuntu/git/django_project/blog/templates/work_test/work_test/index22.html" is not found (2: No such file or directory), client: 218.13.14.197, server: 42.193.179.124, request: "GET /work_test/ HTTP/1.1", host: "42.193.179.124"
+2021/06/21 22:17:25 [error] 1702746#1702746: *3 "/home/ubuntu/git/django_project/blog/templates/work_test/work_test/index22.html" is not found (2: No such file or directory), client: 218.13.14.197, server: 42.193.179.124, request: "GET /work_test/ HTTP/1.1", host: "42.193.179.124"
+2021/06/21 22:17:25 [error] 1702746#1702746: *3 "/home/ubuntu/git/django_project/blog/templates/work_test/work_test/index22.html" is not found (2: No such file or directory), client: 218.13.14.197, server: 42.193.179.124, request: "GET /work_test/ HTTP/1.1", host: "42.193.179.124"
+2021/06/21 22:17:26 [error] 1702746#1702746: *3 "/home/ubuntu/git/django_project/blog/templates/work_test/work_test/index22.html" is not found (2: No such file or directory), client: 218.13.14.197, server: 42.193.179.124, request: "GET /work_test/ HTTP/1.1", host: "42.193.179.124"
+2021/06/21 22:17:26 [error] 1702746#1702746: *3 "/home/ubuntu/git/django_project/blog/templates/work_test/work_test/index22.html" is not found (2: No such file or directory), client: 218.13.14.197, server: 42.193.179.124, request: "GET /work_test/ HTTP/1.1", host: "42.193.179.124"
+2021/06/21 22:17:27 [error] 1702746#1702746: *3 "/home/ubuntu/git/django_project/blog/templates/work_test/work_test/index22.html" is not found (2: No such file or directory), client: 218.13.14.197, server: 42.193.179.124, request: "GET /work_test/ HTTP/1.1", host: "42.193.179.124"
+2021/06/21 22:17:27 [error] 1702746#1702746: *3 "/home/ubuntu/git/django_project/blog/templates/work_test/work_test/index22.html" is not found (2: No such file or directory), client: 218.13.14.197, server: 42.193.179.124, request: "GET /work_test/ HTTP/1.1", host: "42.193.179.124"
+2021/06/21 22:18:30 [error] 1702920#1702920: *4 "/home/ubuntu/git/django_project/blog/templates/work_test/work_test/index2.html" is not found (2: No such file or directory), client: 218.13.14.197, server: 42.193.179.124, request: "GET /work_test/ HTTP/1.1", host: "42.193.179.124"
+2021/06/21 22:18:30 [error] 1702920#1702920: *4 "/home/ubuntu/git/django_project/blog/templates/work_test/work_test/index2.html" is not found (2: No such file or directory), client: 218.13.14.197, server: 42.193.179.124, request: "GET /work_test/ HTTP/1.1", host: "42.193.179.124"
+2021/06/21 22:18:31 [error] 1702920#1702920: *4 "/home/ubuntu/git/django_project/blog/templates/work_test/work_test/index2.html" is not found (2: No such file or directory), client: 218.13.14.197, server: 42.193.179.124, request: "GET /work_test/ HTTP/1.1", host: "42.193.179.124"
+2021/06/21 22:18:31 [error] 1702920#1702920: *4 "/home/ubuntu/git/django_project/blog/templates/work_test/work_test/index2.html" is not found (2: No such file or directory), client: 218.13.14.197, server: 42.193.179.124, request: "GET /work_test/ HTTP/1.1", host: "42.193.179.124"
+2021/06/21 22:18:32 [error] 1702920#1702920: *4 "/home/ubuntu/git/django_project/blog/templates/work_test/work_test/index2.html" is not found (2: No such file or directory), client: 218.13.14.197, server: 42.193.179.124, request: "GET /work_test/ HTTP/1.1", host: "42.193.179.124"
+2021/06/21 22:23:37 [error] 1702920#1702920: *5 open() "/home/ubuntu/git/django_project/blog/templates/work_test/work_test" failed (2: No such file or directory), client: 218.13.14.197, server: 42.193.179.124, request: "GET /work_test HTTP/1.1", host: "42.193.179.124"
+2021/06/21 22:24:50 [error] 1703902#1703902: *6 open() "/home/ubuntu/git/django_project/blog/templates/work_test/index.html" failed (2: No such file or directory), client: 218.13.14.197, server: 42.193.179.124, request: "GET /work_test HTTP/1.1", host: "42.193.179.124"
+2021/06/21 22:24:51 [error] 1703902#1703902: *6 open() "/home/ubuntu/git/django_project/blog/templates/work_test/index.html" failed (2: No such file or directory), client: 218.13.14.197, server: 42.193.179.124, request: "GET /work_test HTTP/1.1", host: "42.193.179.124"
+2021/06/21 22:26:39 [error] 1704209#1704209: *7 open() "/home/ubuntu/git/django_project/blog/templates/work_test/" failed (2: No such file or directory), client: 218.13.14.197, server: 42.193.179.124, request: "GET /work_test HTTP/1.1", host: "42.193.179.124"
+2021/06/21 22:26:40 [error] 1704209#1704209: *7 open() "/home/ubuntu/git/django_project/blog/templates/work_test/" failed (2: No such file or directory), client: 218.13.14.197, server: 42.193.179.124, request: "GET /work_test HTTP/1.1", host: "42.193.179.124"
+2021/06/21 22:26:44 [error] 1704209#1704209: *7 directory index of "/home/ubuntu/git/django_project/collected_static//" is forbidden, client: 218.13.14.197, server: 42.193.179.124, request: "GET /static/ HTTP/1.1", host: "42.193.179.124"
+2021/06/21 22:26:57 [error] 1704209#1704209: *7 "/home/ubuntu/git/django_project/blog/templates/work_test//index.html" is not found (2: No such file or directory), client: 218.13.14.197, server: 42.193.179.124, request: "GET /work_test/ HTTP/1.1", host: "42.193.179.124"
+2021/06/21 22:29:38 [error] 1704209#1704209: *9 "/home/ubuntu/git/django_project/blog/templates/work_test//index.html" is not found (2: No such file or directory), client: 218.13.14.197, server: 42.193.179.124, request: "GET /work_test/ HTTP/1.1", host: "42.193.179.124"
+2021/06/21 22:29:40 [error] 1704209#1704209: *9 "/home/ubuntu/git/django_project/blog/templates/work_test//index.html" is not found (2: No such file or directory), client: 218.13.14.197, server: 42.193.179.124, request: "GET /work_test/ HTTP/1.1", host: "42.193.179.124"
+2021/06/21 22:30:01 [error] 1704209#1704209: *9 open() "/home/ubuntu/git/django_project/blog/templates/work_test//index.html" failed (2: No such file or directory), client: 218.13.14.197, server: 42.193.179.124, request: "GET /work_test/index.html HTTP/1.1", host: "42.193.179.124"
+2021/06/21 22:30:04 [error] 1704209#1704209: *9 open() "/home/ubuntu/git/django_project/blog/templates/work_test//index.html" failed (2: No such file or directory), client: 218.13.14.197, server: 42.193.179.124, request: "GET /work_test/index.html HTTP/1.1", host: "42.193.179.124"
+2021/06/21 22:30:06 [error] 1704209#1704209: *9 open() "/home/ubuntu/git/django_project/blog/templates/work_test//index.html" failed (2: No such file or directory), client: 218.13.14.197, server: 42.193.179.124, request: "GET /work_test/index.html HTTP/1.1", host: "42.193.179.124"
+2021/06/21 22:30:25 [error] 1704830#1704830: *10 open() "/home/ubuntu/git/django_project/blog/templates/work_test/index.html" failed (2: No such file or directory), client: 218.13.14.197, server: 42.193.179.124, request: "GET /work_test/index.html HTTP/1.1", host: "42.193.179.124"
+2021/06/21 22:30:26 [error] 1704830#1704830: *10 open() "/home/ubuntu/git/django_project/blog/templates/work_test/index.html" failed (2: No such file or directory), client: 218.13.14.197, server: 42.193.179.124, request: "GET /work_test/index.html HTTP/1.1", host: "42.193.179.124"
+2021/06/21 22:31:10 [error] 1704934#1704934: *11 open() "/home/ubuntu/git/django_project/blog/templates/work_test/work_test/index.html" failed (2: No such file or directory), client: 218.13.14.197, server: 42.193.179.124, request: "GET /work_test/index.html HTTP/1.1", host: "42.193.179.124"
+2021/06/21 22:31:19 [error] 1704934#1704934: *11 "/home/ubuntu/git/django_project/blog/templates/work_test/work_test/index2.html" is not found (2: No such file or directory), client: 218.13.14.197, server: 42.193.179.124, request: "GET /work_test/ HTTP/1.1", host: "42.193.179.124"
+2021/06/21 22:31:56 [error] 1705054#1705054: *14 open() "/home/ubuntu/git/django_project/blog/templates/work_test/work_test" failed (2: No such file or directory), client: 218.13.14.197, server: 42.193.179.124, request: "GET /work_test HTTP/1.1", host: "42.193.179.124"
+2021/06/21 22:31:57 [error] 1705054#1705054: *14 open() "/home/ubuntu/git/django_project/blog/templates/work_test/work_test" failed (2: No such file or directory), client: 218.13.14.197, server: 42.193.179.124, request: "GET /work_test HTTP/1.1", host: "42.193.179.124"
+2021/06/21 22:31:58 [error] 1705054#1705054: *14 open() "/home/ubuntu/git/django_project/blog/templates/work_test/work_test" failed (2: No such file or directory), client: 218.13.14.197, server: 42.193.179.124, request: "GET /work_test HTTP/1.1", host: "42.193.179.124"
+2021/06/21 22:32:05 [error] 1705054#1705054: *14 open() "/home/ubuntu/git/django_project/blog/templates/work_test/work_test/index.html" failed (2: No such file or directory), client: 218.13.14.197, server: 42.193.179.124, request: "GET /work_test/index.html HTTP/1.1", host: "42.193.179.124"
+2021/06/21 22:32:38 [error] 1705178#1705178: *15 open() "/home/ubuntu/git/django_project/blog/templates/work_test//index.html" failed (2: No such file or directory), client: 218.13.14.197, server: 42.193.179.124, request: "GET /work_test/index.html HTTP/1.1", host: "42.193.179.124"
+2021/06/21 22:32:39 [error] 1705178#1705178: *15 open() "/home/ubuntu/git/django_project/blog/templates/work_test//index.html" failed (2: No such file or directory), client: 218.13.14.197, server: 42.193.179.124, request: "GET /work_test/index.html HTTP/1.1", host: "42.193.179.124"
+2021/06/21 22:32:43 [error] 1705178#1705178: *15 open() "/home/ubuntu/git/django_project/blog/templates/work_test/" failed (2: No such file or directory), client: 218.13.14.197, server: 42.193.179.124, request: "GET /work_test HTTP/1.1", host: "42.193.179.124"
+2021/06/21 22:32:46 [error] 1705178#1705178: *15 "/home/ubuntu/git/django_project/blog/templates/work_test//index.html" is not found (2: No such file or directory), client: 218.13.14.197, server: 42.193.179.124, request: "GET /work_test/ HTTP/1.1", host: "42.193.179.124"
+2021/06/21 22:32:53 [error] 1705178#1705178: *15 open() "/home/ubuntu/git/django_project/blog/templates/work_test//index.html" failed (2: No such file or directory), client: 218.13.14.197, server: 42.193.179.124, request: "GET /work_test/index.html HTTP/1.1", host: "42.193.179.124"
+2021/06/21 22:33:58 [error] 1705368#1705368: *16 "/home/ubuntu/git/django_project/blog/templates/work_test/index.html" is not found (2: No such file or directory), client: 218.13.14.197, server: 42.193.179.124, request: "GET / HTTP/1.1", host: "42.193.179.124"
+2021/06/21 22:34:04 [error] 1705368#1705368: *16 "/home/ubuntu/git/django_project/blog/templates/work_test/video/index.html" is not found (2: No such file or directory), client: 218.13.14.197, server: 42.193.179.124, request: "GET /video/ HTTP/1.1", host: "42.193.179.124"
+2021/06/21 22:34:07 [error] 1705368#1705368: *16 open() "/home/ubuntu/git/django_project/blog/templates/work_test/html" failed (2: No such file or directory), client: 218.13.14.197, server: 42.193.179.124, request: "GET /html HTTP/1.1", host: "42.193.179.124"
+2021/06/21 22:34:13 [error] 1705368#1705368: *16 open() "/home/ubuntu/git/django_project/blog/templates/work_test/index.html" failed (2: No such file or directory), client: 218.13.14.197, server: 42.193.179.124, request: "GET /index.html HTTP/1.1", host: "42.193.179.124"
+2021/06/21 22:34:54 [error] 1705519#1705519: *17 open() "/home/ubuntu/git/django_project/blog/templates/work_test/_test/index.html" failed (2: No such file or directory), client: 218.13.14.197, server: 42.193.179.124, request: "GET /work_test/index.html HTTP/1.1", host: "42.193.179.124"
+2021/06/21 22:34:55 [error] 1705519#1705519: *17 open() "/home/ubuntu/git/django_project/blog/templates/work_test/_test/index.html" failed (2: No such file or directory), client: 218.13.14.197, server: 42.193.179.124, request: "GET /work_test/index.html HTTP/1.1", host: "42.193.179.124"
+2021/06/21 22:35:02 [error] 1705519#1705519: *17 open() "/home/ubuntu/git/django_project/collected_static//plugins/hammer/hammer.min.js.map" failed (2: No such file or directory), client: 218.13.14.197, server: 42.193.179.124, request: "GET /static/plugins/hammer/hammer.min.js.map HTTP/1.1", host: "42.193.179.124"
+2021/06/21 22:35:09 [error] 1705519#1705519: *17 open() "/home/ubuntu/git/django_project/blog/templates/work_test//index.html" failed (2: No such file or directory), client: 218.13.14.197, server: 42.193.179.124, request: "GET /work/index.html HTTP/1.1", host: "42.193.179.124"
+2021/06/21 22:35:12 [error] 1705519#1705519: *17 open() "/home/ubuntu/git/django_project/blog/templates/work_test//index.html" failed (2: No such file or directory), client: 218.13.14.197, server: 42.193.179.124, request: "GET /work/index.html HTTP/1.1", host: "42.193.179.124"
+2021/06/21 22:44:06 [info] 1705519#1705519: *42 client 218.13.14.216 closed keepalive connection
+2021/06/21 22:44:06 [info] 1705519#1705519: *41 client 218.13.14.216 closed keepalive connection
+2021/06/21 22:44:06 [info] 1705519#1705519: *40 client 218.13.14.216 closed keepalive connection
+2021/06/21 22:44:07 [info] 1705519#1705519: *43 client 218.13.14.216 closed keepalive connection
+2021/06/21 22:55:08 [info] 1708247#1708247: *57 client 151.20.179.5 closed keepalive connection (104: Connection reset by peer)
+2021/06/21 23:41:48 [info] 1708247#1708247: *84 client 116.233.202.201 closed keepalive connection
+2021/06/21 23:41:48 [info] 1708247#1708247: *80 client 116.233.202.201 closed keepalive connection
+2021/06/21 23:41:48 [info] 1708247#1708247: *82 client 116.233.202.201 closed keepalive connection (104: Connection reset by peer)
+2021/06/21 23:41:48 [info] 1708247#1708247: *86 client 116.233.202.201 closed keepalive connection (104: Connection reset by peer)
+2021/06/21 23:41:51 [info] 1708247#1708247: *94 client 116.233.202.201 closed keepalive connection (104: Connection reset by peer)
+2021/06/21 23:41:51 [info] 1708247#1708247: *92 client 116.233.202.201 closed keepalive connection (104: Connection reset by peer)
+2021/06/21 23:41:51 [info] 1708247#1708247: *96 client 116.233.202.201 closed keepalive connection (104: Connection reset by peer)
+2021/06/21 23:41:51 [info] 1708247#1708247: *88 client 116.233.202.201 closed keepalive connection
+2021/06/21 23:41:51 [info] 1708247#1708247: *90 client 116.233.202.201 closed keepalive connection (104: Connection reset by peer)
+2021/06/21 23:41:52 [info] 1708247#1708247: *100 client 116.233.202.201 closed keepalive connection (104: Connection reset by peer)
+2021/06/21 23:41:54 [info] 1708247#1708247: *98 client 116.233.202.201 closed keepalive connection (104: Connection reset by peer)
+2021/06/22 00:00:20 [info] 1708247#1708247: *102 client 192.241.214.124 closed keepalive connection
+2021/06/22 00:31:17 [info] 1708247#1708247: *104 client 183.27.197.50 closed keepalive connection
+2021/06/22 00:31:17 [info] 1708247#1708247: *106 client 183.27.197.50 closed keepalive connection
+2021/06/22 00:46:09 [info] 1708247#1708247: *108 client 31.179.158.82 closed keepalive connection
+2021/06/22 01:14:56 [info] 1708247#1708247: *112 client 128.14.134.170 closed keepalive connection
+2021/06/22 01:31:15 [info] 1708247#1708247: *114 client 113.96.246.184 closed keepalive connection
+2021/06/22 01:38:26 [info] 1708247#1708247: *115 client 123.131.206.229 closed keepalive connection
+2021/06/22 01:42:30 [info] 1708247#1708247: *117 client 193.46.254.155 closed keepalive connection
+2021/06/22 04:03:40 [info] 1708247#1708247: *142 client 14.215.156.142 closed keepalive connection
+2021/06/22 04:52:31 [info] 1708247#1708247: *144 client 78.137.75.1 closed keepalive connection
+2021/06/22 08:36:29 [info] 1708247#1708247: *162 client 95.73.150.9 closed keepalive connection
