@@ -1,7 +1,7 @@
 /**
  * @fileoverview meiju use bridge
  */
-import $ from 'jquery';
+// import $ from 'jquery';
 
 var mdSmartios = mdSmartios || {};
 (function(mdSmartios) {
@@ -1517,75 +1517,75 @@ var mdSmartios = mdSmartios || {};
     mdSmartios.bridge.callbackFunctions = {};
     mdSmartios.bridge.callbackFailFunctions = {};
     mdSmartios.bridge.setCardTitleCBF = undefined;
-    //卡片的标题(IOS调用：回复getCardTitle)
-    mdSmartios.bridge.setCardTitle = function(message) {
-        var jsonResult = JSON.parse(message);
-        if ( typeof mdSmartios.bridge.setCardTitleCBF == "function") {
-            mdSmartios.bridge.setCardTitleCBF(jsonResult.messageBody);
-        }
-        $('#loadingPopup>span').html(jsonResult.messageBody);
-    };
-    //设备主动上报的消息(IOS调用：主动发起)
-    //电控主动上报
-    mdSmartios.bridge.recieveMessage = function(message) {
-        var jsonResult = JSON.parse(message);
-        if(jsonResult.deviceId) {
-            $.event.trigger("recieveMessage", [jsonResult]);
-        } else {
-            $.event.trigger("recieveMessage", [jsonResult.messageBody]);
-        }
-    };
+    // //卡片的标题(IOS调用：回复getCardTitle)
+    // mdSmartios.bridge.setCardTitle = function(message) {
+    //     var jsonResult = JSON.parse(message);
+    //     if ( typeof mdSmartios.bridge.setCardTitleCBF == "function") {
+    //         mdSmartios.bridge.setCardTitleCBF(jsonResult.messageBody);
+    //     }
+    //     $('#loadingPopup>span').html(jsonResult.messageBody);
+    // };
+    // //设备主动上报的消息(IOS调用：主动发起)
+    // //电控主动上报
+    // mdSmartios.bridge.recieveMessage = function(message) {
+    //     var jsonResult = JSON.parse(message);
+    //     if(jsonResult.deviceId) {
+    //         $.event.trigger("recieveMessage", [jsonResult]);
+    //     } else {
+    //         $.event.trigger("recieveMessage", [jsonResult.messageBody]);
+    //     }
+    // };
 
-    /**
-     * APP主动触发JS事件 - 2018/04/10
-     * @return {JSONObject} message APP向JS传递的JSON对象
-     *         {
-     *              messageType: {string} H5用来判断消息类型，然后做相对应的处理
-     *              messageBody: {....} APP传递的JSON对象
-     *         }
-     */
-    mdSmartios.bridge.receiveMessageFromApp = function (message) {
-        var jsonResult = message
-        try {
-            jsonResult = JSON.parse(jsonResult);
-        } catch (error) {
-        }
-        $.event.trigger("receiveMessageFromApp", [jsonResult]);
-    };
+    // /**
+    //  * APP主动触发JS事件 - 2018/04/10
+    //  * @return {JSONObject} message APP向JS传递的JSON对象
+    //  *         {
+    //  *              messageType: {string} H5用来判断消息类型，然后做相对应的处理
+    //  *              messageBody: {....} APP传递的JSON对象
+    //  *         }
+    //  */
+    // mdSmartios.bridge.receiveMessageFromApp = function (message) {
+    //     var jsonResult = message
+    //     try {
+    //         jsonResult = JSON.parse(jsonResult);
+    //     } catch (error) {
+    //     }
+    //     $.event.trigger("receiveMessageFromApp", [jsonResult]);
+    // };
 
-    //lua主动上报
-    mdSmartios.bridge.luaRecieveMessage = function(message) {
-        var jsonResult = JSON.parse(message);
-        $.event.trigger("luaRecieveMessage", [jsonResult.messageBody]);
-    };
+    // //lua主动上报
+    // mdSmartios.bridge.luaRecieveMessage = function(message) {
+    //     var jsonResult = JSON.parse(message);
+    //     $.event.trigger("luaRecieveMessage", [jsonResult.messageBody]);
+    // };
 
-    //门锁 主动上报
-    mdSmartios.bridge.recieveMessageV2 = function(message) {
-        var jsonResult = JSON.parse(message);
-        $.event.trigger("recieveMessageV2", [jsonResult.messageBody]);
-    };
+    // //门锁 主动上报
+    // mdSmartios.bridge.recieveMessageV2 = function(message) {
+    //     var jsonResult = JSON.parse(message);
+    //     $.event.trigger("recieveMessageV2", [jsonResult.messageBody]);
+    // };
 
-    mdSmartios.bridge.recieveAPNS = function(message) {
-        var jsonTemp = JSON.parse(message);
-        var messageBody = JSON.stringify(jsonTemp.messageBody);
-        $.event.trigger("recieveAPNS", messageBody);
-    };
+    // mdSmartios.bridge.recieveAPNS = function(message) {
+    //     var jsonTemp = JSON.parse(message);
+    //     var messageBody = JSON.stringify(jsonTemp.messageBody);
+    //     $.event.trigger("recieveAPNS", messageBody);
+    // };
 
-    //设备返回的消息(IOS调用：主动发起)
-    mdSmartios.bridge.updateCard = function(message) {
-        var jsonResult = JSON.parse(message);
-        $.event.trigger("updateCard", [jsonResult.messageBody]);
-    };
+    // //设备返回的消息(IOS调用：主动发起)
+    // mdSmartios.bridge.updateCard = function(message) {
+    //     var jsonResult = JSON.parse(message);
+    //     $.event.trigger("updateCard", [jsonResult.messageBody]);
+    // };
 
-    mdSmartios.bridge.update = function(message) {
-        var jsonResult = JSON.parse(message);
-        $.event.trigger("updateCard", [jsonResult.messageBody]);
-    };
+    // mdSmartios.bridge.update = function(message) {
+    //     var jsonResult = JSON.parse(message);
+    //     $.event.trigger("updateCard", [jsonResult.messageBody]);
+    // };
 
-    //更新界面时机(针对管家插件 单品跳转后返回时机)
-    mdSmartios.bridge.updatePlug = function() {
-        $.event.trigger("updatePlug");
-    };
+    // //更新界面时机(针对管家插件 单品跳转后返回时机)
+    // mdSmartios.bridge.updatePlug = function() {
+    //     $.event.trigger("updatePlug");
+    // };
 
     //直接返回值(IOS赋值：回复JS所有类型请求（startCmdProcess：命令id，getLangCode：语言code）)
     mdSmartios.bridge.retObjcValue = 0;
@@ -2647,26 +2647,26 @@ var mdSmartios = mdSmartios || {};
     }
 
     //VoiceCube 音量变化, volumn 是int值
-    mdSmartios.bridge.voiceChanged = function(volumn) {
-        console.log("function:mdSmartios.bridge.voiceChanged");
-        $.event.trigger("voiceChanged", volumn);
-    };
+    // mdSmartios.bridge.voiceChanged = function(volumn) {
+    //     console.log("function:mdSmartios.bridge.voiceChanged");
+    //     $.event.trigger("voiceChanged", volumn);
+    // };
 
     //VoiceCube 识别成功,  result是json object
     /**
      *示例：
      {"service":"cn.yunzhisheng.smartfridge","history":"cn.yunzhisheng.smartfridge","code":"PUT_IN","semantic":{"intent":{"foods":[{"number":"1","unit":"个","food":"苹果"}]}},"rc":0,"text":"苹果一个","responseId":"c2323537ecbe475a88f20d9b3e7f7423"}
      **/
-    mdSmartios.bridge.voiceResult = function(result) {
-        console.log("function:mdSmartios.bridge.voiceResult");
-        $.event.trigger("voiceResult", result);
-    };
+    // mdSmartios.bridge.voiceResult = function(result) {
+    //     console.log("function:mdSmartios.bridge.voiceResult");
+    //     $.event.trigger("voiceResult", result);
+    // };
 
-    //VoiceCube 识别失败, error 失败原因String
-    mdSmartios.bridge.voiceFailed = function(error) {
-        console.log("function:mdSmartios.bridge.voiceFailed");
-        $.event.trigger("voiceFailed", error);
-    };
+    // //VoiceCube 识别失败, error 失败原因String
+    // mdSmartios.bridge.voiceFailed = function(error) {
+    //     console.log("function:mdSmartios.bridge.voiceFailed");
+    //     $.event.trigger("voiceFailed", error);
+    // };
 
     //打开网页， cmdParamers为网页url，如http://www.baidu.com
     mdSmartios.bridge.openWeb = function(url) {
