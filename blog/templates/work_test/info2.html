@@ -16,6 +16,7 @@
     <script type="text/javascript" src="js/flexible.js"></script>
     <script type="text/javascript" src="js/rolldate.min.js"></script>
     <script type="text/javascript" src="js/md5.js"></script>
+    <script type="text/javascript" src="js/iosbridge.min.js"></script>
     <style>
         html, body { height: auto; }
     </style>
@@ -78,12 +79,15 @@
     <script type="text/javascript" src="js/userInfo.js"></script>
     <script>
         function to_add(){
+            window.mdSmartios.bridge.buttonClickTracking("增加用户")
             window.location.href="info2_add.html?adduser="+1;
         }
 
         $("#show").click(function(){
+            window.mdSmartios.bridge.buttonClickTracking("历史记录")
             window.location.href="history.html?userenter="+1;
         })
+        window.mdSmartios.bridge.pageViewTracking("肌肤检测-用户信息页")
     </script>
 </body>
 

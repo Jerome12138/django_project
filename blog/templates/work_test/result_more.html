@@ -22,6 +22,7 @@
     <script type="text/javascript" src="js/flexible.js"></script>
     <script type="text/javascript" src="js/swiper.min.js"></script>
     <script type="text/javascript" src="js/md5.js"></script>
+    <script type="text/javascript" src="js/iosbridge.min.js"></script>
 </head>
 <body>
     <div class="around_fixed">
@@ -73,8 +74,10 @@
         window.location.href="history.html";
     })
     $(".to_test").click(function(){
+        window.mdSmartios.bridge.buttonClickTracking("再次测试")
         window.location.href="tips2.html";
     })
+    window.mdSmartios.bridge.pageViewTracking("肌肤检测-报告详情页")
 </script>
 </body>
 

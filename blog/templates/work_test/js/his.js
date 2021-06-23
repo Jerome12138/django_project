@@ -125,5 +125,6 @@ function getRecord(stattime,endtime){
 
 function updateResult(id){
     window.localStorage.setItem("resId",id);
+    window.mdSmartios.bridge.buttonClickTracking("查看报告")
     window.location.href="result.html";
 }

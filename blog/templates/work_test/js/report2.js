@@ -78,7 +78,7 @@ function showDetail(data,index){
     }
     for(var i=0;i<prodata.length;i++){
         pro_html+='<div class="recm_list flexCon"><div class="recm_pic"> <img src="'+prodata[i].image+'"/> </div><div class="recm_det flexCon"><div class="recm_det_name">'+prodata[i].name
-        +'</div><div class="recm_det_tag"><span>过滤余氟</span><span>无味</span></div><a class="recm_det_buy flexCon " href="'+prodata[i].url+'"> 去抢购</a></div></div>';
+        +'</div><div class="recm_det_tag"><span>过滤余氟</span><span>无味</span></div><div class="recm_det_buy flexCon" onclick="toBuy('+`'${prodata[i].url}','${prodata[i].name}'`+')"> 去抢购</div></div></div>';
     }
 
     var all_html='<div class="dims_area mar69"><div class="level_status"><div class="status_top_left bigger_title"><span class="iconfont icon-zhuangtai"></span>'+data.name+
@@ -94,4 +94,7 @@ function showDetail(data,index){
     
 }
 
-
+function toBuy(url,name){
+    window.mdSmartios.bridge.goToMeijuPage("jumpElecBusiness",{"url":url})
+    window.mdSmartios.bridge.buttonClickTracking("去购买",{"url":url,"name":name})
+}

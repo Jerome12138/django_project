@@ -83,26 +83,6 @@ function getsecondTab() {
     showDetail(HeiTou);
 
 }
-/**
- * 事件埋点
- * @param param
- */
-function eventTracking(param=""){
-  let self = this
-  if (this.isMeiju) {
-    let eventTrackingParams = {
-      event: 'plugin_button_click',
-      eventParams: {
-        module: '插件',
-        bd_name: '厨热',
-        page_name:  `肌肤管家`,
-        element_content: param}
-    }
-
-    window.mdSmartios.bridge.trackEvent(eventTrackingParams)
-  } 
-}
-
 function showDetail(data){
     $(".now").css("left",(100-data.score)+"%");
     $(".pro_desc").html(data.description);
@@ -117,14 +97,13 @@ function showDetail(data){
     var prodata= data.product;
     for(var i=0;i<prodata.length;i++){
         pro_html+='<div class="recm_list flexCon"><div class="recm_pic"> <img src="'+prodata[i].image+'"/> </div><div class="recm_det flexCon"><div class="recm_det_name">'+prodata[i].name
-        +'</div><div class="recm_det_tag"><span>过滤余氟</span><span>无味</span></div><a class="recm_det_buy flexCon" onclick="tobuy('+"'"+prodata[i].url+"'"+')"> 去抢购</a></div></div>';
+        +'</div><div class="recm_det_tag"><span>过滤余氟</span><span>无味</span></div><div class="recm_det_buy flexCon" onclick="toBuy('+`'${prodata[i].url}','${prodata[i].name}'`+')"> 去抢购</div></div></div>';
     }
     $(".recm_title").after(pro_html);
     
 }
 
-function tobuy(url){
-    url = "https://www.midea.cn/10162/1000000000100511173930.html"
+function toBuy(url,name){
     window.mdSmartios.bridge.goToMeijuPage("jumpElecBusiness",{"url":url})
-    eventTracking("去购买")
+    window.mdSmartios.bridge.buttonClickTracking("去购买",{"url":url,"name":name})
 }

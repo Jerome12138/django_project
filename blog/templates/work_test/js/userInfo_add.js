@@ -38,6 +38,7 @@ $(function() {
 })
 
 function sub_info() {
+    window.mdSmartios.bridge.buttonClickTracking("开始测试")
     age = $("#age").val();nickName = $("#nickName").val();
     
     console.log(age,nickName,gender);

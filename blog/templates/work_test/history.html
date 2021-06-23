@@ -16,6 +16,7 @@
     <script type="text/javascript" src="js/jquery-2.1.3.min.js"></script>
     <script type="text/javascript" src="js/rolldate.min.js"></script>
     <script type="text/javascript" src="js/flexible.js"></script>
+    <script type="text/javascript" src="js/iosbridge.min.js"></script>
     <style> html, body { height: auto; } </style>
 </head>
 
@@ -35,8 +36,10 @@
     <script type="text/javascript" src="js/his.js"></script>
     <script>
         $(".his_test_again").click(function(){
+            window.mdSmartios.bridge.buttonClickTracking("再测一次")
             window.location.href = "tips2.html";
         })
+        window.mdSmartios.bridge.pageViewTracking("肌肤检测-历史记录页")
     </script>
 </body>
 </html>

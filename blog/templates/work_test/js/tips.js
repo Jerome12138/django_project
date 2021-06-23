@@ -24,6 +24,7 @@ $(".iosP").on("change", function() {
 })
 
 $('.to_a').on('click', function() {
+    window.mdSmartios.bridge.buttonClickTracking("确定")
     $(".if_not").css("display", "none");
     $(".ana_container").css("display", "flex");
     var id = window.localStorage.getItem("id");
@@ -87,6 +88,7 @@ $('.to_a').on('click', function() {
 $(".reShot").on('click', function() {
         $(".take_photo").css("display", "none");
         $(".user_container").css("display", "flex");
+        window.mdSmartios.bridge.buttonClickTracking("重拍")
         window.location.reload();
     })
     //未识别到人脸重拍
