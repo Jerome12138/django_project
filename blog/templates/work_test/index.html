@@ -16,6 +16,7 @@
     <script type="text/javascript" src="js/apng-canvas.min.js"></script>
     <script type="text/javascript" src="js/flexible.js"></script>
     <script type="text/javascript" src="js/md5.js"></script>
+    <script type="text/javascript" src="bridge.min.js"></script>
     <script type="text/javascript" src="./iosbridge.js"></script>
 </head>
 
@@ -34,7 +35,8 @@
     </div>
     <script type="module">
         function begin(){
-            window.location.href="info2.html";
+            window.mdSmartios.bridge.takePhoto({"compressRage": 100,"type": "jpg","isNeedBase64": true},res=>{window.mdSmartios.bridge.showAlert({message:res})})
+            // window.location.href="info2.html";
         }
         var token = 208;
         function getQueryVariable(variable){
@@ -57,7 +59,7 @@
                 for (var i = 0; i < images.length; i++) APNG.animateImage(images[i]);
             });
         });
-        window.mdSmartios.bridge.showAlert("123")
+        // window.mdSmartios.bridge.showAlert("123")
 	// console.log("test");
 	// import test from "./test.js"
 	// console.log(test)
