@@ -97,10 +97,12 @@ function showDetail(data){
     var prodata= data.product;
     for(var i=0;i<prodata.length;i++){
         pro_html+='<div class="recm_list flexCon"><div class="recm_pic"> <img src="'+prodata[i].image+'"/> </div><div class="recm_det flexCon"><div class="recm_det_name">'+prodata[i].name
-        +'</div><div class="recm_det_tag"><span>过滤余氟</span><span>无味</span></div><a class="recm_det_buy flexCon" href="'+prodata[i].url+'"> 去抢购</a></div></div>';
+        +'</div><div class="recm_det_tag"><span>过滤余氟</span><span>无味</span></div><a class="recm_det_buy flexCon" onclick="tobuy('+prodata[i].url+')"> 去抢购</a></div></div>';
     }
     $(".recm_title").after(pro_html);
     
 }
 
-
+function tobuy(url){
+    window.mdSmartios.bridge.goToMeijuPage("jumpWebview",{url:url})
+}
