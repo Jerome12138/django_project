@@ -106,6 +106,13 @@
     <script type="text/javascript" src="js/tips.js"></script>
     <script>
         window.mdSmartios.bridge.pageViewTracking("肌肤检测-注意事项页")
+        if (window.mdSmartios.bridge.isAndroid) {
+            $(".begin_button").click(() => {
+                window.mdSmartios.bridge.takePhoto({"compressRage": 0,"type": "png","isNeedBase64": true},res=>{
+                    window.mdSmartios.bridge.showAlert(res.data)
+                })
+            })
+        }
     </script>
 </body>
 
