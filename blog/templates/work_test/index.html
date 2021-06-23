@@ -16,8 +16,6 @@
     <script type="text/javascript" src="js/apng-canvas.min.js"></script>
     <script type="text/javascript" src="js/flexible.js"></script>
     <script type="text/javascript" src="js/md5.js"></script>
-    <script type="text/javascript" src="bridge.min.js"></script>
-    <script type="text/javascript" src="./iosbridge.js"></script>
 </head>
 
 <body>
@@ -33,12 +31,9 @@
             <div class="begin_tips flexCon"><img class="agree_radio" src="images/gou.png">我已阅读AI肌肤测试的<a href="">用户协议</a>和<a href="">隐私政策</a></div>
         </div>
     </div>
-    <script type="module">
-        function begin(){
-            window.mdSmartios.bridge.takePhoto({"compressRage": 100,"type": "jpg","isNeedBase64": true},res=>{window.mdSmartios.bridge.showAlert({message:res})})
-            // window.location.href="info2.html";
-        }
-        var token = 208;
+    <script>
+        function begin(){ window.location.href="info2.html"; }
+        var uid;
         function getQueryVariable(variable){
             var query = window.location.search.substring(1);
             var vars = query.split("&");
@@ -52,17 +47,8 @@
             uid = getQueryVariable("uid");
             console.log("uid",uid);
         }
-        // window.localStorage.setItem("uid",uid);
-        $(function(){
-            APNG.ifNeeded().then(function(){
-                var images = document.querySelectorAll("img");
-                for (var i = 0; i < images.length; i++) APNG.animateImage(images[i]);
-            });
-        });
-        // window.mdSmartios.bridge.showAlert("123")
-	// console.log("test");
-	// import test from "./test.js"
-	// console.log(test)
+        window.localStorage.setItem("uid",uid);
+        $(".agree_radio").click(function(){})
     </script>
 </body>
 

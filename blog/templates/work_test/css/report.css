@@ -846,6 +846,7 @@ body {
     border: 2px solid #fff;
     position: absolute;
     border-radius: 50%;
+    margin-left:0.15rem;
 }
 
 .level_where .lc {

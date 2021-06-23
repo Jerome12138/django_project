@@ -3,7 +3,7 @@ document.addEventListener('WeixinJSBridgeReady', function onBridgeReady() {
     WeixinJSBridge.call('hideOptionMenu');
 });
 
-var gender = '2',age = "",nickName = '',storage = window.localStorage,uid = storage.getItem('uid'),result,deleteId;
+var gender = '2',age = "",nickName = '',ulistId,storage = window.localStorage,uid = storage.getItem('uid'),result,deleteId;
 
 function cur_list(index,e){
     $(".cus_list").removeClass("current"); $(e).addClass("current");
@@ -12,14 +12,17 @@ function cur_list(index,e){
     $(".op_sub").css("display","none");
     if(index=='0'){
         $(".op_edit2").css("display","none");
-        $(".op_edit").css("display","flex");
+        $(".other_edit").css("display","none");
+        $(".main_edit").css("display","block");
+        $(".op_begin").css("display","flex");
     }
     else{
-        $(".op_edit").css("display","none");
-        $(".op_edit2").css("display","flex");
+        $(".main_edit").css("display","none");
+        $(".other_edit").css("display","block");
+        $(".op_begin").css("display","flex");
     }
     $(".cover_edit").css("display","block");
-    if(result.length>0){
+    if( result.length > 0 ){
         var now_person = result[parseInt(index)];
         deleteId = now_person.uinfoid;
         $("#nickName").val(now_person.nickname);
@@ -34,15 +37,25 @@ function cur_list(index,e){
 }
 //点击编辑按钮
 $(".edit_change").click(function(){
-    $(".op_edit").css("display","none");
-    $(".op_edit2").css("display","none");
-    $(".edit_sure").css("display","flex");
     $(".cover_edit").css("display","none");
-})
-$(".edit_yes").click(function(){
-    $(".edit_sure").css("display","none");
+    $(".op_edit2").css("display","none");
     $(".op_sub").css("display","flex");
 })
+$(".main_edit").click(function(){
+    $(".cover_edit").css("display","none");
+    $(".op_begin").css("display","none");
+    $(".op_sub").css("display","flex");
+})
+
+$(".other_edit").click(function(){
+    // $(".cover_edit").css("display","none");
+    $(".op_edit2").css("display","flex");
+    $(".op_begin").css("display","none");
+})
+// $(".edit_yes").click(function(){
+//     $(".edit_sure").css("display","none");
+//     $(".op_sub").css("display","flex");
+// })
 
 function gender_chose(index){
     gender = index;
@@ -50,42 +63,68 @@ function gender_chose(index){
     $(".gder"+index).addClass("slide_now");
     $(".now_gender").attr("src","images/gender"+index+".png")
 }
-function haveHistory(cs){
+function haveHistory(id){
     $.ajax({
         type: "POST",
-        url: "http://skin-check-api.midea-hotwater.com/midea/get_record",
+        url: "https://skin-check-api.midea-hotwater.com/midea/get_record",
         dataType: "json",
         contentType: "application/x-www-form-urlencoded",
         headers: {},
-        data: {"uinfoid":cs,"page":1},
+        data: {"uinfoid":id,"page":1},
         success: function(a) {
             a = JSON.parse(a);
             if(a.data.record.length>0){
                 $(".customer_record").attr("id","show")
+            }else{
+                $(".customer_record").attr("id","not_show")
             }
-            console.log("历史记录",a);
+            // console.log("历史记录",a);
         },error: function(a) {
             console.log(JSON.stringify(a))
         }
     })
 }
-
+$.ajax({
+    type: "POST",
+    url: "https://skin-check-api.midea-hotwater.com/midea/phone",
+    dataType: "json",
+    contentType: "application/x-www-form-urlencoded",
+    headers: {},
+    data: { "openid":uid },
+    success: function(a) {
+        a = JSON.parse(a);  console.log(a);
+        if (a.code == 200) {
+            if(a.data.userinfo.nickname==""||a.data.userinfo==""){
+                window.location.href="info2_add.html";   //新用户注册
+            }else{
+                ulistId = a.data.userinfo.uid;
+                storage.setItem("ulistId", ulistId);
+                getUser();
+            }
+        } else {
+            console.log(a.message);
+        }
+    },
+    error: function(a) {
+        console.log(JSON.stringify(a))
+    }
+})
 
 function getUser(){
     $.ajax({
         type: "POST",
-        url: "http://skin-check-api.midea-hotwater.com/midea/getrexuser",
+        url: "https://skin-check-api.midea-hotwater.com/midea/getrexuser",
         dataType: "json",
         contentType: "application/x-www-form-urlencoded",
         headers: {},
-        data: { "uid": uid, },
+        data: { "uid": ulistId, },
         success: function(a) {
             console.log(JSON.parse(a));
             a =JSON.parse(a);
             if(a.code=="200"){
                 var userList = a.data.userlist;
                 result = a.data.userlist;
-                var userhtml='';
+                var userhtml = '';
                 if(userList.length>0){
                     cur_list(0);//默认用户信息读取
                     for(var i=0;i<userList.length;i++){
@@ -99,7 +138,7 @@ function getUser(){
                     }
                     $(".cus_scroll").append(userhtml);
                 }else{
-                    window.location.href="info2_add.html";
+                    
                 }
             }
         },
@@ -121,7 +160,7 @@ $(function() {
     })
 })
 
-getUser();
+
 
 
 function sub_info() {
@@ -135,12 +174,12 @@ function sub_info() {
     } else {
         $.ajax({
             type: "POST",
-            url: "http://skin-check-api.midea-hotwater.com/midea/updateUserInfo",
+            url: "https://skin-check-api.midea-hotwater.com/midea/updateUserInfo",
             dataType: "json",
             contentType: "application/x-www-form-urlencoded",
             headers: {},
             data: {
-                "headimg":"", "uinfoid":deleteId,"uid":uid,"gender":gender,"birthday":age,"nickname":nickName
+                "headimg":"", "uinfoid":deleteId,"uid":ulistId,"gender":gender,"birthday":age,"nickname":nickName
             },
             success: function(a) {
                 a = JSON.parse(a);
@@ -163,7 +202,7 @@ function sub_info() {
 function delete2(){
     $.ajax({
         type: "POST",
-        url: "http://skin-check-api.midea-hotwater.com/midea/delrexuser",
+        url: "https://skin-check-api.midea-hotwater.com/midea/delrexuser",
         dataType: "json",
         contentType: "application/x-www-form-urlencoded",
         headers: {},

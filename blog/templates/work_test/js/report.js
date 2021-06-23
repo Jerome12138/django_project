@@ -1,11 +1,11 @@
 var openid = window.localStorage.getItem("openid");
 var id = window.localStorage.getItem("resId");
 var uinfoid = window.localStorage.getItem("uinfoid");
-var res,firstData,secondData,faceAll;
+var res,firstData,secondData,faceAll,analyse;
 
 $.ajax({
     type: "POST",
-    url: 'http://skin-check-api.midea-hotwater.com/midea/get_result',
+    url: 'https://skin-check-api.midea-hotwater.com/midea/get_result',
     dataType: "json",
     contentType: "application/x-www-form-urlencoded",
     headers: {},
@@ -15,7 +15,7 @@ $.ajax({
     },
     success: function(re) {
         res = JSON.parse(re);
-        console.log("结果",res);
+        console.log("result",res);
         firstData = res.multiple;
         faceAll = res.face;
         secondData = res.dimension; //肌肤维度数据
@@ -28,6 +28,9 @@ $.ajax({
     }
 });
 
+function switchPic(){
+    $(".switch_img").toggleClass("show");
+}
 
 //综合
 function getFirstTab() {
@@ -37,11 +40,17 @@ function getFirstTab() {
     var skinScore = firstData.skin_info.skin_score;
     var skinType = firstData.skin_info.skin_type;
     $("#gender").attr("src","images/gender"+gender+".png");
+    // $(".problems_head").attr("src","images/pro_gender"+gender+".png");
     $(".det_time").html(firstData.skin_info.dateline);
     $(".det_name").html(skinName);
     $(".score_now").find("span").html(skinScore);
     $(".pro_now").find("span").html(skinType);
     $(".age_now").find("span").html(skinAge);
+
+    $(".switch_img.si1").attr("src",analyse.photo);
+    $(".si2").attr("src",secondData[9].label_img);
+    $(".si3").attr("src",secondData[3].label_img);
+    $(".si4").attr("src",secondData[4].label_img);
     
     // window.localStorage.setItem("face", analyse.photo);
     window.localStorage.setItem("skinAge", skinAge);

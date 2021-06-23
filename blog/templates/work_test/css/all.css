@@ -99,14 +99,50 @@ body {
     margin: 0.6rem auto 0.4rem;
     position: relative;
 }
+.switch_icon{
+    top:0.4rem;
+    right: 0.9rem;
+    width: 0.5rem;
+    position: absolute;
+}
+.switch_img{
+    top:0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 11;
+    margin: auto;
+    height: 4rem;
+    display: none;
+    border-radius: 0.1rem;
+    position: absolute;
+}
+.si2{
+    z-index: 22;
+}
+.si3{
+    z-index: 33;
+}
+.si4{
+    z-index: 44;
+}
+.show{
+    display: block;
+}
 .pro{
     width: 0.5rem;
     font-size: 0.24rem;
     color: #666666;
     position: absolute;
+    text-align: justify;
+}
+.pro span{
+    width: 100%;
+    text-align: center;
+    display: inline-block;
 }
 .problems_head{
-    width: 3rem;
+    height: 4rem;
 }
 .p1{
     left: 0;
@@ -120,11 +156,11 @@ body {
 }
 .p3{
     right: 1.2rem;
-    bottom: 0.3rem;
+    bottom: 0.15rem;
 }
 .p4{
     left: 1.2rem;
-    bottom: 0.3rem;
+    bottom: 0.15rem;
 }
 .p5{
     left: 0.8rem;

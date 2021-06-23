@@ -82,6 +82,7 @@
 }
 .problems_head{
     width: 2rem;
+    height: auto;
 }
 .none_data{
     color: #ccc;
@@ -189,11 +190,11 @@
     position: relative;
 }
 .cover_edit{
-    top:0;
     left:0;
     width: 100%;
-    height: 100%;
+    height: 2.8rem;
     z-index: 999;
+    bottom: 0;
     position: absolute;
 }
 .cus_nfo_head{
@@ -203,6 +204,7 @@
     border-radius: 50%;
     overflow: hidden;
     background: #F7F7FA;
+    position: relative;
     align-items: flex-start;
 }
 .cus_nfo_head img{
@@ -233,12 +235,18 @@
     color: #999999;
 }
 .icon-nv{
-    color: #F57CAC;
+    color: #999999;
 }
 
 .slide_now{
     color: #333333;
     background: #fff;
+}
+.slide_now .icon-nan{
+    color: #4EA8F2;
+}
+.slide_now .icon-nv{
+    color: #F57CAC;
 }
 
 .cus_info_inp{
@@ -259,7 +267,13 @@
     border-bottom: 1px solid #e5e5e5;
 }
 
-
+.edit_user{
+    top: 2.2rem;
+    right: 2rem;
+    bottom: 0;
+    width: 0.4rem;
+    position: absolute;
+}
 
 
 
@@ -406,8 +420,10 @@
 }
 
 #show{
-    display: flex;
+    /*display: flex;*/
+    opacity: 1;
 }
 #not_show{
-    display: none;
+    /*display: none;*/
+    opacity: 0;
 }

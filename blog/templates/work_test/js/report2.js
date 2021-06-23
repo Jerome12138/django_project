@@ -5,7 +5,7 @@ var res,firstData,secondData,faceAll;
 
 $.ajax({
     type: "POST",
-    url: 'http://skin-check-api.midea-hotwater.com/midea/get_result',
+    url: 'https://skin-check-api.midea-hotwater.com/midea/get_result',
     dataType: "json",
     contentType: "application/x-www-form-urlencoded",
     headers: {},

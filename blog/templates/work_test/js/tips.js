@@ -58,7 +58,7 @@ $('.to_a').on('click', function() {
     },6000)
     $.ajax({
         type: "POST",
-        url: 'http://skin-check-api.midea-hotwater.com/midea/analyse',
+        url: 'https://skin-check-api.midea-hotwater.com/midea/analyse',
         dataType: "json",
         contentType: false,
         processData: false,

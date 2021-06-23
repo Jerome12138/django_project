@@ -32,11 +32,13 @@
                     <span class="iconfont icon-xinjian"></span>
                 </div>
             </div>
-            <!-- <div class="customer_record mar69 flexCon" id="not_show" onclick="to_history()">历史记录<span class="iconfont icon-gengduo"></span></div> -->
+            <div class="customer_record mar69 flexCon" id="show">历史记录<span class="iconfont icon-gengduo"></span></div>
         </div>
 
         <div class="customer_info mar69">
-            <div class="cover_edit"></div>
+            <div class="cover_edit" style="display:none;"></div>
+            <img class="edit_user main_edit" src="images/edit.png">
+            <img class="edit_user other_edit" src="images/edit.png">
             <div class="cus_nfo_head flexCon">
                 <img class="now_gender" src="images/gender2.png">
             </div>
@@ -54,11 +56,11 @@
             </div>
             <div class="cus_info_inp flexCon">
                 <div class="info_inp_title" >年龄</div>
-                <input class="info_inp_enter" id="age" value="" placeholder="请输入年龄">
+                <input class="info_inp_enter" type="number" id="age" value="" maxlength='2' placeholder="请输入年龄">
             </div>
         </div>
         <div class="info_operate">
-            <div class="op_edit one_step flexCon edit_change">编辑</div>
+            <!-- <div class="op_edit one_step flexCon">编辑</div> -->
 
             <div class="op_edit2 op_sure flexCon" style="display:none;">
                 <div class="sure_yes flexCon edit_change">编辑</div>
@@ -69,15 +71,19 @@
                 <div class="sure_yes flexCon edit_yes">确认</div>
                 <div class="sure_no flexCon">取消</div>
             </div>
-
+            <div class="one_step flexCon op_begin" onclick="sub_info()">开始测试</div>
             <div class="op_sub one_step flexCon" style="display: none;" onclick="sub_info()">确认无误，下一步</div>
         </div>
     </div>
     <script type="text/javascript" src="js/userInfo.js"></script>
     <script>
         function to_add(){
-            window.location.href="info2_add.html";
+            window.location.href="info2_add.html?adduser="+1;
         }
+
+        $("#show").click(function(){
+            window.location.href="history.html?userenter="+1;
+        })
     </script>
 </body>
 
