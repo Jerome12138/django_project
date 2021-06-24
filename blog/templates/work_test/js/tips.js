@@ -109,20 +109,25 @@ function dataURLtoFile(dataurl, filename) {
     }
     return new File([u8arr], filename, {type:mime});
 }
-// 安卓兼容
-function takePhotoAndroid() {
-    window.mdSmartios.bridge.buttonClickTracking("开始拍摄")
-    window.mdSmartios.bridge.takePhoto({"compressRage": 50,"type": "jpg","isNeedBase64": true}, res=>{
-        // alert(JSON.stringify(res))
-        if (res.status == 0) {
-            var img_base64 = res.data
-            file_img = dataURLtoFile(img_base64, "photo.png")
-            $(".user_container").css("display", "none");
-            $(".take_photo").css("display", "block");
-            $(".getPic").attr("src", img_base64);
-            $(".getPicImg").css("opacity", "1");
-            document.title = '拍照';
-            $(".if_not").css("display", "flex");
-        }
+
+
+// 安卓webview bug兼容
+if (window.mdSmartios.bridge.isMeiju && window.mdSmartios.bridge.isAndroid) {
+    $("#ios11").css("display","none")
+    $(".begin_button").click(() => {
+        window.mdSmartios.bridge.buttonClickTracking("开始拍摄")
+        window.mdSmartios.bridge.takePhoto({"compressRage": 50,"type": "jpg","isNeedBase64": true}, res=>{
+            // alert(JSON.stringify(res))
+            if (res.status == 0) {
+                var img_base64 = res.data
+                file_img = dataURLtoFile(img_base64, "photo.png")
+                $(".user_container").css("display", "none");
+                $(".take_photo").css("display", "block");
+                $(".getPic").attr("src", img_base64);
+                $(".getPicImg").css("opacity", "1");
+                document.title = '拍照';
+                $(".if_not").css("display", "flex");
+            }
+        })
     })
 }
