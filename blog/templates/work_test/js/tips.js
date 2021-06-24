@@ -4,6 +4,7 @@ document.addEventListener('WeixinJSBridgeReady', function onBridgeReady() {
 
 var file_img;
 $(".iosP").on("change", function() {
+    window.mdSmartios.bridge.buttonClickTracking("开始拍摄")
     var files = $(this)[0].files;
     if (files.length > 0) {
         var file = files[0];

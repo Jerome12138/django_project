@@ -12,6 +12,26 @@ var mdSmartios = mdSmartios || {};
 
     mdSmartios.bridge.storage={};
 
+    mdSmartios.bridge.interfaceWrapper = function (name, paramOrigin, callback, callbackFail) {
+        let param = Object.assign({}, paramOrigin);
+        if (param == undefined || param == '') {
+            param = {};
+        }
+        param.cammandId = Math.floor(Math.random() * 100000);
+        var commandIds = param.cammandId;
+        var p = JSON.stringify(param);
+        if (typeof callback === 'function') {
+            mdSmartios.bridge.callbackFunctions[commandIds] = callback;
+        }
+
+        if (typeof callbackFail === 'function') {
+            mdSmartios.bridge.callbackFailFunctions[commandIds] = callbackFail;
+        }
+
+        var commandId = mdSmartios.bridge.po._execObjcMethod(name, p);
+
+        return commandId;
+    };
 	/*
 		通用的接口，operation（string）表示功能类型，params（JSON）表示传参
 	*/
@@ -200,6 +220,19 @@ var mdSmartios = mdSmartios || {};
         }
     };
 
+    /**
+     * 输出日志
+     */
+    mdSmartios.bridge.jsWindowOnError = function(obj, arg1, arg2, arg3) {
+        var param = {
+            obj : obj,
+            arg1 : arg1,
+            arg2 : arg2,
+            arg3 : arg3
+        };
+        var p = JSON.stringify(param);
+        console.log('mdSmartios.bridge.jsWindowOnError():' + p);
+    };
     //显示alert
     mdSmartios.bridge.showAlert = function(cmdParamers) {
         console.log('function:mdSmartios.bridge.showAlert');
