@@ -99,3 +99,30 @@ $(".returnShot").on('click', function() {
     $(".ana_container").css("display", "none");
     window.location.reload();
 })
+
+//将base64转换为文件
+function dataURLtoFile(dataurl, filename) {
+    var arr = dataurl.split(','), mime = arr[0].match(/:(.*?);/)[1],
+        bstr = atob(arr[1]), n = bstr.length, u8arr = new Uint8Array(n);
+    while(n--){
+        u8arr[n] = bstr.charCodeAt(n);
+    }
+    return new File([u8arr], filename, {type:mime});
+}
+// 安卓兼容
+function takePhotoAndroid() {
+    window.mdSmartios.bridge.buttonClickTracking("开始拍摄")
+    window.mdSmartios.bridge.takePhoto({"compressRage": 50,"type": "jpg","isNeedBase64": true}, res=>{
+        // alert(JSON.stringify(res))
+        if (res.status == 0) {
+            var img_base64 = res.data
+            file_img = dataURLtoFile(img_base64, "photo.png")
+            $(".user_container").css("display", "none");
+            $(".take_photo").css("display", "block");
+            $(".getPic").attr("src", img_base64);
+            $(".getPicImg").css("opacity", "1");
+            document.title = '拍照';
+            $(".if_not").css("display", "flex");
+        }
+    })
+}

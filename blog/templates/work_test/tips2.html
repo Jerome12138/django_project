@@ -106,35 +106,9 @@
     <script type="text/javascript" src="js/tips.js"></script>
     <script>
         window.mdSmartios.bridge.pageViewTracking("肌肤检测-注意事项页")
-        function dataURLtoFile(dataurl, filename) {//将base64转换为文件
-            var arr = dataurl.split(','), mime = arr[0].match(/:(.*?);/)[1],
-                bstr = atob(arr[1]), n = bstr.length, u8arr = new Uint8Array(n);
-            while(n--){
-                u8arr[n] = bstr.charCodeAt(n);
-            }
-            return new File([u8arr], filename, {type:mime});
-        }
         if (window.mdSmartios.bridge.isMeiju && window.mdSmartios.bridge.isAndroid) {
             $("#ios11").css("display","none")
-            $(".begin_button").click(()=>{
-                window.mdSmartios.bridge.buttonClickTracking("开始拍摄")
-                window.mdSmartios.bridge.takePhoto({"compressRage": 10,"type": "png","isNeedBase64": false},res=>{
-                    // alert(JSON.stringify(res))
-                    if (res.status == 0) {
-                        window.mdSmartios.bridge.convertLocalImageToBase64({"filePath":res.filePath},res=>{
-                            // alert(JSON.stringify(res))
-                            img_base64 = "data:image/png;base64,"+res.base64
-                            file_img = dataURLtoFile(img_base64, "photo.png")
-                            $(".user_container").css("display", "none");
-                            $(".take_photo").css("display", "block");
-                            $(".getPic").attr("src", img_base64);
-                            $(".getPicImg").css("opacity", "1");
-                            document.title = '拍照';
-                            $(".if_not").css("display", "flex");
-                        })
-                    }
-                })
-            })
+            $(".begin_button").click(takePhotoAndroid)
         }
     </script>
 </body>
