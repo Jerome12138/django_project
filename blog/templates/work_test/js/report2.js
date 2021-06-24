@@ -74,7 +74,7 @@ function showDetail(data,index){
     var pro_html='';
     var prodata= data.product;
     if(prodata.length>0){
-        pro_html='<div class="recm_title">以上问题，配合使用，推荐使用美的XXX效果更好</div>';
+        pro_html='<div class="recm_title">以上问题，配合使用，推荐以下产品效果更好</div>';
     }
     for(var i=0;i<prodata.length;i++){
         pro_html+='<div class="recm_list flexCon"><div class="recm_pic"> <img src="'+prodata[i].image+'"/> </div><div class="recm_det flexCon"><div class="recm_det_name">'+prodata[i].name

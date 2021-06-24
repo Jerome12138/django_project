@@ -47,7 +47,7 @@ var mdSmartios = mdSmartios || {};
      * {
         compressRage: 0;//Number,返回照片的压缩率，范围为0~100，数值越高保真率越高
         "type": "";//值为jpg或png，指定返回相片的格式
-        isNeedBase6: true/false;//是否需要返回相片base64数据
+        isNeedBase64: true/false;//是否需要返回相片base64数据
      * }
      * @param {*} callback
      * @param {*} callbackFail
@@ -73,60 +73,6 @@ var mdSmartios = mdSmartios || {};
     };
 
     /**
-     * H5 调用APP,取得家电SN
-     * @return {Number}
-     *                    0 : 成功
-     *                   -1 : 失败(无插件)
-     *                   -2 : 失败(无文件)
-     */
-    mdSmartios.bridge.getDeviceSN = function(callback, callbackFail) {
-        var param={};
-        param.cammandId = Math.floor(Math.random() * 1000);
-        var commandIds = param.cammandId;
-        var p = JSON.stringify(param);
-        console.log(p);
-
-        if ( typeof callback == "function") {
-            mdSmartios.bridge.callbackFunctions[commandIds] = callback;
-        }
-
-        if ( typeof callbackFail == "function") {
-            mdSmartios.bridge.callbackFailFunctions[commandIds] = callbackFail;
-        }
-
-        var commandId = mdSmartios.bridge.po._execObjcMethod('getDeviceSN', p);
-
-        return commandId;
-    };
-
-    /**
-     * H5 调用APP,取得家电id
-     * @return {Number}
-     *                    0 : 成功
-     *                   -1 : 失败(无插件)
-     *                   -2 : 失败(无文件)
-     */
-    mdSmartios.bridge.getApplianceID = function(callback, callbackFail) {
-        var param={};
-        param.cammandId = Math.floor(Math.random() * 1000);
-        var commandIds = param.cammandId;
-        var p = JSON.stringify(param);
-        console.log(p);
-
-        if ( typeof callback == "function") {
-            mdSmartios.bridge.callbackFunctions[commandIds] = callback;
-        }
-
-        if ( typeof callbackFail == "function") {
-            mdSmartios.bridge.callbackFailFunctions[commandIds] = callbackFail;
-        }
-
-        var commandId = mdSmartios.bridge.po._execObjcMethod('getApplianceID', p);
-
-        return commandId;
-    };
-
-    /**
      * Clear WebView Cache
      * @return void
      */
@@ -140,6 +86,59 @@ var mdSmartios = mdSmartios || {};
 
     //直接返回值(IOS赋值：回复JS所有类型请求（startCmdProcess：命令id，getLangCode：语言code）)
     mdSmartios.bridge.retObjcValue = 0;
+
+    mdSmartios.bridge.retSnValue = "";
+
+    mdSmartios.bridge.applicationId = "";
+
+    mdSmartios.bridge.currentApplianceSubtype = "";
+    
+    /*
+     *指定命令的回复电文(IOS调用：回复startCmdProcess)
+     *@param (int) retObjcValue 命令id
+     *       (String) result 回复
+     *                result.messageBody 回复电文
+     *                result.errCode 错误码
+     *                             1 超时   -1 查询超时
+     *                result.errMessage 错误信息
+     */
+     mdSmartios.bridge.callbackFunction = function(retObjcValue, result) {
+        console.log('callbackFunction result', retObjcValue, result)
+        var jsonResult = result;
+        if (typeof jsonResult === 'string') {
+            try {
+                jsonResult = JSON.parse(jsonResult);
+            } catch (error) {
+                console.error('callbackFunction parse error', retObjcValue, error)
+            }
+        }
+        var cbf = mdSmartios.bridge.callbackFunctions[retObjcValue];
+        var cbff = mdSmartios.bridge.callbackFailFunctions[retObjcValue];
+        if (jsonResult.errCode !== undefined && jsonResult.errMessage == 'TimeOut') {
+            if(jsonResult.errCode==-1){
+                if(location.href.indexOf('card')!=-1){
+                    bridge.logToIOS('Jump to cardDisconnect.html.');
+                    location.href='cardDisconnect2.html';
+                }
+            }else{
+                //keane 指令失败函数自定义 Mod S
+                if (typeof cbff == "function") {
+                    cbff(-1);//表示指令超时 －1
+                }
+                if(jsonResult.isAction == 1) {
+                    // 控制超时才弹出提示
+                    bridge.popupTimeOut();
+                }
+                //keane 指令失败函数自定义 Mod E
+            }
+        } else {
+            if ( typeof cbf == "function") {
+                cbf(jsonResult.messageBody || jsonResult);
+            }
+        }
+        delete mdSmartios.bridge.callbackFunctions[retObjcValue];
+        delete mdSmartios.bridge.callbackFailFunctions[retObjcValue];
+    };
 
     mdSmartios.bridge.po = {
         _execObjcMethod : function(method, data) {
@@ -224,7 +223,6 @@ var mdSmartios = mdSmartios || {};
     }
 
     // -------------------自定义函数（Jerome）----------------
-    mdSmartios.bridge.referName = "插件页"
     mdSmartios.bridge.pageName = "肌肤管家首页"
 
     /**
@@ -255,11 +253,11 @@ var mdSmartios = mdSmartios || {};
         console.log("pageName:",pageName)
         mdSmartios.bridge.pageName = pageName
         if (mdSmartios.bridge.isMeiju) {
-            var referName = mdSmartios.bridge.getQueryVariable("referName")
-            if (referName) {
-                console.log("referName:",referName)
-                mdSmartios.bridge.referName = referName
-            }
+            // var referName = mdSmartios.bridge.getQueryVariable("referName")
+            // if (referName) {
+            //     console.log("referName:",referName)
+            //     mdSmartios.bridge.referName = referName
+            // }
             mdSmartios.bridge.pageName = pageName
             let eventTrackingParams = {
                 event: 'plugin_page_view',
@@ -269,7 +267,7 @@ var mdSmartios = mdSmartios || {};
                     apptype_name: '电热水器',
                     widget_cate: 'E2',
                     page_name:  pageName,
-                    refer_name:  mdSmartios.bridge.referName,
+                    // refer_name:  mdSmartios.bridge.referName,
                 }
             }
             mdSmartios.bridge.trackEvent(eventTrackingParams)

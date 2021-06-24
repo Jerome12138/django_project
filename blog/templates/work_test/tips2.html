@@ -106,11 +106,13 @@
     <script type="text/javascript" src="js/tips.js"></script>
     <script>
         window.mdSmartios.bridge.pageViewTracking("肌肤检测-注意事项页")
+        // window.mdSmartios.bridge.isMeiju && 
         if (window.mdSmartios.bridge.isAndroid) {
-            $(".begin_button").click(() => {
+            $("#ios11").css("display","none")
+            $(".begin_button").click(function(){
                 window.mdSmartios.bridge.takePhoto({"compressRage": 0,"type": "png","isNeedBase64": true},res=>{
-                    window.mdSmartios.bridge.showAlert(res.data)
-                })
+                    alert(res.data)
+                },e=>{alert(e)})
             })
         }
     </script>
