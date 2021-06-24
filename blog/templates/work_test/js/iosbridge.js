@@ -73,6 +73,35 @@ var mdSmartios = mdSmartios || {};
     };
 
     /**
+     * 美居6.4.0 转换本地图片成base64数据
+     * @param {*} param
+     * {
+        filePath: xxxx, //手机本地图片路径
+        }
+    * @param {*} callback
+    * @param {*} callbackFail
+    */
+    mdSmartios.bridge.convertLocalImageToBase64 = function (param, callback, callbackFail) {
+        if (param == undefined || param == "") {
+            param = {};
+        }
+        param.cammandId = Math.floor(Math.random() * 100000);
+        let commandIds = param.cammandId;
+        let p = JSON.stringify(param);
+        if (typeof callback == "function") {
+            mdSmartios.bridge.callbackFunctions[commandIds] = callback;
+        }
+
+        if (typeof callbackFail == "function") {
+            mdSmartios.bridge.callbackFailFunctions[commandIds] = callbackFail;
+        }
+
+        let commandId = mdSmartios.bridge.po._execObjcMethod('convertLocalImageToBase64', p);
+
+        return commandId;
+    };
+    
+    /**
      * Clear WebView Cache
      * @return void
      */

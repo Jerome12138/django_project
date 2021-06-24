@@ -106,10 +106,9 @@
     <script type="text/javascript" src="js/tips.js"></script>
     <script>
         window.mdSmartios.bridge.pageViewTracking("肌肤检测-注意事项页")
-        // window.mdSmartios.bridge.isMeiju && 
-        if (window.mdSmartios.bridge.isAndroid) {
+        if (window.mdSmartios.bridge.isMeiju && window.mdSmartios.bridge.isAndroid) {
             $("#ios11").css("display","none")
-            $(".begin_button").click(function(){
+            $(".begin_button").click(()=>{
                 window.mdSmartios.bridge.takePhoto({"compressRage": 10,"type": "png","isNeedBase64": false},res=>{
                     // alert(JSON.stringify(res))
                     if (res.status == 0) {
@@ -117,7 +116,7 @@
                             // alert(JSON.stringify(res))
                             $(".user_container").css("display", "none");
                             $(".take_photo").css("display", "block");
-                            $(".getPic").attr("src", reader.result);
+                            $(".getPic").attr("src", "data:image/png;base64,"+res.base64);
                             $(".getPicImg").css("opacity", "1");
                             document.title = '拍照';
                             $(".if_not").css("display", "flex");
