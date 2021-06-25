@@ -116,7 +116,7 @@ if (window.mdSmartios.bridge.isMeiju && window.mdSmartios.bridge.isAndroid) {
     $("#ios11").css("display","none")
     $(".begin_button").click(() => {
         window.mdSmartios.bridge.buttonClickTracking("开始拍摄")
-        window.mdSmartios.bridge.takePhoto({"compressRage": 50,"type": "jpg","isNeedBase64": true}, res=>{
+        window.mdSmartios.bridge.takePhoto({"compressRage": 30,"type": "jpg","isNeedBase64": true}, res=>{
             // alert(JSON.stringify(res))
             if (res.status == 0) {
                 var img_base64 = res.data
